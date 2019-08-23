@@ -1,8 +1,8 @@
-Total Ram: 8520359936 Bytes
- Free Ram: 1859670016 Bytes
- Used Ram: 3395584 Bytes
+Total Ram: 4118360064 Bytes
+ Free Ram: 798142464 Bytes
+ Used Ram: 6311936 Bytes
 
-debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
+debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -23,7 +23,6 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-08-04 11:51:01
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -68,6 +67,7 @@ Cacheing 'Steamer' from data/chars/misc/steamer.txt
 Cacheing 'Furnace' from data/chars/misc/furnace.txt
 Cacheing 'Crab' from data/chars/crab/crab.txt
 Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
+Cacheing 'mime' from Data/Chars/mime/mime.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
@@ -77,9 +77,7 @@ Loaded 'Mighty' from data/chars/mighty/mighty.txt
 
 Loading models...............	Done!
 Object engine init...........	Done!
-Input init...................	
-1 joystick(s) found!
-UNKNOWN - 4 axes, 12 buttons, 1 hat(s)
+Input init...................	No Joystick(s) Found!
 Done!
 Create blending tables.......	Done!
 Save settings so far........	Done!
@@ -95,9 +93,9 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 8520359936 Bytes
- Free Ram: 1785257984 Bytes
- Used Ram: 66813952 Bytes
+Total Ram: 4118360064 Bytes
+ Free Ram: 699125760 Bytes
+ Used Ram: 49524736 Bytes
 
 Release level data...........
 Done!
