@@ -1,0 +1,53 @@
+name camms
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+anim	attack1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/camms/00.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/camms/00.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/camms/00.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/camms/00.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/camms/00.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	14 62
+	bbox	42 14 24 85
+	frame	data/chars/camms/0.png
+	frame	data/chars/camms/1.png
+	frame	data/chars/camms/2.png
+	frame	data/chars/camms/3.png
+	frame	data/chars/camms/4.png
+	frame	data/chars/camms/5.png
+		
+#|edited by openBor Stats v 0.67
+		
