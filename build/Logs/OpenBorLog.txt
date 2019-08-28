@@ -1,8 +1,8 @@
 Total Ram: 3947741184 Bytes
- Free Ram: 1711718400 Bytes
- Used Ram: 3448832 Bytes
+ Free Ram: 2308886528 Bytes
+ Used Ram: 3432448 Bytes
 
-debug:nativeWidth, nativeHeight, bpp, Hz  1024, 768, 24, 60
+debug:nativeWidth, nativeHeight, bpp, Hz  1600, 900, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -67,6 +67,8 @@ Cacheing 'Steamer' from data/chars/misc/steamer.txt
 Cacheing 'Furnace' from data/chars/misc/furnace.txt
 Cacheing 'Crab' from data/chars/crab/crab.txt
 Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
+Cacheing 'cammi' from Data/Chars/cammi/cammi.txt
+Cacheing 'camms' from Data/Chars/camms/camms.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
@@ -82,28 +84,29 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/mirror.txt'
+Level Loading:   'data/levels/example1.txt'
 Total Ram: 3947741184 Bytes
- Free Ram: 1677631488 Bytes
- Used Ram: 37163008 Bytes
+ Free Ram: 2275954688 Bytes
+ Used Ram: 36478976 Bytes
 
-Loaded 'Angel' from data/chars/angel/angel.txt 
+Loaded '1up' from data/chars/misc/1up.txt 
+Loaded 'Shermie' from data/chars/shermie/shermie.txt 
+Loaded 'Steamer' from data/chars/misc/steamer.txt 
+Loaded 'Steam' from data/chars/misc/steam.txt 
+Loaded 'Yashiro' from data/chars/yashiro/yashiro.txt 
+Loaded 'Trash' from data/chars/misc/trash.txt 
+Loaded 'money' from data/chars/misc/money.txt 
+Loaded 'gold' from data/chars/misc/gold.txt 
+Loaded 'ralf' from data/chars/ralf/ralf.txt 
+Loaded 'biker-k'' from data/chars/biker-k/biker-k.txt 
+Loaded 'K'' from data/chars/k/k.txt 
+Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
 
-Level Loaded:    'data/levels/mirror.txt'
+Level Loaded:    'data/levels/example1.txt'
 Total Ram: 3947741184 Bytes
- Free Ram: 1677340672 Bytes
- Used Ram: 37183488 Bytes
-Total sprites mapped: 443
-
-Level Unloading: 'data/levels/mirror.txt'
-Total Ram: 3947741184 Bytes
- Free Ram: 1682755584 Bytes
- Used Ram: 39337984 Bytes
-
-RAM Status:
-Total Ram: 3947741184 Bytes
- Free Ram: 1682755584 Bytes
- Used Ram: 39337984 Bytes
+ Free Ram: 2271555584 Bytes
+ Used Ram: 37777408 Bytes
+Total sprites mapped: 639
 
 
 ************ Shutting Down ************
@@ -116,10 +119,20 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 3947741184 Bytes
- Free Ram: 1676525568 Bytes
- Used Ram: 39346176 Bytes
+ Free Ram: 2269913088 Bytes
+ Used Ram: 41988096 Bytes
 
 Release level data...........
+Level Unloading: 'data/levels/example1.txt'
+Total Ram: 3947741184 Bytes
+ Free Ram: 2269913088 Bytes
+ Used Ram: 41988096 Bytes
+
+RAM Status:
+Total Ram: 3947741184 Bytes
+ Free Ram: 2269913088 Bytes
+ Used Ram: 41988096 Bytes
+
 Done!
 
 Release graphics data........	Done!
@@ -130,7 +143,18 @@ Unload 'Kula' ............Done.
 Unload 'Max' ............Done.
 Unload 'Mandy' ............Done.
 Unload 'Mighty' ............Done.
-Unload 'Angel' ............Done.
+Unload '1up' ............Done.
+Unload 'Shermie' ............Done.
+Unload 'Steamer' ............Done.
+Unload 'Steam' ............Done.
+Unload 'Yashiro' ............Done.
+Unload 'Trash' ............Done.
+Unload 'Money' ............Done.
+Unload 'Gold' ............Done.
+Unload 'Ralf' ............Done.
+Unload 'Biker-K'' ............Done.
+Unload 'K'' ............Done.
+Unload 'Lobster' ............Done.
 
 Release game data............	Done!
 Release timer................	Done!
