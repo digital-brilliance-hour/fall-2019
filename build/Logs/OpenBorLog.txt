@@ -1,8 +1,8 @@
-Total Ram: 8520359936 Bytes
- Free Ram: 1859670016 Bytes
- Used Ram: 3395584 Bytes
+Total Ram: 3516645376 Bytes
+ Free Ram: 1655394304 Bytes
+ Used Ram: 6156288 Bytes
 
-debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
+debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -23,7 +23,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-08-04 11:51:01
+Joystick: "UNKNOWN" connected at port: 0 at 2019-08-28 12:55:24
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -71,9 +71,20 @@ Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/kulablow.wav'!
+sound_load_sample can't load sample from file 'data/sounds/kulahey.wav'!
 Loaded 'Max' from data/chars/maxima/maxima.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxuh.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxboom.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxrockt.wav'!
 Loaded 'Mandy' from data/chars/mary/mary.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/mary_ffp.wav'!
+sound_load_sample can't load sample from file 'data/sounds/marytoss.wav'!
 Loaded 'Mighty' from data/chars/mighty/mighty.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
 
 Loading models...............	Done!
 Object engine init...........	Done!
@@ -85,6 +96,61 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
+Level Loading:   'data/levels/water3.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1582407680 Bytes
+ Used Ram: 61632512 Bytes
+
+Loaded 'Angel' from data/chars/angel/angel.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/leonahey.wav'!
+
+Level Loaded:    'data/levels/water3.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1582080000 Bytes
+ Used Ram: 61935616 Bytes
+Total sprites mapped: 443
+
+Level Unloading: 'data/levels/water3.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1582071808 Bytes
+ Used Ram: 62349312 Bytes
+
+RAM Status:
+Total Ram: 3516645376 Bytes
+ Free Ram: 1582071808 Bytes
+ Used Ram: 62349312 Bytes
+
+Level Loading:   'data/levels/example1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1579642880 Bytes
+ Used Ram: 62353408 Bytes
+
+Loaded '1up' from data/chars/misc/1up.txt 
+Loaded 'Shermie' from data/chars/shermie/shermie.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+Loaded 'Steamer' from data/chars/misc/steamer.txt 
+Loaded 'Steam' from data/chars/misc/steam.txt 
+Loaded 'Yashiro' from data/chars/yashiro/yashiro.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
+Loaded 'Trash' from data/chars/misc/trash.txt 
+sound_load_sample can't load sample from file 'data/sounds/klunk.wav'!
+Loaded 'money' from data/chars/misc/money.txt 
+Loaded 'gold' from data/chars/misc/gold.txt 
+Loaded 'ralf' from data/chars/ralf/ralf.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
+Loaded 'biker-k'' from data/chars/biker-k/biker-k.txt 
+Loaded 'K'' from data/chars/k/k.txt 
+sound_load_sample can't load sample from file 'data/sounds/die2.wav'!
+Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
+sound_load_sample can't load sample from file 'data/sounds/alien.wav'!
+
+Level Loaded:    'data/levels/example1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1578455040 Bytes
+ Used Ram: 63528960 Bytes
+Total sprites mapped: 690
+
 
 ************ Shutting Down ************
 
@@ -95,11 +161,21 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 8520359936 Bytes
- Free Ram: 1785257984 Bytes
- Used Ram: 66813952 Bytes
+Total Ram: 3516645376 Bytes
+ Free Ram: 1579102208 Bytes
+ Used Ram: 63545344 Bytes
 
 Release level data...........
+Level Unloading: 'data/levels/example1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 1579102208 Bytes
+ Used Ram: 63545344 Bytes
+
+RAM Status:
+Total Ram: 3516645376 Bytes
+ Free Ram: 1579102208 Bytes
+ Used Ram: 63545344 Bytes
+
 Done!
 
 Release graphics data........	Done!
@@ -110,6 +186,19 @@ Unload 'Kula' ............Done.
 Unload 'Max' ............Done.
 Unload 'Mandy' ............Done.
 Unload 'Mighty' ............Done.
+Unload 'Angel' ............Done.
+Unload '1up' ............Done.
+Unload 'Shermie' ............Done.
+Unload 'Steamer' ............Done.
+Unload 'Steam' ............Done.
+Unload 'Yashiro' ............Done.
+Unload 'Trash' ............Done.
+Unload 'Money' ............Done.
+Unload 'Gold' ............Done.
+Unload 'Ralf' ............Done.
+Unload 'Biker-K'' ............Done.
+Unload 'K'' ............Done.
+Unload 'Lobster' ............Done.
 
 Release game data............	Done!
 Release timer................	Done!
