@@ -1,6 +1,6 @@
 Total Ram: 3947741184 Bytes
- Free Ram: 2308886528 Bytes
- Used Ram: 3432448 Bytes
+ Free Ram: 2591285248 Bytes
+ Used Ram: 3428352 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1600, 900, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
@@ -84,10 +84,10 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/example1.txt'
+Level Loading:   'data/levels/mynewlevel.txt'
 Total Ram: 3947741184 Bytes
- Free Ram: 2275954688 Bytes
- Used Ram: 36478976 Bytes
+ Free Ram: 2564390912 Bytes
+ Used Ram: 34127872 Bytes
 
 Loaded '1up' from data/chars/misc/1up.txt 
 Loaded 'Shermie' from data/chars/shermie/shermie.txt 
@@ -102,10 +102,10 @@ Loaded 'biker-k'' from data/chars/biker-k/biker-k.txt
 Loaded 'K'' from data/chars/k/k.txt 
 Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
 
-Level Loaded:    'data/levels/example1.txt'
+Level Loaded:    'data/levels/mynewlevel.txt'
 Total Ram: 3947741184 Bytes
- Free Ram: 2271555584 Bytes
- Used Ram: 37777408 Bytes
+ Free Ram: 2562646016 Bytes
+ Used Ram: 35389440 Bytes
 Total sprites mapped: 639
 
 
@@ -119,19 +119,19 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 3947741184 Bytes
- Free Ram: 2269913088 Bytes
- Used Ram: 41988096 Bytes
+ Free Ram: 2562908160 Bytes
+ Used Ram: 55590912 Bytes
 
 Release level data...........
-Level Unloading: 'data/levels/example1.txt'
+Level Unloading: 'data/levels/mynewlevel.txt'
 Total Ram: 3947741184 Bytes
- Free Ram: 2269913088 Bytes
- Used Ram: 41988096 Bytes
+ Free Ram: 2562895872 Bytes
+ Used Ram: 55590912 Bytes
 
 RAM Status:
 Total Ram: 3947741184 Bytes
- Free Ram: 2269913088 Bytes
- Used Ram: 41988096 Bytes
+ Free Ram: 2562895872 Bytes
+ Used Ram: 55590912 Bytes
 
 Done!
 
