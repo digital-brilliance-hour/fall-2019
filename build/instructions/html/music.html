@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<b><font size="+2" class="big">Creating BOR music files</b></font><br><br>
+
+The Beats of Rage edit pack contains a program to convert WAV files to BOR files.
+BOR files are the standard by which Beats of Rage plays its music. In this
+standard, a simple ADPCM algorithm is used to compress/decompress the audio.
+
+<br><br>
+<br><br>
+
+To create your own music files for use in you mod, you must first create a
+WAV file containing a loop. Save this file with the following properties:
+<br>
+<table border="1" cellspacing="0" cellpadding="0" width="600">
+<tr>
+<td align="left" valign="top">Format:</td>
+<td align="left" valign="top">PCM</td>
+</tr>
+<tr>
+<td align="left" valign="top">Bit-depth:</td>
+<td align="left" valign="top">16-bit</td>
+</tr>
+<tr>
+<td align="left" valign="top">Channels:</td>
+<td align="left" valign="top">mono</td>
+</tr>
+<tr>
+<td align="left" valign="top">Sample frequency:</td>
+<td align="left" valign="top">22050 (22 KHz) *</td>
+</tr>
+</table>
+* Actually, the program can play music at any frequency, but this
+frequency provides the best quality/size ratio.
+
+<br><br>
+<br><br>
+
+The easiest way to convert your WAV file is probably by creating a
+batch file (*.BAT). To do so, simply create a text file and rename
+it to convert.bat (or grampa.bat or eatme.bat or whatever).
+<br><br>
+
+Enter a command into the batch file according to the following syntax:<br>
+<b>wav2bor.exe [wav-file] [bor-file]</b>
+<br><br>
+
+Example:<br>
+wav2bor.exe mymusic.wav mymusic.bor
+<br><br>
+
+Now execute the batch, and your file will be converted in mere seconds.
+
+
+<br><br>
+<br><br>
+
+
+To learn how to enter the music files into the game, read about
+<a href="levels.html">levels</a> and <a href="scenes.html">scenes</a>.
+<br><br>
+<b>Note:</b> some music files are required. See the list of <a href="required.html">required files</a>.
+<br><br>
+<b>Note 2:</b> You may also enter an artist and title to be saved with the
+BOR file:<br>
+wav2bor.exe [wav-file] [bor-file] [artist] [title]<br>
+Replace spaces by underbars (_). At this time, this information is not
+displayed in the game, but this feature may be added in future releases.
+
+
+<br><br>
+<br><br>
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+
+
+</center>
+
+
+
+</body>
+</html>
+

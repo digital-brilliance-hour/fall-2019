@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<font size="+2" class="big"><b>Creating a character</b></font>
+<br><br><br>
+
+
+
+<b><font size="+1" class="big">Step 1. Creating Gifs </font> </b><br><br>
+
+<u>Grabbing frames</u><br>
+In order to make a new character you need sprites for your character. On the internet many ripped sprites can be found, however these are often modified and manhandled. You'll probably get better sprites if you grab them yourself. Also this ensures you can get the sprites you need. <br>
+The best program to do this is probably neorage, because you can easily select layers and change the background colour in the shots factory (so you can make good grabs of characters with black in their outfit). <br><br>
+<img src="images/shots.gif" width="320" height="240"><br>neorageX shots factory<br><br>
+
+Off course other emulators work also work. For instance Kawaks has a shots factory (Tools, shots factory) and can change the background clour (video, set background color). <br><br>
+
+<u>Editing frames</u><br>
+When you've got the character frames of your fancy, you need to process the large images (about 320x240 when grabbed from a Neo Geo) to sprites. <br>
+Remember that you give frames of the same animation (e.g. an attack) the same width and height, this makes it easier in a later stage. For instance when creating an attack for Ralf, you need to make sure that frame 1 is large enough so that Ralf's outstretched arm is still visible in frame 2.<br><br>
+
+<img src="images/punch1.gif"><br>Frame 1<br>
+<img src="images/punch2.gif"><br>Frame 2<br>
+
+<br>
+Notice that the pink colour is used as the transparent colour. The exact properties of this colour are R:252 G:0 B:255 or #FC00FF. <br><br>
+
+<u>Saving frames</u><br>
+When you have cropped the frames to the right size, you need to save them as gifs, using the BOR palette (data/pal.act). In Photoshop 5.5 you do it like this: <br>
+1. Go to File "Save as", select CompuServe GIF (*.GIF)<br> Do <b>not</b> use long file names, but a maximum of 8 characters.<br><br>
+2. Go to Palette and choose "Custom"<br> <img src="images/palette1.gif"><br><br>
+3. A colour table pops up, here you press load. Select data/pal.act and press load. Also set Dither to none. <br><img src="images/palette2.gif"><br><br>
+4. The BOR palette was loaded. You should see this: <br><img src="images/loadedpal.gif"><br>
+
+<br>Now press ok, and ok again.<br><br>
+5. Now you are asked to choose between normal and interlaced row orders. Choose normal. Now your frame has been saved.<br><br>
+
+Once you have loaded your palette, you can choose previous palette the next frame you save.
+<img src="images/palette3.gif"><br><br>
+
+
+
+
+
+<br><br><br>
+<b><font size="+1" class="big">Step 2. Assigning properties to your character </font></b><br><br>
+
+<u>Default properties </u><br>
+All character properties are found in the character.txt. For Ralf this text file is located at data\chars\ralf\ralf.txt.<br> You can write comments in this text file by writing a "#" before your comment. With the number sign the computer will not process this text as a command. Also useful is that you can both use the "/" and the "\" in the file locations.
+<br><br>
+
+At the top of the file you'll find the following  properties: <br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+
+<tr>
+<td align="left" valign="middle" width=200>name	Ralf</td>
+<td align="left" valign="middle"> Standard name for this character.</td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>health	55</td>
+<td align="left" valign="middle" >Standard health for this character is 55. </td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>speed	7</td>
+<td align="left" valign="middle" >Standard speed for this character is 7. Increase this number to make the character walk faster. </td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>type	enemy</td>
+<td align="left" valign="middle" >Write "enemy" to make an enemy, "player" for a hero, "obstacle" for boxes etc., "item" for items (apple, 1up etc.), and "none" for things as stream.</td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>shadow	4</td>
+<td align="left" valign="middle" >Shadow size is 4. Increase the number for a bigger shadow. Maximum shadow size is 6, and 0 for no shadow. </td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>icon	data/chars/ralf/icon.gif</td>
+<td align="left" valign="middle" >Location of the icon image (the image next to the health gauge).  </td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>diesound data/sounds/die1.wav</td>
+<td align="left" valign="middle" >Location of the sound the character makes when he dies. </td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>remap	data/chars/ralf/idle1.gif data/chars/ralf/map1.gif</td>
+<td align="left" valign="middle" >This function lets you have alternative character colours. The first file points to the image with the original colours. The second file points to <u> the same frame </u> but with alternative colours.</td>
+
+</tr>
+</table>
+
+<br><br>
+<u>Animation</u><br>
+
+Next the actual animations will be constructed. There are a number of different animations.
+<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200> anim idle </td>
+<td align="left" valign="middle" > The animation for standing still. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> anim walk</td>
+<td align="left" valign="middle" > Err, well... walking. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> anim pain </td>
+<td align="left" valign="middle" > When your character gets hurt. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> anim fall</td>
+<td align="left" valign="middle" > When the character gets knocked down, he falls. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> anim rise</td>
+<td align="left" valign="middle" > And getting up again. </td>
+</tr>
+
+
+
+</table>
+
+
+
+<br><br>
+<u>Things you need to know about animations</u><br>
+When creating animations it's best to look carefully at existing characters, and how they work. Here is a rundown of all the properties the animations can have.
+
+<br><br>
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200>loop	1 </td>
+<td align="left" valign="middle" > Use 1 for repeating animations, such as walking and idle. Use 0 for single animations that don't repeat until you press the button again, such as attacks.</td>
+
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> offset	39 121 </td>
+<td align="left" valign="middle" > The offset is the place where the character will stand and the shadow is placed. This is a single point in the frame. Here x-coordinate=39 and y=121.</td>
+
+</tr>
+</table>
+
+<br>
+<img src="images/offset.gif"><br>The offset is depicted here as a white pixel. This pixel is only here to demonstrate the offset point. Do not put a pixel in the actual frame!<br><br>
+
+An easy way to find the coordinates in Photoshop is to look at the info box. <br>
+<img src="images/info.gif"><br>
+
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50"><br><br>
+
+<tr>
+<td align="left" valign="middle" width=200>bbox	22 23 34 99 </td>
+<td align="left" valign="middle" > The bbox is the area where the character can be hit. The first 2 numbers (22 and 23) are the x and y coordinates of the topleft point of the area. The third number (34) is the width of the bbox, and the fourth (99) is the height. </td>
+
+</tr>
+</table>
+
+<br>
+<img src="images/bbox.gif"><br>The bbox is depicted here as a white box. This box is only here to demonstrate the bbox. Do not put a white box in the actual frame!<br><br>
+
+
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200>delay	10 </td>
+<td align="left" valign="middle" >The speed in which the frames follow each other, the delay is given in 100ths of a second. Increase the delay to slow  down the animation. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>sound	data/sounds/maxboom.wav</td>
+<td align="left" valign="middle" >Characters can also make sounds during animations. The sound will play a soon a the animation reaches the point where the sound is declared.</td>
+</tr>
+
+</table>
+<br>
+
+
+The offset, bbox, attack and delay remain active for all following frames until they are changed. <br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200> frame	data/chars/ralf/idle1.gif</td>
+<td align="left" valign="middle" > The locations of the actual frames. Put these in the right order.</td>
+</table>
+
+
+
+<br><br>
+<u>Attacks</u><br>
+Each enemy can have up to three normal attacks plus a throw, uppercut, special, and jumpattack. A normal attack is called "anim attack1" (or 2 or 3 of course).<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> range	0 70</td>
+<td align="left" valign="middle" > If a hero is within this range the character can perform this attack. The range is given in pixels and is measured from the offset point. </td>
+
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> attack	56 17 47 21 10 0</td>
+<td align="left" valign="middle" > The first 2 numbers (56 17) give the  x and y coordinates of the attack box. Number three and four (47 21) are the width and height of the box. The fifth number (10) is the strength of the attack. Increase this number for a heavier attack. The sixth number (0) is used to define whether the hero falls down after the attack. Use 1 for fall down, and 0 (or leave it out) not to have the hero fall down. <br>
+Set the attack to 0 0 0 0 0 0 when the attack frames are over.
+</td>
+</tr>
+
+</table>
+
+<br>
+<img src="images/attack.gif"><br>The attack box is depicted here as a white box. This box is only here to demonstrate the attack area. Do not put a white box in the actual frame!<br><br><br>
+
+
+<u>Uppercut, throw, and special attacks</u><br>
+The uppercut (anim upper) works a normal attack, but it does not have a range. It will start automatically when a hero jumps. The throw (anim throw) also works as a normal attack, but it will happen when a hero walk into the enemy.<br>
+The special does have a range, but it will only happen when a hero holds the character for a certain amount of time, so the enemy character can escape its hold.<br><br>
+
+The jumpattack (anim jumpattack) works as a normal attack, but the character jumps during the attack. This will happen automatically when you use "anim jumpattack". <br><br>
+
+
+There is yet one more attack. The shoot attack, which is really a normal attack, but you shoot something. Take Rugal for example; he can shoot a wave. To have this work you must write "<u>load	Shot</u>" in the top partition of the character text, in this case Rugal.txt. (Or load knife, if you want a knife). <br>
+You also have to define a shootframe in the actual attack animation.<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50"><br>
+<tr>
+<td align="left" valign="middle" width=200>shootframe	5</td>
+<td align="left" valign="middle" > In this attack the character will shoot a wave/knife in the 5th frame in the animation. Place this in the Character.txt 
+</tr>
+</table>
+
+<br><br>
+Because the shot is a new entity it has its own animation frames and text file. These can be found under data\chars\misc\shot.txt and data\chars\misc\knife.txt
+
+<br><br>
+<u> Heroes </u><br>
+The heroes/players work basically the same as the enemies, they just have some extra animations.<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200>anim get </td>
+<td align="left" valign="middle" > Animation to pick up items. </td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim special </td>
+<td align="left" valign="middle" > This is the special attack the costs a bit of health. Don't give this animation a bbox, because you need to be invincible for a period.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim freespecial </td>
+<td align="left" valign="middle" > This is the forward, forward+punch special</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim jump </td>
+<td align="left" valign="middle" > This is the jump. Don't give this animation an attack, because heroes can jump without attacking.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim jumpattack </td>
+<td align="left" valign="middle" > This is the attack that knocks enemies on the ground during a jump. Notice that you are already in the air at this point, so you don't need any animation for jumping off the ground.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim jumpattack2 </td>
+<td align="left" valign="middle" > This is the air attack that leaves your enemies standing. Notice that you are already in the air at this point, so you don't need any animation for jumping off the ground.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim grab </td>
+<td align="left" valign="middle" > The animation for holding an enemy, you're not actually throwing yet.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim grabattack</td>
+<td align="left" valign="middle" > The animation for pummelling an enemy while holding him.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim grabattack2</td>
+<td align="left" valign="middle" > The animation for pummelling an enemy and knocking him on the ground.</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim throw</td>
+<td align="left" valign="middle" > Throw your enemy!</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>anim land</td>
+<td align="left" valign="middle" > Heroes have an extra animation for safe landings.</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+<br><br><br>
+<b><font size="+1" class="big">Step 3. Models.txt </font></b><br> 
+In order to actually put your character in the game you must first let BOR know the character should be loaded. This is done in the <u>data/models.txt </u>. Use the phrase "load" for heroes. These will always be loaded.<br><br>
+
+<b> Example </b> <br>
+<i>load	Kula		data/chars/kula/kula.txt </i><br><br><br>
+
+Use the phrase "know" for all other entities, such as enemies, items etc. These will only be loaded if they actally appear in the level.
+
+<br><br>
+<b> Example </b> <br>
+<i>know	Ralf		data/chars/ralf/ralf.txt</i><br><br>
+
+Don't forget to make the knives, shots etc. be known in the models.txt.
+
+<br><br><br><br>
+
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+
+</center>
+
+
+
+</body>
+</html>
+

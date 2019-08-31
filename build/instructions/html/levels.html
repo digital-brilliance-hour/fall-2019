@@ -1,0 +1,406 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<b><font size="+2" class="big">Editing levels</b></font><br><br>
+
+<b><font size="+1" class="big">1. Putting the graphics and music in a level  </font> </b><br><br>
+Define the following properties at the beginning of the level file. <br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+<tr>
+<td align="left" valign="middle" width=200> music		data/music/saviour.bor</td>
+<td align="left" valign="middle"> Give the command music and the location of the music. This music will be played, and looped during the level. <b>Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> bossmusic	data/music/1boss.bor</td>
+<td align="left" valign="middle">The bossmusic will start to play when a boss is spawned. If you don't use bossmusic the regular level music will keep playing. <b>Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> hole [scrollpos]</td>
+<td align="left" valign="middle">A hole will be made at the defined scrollposition at the bottom of the level. (More about the scrollpos at the end of chapter 2). <b>Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> endhole		1</td>
+<td align="left" valign="middle">The level will end with a hole from top to bottom when all the level is out of panels, as defined in the "order". Useful for elevators. <b>Optional</b></td>
+</tr>
+
+
+<tr>
+<td align="left" valign="middle" width=200>background [path]</td>
+<td align="left" valign="middle">
+	Specify the location of the background image to use in the level.
+	This should be a 256-colour image. The first 128 colours in the palette (index 0-127)
+	should be equal to those of the global palette (more info on this subject can be
+	found on the <a href="characters.html">character page</a>). The other colours
+	(index 128-255) may be used at your discretion (except if you use neon panels, see below).
+	<br><br>
+	The width of the background image should be a <i>multiple of four</i> for the image to
+	align properly! So, 200 is a valid width, but 201 is not.
+	<br><br>
+	The background image's height may be anything between 1 and 240.
+	<br><br>
+	Example:<br>
+	background data/bgs/bridge/harbor.gif
+	<br><br>
+	<b>Mandatory</b>
+
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>water	data/bgs/boat2/water.gif	15</td>
+<td align="left" valign="middle">
+	Define an image to use as water. This image will be placed directly under
+	the background image (see above). If "rock" is enabled (see below), the
+	water surface will be drawn as a plane (as in level 3). If not, it will
+	be warped with a sine (as in level 4). You may also define the strength
+	of the sine deformation. 15 is a good value.
+	<b> Optional</b>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>rock	1</td>
+<td align="left" valign="middle"> The entire level will move slightly up and down, just like a boat :) <b> Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>panel [path] [path] [path]</td>
+<td align="left" valign="middle">
+	Specify the images to use as "panels". These are the sections
+	that make up a level.<br>
+	<br>
+	A panel is normally 244 pixels high, and can have just about any width.
+	It is advised, however, to use a width of 100 or 200 pixels. This way
+	you can easily determine the width of your entire level by counting the
+	panels.<br>
+	<br>
+	If you're making a boat level, panels should be 256 pixels high because
+	the level will move up and down a bit.
+	<br>
+	All panels in the same level should have the same dimensions.
+	<br>
+	Panels are drawn as sprites, i.e. the first colour in your palette
+	(index 0) will be transparent.<br>
+	<br>
+	You may specify three paths:<br>
+	The first one defines the image to be displayed in <i>normal</i> mode.<br>
+	The second one defines the image to be displayed in <i>neon</i> mode.<br>
+	The third one defines the image to be displayed in <i>screen</i> mode.<br>
+	It is advised to prevent overlapping of the three images, as it is a
+	waste of CPU time.<br>
+	<br>
+	Images displayed in <i>neon</i> mode will be remapped as follows:
+	colour index 128 through 135 will be cycled two steps, three times
+	per second. You can use this to create blinking lights.
+	To use the <i>neon</i> effect properly, you'll need to have some
+	understanding of working with palettes and palette rotation.
+	<br><br>
+	Images displayed in <i>screen</i> mode will appear translucent.
+	It is implemented in the same way as Photoshop's screen mode:
+	Black is fully transparent, and white is fully opaque.
+	You may use this to create stuff like windows or coronas.
+	<br><br>
+	If you do not want to use a specific kind of panel, enter "none"
+	as the path (without the quotation marks).
+	<br><br>
+	The maximum number of panels per level is 26.
+	<br><br>
+	Example: panel data/bgs/bridge/bridge10.gif none none
+	<br><br>
+	<b>Mandatory</b>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>order	abcd</td>
+<td align="left" valign="middle">
+	The order in which the panels appear in the level. This also defines the width of the level.
+	The maximum length of the order is 1000. However, you cannot specify that many characters on
+	a single line (about 100 max). So if you want to make a very big level, distribute the order
+	over multiple lines, like so:<br>
+	<br>
+	order	abcd<br>
+	order	efgh<br>
+	order	abcd<br>
+	order	ijkl<br>
+	<br>
+	<b>Mandatory</b>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> frontpanel	data/bgs/street/f00.gif</td>
+<td align="left" valign="middle">
+	Like the aforementioned panels, only much simpler. You cannot specify any
+	front panels to be displayed with any effects.
+	Front panels will be displayed in front of all other sprites (except the
+	status window). The maximum number of front panels is 26.
+	<br><br>
+	<b>Optional</b>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="left" valign="middle" width=200>direction [direction]</td>
+<td align="left" valign="middle">
+	You may specify a direction for levels to scroll in.
+	Valid directions are <i>up, down, left</i> and <i>right.</i>
+	Up and down are used for elevators, obviously.
+	By default, levels scroll to the right.
+	<br><br>
+	<b>Optional</b>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200>mirror [0/1]</td>
+<td align="left" valign="middle">
+	When mirror mode is enabled, the program will draw copies of all objects between
+	the panels and the background. You may use this to create mirrors on the walls
+	(as seen in level 6).
+	<br><br>
+	<b>Optional</b>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+
+<b><font size="+1" class="big">2. Putting the enemies in.  </font> </b><br><br>
+
+
+After creating the backgrounds for your level, you can start putting in the enemies, objects, and items. There are a number of things you can do in a level. We'll first start with adding enemies, objects, and items. When a property for a "character" is used, remember that this also applies for objects and items. <br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+<tr>
+<td align="left" valign="middle" width=200> spawn	[id]</td>
+<td align="left" valign="middle">Command to spawn a character, object or item in a level. The id is the characters name a defined in the <i>character.txt</i>. <b>Mandatory</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> alias	[name]</td>
+<td align="left" valign="middle">Change the displayed name. If you don't use this the name defined in the <i>character.txt</i> will be used. Names consisting of more parts must be connected with an underscore (e.g. Timmy_Turner) <b> Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> map	[num] </td>
+<td align="left" valign="middle"> This changes the colourmap for this character, as defined in the <i>character.txt</i>. E.g. Ralf has 3 remap colours. If you don't define the map, it will take the standard colour. <b>Optional</b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> health	[num]</td>
+<td align="left" valign="middle"> This changes the health of the character. When it is not used, the standard health for this character will be used. <b>Optional</b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>item	[id] </td>
+<td align="left" valign="middle"> Only obstacles can contain items, and only one item. However items can also be spawned without an obstable. Simply state "spawn 1up" (for instance). 
+ <b>Optional</b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200>2pitem [id]  </td>
+<td align="left" valign="middle"> You can also have items that will only be spawned when 2 players play simultaniously. use 2pitem for this. <b>Optional</b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> boss	[0/1] </td>
+<td align="left" valign="middle"> Use 1 for a boss, and 0 for a regular enemy (or leave it out). You can have multiple bosses, but once a boss has been defeated the level ends. <b>Optional</b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> flip	[0/1] </td>
+<td align="left" valign="middle">0 = face left, 1 = face right. With this you can flip a character horizontaly, only useful for objects. <b>Optional</b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> coords	[num] [num] </td>
+<td align="left" valign="middle"> These are the coordinates at wich the character will spawn relative to scroll posistion. The first number is the x coordinate, the second number is the y coordinate of the screen. So to spawn a character in the top left of the screen you need coords 0 160. Between x coordinates 0 and 320 an enemy will fall out of the air (objects and items suddenly appear). To have a character walk into the screen you must use a x coordinate of about 350 (to let him walk in from the right) of -30 (to let him walk in from the left). Use a larger x coordinate for biker-k's (e.g. 400), because of their speed. <b>Mandatory</b></td>
+</tr>
+</table>
+<br>
+
+<img src="images/coords.gif" width="320" height="240"><br>The coordinates in BOR.<br><br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+<tr>
+<td align="left" valign="middle" width=200> at	[scrollpos] </td>
+<td align="left" valign="middle"> Use this to give the position in the level when the character should be spawned. The number can range from 0 to the end of the level. E.g when the scrollpos is 700 the character will be spawned after the hero walked through a little over 2 screens. <b>Mandatory</b></td>
+</tr>
+
+</table>
+
+
+
+<br><br>
+<b> Example of a spawned character</b> <br>
+<table border="0" cellspacing="0" cellpadding="0" width="150" height="50">
+<tr>
+<td align="left" valign="middle" width=200><i>
+spawn	ralf <br>
+alias	Timmy_Turner <br>
+map	1 <br>
+health	45 <br>
+coords	-30 210 <br>
+at	700 <br>
+</i><br><br>
+</td>
+</tr>
+</table>
+
+
+
+<b><font size="+1" class="big">3. Other commands </font> </b><br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+<tr>
+<td align="left" valign="middle" width=200> wait <br>
+	at	[scrollpos] </td>
+<td align="left" valign="middle"> This blocks scrolling until all enemies, that were spawned prior to the wait, are defeated. <b></b></td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=200> group	[min] [max] <br>
+	at	[scrollpos] </td>
+<td align="left" valign="middle"> 
+ If the number of enemies drops below [min], more enemies will be spawned
+ (if possible).
+
+ No more than [max] enemies will be present.
+
+ So, to make enemies appear in groups of four, use this:
+ group 1 4.
+
+ To make them appear normally, use this:
+ group 100 100.
+<br>
+Waits, objects and items do not count in a group AFTER they have been spawned. Before spawning, they do count. So if you work with a small group (e.g. group 1 2), a wait will only be spawned when only one enemy is left. Therefore it is best to us groups only when a wait is already active.
+
+<b></b></td>
+</tr>
+</table>
+
+
+<br><br>
+<b> Example of a <u>bad</u> grouping</b> <br>
+<table border="0" cellspacing="0" cellpadding="0" width="150" height="50">
+<tr>
+<td align="left" valign="middle" width=200><i>
+
+group	2 2 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	-30 210 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	380 210 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	380 210 <br>
+at	700 <br>
+<br>
+
+wait <br>
+at	700<br>
+
+</i>
+</td>
+</tr>
+</table>
+<br>
+
+</table>
+
+
+There will always be 2 enemies present, until all are defeated. So if you don't defeat 2 enemies, the wait will not become active, and the player can keep walking.
+<br><br>
+So you should do it like this:
+
+<br><br>
+<b> Example of a <u>good</u> grouping</b> <br>
+<table border="0" cellspacing="0" cellpadding="0" width="150" height="50">
+<tr>
+<td align="left" valign="middle" width=200><i>
+wait <br>
+at	700<br>
+<br>
+group	2 2 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	-30 210 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	380 210 <br>
+at	700 <br>
+<br>
+spawn	ralf <br>
+coords	380 210 <br>
+at	700 <br>
+<br>
+
+</i>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<b><font size="+1" class="big">4. Levels.txt </font> </b><br><br>
+
+In  data\levels.txt the order of the levels are defined. And here's how you do it.<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+<tr>
+<td align="left" valign="middle" width=200> set	[name] <br></td>
+<td align="left" valign="middle"> Start a new set of levels (e.g. "easy" or "normal").<b></b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> file	[filename] <br></td>
+<td align="left" valign="middle"> Specify the location of a level file.<b></b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> next <br></td>
+<td align="left" valign="middle"> Go to next level (show "stage clear" and stuff).<b></b></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width=200> scene	[filename] <br></td>
+<td align="left" valign="middle"> Give the location of a scene, and it will be shown. <b></b></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+<br><br>
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+</center>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<font size="+2" class="big"><b>Limitations to BOR</b></font>
+<br><br>
+
+To inform those who run into the limitations of BoR, or fear that they might, here are some lines from the source code. <br><br>
+
+<table border="0" cellspacing="0" cellpadding="1" width="300" height="50">
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">MAX_SPRITES </td>
+<td align="left" valign="top">2000 </td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> MAX_ANIMS</td>
+<td align="left" valign="top"> 500</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> MAX_MODELS</td>
+<td align="left" valign="top"> 100</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> MAX_PANELS</td>
+<td align="left" valign="top">26 </td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">ANI_MAX_FRAMES </td>
+<td align="left" valign="top"> 26</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> MAX_COLOUR_MAPS</td>
+<td align="left" valign="top"> 7</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> MAX_NAME_LEN</td>
+<td align="left" valign="top"> 20</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> LEVEL_MAX_SPAWNS</td>
+<td align="left" valign="top"> 300</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> LEVEL_MAX_PANELS</td>
+<td align="left" valign="top"> 1000</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top"> LEVEL_MAX_HOLES </td>
+<td align="left" valign="top"> 20</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">MAX_LEVELS       </td>
+<td align="left" valign="top"> 50</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">MAX_DIFFICULTIES </td>
+<td align="left" valign="top"> 5</td>
+</tr>
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">MAX_SOUND_CACHE  </td>
+<td align="left" valign="top">64 </td>
+</tr>
+
+<tr>
+<td align="left" valign="top">#define</td>
+<td align="left" valign="top">MAX_FILES  </td>
+<td align="left" valign="top">3000 </td>
+</tr>
+
+
+
+
+</table>
+
+
+
+<br><br>
+The limit of 2000 sprites means that you cannot use more than a total of 2000 sprites for all character models combined. In other words, if you perform a file count on your data/chars directory, and it comes up with a number greater than 2000, you could have a problem (especially if you double-loaded some images). 
+<br><br>
+
+You cannot load more than 500 animations. Same deal as with the sprites, but unfortunately you can't count them as easily as with the sprites. 
+<br><br>
+
+The maximum of 100 models corresponds to the number of text files in your data/chars directory, so these can be counted quite easily. BoR uses about 40 of them in the default pack. 
+<br><br>
+
+The maximum number of background panels that can be loaded is, logically, 26, since you set the order with the tokens A through Z. 
+<br><br>
+
+ANI_MAX_FRAMES indicates that you can use no more than 32 frames in an animation. 
+<br><br>
+
+Well, I think you get the idea for the rest of them as well. The default pack file that comes with BoR rarely uses more than half of any of these values, so you should be able to make a mod about twice the size of the original. Which is pretty big, isn't it?
+<br><br>
+
+
+MAX_FILES indicates that the total number of files in the packfile has a maximum of 3000.
+
+
+
+<br><br>
+<br><br>
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+
+
+</center>
+
+
+
+</body>
+</html>
+

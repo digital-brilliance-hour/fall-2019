@@ -8,11 +8,13 @@
 #	scene	[filename]	Show a cut-scene
 #
 
-
+set Kevins_Mode
+file 	data/levels/mynewlevel2.txt
 
 set	Grouping
-
-file	data/levels/mynewlevel.txt
+file 	data/levels/mynewlevel2.txt
+next
+file	data/levels/example1.txt
 next
 file	data/levels/holes.txt
 next

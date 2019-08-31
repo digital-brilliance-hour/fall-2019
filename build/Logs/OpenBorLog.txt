@@ -1,8 +1,8 @@
-Total Ram: 3947741184 Bytes
- Free Ram: 2591285248 Bytes
- Used Ram: 3428352 Bytes
+Total Ram: 8520359936 Bytes
+ Free Ram: 2353954816 Bytes
+ Used Ram: 3391488 Bytes
 
-debug:nativeWidth, nativeHeight, bpp, Hz  1600, 900, 24, 60
+debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -23,6 +23,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
+Joystick: "UNKNOWN" connected at port: 0 at 2019-08-30 13:01:49
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -78,16 +79,18 @@ Loaded 'Mighty' from data/chars/mighty/mighty.txt
 
 Loading models...............	Done!
 Object engine init...........	Done!
-Input init...................	No Joystick(s) Found!
+Input init...................	
+1 joystick(s) found!
+UNKNOWN - 4 axes, 12 buttons, 1 hat(s)
 Done!
 Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/mynewlevel.txt'
-Total Ram: 3947741184 Bytes
- Free Ram: 2564390912 Bytes
- Used Ram: 34127872 Bytes
+Level Loading:   'data/levels/mynewlevel2.txt'
+Total Ram: 8520359936 Bytes
+ Free Ram: 2295971840 Bytes
+ Used Ram: 61206528 Bytes
 
 Loaded '1up' from data/chars/misc/1up.txt 
 Loaded 'Shermie' from data/chars/shermie/shermie.txt 
@@ -102,10 +105,10 @@ Loaded 'biker-k'' from data/chars/biker-k/biker-k.txt
 Loaded 'K'' from data/chars/k/k.txt 
 Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
 
-Level Loaded:    'data/levels/mynewlevel.txt'
-Total Ram: 3947741184 Bytes
- Free Ram: 2562646016 Bytes
- Used Ram: 35389440 Bytes
+Level Loaded:    'data/levels/mynewlevel2.txt'
+Total Ram: 8520359936 Bytes
+ Free Ram: 2292715520 Bytes
+ Used Ram: 62476288 Bytes
 Total sprites mapped: 639
 
 
@@ -118,20 +121,20 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 3947741184 Bytes
- Free Ram: 2562908160 Bytes
- Used Ram: 55590912 Bytes
+Total Ram: 8520359936 Bytes
+ Free Ram: 2551394304 Bytes
+ Used Ram: 62517248 Bytes
 
 Release level data...........
-Level Unloading: 'data/levels/mynewlevel.txt'
-Total Ram: 3947741184 Bytes
- Free Ram: 2562895872 Bytes
- Used Ram: 55590912 Bytes
+Level Unloading: 'data/levels/mynewlevel2.txt'
+Total Ram: 8520359936 Bytes
+ Free Ram: 2551394304 Bytes
+ Used Ram: 62517248 Bytes
 
 RAM Status:
-Total Ram: 3947741184 Bytes
- Free Ram: 2562895872 Bytes
- Used Ram: 55590912 Bytes
+Total Ram: 8520359936 Bytes
+ Free Ram: 2551394304 Bytes
+ Used Ram: 62517248 Bytes
 
 Done!
 

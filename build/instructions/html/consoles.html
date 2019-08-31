@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<font size="+2" class="big"><b>Consoles: Dreamcast, PS2, Xbox</b></font>
+<br><br>
+
+BOR is also available for the Dreamcast, ps2, and xbox. And you can play your mod on a console!<br>
+
+
+<br><br>
+<b><font size="+1" class="big">Memory restrictions </font> </b><br><br>
+Since consoles have a certain amount of memory, there's maximum amount of data you can use for your mod if you want it to work on a console.<br><br>
+
+<table border="1" cellspacing="0" cellpadding="1" width="400" height="50">
+<tr>
+<td align="left" valign="top"></td>
+<td align="left" valign="top">Dreamcast</td>
+<td align="left" valign="top">Playstation2</td>
+<td align="left" valign="top">Xbox</td>
+</tr>
+<tr>
+<td align="left" valign="top">Memory used in official pack</td>
+<td align="left" valign="top">12 MB </td>
+<td align="left" valign="top">22 MB</td>
+<td align="left" valign="top">probably 22MB</td>
+</tr>
+<tr>
+<td align="left" valign="top">Total memory</td>
+<td align="left" valign="top">16 Mb</td>
+<td align="left" valign="top">32 MB </td>
+<td align="left" valign="top">64 MB</td>
+</tr>
+<tr>
+<td align="left" valign="top">Estimated max characters*</td>
+<td align="left" valign="top">36</td>
+<td align="left" valign="top">42</td>
+<td align="left" valign="top">90</td>
+</tr>
+</table>
+
+*)The estimated maximum number of characters is a very rough one, since heroes take up more space than enemies, and the amount of animation can differ a lot between characters. Also this estimation is based on King of Fighters characters, if you use smaller or bigger characters, things change. So if you use a lot of characters, just try it out.
+<br><br>
+
+<b>Some words from Neill Corlett on mods for DC and PS2</b>
+<br><br>
+
+1. Memory usage is kind of tight, especially since BoR doesn't seem to free certain resources between levels. (I'm not sure of this since I didn't examine bor.c too thoroughly - because BoR is so nicely designed and modular, I didn't need to.) By the time you finish the game, the Dreamcast version is using 12MB (out of 16MB) and the PS2 version is using 22MB (out of 32MB). I don't think this is a memory leak per se, since it doesn't go up any further if you go through the game again. 
+<br>
+
+The behavior isn't entirely friendly if you run out of memory, either: The DC version will simply lock up, although if you're using dcload, you'll get a "Heap and stack collision" message on the console. The PS2 version will show a "Out of memory!" or similar message in the upper-left corner of the screen in the ugly DevCons font. 
+<br><br>
+
+2. The .PAK directory info is cached in memory at all times, and its total size can't be bigger than about 256K. If I remember right, it's currently 61K, so this shouldn't be a problem unless you're doing an incredibly ambitious mod. 
+<br><br>
+
+3. The console versions don't look for the "PACK" or version signature, because I thought this was unnecessary and it would just add an extra needless seek to the beginning of the file. 
+<br><br>
+
+4. I'm not entirely certain that BMP loading works; I had to redo its header routine extensively and I'm not even sure if the default BOR.PAK uses any BMPs at all. So steer clear of BMP if you can. 
+<br><br>
+
+5. The loose file structure won't work on ps2 and Dreamcast, so use a pak file in your mod for dc/ps2.
+
+<br><br><br><br>
+
+
+<b><font size="+1" class="big"> Making a Selfbooting Dreamcast disc</font> </b><br>
+special thanks to CEDRIC<br><br>
+
+
+<b>Step 1 </b>
+<br>
+
+Extract 'Selfboot', you can find it in consoles\selfboot.exe. It must be installed in C:\Selfboot. 
+<br><br>
+
+<b>Step 2 </b>
+<br>
+Place your bor pak in 'Consoles\Dreamcast\'. Rename it from mymod.pak to bor.pak<br>
+In this directory you should also find a Ip.bin and 1st_read.bin.
+<br><br>
+
+<b>Step 3 </b>
+<br>
+Run Selfboot.exe and select the directory Consoles\Dreamcast\. If you use NERO click the NERO (DAO) or NERO (TAO) button to create a .nrg image (use DAO if your burner supports it). If you use DiscJuggler click the DiscJuggler button to create a .cdi image. If you want to burn with CDRecord select CDRecord, click burn to burn the audio track (make sure there is a blank CD in your CD writer), click Msinfo, click Make Iso to build the image, then click Burn to burn the second session. 
+<br><br>
+
+<b>Step 4 </b>
+<br>
+Burn the NERO or DiscJuggler image with the appropriate program. 
+<br><br>
+
+
+
+
+<br><br>
+<b><font size="+1" class="big"> Making a disc for PS2</font> </b><br><br>
+Hmm, I actually don't know how to make a booting ps2 disc, since I don't have a ps2. Perhaps the mod-chip enables you to simple put the files on a disc and and it'll work. Who knows?
+<br><br>
+Still, don't forget to add bor.pak to the cd.
+
+
+
+
+<br><br><br>
+<b><font size="+1" class="big"> Run your mod on Xbox</font> </b><br><br>
+1. Rename your mymod.pak to BOR.PAK.
+<br>
+2. Upload the your BOR.PAK file to a directory on your XBox
+<br>
+3. Upload the DEFAULT.XBE file to the same directory on your XBox (you can find this file in Consoles\Xbox\)
+<br>
+4. Run the DEFAULT.XBE file
+<br>
+
+
+
+
+<br><br>
+
+
+
+
+
+
+<br><br>
+<br><br>
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+
+
+</center>
+
+
+
+</body>
+</html>
+

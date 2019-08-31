@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Beats of Rage mod</title>
+<body>
+
+
+<br>
+<center>
+<b><font size="+2" class="big">Editing scenes</b></font><br><br>
+
+The scenes, such as the intro and ending, are simply animated gifs. Thus to add your own scenes you need a gif animator. For instance, you can download the Microsoft GIF Animator for free here:
+<a href="http://download.microsoft.com/msdownload/gifanimator/gifsetup.exe">http://download.microsoft.com/msdownload/gifanimator/gifsetup.exe</a><br>
+<br><br>
+
+If you have an animated gif, no bigger than 320x240 pixels, place it in data\scenes\ <br>
+However it is possible to use smaller animations. <br>
+When you have placed the animation in the scenes directory you need to create a text file in the same location. In this text file you can define the music and offset for the animation (the offset is useful when using smaller animations than 320x240).<br><br>
+
+<table border="1" cellspacing="0" cellpadding="0" width="600" height="50">
+
+<tr>
+<td align="left" valign="middle" width=210> music		data/music/time.bor 1</td>
+<td align="left" valign="middle"> Define music, then give the location of the file. The 1 means the music will loop if it stops before the animation has ended. use 0 not to loop the music. <i>The intro music is a special case, and this file must be called remix.bor. </i>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="middle" width=210> animation	data/scenes/falla.gif 0 0</td>
+<td align="left" valign="middle"> First define that is an animation, then give the location of the file. The two number are the x and y coordinate of the topleft of the animation. Use 0 0 for animations that are 320x240, for smaller animations you can edit the coordinates to get the animation centered. Notice that you can play a number of animations in one scene.</td>
+</tr>
+</table>
+
+<br><br>
+If you use a scene consisting of only one image (for instance "thank you for playing"), make sure that you give it a delay, using a gif animation programme. Otherwise the image will only appear for 1/10th of a second.<br><br>
+
+You can also change the introscreen and character select screen. These files can be found in data\bgs\ . Please note that scenes and screens do NOT need to be saved with the bor palette; they can have their own palette. However, you must make the first colour (index 0) black.
+
+
+<br><br><br>
+<u>Entering the scene in the game</u><br>
+You can play these scenes in BOR by typing the location of the scene.txt in the \data\levels.txt.
+
+<br><br>
+<b> Example </b> <br>
+<i>scene	data/scenes/ending.txt</i><br><br>
+
+
+<br><br>
+-----------------------------------------------------------------------<br>
+		http://www.senileteam.com<br>
+-----------------------------------------------------------------------<br>
+
+
+
+</center>
+
+
+
+</body>
+</html>
+
