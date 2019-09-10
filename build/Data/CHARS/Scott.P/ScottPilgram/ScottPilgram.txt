@@ -1,0 +1,65 @@
+name Scott Pilgram
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+
+anim	attack1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/Scott.P/ScottPilgram/00.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/Scott.P/ScottPilgram/00.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	50 98
+	bbox	42 14 24 85
+	frame	data/chars/scott.p/scottpilgram/14.png
+	frame	data/chars/scott.p/scottpilgram/14.png
+	frame	data/chars/scott.p/scottpilgram/15.png
+	frame	data/chars/scott.p/scottpilgram/15.png
+	frame	data/chars/scott.p/scottpilgram/22.png
+	frame	data/chars/scott.p/scottpilgram/22.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/Scott.P/ScottPilgram/00.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/Scott.P/ScottPilgram/00.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/scott.p/scottpilgram/70.png
+	frame	data/chars/scott.p/scottpilgram/70.png
+	frame	data/chars/scott.p/scottpilgram/76.png
+	frame	data/chars/scott.p/scottpilgram/76.png
+	frame	data/chars/scott.p/scottpilgram/77.png
+	frame	data/chars/scott.p/scottpilgram/77.png
+	frame	data/chars/scott.p/scottpilgram/67.png
+	frame	data/chars/scott.p/scottpilgram/67.png
+	frame	data/chars/scott.p/scottpilgram/74.png
+	frame	data/chars/scott.p/scottpilgram/74.png
+	frame	data/chars/scott.p/scottpilgram/68.png
+	frame	data/chars/scott.p/scottpilgram/68.png
+		
+#|edited by openBor Stats v 0.67
+		

@@ -62,3 +62,11 @@ know	Steamer		data/chars/misc/steamer.txt
 know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
+Know Hyde Data/Chars/Hyde/Hyde.txt
+Know Scott.P Data/CHARS/ScottpScott.P/Scott.P.txt
+Know Scott.P Data/Chars/Scott.P/Scott.P.txt
+Know Scott.P Data/Chars/Scott.P/Scott.P.txt
+Know Scott.P Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Know Scott.P Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Know Scott.P Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Know ScottPilgram Data/CHARS/Scott.P/ScottPilgram/ScottPilgram.txt

@@ -8,11 +8,18 @@
 #	scene	[filename]	Show a cut-scene
 #
 
-
+set Harsh_(3_levels)
+file    data/levels/holes.txt    
+next
+file	data/levels/jelatonewlevel.txt
+next
+file	data/levels/Bosszone1.txt
+next
+scene	data/scenes/ending.txt
 
 set	Grouping
 
-file	data/levels/example1.txt
+file	data/levels/jelatonewlevel.txt
 next
 file	data/levels/holes.txt
 next

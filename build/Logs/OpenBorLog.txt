@@ -1,6 +1,6 @@
 Total Ram: 3516645376 Bytes
- Free Ram: 1655394304 Bytes
- Used Ram: 6156288 Bytes
+ Free Ram: 672919552 Bytes
+ Used Ram: 6160384 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
@@ -23,7 +23,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-08-28 12:55:24
+Joystick: "UNKNOWN" connected at port: 0 at 2019-09-09 14:15:28
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -68,6 +68,14 @@ Cacheing 'Steamer' from data/chars/misc/steamer.txt
 Cacheing 'Furnace' from data/chars/misc/furnace.txt
 Cacheing 'Crab' from data/chars/crab/crab.txt
 Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
+Cacheing 'Hyde' from Data/Chars/Hyde/Hyde.txt
+Cacheing 'Scott.P' from Data/CHARS/ScottpScott.P/Scott.P.txt
+Cacheing 'Scott.P' from Data/Chars/Scott.P/Scott.P.txt
+Cacheing 'Scott.P' from Data/Chars/Scott.P/Scott.P.txt
+Cacheing 'Scott.P' from Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Cacheing 'Scott.P' from Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Cacheing 'Scott.P' from Data/CHARS/Scott.P/Scott.P/Scott.P.txt
+Cacheing 'ScottPilgram' from Data/CHARS/Scott.P/ScottPilgram/ScottPilgram.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
@@ -90,41 +98,41 @@ Loading models...............	Done!
 Object engine init...........	Done!
 Input init...................	
 1 joystick(s) found!
-UNKNOWN - 4 axes, 12 buttons, 1 hat(s)
+UNKNOWN - 6 axes, 11 buttons, 1 hat(s)
 Done!
 Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/water3.txt'
+Level Loading:   'data/levels/holes.txt'
 Total Ram: 3516645376 Bytes
- Free Ram: 1582407680 Bytes
- Used Ram: 61632512 Bytes
+ Free Ram: 577581056 Bytes
+ Used Ram: 62414848 Bytes
 
 Loaded 'Angel' from data/chars/angel/angel.txt 
 sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
 sound_load_sample can't load sample from file 'data/sounds/leonahey.wav'!
 
-Level Loaded:    'data/levels/water3.txt'
+Level Loaded:    'data/levels/holes.txt'
 Total Ram: 3516645376 Bytes
- Free Ram: 1582080000 Bytes
- Used Ram: 61935616 Bytes
+ Free Ram: 568004608 Bytes
+ Used Ram: 62435328 Bytes
 Total sprites mapped: 443
 
-Level Unloading: 'data/levels/water3.txt'
+Level Unloading: 'data/levels/holes.txt'
 Total Ram: 3516645376 Bytes
- Free Ram: 1582071808 Bytes
- Used Ram: 62349312 Bytes
+ Free Ram: 557568000 Bytes
+ Used Ram: 62566400 Bytes
 
 RAM Status:
 Total Ram: 3516645376 Bytes
- Free Ram: 1582071808 Bytes
- Used Ram: 62349312 Bytes
+ Free Ram: 557568000 Bytes
+ Used Ram: 62566400 Bytes
 
-Level Loading:   'data/levels/example1.txt'
+Level Loading:   'data/levels/jelatonewlevel.txt'
 Total Ram: 3516645376 Bytes
- Free Ram: 1579642880 Bytes
- Used Ram: 62353408 Bytes
+ Free Ram: 566509568 Bytes
+ Used Ram: 62566400 Bytes
 
 Loaded '1up' from data/chars/misc/1up.txt 
 Loaded 'Shermie' from data/chars/shermie/shermie.txt 
@@ -145,11 +153,43 @@ sound_load_sample can't load sample from file 'data/sounds/die2.wav'!
 Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
 sound_load_sample can't load sample from file 'data/sounds/alien.wav'!
 
-Level Loaded:    'data/levels/example1.txt'
+Level Loaded:    'data/levels/jelatonewlevel.txt'
 Total Ram: 3516645376 Bytes
- Free Ram: 1578455040 Bytes
- Used Ram: 63528960 Bytes
+ Free Ram: 708952064 Bytes
+ Used Ram: 63995904 Bytes
 Total sprites mapped: 690
+
+Level Unloading: 'data/levels/jelatonewlevel.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 688168960 Bytes
+ Used Ram: 64417792 Bytes
+
+RAM Status:
+Total Ram: 3516645376 Bytes
+ Free Ram: 688254976 Bytes
+ Used Ram: 64020480 Bytes
+
+Level Loading:   'data/levels/Bosszone1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 688320512 Bytes
+ Used Ram: 64102400 Bytes
+
+
+Level Loaded:    'data/levels/Bosszone1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 688193536 Bytes
+ Used Ram: 64544768 Bytes
+Total sprites mapped: 690
+
+Level Unloading: 'data/levels/Bosszone1.txt'
+Total Ram: 3516645376 Bytes
+ Free Ram: 724107264 Bytes
+ Used Ram: 64610304 Bytes
+
+RAM Status:
+Total Ram: 3516645376 Bytes
+ Free Ram: 724180992 Bytes
+ Used Ram: 64106496 Bytes
 
 
 ************ Shutting Down ************
@@ -162,20 +202,10 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 3516645376 Bytes
- Free Ram: 1579102208 Bytes
- Used Ram: 63545344 Bytes
+ Free Ram: 713998336 Bytes
+ Used Ram: 64573440 Bytes
 
 Release level data...........
-Level Unloading: 'data/levels/example1.txt'
-Total Ram: 3516645376 Bytes
- Free Ram: 1579102208 Bytes
- Used Ram: 63545344 Bytes
-
-RAM Status:
-Total Ram: 3516645376 Bytes
- Free Ram: 1579102208 Bytes
- Used Ram: 63545344 Bytes
-
 Done!
 
 Release graphics data........	Done!
