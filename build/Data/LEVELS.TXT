@@ -8,11 +8,17 @@
 #	scene	[filename]	Show a cut-scene
 #
 
-
+set dantes_realm
+file    data/levels/dantenewlvl.txt
+next
+file    data/levels/neon.txt
+next
+file    data/levels/holes.txt
+scene   data/scenes/ending.txt
 
 set	Grouping
 
-file	data/levels/example1.txt
+file	data/levels/mynewlvl.txt
 next
 file	data/levels/holes.txt
 next

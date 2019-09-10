@@ -1,0 +1,61 @@
+name blue ninja
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+anim	attack1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/blueninja/00.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/blueninja/00.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/blueninja/00.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/blueninja/00.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/blueninja/00.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	21 52
+	bbox	42 14 24 85
+	frame	data/chars/blueninja/0.png
+	frame	data/chars/blueninja/1.png
+	range	13 80
+	frame	data/chars/blueninja/2.png
+	offset	0 0
+	frame	data/chars/blueninja/3.png
+	frame	data/chars/blueninja/4.png
+	frame	data/chars/blueninja/5.png
+	frame	data/chars/blueninja/6.png
+	offset	0 0
+	frame	data/chars/blueninja/7.png
+	frame	data/chars/blueninja/8.png
+	frame	data/chars/blueninja/9.png
+	frame	data/chars/blueninja/10.png
+		
+#|edited by openBor Stats v 0.67
+		

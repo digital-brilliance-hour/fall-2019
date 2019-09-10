@@ -1,13 +1,13 @@
 # Street
-music		data/music/remix.bor
+music       data/music/remix.bor
 bossmusic	data/music/menu.bor
 
 # Load images
 background	data/bgs/street/back.gif
 
 # Front layer
-frontpanel	data/bgs/street/f00.gif
-frontpanel	data/bgs/street/f01.gif
+frontpanel	data/bgs/stfrontpanel	data/bgs/street/f00.gif
+reet/f01.gif
 frontpanel	data/bgs/street/f02.gif
 frontpanel	data/bgs/street/f03.gif
 
