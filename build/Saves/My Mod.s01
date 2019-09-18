@@ -3,4 +3,5 @@ void main() {
 	changemodelproperty("Max",4,1);
 	changemodelproperty("Mandy",4,1);
 	changemodelproperty("Mighty",4,1);
+	changemodelproperty("CapCommando",4,1);
 }

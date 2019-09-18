@@ -13,6 +13,7 @@ load	Kula		data/chars/kula/kula.txt
 load	Max		data/chars/maxima/maxima.txt
 load	Mandy		data/chars/mary/mary.txt
 load	Mighty		data/chars/mighty/mighty.txt
+load    CapCommando Data/Chars/capcommando/capcommando.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
@@ -64,4 +65,4 @@ know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
 Know cammi Data/Chars/cammi/cammi.txt
 Know camms Data/Chars/camms/camms.txt
-Know CapCommando Data/Chars/CapCommando/CapCommando.txt
+Know Food Data/CHARS/misc/Food.txt

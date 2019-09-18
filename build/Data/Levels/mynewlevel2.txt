@@ -2,26 +2,30 @@
 music		data/music/Zangief.bor
 bossmusic	data/music/menu.bor
 
+palette		data/bgs/village/village-panel2.act
+
 # Load images
-background	data/bgs/street/back.gif
+background	data/bgs/village/background.png
 
 # Front layer
-frontpanel	data/bgs/street/f00.gif
-frontpanel	data/bgs/street/f01.gif
-frontpanel	data/bgs/street/f02.gif
-frontpanel	data/bgs/street/f03.gif
+#frontpanel	data/bgs/street/f00.gif
+#frontpanel	data/bgs/street/f01.gif
+#frontpanel	data/bgs/street/f02.gif
+#frontpanel	data/bgs/street/f03.gif
 
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
-panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
-panel		data/bgs/street/n03.gif	none				none
-panel		data/bgs/street/n04.gif	none				none
-panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
-panel		data/bgs/street/n06.gif	none				none
-panel		data/bgs/street/n07.gif	none				none
-panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+panel           data/bgs/village/panel.gif  none        none
+#panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
+#panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
+#panel		data/bgs/street/n03.gif	none				none
+#panel		data/bgs/street/n04.gif	none				none
+#panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
+#panel		data/bgs/street/n06.gif	none				none
+#panel		data/bgs/street/n07.gif	none				none
+#panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+
 
 # ab = Pinepot left
 # c = wall, ridge left
@@ -37,8 +41,9 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-order	ddeeecdffhdggdabc
-order	fhededdhfccggdaf
+#order	ddeeecdffhdggdabc
+#order	fhededdhfccggdaf
+order   a
 
 
 # Spawn format:
@@ -80,7 +85,10 @@ order	fhededdhfccggdaf
 
 
 #--group1-----
-spawn	1up
+setpalette 1
+at 	0
+
+spawn	Food
 coords	200 180
 at	0
 

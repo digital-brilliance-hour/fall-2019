@@ -4,7 +4,7 @@ speed	12
 type	player
 shadow	3
 diesound data/sounds/die1.wav
-secret	1
+#secret	1
 
 icon	data/chars/mighty/icon.gif
 remap	data/chars/mighty/idle00.gif data/chars/mighty/alt.gif

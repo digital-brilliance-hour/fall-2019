@@ -1,15 +1,19 @@
 Total Ram: 8520359936 Bytes
- Free Ram: 2353954816 Bytes
+ Free Ram: 953757696 Bytes
  Used Ram: 3391488 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
+Joystick: "UNKNOWN" connected at port: 0 at 2019-09-16 14:09:13
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
 
 FileCaching System Init......	Disabled
 Initializing video............
-'data/video.txt' not found.
+Reading video settings from 'data/video.txt'.
+
+Colordepth is depreciated. All modules are displayed with a 32bit color screen.
+
 Initialized video.............	320x240 (Mode: 0)
 
 Loading menu.txt.............	Done!
@@ -23,12 +27,12 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-08-30 13:01:49
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
 Cacheing 'Mandy' from data/chars/mary/mary.txt
 Cacheing 'Mighty' from data/chars/mighty/mighty.txt
+Cacheing 'CapCommando' from Data/Chars/capcommando/capcommando.txt
 Cacheing 'Apple' from data/chars/misc/apple.txt
 Cacheing 'Meat' from data/chars/misc/meat.txt
 Cacheing '1up' from data/chars/misc/1up.txt
@@ -70,12 +74,14 @@ Cacheing 'Crab' from data/chars/crab/crab.txt
 Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
 Cacheing 'cammi' from Data/Chars/cammi/cammi.txt
 Cacheing 'camms' from Data/Chars/camms/camms.txt
+Cacheing 'Food' from Data/CHARS/misc/Food.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
 Loaded 'Max' from data/chars/maxima/maxima.txt 
 Loaded 'Mandy' from data/chars/mary/mary.txt 
 Loaded 'Mighty' from data/chars/mighty/mighty.txt 
+Loaded 'CapCommando' from Data/Chars/capcommando/capcommando.txt 
 
 Loading models...............	Done!
 Object engine init...........	Done!
@@ -89,10 +95,10 @@ Save settings so far........	Done!
 
 Level Loading:   'data/levels/mynewlevel2.txt'
 Total Ram: 8520359936 Bytes
- Free Ram: 2295971840 Bytes
- Used Ram: 61206528 Bytes
+ Free Ram: 965918720 Bytes
+ Used Ram: 51216384 Bytes
 
-Loaded '1up' from data/chars/misc/1up.txt 
+Loaded 'Food' from Data/CHARS/misc/Food.txt 
 Loaded 'Shermie' from data/chars/shermie/shermie.txt 
 Loaded 'Steamer' from data/chars/misc/steamer.txt 
 Loaded 'Steam' from data/chars/misc/steam.txt 
@@ -107,9 +113,9 @@ Loaded 'Lobster' from data/chars/Lobster/Lobster.txt
 
 Level Loaded:    'data/levels/mynewlevel2.txt'
 Total Ram: 8520359936 Bytes
- Free Ram: 2292715520 Bytes
- Used Ram: 62476288 Bytes
-Total sprites mapped: 639
+ Free Ram: 962699264 Bytes
+ Used Ram: 53784576 Bytes
+Total sprites mapped: 683
 
 
 ************ Shutting Down ************
@@ -122,19 +128,19 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 8520359936 Bytes
- Free Ram: 2551394304 Bytes
- Used Ram: 62517248 Bytes
+ Free Ram: 970043392 Bytes
+ Used Ram: 52781056 Bytes
 
 Release level data...........
 Level Unloading: 'data/levels/mynewlevel2.txt'
 Total Ram: 8520359936 Bytes
- Free Ram: 2551394304 Bytes
- Used Ram: 62517248 Bytes
+ Free Ram: 970043392 Bytes
+ Used Ram: 52781056 Bytes
 
 RAM Status:
 Total Ram: 8520359936 Bytes
- Free Ram: 2551394304 Bytes
- Used Ram: 62517248 Bytes
+ Free Ram: 970866688 Bytes
+ Used Ram: 51937280 Bytes
 
 Done!
 
@@ -146,7 +152,8 @@ Unload 'Kula' ............Done.
 Unload 'Max' ............Done.
 Unload 'Mandy' ............Done.
 Unload 'Mighty' ............Done.
-Unload '1up' ............Done.
+Unload 'CapCommando' ............Done.
+Unload 'Food' ............Done.
 Unload 'Shermie' ............Done.
 Unload 'Steamer' ............Done.
 Unload 'Steam' ............Done.
