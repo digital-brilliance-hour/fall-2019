@@ -1,9 +1,9 @@
-Total Ram: 8520359936 Bytes
- Free Ram: 953757696 Bytes
- Used Ram: 3391488 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 17472868352 Bytes
+ Used Ram: 3571712 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
-Joystick: "UNKNOWN" connected at port: 0 at 2019-09-16 14:09:13
+Joystick: "UNKNOWN" connected at port: 0 at 2019-09-22 13:55:47
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -94,9 +94,9 @@ Save settings so far........	Done!
 
 
 Level Loading:   'data/levels/mynewlevel2.txt'
-Total Ram: 8520359936 Bytes
- Free Ram: 965918720 Bytes
- Used Ram: 51216384 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 17444544512 Bytes
+ Used Ram: 50163712 Bytes
 
 Loaded 'Food' from Data/CHARS/misc/Food.txt 
 Loaded 'Shermie' from data/chars/shermie/shermie.txt 
@@ -112,9 +112,9 @@ Loaded 'K'' from data/chars/k/k.txt
 Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
 
 Level Loaded:    'data/levels/mynewlevel2.txt'
-Total Ram: 8520359936 Bytes
- Free Ram: 962699264 Bytes
- Used Ram: 53784576 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 17442582528 Bytes
+ Used Ram: 51552256 Bytes
 Total sprites mapped: 683
 
 
@@ -127,20 +127,20 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 8520359936 Bytes
- Free Ram: 970043392 Bytes
- Used Ram: 52781056 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 16739540992 Bytes
+ Used Ram: 51089408 Bytes
 
 Release level data...........
 Level Unloading: 'data/levels/mynewlevel2.txt'
-Total Ram: 8520359936 Bytes
- Free Ram: 970043392 Bytes
- Used Ram: 52781056 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 16739540992 Bytes
+ Used Ram: 51089408 Bytes
 
 RAM Status:
-Total Ram: 8520359936 Bytes
- Free Ram: 970866688 Bytes
- Used Ram: 51937280 Bytes
+Total Ram: 25722060800 Bytes
+ Free Ram: 16739540992 Bytes
+ Used Ram: 51089408 Bytes
 
 Done!
 

@@ -5,10 +5,10 @@ bossmusic	data/music/menu.bor
 palette		data/bgs/village/village-panel2.act
 
 # Load images
-background	data/bgs/village/background.png
+background	data/bgs/bridge/background.png
 
 # Front layer
-#frontpanel	data/bgs/street/f00.gif
+#frontpanel	data/bgs/city/fg-1.png
 #frontpanel	data/bgs/street/f01.gif
 #frontpanel	data/bgs/street/f02.gif
 #frontpanel	data/bgs/street/f03.gif
@@ -16,7 +16,11 @@ background	data/bgs/village/background.png
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel           data/bgs/village/panel.gif  none        none
+panel           data/bgs/bridge/1.png  none        none
+panel           data/bgs/bridge/2.png  none        none
+panel           data/bgs/bridge/3.png  none        none
+panel           data/bgs/bridge/4.png  none        none
+panel           data/bgs/bridge/5.png  none        none
 #panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
 #panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
 #panel		data/bgs/street/n03.gif	none				none
@@ -43,7 +47,8 @@ panel           data/bgs/village/panel.gif  none        none
 #
 #order	ddeeecdffhdggdabc
 #order	fhededdhfccggdaf
-order   a
+order   abcdeabcdeabcde
+order   abcdeabcdeabcde
 
 
 # Spawn format:
@@ -85,8 +90,8 @@ order   a
 
 
 #--group1-----
-setpalette 1
-at 	0
+#setpalette 1
+#at 	0
 
 spawn	Food
 coords	200 180
