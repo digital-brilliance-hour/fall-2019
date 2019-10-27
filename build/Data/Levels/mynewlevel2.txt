@@ -2,10 +2,10 @@
 music		data/music/Zangief.bor
 bossmusic	data/music/menu.bor
 
-palette		data/bgs/village/village-panel2.act
+palette		data/bgs/village/village.act
 
 # Load images
-background	data/bgs/bridge/background.png
+background	data/bgs/ice/background.png
 
 # Front layer
 #frontpanel	data/bgs/city/fg-1.png
@@ -16,11 +16,11 @@ background	data/bgs/bridge/background.png
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel           data/bgs/bridge/1.png  none        none
-panel           data/bgs/bridge/2.png  none        none
-panel           data/bgs/bridge/3.png  none        none
-panel           data/bgs/bridge/4.png  none        none
-panel           data/bgs/bridge/5.png  none        none
+panel           data/bgs/ice/panel.png  none        none
+#panel           data/bgs/bridge/2.png  none        none
+#panel           data/bgs/bridge/3.png  none        none
+#panel           data/bgs/bridge/4.png  none        none
+#panel           data/bgs/bridge/5.png  none        none
 #panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
 #panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
 #panel		data/bgs/street/n03.gif	none				none
@@ -47,8 +47,7 @@ panel           data/bgs/bridge/5.png  none        none
 #
 #order	ddeeecdffhdggdabc
 #order	fhededdhfccggdaf
-order   abcdeabcdeabcde
-order   abcdeabcdeabcde
+order   a
 
 
 # Spawn format:

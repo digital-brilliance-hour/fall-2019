@@ -6,7 +6,8 @@ speed   10
 diesound data/sounds/eek.wav
 
 icon	data/chars/capcommando/icon.gif
-palette data/chars/capcommando/idle-1.png
+#palette data/chars/capcommando/burglar.act
+
 
 
 
@@ -80,7 +81,7 @@ anim	idle
 	delay	7
 	offset	28 68
 	bbox	15 0 24 67
-	frame	data/chars/capcommando/idle-1.png
+	frame	data/chars/capcommando/idle-01.png
 		
 anim	jump
 	offset	29 68
@@ -149,21 +150,21 @@ anim	walk
 	bbox	10 0 24 79
 	offset	22 70
 	frame	data/chars/capcommando/5.png
-	bbox	3 0 25 79
-	offset	16 70
-	frame	data/chars/capcommando/6.png
-	bbox	9 0 27 79
+	bbox	11 0 25 79
 	offset	24 70
-	frame	data/chars/capcommando/7.png
-	bbox	14 0 27 79
+	frame	data/chars/capcommando/6.png
+	bbox	13 0 27 79
 	offset	27 70
-	frame	data/chars/capcommando/8.png
+	frame	data/chars/capcommando/7.png
 	bbox	9 0 27 79
 	offset	24 70
 	frame	data/chars/capcommando/9.png
 	bbox	3 0 27 79
 	offset	17 70
 	frame	data/chars/capcommando/10.png
+	bbox	3 0 27 79
+	offset	16 70
+	frame	data/chars/capcommando/8.png
 		
 #|edited by openBor Stats v 0.67
 		
