@@ -1,0 +1,98 @@
+name ryan
+type player
+health  100
+gfxshadow	1
+speed   10
+
+palette     data/chars/ryan/ryan.act
+
+anim	attack1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/attack-01.png
+	frame	data/chars/ryan/attack-02.png
+	frame	data/chars/ryan/attack-03.png
+	frame	data/chars/ryan/attack-04.png
+	frame	data/chars/ryan/attack-05.png
+	frame	data/chars/ryan/attack-06.png
+	frame	data/chars/ryan/attack-07.png
+	frame	data/chars/ryan/attack-08.png
+	frame	data/chars/ryan/attack-09.png
+	frame	data/chars/ryan/attack-10.png
+	frame	data/chars/ryan/attack-11.png
+	frame	data/chars/ryan/attack-12.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/fall-1.png
+	frame	data/chars/ryan/fall-2.png
+	frame	data/chars/ryan/fall-3.png
+	frame	data/chars/ryan/fall-4.png
+	frame	data/chars/ryan/fall-5.png
+	frame	data/chars/ryan/fall-6.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/idle-1.png
+	frame	data/chars/ryan/idle-2.png
+	frame	data/chars/ryan/idle-3.png
+	frame	data/chars/ryan/idle-4.png
+	frame	data/chars/ryan/idle-5.png
+	frame	data/chars/ryan/idle-6.png
+	frame	data/chars/ryan/idle-7.png
+	frame	data/chars/ryan/idle-8.png
+	frame	data/chars/ryan/idle-9.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/pain-01.png
+	frame	data/chars/ryan/pain-02.png
+	frame	data/chars/ryan/pain-03.png
+	frame	data/chars/ryan/pain-04.png
+	frame	data/chars/ryan/pain-05.png
+	frame	data/chars/ryan/pain-06.png
+	frame	data/chars/ryan/pain-07.png
+	frame	data/chars/ryan/pain-08.png
+	frame	data/chars/ryan/pain-09.png
+	frame	data/chars/ryan/pain-10.png
+	frame	data/chars/ryan/pain-11.png
+	frame	data/chars/ryan/pain-12.png
+	frame	data/chars/ryan/pain-13.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/rise-1.png
+	frame	data/chars/ryan/rise-2.png
+	frame	data/chars/ryan/rise-3.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/walk-01.png
+	frame	data/chars/ryan/walk-02.png
+	frame	data/chars/ryan/walk-03.png
+	frame	data/chars/ryan/walk-04.png
+	frame	data/chars/ryan/walk-05.png
+	frame	data/chars/ryan/walk-06.png
+	frame	data/chars/ryan/walk-07.png
+	frame	data/chars/ryan/walk-08.png
+	frame	data/chars/ryan/walk-09.png
+	frame	data/chars/ryan/walk-10.png
+	frame	data/chars/ryan/walk-11.png
+	frame	data/chars/ryan/walk-12.png
+	frame	data/chars/ryan/walk-13.png
+		
+#|edited by openBor Stats v 0.67
+		
