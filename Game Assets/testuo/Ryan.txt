@@ -1,0 +1,94 @@
+name Ryan
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+palette data/chars/ryan/ryan.act
+
+
+anim	attack1
+	attack	49 12 39 19 100 0 1 0 0 0
+	delay	7
+	offset	42 84
+	bbox	12 -2 38 87
+	frame	data/chars/ryan/0.png
+	attack	51 18 43 18 100 0 1 0 0 0
+	bbox	19 0 32 85
+	offset	44 85
+	frame	data/chars/ryan/1.png
+	bbox	0 0 49 85
+	offset	32 85
+	frame	data/chars/ryan/2.png
+	movez	0
+	movea	0
+	move	0
+	offset	30 83
+	bbox	0 0 46 85
+	frame	data/chars/ryan/3.png
+	offset	41 84
+	bbox	0 0 40 84
+	frame	data/chars/ryan/4.png
+	bbox	0 0 34 80
+	offset	45 80
+	frame	data/chars/ryan/5.png
+	bbox	0 0 33 80
+	offset	43 79
+	frame	data/chars/ryan/6.png
+	bbox	0 0 42 80
+	offset	53 79
+	frame	data/chars/ryan/7.png
+	bbox	0 0 47 81
+	offset	25 80
+	frame	data/chars/ryan/8.png
+		
+anim	fall
+	delay	7
+	offset	29 75
+	bbox	0 0 60 75
+	frame	data/chars/ryan/testsuofall1.png
+	offset	38 65
+	frame	data/chars/ryan/testsuofall2.png
+	offset	40 49
+	frame	data/chars/ryan/testsuofall3.png
+	offset	35 58
+	frame	data/chars/ryan/testsuofall4.png
+	offset	48 23
+	frame	data/chars/ryan/testsuofall5.png
+	offset	34 32
+	frame	data/chars/ryan/testsuofall6.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/ryan/testsuo-idle1.png
+	frame	data/chars/ryan/testsuo-idle2.png
+	frame	data/chars/ryan/testsuo-idle3.png
+	frame	data/chars/ryan/testsuo-idle4.png
+	frame	data/chars/ryan/testsuo-idle5.png
+	frame	data/chars/ryan/testsuo-idle6.png
+	frame	data/chars/ryan/testsuo-idle7.png
+	frame	data/chars/ryan/testsuo-idle8.png
+	frame	data/chars/ryan/testsuo-idle9.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+		
+#|edited by openBor Stats v 0.67
+		
