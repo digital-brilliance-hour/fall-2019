@@ -63,5 +63,8 @@ know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
 Load ryan Data/Chars/ryan/ryan.txt
+<<<<<<< HEAD
 Load Kaguya Data/Chars/Kaguya/Kaguya.txt
+=======
+>>>>>>> lazuli
 Load lazuli Data/Chars/lazuli/lazuli.txt
