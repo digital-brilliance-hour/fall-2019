@@ -6,92 +6,350 @@ speed   10
 
 palette     data/chars/ryan/ryan.act
 
-anim	attack1
-	delay	7
-	offset	52 98
-	bbox	42 14 24 85
-	frame	data/chars/ryan/attack-01.png
-	frame	data/chars/ryan/attack-02.png
-	frame	data/chars/ryan/attack-03.png
-	frame	data/chars/ryan/attack-04.png
-	frame	data/chars/ryan/attack-05.png
-	frame	data/chars/ryan/attack-06.png
-	frame	data/chars/ryan/attack-07.png
-	frame	data/chars/ryan/attack-08.png
-	frame	data/chars/ryan/attack-09.png
-	frame	data/chars/ryan/attack-10.png
-	frame	data/chars/ryan/attack-11.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack2
+	delay	2
+	offset	19 80
+	bbox	1 0 46 80
 	frame	data/chars/ryan/attack-12.png
+	attack	30 15 58 23 0 0 1 0 0 0
+	offset	25 80
+	frame	data/chars/ryan/attack-03.png
+	attack	31 18 58 17 0 0 1 0 0 0
+	offset	25 80
+	frame	data/chars/ryan/attack-04.png
+	attack	35 14 53 17 0 0 1 0 0 0
+	offset	27 80
+	frame	data/chars/ryan/attack-01.png
+	attack	36 19 55 17 0 0 1 0 0 0
+	offset	28 80
+	frame	data/chars/ryan/attack-02.png
+	offset	15 81
+	frame	data/chars/ryan/attack-05.png
+	offset	14 81
+	frame	data/chars/ryan/attack-06.png
+	bbox	1 0 34 80
+	offset	16 79
+	frame	data/chars/ryan/attack-07.png
+	bbox	1 0 27 80
+	offset	16 79
+	frame	data/chars/ryan/attack-08.png
+	offset	16 79
+	frame	data/chars/ryan/attack-09.png
+	bbox	1 0 39 80
+	offset	23 80
+	frame	data/chars/ryan/attack-10.png
+	bbox	1 0 43 80
+	offset	31 79
+	frame	data/chars/ryan/attack-11.png
+		
+anim	attack3
+	offset	28 72
+	frame	data/chars/ryan/attack2-0.png
+	offset	20 87
+	frame	data/chars/ryan/attack2-1.png
+	offset	18 87
+	frame	data/chars/ryan/attack2-3.png
+	offset	16 87
+	frame	data/chars/ryan/attack2-2.png
+	offset	21 87
+	frame	data/chars/ryan/attack2-4.png
+	offset	23 87
+	frame	data/chars/ryan/attack2-5.png
+	offset	23 86
+	frame	data/chars/ryan/attack2-6.png
+	offset	32 57
+	frame	data/chars/ryan/attack2-8.png
+	offset	35 57
+	frame	data/chars/ryan/attack2-9.png
+	offset	16 79
+	frame	data/chars/ryan/attack2-7.png
+		
+anim	attack1
+	delay	1
+	bbox	0 0 42 83
+	offset	27 79
+	frame	data/chars/ryan/punch-1.png
+	attack	38 5 35 20 0 0 1 0 0 0
+	offset	31 83
+	frame	data/chars/ryan/punch-3.png
+	offset	33 81
+	frame	data/chars/ryan/punch-4.png
+	offset	27 79
+	frame	data/chars/ryan/punch-5.png
+		
+anim	chargeattack
+	offset	27 72
+	frame	data/chars/ryan/chargeattack-01.png
+	offset	48 91
+	frame	data/chars/ryan/chargeattack-02.png
+	offset	48 93
+	frame	data/chars/ryan/chargeattack-03.png
+	offset	48 82
+	frame	data/chars/ryan/chargeattack-04.png
+	offset	38 80
+	frame	data/chars/ryan/chargeattack-05.png
+	offset	38 75
+	frame	data/chars/ryan/chargeattack-06.png
+	offset	38 73
+	frame	data/chars/ryan/chargeattack-07.png
+	frame	data/chars/ryan/chargeattack-08.png
+	offset	38 77
+	frame	data/chars/ryan/chargeattack-09.png
+	offset	40 77
+	frame	data/chars/ryan/chargeattack-10.png
+		
+anim	faint
+	offset	25 78
+	frame	data/chars/ryan/faint-1.png
+	offset	25 79
+	frame	data/chars/ryan/faint-2.png
+	frame	data/chars/ryan/faint-3.png
+	offset	25 80
+	frame	data/chars/ryan/faint-4.png
+	frame	data/chars/ryan/faint-5.png
+	offset	25 79
+	frame	data/chars/ryan/faint-6.png
+	frame	data/chars/ryan/faint-7.png
 		
 anim	fall
 	delay	7
-	offset	52 98
+	offset	20 75
 	bbox	42 14 24 85
 	frame	data/chars/ryan/fall-1.png
+	offset	20 75
 	frame	data/chars/ryan/fall-2.png
+	offset	20 75
 	frame	data/chars/ryan/fall-3.png
+	offset	20 75
 	frame	data/chars/ryan/fall-4.png
+	offset	25 23
 	frame	data/chars/ryan/fall-5.png
-	frame	data/chars/ryan/fall-6.png
+		
+anim	grab
+	offset	31 77
+	frame	data/chars/ryan/grab-1.png
+	frame	data/chars/ryan/grab-2.png
+	frame	data/chars/ryan/grab-3.png
 		
 anim	idle
 	loop	1
 	delay	7
-	offset	52 98
+	offset	22 79
 	bbox	42 14 24 85
 	frame	data/chars/ryan/idle-1.png
+	offset	22 79
 	frame	data/chars/ryan/idle-2.png
+	offset	22 79
 	frame	data/chars/ryan/idle-3.png
+	offset	22 79
 	frame	data/chars/ryan/idle-4.png
+	offset	22 79
 	frame	data/chars/ryan/idle-5.png
+	offset	22 79
 	frame	data/chars/ryan/idle-6.png
+	offset	22 79
 	frame	data/chars/ryan/idle-7.png
+	offset	21 79
 	frame	data/chars/ryan/idle-8.png
+	offset	21 79
 	frame	data/chars/ryan/idle-9.png
 		
+anim	jump
+	offset	20 97
+	frame	data/chars/ryan/jump-1.png
+	offset	19 97
+	frame	data/chars/ryan/jump-2.png
+	frame	data/chars/ryan/jump-3.png
+	offset	20 97
+	frame	data/chars/ryan/jump-4.png
+	offset	22 97
+	frame	data/chars/ryan/jump-5.png
+	frame	data/chars/ryan/jump-6.png
+	offset	22 98
+	frame	data/chars/ryan/jump-7.png
+		
+anim	jumpattack
+	offset	22 80
+	frame	data/chars/ryan/jumpattack-1.png
+	frame	data/chars/ryan/jumpattack-2.png
+	delay	4
+	frame	data/chars/ryan/jumpattack-3.png
+	frame	data/chars/ryan/jumpattack-4.png
+		
+anim	attack4
+	delay	1
+	frame	data/chars/ryan/attack3-0.png
+	frame	data/chars/ryan/attack3-1.png
+	frame	data/chars/ryan/attack3-2.png
+	frame	data/chars/ryan/attack3-3.png
+	frame	data/chars/ryan/attack3-4.png
+	frame	data/chars/ryan/attack3-5.png
+	frame	data/chars/ryan/attack3-6.png
+	frame	data/chars/ryan/attack3-7.png
+	frame	data/chars/ryan/attack3-8.png
+	frame	data/chars/ryan/attack3-9.png
+		
 anim	pain
-	delay	18
-	offset	52 98
-	bbox	42 14 24 85
+	offset	31 78
+	bbox	1 1 46 80
 	frame	data/chars/ryan/pain-01.png
+	offset	30 78
 	frame	data/chars/ryan/pain-02.png
+	offset	22 78
 	frame	data/chars/ryan/pain-03.png
+	offset	10 78
 	frame	data/chars/ryan/pain-04.png
+	offset	7 76
 	frame	data/chars/ryan/pain-05.png
+	offset	7 76
 	frame	data/chars/ryan/pain-06.png
+	offset	7 76
 	frame	data/chars/ryan/pain-07.png
+	offset	7 76
 	frame	data/chars/ryan/pain-08.png
+	offset	7 76
 	frame	data/chars/ryan/pain-09.png
+	offset	7 76
 	frame	data/chars/ryan/pain-10.png
+	offset	10 76
 	frame	data/chars/ryan/pain-11.png
+	offset	10 76
 	frame	data/chars/ryan/pain-12.png
+	offset	21 76
 	frame	data/chars/ryan/pain-13.png
 		
 anim	rise
 	delay	7
-	offset	52 98
 	bbox	42 14 24 85
+	offset	25 28
+	frame	data/chars/ryan/fall-6.png
+	offset	24 38
 	frame	data/chars/ryan/rise-1.png
+	offset	22 56
 	frame	data/chars/ryan/rise-2.png
+	offset	27 72
 	frame	data/chars/ryan/rise-3.png
+		
+anim	run
+	offset	58 66
+	frame	data/chars/ryan/run-1.png
+	offset	58 67
+	frame	data/chars/ryan/run-2.png
+	frame	data/chars/ryan/run-3.png
+	offset	58 66
+	frame	data/chars/ryan/run-4.png
+	offset	58 68
+	frame	data/chars/ryan/run-5.png
+	frame	data/chars/ryan/run-6.png
+		
+anim	runattack
+	offset	22 93
+	frame	data/chars/ryan/runattack-01.png
+	frame	data/chars/ryan/runattack-02.png
+	offset	22 96
+	frame	data/chars/ryan/runattack-03.png
+	offset	22 97
+	frame	data/chars/ryan/runattack-04.png
+	offset	24 99
+	frame	data/chars/ryan/runattack-05.png
+	offset	28 99
+	frame	data/chars/ryan/runattack-06.png
+	offset	36 98
+	frame	data/chars/ryan/runattack-07.png
+	offset	38 98
+	frame	data/chars/ryan/runattack-08.png
+	offset	44 96
+	frame	data/chars/ryan/runattack-09.png
+	offset	44 88
+	frame	data/chars/ryan/runattack-10.png
+	offset	58 75
+	frame	data/chars/ryan/runattack-11.png
+	offset	28 72
+	frame	data/chars/ryan/runattack-12.png
+	frame	data/chars/ryan/runattack-13.png
+	offset	23 77
+	frame	data/chars/ryan/runattack-14.png
+		
+anim	special
+	offset	27 78
+	frame	data/chars/ryan/special-01.png
+	offset	40 134
+	frame	data/chars/ryan/special-02.png
+	offset	39 134
+	frame	data/chars/ryan/special-03.png
+	offset	47 134
+	frame	data/chars/ryan/special-04.png
+	offset	50 134
+	frame	data/chars/ryan/special-05.png
+	offset	46 134
+	frame	data/chars/ryan/special-06.png
+	offset	46 87
+	frame	data/chars/ryan/special-07.png
+	offset	27 81
+	frame	data/chars/ryan/special-08.png
+	frame	data/chars/ryan/special-09.png
+	offset	26 81
+	frame	data/chars/ryan/special-10.png
+		
+anim	throw
+	offset	23 78
+	frame	data/chars/ryan/throw-1.png
+	offset	23 76
+	frame	data/chars/ryan/throw-2.png
+	offset	23 66
+	frame	data/chars/ryan/throw-3.png
+	offset	23 62
+	frame	data/chars/ryan/throw-4.png
+	frame	data/chars/ryan/throw-5.png
+	offset	23 67
+	frame	data/chars/ryan/throw-6.png
 		
 anim	walk
 	loop	1
 	delay	7
-	offset	52 98
+	offset	25 81
 	bbox	42 14 24 85
-	frame	data/chars/ryan/walk-01.png
+	offset	25 81
 	frame	data/chars/ryan/walk-02.png
+	offset	21 81
 	frame	data/chars/ryan/walk-03.png
+	offset	24 81
 	frame	data/chars/ryan/walk-04.png
+	offset	24 81
 	frame	data/chars/ryan/walk-05.png
+	offset	19 81
 	frame	data/chars/ryan/walk-06.png
+	offset	13 81
 	frame	data/chars/ryan/walk-07.png
+	offset	19 81
 	frame	data/chars/ryan/walk-08.png
+	offset	23 81
 	frame	data/chars/ryan/walk-09.png
+	offset	24 81
 	frame	data/chars/ryan/walk-10.png
+	offset	24 81
 	frame	data/chars/ryan/walk-11.png
+	offset	17 81
 	frame	data/chars/ryan/walk-12.png
+	offset	18 81
 	frame	data/chars/ryan/walk-13.png
 		
 #|edited by openBor Stats v 0.67
