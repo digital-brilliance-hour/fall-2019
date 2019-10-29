@@ -1,0 +1,99 @@
+name Kim
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	delay	7
+	offset	17 55
+	bbox	4 -8 24 74
+	frame	data/chars/kim/attack-1.png
+	attack	30 13 26 23 25 0 1 0 0 0
+	offset	17 55
+	frame	data/chars/kim/attack-2.png
+	attack	54 18 -26 17 25 0 1 0 0 0
+	offset	17 55
+	frame	data/chars/kim/attack-3.png
+	offset	17 55
+	frame	data/chars/kim/attack-4.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/Kim/00.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	15 61
+	bbox	2 0 24 74
+	frame	data/chars/kim/idle-1.png
+	offset	15 61
+	frame	data/chars/kim/idle-2.png
+	offset	15 61
+	frame	data/chars/kim/idle-3.png
+	offset	15 61
+	frame	data/chars/kim/idle-4.png
+		
+anim	jump
+	offset	21 48
+	frame	data/chars/kim/jump-01.png
+	offset	21 61
+	frame	data/chars/kim/jump-02.png
+	offset	21 65
+	frame	data/chars/kim/jump-03.png
+	offset	21 64
+	frame	data/chars/kim/jump-04.png
+	frame	data/chars/kim/jump-05.png
+	frame	data/chars/kim/jump-06.png
+	frame	data/chars/kim/jump-07.png
+	frame	data/chars/kim/jump-08.png
+	frame	data/chars/kim/jump-09.png
+	frame	data/chars/kim/jump-10.png
+	frame	data/chars/kim/jump-11.png
+	frame	data/chars/kim/jump-12.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/Kim/00.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/Chars/Kim/00.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	15 64
+	bbox	2 -10 24 85
+	frame	data/chars/kim/walk-1.png
+	offset	15 60
+	frame	data/chars/kim/walk-2.png
+	offset	15 60
+	frame	data/chars/kim/walk-3.png
+	offset	15 62
+	frame	data/chars/kim/walk-4.png
+	offset	15 60
+	frame	data/chars/kim/walk-5.png
+	offset	15 62
+	frame	data/chars/kim/walk-6.png
+		
+#|edited by openBor Stats v 0.67
+		
