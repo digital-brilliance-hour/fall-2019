@@ -64,3 +64,4 @@ know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
 Load ryan Data/Chars/ryan/ryan.txt
 Load Kaguya Data/Chars/Kaguya/Kaguya.txt
+Load lazuli Data/Chars/lazuli/lazuli.txt

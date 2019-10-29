@@ -1,0 +1,162 @@
+name lazuli
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+
+anim	attack1
+	delay	7
+	offset	85 112
+	bbox	74 11 33 80
+	offset	85 112
+	frame	data/chars/lazuli/attack1-1.png
+	bbox	48 25 42 80
+	offset	71 110
+	frame	data/chars/lazuli/attack1-2.png
+	attack	0 41 49 16 10 0 1 0 0 0
+	offset	66 111
+	bbox	48 25 42 80
+	frame	data/chars/lazuli/attack1-3.png
+	bbox	48 25 42 80
+	offset	66 111
+	attack	0 41 49 16 10 0 0 1 0 0
+	frame	data/chars/lazuli/attack1-4.png
+	bbox	60 25 42 80
+	offset	79 111
+	attack	27 40 49 16 10 0 1 0 0 0
+	frame	data/chars/lazuli/attack1-5.png
+		
+anim	fall
+	delay	7
+	offset	46 101
+	bbox	31 15 31 84
+	frame	data/chars/lazuli/fall-1.png
+	bbox	25 19 37 84
+	offset	43 102
+	frame	data/chars/lazuli/fall-2.png
+	bbox	25 3 84 71
+	offset	68 74
+	frame	data/chars/lazuli/fall-3.png
+	bbox	25 3 84 71
+	offset	68 74
+	frame	data/chars/lazuli/fall-4.png
+	bbox	20 31 84 71
+	offset	68 88
+	frame	data/chars/lazuli/fall-5.png
+	bbox	21 45 84 71
+	offset	67 105
+	frame	data/chars/lazuli/fall-6.png
+	offset	67 105
+	frame	data/chars/lazuli/fall-7.png
+	bbox	21 79 101 36
+	offset	67 107
+	frame	data/chars/lazuli/fall-8.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	38 115
+	bbox	26 1 28 95
+	frame	data/chars/lazuli/idle-1.png
+	bbox	26 1 28 95
+	offset	38 115
+	frame	data/chars/lazuli/idle-2.png
+	bbox	26 1 28 95
+	offset	38 115
+	frame	data/chars/lazuli/idle-3.png
+	offset	38 115
+	bbox	26 1 28 95
+	frame	data/chars/lazuli/idle-4.png
+		
+anim	chargeattack
+		
+anim	special
+		
+anim	jump
+	bbox	19 59 40 74
+	offset	36 130
+	frame	data/chars/lazuli/jump-1.png
+	offset	37 129
+	frame	data/chars/lazuli/jump-2.png
+	frame	data/chars/lazuli/jump-3.png
+	frame	data/chars/lazuli/jump-4.png
+	frame	data/chars/lazuli/jump-5.png
+	frame	data/chars/lazuli/jump-6.png
+	frame	data/chars/lazuli/jump-7.png
+	frame	data/chars/lazuli/jump-8.png
+		
+anim	attack2
+		
+anim	attack3
+		
+anim	attack4
+		
+anim	grab
+	bbox	29 38 35 83
+	offset	47 133
+	frame	data/chars/lazuli/grab-1.png
+	bbox	13 27 35 83
+	offset	32 133
+	frame	data/chars/lazuli/grab-2.png
+		
+anim	throw
+	bbox	20 18 55 97
+	offset	50 133
+	frame	data/chars/lazuli/throw-1.png
+	attack	64 55 41 20 4 2 1 0 0 0
+	offset	50 133
+	bbox	37 30 55 97
+	frame	data/chars/lazuli/throw-2.png
+	offset	53 131
+	attack	64 55 41 20 4 2 0 1 0 0
+	bbox	37 30 55 97
+	frame	data/chars/lazuli/throw-3.png
+	attack	61 62 31 20 4 2 1 0 0 0
+	offset	59 131
+	frame	data/chars/lazuli/throw-4.png
+		
+anim	runattack
+		
+anim	run
+		
+anim	pain
+	delay	18
+	offset	36 103
+	bbox	20 8 32 85
+	offset	36 103
+	frame	data/chars/lazuli/faint-1.png
+	offset	36 103
+	bbox	20 8 32 85
+	frame	data/chars/lazuli/faint-2.png
+	bbox	20 8 32 85
+	offset	36 103
+	frame	data/chars/lazuli/faint-3.png
+	bbox	20 8 32 85
+	offset	36 103
+	frame	data/chars/lazuli/faint-4.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 1
+	bbox	3 30 102 82
+	offset	53 107
+	frame	data/chars/lazuli/rise-1.png
+	offset	54 107
+	frame	data/chars/lazuli/rise-2.png
+	bbox	26 30 62 82
+	offset	51 106
+	frame	data/chars/lazuli/rise-3.png
+	offset	51 104
+	frame	data/chars/lazuli/rise-4.png
+	bbox	44 6 61 102
+	offset	67 104
+	frame	data/chars/lazuli/rise-5.png
+		
+anim	attack3
+		
+#|edited by openBor Stats v 0.67
+		
