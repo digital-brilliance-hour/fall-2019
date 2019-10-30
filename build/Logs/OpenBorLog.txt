@@ -1,5 +1,5 @@
 Total Ram: 17132109824 Bytes
- Free Ram: 8799051776 Bytes
+ Free Ram: 8805416960 Bytes
  Used Ram: 3653632 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
@@ -26,7 +26,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-10-30 11:38:37
+Joystick: "UNKNOWN" connected at port: 0 at 2019-10-30 13:43:19
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -96,8 +96,8 @@ Save settings so far........	Done!
 
 Level Loading:   'data/levels/stage1-1.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 8763932672 Bytes
- Used Ram: 51077120 Bytes
+ Free Ram: 8780578816 Bytes
+ Used Ram: 49418240 Bytes
 
 WARNING: data/levels/stage1-1.txt tries to load a non-numeric value at spawn1, where a number is expected!
 erroneus string: a
@@ -105,9 +105,63 @@ Loaded 'Angel' from data/chars/angel/angel.txt
 
 Level Loaded:    'data/levels/stage1-1.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 8763572224 Bytes
- Used Ram: 52756480 Bytes
+ Free Ram: 8778878976 Bytes
+ Used Ram: 51097600 Bytes
 Total sprites mapped: 697
+
+Level Unloading: 'data/levels/stage1-1.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8772947968 Bytes
+ Used Ram: 51142656 Bytes
+
+RAM Status:
+Total Ram: 17132109824 Bytes
+ Free Ram: 8773021696 Bytes
+ Used Ram: 50540544 Bytes
+
+Level Loading:   'data/levels/stage1-2.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8773226496 Bytes
+ Used Ram: 50540544 Bytes
+
+
+Level Loaded:    'data/levels/stage1-2.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8773132288 Bytes
+ Used Ram: 50749440 Bytes
+Total sprites mapped: 697
+
+Level Unloading: 'data/levels/stage1-2.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8767877120 Bytes
+ Used Ram: 51277824 Bytes
+
+RAM Status:
+Total Ram: 17132109824 Bytes
+ Free Ram: 8767877120 Bytes
+ Used Ram: 51277824 Bytes
+
+Level Loading:   'data/levels/stage1-3.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8767877120 Bytes
+ Used Ram: 51277824 Bytes
+
+
+Level Loaded:    'data/levels/stage1-3.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8767971328 Bytes
+ Used Ram: 50876416 Bytes
+Total sprites mapped: 697
+
+Level Unloading: 'data/levels/stage1-3.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 8765800448 Bytes
+ Used Ram: 50876416 Bytes
+
+RAM Status:
+Total Ram: 17132109824 Bytes
+ Free Ram: 8765997056 Bytes
+ Used Ram: 50372608 Bytes
 
 
 ************ Shutting Down ************
@@ -120,20 +174,10 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 17132109824 Bytes
- Free Ram: 8774651904 Bytes
- Used Ram: 52846592 Bytes
+ Free Ram: 8772956160 Bytes
+ Used Ram: 51187712 Bytes
 
 Release level data...........
-Level Unloading: 'data/levels/stage1-1.txt'
-Total Ram: 17132109824 Bytes
- Free Ram: 8774643712 Bytes
- Used Ram: 52846592 Bytes
-
-RAM Status:
-Total Ram: 17132109824 Bytes
- Free Ram: 8774651904 Bytes
- Used Ram: 52244480 Bytes
-
 Done!
 
 Release graphics data........	Done!
