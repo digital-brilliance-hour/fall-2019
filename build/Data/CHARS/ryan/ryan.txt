@@ -24,21 +24,36 @@ palette     data/chars/ryan/ryan.act
 
 
 
+
+
+anim	attack1
+	delay	1
+	bbox	0 0 42 83
+	offset	27 79
+	frame	data/chars/ryan/punch-1.png
+	attack	38 5 35 20 2 0 1 0 0 0
+	offset	31 83
+	frame	data/chars/ryan/punch-3.png
+	offset	33 81
+	frame	data/chars/ryan/punch-4.png
+	offset	27 79
+	frame	data/chars/ryan/punch-5.png
+		
 anim	attack2
-	delay	2
+	delay	3
 	offset	19 80
 	bbox	1 0 46 80
 	frame	data/chars/ryan/attack-12.png
-	attack	30 15 58 23 0 0 1 0 0 0
+	attack	30 15 58 23 4 0 1 0 0 0
 	offset	25 80
 	frame	data/chars/ryan/attack-03.png
-	attack	31 18 58 17 0 0 1 0 0 0
+	attack	31 18 58 17 4 0 1 0 0 0
 	offset	25 80
 	frame	data/chars/ryan/attack-04.png
-	attack	35 14 53 17 0 0 1 0 0 0
+	attack	35 14 53 17 4 0 1 0 0 0
 	offset	27 80
 	frame	data/chars/ryan/attack-01.png
-	attack	36 19 55 17 0 0 1 0 0 0
+	attack	36 19 55 17 4 0 1 0 0 0
 	offset	28 80
 	frame	data/chars/ryan/attack-02.png
 	offset	15 81
@@ -61,39 +76,51 @@ anim	attack2
 	frame	data/chars/ryan/attack-11.png
 		
 anim	attack3
+	bbox	0 0 45 74
+	delay	7
 	offset	28 72
 	frame	data/chars/ryan/attack2-0.png
+	bbox	0 0 35 74
 	offset	20 87
 	frame	data/chars/ryan/attack2-1.png
+	bbox	0 0 46 74
 	offset	18 87
 	frame	data/chars/ryan/attack2-3.png
 	offset	16 87
 	frame	data/chars/ryan/attack2-2.png
 	offset	21 87
 	frame	data/chars/ryan/attack2-4.png
+	attack	37 22 53 26 5 0 1 0 0 0
 	offset	23 87
 	frame	data/chars/ryan/attack2-5.png
+	attack	39 21 51 28 5 0 1 0 0 0
 	offset	23 86
 	frame	data/chars/ryan/attack2-6.png
+	bbox	0 0 48 58
 	offset	32 57
 	frame	data/chars/ryan/attack2-8.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	0 0 49 58
 	offset	35 57
 	frame	data/chars/ryan/attack2-9.png
+	bbox	0 0 32 80
 	offset	16 79
 	frame	data/chars/ryan/attack2-7.png
 		
-anim	attack1
+anim	attack4
+	offset	14 79
+	drawmethod	flipx 1
 	delay	1
-	bbox	0 0 42 83
-	offset	27 79
-	frame	data/chars/ryan/punch-1.png
-	attack	38 5 35 20 0 0 1 0 0 0
-	offset	31 83
-	frame	data/chars/ryan/punch-3.png
-	offset	33 81
-	frame	data/chars/ryan/punch-4.png
-	offset	27 79
-	frame	data/chars/ryan/punch-5.png
+	frame	data/chars/ryan/attack3-0.png
+	frame	data/chars/ryan/attack3-1.png
+	frame	data/chars/ryan/attack3-2.png
+	frame	data/chars/ryan/attack3-3.png
+	frame	data/chars/ryan/attack3-4.png
+	frame	data/chars/ryan/attack3-5.png
+	frame	data/chars/ryan/attack3-6.png
+	frame	data/chars/ryan/attack3-7.png
+	frame	data/chars/ryan/attack3-8.png
+	frame	data/chars/ryan/attack3-9.png
 		
 anim	chargeattack
 	offset	27 72
@@ -153,22 +180,30 @@ anim	idle
 	loop	1
 	delay	7
 	offset	22 79
-	bbox	42 14 24 85
+	bbox	1 0 38 80
 	frame	data/chars/ryan/idle-1.png
+	bbox	1 0 40 80
 	offset	22 79
 	frame	data/chars/ryan/idle-2.png
+	bbox	1 0 43 80
 	offset	22 79
 	frame	data/chars/ryan/idle-3.png
+	bbox	1 0 43 79
 	offset	22 79
 	frame	data/chars/ryan/idle-4.png
+	bbox	1 0 43 78
 	offset	22 79
 	frame	data/chars/ryan/idle-5.png
+	bbox	1 0 42 77
 	offset	22 79
 	frame	data/chars/ryan/idle-6.png
+	bbox	1 0 40 77
 	offset	22 79
 	frame	data/chars/ryan/idle-7.png
+	bbox	1 0 39 78
 	offset	21 79
 	frame	data/chars/ryan/idle-8.png
+	bbox	1 0 38 79
 	offset	21 79
 	frame	data/chars/ryan/idle-9.png
 		
@@ -193,19 +228,6 @@ anim	jumpattack
 	delay	4
 	frame	data/chars/ryan/jumpattack-3.png
 	frame	data/chars/ryan/jumpattack-4.png
-		
-anim	attack4
-	delay	1
-	frame	data/chars/ryan/attack3-0.png
-	frame	data/chars/ryan/attack3-1.png
-	frame	data/chars/ryan/attack3-2.png
-	frame	data/chars/ryan/attack3-3.png
-	frame	data/chars/ryan/attack3-4.png
-	frame	data/chars/ryan/attack3-5.png
-	frame	data/chars/ryan/attack3-6.png
-	frame	data/chars/ryan/attack3-7.png
-	frame	data/chars/ryan/attack3-8.png
-	frame	data/chars/ryan/attack3-9.png
 		
 anim	pain
 	offset	31 78

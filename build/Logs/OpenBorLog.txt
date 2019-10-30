@@ -1,6 +1,6 @@
 Total Ram: 17132109824 Bytes
- Free Ram: 10549747712 Bytes
- Used Ram: 3641344 Bytes
+ Free Ram: 8799051776 Bytes
+ Used Ram: 3653632 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
@@ -26,7 +26,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-10-29 12:58:19
+Joystick: "UNKNOWN" connected at port: 0 at 2019-10-30 11:38:37
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -72,6 +72,8 @@ Cacheing 'Furnace' from data/chars/misc/furnace.txt
 Cacheing 'Crab' from data/chars/crab/crab.txt
 Cacheing 'Lobster' from data/chars/Lobster/Lobster.txt
 Cacheing 'ryan' from Data/Chars/ryan/ryan.txt
+Cacheing 'Kaguya' from Data/Chars/Kaguya/Kaguya.txt
+Cacheing 'lazuli' from Data/Chars/lazuli/lazuli.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
@@ -79,6 +81,8 @@ Loaded 'Max' from data/chars/maxima/maxima.txt
 Loaded 'Mandy' from data/chars/mary/mary.txt 
 Loaded 'Mighty' from data/chars/mighty/mighty.txt 
 Loaded 'ryan' from Data/Chars/ryan/ryan.txt 
+Loaded 'Kaguya' from Data/Chars/Kaguya/Kaguya.txt 
+Loaded 'lazuli' from Data/Chars/lazuli/lazuli.txt 
 
 Loading models...............	Done!
 Object engine init...........	Done!
@@ -90,29 +94,20 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/example1.txt'
+Level Loading:   'data/levels/stage1-1.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 10501931008 Bytes
- Used Ram: 49938432 Bytes
+ Free Ram: 8763932672 Bytes
+ Used Ram: 51077120 Bytes
 
-Loaded '1up' from data/chars/misc/1up.txt 
-Loaded 'Shermie' from data/chars/shermie/shermie.txt 
-Loaded 'Steamer' from data/chars/misc/steamer.txt 
-Loaded 'Steam' from data/chars/misc/steam.txt 
-Loaded 'Yashiro' from data/chars/yashiro/yashiro.txt 
-Loaded 'Trash' from data/chars/misc/trash.txt 
-Loaded 'money' from data/chars/misc/money.txt 
-Loaded 'gold' from data/chars/misc/gold.txt 
-Loaded 'ralf' from data/chars/ralf/ralf.txt 
-Loaded 'biker-k'' from data/chars/biker-k/biker-k.txt 
-Loaded 'K'' from data/chars/k/k.txt 
-Loaded 'Lobster' from data/chars/Lobster/Lobster.txt 
+WARNING: data/levels/stage1-1.txt tries to load a non-numeric value at spawn1, where a number is expected!
+erroneus string: a
+Loaded 'Angel' from data/chars/angel/angel.txt 
 
-Level Loaded:    'data/levels/example1.txt'
+Level Loaded:    'data/levels/stage1-1.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 10500575232 Bytes
- Used Ram: 51286016 Bytes
-Total sprites mapped: 785
+ Free Ram: 8763572224 Bytes
+ Used Ram: 52756480 Bytes
+Total sprites mapped: 697
 
 
 ************ Shutting Down ************
@@ -125,19 +120,19 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 17132109824 Bytes
- Free Ram: 10515476480 Bytes
- Used Ram: 50147328 Bytes
+ Free Ram: 8774651904 Bytes
+ Used Ram: 52846592 Bytes
 
 Release level data...........
-Level Unloading: 'data/levels/example1.txt'
+Level Unloading: 'data/levels/stage1-1.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 10515456000 Bytes
- Used Ram: 50147328 Bytes
+ Free Ram: 8774643712 Bytes
+ Used Ram: 52846592 Bytes
 
 RAM Status:
 Total Ram: 17132109824 Bytes
- Free Ram: 10515456000 Bytes
- Used Ram: 50147328 Bytes
+ Free Ram: 8774651904 Bytes
+ Used Ram: 52244480 Bytes
 
 Done!
 
@@ -150,18 +145,9 @@ Unload 'Max' ............Done.
 Unload 'Mandy' ............Done.
 Unload 'Mighty' ............Done.
 Unload 'ryan' ............Done.
-Unload '1up' ............Done.
-Unload 'Shermie' ............Done.
-Unload 'Steamer' ............Done.
-Unload 'Steam' ............Done.
-Unload 'Yashiro' ............Done.
-Unload 'Trash' ............Done.
-Unload 'Money' ............Done.
-Unload 'Gold' ............Done.
-Unload 'Ralf' ............Done.
-Unload 'Biker-K'' ............Done.
-Unload 'K'' ............Done.
-Unload 'Lobster' ............Done.
+Unload 'Kaguya' ............Done.
+Unload 'lazuli' ............Done.
+Unload 'Angel' ............Done.
 
 Release game data............	Done!
 Release timer................	Done!

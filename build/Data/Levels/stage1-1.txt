@@ -1,0 +1,20 @@
+music		data/music/remix.bor
+
+background	data/bgs/stage1-1/panel.png
+
+panel		data/bgs/stage1-1/panel.png none none
+
+order	a
+
+spawn1 104 24 a
+
+
+#---------------------
+
+spawn	Angel
+coords	380 160
+at	800
+
+
+wait
+at	2460
