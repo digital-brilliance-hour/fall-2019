@@ -3,6 +3,8 @@ type player
 health  100
 gfxshadow	1
 speed   10
+running 18 4 1 1
+atchain 1 1 2 3 4
 
 palette     data/chars/ryan/ryan.act
 
@@ -26,7 +28,14 @@ palette     data/chars/ryan/ryan.act
 
 
 
+
+
+
+
+
+
 anim	attack1
+	drawmethod	scale 1.25 1.25
 	delay	1
 	bbox	0 0 42 83
 	offset	27 79
@@ -40,6 +49,7 @@ anim	attack1
 	frame	data/chars/ryan/punch-5.png
 		
 anim	attack2
+	drawmethod	scale 1.25 1.25
 	delay	3
 	offset	19 80
 	bbox	1 0 46 80
@@ -76,6 +86,7 @@ anim	attack2
 	frame	data/chars/ryan/attack-11.png
 		
 anim	attack3
+	drawmethod	scale 1.25 1.25
 	bbox	0 0 45 74
 	delay	7
 	offset	28 72
@@ -108,29 +119,59 @@ anim	attack3
 	frame	data/chars/ryan/attack2-7.png
 		
 anim	attack4
+	bbox	1 1 31 78
+	drawmethod	scale 1.25 1.25
 	offset	14 79
 	drawmethod	flipx 1
-	delay	1
+	delay	4
 	frame	data/chars/ryan/attack3-0.png
+	bbox	1 1 46 81
+	offset	14 82
 	frame	data/chars/ryan/attack3-1.png
+	bbox	1 1 46 78
+	offset	14 79
 	frame	data/chars/ryan/attack3-2.png
+	bbox	23 1 43 87
+	offset	42 87
+	attack	30 0 37 42 7 1 0 0 0 0
 	frame	data/chars/ryan/attack3-3.png
+	offset	44 86
+	attack	31 0 37 42 7 1 0 0 0 0
 	frame	data/chars/ryan/attack3-4.png
+	bbox	42 1 43 82
+	offset	60 83
+	attack	34 0 51 42 7 1 0 0 0 0
 	frame	data/chars/ryan/attack3-5.png
+	bbox	42 1 37 77
+	offset	55 79
+	attack	28 0 51 42 7 1 0 0 0 0
 	frame	data/chars/ryan/attack3-6.png
+	bbox	33 1 37 77
+	offset	46 78
+	attack	19 0 51 42 4 1 0 0 0 0
 	frame	data/chars/ryan/attack3-7.png
+	bbox	15 1 37 77
+	offset	29 80
 	frame	data/chars/ryan/attack3-8.png
+	bbox	1 1 37 77
+	offset	26 80
 	frame	data/chars/ryan/attack3-9.png
 		
 anim	chargeattack
+	drawmethod	scale 1.25 1.25
+	move	4
 	offset	27 72
 	frame	data/chars/ryan/chargeattack-01.png
+	attack	1 1 39 38 12 1 0 0 0 0
 	offset	48 91
 	frame	data/chars/ryan/chargeattack-02.png
+	attack	1 1 51 34 15 1 1 0 0 0
 	offset	48 93
 	frame	data/chars/ryan/chargeattack-03.png
+	attack	13 1 68 47 15 1 1 0 0 0
 	offset	48 82
 	frame	data/chars/ryan/chargeattack-04.png
+	attack	13 1 49 55 15 1 1 0 0 0
 	offset	38 80
 	frame	data/chars/ryan/chargeattack-05.png
 	offset	38 75
@@ -144,6 +185,7 @@ anim	chargeattack
 	frame	data/chars/ryan/chargeattack-10.png
 		
 anim	faint
+	drawmethod	scale 1.25 1.25
 	offset	25 78
 	frame	data/chars/ryan/faint-1.png
 	offset	25 79
@@ -157,6 +199,7 @@ anim	faint
 	frame	data/chars/ryan/faint-7.png
 		
 anim	fall
+	drawmethod	scale 1.25 1.25
 	delay	7
 	offset	20 75
 	bbox	42 14 24 85
@@ -170,13 +213,25 @@ anim	fall
 	offset	25 23
 	frame	data/chars/ryan/fall-5.png
 		
+anim	get
+	bbox	1 1 43 72
+	drawmethod	scale 1.25 1.25
+	delay	2
+	offset	27 72
+	frame	data/chars/ryan/rise-3.png
+	bbox	1 1 35 57
+	offset	22 56
+	frame	data/chars/ryan/rise-2.png
+		
 anim	grab
+	drawmethod	scale 1.25 1.25
 	offset	31 77
 	frame	data/chars/ryan/grab-1.png
 	frame	data/chars/ryan/grab-2.png
 	frame	data/chars/ryan/grab-3.png
 		
 anim	idle
+	drawmethod	scale 1.25 1.25
 	loop	1
 	delay	7
 	offset	22 79
@@ -208,6 +263,7 @@ anim	idle
 	frame	data/chars/ryan/idle-9.png
 		
 anim	jump
+	drawmethod	scale 1.25 1.25
 	offset	20 97
 	frame	data/chars/ryan/jump-1.png
 	offset	19 97
@@ -222,14 +278,18 @@ anim	jump
 	frame	data/chars/ryan/jump-7.png
 		
 anim	jumpattack
+	drawmethod	scale 1.25 1.25
 	offset	22 80
 	frame	data/chars/ryan/jumpattack-1.png
+	attack	32 15 58 37 0 0 1 0 0 0
 	frame	data/chars/ryan/jumpattack-2.png
+	attack	32 15 58 37 0 0 0 1 0 0
 	delay	4
 	frame	data/chars/ryan/jumpattack-3.png
 	frame	data/chars/ryan/jumpattack-4.png
 		
 anim	pain
+	drawmethod	scale 1.25 1.25
 	offset	31 78
 	bbox	1 1 46 80
 	frame	data/chars/ryan/pain-01.png
@@ -259,8 +319,8 @@ anim	pain
 	frame	data/chars/ryan/pain-13.png
 		
 anim	rise
+	drawmethod	scale 1.25 1.25
 	delay	7
-	bbox	42 14 24 85
 	offset	25 28
 	frame	data/chars/ryan/fall-6.png
 	offset	24 38
@@ -271,37 +331,56 @@ anim	rise
 	frame	data/chars/ryan/rise-3.png
 		
 anim	run
+	drawmethod	scale 1.25 1.25
+	bbox	1 1 64 64
+	delay	8
+	loop	1
 	offset	58 66
 	frame	data/chars/ryan/run-1.png
+	bbox	18 1 67 66
 	offset	58 67
 	frame	data/chars/ryan/run-2.png
+	bbox	18 1 62 66
 	frame	data/chars/ryan/run-3.png
+	bbox	18 1 49 66
 	offset	58 66
 	frame	data/chars/ryan/run-4.png
+	bbox	18 1 62 66
 	offset	58 68
 	frame	data/chars/ryan/run-5.png
+	bbox	18 1 62 66
 	frame	data/chars/ryan/run-6.png
 		
 anim	runattack
+	drawmethod	scale 1.25 1.25
 	offset	22 93
+	delay	3
+	move	6
 	frame	data/chars/ryan/runattack-01.png
 	frame	data/chars/ryan/runattack-02.png
 	offset	22 96
 	frame	data/chars/ryan/runattack-03.png
 	offset	22 97
 	frame	data/chars/ryan/runattack-04.png
+	attack	33 13 58 85 10 1 0 0 0 0
 	offset	24 99
 	frame	data/chars/ryan/runattack-05.png
+	attack	41 18 54 80 15 1 0 0 0 0
 	offset	28 99
 	frame	data/chars/ryan/runattack-06.png
+	attack	50 20 53 78 12 1 0 0 0 0
 	offset	36 98
 	frame	data/chars/ryan/runattack-07.png
+	attack	51 21 54 76 10 1 0 0 0 0
 	offset	38 98
 	frame	data/chars/ryan/runattack-08.png
+	attack	41 25 42 71 2 1 1 0 0 0
 	offset	44 96
 	frame	data/chars/ryan/runattack-09.png
+	attack	43 28 38 60 2 1 1 0 0 0
 	offset	44 88
 	frame	data/chars/ryan/runattack-10.png
+	attack	38 27 36 50 1 1 1 0 0 0
 	offset	58 75
 	frame	data/chars/ryan/runattack-11.png
 	offset	28 72
@@ -311,18 +390,27 @@ anim	runattack
 	frame	data/chars/ryan/runattack-14.png
 		
 anim	special
+	delay	8
+	attack	0 0 0 0 0 0 0 0 0 0
+	drawmethod	scale 1.25 1.25
 	offset	27 78
 	frame	data/chars/ryan/special-01.png
+	attack	-25 8 130 133 10 0 1 0 0 0
 	offset	40 134
 	frame	data/chars/ryan/special-02.png
+	attack	-25 8 130 133 10 0 0 1 0 0
 	offset	39 134
 	frame	data/chars/ryan/special-03.png
+	attack	-25 8 130 133 10 0 1 0 0 0
 	offset	47 134
 	frame	data/chars/ryan/special-04.png
+	attack	-25 8 130 133 10 0 0 1 0 0
 	offset	50 134
 	frame	data/chars/ryan/special-05.png
+	attack	-25 8 130 133 10 0 1 0 0 0
 	offset	46 134
 	frame	data/chars/ryan/special-06.png
+	attack	-25 8 130 133 10 6 0 1 0 0
 	offset	46 87
 	frame	data/chars/ryan/special-07.png
 	offset	27 81
@@ -332,6 +420,9 @@ anim	special
 	frame	data/chars/ryan/special-10.png
 		
 anim	throw
+	drawmethod	scale 1.25 1.25
+	drawmethod	flipx 1
+	delay	5
 	offset	23 78
 	frame	data/chars/ryan/throw-1.png
 	offset	23 76
@@ -345,6 +436,7 @@ anim	throw
 	frame	data/chars/ryan/throw-6.png
 		
 anim	walk
+	drawmethod	scale 1.25 1.25
 	loop	1
 	delay	7
 	offset	25 81

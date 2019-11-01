@@ -1,0 +1,9 @@
+void main() {
+	changemodelproperty("Kula",4,1);
+	changemodelproperty("Max",4,1);
+	changemodelproperty("Mandy",4,1);
+	changemodelproperty("Mighty",4,1);
+	changemodelproperty("ryan",4,1);
+	changemodelproperty("Kaguya",4,1);
+	changemodelproperty("lazuli",4,1);
+}

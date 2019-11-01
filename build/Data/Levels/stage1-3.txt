@@ -2,6 +2,21 @@ music		data/music/remix.bor
 
 background	data/bgs/stage1-3/back.png
 
+frontpanel data/bgs/stage1-3/fg-1.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-2.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-2.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+frontpanel data/bgs/stage1-3/fg-spacer.png
+
 panel		data/bgs/stage1-3/panel.png none none
 
 order	a
@@ -17,4 +32,4 @@ at	800
 
 
 wait
-at	900
+at	1360

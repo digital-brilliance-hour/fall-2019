@@ -6,7 +6,11 @@ panel		data/bgs/stage1-2/panel.png none none
 
 order	a
 
+spawn1 220 4 300
 
+
+
+wall    119 187 5 -48 99 54 35 95
 
 
 #---------------------
