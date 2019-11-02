@@ -1,6 +1,6 @@
 Total Ram: 17132109824 Bytes
- Free Ram: 8227885056 Bytes
- Used Ram: 3645440 Bytes
+ Free Ram: 6966349824 Bytes
+ Used Ram: 3641344 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
@@ -26,7 +26,7 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-11-01 09:30:54
+Joystick: "UNKNOWN" connected at port: 0 at 2019-11-01 22:48:07
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -94,18 +94,28 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/stage1-1.txt'
+Level Loading:   'data/levels/stage1-3.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 8182259712 Bytes
- Used Ram: 51331072 Bytes
+ Free Ram: 6911520768 Bytes
+ Used Ram: 51625984 Bytes
 
 Loaded 'Angel' from data/chars/angel/angel.txt 
 
-Level Loaded:    'data/levels/stage1-1.txt'
+Level Loaded:    'data/levels/stage1-3.txt'
 Total Ram: 17132109824 Bytes
- Free Ram: 8181751808 Bytes
- Used Ram: 53030912 Bytes
+ Free Ram: 6911131648 Bytes
+ Used Ram: 52600832 Bytes
 Total sprites mapped: 697
+
+Level Unloading: 'data/levels/stage1-3.txt'
+Total Ram: 17132109824 Bytes
+ Free Ram: 6883618816 Bytes
+ Used Ram: 51146752 Bytes
+
+RAM Status:
+Total Ram: 17132109824 Bytes
+ Free Ram: 6883864576 Bytes
+ Used Ram: 50434048 Bytes
 
 
 ************ Shutting Down ************
@@ -118,18 +128,8 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 Special thanks to SEGA and SNK.
 
 Total Ram: 17132109824 Bytes
- Free Ram: 8001982464 Bytes
- Used Ram: 53485568 Bytes
-
-Level Unloading: 'data/levels/stage1-1.txt'
-Total Ram: 17132109824 Bytes
- Free Ram: 8010326016 Bytes
- Used Ram: 51916800 Bytes
-
-RAM Status:
-Total Ram: 17132109824 Bytes
- Free Ram: 8010477568 Bytes
- Used Ram: 51294208 Bytes
+ Free Ram: 6892703744 Bytes
+ Used Ram: 50511872 Bytes
 
 Release level data...........
 Done!

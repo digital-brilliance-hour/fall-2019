@@ -17,8 +17,12 @@ wall    23 237 5 -63 99 35 85 245
 #---------------------
 
 spawn	Angel
-coords	380 160
+coords	280 190
 at	800
+
+spawn Mrbig
+coords	180 190
+at	2080
 
 
 wait
