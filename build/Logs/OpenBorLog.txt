@@ -1,6 +1,6 @@
-Total Ram: 4118360064 Bytes
- Free Ram: 1101529088 Bytes
- Used Ram: 6008832 Bytes
+Total Ram: 4110712832 Bytes
+ Free Ram: 735043584 Bytes
+ Used Ram: 6184960 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
@@ -19,6 +19,7 @@ Loading menu.txt.............	Done!
 Loading fonts................	1 2 3 4 Done!
 Timer init...................	Done!
 Initialize Sound..............	
+Warning: can't play sound at 44100 Hz!
 Loading sprites..............	Done!
 Loading level order..........	Done!
 Loading model constants......	Done!
@@ -102,6 +103,38 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
+<<<<<<< HEAD
+=======
+
+Can't play music file 'data/music/remix'
+
+Can't play music file 'data/music/remix'
+
+Can't play music file 'data/music/remix'
+
+Can't play music file 'data/music/menu'
+
+Can't play music file 'data/music/remix'
+Level Loading:   'data/levels/stage1-1.txt'
+Total Ram: 4110712832 Bytes
+ Free Ram: 791937024 Bytes
+ Used Ram: 50782208 Bytes
+
+Loaded 'Angel' from data/chars/angel/angel.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/leonahey.wav'!
+Loaded 'Mrbig' from data/chars/mrbig/mrbig.txt 
+sound_load_sample can't load sample from file 'data/sounds/die2.wav'!
+
+Can't play music file 'data/music/remix.bor'
+
+Level Loaded:    'data/levels/stage1-1.txt'
+Total Ram: 4110712832 Bytes
+ Free Ram: 785129472 Bytes
+ Used Ram: 52363264 Bytes
+Total sprites mapped: 753
+
+>>>>>>> added stage 2-2 image
 
 ************ Shutting Down ************
 
@@ -112,11 +145,27 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
+<<<<<<< HEAD
 Total Ram: 4118360064 Bytes
  Free Ram: 1180160000 Bytes
  Used Ram: 52338688 Bytes
+=======
+Total Ram: 4110712832 Bytes
+ Free Ram: 777469952 Bytes
+ Used Ram: 52473856 Bytes
+>>>>>>> added stage 2-2 image
 
 Release level data...........
+Level Unloading: 'data/levels/stage1-1.txt'
+Total Ram: 4110712832 Bytes
+ Free Ram: 777515008 Bytes
+ Used Ram: 52473856 Bytes
+
+RAM Status:
+Total Ram: 4110712832 Bytes
+ Free Ram: 777539584 Bytes
+ Used Ram: 51855360 Bytes
+
 Done!
 
 Release graphics data........	Done!
@@ -130,6 +179,11 @@ Unload 'Mighty' ............Done.
 Unload 'ryan' ............Done.
 Unload 'Kaguya' ............Done.
 Unload 'lazuli' ............Done.
+<<<<<<< HEAD
+=======
+Unload 'Angel' ............Done.
+Unload 'Mrbig' ............Done.
+>>>>>>> added stage 2-2 image
 
 Release game data............	Done!
 Release timer................	Done!
