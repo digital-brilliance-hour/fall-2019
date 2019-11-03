@@ -1,8 +1,8 @@
-Total Ram: 17132109824 Bytes
- Free Ram: 6966349824 Bytes
- Used Ram: 3641344 Bytes
+Total Ram: 4118360064 Bytes
+ Free Ram: 1101529088 Bytes
+ Used Ram: 6008832 Bytes
 
-debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
+debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Aug 29 2018
 
 Game Selected: ./Paks/My Mod.pak
@@ -26,7 +26,6 @@ Loading script settings......	Done!
 Loading scripts..............	Done!
 Loading models...............
 
-Joystick: "UNKNOWN" connected at port: 0 at 2019-11-01 22:48:07
 Cacheing 'Flash' from data/chars/misc/flash.txt
 Cacheing 'Kula' from data/chars/kula/kula.txt
 Cacheing 'Max' from data/chars/maxima/maxima.txt
@@ -77,45 +76,31 @@ Cacheing 'lazuli' from Data/Chars/lazuli/lazuli.txt
 
 Loaded 'Flash' from data/chars/misc/flash.txt 
 Loaded 'Kula' from data/chars/kula/kula.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/kulablow.wav'!
+sound_load_sample can't load sample from file 'data/sounds/kulahey.wav'!
 Loaded 'Max' from data/chars/maxima/maxima.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxuh.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxboom.wav'!
+sound_load_sample can't load sample from file 'data/sounds/maxrockt.wav'!
 Loaded 'Mandy' from data/chars/mary/mary.txt 
+sound_load_sample can't load sample from file 'data/sounds/eek.wav'!
+sound_load_sample can't load sample from file 'data/sounds/mary_ffp.wav'!
+sound_load_sample can't load sample from file 'data/sounds/marytoss.wav'!
 Loaded 'Mighty' from data/chars/mighty/mighty.txt 
+sound_load_sample can't load sample from file 'data/sounds/die1.wav'!
 Loaded 'ryan' from Data/Chars/ryan/ryan.txt 
 Loaded 'Kaguya' from Data/Chars/Kaguya/Kaguya.txt 
 Loaded 'lazuli' from Data/Chars/lazuli/lazuli.txt 
 
 Loading models...............	Done!
 Object engine init...........	Done!
-Input init...................	
-1 joystick(s) found!
-UNKNOWN - 4 axes, 12 buttons, 1 hat(s)
+Input init...................	No Joystick(s) Found!
 Done!
 Create blending tables.......	Done!
 Save settings so far........	Done!
 
-
-Level Loading:   'data/levels/stage1-3.txt'
-Total Ram: 17132109824 Bytes
- Free Ram: 6911520768 Bytes
- Used Ram: 51625984 Bytes
-
-Loaded 'Angel' from data/chars/angel/angel.txt 
-
-Level Loaded:    'data/levels/stage1-3.txt'
-Total Ram: 17132109824 Bytes
- Free Ram: 6911131648 Bytes
- Used Ram: 52600832 Bytes
-Total sprites mapped: 697
-
-Level Unloading: 'data/levels/stage1-3.txt'
-Total Ram: 17132109824 Bytes
- Free Ram: 6883618816 Bytes
- Used Ram: 51146752 Bytes
-
-RAM Status:
-Total Ram: 17132109824 Bytes
- Free Ram: 6883864576 Bytes
- Used Ram: 50434048 Bytes
 
 
 ************ Shutting Down ************
@@ -127,9 +112,9 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 17132109824 Bytes
- Free Ram: 6892703744 Bytes
- Used Ram: 50511872 Bytes
+Total Ram: 4118360064 Bytes
+ Free Ram: 1180160000 Bytes
+ Used Ram: 52338688 Bytes
 
 Release level data...........
 Done!
@@ -145,7 +130,6 @@ Unload 'Mighty' ............Done.
 Unload 'ryan' ............Done.
 Unload 'Kaguya' ............Done.
 Unload 'lazuli' ............Done.
-Unload 'Angel' ............Done.
 
 Release game data............	Done!
 Release timer................	Done!
