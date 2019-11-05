@@ -36,3 +36,6 @@ z 170 232 170
 file	data/levels/stage1-1.txt
 file	data/levels/stage1-2.txt
 file	data/levels/stage1-3.txt
+
+set Stage_3
+file data/levels/stage3-1.txt
