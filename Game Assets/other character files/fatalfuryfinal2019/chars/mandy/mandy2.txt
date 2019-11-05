@@ -1,0 +1,175 @@
+name	mandy2
+health	100
+speed	10
+type	enemy
+shadow	0
+gfxshadow 0
+icon	data/chars/karl/ICON2.gif
+diesound data/sounds/jump.wav
+alpha 3
+palette  data/chars/mandy/walk01.gif
+alternatepal data/chars/mandy/map1.gif
+alternatepal data/chars/mandy/map2.gif
+alternatepal data/chars/mandy/map3.gif
+alternatepal data/chars/mandy/map4.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 5 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/mandy/FALL1.gif
+	frame	data/chars/mandy/FALL1.gif
+	frame	data/chars/mandy/FALL1.gif
+	frame	data/chars/mandy/FALL2.gif
+	frame	data/chars/mandy/FALL2.gif
+
+anim spawn
+	loop	0
+	offset	82 177
+	delay	10
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro3.gif
+        delay 8
+	sound	data/sounds/swish.wav
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro2.gif
+	frame	data/chars/mandy/intro3.gif
+	frame	data/chars/mandy/intro.gif
+	frame	data/chars/mandy/intro.gif
+	frame	data/chars/mandy/intro.gif
+
+
+anim idle
+	loop	1
+	offset	82 177
+	bbox	74 89 39 84
+	delay	10
+	frame	data/chars/mandy/IDLE1.gif
+
+
+anim walk
+	loop	1
+	offset	82 177
+	bbox	74 89 39 84
+	delay	14
+	frame	data/chars/mandy/walk00.gif
+	frame	data/chars/mandy/walk01.gif
+	frame	data/chars/mandy/walk02.gif
+	frame	data/chars/mandy/walk03.gif
+	frame	data/chars/mandy/walk04.gif
+
+anim pain
+	loop	0
+	offset	82 177
+	bbox	74 89 39 84
+	delay	12
+move -1
+	frame	data/chars/mandy/HURT1.gif
+	frame	data/chars/mandy/HURT1.gif
+	frame	data/chars/mandy/HURT1.gif
+
+anim grabbed
+	loop	0
+	offset	82 177
+	bbox	74 89 39 84
+	delay	12
+	frame	data/chars/mandy/HURT1.gif
+	delay	50
+	frame	data/chars/mandy/HURT1.gif
+	delay	12
+	frame	data/chars/mandy/HURT1.gif
+
+
+anim fall
+	loop	0
+	delay	35
+	offset	82 177
+	frame	data/chars/mandy/FALL1.gif
+	frame	data/chars/mandy/FALL1.gif
+	frame	data/chars/mandy/FALL2.gif
+
+anim rise
+	loop	0
+	offset	82 177
+	delay	15
+	frame	data/chars/mandy/rise.gif
+
+
+
+# Slap
+anim attack1
+	range	0 60
+	loop	0
+	delay	7
+	offset	82 177
+	sound	data/sounds/shock.wav
+	bbox	74 89 39 84
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/mandy/SLAP01.gif
+	frame	data/chars/mandy/SLAP01.gif
+        delay 7
+	frame	data/chars/mandy/SLAP02.gif
+	shock	122 113 40 28 15 1
+	frame	data/chars/mandy/SLAP03.gif
+	frame	data/chars/mandy/SLAP02.gif
+	frame	data/chars/mandy/SLAP03.gif
+	frame	data/chars/mandy/SLAP02.gif
+	frame	data/chars/mandy/SLAP03.gif
+	frame	data/chars/mandy/SLAP02.gif
+	frame	data/chars/mandy/SLAP03.gif
+	frame	data/chars/mandy/SLAP02.gif
+	frame	data/chars/mandy/SLAP03.gif
+	frame	data/chars/mandy/SLAP02.gif
+	frame	data/chars/mandy/SLAP01.gif
+
+# Flip
+anim attack2
+	range	10 50
+	loop	0
+	delay	5
+	offset	82 177
+	sound	data/sounds/punch.wav
+	bbox	74 89 39 84
+	frame	data/chars/mandy/flip00.gif
+	attack	80 118 49 34 7 1
+	frame	data/chars/mandy/flip00.gif
+	frame	data/chars/mandy/flip01.gif
+	frame	data/chars/mandy/flip01.gif
+	frame	data/chars/mandy/flip01.gif
+	frame	data/chars/mandy/flip01.gif
+
+
+
+
+

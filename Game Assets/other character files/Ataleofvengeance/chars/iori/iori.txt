@@ -1,0 +1,423 @@
+name	IORI
+health	2000
+speed	15
+type	enemy
+shadow	5
+dust    dust
+diesound data/sounds/ioriDIE.wav
+icon	data/chars/iori/1.gif
+iconpain     data/chars/iori/2.gif
+aggression 1
+gfxshadow 1
+
+remap data/chars/iori/idle00.gif data/chars/iori/map1.gif
+
+
+load shot
+
+
+
+anim idle
+	loop	1
+	delay	7
+	offset	15 82
+	bbox	0 0 60 86
+	frame	data/chars/iori/idle00.gif
+offset	15 83
+                  frame	data/chars/iori/idle01.gif
+offset	15 84
+                  frame	data/chars/iori/idle02.gif
+offset	15 85
+                  frame	data/chars/iori/idle03.gif
+offset	15 84
+                  frame	data/chars/iori/idle04.gif
+offset	15 83
+                  frame	data/chars/iori/idle05.gif	
+offset	15 81
+                  frame	data/chars/iori/idle06.gif	
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	35 98
+	bbox	21 0 46 101
+	frame	data/chars/iori/wk01.gif
+offset	40 98
+	bbox	28 0 43 98
+	frame	data/chars/iori/wk02.gif
+offset	36 98
+	bbox	26 0 44 101
+	frame	data/chars/iori/wk03.gif
+offset	26 99
+	bbox	16 2 44 96
+	frame	data/chars/iori/wk04.gif
+offset	20 99
+	bbox	10 1 41 101
+	frame	data/chars/iori/wk05.gif
+offset	23 99
+	bbox	14 0 38 97
+	frame	data/chars/iori/wk06.gif
+offset	26 98
+	bbox	17 0 40 101
+	frame	data/chars/iori/wk07.gif
+offset	30 98
+	bbox	24 0 36 101
+	frame	data/chars/iori/wk08.gif
+offset	25 98
+	bbox	17 3 43 97
+                  frame 	data/chars/iori/wk09.gif
+offset	14 99
+	bbox	3 0 42 101
+                  frame	data/chars/iori/wk10.gif
+offset	20 99
+	bbox	8 0 48 102
+                  frame	data/chars/iori/wk10.gif
+
+
+anim attack1
+	loop	0
+	delay	5
+	bbox	30 0 34 96
+	offset	37 96
+                  sound       data/sounds/ioriATK.wav
+	frame	data/chars/iori/1atk00.gif
+offset	36 97
+	bbox	27 7 28 83
+                 attack         46 19 55 22 15 
+	frame	data/chars/iori/1atk01.gif
+offset	37 97
+                  bbox          28 5 37. 89
+	frame	data/chars/iori/1atk02.gif
+offset	37 99
+                  bbox         32 7 31 87
+                  attack       0 0 0 0 0
+	frame	data/chars/iori/1atk03.gif
+offset	38 106
+	bbox	7 4 58 100
+	frame	data/chars/iori/2atk00.gif
+offset	39 108
+	frame	data/chars/iori/2atk01.gif
+	bbox	34 20 36 50
+offset	37 94
+	frame	data/chars/iori/2atk02.gif
+offset	37 100
+                  attack        59 36 70 24 15
+	frame	data/chars/iori/2atk03.gif
+offset	37 105
+                   bbox         58 28 27 68
+	frame	data/chars/iori/2atk04.gif
+offset	38 105
+                   bbox         25 4 38 93
+                   attack        0 0 0 0 0   
+	frame	data/chars/iori/2atk05.gif
+offset	28 89
+	bbox	0 0 0 0
+	frame	data/chars/iori/3atk00.gif
+offset	26 119
+                  attack        50 0 59 93 15
+	frame	data/chars/iori/3atk01.gif
+offset	25 116
+	frame	data/chars/iori/3atk02.gif
+offset	27 97
+	attack       	0 0 0 0 0
+	frame	data/chars/iori/3atk03.gif
+offset	30 90
+	frame	data/chars/iori/3atk04.gif
+move 15
+	sound        data/sounds/IORIATK.wav
+Offset	37 87
+	bbox	0 0 0 0 
+	frame	data/chars/iori/4atk00.gif
+offset	53 83
+                  attack        37 6 35 75 5
+	frame	data/chars/iori/4atk01.gif
+offset	50 89
+                  attack        0 0 0 0 0
+                  frame	data/chars/iori/4atk02.gif
+offset	46 84
+                  attack        9 0 100 83 5
+	frame	data/chars/iori/4atk03.gif
+offset	39 95
+                  attack        0 0 0 0 0
+                	frame	data/chars/iori/4atk04.gif
+offset	38 105
+                  attack        10 0 94 105 15 1
+	frame	data/chars/iori/4atk05.gif
+offset	37 115
+	frame	data/chars/iori/4atk06.gif
+offset	33 113
+                  attack        0 0 0 0 0 0
+	frame	data/chars/iori/4atk07.gif
+
+
+
+
+
+
+anim attack2
+                  range      100 200
+	loop	0
+                  shootframe 4
+	delay        6
+                  sound       data/sounds/iorispeC.wav
+	hitfx           data/sounds/fast.wav
+offset       36 110
+                 frame	data/chars/iori/shoot01.gif
+offset        38 112
+                	frame	data/chars/iori/shoot02.gif
+offset       38 101
+                	frame	data/chars/iori/shoot03.gif
+offset        38 100
+                	frame	data/chars/iori/shoot04.gif
+offset        38 104
+                 frame	data/chars/iori/shoot05.gif
+offset       38 101
+                	frame	data/chars/iori/shoot06.gif
+offset        38 101
+                	frame	data/chars/iori/shoot07.gif
+offset       38 103
+                	frame	data/chars/iori/shoot08.gif
+offset      38 103  
+                	frame	data/chars/iori/shoot09.gif
+
+   
+
+anim ATTACK3
+                  range       10 130
+	loop	0
+	delay	15
+	bbox	17 7 43 104
+                  sound       data/sounds/iorispe2.wav
+offset	36 112
+	frame	data/chars/iori/spec00.gif
+                  delay	5
+                  bbox	0 0 0 0
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 5                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	49 69
+move         15
+                 	frame	data/chars/iori/spec03.gif
+offset	59 60
+                  attack        11 5 103 58 5 
+                  frame	data/chars/iori/spec04.gif
+offset        60 59
+                  attack        0 0 0 0 0
+                  frame	data/chars/iori/spec05.gif
+offset	54 64
+                  attack        8 0 102 67 10 
+	frame	data/chars/iori/spec06.gif
+offset	46 85
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec07.gif
+offset	32 92
+                 	frame	data/chars/iori/spec08.gif
+offset	25 127
+                  attack       18 0 56 127 20 1  
+                  frame	data/chars/iori/spec09.gif
+offset        24 120
+                  frame	data/chars/iori/spec10.gif
+offset	24 114
+                  attack        0 0 0 0 0 0
+	frame	data/chars/iori/spec11.gif
+
+    
+anim pain
+	loop	0
+	offset	36 103
+	bbox	2 0 64 104
+	delay	5
+                   sound       data/sounds/ioripaiN.wav
+	frame	data/chars/iori/pain01.gif
+offset	48 99
+                  bbox         0 3 79 97
+                  frame	data/chars/iori/pain02.gif
+offset	55 95
+                  bbox         0 0 82 92
+                  delay	20
+	frame	data/chars/iori/pain03.gif
+offset	48 99
+                  bbox          0 3 79 97
+delay	5
+                  frame	data/chars/iori/pain02.gif
+offset	36 103 
+                  bbox         2 0 64 104
+	frame	data/chars/iori/pain01.gif
+
+
+  
+anim fall
+	loop	0
+	offset	35 107
+	delay	5
+	frame	data/chars/iori/fall01.gif
+offset	43 79
+DELAY       65
+                 ATTACK        2 14 43 29 10 1
+                  frame	data/chars/iori/fall02.gif
+DELAY            15
+offset	38 95
+                	frame	data/chars/iori/fall03.gif
+offset	51 45
+DELAY      5
+                 ATTACK        0 0 0 0 0 0
+           	frame	data/chars/iori/fall04.gif
+offset	49 31
+DELAY       35
+	frame	data/chars/iori/fall05.gif
+
+anim rise
+	loop	0
+	offset	63 41
+	delay	20
+                  bbox          0 0 0 0 
+                  frame	data/chars/iori/rise01.gif
+offset	63 50
+	frame	data/chars/iori/rise02.gif
+offset	34 61
+	frame	data/chars/iori/rise03.gif
+
+
+
+
+anim special
+	loop	0
+	delay	15
+	bbox	17 7 43 104
+                  sound       data/sounds/iorispe2.wav
+offset	36 112
+	frame	data/chars/iori/spec00.gif
+                  delay	5
+                  bbox	0 0 0 0
+offset	36 107
+                  attack        6 7 71 102 3                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 3                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 3                   
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 3                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  attack        6 7 71 102 3                    
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+                  attack        0 0 0 0 0
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+offset	36 107
+                  blast        6 7 71 102 5 0                  
+	frame	data/chars/iori/spec01.gif
+offset	35 105
+	frame	data/chars/iori/spec02.gif
+
+
+
+
+
+
+
+
+
+
+
+
+

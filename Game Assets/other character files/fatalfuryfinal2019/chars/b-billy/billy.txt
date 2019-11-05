@@ -1,0 +1,793 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Billy
+health	136 0 100 1
+mpset 	70 0 50 0
+speed	12
+mp          		70
+mprate				3
+nolife				1
+falldie		1
+type	player
+Jmove 0 2
+#shadow	3
+#colourselect 1
+#energycoast 6
+gfxshadow	1
+subject_to_screen 1
+makeinv		3
+dust dusts2 dusts3 dusts
+riseinv		1
+#Wning	30 5 3 1 0
+icon	data/chars/b-billy/icon.gif
+diesound  data/sounds/Die5.wav
+
+parrow	data/chars/misc/1p.gif -30 -125
+parrow2	data/chars/misc/2p.gif -30 -125
+parrow3	data/chars/misc/3p.gif -30 -125
+
+remap	data/chars/b-billy/Idle01.gif data/chars/b-billy/map01.gif
+remap	data/chars/b-billy/Idle01.gif data/chars/b-billy/map02.gif
+remap	data/chars/b-billy/Idle01.gif data/chars/b-billy/map03.gif
+
+#load Super
+#load Powerbi
+
+
+
+com d f a  freespecial2
+com d f d f a  freespecial3
+com a2 freespecial5
+com d f a2  freespecial8
+com d f d f a2  freespecial
+com u u freespecial7
+com d d freespecial6
+
+
+
+
+
+
+
+anim waiting
+      loop	1
+	delay	10
+	offset	0 0
+	fshadow	0
+      frame	data/chars/b-billy/Billy00.gif
+
+
+anim SELECT
+	loop	0
+      delay	10
+	offset	0 0
+	fshadow	0
+	sound	data/chars/b-billy/Select.wav
+      frame	data/chars/b-billy/Billy01.gif
+      frame	data/chars/b-billy/Billy00.gif
+      frame	data/chars/b-billy/Billy01.gif
+      frame	data/chars/b-billy/Billy00.gif
+      frame	data/chars/b-billy/Billy01.gif
+      frame	data/chars/b-billy/Billy00.gif
+      frame	data/chars/b-billy/Billy01.gif
+      frame	data/chars/b-billy/Billy00.gif
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	92 139
+	bbox	61 41 52 99
+	frame	data/chars/b-billy/idle01.gif
+	frame	data/chars/b-billy/idle02.gif
+	frame	data/chars/b-billy/idle03.gif
+	frame	data/chars/b-billy/idle04.gif
+	frame	data/chars/b-billy/idle05.gif
+	frame	data/chars/b-billy/idle06.gif
+	frame	data/chars/b-billy/idle07.gif
+	frame	data/chars/b-billy/idle08.gif
+	frame	data/chars/b-billy/idle09.gif
+	frame	data/chars/b-billy/idle10.gif
+
+
+
+anim walk
+	loop	1
+		offset  68  107
+		delay  10
+		bbox  43  -3  48  112
+	frame	data/chars/b-billy/W01.gif
+	frame	data/chars/b-billy/W02.gif
+	frame	data/chars/b-billy/W03.gif
+	frame	data/chars/b-billy/W04.gif
+	frame	data/chars/b-billy/W05.gif
+	frame	data/chars/b-billy/W06.gif
+
+anim run
+	loop	1
+		move  8
+		bbox  19  5  74  95
+		delay  3
+
+		offset  60  92
+	frame  data/chars/b-billy/r02.gif
+	frame  data/chars/b-billy/r02.gif
+	frame  data/chars/b-billy/r03.gif
+	frame  data/chars/b-billy/r03.gif
+	frame	data/chars/b-billy/r04.gif
+	frame  data/chars/b-billy/r04.gif
+	frame	data/chars/b-billy/r05.gif
+	frame  data/chars/b-billy/r05.gif
+	frame	data/chars/b-billy/r06.gif
+	frame  data/chars/b-billy/r06.gif
+	frame	data/chars/b-billy/r07.gif
+	frame  data/chars/b-billy/r07.gif
+
+
+anim Jump
+	loop	0
+		offset  54  121
+		bbox  37  9  45  113
+		delay  7
+	frame	data/chars/b-billy/J01.gif
+		offset  53  85
+		bbox  26  0  56  97
+	frame	data/chars/b-billy/J02.gif
+		bbox  39  7  38  82
+	frame	data/chars/b-billy/J03.gif
+	frame	data/chars/b-billy/J04.gif
+		offset  55  120
+	frame	data/chars/b-billy/J05.gif
+	frame	data/chars/b-billy/J06.gif
+	frame	data/chars/b-billy/J07.gif
+
+anim land
+	loop	0
+	offset	72 103
+	delay	25
+	bbox	53 23 36 81
+	frame	data/chars/b-billy/r01.gif
+
+anim grab
+	loop	0
+	offset	64 89
+	bbox	54 4 32 102
+	delay	1000
+	cancel 	0 			1 	0 	a2 		freespecial5
+	cancel 	0 	1	0 	d f a  freespecial2
+        cancel 	0 	1	0 	d f d f a  freespecial3
+	cancel 	0 	1	0 	d f d f a2  freespecial
+        cancel 	0 	1	0 	d f a2  freespecial8
+        cancel 	0 	1	0 	d d  freespecial6
+        cancel 	0 	1	0 	u u  freespecial7
+	sound	data/sounds/grab.wav
+	frame	data/chars/b-billy/a102.gif
+
+anim freespecial6
+		offset  68  80
+		delay  5
+		movez  5
+		bbox  51  0  49  75
+	frame  data/chars/b-billy/roll01.gif
+		bbox  0
+	frame  data/chars/b-billy/roll02.gif
+	frame  data/chars/b-billy/roll03.gif
+	frame  data/chars/b-billy/roll04.gif
+	frame  data/chars/b-billy/roll05.gif
+	frame  data/chars/b-billy/roll06.gif
+		bbox  51  -1  46  82
+		movez  0
+	frame  data/chars/b-billy/roll07.gif
+		offset  89  139
+		bbox  62  47  54  94
+	frame  data/chars/b-billy/Idle01.gif
+
+
+anim freespecial7
+		offset  73  79
+		delay  5
+		movez  -5
+		bbox  42  1  52  76
+	frame  data/chars/b-billy/roll01.gif
+		bbox  0
+	frame  data/chars/b-billy/roll02.gif
+	frame  data/chars/b-billy/roll03.gif
+	frame  data/chars/b-billy/roll04.gif
+	frame  data/chars/b-billy/roll05.gif
+	frame  data/chars/b-billy/roll06.gif
+		bbox  47  1  43  79
+		movez  0
+	frame  data/chars/b-billy/roll07.gif
+		offset  89  138
+		bbox  64  51  43  88
+	frame  data/chars/b-billy/Idle01.gif
+
+
+anim throw
+	loop	0
+	flipframe  2
+	offset	62 131
+	delay	7
+		bbox  36  31  44  100
+	frame	data/chars/b-billy/T01.gif
+	frame	data/chars/b-billy/T02.gif
+	frame	data/chars/b-billy/T03.gif
+	frame	data/chars/b-billy/T04.gif
+	frame	data/chars/b-billy/T05.gif
+	frame	data/chars/b-billy/T06.gif
+		offset  66  132
+	frame	data/chars/b-billy/T07.gif
+
+anim grabattack
+	loop	0
+		offset  64  89
+		bbox  35  0  32  103
+		delay  10
+	sound	data/chars/b-billy/a1.wav
+	frame	data/chars/b-billy/a103.gif
+		attack1  59  2  112  67  10
+	frame	data/chars/b-billy/a104.gif
+	frame	data/chars/b-billy/a105.gif
+	frame	data/chars/b-billy/a106.gif
+		Attack1  0
+	frame	data/chars/b-billy/a107.gif
+
+anim grabattack2
+		loop	0
+		offset  76  116
+		bbox  50  13  40  109
+	hitflash flash03
+		delay  7
+	sound	data/chars/b-billy/a3.wav
+	frame	data/chars/b-billy/a301.gif
+	frame	data/chars/b-billy/a302.gif
+	frame	data/chars/b-billy/a303.gif
+		blast  88  18  117  93
+	frame	data/chars/b-billy/a304.gif
+	frame	data/chars/b-billy/a305.gif
+		Attack1  0
+	frame	data/chars/b-billy/a306.gif
+	frame	data/chars/b-billy/a307.gif
+	frame	data/chars/b-billy/a308.gif
+	frame	data/chars/b-billy/a309.gif
+	frame	data/chars/b-billy/a310.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	bbox	24 -2 51 91
+	offset	54 90
+	sound	data/chars/b-billy/a1.wav
+		move  0
+	frame	data/chars/b-billy/a101.gif
+		Attack1  0
+	frame	data/chars/b-billy/a102.gif
+		delay  5
+		Attack1  66  12  83  33  10
+	frame	data/chars/b-billy/a103.gif
+		attack1  40  2  129  33  10
+	frame	data/chars/b-billy/a104.gif
+		delay  5
+		move  0
+	frame	data/chars/b-billy/a105.gif
+		Attack1  0
+	frame	data/chars/b-billy/a106.gif
+	frame	data/chars/b-billy/a107.gif
+	frame	data/chars/b-billy/a108.gif
+
+
+anim attack2
+	loop	0
+	delay	3
+	offset	53 131
+	hitflash flash02
+	bbox	23 33 56 99 15
+	sound	data/chars/b-billy/a2.wav
+	frame	data/chars/b-billy/a201.gif
+		Attack1  0
+		offset  53  127
+	frame	data/chars/b-billy/a202.gif
+		delay  7
+	frame	data/chars/b-billy/a203.gif
+		Attack1  0  40  138  43  10
+	frame	data/chars/b-billy/a204.gif
+	frame	data/chars/b-billy/a205.gif
+	frame	data/chars/b-billy/a206.gif
+		Attack1  0
+	frame	data/chars/b-billy/a207.gif
+		offset  53  131
+	frame	data/chars/b-billy/a208.gif
+
+anim attack3
+
+	loop	0
+		delay  4
+	hitflash flash03
+		offset  80  116
+		bbox  48  23  42  93
+	sound	data/chars/b-billy/a3.wav
+	frame	data/chars/b-billy/a301.gif
+	frame  data/chars/b-billy/a302.gif
+		move  0
+		Attack1  0
+	frame	data/chars/b-billy/a303.gif
+		blast  53  24  153  79  15
+	frame	data/chars/b-billy/a304.gif
+		delay  4
+	frame	data/chars/b-billy/a305.gif
+		Attack1  0
+	frame	data/chars/b-billy/a306.gif
+	frame	data/chars/b-billy/a307.gif
+	frame	data/chars/b-billy/a308.gif
+	frame	data/chars/b-billy/a309.gif
+	frame	data/chars/b-billy/a310.gif
+
+
+
+
+anim freespecial5
+	loop	0
+		delay  7
+		offset  74  114
+	hitflash flash03
+		bbox  56  28  38  87
+	sound	data/chars/b-billy/a3.wav
+	frame	data/chars/b-billy/a301.gif
+	frame  data/chars/b-billy/a302.gif
+		move  0
+		Attack1  0
+	frame	data/chars/b-billy/a303.gif
+		blast  89  25  116  87  15
+	frame	data/chars/b-billy/a304.gif
+		delay  4
+	frame	data/chars/b-billy/a305.gif
+		Attack1  0
+	frame	data/chars/b-billy/a306.gif
+	frame	data/chars/b-billy/a307.gif
+	frame	data/chars/b-billy/a308.gif
+	frame	data/chars/b-billy/a309.gif
+	frame	data/chars/b-billy/a310.gif
+
+
+
+anim pain
+	loop	0
+	offset	52 103
+	bbox	29 4 48 99
+	delay	8
+	frame	data/chars/b-billy/pain01.gif
+	frame	data/chars/b-billy/pain02.gif
+	frame	data/chars/b-billy/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	49 104
+	bbox	32 7 45 94
+	delay	8
+	frame	data/chars/b-billy/painR01.gif
+	frame	data/chars/b-billy/painR02.gif
+	frame	data/chars/b-billy/painR01.gif
+
+anim pain3
+	loop	0
+	offset	48 103
+	bbox	31 1 38 104
+	delay	8
+	frame	data/chars/b-billy/painB01.gif
+	frame	data/chars/b-billy/painB02.gif
+	frame	data/chars/b-billy/painB01.gif
+
+
+
+anim fall
+	loop	0
+	offset	54 70
+	attack
+	delay	7
+	landframe 2
+	delay	70
+	frame	data/chars/b-billy/fall01.gif
+		Attack1  0
+	frame	data/chars/b-billy/fall02.gif
+	frame	data/chars/b-billy/fall02.gif
+	frame  data/chars/b-billy/fall02.gif
+		blast  0  25  65  44  5  1
+	frame  data/chars/b-billy/fall02.gif
+	frame  data/chars/b-billy/fall02.gif
+	frame  data/chars/b-billy/fall02.gif
+		offset  55  23
+		Attack1  0
+	frame	data/chars/b-billy/fall03.gif
+
+anim rise
+		offset  74  82
+		delay  7
+        frame	data/chars/b-billy/Rise01.gif
+        frame	data/chars/b-billy/Rise02.gif
+        frame	data/chars/b-billy/Rise03.gif
+        frame	data/chars/b-billy/Rise04.gif
+
+
+
+
+anim Jumpattack
+	loop	0
+		offset  60  98
+		bbox  10  0  50  86
+		delay  7
+	sound	data/chars/b-billy/a1.wav
+        frame	data/chars/b-billy/ja101.gif
+		Attack1  50  35  73  67  10
+        frame	data/chars/b-billy/ja102.gif
+	frame  data/chars/b-billy/ja102.gif
+	frame  data/chars/b-billy/ja102.gif
+		delay  4
+		attack1  43  39  50  39  15
+        frame	data/chars/b-billy/ja103.gif
+
+
+anim Jumpattack2
+
+		offset  107  127
+		bbox  91  39  38  60
+                loop 0
+		delay  4
+	sound	data/chars/b-billy/a3.wav
+		move  0
+        frame	data/chars/b-billy/ja201.gif
+		Attack1  0
+       frame	data/chars/b-billy/ja202.gif
+		delay  4
+		blast  96  70  94  91  10
+        frame	data/chars/b-billy/ja203.gif
+		blast  45  79  42  84  10
+        frame	data/chars/b-billy/ja204.gif
+		blast  5  61  67  80  10
+        frame	data/chars/b-billy/ja205.gif
+        frame	data/chars/b-billy/ja206.gif
+		Attack1  0
+        frame	data/chars/b-billy/ja207.gif
+
+
+anim freespecial3
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+delay	5
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+	mponly 1
+		offset  137  236
+	 followanim	1
+	 followcond	1
+	frame  data/chars/b-billy/sp101.gif
+	frame  data/chars/b-billy/sp102.gif
+	frame  data/chars/b-billy/sp103.gif
+	sound	data/chars/b-billy/sp02.wav
+	frame  data/chars/b-billy/sp104.gif
+		attack1  129  75  140  163  20  0  0  0  0  100
+	frame  data/chars/b-billy/sp105.gif
+		delay  2
+	frame  data/chars/b-billy/sp106.gif
+		move  0
+		delay  5
+		Attack1  0
+	frame  data/chars/b-billy/sp107.gif
+	frame  data/chars/b-billy/sp108.gif
+	frame  data/chars/b-billy/sp109.gif
+	frame  data/chars/b-billy/sp110.gif
+	frame  data/chars/b-billy/sp111.gif
+	frame  data/chars/b-billy/sp112.gif
+	frame  data/chars/b-billy/sp113.gif
+		blast  167  23  194  211  40  0  0  10  100
+	frame  data/chars/b-billy/sp114.gif
+	frame  data/chars/b-billy/sp115.gif
+	frame  data/chars/b-billy/sp116.gif
+	frame  data/chars/b-billy/sp117.gif
+	frame  data/chars/b-billy/sp118.gif
+	frame  data/chars/b-billy/sp119.gif
+	frame  data/chars/b-billy/sp120.gif
+		Attack1  0
+	frame  data/chars/b-billy/sp121.gif
+	frame  data/chars/b-billy/sp122.gif
+	frame  data/chars/b-billy/sp123.gif
+	frame  data/chars/b-billy/sp124.gif
+	frame  data/chars/b-billy/sp125.gif
+
+
+
+
+
+anim freespecial
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+         delay	4
+        custknife powerBi
+	throwframe  2 5
+		energycost  65
+	mponly 1
+		loop  0
+		offset  47  116
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	sound	data/chars/b-billy/sp01.wav
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+	frame  data/chars/b-billy/fs104.gif
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+	frame  data/chars/b-billy/fs108.gif
+		offset  111  159
+	frame  data/chars/b-billy/sp201.gif
+	sound	data/chars/b-billy/a3.wav
+	frame  data/chars/b-billy/sp202.gif
+	frame  data/chars/b-billy/sp203.gif
+	frame  data/chars/b-billy/sp204.gif
+	frame  data/chars/b-billy/sp205.gif
+	frame  data/chars/b-billy/sp206.gif
+	frame  data/chars/b-billy/sp207.gif
+	frame  data/chars/b-billy/sp208.gif
+	frame  data/chars/b-billy/sp209.gif
+
+
+
+
+
+
+anim runattack
+
+		offset  61  165
+		bbox  47  80  39  88
+		delay  5
+		blast  65  80  62  83  10
+		move  0
+	sound	data/chars/b-billy/ra.wav
+	frame  data/chars/b-billy/Ra01.gif
+	frame  data/chars/b-billy/Ra02.gif
+		movea  5
+		move  5
+		Attack1  0
+	frame  data/chars/b-billy/Ra03.gif
+		attack1  5  37  136  64  10
+	frame  data/chars/b-billy/Ra04.gif
+		Attack1  0
+	frame  data/chars/b-billy/Ra05.gif
+		attack1  43  18  37  116  10
+	frame  data/chars/b-billy/Ra06.gif
+		Attack1  0
+	frame  data/chars/b-billy/Ra07.gif
+		attack1  17  40  100  82  10
+	frame  data/chars/b-billy/Ra08.gif
+	frame  data/chars/b-billy/Ra09.gif
+		Attack1  0
+	frame  data/chars/b-billy/Ra10.gif
+		attack1  37  17  49  128  10
+	frame  data/chars/b-billy/Ra11.gif
+		Attack1  0
+	frame  data/chars/b-billy/Ra12.gif
+		blast  5  18  127  86  10
+	frame  data/chars/b-billy/Ra13.gif
+		move  0
+		movea  0
+	frame  data/chars/b-billy/Ra14.gif
+		movea  -10
+		offset  51  118
+		bbox  34  6  43  110
+		Attack1  0
+	frame  data/chars/b-billy/j05.gif
+	frame  data/chars/b-billy/j05.gif
+	frame  data/chars/b-billy/j05.gif
+
+
+
+
+anim freespecial2
+	loop	0
+	delay	4
+        energycost	10
+	offset	48 116
+	mponly 1
+
+	sound	data/chars/b-billy/fs01.wav
+		bbox  37  15  29  106
+		move  0
+		attack1  33  2  37  114  10
+	frame  data/chars/b-billy/fs101.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+		attack1  1  49  120  27  10
+	frame  data/chars/b-billy/fs104.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+		attack1  42  0  29  121  10
+	frame  data/chars/b-billy/fs108.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+		attack1  -2  47  122  28  10
+	frame  data/chars/b-billy/fs104.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+		attack1  47  -1  19  120  10
+	frame  data/chars/b-billy/fs108.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs101.gif
+	frame  data/chars/b-billy/fs102.gif
+	frame  data/chars/b-billy/fs103.gif
+		blast  -2  49  122  24  10
+	frame  data/chars/b-billy/fs104.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs105.gif
+	frame  data/chars/b-billy/fs106.gif
+	frame  data/chars/b-billy/fs107.gif
+		attack1  53  0  16  119  10
+	frame  data/chars/b-billy/fs108.gif
+
+
+
+anim freespecial8
+	loop	0
+	delay	5
+        energycost	10
+	offset	52 96
+	mponly 1
+	bbox	33 5 38 93 15
+
+	sound	data/chars/b-billy/fs02.wav
+	frame  data/chars/b-billy/fs213.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs212.gif
+		attack1  91  12  145  52  10
+	frame  data/chars/b-billy/fs201.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs202.gif
+		burn  66  2  171  46  20  11  0  0  10  50
+	frame  data/chars/b-billy/fs203.gif
+	frame  data/chars/b-billy/fs204.gif
+	frame  data/chars/b-billy/fs205.gif
+		burn  76  15  181  32  20  11  0  0  10  50
+	frame  data/chars/b-billy/fs206.gif
+	frame  data/chars/b-billy/fs207.gif
+	frame  data/chars/b-billy/fs208.gif
+		Attack1  0
+	frame  data/chars/b-billy/fs209.gif
+	frame  data/chars/b-billy/fs210.gif
+	frame  data/chars/b-billy/fs211.gif
+	frame  data/chars/b-billy/fs212.gif
+	frame  data/chars/b-billy/fs213.gif
+
+
+anim death
+		sound  data/chars/b-billy/Death.wav
+		offset  70  84
+	frame  data/chars/b-billy/rise03.gif
+	frame  data/chars/b-billy/rise02.gif
+	frame  data/chars/b-billy/rise01.gif
+		offset  55  31
+	frame  data/chars/b-billy/fall03.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  235  131  52
+	frame	data/chars/b-billy/burn1.gif
+	frame	data/chars/b-billy/burn2.gif
+	frame	data/chars/b-billy/burn1.gif
+	frame	data/chars/b-billy/burn2.gif
+	offset	53 32
+		bbox  -16  -1  139  29
+	frame	data/chars/b-billy/fall03.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  227  107  64
+	frame	data/chars/b-billy/bburn.gif
+	frame	data/chars/b-billy/burn2.gif
+	frame	data/chars/b-billy/bburn.gif
+	frame	data/chars/b-billy/burn2.gif
+	offset	54 32
+	frame	data/chars/b-billy/fall03.gif
+
+anim shock
+	loop	0
+		offset  59  101
+	frame  data/chars/b-billy/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/b-billy/Shok1.gif
+	frame	data/chars/b-billy/Shok2.gif
+		delay  10
+	frame  data/chars/b-billy/Shok1.gif
+	frame  data/chars/b-billy/Shok2.gif
+	offset	38 87
+		bbox  0
+	frame	data/chars/b-billy/fall02.gif
+		offset  48  23
+	frame	data/chars/b-billy/fall03.gif
+
+anim pain4
+	loop	0
+	offset	54 103
+	delay	30
+	bbox  36  0  36  105
+	frame	data/chars/b-billy/pain01.gif
+	frame	data/chars/b-billy/pain02.gif
+	frame	data/chars/b-billy/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/b-billy/burn1.gif
+	frame	data/chars/b-billy/burn2.gif
+	frame	data/chars/b-billy/burn1.gif
+	frame	data/chars/b-billy/burn2.gif
+	offset	55 29
+	frame	data/chars/b-billy/fall03.gif
+

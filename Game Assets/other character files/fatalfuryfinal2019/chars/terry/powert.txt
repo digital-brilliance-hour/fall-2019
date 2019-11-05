@@ -1,0 +1,30 @@
+name	PowerT
+health	1
+type	pshot
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+shadow	0
+
+
+anim idle
+
+	loop	1
+	delay	2
+	offset	41 62
+		attack1  6  7  70  56  10  2
+	frame	data/chars/Terry/P01.gif
+	frame	data/chars/Terry/P02.gif
+	frame	data/chars/Terry/P03.gif
+	frame	data/chars/Terry/P04.gif
+	frame	data/chars/Terry/P05.gif
+
+anim fall
+		offset  38  104
+		delay  1
+	frame	data/chars/Terry/PF01.gif
+	frame	data/chars/Terry/PF02.gif
+	frame	data/chars/Terry/PF03.gif
+	frame	data/chars/Terry/PF04.gif
+	frame	data/chars/Terry/PF05.gif
+	frame	data/chars/Terry/PF06.gif
+

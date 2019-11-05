@@ -1,0 +1,26 @@
+name	knife
+health	1
+type	enemy
+shadow	0
+remove 1
+anim idle
+	loop	1
+        delay   2
+	offset	-36 97
+	frame	data/chars/misc/shot21.gif
+	offset	-32 97
+	frame	data/chars/misc/shot22.gif
+	offset	-27 95
+	frame	data/chars/misc/shot23.gif
+	offset	-23 84
+        blast	56 24 76 128 33 0
+	frame	data/chars/misc/shot24.gif
+	offset	-20 82
+        frame	data/chars/misc/shot25.gif
+	offset	-26 79
+	frame	data/chars/misc/shot26.gif
+	offset	-35 87
+        frame	data/chars/misc/shot27.gif
+	offset	-41 95
+	frame	data/chars/misc/shot28.gif
+

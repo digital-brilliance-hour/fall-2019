@@ -1,0 +1,22 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Arm
+health	1
+type	obstacle
+shadow	0
+#icon	data/chars/misc/boxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	31 112
+	bbox	12 4 39 111
+	frame	data/chars/misc/Arm.gif
+
+anim fall
+	delay	10
+	offset	78 86
+	frame	data/chars/misc/Armf.gif
+

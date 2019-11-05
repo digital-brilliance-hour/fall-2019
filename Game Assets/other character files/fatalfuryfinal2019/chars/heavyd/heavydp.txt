@@ -1,0 +1,36 @@
+name					HeavyDP
+health					1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+#falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	offset	-11 121
+		blast  -1  -1  105  198  20  11  0  0  0  70
+		delay  5
+      frame	data/chars/HeavyD/p101.gif
+      frame	data/chars/HeavyD/p102.gif
+      frame	data/chars/HeavyD/p103.gif
+      frame	data/chars/HeavyD/p104.gif
+      frame	data/chars/HeavyD/p105.gif
+      frame	data/chars/HeavyD/p106.gif
+      frame	data/chars/HeavyD/p107.gif
+      frame	data/chars/HeavyD/p108.gif
+      frame	data/chars/HeavyD/p109.gif
+      frame	data/chars/HeavyD/p110.gif
+

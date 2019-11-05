@@ -1,0 +1,414 @@
+name	KEN
+health	2500
+speed	12
+type	enemy
+shadow	6
+dust    dust
+blockodds   1
+aggression 1
+diesound data/sounds/kendie.wav
+icon	data/chars/ken/1.gif
+iconpain     data/chars/ken/2.gif
+defense special 80
+nopassiveblock 1
+gfxshadow 1
+
+remap	data/chars/ken/shadow42.gif  data/chars/ken/map1.gif
+
+
+
+
+
+
+
+load knife
+
+
+
+anim idle
+	loop	1
+	offset	26 97
+	bbox	9 6 34 82
+	delay	12
+	frame         data/chars/KEN/idle00.gif
+	offset	26 96
+	frame         data/chars/KEN/idle01.gif
+	offset	27 95
+	frame         data/chars/KEN/idle02.gif
+	offset	27 95
+	frame         data/chars/KEN/idle03.gif
+	offset	27 98
+	frame         data/chars/KEN/idle04.gif
+	offset	26 98
+	frame         data/chars/KEN/idle05.gif
+
+
+anim walk
+	loop	1
+	offset	20 105
+	bbox	4 5 38 85
+	delay	8
+	frame         data/chars/KEN/wk00.gif
+offset       19 103
+                  frame         data/chars/KEN/wk01.gif
+offset       19 101
+                  frame         data/chars/KEN/wk02.gif
+offset       20 97
+                  frame         data/chars/KEN/wk03.gif
+offset         25 98
+                  frame          data/chars/KEN/wk04.gif
+offset       34 100
+                  frame         data/chars/KEN/wk05.gif
+offset        28 103
+                  frame         data/chars/KEN/wk06.gif
+offset       22 104
+                  frame          data/chars/KEN/wk07.gif
+
+
+
+anim pain
+	loop	0
+	offset	26 99
+	bbox	6 2 47 94
+	sound       data/sounds/kenPAIN.wav
+	delay	10
+	frame         data/chars/KEN/pain1.gif
+offset	37 100
+                  bbox         3 2 59 96
+	frame         data/chars/KEN/pain2.gif
+offset	48 97
+                  bbox          2 1 70 85
+	frame         data/chars/KEN/pain3.gif
+offset	37 100
+                  bbox         3 2 59 96
+	frame         data/chars/KEN/pain2.gif
+
+
+
+
+
+anim fall
+	loop	0
+	offset	37 88
+	delay	5
+	frame         data/chars/KEN/fall1.gif
+offset	33 85
+DELAY           70
+         ATTACK         3 7 35 30 10 1
+frame         data/chars/KEN/fall2.gif
+offset	36 118
+DELAY        15
+         ATTACK         0 0 0 0 0 0
+	frame         data/chars/KEN/fall3.gif
+offset	50 40
+DELAY     35
+	frame         data/chars/KEN/fall4.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	50 53
+	delay	6
+	frame         data/chars/KEN/rise1.gif
+offset	35 75
+	frame         data/chars/KEN/rise2.gif
+offset	39 114
+	frame         data/chars/KEN/rise3.gif
+offset	48 92
+	frame         data/chars/KEN/rise4.gif
+offset	40 76
+	frame         data/chars/KEN/rise5.gif
+
+
+
+
+
+
+
+
+
+	
+
+anim riseattack 
+                   range    0 100
+                   DELAY   5
+                   MOVE     7
+                  offset	22 75
+	sound        data/sounds/kenrise.wav
+	frame         data/chars/KEN/risatk1.gif
+offset	22 81
+	frame         data/chars/KEN/risatk2.gif
+offset	21 87
+	frame         data/chars/KEN/risatk3.gif
+offset	21 128
+	frame         data/chars/KEN/risatk4.gif
+offset	21 123
+                  attack         20 2 36 120 15 1
+	frame         data/chars/KEN/risatk5.gif
+offset	21 123
+ 	frame         data/chars/KEN/risatk6.gif
+offset	21 109
+                  attack         0 0 0 0 0 0  
+	frame         data/chars/KEN/risatk7.gif
+offset	21 87
+	frame         data/chars/KEN/risatk3.gif
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	24 91
+	frame         data/chars/KEN/block1.gif
+offset	32 99
+                  frame         data/chars/KEN/block2.gif   
+offset	34 102
+                  frame         data/chars/KEN/block3.gif   
+                
+
+
+
+
+
+
+anim UPPER
+jumpframe 0 3
+	loop	0
+	offset	26 80
+	delay	5
+                  sound        data/sounds/kenuper.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/KEN/ATK200.gif
+offset         25 100
+                  frame         data/chars/KEN/ATK201.gif
+offset	16 141
+                  attack          3 0 43 124 15 1 
+                   frame         data/chars/KEN/ATK202.gif
+offset	9 139
+                  frame         data/chars/KEN/ATK203.gif
+offset	12 139
+                  frame         data/chars/KEN/ATK204.gif
+offset	12 136
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/KEN/ATK205.gif
+offset	23 134
+                  frame         data/chars/KEN/ATK206.gif
+offset	22 133
+                  frame         data/chars/KEN/ATK207.gif
+offset	27 108
+                  frame         data/chars/KEN/ATK207.gif
+
+
+anim attack1
+	loop	0
+	offset	23 99
+	delay	5
+	bbox	28 6 29 70
+                  sound         data/sounds/kenatk.wav    
+	hitfx           data/sounds/fast.wav
+	frame         data/chars/KEN/ATK01.gif
+offset	21 99
+bbox          23 11 29 55
+                  attack        47 13 51 33 10 
+	frame         data/chars/KEN/ATK02.gif
+offset	20 99
+	frame         data/chars/KEN/ATK03.gif
+offset	21 99
+                  attack         0 0 0 0 0
+	frame         data/chars/KEN/ATK04.gif
+offset	22 99
+                  frame         data/chars/KEN/ATK05.gif                    
+offset	24 99
+bbox         12 8 40 80
+	frame         data/chars/KEN/ATK06.gif
+offset	23 96
+bbox         29 11 29 46 
+	frame         data/chars/KEN/ATK07.gif
+offset	21 98
+	frame         data/chars/KEN/ATK08.gif
+offset	23 96
+bbox         29 9 36 45
+	frame         data/chars/KEN/ATK09.gif
+offset	24 95
+                  attack         52 2 51 48 10
+	frame         data/chars/KEN/ATK10.gif
+offset	24 95
+                  frame         data/chars/KEN/ATK11.gif
+offset	24 99 
+                  attack         0 0 0 0 0
+	frame         data/chars/KEN/ATK12.gif
+offset	24 99
+                  frame         data/chars/KEN/ATK13.gif                    
+offset	24 99
+	frame         data/chars/KEN/ATK14.gif
+offset	24 99
+bbox          13 7 38 76
+	frame         data/chars/KEN/ATK15.gif
+offset	34 107
+bbox          33 11 28 73
+	frame         data/chars/KEN/ATK16.gif
+offset	19 103
+bbox          22 9 33 81      
+	frame         data/chars/KEN/ATK17.gif
+offset	-2 99
+bbox          1 4 30 43
+                  attack         29 11 40 69 10   
+	frame         data/chars/KEN/ATK18.gif
+offset	-2 100
+	frame         data/chars/KEN/ATK19.gif
+offset	-2 100
+	frame         data/chars/KEN/ATK20.gif
+offset	-2 99
+                  attack         0 0 0 0 0
+	frame         data/chars/KEN/ATK18.gif
+offset	19 103
+	frame         data/chars/KEN/ATK17.gif
+offset	34 107
+bbox          33 11 28 73
+	frame         data/chars/KEN/ATK16.gif
+offset	24 99
+bbox          13 7 38 76
+	frame         data/chars/KEN/ATK15.gif
+offset	0 100
+bbox         5 6 32 58  
+	frame         data/chars/KEN/ATK21.gif
+offset	-9 102
+                 	frame         data/chars/KEN/ATK22.gif
+offset	-1 111
+bbox         0 0 0 0
+                  blast            33 2 62 102 15 0        
+	frame         data/chars/KEN/ATK23.gif
+offset	-2 102
+	frame         data/chars/KEN/ATK24.gif
+offset	0 101
+	frame         data/chars/KEN/ATK25.gif
+offset	22 100
+                 	frame         data/chars/KEN/ATK26.gif
+offset	21 99
+	frame         data/chars/KEN/ATK27.gif
+
+
+anim attack2
+                  RANGE    200 300
+	loop	0
+                  throwframe 5 
+                  delay	8
+	sound       data/sounds/kenshoot.wav
+	hitfx           data/sounds/fast.wav
+offset	23 99
+                  bbox           9 3 38 71  
+	frame         data/chars/KEN/shoot01.gif
+offset	22 94
+	frame         data/chars/KEN/shoot02.gif
+offset	23 91
+	frame         data/chars/KEN/shoot03.gif
+offset	23 90
+                  bbox          19 1 39 58
+	frame         data/chars/KEN/shoot04.gif
+offset	23 90
+                  bbox          37 7 30 47  
+	frame         data/chars/KEN/shoot05.gif
+offset	23 90
+     	frame         data/chars/KEN/shoot06.gif
+offset	23 88
+	frame         data/chars/KEN/shoot07.gif
+offset	23 88
+     	frame         data/chars/KEN/shoot08.gif
+offset	24 90
+	frame         data/chars/KEN/shoot09.gif
+offset	23 92
+                  bbox           20 8 36 59
+     	frame         data/chars/KEN/shoot10.gif
+offset	23 97
+	frame         data/chars/KEN/shoot11.gif
+offset	23 99
+                  bbox           9 3 38 71  
+	frame         data/chars/KEN/shoot01.gif
+
+
+
+anim special
+                  jumpframe 0 3
+	loop	0
+	offset	26 80
+	delay	5
+                  sound        data/sounds/kenuper.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/KEN/ATK200.gif
+offset         25 100
+                  frame         data/chars/KEN/ATK201.gif
+offset	16 141
+                  attack          3 0 43 124 15 1 
+                   frame         data/chars/KEN/ATK202.gif
+offset	9 139
+                  frame         data/chars/KEN/ATK203.gif
+offset	12 139
+                  frame         data/chars/KEN/ATK204.gif
+offset	12 136
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/KEN/ATK205.gif
+offset	23 134
+                  frame         data/chars/KEN/ATK206.gif
+offset	22 133
+                  frame         data/chars/KEN/ATK207.gif
+offset	27 108
+                  frame         data/chars/KEN/ATK207.gif
+
+
+
+anim attack3
+                  range         70 120
+        fastattack 1
+                  loop            0
+                  sound          data/sounds/kenrise.wav  
+                  delay           5
+                  bbox            16 7 34 81
+offset	25 102
+	frame         data/chars/KEN/shadow1.gif
+offset	47 94
+bbox         19 4 43 57  
+	frame         data/chars/KEN/shadow2.gif
+offset	28 102
+bbox          4 5 45 70
+	frame         data/chars/KEN/shadow3.gif
+offset	31 102
+	frame         data/chars/KEN/shadow4.gif
+                  move         25
+bbox        0 0 0 0
+offset	36 100
+                  frame         data/chars/KEN/shadow41.gif
+offset	102 100
+blast         45 22 137 63 20 0
+                  frame         data/chars/KEN/shadow42.gif
+                  frame         data/chars/KEN/shadow43.gif
+                  blast          2 25 182 49 20 0
+	frame         data/chars/KEN/shadow5.gif
+offset	102 100
+	frame         data/chars/KEN/shadow5.gif
+offset	102 100
+                  blast              2 25 182 49 20 0
+	frame         data/chars/KEN/shadow5.gif
+offset	35 102
+	frame         data/chars/KEN/shadow6.gif
+offset	27 102
+	frame         data/chars/KEN/shadow7.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

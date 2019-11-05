@@ -1,0 +1,27 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Trash
+health	1
+type	obstacle
+shadow	0
+gfxshadow 1
+diesound data/sounds/klunk.wav
+noatflash 1
+flash flashc
+icon	data/chars/misc/trasicon.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	73 104 52 71
+	frame	data/chars/misc/trashcan.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	92 177
+	frame	data/chars/misc/trashed.gif

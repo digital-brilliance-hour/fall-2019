@@ -1,0 +1,23 @@
+# Hit flash
+
+name	Flash02
+type	none
+shadow	0
+
+
+
+anim idle
+	loop	0
+		delay  3
+		offset  36  45
+	frame	data/chars/misc/f101.gif
+	frame	data/chars/misc/f102.gif
+	frame	data/chars/misc/f103.gif
+	frame	data/chars/misc/f104.gif
+	frame	data/chars/misc/f105.gif
+	frame	data/chars/misc/f106.gif
+	frame	data/chars/misc/f107.gif
+	frame	data/chars/misc/f108.gif
+	frame	data/chars/misc/f109.gif
+	frame	data/chars/misc/f110.gif
+	frame	data/chars/misc/f111.gif

@@ -1,0 +1,483 @@
+name	RUGAL
+health	2500
+speed	12
+type	enemy
+shadow	6
+dust    dust
+blockodds   1
+aggression 1
+nopassiveblock 1
+gfxshadow 1
+
+diesound data/sounds/rugaldie.wav
+icon	data/chars/rugal/1.gif
+iconpain     data/chars/rugal/2.gif
+
+
+
+
+
+
+
+
+remap data/chars/rugal/idle00.gif data/chars/rugal/map1.gif
+
+load knife
+
+
+anim idle
+	loop	1
+	offset	49 123
+	bbox	16 12 38 114
+	delay	8
+	frame         data/chars/rugal/idle00.gif
+	frame         data/chars/rugal/idle01.gif
+	frame         data/chars/rugal/idle02.gif
+	frame         data/chars/rugal/idle03.gif
+	frame         data/chars/rugal/idle02.gif
+	frame         data/chars/rugal/idle01.gif
+	frame         data/chars/rugal/idle02.gif
+	frame         data/chars/rugal/idle00.gif
+	frame         data/chars/rugal/idle03.gif
+	frame         data/chars/rugal/idle02.gif
+
+
+anim walk
+	loop	1
+	offset	36 125
+	bbox	16 12 34 112
+	delay	8
+	frame         data/chars/rugal/wk00.gif
+offset       34 124
+                  frame         data/chars/rugal/wk01.gif
+offset       37 123
+                 bbox            20 18 30 101 
+                  frame         data/chars/rugal/wk02.gif
+offset        40 122
+                  frame         data/chars/rugal/wk03.gif
+offset        37 123
+                  frame          data/chars/rugal/wk04.gif
+offset        27 124
+                  bbox           9 10 31 110 
+                  frame         data/chars/rugal/wk05.gif
+offset        26 125
+                  frame         data/chars/rugal/wk06.gif
+offset        32 124
+                  bbox            11 9 37 113
+                  frame          data/chars/rugal/wk07.gif
+offset        35 123
+                  frame          data/chars/rugal/wk08.gif
+offset        38 122
+                  frame         data/chars/rugal/wk09.gif
+offset        40 123
+                  frame         data/chars/rugal/wk10.gif
+offset        39 125
+                  frame          data/chars/rugal/wk11.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	32 117
+	bbox	6 13 56 105
+	sound       data/sounds/rugaPAIN.wav
+	delay	10
+	frame         data/chars/rugal/pain1.gif
+offset	33 108
+                  bbox         1 5 61 101
+	frame         data/chars/rugal/pain2.gif
+offset	42 94
+                  bbox         4 3 65 93
+	frame         data/chars/rugal/pain3.gif
+offset	33 108
+                  bbox       1 5 61 101
+	frame         data/chars/rugal/pain2.gif
+
+
+
+
+
+anim fall
+	loop	0
+	offset	46 108
+	delay	5
+	frame         data/chars/rugal/fall1.gif
+offset	47 90
+DELAY           70
+        ATTACK  8 4 42 26 10 1
+	frame         data/chars/rugal/fall2.gif
+offset	52 60
+DELAY        15
+	frame         data/chars/rugal/fall3.gif
+offset	65 20
+        ATTACK   0 0 0 0 0 0
+DELAY     35
+	frame         data/chars/rugal/fall4.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	44 75
+	delay	6
+	frame         data/chars/rugal/rise1.gif
+offset	35 95
+	frame         data/chars/rugal/rise2.gif
+offset	35 144
+	frame         data/chars/rugal/rise3.gif
+offset	31 131
+	frame         data/chars/rugal/rise4.gif
+offset	40 119
+	frame         data/chars/rugal/rise5.gif
+offset	33 120
+	frame         data/chars/rugal/rise6.gif
+offset	26 125
+	frame         data/chars/rugal/rise7.gif
+
+
+
+
+
+
+
+
+	
+
+anim riseattack 
+                   range    0 100
+                   DELAY   5
+                   MOVE     5
+                  offset	37 79
+	sound        data/sounds/rugarise.wav
+	frame         data/chars/rugal/risatk1.gif
+offset	37 81
+	frame         data/chars/rugal/risatk2.gif
+offset	29 87
+	frame         data/chars/rugal/risatk3.gif
+offset	23 86
+	frame         data/chars/rugal/risatk4.gif
+offset	26 92
+                  attack         52 4 95 78 15 1
+	frame         data/chars/rugal/risatk5.gif
+offset	18 97
+ 	frame         data/chars/rugal/risatk6.gif
+offset	17 100
+                  attack         0 0 0 0 0 0  
+	frame         data/chars/rugal/risatk7.gif
+offset	18 88
+	frame         data/chars/rugal/risatk8.gif
+offset	18 87
+	frame         data/chars/rugal/risatk9.gif
+offset	18 89
+	frame         data/chars/rugal/risatk10.gif
+offset	29 86
+	frame         data/chars/rugal/risatk11.gif                  
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	27 116
+	frame         data/chars/rugal/block1.gif
+offset	35 117
+                  frame         data/chars/rugal/block2.gif   
+offset	48 114
+                  frame         data/chars/rugal/block3.gif   
+
+
+
+
+
+
+anim UPPER
+jumpframe 0 3
+	loop	0
+	offset	49 131
+	delay	4
+                  sound        data/sounds/rugauper.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/rugal/ATK200.gif
+offset         51 129
+                  frame         data/chars/rugal/ATK201.gif
+offset	55 158
+                  attack           29 0 50 98 15 1
+                   frame         data/chars/rugal/ATK202.gif
+offset	52 154
+delay         20       
+                  frame         data/chars/rugal/ATK203.gif
+offset	54 135
+delay        4
+                  frame         data/chars/rugal/ATK204.gif
+offset	63 131
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/rugal/ATK205.gif
+offset	61 139
+                  frame         data/chars/rugal/ATK206.gif
+offset	58 143
+                  frame         data/chars/rugal/ATK207.gif
+
+
+
+anim attack1
+	loop	0
+	offset	26 122
+	delay	6
+	bbox	16 11 33 97
+                  sound         data/sounds/rugalatk.wav    
+	hitfx           data/sounds/fast.wav
+	frame         data/chars/rugal/ATK01.gif
+offset	17 121
+	frame         data/chars/rugal/ATK02.gif
+offset	16 118
+                  attack         31 21 43 69 10
+                  bbox           0 8 42 47
+	frame         data/chars/rugal/ATK03.gif
+offset	15 119
+	frame         data/chars/rugal/ATK04.gif
+offset	13 120
+                  attack        0 0 0 0 0
+                  frame         data/chars/rugal/ATK05.gif                    
+offset	26 123
+                  attack         12 12 36 104
+	frame         data/chars/rugal/ATK06.gif
+offset	34 129
+                  bbox           23 19 34 78
+	frame         data/chars/rugal/ATK07.gif
+offset	44 130
+	frame         data/chars/rugal/ATK08.gif
+offset	50 113
+                  attack         60 37 84 71 10
+                   bbox          38 6 39 71
+	frame         data/chars/rugal/ATK09.gif
+offset	48 113
+	frame         data/chars/rugal/ATK10.gif
+offset	33 114
+                  attack        0 0 0 0 0
+                  bbox           15 6 37 88
+                  frame         data/chars/rugal/ATK11.gif
+offset	34 117
+	frame         data/chars/rugal/ATK12.gif
+offset	37 116
+                  frame         data/chars/rugal/ATK13.gif                    
+offset	35 120
+                  bbox           19 6 30 103
+	frame         data/chars/rugal/ATK14.gif
+offset	35 123
+	frame         data/chars/rugal/ATK15.gif
+offset	26 123
+	frame         data/chars/rugal/ATK16.gif
+offset	40 120
+	frame         data/chars/rugal/ATK17.gif
+offset	39 118
+                  bbox           29 9 37 84
+	frame         data/chars/rugal/ATK18.gif
+offset	23 115
+	frame         data/chars/rugal/ATK19.gif
+offset	25 130
+                  bbox           34 24 43 66
+	frame         data/chars/rugal/ATK20.gif
+offset	7 124
+	frame         data/chars/rugal/ATK21.gif
+offset	6 122
+                  attack         39 0 75 101 10
+                  bbox           0 21 58 41
+                 	frame         data/chars/rugal/ATK22.gif
+offset	6 111
+	frame         data/chars/rugal/ATK23.gif
+offset	25 115
+                  attack         0 0 0 0 0
+	frame         data/chars/rugal/ATK24.gif
+offset	26 119
+                  bbox           11 11 40 98
+	frame         data/chars/rugal/ATK25.gif
+offset	36 94
+                  bbox           2 8 42 62
+                  move          5
+	frame         data/chars/rugal/ATK26.gif
+offset	40 139
+                  blast           11 0 76 139 15 0  
+	frame         data/chars/rugal/ATK27.gif
+offset	42 133
+	frame         data/chars/rugal/ATK28.gif
+offset	43 133
+	frame         data/chars/rugal/ATK29.gif
+offset	48 115
+	frame         data/chars/rugal/ATK30.gif
+offset	53 92
+	frame         data/chars/rugal/ATK31.gif
+offset	50 112
+                  bbox           19 5 37 111 
+	frame         data/chars/rugal/ATK32.gif
+offset	32 119
+	frame         data/chars/rugal/ATK33.gif
+
+
+
+
+anim attack2
+                  RANGE    100 200
+	loop	0
+                  throwframe 36 
+                  delay	6
+	sound       data/sounds/kwave.wav
+	hitfx           data/sounds/fast.wav
+offset	37 122
+                  bbox          4 10 38 110
+	frame         data/chars/rugal/shoot01.gif
+offset	47 124
+	frame         data/chars/rugal/shoot02.gif
+offset	58 124
+	frame         data/chars/rugal/shoot03.gif
+offset	66 123
+                  bbox           20 7 39 103 
+	frame         data/chars/rugal/shoot04.gif
+offset	72 123
+	frame         data/chars/rugal/shoot05.gif
+offset	72 125
+     	frame         data/chars/rugal/shoot06.gif
+offset	72 125
+	frame         data/chars/rugal/shoot07.gif
+offset	72 125
+     	frame         data/chars/rugal/shoot06.gif
+offset	72 123
+	frame         data/chars/rugal/shoot05.gif
+offset	72 125
+     	frame         data/chars/rugal/shoot06.gif
+offset	72 125
+	frame         data/chars/rugal/shoot07.gif
+offset	72 123
+	frame         data/chars/rugal/shoot05.gif
+offset	72 125
+     	frame         data/chars/rugal/shoot06.gif
+offset	72 125
+	frame         data/chars/rugal/shoot07.gif
+offset	72 123
+	frame         data/chars/rugal/shoot05.gif
+offset	72 125
+     	frame         data/chars/rugal/shoot06.gif
+offset	72 125
+	frame         data/chars/rugal/shoot07.gif
+offset	75 108
+                  bbox          22 16 52 71  
+	frame         data/chars/rugal/shoot08.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	78 104
+	frame         data/chars/rugal/shoot09.gif
+offset	77 102
+	frame         data/chars/rugal/shoot10.gif
+offset	53 111
+	frame         data/chars/rugal/shoot11.gif
+offset	43 95 
+                  bbox           0 0 0 0 
+	frame         data/chars/rugal/shoot12.gif
+offset	42 93
+	frame         data/chars/rugal/shoot13.gif
+offset	43 96
+	frame         data/chars/rugal/shoot14.gif
+offset	42 93
+	frame         data/chars/rugal/shoot13.gif
+offset	43 96
+	frame         data/chars/rugal/shoot14.gif
+offset	42 93
+	frame         data/chars/rugal/shoot13.gif
+offset	43 96
+	frame         data/chars/rugal/shoot14.gif
+offset	38 97
+	frame         data/chars/rugal/shoot15.gif
+offset	29 97
+	frame         data/chars/rugal/shoot16.gif
+offset	28 94
+	frame         data/chars/rugal/shoot17.gif
+offset	27 110
+	frame         data/chars/rugal/shoot18.gif
+
+
+
+anim special
+                  loop           0
+                  delay          5
+                  sound         data/sounds/rugaspec.wav  
+offset	47 104
+	frame         data/chars/rugal/special1.gif
+offset	38 147
+                  delay          20
+                  blast           43 3 51 139 15 0
+	frame         data/chars/rugal/special2.gif
+offset	37 144
+                  delay        6
+	frame         data/chars/rugal/special3.gif
+offset	35 144
+	frame         data/chars/rugal/special4.gif
+offset	41 144
+	frame         data/chars/rugal/special5.gif
+offset	41 119
+	frame         data/chars/rugal/special6.gif
+offset	37 119
+	frame         data/chars/rugal/special7.gif
+
+
+
+anim attack3
+                  range        100 200
+                  loop            0
+                  sound          data/sounds/rugataun.wav  
+                  delay           8
+                  bbox            12 13 37 105
+offset	27 124
+	frame         data/chars/rugal/taunt1.gif
+offset	27 125
+	frame         data/chars/rugal/taunt2.gif
+offset	27 127
+	frame         data/chars/rugal/taunt3.gif
+offset	32 123
+	frame         data/chars/rugal/taunt4.gif
+offset	35 123
+	frame         data/chars/rugal/taunt5.gif
+	frame         data/chars/rugal/taunt6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

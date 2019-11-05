@@ -1,0 +1,44 @@
+name	TorNADO
+health	1
+type	pshot
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+shadow	0
+
+
+anim idle
+
+	loop	1
+	delay	2
+	offset	-15 121
+		blast  7  0  58  122  10  2
+		move  0
+	frame	data/chars/Joe/TorNADO/FP01.gif
+	frame  data/chars/Joe/TorNADO/FP01.gif
+	frame	data/chars/Joe/TorNADO/FP02.gif
+	frame  data/chars/Joe/TorNADO/FP02.gif
+	frame	data/chars/Joe/TorNADO/FP03.gif
+	frame  data/chars/Joe/TorNADO/FP03.gif
+	frame	data/chars/Joe/TorNADO/FP04.gif
+	frame  data/chars/Joe/TorNADO/FP04.gif
+	frame	data/chars/Joe/TorNADO/FP05.gif
+	frame  data/chars/Joe/TorNADO/FP05.gif
+	frame	data/chars/Joe/TorNADO/FP06.gif
+	frame  data/chars/Joe/TorNADO/FP06.gif
+	frame  data/chars/Joe/TorNADO/FP07.gif
+	frame  data/chars/Joe/TorNADO/FP07.gif
+	frame  data/chars/Joe/TorNADO/FP08.gif
+	frame  data/chars/Joe/TorNADO/FP08.gif
+
+anim fall
+		offset  24  120
+		delay  3
+	frame	data/chars/Joe/TorNADO/FPf01.gif
+	frame	data/chars/Joe/TorNADO/FPf02.gif
+	frame	data/chars/Joe/TorNADO/FPf03.gif
+	frame	data/chars/Joe/TorNADO/FPf04.gif
+	frame	data/chars/Joe/TorNADO/FPf05.gif
+	frame	data/chars/Joe/TorNADO/FPf06.gif
+	frame	data/chars/Joe/TorNADO/FPf07.gif
+	frame	data/chars/Joe/TorNADO/FPf08.gif
+

@@ -1,0 +1,1394 @@
+name		Dudley
+health		200
+speed		12
+#mp		150
+type		enemy
+projectilehit	enemy obstacle
+#icon		data/chars/Dudley/dudley.gif
+makeinv		3
+riseinv 	1 1
+gfxshadow	1
+#mprate		2
+dust		dust
+#Death		1
+NoDieBlink	1
+GrabBack	1
+#onspawnscript	data/scripts/spawn/dudley.c
+#animationscript data/scripts/Dudley.c
+#script		data/scripts/main/Dudley.c
+hostile Player NPC
+candamage	Player NPC Obstacle
+
+alternatepal	data/chars/Dudley/alt1
+alternatepal	data/chars/Dudley/alt2
+alternatepal	data/chars/Dudley/alt3
+alternatepal	data/chars/Dudley/alt4
+alternatepal	data/chars/Dudley/alt5
+
+com	d u s freespecial
+com	d u a freespecial2
+com	f d s freespecial4
+com	d f a freespecial7
+com	d f s freespecial8
+
+anim	select
+	delay	7
+	offset	76 142
+	frame	data/chars/Dudley/taunt00.gif
+	offset	52 135
+	frame	data/chars/Dudley/taunt01.gif
+	offset	57 138
+	frame	data/chars/Dudley/taunt02.gif
+	offset	75 126
+	frame	data/chars/Dudley/taunt03.gif
+	offset	56 111
+	frame	data/chars/Dudley/taunt04.gif
+	offset	50 107
+	frame	data/chars/Dudley/taunt05.gif
+	sound	data/chars/Dudley/taunt.wav
+	offset	53 111
+	frame	data/chars/Dudley/taunt06.gif
+	offset	53 111
+	frame	data/chars/Dudley/taunt07.gif
+	offset	54 114
+	frame	data/chars/Dudley/taunt08.gif
+	offset	52 123
+	frame	data/chars/Dudley/taunt09.gif
+	offset	50 144
+	frame	data/chars/Dudley/taunt10.gif
+	offset	53 145
+	frame	data/chars/Dudley/taunt11.gif
+	offset	79 144
+	frame	data/chars/Dudley/taunt12.gif
+	offset	90 144
+	frame	data/chars/Dudley/taunt13.gif
+	offset	88 143
+	frame	data/chars/Dudley/taunt14.gif
+	offset	87 126
+	frame	data/chars/Dudley/taunt15.gif
+	offset	79 113
+	frame	data/chars/Dudley/taunt16.gif
+	offset	76 113
+	frame	data/chars/Dudley/taunt17.gif
+	offset	58 113
+	frame	data/chars/Dudley/taunt18.gif
+	offset	50 113
+	frame	data/chars/Dudley/taunt19.gif
+	offset	49 113
+	frame	data/chars/Dudley/taunt20.gif
+	frame	data/chars/Dudley/taunt21.gif
+
+anim	idle
+	#@cmd	select
+	loop	1
+	delay	8
+	offset	48 105
+	bbox	33 8 41 98
+	frame	data/chars/Dudley/idle00.gif
+	offset	50 104
+	frame	data/chars/Dudley/idle01.gif
+	offset	50 103
+	frame	data/chars/Dudley/idle02.gif
+	offset	51 102
+	frame	data/chars/Dudley/idle03.gif
+	offset	48 103
+	frame	data/chars/Dudley/idle04.gif
+	offset	48 102
+	frame	data/chars/Dudley/idle05.gif
+	offset	42 106
+	bbox	21 4 43 99
+	frame	data/chars/Dudley/idle06.gif
+	offset	32 107
+	bbox	11 3 36 106
+	frame	data/chars/Dudley/idle07.gif
+	offset	26 106
+	frame	data/chars/Dudley/idle08.gif
+	offset	27 104
+	frame	data/chars/Dudley/idle09.gif
+	offset	26 106
+	frame	data/chars/Dudley/idle10.gif
+	offset	25 108
+	frame	data/chars/Dudley/idle11.gif
+	offset	35 107
+	bbox	18 6 37 103
+	frame	data/chars/Dudley/idle12.gif
+	offset	50 106
+	bbox	30 3 41 104
+	frame	data/chars/Dudley/idle13.gif
+	offset	51 104
+	frame	data/chars/Dudley/idle14.gif
+	offset	25 108
+	bbox	7 4 37 109
+	frame	data/chars/Dudley/idle15.gif
+	delay	15
+	offset	25 107
+	bbox	9 3 35 103
+	frame	data/chars/Dudley/idt00.gif
+	delay	10
+	offset	19 116
+	frame	data/chars/Dudley/idt01.gif
+	offset	19 119
+	frame	data/chars/Dudley/idt02.gif
+	offset	19 116
+	frame	data/chars/Dudley/idt01.gif
+	offset	25 107
+	frame	data/chars/Dudley/idt00.gif
+	delay	6
+	offset	26 105
+	frame	data/chars/Dudley/idle16.gif
+	offset	37 102
+	bbox	21 3 41 99
+	frame	data/chars/Dudley/idle17.gif
+	offset	38 100
+	frame	data/chars/Dudley/idle18.gif
+	offset	37 102
+	frame	data/chars/Dudley/idle19.gif
+
+anim	walk
+	loop	1
+	delay	6
+	offset	49 106
+	bbox	28 6 42 104
+	frame	data/chars/Dudley/walk00.gif
+	offset	54 106
+	frame	data/chars/Dudley/walk01.gif
+	offset	59 108
+	frame	data/chars/Dudley/walk02.gif
+	offset	50 110
+	frame	data/chars/Dudley/walk03.gif
+	offset	39 112
+	bbox	18 5 36 105
+	frame	data/chars/Dudley/walk04.gif
+	offset	29 115
+	bbox	6 4 37 112
+	frame	data/chars/Dudley/walk05.gif
+	offset	27 116
+	frame	data/chars/Dudley/walk06.gif
+	offset	27 115
+	frame	data/chars/Dudley/walk07.gif
+	offset	27 112
+	bbox	9 4 37 112
+	frame	data/chars/Dudley/walk08.gif
+	offset	27 110
+	frame	data/chars/Dudley/walk09.gif
+	offset	35 108
+	bbox	19 4 39 104
+	frame	data/chars/Dudley/walk10.gif
+	offset	43 106
+	bbox	21 3 40 108
+	frame	data/chars/Dudley/walk11.gif
+
+anim	get
+	delay	6
+	offset	45 102
+	frame	data/chars/Dudley/get00.gif
+	offset	46 87
+	frame	data/chars/Dudley/get01.gif
+	offset	47 70
+	frame	data/chars/Dudley/get02.gif
+	offset	46 87
+	frame	data/chars/Dudley/get01.gif
+	offset	45 102
+	frame	data/chars/Dudley/get00.gif
+
+anim	jumpdelay
+	delay	5
+	offset	41 87
+	frame	data/chars/Dudley/jump00.gif
+
+anim	jump
+	delay	6
+	offset	20 144
+	bbox	12 28 30 121
+	frame	data/chars/Dudley/jump01.gif
+	offset	20 112
+	bbox	10 9 36 107
+	frame	data/chars/Dudley/jump02.gif
+	offset	20 88
+	bbox	9 7 39 76
+	frame	data/chars/Dudley/jump03.gif
+	offset	20 83
+	frame	data/chars/Dudley/jump04.gif
+	offset	20 78
+	frame	data/chars/Dudley/jump05.gif
+	offset	20 75
+	frame	data/chars/Dudley/jump06.gif
+	offset	20 76
+	frame	data/chars/Dudley/jump07.gif
+	offset	20 79
+	frame	data/chars/Dudley/jump08.gif
+	offset	20 84
+	frame	data/chars/Dudley/jump09.gif
+	offset	20 100
+	frame	data/chars/Dudley/jump10.gif
+	offset	20 113
+	bbox	20 6 32 106
+	frame	data/chars/Dudley/jump11.gif
+	offset	31 120
+	bbox	26 4 29 117
+	frame	data/chars/Dudley/jump12.gif
+
+anim	fall
+	landframe	4
+	Delay	13
+	OffSet	47 106
+	Frame	data\chars\dudley\fall00.gif
+	OffSet	69 82
+	Frame	data\chars\dudley\fall01.gif
+	OffSet	70 67
+	Frame	data\chars\dudley\fall02.gif
+	Delay	70
+	OffSet	70 57
+	Frame	data\chars\dudley\fall03.gif
+	OffSet	86 33
+	Frame	data\chars\dudley\fall04.gif
+
+anim	fall7
+	delay	800
+	offset	43 100
+	frame	data/chars/Dudley/pain200.gif
+	offset	69 26
+	frame	data/chars/Dudley/fall02.gif
+	OffSet	82 84
+	Frame	data\chars\dudley\fallr.gif
+	offset	86 33
+	frame	data/chars/Dudley/fall04.gif
+
+anim	pain
+	cancel	1 3 0 f freespecial5
+	delay	7
+	offset	43 98
+	bbox	18 5 41 96
+	frame	data/chars/Dudley/pain100.gif
+	offset	51 110
+	bbox	14 12 45 95
+	frame	data/chars/Dudley/pain101.gif
+	delay	15
+	offset	58 101
+	frame	data/chars/Dudley/pain102.gif
+	delay	8
+	offset	51 110
+	frame	data/chars/Dudley/pain101.gif
+
+anim	pain2
+	cancel	1 3 0 f freespecial5
+	Delay	8
+	OffSet	43 100
+	BBox	23 7 42 90
+	Frame	data\chars\dudley\pain200.gif
+	OffSet	51 102
+	BBox	21 4 47 102
+	Frame	data\chars\dudley\pain201.gif
+	Delay	16
+	OffSet	54 106
+	BBox	15 3 43 109
+	Frame	data\chars\dudley\pain202.gif
+	Delay	8
+	OffSet	43 100
+	BBox	23 7 42 90
+	Frame	data\chars\dudley\pain200.gif
+
+anim	rise
+	delay	10
+	offset	67 45
+	frame	data/chars/Dudley/rise00.gif
+	offset	50 48
+	frame	data/chars/Dudley/rise01.gif
+	offset	45 52
+	frame	data/chars/Dudley/rise02.gif
+	offset	45 51
+	frame	data/chars/Dudley/rise03.gif
+	offset	46 70
+	frame	data/chars/Dudley/rise04.gif
+
+Anim	attackdown
+	jumpframe	0 0 0 1
+	Delay	6
+	OffSet	56 66
+	Frame	data\chars\dudley\roll00.gif
+	OffSet	38 52
+	Frame	data\chars\dudley\roll06.gif
+	OffSet	34 52
+	Frame	data\chars\dudley\roll07.gif
+	OffSet	30 56
+	Frame	data\chars\dudley\roll08.gif
+	OffSet	34 61
+	Frame	data\chars\dudley\roll01.gif
+	OffSet	42 54
+	Frame	data\chars\dudley\roll02.gif
+	OffSet	38 59
+	Frame	data\chars\dudley\roll03.gif
+	OffSet	34 58
+	Frame	data\chars\dudley\roll04.gif
+
+anim	attackup
+	delay	6
+	#@cmd	dasher 0 0 -1
+	OffSet	34 58
+	Frame	data\chars\dudley\roll04.gif
+	OffSet	38 59
+	Frame	data\chars\dudley\roll03.gif
+	OffSet	42 54
+	Frame	data\chars\dudley\roll02.gif
+	OffSet	34 61
+	Frame	data\chars\dudley\roll01.gif
+	OffSet	30 56
+	Frame	data\chars\dudley\roll08.gif
+	OffSet	34 52
+	Frame	data\chars\dudley\roll07.gif
+	OffSet	38 52
+	Frame	data\chars\dudley\roll06.gif
+	delay	10
+	#@cmd	stop
+	OffSet	46 76
+	Frame	data\chars\dudley\roll208.gif
+
+anim	grabbed
+	delay	8
+	offset	43 100
+	bbox	23 7 42 90
+	frame	data/chars/Dudley/pain200.gif
+
+anim	grab
+	cancel	0 1 0 d u a freespecial2
+	delay	1000
+	offset	43 102
+	bbox	29 5 37 100
+	frame	data/chars/Dudley/grab.gif
+
+anim	grabattack
+	delay	4
+	offset	49 93
+	bbox	23 8 52 82
+	frame	data/chars/Dudley/gat100.gif
+	offset	49 93
+	frame	data/chars/Dudley/gat101.gif
+	offset	54 93
+	frame	data/chars/Dudley/gat102.gif
+	offset	53 93
+	frame	data/chars/Dudley/gat103.gif
+	offset	46 93
+	frame	data/chars/Dudley/gat104.gif
+	offset	38 97
+	hitfx	data/sounds/bukk.wav
+	hitflash	qflash
+	Attack2	43 19 61 37 9 0 0 0 20
+	frame	data/chars/Dudley/gat105.gif
+	offset	41 96
+	Attack	0
+	frame	data/chars/Dudley/gat106.gif
+	offset	46 95
+	frame	data/chars/Dudley/gat107.gif
+	offset	48 93
+	frame	data/chars/Dudley/gat108.gif
+
+anim	grabattack2
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash2
+	Delay	4
+	OffSet	57 90
+	BBox	44 6 48 86
+	Frame	data\chars\dudley\gat200.gif
+	Frame	data\chars\dudley\gat201.gif
+	OffSet	55 97
+	Frame	data\chars\dudley\gat202.gif
+	OffSet	56 97
+	Frame	data\chars\dudley\gat203.gif
+	OffSet	55 95
+	Frame	data\chars\dudley\gat204.gif
+	OffSet	53 93
+	Attack	87 22 45 51 17 1 0 0 30
+	Frame	data\chars\dudley\gat205.gif
+	OffSet	53 91
+	Attack	0
+	Frame	data\chars\dudley\gat206.gif
+	OffSet	53 90
+	Frame	data\chars\dudley\gat207.gif
+	OffSet	53 89
+	Frame	data\chars\dudley\gat208.gif
+
+anim	grabbackward
+	attackone	0
+	sound	data/chars/Dudley/at3.wav
+	#@cmd	lock
+	#@cmd	slamStart
+	#@cmd	position 0 67 0 0 -1
+	delay	4
+	offset	50 80
+	frame	data/chars/Dudley/spc00.gif
+	offset	50 81
+	frame	data/chars/Dudley/spc01.gif
+	frame	data/chars/Dudley/spc02.gif
+	offset	50 77
+	frame	data/chars/Dudley/spc03.gif
+	#@cmd	position 0 75 0 0 -1
+	offset	50 67
+	frame	data/chars/Dudley/spc04.gif
+	#@cmd	position 0 89 0 0 -1
+	offset	50 49
+	frame	data/chars/Dudley/spc05.gif
+	#@cmd	position 0 85 0 0 -1
+	offset	50 51
+	frame	data/chars/Dudley/spc06.gif
+	offset	50 52
+	frame	data/chars/Dudley/spc07.gif
+	#@cmd	position 0 67 0 0 -1
+	offset	50 55
+	frame	data/chars/Dudley/spc08.gif
+	#@cmd	position 0 60 0 0 -1
+	offset	50 71
+	frame	data/chars/Dudley/spc09.gif
+	#@cmd	position 1 70 30 0 -1
+	offset	50 84
+	frame	data/chars/Dudley/spc10.gif
+	offset	50 104
+	#@cmd	position 1 80 100 0 -1
+	frame	data/chars/Dudley/spc11.gif
+	#@cmd	position 1 0 110 0 -1
+	offset	59 127
+	Attack	0
+	frame	data/chars/Dudley/spc12.gif
+	#@cmd	throw 19 3 3 0 1
+	offset	58 125
+	frame	data/chars/Dudley/spc13.gif
+	offset	47 122
+	frame	data/chars/Dudley/spc14.gif
+	offset	50 99
+	frame	data/chars/Dudley/spc15.gif
+	offset	50 87
+	frame	data/chars/Dudley/spc16.gif
+	#@cmd	makeInv 50
+	offset	50 84
+	frame	data/chars/Dudley/spc17.gif
+
+anim	grabdown
+	attackone	0
+	sound	data/chars/Dudley/at3.wav
+	delay	4
+	offset	50 80
+	frame	data/chars/Dudley/spc00.gif
+	offset	50 81
+	frame	data/chars/Dudley/spc01.gif
+	frame	data/chars/Dudley/spc02.gif
+	offset	50 77
+	frame	data/chars/Dudley/spc03.gif
+	offset	50 67
+	frame	data/chars/Dudley/spc04.gif
+	offset	50 49
+	frame	data/chars/Dudley/spc05.gif
+	offset	50 51
+	frame	data/chars/Dudley/spc06.gif
+	offset	50 52
+	Attack	0
+	frame	data/chars/Dudley/spc07.gif
+	offset	50 55
+	frame	data/chars/Dudley/spc08.gif
+	offset	50 71
+	frame	data/chars/Dudley/spc09.gif
+	offset	50 84
+	frame	data/chars/Dudley/spc10.gif
+	offset	50 104
+	attack3	69 2 120 104 5 1 1
+	dropv	4 0
+	frame	data/chars/Dudley/spc11.gif
+	offset	59 127
+	Attack	0
+	frame	data/chars/Dudley/spc12.gif
+	offset	58 125
+	frame	data/chars/Dudley/spc13.gif
+	offset	47 122
+	frame	data/chars/Dudley/spc14.gif
+	offset	50 99
+	frame	data/chars/Dudley/spc15.gif
+	offset	50 87
+	frame	data/chars/Dudley/spc16.gif
+	offset	50 84
+	frame	data/chars/Dudley/spc17.gif
+
+anim	jumpattack
+	sound	data/chars/Dudley/at2.wav
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash
+	delay	3
+	offset	31 109
+	bbox	17 7 41 86
+	frame	data/chars/Dudley/jat100.gif
+	offset	31 113
+	frame	data/chars/Dudley/jat101.gif
+	offset	31 109
+	frame	data/chars/Dudley/jat102.gif
+	offset	31 102
+	frame	data/chars/Dudley/jat103.gif
+	offset	31 98
+	bbox	35 4 40 79
+	frame	data/chars/Dudley/jat104.gif
+	offset	31 90
+	Attack	71 14 66 28 23 1 0 0 20
+	frame	data/chars/Dudley/jat105.gif
+	offset	31 92
+	frame	data/chars/Dudley/jat106.gif
+	offset	31 95
+	Attack	0
+	frame	data/chars/Dudley/jat107.gif
+	offset	31 99
+	frame	data/chars/Dudley/jat108.gif
+	offset	31 109
+	frame	data/chars/Dudley/jat109.gif
+
+anim	jumpattack2
+	sound	data/chars/Dudley/at2.wav
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash
+	delay	3
+	offset	46 85
+	bbox	17 12 67 51
+	frame	data/chars/Dudley/jat209.gif
+	offset	47 84
+	frame	data/chars/Dudley/jat210.gif
+	offset	50 82
+	bbox	25 10 67 48
+	frame	data/chars/Dudley/jat211.gif
+	offset	51 76
+	frame	data/chars/Dudley/jat212.gif
+	offset	55 69
+	frame	data/chars/Dudley/jat213.gif
+	offset	66 74
+	bbox	33 18 82 37
+	Attack	67 40 63 31 17 0 0 0 20
+	frame	data/chars/Dudley/jat214.gif
+	offset	64 69
+	frame	data/chars/Dudley/jat215.gif
+	Attack	0
+	frame	data/chars/Dudley/jat216.gif
+	offset	60 73
+	frame	data/chars/Dudley/jat217.gif
+	offset	54 75
+	bbox	28 16 66 37
+	frame	data/chars/Dudley/jat218.gif
+	offset	46 93
+	bbox	31 6 38 73
+	frame	data/chars/Dudley/jat219.gif
+
+anim	attack1
+	sound	data/chars/Dudley/at4.wav
+	delay	3
+	offset	44 105
+	bbox	26 7 47 98
+	frame	data/chars/Dudley/at100.gif
+	offset	42 104
+	Attack	74 9 62 16 6 0 0 0 10
+	frame	data/chars/Dudley/at101.gif
+	offset	43 105
+	Attack	0
+	frame	data/chars/Dudley/at102.gif
+	offset	45 105
+	frame	data/chars/Dudley/at103.gif
+	offset	46 105
+	frame	data/chars/Dudley/at104.gif
+
+anim	attack2
+	sound	data/chars/Dudley/at1.wav
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash
+	delay	3
+	offset	42 106
+	bbox	31 8 40 98
+	frame	data/chars/Dudley/at200.gif
+	offset	42 104
+	frame	data/chars/Dudley/at201.gif
+	offset	42 103
+	Attack	78 8 70 19 9 0 0 0 15
+	frame	data/chars/Dudley/at202.gif
+	Attack	0
+	frame	data/chars/Dudley/at203.gif
+	frame	data/chars/Dudley/at204.gif
+	offset	42 104
+	frame	data/chars/Dudley/at205.gif
+	offset	42 106
+	frame	data/chars/Dudley/at206.gif
+
+anim	attack3
+	sound	data/chars/Dudley/at3.wav
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash2
+	delay	3
+	offset	42 73
+	bbox	46 11 52 62
+	frame	data/chars/Dudley/at400.gif
+	offset	42 77
+	frame	data/chars/Dudley/at401.gif
+	offset	42 76
+	frame	data/chars/Dudley/at402.gif
+	offset	42 84
+	bbox	61 3 46 82
+	frame	data/chars/Dudley/at403.gif
+	offset	42 89
+	bbox	57 6 40 83
+	frame	data/chars/Dudley/at404.gif
+	offset	42 94
+	Attack	94 17 40 36 16 1 0 0 20
+	frame	data/chars/Dudley/at405.gif
+	offset	42 115
+	bbox	51 25 42 92
+	Attack	92 1 42 88 16 1 0 0 22
+	frame	data/chars/Dudley/at406.gif
+	offset	42 122
+	Attack	84 4 50 85 16 1 0 0 22
+	frame	data/chars/Dudley/at407.gif
+	delay	8
+	offset	42 120
+	Attack	0
+	frame	data/chars/Dudley/at408.gif
+	delay	5
+	offset	42 116
+	frame	data/chars/Dudley/at409.gif
+	offset	42 95
+	bbox	46 5 43 92
+	frame	data/chars/Dudley/at410.gif
+	offset	42 82
+	bbox	39 6 47 74
+	frame	data/chars/Dudley/at411.gif
+
+anim	special
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash
+	energycost	0
+	#@cmd	costSelf 50
+	delay	3
+	offset	50 97
+	frame	data/chars/Dudley/sp607.gif
+	#@cmd	dasher 3 0 0
+	offset	50 92
+	frame	data/chars/Dudley/sp608.gif
+	frame	data/chars/Dudley/sp609.gif
+	offset	50 99
+	Attack	1 14 198 15 25 1 0 0 40
+	frame	data/chars/Dudley/sp610.gif
+	frame	data/chars/Dudley/sp611.gif
+	Attack	3 12 159 20 25 1 0 0 40
+	frame	data/chars/Dudley/sp612.gif
+	#@cmd	dasher 1 0 0
+	frame	data/chars/Dudley/sp613.gif
+	#@cmd	stop
+	Attack	0
+	frame	data/chars/Dudley/sp614.gif
+	frame	data/chars/Dudley/sp615.gif
+	frame	data/chars/Dudley/sp616.gif
+	frame	data/chars/Dudley/sp617.gif
+
+anim	special2
+	fastattack	1
+	#@cmd	dasher 3 0 0
+	delay	20
+	offset	65 92
+	bbox	57 9 40 85
+	frame	data/chars/Dudley/sp300.gif
+	#@cmd	dasher 1 0 0
+	delay	10
+	offset	39 85
+	bbox	20 7 42 74
+	frame	data/chars/Dudley/sp301.gif
+	#@cmd	stop
+	offset	39 81
+	frame	data/chars/Dudley/sp302.gif
+	delay	2
+	offset	39 86
+	frame	data/chars/Dudley/sp303.gif
+	offset	37 97
+	bbox	24 5 38 90
+	frame	data/chars/Dudley/sp304.gif
+	offset	34 105
+	bbox	21 5 32 100
+	frame	data/chars/Dudley/sp305.gif
+	Attack	64 18 56 21 2
+	frame	data/chars/Dudley/sp306.gif
+	Attack	0
+	frame	data/chars/Dudley/sp306.gif
+	offset	33 105
+	Attack2	53 13 58 28 3
+	frame	data/chars/Dudley/sp307.gif
+	Attack	0
+	frame	data/chars/Dudley/sp307.gif
+	Attack	64 7 52 40 3
+	frame	data/chars/Dudley/sp308.gif
+	Attack	0
+	frame	data/chars/Dudley/sp308.gif
+	Attack2	64 7 52 40 3
+	offset	33 107
+	frame	data/chars/Dudley/sp309.gif
+	Attack	0
+	frame	data/chars/Dudley/sp309.gif
+	delay	5
+	Attack	64 7 52 40 3
+	offset	33 105
+	frame	data/chars/Dudley/sp310.gif
+	Attack	0
+	frame	data/chars/Dudley/sp311.gif
+	offset	33 106
+	frame	data/chars/Dudley/sp312.gif
+	sound	data/chars/Dudley/at2.wav
+	offset	40 106
+	frame	data/chars/Dudley/sp313.gif
+	hitflash	qflash
+	offset	39 95
+	bbox	28 4 39 91
+	Attack2	70 12 47 53 5 0 0 0 44
+	frame	data/chars/Dudley/sp314.gif
+	delay	20
+	offset	39 107
+	bbox	28 18 33 89
+	Attack2	70 1 45 58 5 0 0 0 44
+	frame	data/chars/Dudley/sp315.gif
+
+anim	jumpland
+	delay	5
+	offset	45 102
+	frame	data/chars/Dudley/get00.gif
+	offset	46 87
+	frame	data/chars/Dudley/get01.gif
+	offset	45 102
+	frame	data/chars/Dudley/get00.gif
+
+anim	jumpdelay
+	delay	7
+	offset	46 87
+	frame	data/chars/Dudley/get01.gif
+
+anim	freespecial
+	energycost	100
+	#mponly	1
+	hitfx	data/sounds/sf2h.wav
+	Delay	4
+	OffSet	42 86
+	Frame	data\chars\dudley\sp400.gif
+	OffSet	42 78
+	Frame	data\chars\dudley\sp401.gif
+	OffSet	42 74
+	Frame	data\chars\dudley\sp402.gif
+	#@cmd	spawn02 "flash3"
+	#@cmd	spawn01 "flash4" 40 50 1
+	OffSet	42 89
+	Frame	data\chars\dudley\sp403.gif
+	OffSet	42 100
+	Frame	data\chars\dudley\sp404.gif
+	hitflash	qflash2
+	sound	data/chars/Dudley/1.wav
+	dropv	1 0.8
+	OffSet	42 101
+	Attack3	74 20 38 54 20 1 0 0 50
+	Frame	data\chars\dudley\sp405.gif
+	Attack	0
+	Frame	data\chars\dudley\sp405.gif
+	move	30
+	#@cmd	leaper 1 1.5 0
+	OffSet	29 149
+	Attack	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp406.gif
+	move	0
+	Attack	0
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	34 148
+	Attack3	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	26 143
+	Attack3	10 3 48 122 7 1 0 0 20
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	22 142
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	17 138
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	22 143
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	30 144
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	33 122
+	Attack	0
+	Frame	data\chars\dudley\sp414.gif
+	Delay	5
+	OffSet	43 85
+	Frame	data\chars\dudley\sp400.gif
+	OffSet	42 78
+	Frame	data\chars\dudley\sp401.gif
+	OffSet	42 74
+	Frame	data\chars\dudley\sp402.gif
+	OffSet	42 89
+	Frame	data\chars\dudley\sp403.gif
+	OffSet	42 100
+	Frame	data\chars\dudley\sp404.gif
+	sound	data/chars/Dudley/2.wav
+	dropv	1 1
+	Delay	4
+	OffSet	42 101
+	Attack3	74 20 38 54 20 1 0 0 50
+	Frame	data\chars\dudley\sp405.gif
+	Attack	0
+	Frame	data\chars\dudley\sp405.gif
+	move	35
+	#@cmd	leaper 1 1.8 0
+	OffSet	28 149
+	Attack3	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp406.gif
+	move	0
+	Attack	0
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	32 148
+	Attack3	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	24 143
+	Attack3	10 3 48 122 7 1 0 0 20
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	22 142
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	18 138
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	20 144
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	26 145
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	28 123
+	Attack	0
+	Frame	data\chars\dudley\sp414.gif
+	OffSet	42 86
+	Frame	data\chars\dudley\sp400.gif
+	OffSet	42 78
+	Frame	data\chars\dudley\sp401.gif
+	OffSet	42 74
+	Frame	data\chars\dudley\sp402.gif
+	OffSet	42 89
+	Frame	data\chars\dudley\sp403.gif
+	OffSet	42 100
+	Frame	data\chars\dudley\sp404.gif
+	sound	data/chars/Dudley/end.wav
+	dropv	1 1
+	OffSet	42 101
+	Attack3	74 20 38 54 20 1 0 0 50
+	Frame	data\chars\dudley\sp405.gif
+	Attack	0
+	Frame	data\chars\dudley\sp405.gif
+	move	35
+	#@cmd	leaper 2 3.5 0
+	dropv	1 1
+	OffSet	28 149
+	Attack	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp406.gif
+	move	0
+	Attack	0
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	33 148
+	Attack3	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	24 143
+	Attack	10 3 48 122 7 1 0 0 20
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	22 142
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	15 138
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	17 144
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	20 145
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	25 149
+	Attack	0
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	29 148
+	Attack3	26 3 48 115 8 1 0 0 20
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	22 144
+	Attack	10 3 48 122 7 1 0 0 20
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	23 142
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	19 138
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	22 144
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	25 145
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	23 125
+	Attack	0
+	Frame	data\chars\dudley\sp414.gif
+
+anim	freespecial2
+	landframe	29
+	cancel	1 5 1 s freespecial
+	hitfx	data/sounds/sf2h.wav
+	#bbox	36 6 43 77
+	Delay	3
+	OffSet	42 86
+	Frame	data\chars\dudley\sp400.gif
+	#bbox	40 5 46 68
+	OffSet	42 78
+	Frame	data\chars\dudley\sp401.gif
+	#bbox	55 8 42 59
+	OffSet	42 74
+	Frame	data\chars\dudley\sp402.gif
+	#bbox	46 7 40 77
+	OffSet	42 89
+	Frame	data\chars\dudley\sp403.gif
+	#bbox	48 0 38 98
+	OffSet	42 100
+	Frame	data\chars\dudley\sp404.gif
+	hitflash	qflash
+	sound	data/chars/Dudley/upper.wav
+	OffSet	42 101
+	Attack2	74 20 38 54 21 1 0 0 30
+	Frame	data\chars\dudley\sp405.gif
+	Attack	0
+	Frame	data\chars\dudley\sp405.gif
+	hitflash	flash
+	move	30
+	#@cmd	leaper 2 3.5 0
+	dropv	1.5 1.5
+	OffSet	33 149
+	Attack3	25 2 51 99 8 1 0 0 20
+	BBox	20 38 36 98
+	Frame	data\chars\dudley\sp406.gif
+	move	0
+	Attack	0
+	Frame	data\chars\dudley\sp407.gif
+	dropv	2 2
+	OffSet	36 148
+	Attack	26 -1 46 98 5 1 0 0 20
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	31 143
+	Attack	0
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	31 142
+	BBox	14 34 31 95
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	24 140
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	25 145
+	BBox	8 34 33 106
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	34 145
+	Attack	23 -1 48 96 3 1 0 0 15
+	BBox	10 34 38 110
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	33 149
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	36 148
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	31 143
+	Attack	13 0 43 93 3 1 0 0 15
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	31 142
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	24 140
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	25 145
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	34 145
+	Frame	data\chars\dudley\sp413.gif
+	OffSet	33 149
+	Frame	data\chars\dudley\sp407.gif
+	OffSet	37 148
+	Frame	data\chars\dudley\sp408.gif
+	OffSet	31 143
+	Attack	13 0 43 93 3 1 0 0 15
+	Frame	data\chars\dudley\sp409.gif
+	OffSet	31 142
+	Attack	0
+	Frame	data\chars\dudley\sp410.gif
+	OffSet	24 140
+	Frame	data\chars\dudley\sp411.gif
+	OffSet	25 145
+	Frame	data\chars\dudley\sp412.gif
+	OffSet	34 145
+	Frame	data\chars\dudley\sp413.gif
+	Delay	7
+	OffSet	34 128
+	BBox	17 29 33 97
+	Frame	data\chars\dudley\sp414.gif
+	OffSet	45 102
+	BBox	33 6 40 102
+	Frame	data\chars\dudley\get00.gif
+	OffSet	46 87
+	BBox	28 6 54 85
+	Frame	data\chars\dudley\get01.gif
+	OffSet	45 102
+	BBox	33 6 40 102
+	Frame	data\chars\dudley\get00.gif
+
+anim	freespecial4
+	energycost	100
+	#mponly	1
+	#@CMD	dasher 3 0 0
+	hitfx	data/sounds/bukk.wav
+	hitflash	qflash2
+	delay	7
+	offset	54 105
+	frame	data/chars/Dudley/run05.gif
+	offset	65 97
+	frame	data/chars/Dudley/run06.gif
+	delay	10
+	offset	53 73
+	#@cmd	stop
+	frame	data/chars/Dudley/run07.gif
+	delay	2
+	#@CMD	spawn02 "flash3"
+	#@cmd	spawn01 "flash4" -25 40 1
+	offset	42 74
+	frame	data/chars/Dudley/spf04.gif
+	sound	data/chars/Dudley/sp1.wav
+	offset	45 72
+	frame	data/chars/Dudley/spf05.gif
+	frame	data/chars/Dudley/spf06.gif
+	offset	45 80
+	frame	data/chars/Dudley/spf07.gif
+	offset	45 88
+	Attack2	61 17 53 35 11 0 0 0 11
+	frame	data/chars/Dudley/spf08.gif
+	offset	43 93
+	Attack	0
+	frame	data/chars/Dudley/spf09.gif
+	offset	47 95
+	frame	data/chars/Dudley/spf10.gif
+	offset	45 94
+	frame	data/chars/Dudley/spf11.gif
+	offset	40 87
+	frame	data/chars/Dudley/spf12.gif
+	offset	41 81
+	frame	data/chars/Dudley/spf13.gif
+	offset	41 74
+	frame	data/chars/Dudley/spf14.gif
+	offset	41 69
+	frame	data/chars/Dudley/spf15.gif
+	frame	data/chars/Dudley/spf16.gif
+	offset	42 72
+	frame	data/chars/Dudley/spf17.gif
+	offset	43 76
+	Attack	79 11 51 42 11 0 0 0 11
+	frame	data/chars/Dudley/spf18.gif
+	offset	44 82
+	Attack	0
+	frame	data/chars/Dudley/spf19.gif
+	offset	44 88
+	frame	data/chars/Dudley/spf20.gif
+	offset	43 89
+	frame	data/chars/Dudley/spf21.gif
+	offset	42 87
+	frame	data/chars/Dudley/spf22.gif
+	offset	42 74
+	frame	data/chars/Dudley/spf04.gif
+	offset	45 72
+	frame	data/chars/Dudley/spf05.gif
+	frame	data/chars/Dudley/spf06.gif
+	offset	45 80
+	frame	data/chars/Dudley/spf07.gif
+	offset	45 88
+	Attack2	61 17 53 35 11 0 0 0 11
+	frame	data/chars/Dudley/spf08.gif
+	offset	43 93
+	Attack	0
+	frame	data/chars/Dudley/spf09.gif
+	offset	47 95
+	frame	data/chars/Dudley/spf10.gif
+	offset	45 94
+	frame	data/chars/Dudley/spf11.gif
+	offset	40 87
+	frame	data/chars/Dudley/spf12.gif
+	offset	41 81
+	frame	data/chars/Dudley/spf13.gif
+	offset	41 74
+	frame	data/chars/Dudley/spf14.gif
+	offset	41 69
+	frame	data/chars/Dudley/spf15.gif
+	frame	data/chars/Dudley/spf16.gif
+	offset	42 72
+	frame	data/chars/Dudley/spf17.gif
+	offset	43 76
+	Attack	79 11 51 42 11 0 0 0 11
+	frame	data/chars/Dudley/spf18.gif
+	offset	44 82
+	Attack	0
+	frame	data/chars/Dudley/spf19.gif
+	offset	44 88
+	frame	data/chars/Dudley/spf20.gif
+	offset	43 89
+	frame	data/chars/Dudley/spf21.gif
+	offset	42 87
+	frame	data/chars/Dudley/spf22.gif
+	offset	42 74
+	frame	data/chars/Dudley/spf04.gif
+	offset	45 72
+	frame	data/chars/Dudley/spf05.gif
+	frame	data/chars/Dudley/spf06.gif
+	offset	45 80
+	frame	data/chars/Dudley/spf07.gif
+	offset	45 88
+	Attack2	61 17 53 35 11 0 0 0 11
+	frame	data/chars/Dudley/spf08.gif
+	offset	43 93
+	Attack	0
+	frame	data/chars/Dudley/spf09.gif
+	offset	47 95
+	frame	data/chars/Dudley/spf10.gif
+	offset	45 94
+	frame	data/chars/Dudley/spf11.gif
+	offset	40 87
+	frame	data/chars/Dudley/spf12.gif
+	offset	41 81
+	frame	data/chars/Dudley/spf13.gif
+	offset	41 74
+	frame	data/chars/Dudley/spf14.gif
+	offset	41 69
+	frame	data/chars/Dudley/spf15.gif
+	frame	data/chars/Dudley/spf16.gif
+	offset	42 72
+	frame	data/chars/Dudley/spf17.gif
+	offset	43 76
+	Attack	79 11 51 42 11 0 0 0 11
+	frame	data/chars/Dudley/spf18.gif
+	offset	44 82
+	Attack	0
+	frame	data/chars/Dudley/spf19.gif
+	offset	44 88
+	frame	data/chars/Dudley/spf20.gif
+	offset	43 89
+	frame	data/chars/Dudley/spf21.gif
+	offset	42 87
+	frame	data/chars/Dudley/spf22.gif
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash2
+	delay	2
+	offset	42 73
+	bbox	46 11 52 62
+	frame	data/chars/Dudley/at400.gif
+	offset	42 77
+	frame	data/chars/Dudley/at401.gif
+	offset	42 76
+	frame	data/chars/Dudley/at402.gif
+	offset	42 84
+	bbox	61 3 46 82
+	frame	data/chars/Dudley/at403.gif
+	offset	42 89
+	bbox	57 6 40 83
+	frame	data/chars/Dudley/at404.gif
+	offset	42 94
+	Attack	94 17 40 36 19 1 0 0 33
+	dropv	4.5 2
+	frame	data/chars/Dudley/at405.gif
+	offset	42 115
+	bbox	51 25 42 92
+	Attack	92 1 42 88 19 1 0 0 33
+	dropv	4.5 2
+	frame	data/chars/Dudley/at406.gif
+	offset	42 122
+	Attack	84 4 50 85 19 1 0 0 33
+	dropv	4.5 2
+	frame	data/chars/Dudley/at407.gif
+	delay	8
+	offset	42 120
+	Attack	0
+	frame	data/chars/Dudley/at408.gif
+	delay	5
+	offset	42 116
+	frame	data/chars/Dudley/at409.gif
+	offset	42 95
+	bbox	46 5 43 92
+	frame	data/chars/Dudley/at410.gif
+	offset	42 82
+	bbox	39 6 47 74
+	frame	data/chars/Dudley/at411.gif
+	
+anim	freespecial5
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash2
+	energycost	50
+	#mponly	1
+	#@cmd	spawn02 "flash3"
+	#@cmd	spawn01 "flash4" 20 70 1
+	delay	4
+	offset	50 106
+	frame	data/chars/Dudley/sp601.gif
+	offset	50 104
+	frame	data/chars/Dudley/sp602.gif
+	offset	50 105
+	frame	data/chars/Dudley/sp603.gif
+	frame	data/chars/Dudley/sp604.gif
+	frame	data/chars/Dudley/sp605.gif
+	sound	data/chars/Dudley/counter.wav
+	offset	50 97
+	frame	data/chars/Dudley/sp606.gif
+	#@cmd	dasher 4 0 0
+	frame	data/chars/Dudley/sp607.gif
+	offset	50 92
+	frame	data/chars/Dudley/sp608.gif
+	frame	data/chars/Dudley/sp609.gif
+	offset	50 99
+	Attack	1 14 198 15 55 1 0 0 30
+	frame	data/chars/Dudley/sp610.gif
+	#@cmd	dasher 2 0 0
+	frame	data/chars/Dudley/sp611.gif
+	Attack	3 12 159 20 55 1 0 0 30
+	frame	data/chars/Dudley/sp612.gif
+	#@cmd	stop
+	frame	data/chars/Dudley/sp613.gif
+	Attack	0
+	frame	data/chars/Dudley/sp614.gif
+	frame	data/chars/Dudley/sp615.gif
+	frame	data/chars/Dudley/sp616.gif
+	frame	data/chars/Dudley/sp617.gif
+
+anim	freespecial7
+	hitflash	qflash
+	cancel	8 17 1 d u a freespecial2
+	cancel	8 17 1 d u s freespecial
+	delay	3
+	offset	50 93
+	bbox	37 5 40 86
+	frame	data/chars/Dudley/spb00.gif
+	Attack	79 9 70 16 6 0 0 0 20
+	frame	data/chars/Dudley/spb01.gif
+	Attack	0
+	frame	data/chars/Dudley/spb02.gif
+	offset	50 95
+	frame	data/chars/Dudley/spb03.gif
+	offset	50 99
+	frame	data/chars/Dudley/spb04.gif
+	offset	50 102
+	frame	data/chars/Dudley/spb09.gif
+	offset	50 100
+	frame	data/chars/Dudley/spb10.gif
+	offset	50 99
+	frame	data/chars/Dudley/spb11.gif
+	bbox	43 4 45 94
+	Attack2	83 21 53 27 8 0 0 0 20
+	frame	data/chars/Dudley/spb12.gif
+	Attack	0
+	frame	data/chars/Dudley/spb13.gif
+	offset	50 98
+	frame	data/chars/Dudley/spb14.gif
+	offset	50 91
+	frame	data/chars/Dudley/spb15.gif
+	offset	50 92
+	frame	data/chars/Dudley/spb16.gif
+	offset	50 93
+	frame	data/chars/Dudley/spb17.gif
+	offset	50 94
+	frame	data/chars/Dudley/spb18.gif
+	hitflash	qflash2
+	hitfx	data/sounds/sf2h.wav
+	offset	50 96
+	Attack	81 16 53 29 17 1 0 0 40
+	dropv	2 3
+	frame	data/chars/Dudley/spb19.gif
+	Attack	0
+	frame	data/chars/Dudley/spb20.gif
+	offset	50 93
+	frame	data/chars/Dudley/spb21.gif
+	offset	50 89
+	frame	data/chars/Dudley/spb22.gif
+
+anim	freespecial8
+	sound	data/chars/Dudley/gotya.wav
+	Delay	10
+	OffSet	49 115
+	Frame	data\chars\dudley\spx00.gif
+	OffSet	54 115
+	Frame	data\chars\dudley\spx01.gif
+	OffSet	53 116
+	Frame	data\chars\dudley\spx02.gif
+	#@cmd	tosser "rose" 20 123 -1 2 2.2 0
+	OffSet	53 135
+	Frame	data\chars\dudley\spx03.gif
+	OffSet	56 135
+	Frame	data\chars\dudley\spx04.gif
+	delay	40
+	Frame	data\chars\dudley\spx05.gif
+	Delay	7
+	OffSet	45 99
+	Frame	data\chars\dudley\death00.gif
+	sound	data/chars/Dudley/die2.wav
+	OffSet	51 80
+	Frame	data\chars\dudley\death01.gif
+	OffSet	57 59
+	Frame	data\chars\dudley\death02.gif
+	OffSet	53 59
+	Frame	data\chars\dudley\death03.gif
+	OffSet	51 57
+	Frame	data\chars\dudley\death04.gif
+	OffSet	56 53
+	Frame	data\chars\dudley\death05.gif
+	OffSet	59 58
+	Frame	data\chars\dudley\death06.gif
+	OffSet	68 45
+	Frame	data\chars\dudley\death07.gif
+	OffSet	76 54
+	Frame	data\chars\dudley\death08.gif
+	OffSet	86 35
+	Frame	data\chars\dudley\death09.gif
+	OffSet	82 38
+	Frame	data\chars\dudley\death10.gif
+	OffSet	81 32
+	Frame	data\chars\dudley\death11.gif
+	OffSet	85 32
+	Frame	data\chars\dudley\death12.gif
+	OffSet	83 44
+	Frame	data\chars\dudley\death13.gif
+	OffSet	86 34
+	Frame	data\chars\dudley\death14.gif
+	Frame	data\chars\dudley\death15.gif
+	Frame	data\chars\dudley\death16.gif
+
+anim	FOLLOW2
+	hitfx	data/sounds/sf2h.wav
+	hitflash	qflash2
+	delay	3
+	offset	50 101
+	bbox	33 3 43 105
+	#@cmd	dasher 2 0 0
+	frame	data/chars/Dudley/sp100.gif
+	offset	50 90
+	bbox	33 8 51 82
+	frame	data/chars/Dudley/sp101.gif
+	#@cmd	dasher 1.8 0 0
+	frame	data/chars/Dudley/sp102.gif
+	sound	data/chars/Dudley/at3.wav
+	offset	50 91
+	frame	data/chars/Dudley/sp103.gif
+	#@cmd	stop
+	offset	50 92
+	frame	data/chars/Dudley/sp104.gif
+	#@cmd	counterCo 2
+	offset	50 93
+	frame	data/chars/Dudley/sp105.gif
+	blast	79 10 77 15 18 0 0 30
+	frame	data/chars/Dudley/sp106.gif
+	frame	data/chars/Dudley/sp107.gif
+	offset	50 90
+	Attack	0
+	frame	data/chars/Dudley/sp108.gif
+	offset	50 88
+	frame	data/chars/Dudley/sp109.gif
+	offset	50 93
+	frame	data/chars/Dudley/sp110.gif
+	offset	50 101
+	frame	data/chars/Dudley/sp111.gif
+	offset	50 107
+	bbox	34 3 37 103
+	frame	data/chars/Dudley/sp112.gif
+	offset	50 109
+	bbox	30 8 35 100
+	frame	data/chars/Dudley/sp113.gif
+	offset	50 104
+	frame	data/chars/Dudley/sp114.gif
+
+anim	follow4
+	sound	data/chars/Dudley/die.wav
+	jumpframe	0 3 -3
+	landframe	4
+	delay	13
+	offset	47 106
+	frame	data/chars/Dudley/fall00.gif
+	offset	69 82
+	frame	data/chars/Dudley/fall01.gif
+	offset	70 67
+	frame	data/chars/Dudley/fall02.gif
+	delay	70
+	offset	81 46
+	frame	data/chars/Dudley/fall03.gif
+	offset	86 33
+	frame	data/chars/Dudley/fall04.gif

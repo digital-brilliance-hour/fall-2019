@@ -1,0 +1,811 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Yashiro
+health	136 0 100 1
+mpset 	70 0 50 0
+speed	12
+mp          		70
+mprate				3
+nolife				1
+falldie		1
+type	enemy
+Jmove 0 2
+#shadow	3
+#colourselect 1
+#energycoast 6
+gfxshadow	1
+subject_to_screen 1
+makeinv		3
+dust dusts2 dusts3 dusts
+riseinv		1
+#Wning	30 5 3 1 0
+icon	data/chars/HeavyD/icon.gif
+diesound  data/sounds/Die5.wav
+
+parrow	data/chars/misc/1p.gif -30 -125
+parrow2	data/chars/misc/2p.gif -30 -125
+parrow3	data/chars/misc/3p.gif -30 -125
+
+remap	data/chars/HeavyD/Idle01.gif data/chars/HeavyD/map01.gif
+remap	data/chars/HeavyD/Idle01.gif data/chars/HeavyD/map02.gif
+remap	data/chars/HeavyD/Idle01.gif data/chars/HeavyD/map03.gif
+
+#load Super
+#Load HeavyDP
+#Load HeavyDSP
+
+com d f a  freespecial2
+com d f d f a  freespecial3
+com a2 freespecial4
+com d f a2  freespecial7
+com d f d f a2  freespecial8
+com u u freespecial6
+com d d freespecial5
+#com a4 freespecial4
+
+
+
+anim waiting
+      loop	1
+	delay	10
+	offset	0 0
+	fshadow	0
+      frame	data/chars/HeavyD/HeavyD00.gif
+
+
+
+
+
+anim SELECT
+	loop	0
+      delay	10
+	offset	0 0
+	fshadow	0
+	sound	data/chars/HeavyD/select.wav
+      frame	data/chars/HeavyD/HeavyD01.gif
+      frame	data/chars/HeavyD/HeavyD00.gif
+      frame	data/chars/HeavyD/HeavyD01.gif
+      frame	data/chars/HeavyD/HeavyD00.gif
+      frame	data/chars/HeavyD/HeavyD01.gif
+      frame	data/chars/HeavyD/HeavyD00.gif
+      frame	data/chars/HeavyD/HeavyD01.gif
+      frame	data/chars/HeavyD/HeavyD00.gif
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	42 109
+	bbox	16 0 48 112
+	frame	data/chars/HeavyD/idle01.gif
+	frame	data/chars/HeavyD/idle02.gif
+	frame	data/chars/HeavyD/idle03.gif
+	frame	data/chars/HeavyD/idle04.gif
+	frame	data/chars/HeavyD/idle05.gif
+	frame	data/chars/HeavyD/idle06.gif
+	frame	data/chars/HeavyD/idle07.gif
+	frame	data/chars/HeavyD/idle08.gif
+
+anim walk
+	loop	1
+		offset  38  113
+		delay  10
+		bbox  30  -2  29  115
+	frame	data/chars/HeavyD/W01.gif
+	frame	data/chars/HeavyD/W02.gif
+	frame	data/chars/HeavyD/W03.gif
+	frame	data/chars/HeavyD/W04.gif
+	frame	data/chars/HeavyD/W05.gif
+	frame	data/chars/HeavyD/W06.gif
+	frame	data/chars/HeavyD/W07.gif
+	frame	data/chars/HeavyD/W08.gif
+	frame	data/chars/HeavyD/W09.gif
+	frame	data/chars/HeavyD/W10.gif
+	frame	data/chars/HeavyD/W11.gif
+	frame	data/chars/HeavyD/W12.gif
+
+anim run
+	loop	1
+		move  8
+		bbox  23  0  97  68
+		delay  3
+
+		offset  54  79
+	frame  data/chars/HeavyD/r01.gif
+	frame  data/chars/HeavyD/r01.gif
+	frame  data/chars/HeavyD/r02.gif
+	frame  data/chars/HeavyD/r02.gif
+	frame  data/chars/HeavyD/r03.gif
+	frame  data/chars/HeavyD/r03.gif
+	frame	data/chars/HeavyD/r04.gif
+	frame  data/chars/HeavyD/r04.gif
+	frame	data/chars/HeavyD/r05.gif
+	frame  data/chars/HeavyD/r05.gif
+	frame	data/chars/HeavyD/r06.gif
+	frame  data/chars/HeavyD/r06.gif
+
+anim Jump
+	loop	0
+		offset  19  127
+		bbox  8  6  36  94
+		delay  3
+	frame	data/chars/HeavyD/J01.gif
+	frame  data/chars/HeavyD/J02.gif
+	frame  data/chars/HeavyD/J03.gif
+	frame  data/chars/HeavyD/J04.gif
+	frame  data/chars/HeavyD/J05.gif
+	frame  data/chars/HeavyD/J06.gif
+	frame  data/chars/HeavyD/J07.gif
+
+
+
+
+anim land
+	loop	0
+	offset	61 71
+	delay	25
+	bbox	28 0 77 71
+	frame	data/chars/HeavyD/r01.gif
+
+anim grab
+	loop	0
+	offset	47 114
+	bbox	33 -1 37 115
+	delay	1000
+	cancel 	0 			1 	0 	a2 		freespecial4
+	cancel 	0 	1	0 	d f a  freespecial2
+        cancel 	0 	1	0 	d f d f a  freespecial3
+	cancel 	0 	1	0 	d f d f a2  freespecial8
+        cancel 	0 	1	0 	d f a2  freespecial7
+        cancel 	0 	1	0 	d d  freespecial5
+        cancel 	0 	1	0 	u u  freespecial6
+	sound	data/sounds/grab.wav
+	frame	data/chars/HeavyD/ga101.gif
+
+anim throw
+	loop	0
+	offset	66 112
+	delay	5
+		bbox  51  0  32  113
+	frame	data/chars/HeavyD/T01.gif
+	frame	data/chars/HeavyD/T02.gif
+	frame	data/chars/HeavyD/T03.gif
+	frame	data/chars/HeavyD/T04.gif
+	frame	data/chars/HeavyD/T05.gif
+	frame	data/chars/HeavyD/T06.gif
+	frame	data/chars/HeavyD/T07.gif
+
+anim grabattack
+	loop	0
+		offset  47  114
+		bbox  39  1  26  117
+		delay  7
+	sound	data/chars/HeavyD/a1.wav
+	frame	data/chars/HeavyD/Ga102.gif
+	frame	data/chars/HeavyD/Ga103.gif
+		attack1  60  17  51  48  10
+	frame	data/chars/HeavyD/Ga104.gif
+	frame  data/chars/HeavyD/Ga105.gif
+	frame	data/chars/HeavyD/Ga106.gif
+		Attack1  0
+	frame  data/chars/HeavyD/Ga107.gif
+	frame  data/chars/HeavyD/Ga102.gif
+
+anim grabattack2
+		loop	0
+	delay	5
+	offset	44 107
+	bbox	25 12 55 96 15
+	hitflash flash03
+	sound	data/chars/HeavyD/a3.wav
+		move  0
+	frame	data/chars/HeavyD/sp206.gif
+	frame	data/chars/HeavyD/sp207.gif
+		blast  21  10  104  51  15
+	frame	data/chars/HeavyD/sp208.gif
+	frame	data/chars/HeavyD/sp209.gif
+	frame	data/chars/HeavyD/sp210.gif
+	frame	data/chars/HeavyD/sp211.gif
+		Attack1  0
+	frame	data/chars/HeavyD/sp212.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	3
+	bbox	23 0 37 111
+	offset	39 109
+	sound	data/chars/HeavyD/a1.wav
+	frame	data/chars/HeavyD/a101.gif
+		Attack1  57  11  71  26  10
+	frame	data/chars/HeavyD/a102.gif
+	frame  data/chars/HeavyD/a102.gif
+		delay  3
+	frame	data/chars/HeavyD/a103.gif
+	frame	data/chars/HeavyD/a104.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a105.gif
+	frame	data/chars/HeavyD/a106.gif
+
+
+anim attack2
+	loop	0
+	delay	3
+	offset	42 110
+	bbox	25 0 37 111 15
+	sound	data/chars/HeavyD/a1.wav
+		Attack1  0
+	frame	data/chars/HeavyD/a201.gif
+	frame	data/chars/HeavyD/a202.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a203.gif
+	frame	data/chars/HeavyD/a204.gif
+		attack1  61  19  83  33  10
+	frame	data/chars/HeavyD/a205.gif
+	frame	data/chars/HeavyD/a206.gif
+	frame	data/chars/HeavyD/a207.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a208.gif
+	frame	data/chars/HeavyD/a209.gif
+	frame	data/chars/HeavyD/a210.gif
+	frame	data/chars/HeavyD/a211.gif
+
+
+anim attack3
+	loop	0
+	delay	5
+	offset	45 141
+	hitflash flash03
+	bbox	24 38 37 105 15
+	sound	data/chars/HeavyD/a3.wav
+	frame	data/chars/HeavyD/a301.gif
+	frame	data/chars/HeavyD/a302.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a303.gif
+		blast  50  13  63  106  15
+	frame	data/chars/HeavyD/a304.gif
+		delay  5
+	frame	data/chars/HeavyD/a305.gif
+	frame	data/chars/HeavyD/a306.gif
+	frame	data/chars/HeavyD/a307.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a308.gif
+        frame	data/chars/HeavyD/a309.gif
+
+
+
+
+anim freespecial4
+	loop	0
+	delay	4
+	offset	46 140
+	hitflash flash03
+	bbox	24 44 37 97 15
+	sound	data/chars/HeavyD/a3.wav
+	frame	data/chars/HeavyD/a301.gif
+	frame	data/chars/HeavyD/a302.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a303.gif
+		blast  61  9  56  101  15
+	frame	data/chars/HeavyD/a304.gif
+		delay  4
+	frame	data/chars/HeavyD/a305.gif
+		Attack1  0
+	frame	data/chars/HeavyD/a306.gif
+	frame	data/chars/HeavyD/a307.gif
+	frame	data/chars/HeavyD/a308.gif
+        frame	data/chars/HeavyD/a309.gif
+
+anim freespecial5
+		offset  65  110
+		delay  5
+		movez  5
+		bbox  44  2  41  109
+	frame  data/chars/HeavyD/roll01.gif
+		bbox  0
+	frame  data/chars/HeavyD/roll02.gif
+	frame  data/chars/HeavyD/roll03.gif
+	frame  data/chars/HeavyD/roll04.gif
+	frame  data/chars/HeavyD/roll05.gif
+	frame  data/chars/HeavyD/roll06.gif
+		bbox  63  22  37  86
+		movez  0
+	frame  data/chars/HeavyD/roll07.gif
+	frame  data/chars/HeavyD/roll08.gif
+
+
+anim freespecial6
+		offset  66  107
+		delay  5
+		movez  -5
+		bbox  37  1  48  105
+	frame  data/chars/HeavyD/roll01.gif
+		bbox  0
+	frame  data/chars/HeavyD/roll02.gif
+	frame  data/chars/HeavyD/roll03.gif
+	frame  data/chars/HeavyD/roll04.gif
+	frame  data/chars/HeavyD/roll05.gif
+	frame  data/chars/HeavyD/roll06.gif
+		bbox  59  13  40  95
+		movez  0
+	frame  data/chars/HeavyD/roll07.gif
+	frame  data/chars/HeavyD/roll08.gif
+
+anim pain
+	loop	0
+	offset	40 123
+	bbox	16 4 38 120
+	delay	8
+	frame	data/chars/HeavyD/pain01.gif
+	frame	data/chars/HeavyD/pain02.gif
+	frame	data/chars/HeavyD/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	35 123
+	bbox	10 4 44 122
+	delay	8
+	frame	data/chars/HeavyD/painR01.gif
+	frame	data/chars/HeavyD/painR02.gif
+	frame	data/chars/HeavyD/painR01.gif
+
+anim pain3
+	loop	0
+	offset	36 121
+	bbox	14 1 40 122
+	delay	8
+	frame	data/chars/HeavyD/painB01.gif
+	frame	data/chars/HeavyD/painB02.gif
+	frame	data/chars/HeavyD/painB01.gif
+
+
+
+anim fall
+	loop	0
+	offset	33 89
+	attack
+	delay	7
+	landframe 2
+	delay	70
+	frame	data/chars/HeavyD/fall01.gif
+		Attack1  0
+		offset  48  80
+	frame	data/chars/HeavyD/fall02.gif
+	frame	data/chars/HeavyD/fall02.gif
+	frame  data/chars/HeavyD/fall02.gif
+		blast  98  113  79  49  5  1
+	frame  data/chars/HeavyD/fall02.gif
+	frame  data/chars/HeavyD/fall02.gif
+	frame  data/chars/HeavyD/fall02.gif
+		offset  80  27
+		Attack1  0
+	frame	data/chars/HeavyD/fall03.gif
+
+anim rise
+		offset  53  98
+		delay  7
+        frame	data/chars/HeavyD/rise01.gif
+        frame	data/chars/HeavyD/rise02.gif
+        frame	data/chars/HeavyD/rise03.gif
+        frame	data/chars/HeavyD/rise04.gif
+        frame	data/chars/HeavyD/rise05.gif
+
+
+anim Jumpattack
+	loop	0
+		offset  26  90
+		bbox  13  -2  41  92
+		delay  4
+	sound	data/chars/HeavyD/a1.wav
+        frame	data/chars/HeavyD/ja101.gif
+		blast  40  42  33  49  10
+        frame	data/chars/HeavyD/ja102.gif
+	frame  data/chars/HeavyD/ja102.gif
+		delay  20
+        frame	data/chars/HeavyD/ja103.gif
+
+anim Jumpattack2
+	sound	data/chars/HeavyD/a3.wav
+		offset  68  91
+		bbox  55  3  45  89
+		delay  7
+        frame	data/chars/HeavyD/ja201.gif
+		blast  73  12  95  84  15
+       frame	data/chars/HeavyD/ja202.gif
+		delay  7
+        frame	data/chars/HeavyD/ja203.gif
+        frame	data/chars/HeavyD/ja204.gif
+        frame	data/chars/HeavyD/ja205.gif
+
+
+anim freespecial3
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+        custknife HeavyDsP
+	throwframe  21
+
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+         delay	5
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  63  162
+	frame  data/chars/HeavyD/SP101.gif
+	frame  data/chars/HeavyD/SP102.gif
+	frame  data/chars/HeavyD/SP103.gif
+	sound	data/chars/HeavyD/sp01.wav
+	frame  data/chars/HeavyD/SP104.gif
+	frame  data/chars/HeavyD/SP105.gif
+	frame  data/chars/HeavyD/SP106.gif
+		Attack1  0
+	frame  data/chars/HeavyD/SP107.gif
+	frame  data/chars/HeavyD/SP108.gif
+	frame  data/chars/HeavyD/SP109.gif
+	frame  data/chars/HeavyD/SP110.gif
+	frame  data/chars/HeavyD/SP111.gif
+	frame  data/chars/HeavyD/SP112.gif
+	frame  data/chars/HeavyD/SP113.gif
+	frame  data/chars/HeavyD/SP114.gif
+	frame  data/chars/HeavyD/SP115.gif
+	frame  data/chars/HeavyD/SP116.gif
+	frame  data/chars/HeavyD/SP117.gif
+	frame  data/chars/HeavyD/SP118.gif
+	frame  data/chars/HeavyD/SP119.gif
+	frame  data/chars/HeavyD/SP120.gif
+	frame  data/chars/HeavyD/SP121.gif
+	frame  data/chars/HeavyD/SP122.gif
+	frame  data/chars/HeavyD/SP123.gif
+	frame  data/chars/HeavyD/SP124.gif
+	frame  data/chars/HeavyD/SP125.gif
+	frame  data/chars/HeavyD/SP126.gif
+	frame  data/chars/HeavyD/SP127.gif
+	frame  data/chars/HeavyD/SP128.gif
+	frame  data/chars/HeavyD/SP129.gif
+
+
+
+anim freespecial8
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+	mponly 1
+	 followanim	1
+	 followcond	1
+
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+delay	1
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  51  82
+		move  0
+		attack1  61  3  27  79
+	frame  data/chars/HeavyD/R03.gif
+		attack1  46  26  21  81
+		movea  0
+		offset  50  106
+		move  10
+	frame  data/chars/HeavyD/SP201.gif
+	sound	data/chars/HeavyD/sp02.wav
+	frame  data/chars/HeavyD/SP202.gif
+	frame  data/chars/HeavyD/SP203.gif
+	frame  data/chars/HeavyD/SP204.gif
+	frame  data/chars/HeavyD/SP205.gif
+	frame  data/chars/HeavyD/SP205.gif
+	frame  data/chars/HeavyD/SP205.gif
+	frame  data/chars/HeavyD/SP205.gif
+	frame  data/chars/HeavyD/SP206.gif
+	frame  data/chars/HeavyD/SP206.gif
+	frame  data/chars/HeavyD/SP206.gif
+	frame  data/chars/HeavyD/SP206.gif
+	frame  data/chars/HeavyD/SP206.gif
+	frame  data/chars/HeavyD/SP207.gif
+
+
+
+anim follow1
+	flipframe  61
+		offset  44  108
+		delay  4
+	hitflash flash02
+	sound	data/chars/HeavyD/a1.wav
+	frame  data/chars/HeavyD/a101.gif
+	frame  data/chars/HeavyD/a102.gif
+		attack1  65  7  57  29  10
+	frame  data/chars/HeavyD/a103.gif
+	frame  data/chars/HeavyD/a104.gif
+		Attack1  0
+	frame  data/chars/HeavyD/a105.gif
+	frame  data/chars/HeavyD/a106.gif
+	frame  data/chars/HeavyD/a101.gif
+		attack1  60  8  65  26  10
+	frame  data/chars/HeavyD/a102.gif
+	frame  data/chars/HeavyD/a103.gif
+	frame  data/chars/HeavyD/a104.gif
+		Attack1  0
+	frame  data/chars/HeavyD/a105.gif
+	frame  data/chars/HeavyD/a106.gif
+		offset  46  113
+	frame  data/chars/HeavyD/ga101.gif
+	frame  data/chars/HeavyD/ga102.gif
+	frame  data/chars/HeavyD/ga103.gif
+		attack1  69  24  39  36  10
+	frame  data/chars/HeavyD/ga104.gif
+	frame  data/chars/HeavyD/ga105.gif
+	frame  data/chars/HeavyD/ga106.gif
+		Attack1  0
+	frame  data/chars/HeavyD/ga107.gif
+		offset  46  111
+	frame  data/chars/HeavyD/a201.gif
+	frame  data/chars/HeavyD/a202.gif
+	frame  data/chars/HeavyD/a203.gif
+	frame  data/chars/HeavyD/a204.gif
+		attack1  77  11  67  38  10
+	frame  data/chars/HeavyD/a205.gif
+	frame  data/chars/HeavyD/a206.gif
+	frame  data/chars/HeavyD/a207.gif
+		Attack1  0
+	frame  data/chars/HeavyD/a208.gif
+	frame  data/chars/HeavyD/a209.gif
+	frame  data/chars/HeavyD/a210.gif
+		offset  42  139
+	sound	data/chars/HeavyD/a1.wav
+	frame  data/chars/HeavyD/a301.gif
+	frame  data/chars/HeavyD/a302.gif
+	frame  data/chars/HeavyD/a303.gif
+		attack1  74  13  28  81  10
+	frame  data/chars/HeavyD/a304.gif
+		Attack1  0
+	frame  data/chars/HeavyD/a305.gif
+	frame  data/chars/HeavyD/a306.gif
+	frame  data/chars/HeavyD/a307.gif
+	frame  data/chars/HeavyD/a308.gif
+	sound	data/chars/HeavyD/a1.wav
+	frame  data/chars/HeavyD/a301.gif
+	frame  data/chars/HeavyD/a302.gif
+	frame  data/chars/HeavyD/a303.gif
+		attack1  67  18  35  63  10
+	frame  data/chars/HeavyD/a304.gif
+	frame  data/chars/HeavyD/a305.gif
+	frame  data/chars/HeavyD/a306.gif
+	frame  data/chars/HeavyD/a307.gif
+		Attack1  0
+	frame  data/chars/HeavyD/a308.gif
+		offset  46  143
+	sound	data/chars/HeavyD/a3.wav
+	frame  data/chars/HeavyD/Fs101.gif
+	frame  data/chars/HeavyD/Fs102.gif
+	frame  data/chars/HeavyD/Fs103.gif
+	frame  data/chars/HeavyD/Fs104.gif
+	frame  data/chars/HeavyD/Fs105.gif
+		attack1  74  -4  30  125  10  0  0  0  60
+	frame  data/chars/HeavyD/Fs106.gif
+	frame  data/chars/HeavyD/Fs107.gif
+	frame  data/chars/HeavyD/Fs108.gif
+	frame  data/chars/HeavyD/Fs109.gif
+	frame  data/chars/HeavyD/Fs110.gif
+		Attack1  0
+	frame  data/chars/HeavyD/Fs111.gif
+		offset  46  110
+		move  20
+	sound	data/chars/HeavyD/a1.wav
+	frame  data/chars/HeavyD/Sp201.gif
+	frame  data/chars/HeavyD/Sp202.gif
+	frame  data/chars/HeavyD/Sp203.gif
+	frame  data/chars/HeavyD/Sp204.gif
+	frame  data/chars/HeavyD/Sp205.gif
+		move  0
+	frame  data/chars/HeavyD/Sp206.gif
+	frame  data/chars/HeavyD/Sp207.gif
+		attack1  15  19  110  48  10
+	frame  data/chars/HeavyD/Sp208.gif
+	frame  data/chars/HeavyD/Sp209.gif
+	frame  data/chars/HeavyD/Sp210.gif
+		Attack1  0
+	frame  data/chars/HeavyD/Sp211.gif
+	frame  data/chars/HeavyD/Sp212.gif
+	frame  data/chars/HeavyD/Sp213.gif
+	frame  data/chars/HeavyD/Sp214.gif
+	frame  data/chars/HeavyD/Sp215.gif
+		offset  46  121
+	frame  data/chars/HeavyD/Sp216.gif
+	frame  data/chars/HeavyD/Sp217.gif
+	frame  data/chars/HeavyD/Sp218.gif
+	frame  data/chars/HeavyD/Sp219.gif
+	frame  data/chars/HeavyD/Sp220.gif
+	sound	data/chars/HeavyD/a3.wav
+		blast  84  17  43  89  20
+	frame  data/chars/HeavyD/Sp221.gif
+	frame  data/chars/HeavyD/Sp222.gif
+	frame  data/chars/HeavyD/Sp223.gif
+	frame  data/chars/HeavyD/Sp224.gif
+	frame  data/chars/HeavyD/Sp225.gif
+	frame  data/chars/HeavyD/Sp226.gif
+	frame  data/chars/HeavyD/Sp227.gif
+		Attack1  0
+	frame  data/chars/HeavyD/Sp228.gif
+	frame  data/chars/HeavyD/Sp229.gif
+
+anim runattack
+		offset  55  121
+		bbox  25  10  65  112
+                energycost	10
+	        mponly 1
+		delay  5
+	sound	data/chars/HeavyD/a1.wav
+	frame  data/chars/HeavyD/ra101.gif
+	frame  data/chars/HeavyD/ra102.gif
+		move  0
+		delay  3
+	frame  data/chars/HeavyD/ra103.gif
+	frame  data/chars/HeavyD/ra104.gif
+		move  7
+		attack1  75  39  59  33  10
+	frame  data/chars/HeavyD/ra105.gif
+		Attack1  0
+	frame  data/chars/HeavyD/ra106.gif
+		attack1  75  39  59  33  10
+	frame  data/chars/HeavyD/ra107.gif
+		Attack1  0
+	frame  data/chars/HeavyD/ra108.gif
+		attack1  75  39  59  33  10
+	frame  data/chars/HeavyD/ra109.gif
+		Attack1  0
+	frame  data/chars/HeavyD/ra110.gif
+		attack1  75  39  59  33  10
+	frame  data/chars/HeavyD/ra111.gif
+		Attack1  0
+	frame  data/chars/HeavyD/ra112.gif
+		blast  75  39  59  33  10
+	frame  data/chars/HeavyD/ra113.gif
+	frame  data/chars/HeavyD/ra114.gif
+		Attack1  0
+		move  0
+	frame  data/chars/HeavyD/ra115.gif
+
+
+
+
+anim freespecial2
+	loop	0
+	delay	5
+        energycost	10
+	offset	54 143
+        custknife HeavyDP
+	mponly 1
+	throwframe  6
+	bbox	22 23 59 120 15
+
+	sound	data/chars/HeavyD/fs01.wav
+	frame  data/chars/HeavyD/fs101.gif
+	frame  data/chars/HeavyD/fs102.gif
+	frame  data/chars/HeavyD/fs103.gif
+	frame  data/chars/HeavyD/fs104.gif
+	frame  data/chars/HeavyD/fs105.gif
+	frame  data/chars/HeavyD/fs106.gif
+	frame  data/chars/HeavyD/fs107.gif
+	frame  data/chars/HeavyD/fs108.gif
+	frame  data/chars/HeavyD/fs109.gif
+	frame  data/chars/HeavyD/fs110.gif
+	frame  data/chars/HeavyD/fs111.gif
+	frame  data/chars/HeavyD/fs112.gif
+
+anim freespecial7
+	loop	0
+	delay	5
+        energycost	10
+	offset	42 158
+	mponly 1
+	bbox	26 46 35 112 15
+	hitflash flash03
+	sound	data/chars/HeavyD/fs02.wav
+		Attack1  0
+	frame  data/chars/HeavyD/fs201.gif
+	frame  data/chars/HeavyD/fs202.gif
+	frame  data/chars/HeavyD/fs203.gif
+	frame  data/chars/HeavyD/fs204.gif
+	frame  data/chars/HeavyD/fs205.gif
+	frame  data/chars/HeavyD/fs206.gif
+		blast  -88  122  254  85  20  0  0  0  80
+	frame  data/chars/HeavyD/fs207.gif
+	frame  data/chars/HeavyD/fs208.gif
+	frame  data/chars/HeavyD/fs208.gif
+	frame  data/chars/HeavyD/fs208.gif
+		Attack1  0
+	frame  data/chars/HeavyD/fs209.gif
+	frame  data/chars/HeavyD/fs210.gif
+	frame  data/chars/HeavyD/fs211.gif
+
+
+
+anim death
+
+		offset  53  76
+	sound	data/chars/HeavyD/Death.wav
+		delay  8
+	frame	data/chars/HeavyD/fall02.gif
+		offset  78  29
+	frame	data/chars/HeavyD/fall03.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  235  131  52
+	frame	data/chars/HeavyD/burn1.gif
+	frame	data/chars/HeavyD/burn2.gif
+	frame	data/chars/HeavyD/burn1.gif
+	frame	data/chars/HeavyD/burn2.gif
+	offset	78 28
+		bbox  104  176  108  35
+	frame	data/chars/HeavyD/fall03.gif
+
+anim Fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  227  107  64
+	frame	data/chars/HeavyD/bburn.gif
+	frame	data/chars/HeavyD/burn2.gif
+	frame	data/chars/HeavyD/bburn.gif
+	frame	data/chars/HeavyD/burn2.gif
+	offset	77 28
+		bbox  98  181  124  33
+	frame	data/chars/HeavyD/fall03.gif
+
+anim shock
+	loop	0
+		offset  39  122
+	frame  data/chars/HeavyD/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/HeavyD/Shok1.gif
+	frame	data/chars/HeavyD/Shok2.gif
+		delay  10
+	frame  data/chars/HeavyD/Shok1.gif
+	frame  data/chars/HeavyD/Shok2.gif
+	offset	61 90
+		bbox  0
+	frame	data/chars/HeavyD/fall02.gif
+		offset  81  24
+	frame	data/chars/HeavyD/fall03.gif
+
+anim pain4
+	loop	0
+	offset	38 122
+	delay	30
+	bbox  10  1  53  124
+	frame	data/chars/HeavyD/pain01.gif
+	frame	data/chars/HeavyD/pain02.gif
+	frame	data/chars/HeavyD/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/HeavyD/burn1.gif
+	frame	data/chars/HeavyD/burn2.gif
+	frame	data/chars/HeavyD/burn1.gif
+	frame	data/chars/HeavyD/burn2.gif
+	offset	82 24
+		bbox  100  176  117  38
+	frame	data/chars/HeavyD/fall03.gif
+

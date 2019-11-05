@@ -1,0 +1,16 @@
+name	ric
+type    none
+health  1
+shadow	0
+
+
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	60 100
+	frame	data/chars/misc/people/ric1.gif
+	frame	data/chars/misc/people/ric2.gif
+
+

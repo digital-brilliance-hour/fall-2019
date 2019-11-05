@@ -1,0 +1,121 @@
+name	cane
+health	25
+speed	8
+type	enemy
+shadow	   0
+gfxshadow  1
+icon	data/chars/cane/icon.gif
+diesound data/sounds/dog2.wav
+noatflash 1
+flash flashc
+palette data/chars/cane/icon.gif
+alternatepal data/chars/cane/alt1.gif
+alternatepal data/chars/burn/burn1.gif
+atchain    1 2 3
+
+
+anim idle
+	loop	1
+	offset	82 177
+	bbox	79 91 32 80
+	hitflash Flashc
+	delay	7
+	frame	data/chars/cane/static1.gif
+
+
+anim walk
+	loop	1
+	offset	82 177
+	hitflash Flashc
+	bbox	79 91 32 80
+	delay	14
+	frame	data/chars/cane/walk1.gif
+	frame	data/chars/cane/walk2.gif
+	frame	data/chars/cane/walk3.gif
+	frame	data/chars/cane/walk4.gif
+
+anim pain
+	loop	0
+	offset	82 177
+	hitflash Flashc
+	bbox	79 91 32 80
+	delay	12
+move -1
+	frame	data/chars/cane/hurt1.gif
+	frame	data/chars/cane/hurt1.gif
+	frame	data/chars/cane/hurt1.gif
+
+anim grabbed
+	loop	0
+	hitflash Flashc
+	offset	82 177
+	bbox	79 91 32 80
+	delay	12
+	frame	data/chars/cane/pain2.gif
+	delay	50
+	frame	data/chars/cane/pain2.gif
+	delay	12
+	frame	data/chars/cane/pain2.gif
+
+anim fall
+	loop	0
+	hitflash Flashc
+	delay	35
+	offset	82 177
+	frame	data/chars/cane/ko1.gif
+	attack	115 96 39 42 7 1
+	frame	data/chars/cane/ko1.gif
+	frame	data/chars/cane/ko3.gif
+
+anim rise
+	loop	0
+	hitflash Flashc
+	offset	82 177
+	delay	10
+	frame	data/chars/cane/rise.gif
+
+
+
+anim attack1
+	range	30 60
+	loop	0
+	hitflash Flashc
+	delay	12
+	offset	82 177
+	bbox	79 91 32 80
+	sound	data/sounds/dog.wav
+	frame	data/chars/cane/punch1.gif
+	attack	92 86 40 64 8
+	frame	data/chars/cane/punch2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/cane/punch3.gif
+	frame	data/chars/cane/punch2.gif
+
+anim attack2
+	range	30 60
+	loop	0
+	hitflash Flashc
+	delay	12
+	offset	82 177
+	bbox	79 91 32 80
+	frame	data/chars/cane/punch1.gif
+	attack	92 86 40 64 6
+	frame	data/chars/cane/punch2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/cane/punch3.gif
+	frame	data/chars/cane/punch2.gif
+
+anim attack3
+	range	30 60
+	loop	0
+	hitflash Flashc
+	delay	12
+	offset	82 177
+	bbox	79 91 32 80
+	sound	data/sounds/dog.wav
+	frame	data/chars/cane/punch1.gif
+	attack	92 86 40 64 5 7
+	frame	data/chars/cane/punch2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/cane/punch3.gif
+	frame	data/chars/cane/punch2.gif

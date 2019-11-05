@@ -1,0 +1,301 @@
+name	Macho
+health  50
+speed  12
+type	enemy
+gfxshadow  1
+nolife   1
+jumpheight 5.8
+jumpspeed 30
+jumpmove   0  3
+atchain 1
+makeinv 1
+grabdistance 42
+jugglepoints  8
+falldie	 1
+throw 6 3
+holdblock 1
+ palette data/chars/en1/idle.GIF
+ alternatepal   data/chars/en1/idlem1.GIF
+ alternatepal   data/chars/en1/idlem2.GIF
+ alternatepal   data/chars/en1/idlem3.GIF
+ alternatepal   data/chars/en1/idlem4.GIF
+ alternatepal   data/chars/en1/idlem5.GIF
+ alternatepal   data/chars/en1/idlem6.GIF
+ alternatepal   data/chars/en1/idlem7.GIF
+ alternatepal   data/chars/en1/idlem8.GIF
+ alternatepal   data/chars/en1/idlem9.GIF
+ alternatepal   data/chars/en1/idlem10.GIF
+  alternatepal   data/chars/en1/idle.GIF
+
+dust   dust
+ candamage  player obstacle npc
+ hostile   player npc
+projectilehit enemy 
+
+anim	attack1
+	loop	0
+	jugglecost	4
+	forcedirection	-1
+	offset	52 136
+	delay	5
+	offset	52 136
+	bbox	21 13 58 127
+	frame	data/chars/en1/a1.gif
+	sound	data/sounds/a1.wav
+	bbox	16 29 63 111
+	delay	3
+	frame	data/chars/en1/a2.gif
+	bbox	19 29 60 110
+	delay	5
+	attack	61 35 84 52 5 0 0 0 15 0
+	dropv	1 3
+	frame	data/chars/en1/a3.gif
+	delay	8
+	attack	0 0 0 0 0 0
+	frame	data/chars/en1/a3.gif
+	bbox	16 29 63 110
+	frame	data/chars/en1/a2.gif
+	offset	52 136
+	bbox	23 13 56 127
+	delay	16
+	frame	data/chars/en1/a1.gif
+	sound	data/sounds/a2.wav
+	bbox	16 29 63 111
+	delay	3
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/en1/a2.gif
+	bbox	20 29 59 110
+	delay	5
+	attack	61 35 84 52 10 1 0 0 19 0
+	dropv	3 5
+	frame	data/chars/en1/a3.gif
+	delay	8
+	attack	0 0 0 0 0 0
+	frame	data/chars/en1/a3.gif
+	bbox	16 29 63 110
+	frame	data/chars/en1/a2.gif
+		
+anim	bdie
+	subentity	pause
+	summonframe	0 240 270 0 1
+	jumpframe	0 3 -1
+	quakeframe	1 1 -11
+	loop	0
+	landframe	4
+	delay	7
+	offset	47 136
+	bbox	20 23 70 100
+	sound	data/sounds/fire.wav
+	frame	data/chars/en1/fire1.gif
+	frame	data/chars/en1/fire2.gif
+	frame	data/chars/en1/fire1.gif
+	bbox	8 22 111 45
+	offset	52 119
+	delay	300
+	frame	data/chars/en1/fall2.gif
+	offset	52 119
+	delay	40
+	bbox	0 0 0 0
+	sound	data/sounds/fall.wav
+	frame	data/chars/en1/fall4.gif
+		
+anim	burn
+	quakeframe	1 1 -11
+	loop	0
+	landframe	4
+	delay	7
+	offset	47 136
+	bbox	20 23 70 111
+	sound	data/sounds/fire.wav
+	frame	data/chars/en1/fire1.gif
+	frame	data/chars/en1/fire2.gif
+	frame	data/chars/en1/fire1.gif
+	bbox	8 22 111 45
+	offset	52 119
+	delay	300
+	frame	data/chars/en1/fall2.gif
+	offset	52 119
+	delay	40
+	bbox	0 0 0 0
+	frame	data/chars/en1/fall4.gif
+		
+anim	death
+	jumpframe	0 3 -1
+	subentity	pause
+	summonframe	0 240 270 0 1
+	quakeframe	1 1 -11
+	loop	0
+	landframe	2
+	delay	15
+	offset	39 128
+	bbox	0 0 0 0
+	frame	data/chars/en1/fall1.gif
+	offset	52 119
+	delay	300
+	frame	data/chars/en1/fall2.gif
+	offset	52 119
+	delay	40
+	sound	data/sounds/fall.wav
+	frame	data/chars/en1/fall4.gif
+		
+anim	fall
+	quakeframe	1 1 -11
+	forcedirection	1
+	loop	0
+	landframe	2
+	delay	15
+	offset	39 128
+	bbox	9 17 64 108
+	attack	20 33 26 44 5 1 0 1 15 0
+	dropv	2	4
+	frame	data/chars/en1/fall1.gif
+	bbox	11 8 104 67
+	offset	52 119
+	delay	300
+	attack	32 33 26 44 5 1 1 0 15 0
+	dropv	2	4
+	frame	data/chars/en1/fall2.gif
+	attack	0 0 0 0 0
+	offset	52 119
+	delay	40
+	bbox	0 0 0 0
+	frame	data/chars/en1/fall4.gif
+		
+anim	freespecial1
+	jugglecost	6
+	subentity	dust
+	summonframe	3 0
+	loop	0
+	forcedirection	-1
+	delay	17
+	offset	52 136
+	bbox	17 22 62 117
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/en1/at1.gif
+	delay	5
+	frame	data/chars/en1/at2.gif
+	sound	data/sounds/a2.wav
+	frame	data/chars/en1/at3.gif
+	bbox	24 29 55 110
+	delay	18
+	attack	52 36 75 52 5 1 0 0 25 0
+	dropv	2 8
+	frame	data/chars/en1/at4.gif
+	bbox	24 29 55 110
+	delay	14
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	14
+	frame	data/chars/en1/at5.gif
+	delay	7
+	bbox	23 29 56 110
+	frame	data/chars/en1/at3.gif
+		
+anim	freespecial2
+	loop	0
+	jugglecost	6
+	forcedirection	-1
+	offset	52 136
+	delay	4
+	offset	52 136
+	bbox	41 13 38 127
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/en1/a4.gif
+	sound	data/sounds/a2.wav
+	bbox	35 29 43 110
+	bbox	35 29 43 110
+	delay	5
+	attack	52 72 74 52 5 1 0 0 15 0
+	dropv	2 6
+	frame	data/chars/en1/a6.gif
+	delay	8
+	attack	0 0 0 0 0 0
+	frame	data/chars/en1/a6.gif
+	bbox	39 29 39 110
+	frame	data/chars/en1/a5.gif
+	offset	52 136
+	bbox	40 13 39 127
+	delay	7
+	frame	data/chars/en1/a4.gif
+		
+anim	idle
+	loop	1
+	offset	52 136
+	bbox	36 13 43 127
+	delay	13
+	frame	data/chars/en1/idle.gif
+	frame	data/chars/en1/idle2.gif
+	frame	data/chars/en1/idle3.gif
+	frame	data/chars/en1/idle2.gif
+		
+anim	pain
+	quakeframe	1 1 -6
+	loop	0
+	delay	8
+	offset	47 136
+	bbox	22 13 52 127
+	frame	data/chars/en1/pain2.gif
+	offset	47 136
+	bbox	32 19 52 127
+	frame	data/chars/en1/pain1.gif
+	frame	data/chars/en1/pain1.gif
+		
+anim	pain2
+	quakeframe	1 1 -6
+	loop	0
+	delay	8
+	offset	47 136
+	bbox	22 13 52 127
+	frame	data/chars/en1/pain2.gif
+	offset	47 136
+	bbox	32 19 52 127
+	frame	data/chars/en1/pain1.gif
+	delay	2
+	frame	data/chars/en1/pain1.gif
+		
+anim	pain3
+	quakeframe	1 1 -6
+	loop	0
+	delay	8
+	offset	47 136
+	bbox	22 13 52 127
+	frame	data/chars/en1/pain2.gif
+	offset	47 136
+	bbox	32 19 52 127
+	frame	data/chars/en1/pain1.gif
+	delay	2
+	frame	data/chars/en1/pain1.gif
+		
+anim	rise
+	loop	0
+	offset	64 124
+	bbox	0 0 0 0
+	delay	11
+	frame	data/chars/en1/rise1.gif
+	offset	78 132
+	delay	18
+	frame	data/chars/en1/rise2.gif
+	offset	57 135
+	delay	20
+	frame	data/chars/en1/rise3.gif
+		
+anim	spawn
+	loop	0
+	offset	52 136
+	bbox	36 13 43 127
+	delay	73
+	frame	data/chars/en1/idle.gif
+		
+anim	walk
+	loop	1
+	offset	50 134
+	bbox	34 13 43 127
+	delay	10
+	frame	data/chars/en1/w1.gif
+	frame	data/chars/en1/w2.gif
+	frame	data/chars/en1/w3.gif
+	frame	data/chars/en1/w4.gif
+	frame	data/chars/en1/w5.gif
+	frame	data/chars/en1/w6.gif
+		
+#|edited by openBor Stats v 0.41
+		

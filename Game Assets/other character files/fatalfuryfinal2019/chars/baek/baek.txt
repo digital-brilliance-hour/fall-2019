@@ -1,0 +1,140 @@
+name	Baek
+health	100
+speed	9
+type	enemy
+shadow	0
+icon	data/chars/Baek/icon.gif
+diesound data/sounds/die1.wav
+gfxshadow 1
+
+palette data/chars/Baek/alter.gif
+alternatepal data/chars/Baek/map1.gif
+alternatepal data/chars/Baek/map2.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 3 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/baek/FALL00.gif
+	frame	data/chars/baek/FALL00.gif
+	frame	data/chars/baek/FALL00.gif
+	frame	data/chars/baek/FALL01.gif
+	frame	data/chars/baek/FALL01.gif
+
+anim idle
+	loop	1
+	offset	92 177
+	bbox	76 69 37 107
+	delay	20
+	frame	data/chars/Baek/idle00.gif
+
+
+anim walk
+	loop	1
+	offset	92 177
+	bbox	76 69 37 107
+	delay	11
+	frame	data/chars/Baek/walk01.gif
+	frame	data/chars/Baek/walk01.gif
+	frame	data/chars/Baek/walk00.gif
+	frame	data/chars/Baek/walk00.gif
+	frame	data/chars/Baek/walk02.gif
+	frame	data/chars/Baek/walk02.gif
+
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	76 69 37 107
+	delay	10
+        move -1
+	frame	data/chars/Baek/pain00.gif
+	frame	data/chars/Baek/pain00.gif
+	frame	data/chars/Baek/pain00.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	76 69 37 107
+	delay	10
+	frame	data/chars/Baek/pain00.gif
+	delay	25
+	frame	data/chars/Baek/pain00.gif
+	delay	10
+	frame	data/chars/Baek/pain00.gif
+
+anim fall
+	loop	0
+	delay	35
+	offset	92 177
+	attack	71 109 38 52  12 1
+	frame	data/chars/Baek/fall00.gif
+	frame	data/chars/Baek/fall00.gif
+	frame	data/chars/Baek/fall01.gif
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	15
+	frame	data/chars/Baek/pain00.gif
+
+
+
+anim attack1
+	range	10 75
+	loop	0
+	sound	data/sounds/punch.wav
+	delay	7
+	offset	92 177
+        bbox	76 69 37 107
+	frame	data/chars/Baek/kick00.gif
+	attack	104 77 25 23 10
+	frame	data/chars/Baek/kick01.gif
+	delay	15
+	frame	data/chars/baek/kick01.gif
+	delay	7
+	frame	data/chars/baek/kick01.gif
+	frame	data/chars/baek/kick00.gif
+	
+
+
+anim jumpattack
+        sound	data/sounds/swish.wav
+	loop	0
+	offset	92 177
+	sound	data/sounds/punch.wav
+	delay	10
+        bbox	76 69 37 107   
+	frame	data/chars/Baek/jumpk00.gif
+	frame	data/chars/Baek/jumpk00.gif
+	attack	116 149 56 31 12 1
+	frame	data/chars/Baek/jumpk02.gif
+	frame	data/chars/Baek/jumpk02.gif
+	frame	data/chars/Baek/jumpk02.gif
+	frame	data/chars/Baek/jumpk02.gif
+	attack	0
+	frame	data/chars/Baek/jumpk00.gif
+
+
+#anim land
+#	loop	0
+#	offset	92 177
+#	delay	50
+#	bbox	19 67 44 71
+

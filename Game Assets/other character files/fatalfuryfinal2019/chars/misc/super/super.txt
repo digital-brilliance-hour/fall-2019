@@ -1,0 +1,38 @@
+name	SUPER
+type	text
+subtype noskip
+nomove 1 1
+antigravity 100
+setlayer 10000
+
+
+anim idle
+	flipframe 0
+	loop	0
+	offset	78 77
+	delay	2
+	sound   	data/sounds/Sp.wav
+	frame	data/chars/misc/super/sp01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/super/sp07.gif
+	delay	4
+	frame	data/chars/misc/super/sp08.gif
+	frame	data/chars/misc/super/sp09.gif
+	frame	data/chars/misc/super/sp10.gif
+	frame	data/chars/misc/super/sp11.gif
+	frame	data/chars/misc/super/sp12.gif
+	frame	data/chars/misc/super/sp13.gif
+	frame	data/chars/misc/super/sp14.gif
+	frame	data/chars/misc/super/sp15.gif
+	frame	data/chars/misc/super/sp16.gif
+

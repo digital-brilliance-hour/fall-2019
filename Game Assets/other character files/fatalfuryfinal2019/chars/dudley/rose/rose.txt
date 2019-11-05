@@ -1,0 +1,32 @@
+name		rose
+type		none
+remove		1
+lifespan	2
+didhitscript	data/chars/dudley/rose/didhit.c
+Anim	idle
+	hitfx	data/sounds/slash.wav
+	hitflash	fblood
+	Delay	10
+	OffSet	9 12
+	Frame	data\chars\dudley\rose\rose00.gif
+	OffSet	11 10
+	Frame	data\chars\dudley\rose\rose01.gif
+	OffSet	15 7
+	Frame	data\chars\dudley\rose\rose02.gif
+	OffSet	18 5
+	Attack	8 -1 26 12 1 0 1 0 15
+	Frame	data\chars\dudley\rose\rose03.gif
+	OffSet	15 7
+	Attack	9 3 19 14 1 0 1 0 15
+	Frame	data\chars\dudley\rose\rose04.gif
+	OffSet	11 10
+	Attack	6 5 13 15 1 0 1 0 15
+	Frame	data\chars\dudley\rose\rose05.gif
+	OffSet	7 13
+	Attack	4 6 12 18 1 0 1 0 15
+	Frame	data\chars\dudley\rose\rose06.gif
+	Delay	200
+	OffSet	19 4
+	Attack	0
+	Frame	data\chars\dudley\rose\rose09.gif
+

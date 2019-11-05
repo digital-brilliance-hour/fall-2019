@@ -1,0 +1,22 @@
+name	Blue
+health	1
+type	none
+shadow	0
+candamage enemy obstacle
+palette data/chars/misc/tungm.gif
+
+anim idle
+	loop	0
+	delay	9
+	hitflash   flas0001
+	offset	50 177
+	attack	62 79 55 104 7 0
+	frame	data/chars/misc/tung1.gif
+	frame	data/chars/misc/tung11.gif
+	frame	data/chars/misc/tung22.gif
+	frame	data/chars/misc/tung33.gif
+	frame	data/chars/misc/tung44.gif
+	frame	data/chars/misc/tung55.gif
+	frame	data/chars/misc/tung66.gif
+        attack 0 0 0 0 0
+	frame	data/chars/misc/empty.gif

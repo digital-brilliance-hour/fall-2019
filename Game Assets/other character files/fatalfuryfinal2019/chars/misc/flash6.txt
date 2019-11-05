@@ -1,0 +1,23 @@
+# Hit flash
+
+name	Flash6
+type	none
+shadow	0
+
+
+
+anim idle
+	loop	0
+	delay	3
+	offset	48 25
+	frame	data/chars/misc/f01.gif
+	frame	data/chars/misc/f02.gif
+	frame	data/chars/misc/f03.gif
+	frame	data/chars/misc/f04.gif
+	frame	data/chars/misc/f05.gif
+	frame	data/chars/misc/f06.gif
+	frame	data/chars/misc/f07.gif
+	frame	data/chars/misc/f08.gif
+	frame	data/chars/misc/f09.gif
+	frame	data/chars/misc/f10.gif
+

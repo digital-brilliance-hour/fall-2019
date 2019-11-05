@@ -1,0 +1,27 @@
+name	fake
+type    none
+health  1
+shadow	0
+setlayer 6
+
+load terry
+load andy
+load joe
+load tung
+load duck
+load richard
+load michael
+load hwa
+load raiden
+load billy
+load geese
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	60 100
+	frame	data/chars/terry/start.gif
+
+
+

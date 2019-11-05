@@ -1,0 +1,366 @@
+name	BISON
+health	2500
+speed	12
+type	enemy
+shadow	6
+dust    dust
+blockodds   1
+icon	data/chars/bison/1.gif
+iconpain     data/chars/bison/2.gif
+aggression 10
+diesound data/sounds/bisondie.wav
+gfxshadow 1
+
+
+
+
+remap data/chars/bison/idle00.gif data/chars/bison/map1.gif
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	44 98
+	bbox	20 6 45 85
+	delay	8
+	frame         data/chars/BISON/idle00.gif
+	frame         data/chars/BISON/idle01.gif
+	frame         data/chars/BISON/idle02.gif
+	frame         data/chars/BISON/idle03.gif
+	frame         data/chars/BISON/idle02.gif
+	frame         data/chars/BISON/idle01.gif
+	
+
+anim walk
+	loop	1
+	offset	44 102
+	bbox	20 6 45 85
+	delay	8
+	frame         data/chars/BISON/wk00.gif
+                  frame         data/chars/BISON/wk01.gif
+                  frame         data/chars/BISON/wk02.gif
+                  frame         data/chars/BISON/wk03.gif
+                  frame          data/chars/BISON/wk04.gif
+                  frame         data/chars/BISON/wk05.gif
+                  frame         data/chars/BISON/wk06.gif
+                  frame          data/chars/BISON/wk07.gif
+                 
+
+
+
+anim pain
+	loop	0
+	offset	57 106
+	bbox	26 12 63 89
+	sound         data/sounds/bisopain.wav
+	delay	 8
+	frame         data/chars/BISON/pain1.gif
+                  bbox          13 3 73 97
+	frame         data/chars/BISON/pain2.gif
+                  bbox          10 4 79 91
+	frame         data/chars/BISON/pain3.gif
+                  bbox          13 3 73 97
+	frame         data/chars/BISON/pain2.gif
+
+
+
+
+
+anim fall
+	loop	0
+	offset	48 142
+	delay	6
+	frame         data/chars/BISON/fall1.gif
+offset        61 74           
+DELAY           70
+                 ATTACK         15 15 45 33 10 1
+	frame         data/chars/BISON/fall2.gif
+offset	62 68
+DELAY        15
+                 ATTACK         0 0 0 0 0 0
+	frame         data/chars/BISON/fall3.gif
+offset	62 69
+DELAY     35
+	frame         data/chars/BISON/fall4.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	54 63
+	delay	8
+	frame         data/chars/BISON/rise1.gif
+	frame         data/chars/BISON/rise2.gif
+	frame         data/chars/BISON/rise3.gif
+
+
+
+
+
+
+
+
+	
+
+anim riseattack 
+                   range    0 100
+                   DELAY   8
+                   MOVE    5
+                  offset	 74 121
+	sound        data/sounds/bisospec.wav
+	frame         data/chars/BISON/risatk1.gif
+	frame         data/chars/BISON/risatk2.gif
+                  attack         70 26 56 84 10
+	frame         data/chars/BISON/risatk3.gif
+                  attack         0 0 0 0 0
+	frame         data/chars/BISON/risatk4.gif
+	frame         data/chars/BISON/risatk5.gif
+                  blast            74 31 81 54 10 0
+ 	frame         data/chars/BISON/risatk6.gif
+	frame         data/chars/BISON/risatk7.gif
+	frame         data/chars/BISON/risatk8.gif
+	
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	56 115
+	frame         data/chars/BISON/block1.gif
+offset	56 120
+                  frame         data/chars/BISON/block2.gif   
+                  frame         data/chars/BISON/block3.gif   
+                  frame         data/chars/BISON/block3.gif   
+
+
+
+
+
+
+
+
+anim attack1
+	loop	 0
+	offset	 45 98
+	delay	 6
+	bbox	 28 9 35 80 
+                  sound         data/sounds/rugalatk.wav    
+	hitfx            data/sounds/fast.wav
+	frame         data/chars/BISON/ATK01.gif
+                  attack         52 8 74 62 7
+	frame         data/chars/BISON/ATK02.gif
+	frame         data/chars/BISON/ATK03.gif
+                  attack         0 0 0 0 0
+	frame         data/chars/BISON/ATK04.gif
+offset	11 110
+                  bbox           1 10 35 45
+                  frame         data/chars/BISON/ATK05.gif                    
+offset	1 109
+                 	frame         data/chars/BISON/ATK06.gif
+                  attack         32 26 78 59 10
+	frame         data/chars/BISON/ATK07.gif
+offset	18 110
+                   attack        0 0 0 0 0
+offset	11 110
+                  frame         data/chars/BISON/ATK05.gif 
+offset	18 110
+	frame         data/chars/BISON/ATK08.gif
+                  attack         32 32 74 60 10
+	frame         data/chars/BISON/ATK09.gif
+offset	11 110
+                  attack         0 0 0 0 0 
+                  frame         data/chars/BISON/ATK05.gif 
+offset	41 109
+                  bbox           26 14 41 84
+	frame         data/chars/BISON/ATK10.gif
+offset	89 142
+                  bbox          48 53 39 80
+                  frame         data/chars/BISON/ATK11.gif
+	frame         data/chars/BISON/ATK12.gif
+                  frame         data/chars/BISON/ATK13.gif                    
+	frame         data/chars/BISON/ATK14.gif
+                  bbox           72 55 39 72
+	frame         data/chars/BISON/ATK15.gif
+	frame         data/chars/BISON/ATK16.gif
+move        5
+	frame         data/chars/BISON/ATK17.gif
+	frame         data/chars/BISON/ATK18.gif
+	frame         data/chars/BISON/ATK19.gif
+                  attack         76 54 60 91 10 1
+	frame         data/chars/BISON/ATK20.gif
+	frame         data/chars/BISON/ATK21.gif
+	attack         0 0 0 0 0 0
+                 	frame         data/chars/BISON/ATK22.gif
+
+
+
+
+
+
+anim attack2
+                  range        70 100
+	loop	0
+	offset	61 125
+	delay	7
+                  move         15
+                  bbox          41 51 42 73
+                  sound        data/sounds/bisoatk2.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/BISON/ATK200.gif
+offset         61 139
+                  frame         data/chars/BISON/ATK201.gif
+offset	61 143
+                  bbox           0 0 0 0
+                  frame         data/chars/BISON/ATK202.gif
+offset	61 128
+                  attack           40 42 97 55 20 1
+                  frame         data/chars/BISON/ATK203.gif
+offset	61 125
+                  frame         data/chars/BISON/ATK204.gif
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/BISON/ATK205.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim attack3
+                  RANGE    150 250
+	loop	0
+                  delay	5
+	sound       data/sounds/bisonpsy.wav
+	hitfx           data/sounds/fast.wav
+offset	45 98
+                  bbox          17 15 46 53
+	frame         data/chars/BISON/atk301.gif
+	frame         data/chars/BISON/atk302.gif
+	frame         data/chars/BISON/atk303.gif
+	frame         data/chars/BISON/atk304.gif
+	frame         data/chars/BISON/atk305.gif
+	frame         data/chars/BISON/atk306.gif
+	frame         data/chars/BISON/atk307.gif
+                  bbox           22 8 38 76
+	frame         data/chars/BISON/atk308.gif
+offset	89 91
+move         20      
+                  bbox           68 5 41 71
+	frame         data/chars/BISON/atk309.gif
+                  bbox           79 12 45 39
+	frame         data/chars/BISON/atk310.gif
+                  bbox           0 0 0 0
+                  blast           80 17 80 32 30 0
+	frame         data/chars/BISON/atk311.gif
+	frame         data/chars/BISON/atk312.gif
+	frame         data/chars/BISON/atk313.gif
+	frame         data/chars/BISON/atk314.gif
+                  blast           80 17 80 32 30 0
+	frame         data/chars/BISON/atk311.gif
+	frame         data/chars/BISON/atk312.gif
+	frame         data/chars/BISON/atk313.gif
+	frame         data/chars/BISON/atk314.gif
+                  blast           80 17 80 32 30 0
+	frame         data/chars/BISON/atk311.gif
+	frame         data/chars/BISON/atk312.gif
+	frame         data/chars/BISON/atk313.gif
+	frame         data/chars/BISON/atk314.gif
+	frame         data/chars/BISON/atk311.gif
+                  blast           80 17 80 32 30 0
+	frame         data/chars/BISON/atk311.gif
+	frame         data/chars/BISON/atk312.gif
+	frame         data/chars/BISON/atk313.gif
+	frame         data/chars/BISON/atk314.gif
+	frame         data/chars/BISON/atk311.gif
+offset	74 121
+                  bbox           57 39 49 82
+	frame         data/chars/BISON/atk315.gif
+
+
+
+
+
+
+
+
+anim jumpattack
+                   loop           0
+                  delay          5
+offset	45 127
+                  bbox           16 18 51 79
+	frame         data/chars/BISON/jumpatk0.gif
+	frame         data/chars/BISON/jumpatk1.gif
+	frame         data/chars/BISON/jumpatk2.gif
+                  bbox           22 11 40 76
+	frame         data/chars/BISON/jumpatk3.gif
+offset        54 119
+	frame         data/chars/BISON/jumpatk4.gif
+                  bbox          31 9 38 50 
+	frame         data/chars/BISON/jumpatk5.gif
+offset        40 119
+                  delay          25
+                  attack         9 45 119 34 15 1
+	frame         data/chars/BISON/jumpatk6.gif
+                  delay          7
+	frame         data/chars/BISON/jumpatk7.gif
+                 attack         0 0 0 0 0 0  
+	frame         data/chars/BISON/jumpatk8.gif
+
+
+
+
+anim special
+                  loop           0
+                  delay         7
+                  sound         data/sounds/bisospec.wav
+offset	28 117
+	frame         data/chars/BISON/special1.gif
+offset	82 166
+                  attack         73 83 86 58 10
+	frame         data/chars/BISON/special2.gif
+                  attack         0 0 0 0 0
+	frame         data/chars/BISON/special3.gif
+	frame         data/chars/BISON/special3.gif
+                  attack         69 73 93 60 10
+	frame         data/chars/BISON/special4.gif
+                  attack         0 0 0 0 0
+	frame         data/chars/BISON/special5.gif
+	frame         data/chars/BISON/special6.gif
+                  blast           83 63 79 62 15 0
+	frame         data/chars/BISON/special7.gif
+	frame         data/chars/BISON/special8.gif
+	frame         data/chars/BISON/special9.gif
+	frame         data/chars/BISON/specia10.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

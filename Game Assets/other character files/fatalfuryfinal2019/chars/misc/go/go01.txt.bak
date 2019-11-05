@@ -1,0 +1,19 @@
+name	GO01
+type	endlevel
+branch	GO01
+shadow	0
+
+anim idle
+	loop	1
+	delay	10
+	offset	16 32
+	bbox	222 149 32 32
+	frame	data/chars/misc/GO/go101.gif
+	frame	data/chars/misc/GO/go102.gif
+	frame	data/chars/misc/GO/go103.gif
+	frame	data/chars/misc/GO/go104.gif
+	frame	data/chars/misc/GO/go105.gif
+	frame	data/chars/misc/GO/go106.gif
+	frame	data/chars/misc/GO/go107.gif
+	frame	data/chars/misc/GO/go108.gif
+

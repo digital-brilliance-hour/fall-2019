@@ -1,0 +1,455 @@
+
+
+name	Duck
+health	100
+speed	10
+type	enemy
+gfxshadow	1
+diesound data/chars/duck/die.wav
+icon	data/chars/duck/icon.gif
+candamage player npc
+hostile player npc
+remap data/chars/duck/std001.gif data/chars/duck/map1.gif
+remap data/chars/duck/std001.gif data/chars/duck/map2.gif
+remap data/chars/duck/std001.gif data/chars/duck/map3.gif
+
+
+anim idle
+	loop	1
+	offset	55 129
+	delay   7
+        bbox    44 40 24 88
+        frame	data/chars/duck/std01.gif
+        frame	data/chars/duck/std02.gif
+        frame	data/chars/duck/std03.gif
+        frame	data/chars/duck/std04.gif
+        frame	data/chars/duck/std05.gif
+        frame	data/chars/duck/std06.gif
+        offset  71 130
+        frame	data/chars/duck/std07.gif
+        frame	data/chars/duck/std08.gif
+        frame	data/chars/duck/std09.gif
+        frame	data/chars/duck/std10.gif
+        frame	data/chars/duck/std11.gif
+        offset	55 131
+        frame	data/chars/duck/std12.gif
+        frame	data/chars/duck/std13.gif
+        frame	data/chars/duck/std14.gif
+        frame	data/chars/duck/std15.gif
+        frame	data/chars/duck/std16.gif
+        frame	data/chars/duck/std17.gif
+        frame	data/chars/duck/std18.gif
+        frame	data/chars/duck/std19.gif
+        frame	data/chars/duck/std20.gif
+        
+        
+
+
+
+
+anim walk
+	loop	1
+	offset	53 133
+        delay   9
+        bbox    44 42 26 92
+	frame	data/chars/duck/aru01.gif
+        frame	data/chars/duck/aru02.gif
+        delay   12
+        frame	data/chars/duck/aru03.gif
+        frame	data/chars/duck/aru04.gif
+        frame	data/chars/duck/aru05.gif
+        frame	data/chars/duck/aru06.gif
+        delay   9
+        frame	data/chars/duck/aru07.gif
+        frame	data/chars/duck/aru08.gif
+
+anim backwalk
+	loop	1
+	offset	52 143
+        delay   12
+        bbox    44 42 26 92
+	frame	data/chars/duck/back01.gif
+        frame	data/chars/duck/back02.gif
+        frame	data/chars/duck/back03.gif
+        frame	data/chars/duck/back04.gif
+        frame	data/chars/duck/back05.gif
+        frame	data/chars/duck/back06.gif
+
+
+
+anim pain
+	loop	0
+	offset	59 120
+	delay   20
+        bbox    38 21 36 95
+        frame	data/chars/duck/pain1.gif
+	offset	65 120
+	frame	data/chars/duck/pain1.gif
+	offset	60 120
+	frame	data/chars/duck/pain1.gif
+
+anim pain2
+	loop	0
+	offset	53 110
+	delay   20
+        bbox    35 1 39 107
+        frame	data/chars/duck/pain2.gif
+	offset	59 110
+	frame	data/chars/duck/pain2.gif
+	offset	54 110
+	frame	data/chars/duck/pain2.gif
+
+anim pain4
+	loop	0
+	offset	53 110
+
+	sound	data/chars/duck/pain.wav
+        delay	2
+	move    -7
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        move    -2
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        frame	data/chars/duck/pain2.gif
+        move    -1
+        offset	72 120
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        move    0
+        delay   24
+        frame	data/chars/duck/ak1-9.gif
+        delay   10
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+
+anim pain5
+	loop	0
+	offset	59 120
+	delay   20
+        bbox    38 21 36 95
+        frame	data/chars/duck/pain1.gif
+	offset	65 120
+	frame	data/chars/duck/pain1.gif
+	offset	60 120
+	frame	data/chars/duck/pain1.gif
+
+anim pain6
+	loop	0
+	offset	101 196
+	delay   10
+        bbox    88 89 23 105
+        sound	data/sounds/piyo.wav
+        frame	data/chars/duck/piyo01.gif
+        frame	data/chars/duck/piyo02.gif
+        frame	data/chars/duck/piyo03.gif
+        frame	data/chars/duck/piyo04.gif
+        frame	data/chars/duck/piyo05.gif
+        frame	data/chars/duck/piyo06.gif
+        frame	data/chars/duck/piyo07.gif
+        frame	data/chars/duck/piyo08.gif
+        frame	data/chars/duck/piyo01.gif
+        frame	data/chars/duck/piyo02.gif
+        frame	data/chars/duck/piyo03.gif
+        frame	data/chars/duck/piyo04.gif
+        frame	data/chars/duck/piyo05.gif
+        frame	data/chars/duck/piyo06.gif
+        frame	data/chars/duck/piyo07.gif
+        frame	data/chars/duck/piyo08.gif
+
+anim fall1
+	loop	0
+	offset	57 112
+	delay   30
+ #        hitfx      data/sounds/beat5.wav
+        bbox    0 0 0 0
+        frame	data/chars/duck/pain1.gif
+        attack  23 50 15 31 12 1
+        frame	data/chars/duck/fall1.gif
+        offset	78 45
+        attack  28 32 21 17 12 1
+        frame	data/chars/duck/fall2.gif
+        attack 0
+        frame	data/chars/duck/fall2.gif
+
+anim fall2
+	loop	0
+	offset	53 110
+	delay   20
+        bbox    37 17 32 88
+        frame	data/chars/duck/pain2.gif
+        offset	57 112
+	frame	data/chars/duck/pain1.gif
+        frame	data/chars/duck/fall1.gif
+        offset	78 45
+        bbox    0 0 0 0
+        frame	data/chars/duck/fall2.gif
+
+anim fall4
+	loop	0
+	offset	53 110
+	delay   20
+        bbox    37 17 32 88
+        frame	data/chars/duck/pain2.gif
+        offset	57 112
+	frame	data/chars/duck/pain1.gif
+        frame	data/chars/duck/fall1.gif
+        offset	78 45
+        bbox    0 0 0 0
+        frame	data/chars/duck/fall2.gif
+
+anim fall5
+	loop	0
+	offset	53 110
+	delay   20
+        bbox    37 17 32 88
+        frame	data/chars/duck/pain2.gif
+        offset	57 112
+	frame	data/chars/duck/pain1.gif
+        frame	data/chars/duck/fall1.gif
+        offset	78 45
+        bbox    0 0 0 0
+        frame	data/chars/duck/fall2.gif
+
+anim burn
+	loop	0
+	offset	70 128
+	delay   3
+	sound	data/sounds/fire.wav
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+
+anim rise
+	loop	0
+	offset	67 121
+	delay   8
+        frame	data/chars/duck/rise1.gif
+         frame	data/chars/duck/rise2.gif
+        frame	data/chars/duck/rise3.gif
+        frame	data/chars/duck/rise4.gif
+         frame	data/chars/duck/rise5.gif
+        frame	data/chars/duck/rise6.gif
+        frame	data/chars/duck/rise7.gif
+         frame	data/chars/duck/rise8.gif
+        frame	data/chars/duck/rise9.gif
+        offset	72 120
+        delay   28
+       
+        frame	data/chars/duck/ak1-9.gif
+
+anim attack1
+        range   80 160
+        loop	0
+	offset	55 131
+	bbox    44 40 24 88
+        delay   8
+        followanim 1
+        hitfx   data/sounds/hk.wav
+        frame	data/chars/duck/std15.gif
+        frame	data/chars/duck/std16.gif
+        frame	data/chars/duck/std17.gif
+        frame	data/chars/duck/std18.gif
+        frame	data/chars/duck/std19.gif
+        frame	data/chars/duck/std20.gif
+        offset	54 121
+        delay   20
+        sound	data/chars/duck/beat1.wav
+        frame	data/chars/duck/ak1-8.gif
+        offset	57 110
+	bbox    33 20 43 52
+        delay   1
+        attack  33 20 43 52 6 0 0 0 20
+        move    6
+        
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        offset	56 139
+        attack  38 62 39 50 6 0 0 0 20
+        bbox    38 62 39 50
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        offset	57 110
+        bbox    33 20 43 52
+        delay   1
+        attack  33 20 43 52 6 0 0 0 20
+        
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        offset	56 139
+        attack  38 62 39 50 6 0 0 0 20
+        bbox    38 62 39 50
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        offset	57 110
+        bbox    33 20 43 52
+        delay   1
+        attack  33 20 43 52 6 0 0 0 20
+       
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-1.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        frame	data/chars/duck/ak1-2.gif
+        offset	56 139
+        attack  38 62 39 50 6 0 0 0 20
+        bbox    38 62 39 50
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-3.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        frame	data/chars/duck/ak1-4.gif
+        offset	57 110
+        bbox    33 20 43 52
+        delay   1
+        attack  0
+       
+        offset	72 120
+        delay   2
+        move    5
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        move    2
+           
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        frame	data/chars/duck/ak1-9.gif
+        delay   30
+        frame	data/chars/duck/ak1-9.gif
+
+anim follow1
+        loop	0
+	offset	60 121
+        delay   20
+        jumpframe 1 4
+        hitfx   data/sounds/hk.wav
+        sound	data/chars/duck/beat3.wav
+        frame	data/chars/duck/ak1-6.gif
+        frame	data/chars/duck/ak1-6.gif
+        blast  57 49 49 65 6  0 0 30
+        frame	data/chars/duck/ak1-5.gif
+        blast   0
+        frame	data/chars/duck/ak1-6.gif
+        frame	data/chars/duck/ak1-7.gif
+        offset	72 120
+        delay   25
+        
+        frame	data/chars/duck/ak1-9.gif
+
+
+anim attack2
+        range   10 80
+        loop	0
+	offset	49 140
+	bbox    38 18 25 123
+        delay   12
+        move    10
+        hitfx   data/sounds/hk.wav
+        sound	data/chars/duck/beat2.wav
+        frame	data/chars/duck/ak2-1.gif
+        frame	data/chars/duck/ak2-2.gif
+        attack2  56 60 30 27 4 0 0 0 24
+        bbox    56 60 30 27
+        frame	data/chars/duck/ak2-3.gif
+        attack  0 0 0 0 0
+        delay   4
+        frame	data/chars/duck/ak2-3.gif
+        attack  50 22 37 39 4 1 0 0 24
+        move    0
+        offset  52 141
+        delay   30
+        bbox    50 22 37 39
+        frame	data/chars/duck/ak2-4.gif
+
+anim attack3
+        range   50 100
+        loop	0
+	offset	78 88
+	bbox    57 9 49 69
+        delay   40
+        move    6
+        hitfx   data/sounds/hk.wav
+        frame	data/chars/duck/sura01.gif
+        delay   2
+        attack  85 51 56 26 6 1 0 0 24
+        bbox    42 23 45 55
+        offset  74 75
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        frame	data/chars/duck/sura02.gif
+        move    0
+        attack  0 0 0 0 0
+        frame	data/chars/duck/sura02.gif
+        delay   20
+        bbox    57 9 49 69
+        offset	78 88
+        frame	data/chars/duck/sura01.gif

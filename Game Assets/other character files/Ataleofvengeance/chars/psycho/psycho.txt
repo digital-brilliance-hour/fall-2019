@@ -1,0 +1,222 @@
+name	PSYCHO
+health	100
+speed	15
+type	ENEMY
+shadow	4
+dust    dust
+icon	data/chars/psycho/1.gif
+iconpain     data/chars/psycho/2.gif
+diesound data/sounds/sukedie.wav
+aggression 1
+gfxshadow 1
+
+remap	data/chars/psycho/idle00.gif data/chars/psycho/map1.gif
+remap	data/chars/psycho/idle00.gif data/chars/psycho/map2.gif
+remap	data/chars/psycho/idle00.gif data/chars/psycho/map3.gif
+remap	data/chars/psycho/idle00.gif data/chars/psycho/map4.gif
+remap	data/chars/psycho/idle00.gif data/chars/psycho/map5.gif
+
+
+
+anim idle
+	loop	1
+	offset	22 118
+	bbox	0 14 39 93
+	delay	8
+	frame	data/chars/psycho/idle00.gif
+offset	22 119
+	frame	data/chars/psycho/idle01.gif
+offset	22 120
+	frame	data/chars/psycho/idle02.gif
+offset	22 120
+	frame	data/chars/psycho/idle03.gif
+offset	22 120
+	frame	data/chars/psycho/idle04.gif
+offset	22 120
+	frame	data/chars/psycho/idle05.gif
+offset	22 119
+	frame	data/chars/psycho/idle06.gif
+offset         22 119
+	frame	data/chars/psycho/idle07.gif
+
+anim walk
+	loop	1
+	offset	23 120
+	bbox	2 17 34 94
+	delay	7
+	frame	data/chars/psycho/walk00.gif
+offset	24 118
+                  bbox	1 20 36 90
+	frame	data/chars/psycho/walk01.gif
+offset	39 118
+                  bbox	15 17 39 87
+	frame	data/chars/psycho/walk02.gif
+offset	24 120
+	bbox	1 18 37 90
+	frame	data/chars/psycho/walk03.gif
+offset	23 121
+                  bbox          1 18 37 90
+	frame	data/chars/psycho/walk04.gif
+offset	29 119
+                  bbox          9 17 35 103
+	frame	data/chars/psycho/walk05.gif
+offset	41 117
+                  bbox          21 17 35 100
+	frame	data/chars/psycho/walk06.gif
+offset	33 119
+                  bbox          12 19 34 94
+	frame	data/chars/psycho/walk07.gif
+
+anim pain
+	loop	0
+	offset	36 114
+	bbox	1 0 59 116
+	delay	5
+	frame	data/chars/psycho/pain00.gif
+offset	44 108
+                  delay        25
+                  bbox         3 1 68 109
+	frame	data/chars/psycho/pain01.gif                
+offset	36 114
+	delay	5
+	bbox	1 0 59 116
+	frame	data/chars/psycho/pain00.gif
+
+anim fall
+	loop	0
+	delay	5
+	offset	27 101
+	frame	data/chars/psycho/fall00.gif
+offset	41 95
+DELAY                     65
+        ATTACK         5 20 49 27 10 1
+	frame	data/chars/psycho/fall01.gif
+offset	38 90
+DELAY                15
+	frame	data/chars/psycho/fall02.gif
+offset	46 64
+delay     5        
+ATTACK         0 0 0 0 0 0
+	frame	data/chars/psycho/fall03.gif
+offset	53 25
+                  delay	20
+	frame	data/chars/psycho/fall04.gif
+
+anim rise
+	loop	0
+	offset	50 37
+	delay	7
+                  bbox          0 0 0 0 
+                 	frame	data/chars/psycho/rise00.gif
+offset	51 79
+	frame	data/chars/psycho/rise01.gif
+offset	44 109
+	frame	data/chars/psycho/rise02.gif
+offset	35 118
+	frame	data/chars/psycho/rise03.gif
+offset	23 118
+	frame	data/chars/psycho/rise04.gif
+
+anim attack1
+	range	10 90
+	loop	0
+	delay	5
+	offset	28 120
+	bbox	0 17 38 94
+	frame	data/chars/psycho/atk00.gif
+offset	41 122
+	bbox          17 12 34 83
+	frame	data/chars/psycho/atk01.gif
+offset	39 123
+	frame	data/chars/psycho/atk02.gif
+offset	35 123
+	frame	data/chars/psycho/atk03.gif
+offset	28 109
+	bbox          20 14 28 78
+	frame	data/chars/psycho/atk04.gif
+offset	14 96
+                  bbox          28 11 26 72
+	frame	data/chars/psycho/atk05.gif
+offset	18 96
+                  bbox          34 10 25 69 
+	frame	data/chars/psycho/atk06.gif
+offset	14 87
+                  bbox          33 12 32 62
+                  attack        54 6 58 24 7       
+	frame	data/chars/psycho/atk07.gif
+offset	14 87
+                  attack        0 0 0 0 0  
+	frame	data/chars/psycho/atk08.gif
+offset	14 87
+	frame	data/chars/psycho/atk09.gif
+offset	16 92
+	bbox	29 11 29 63
+	frame	data/chars/psycho/atk10.gif
+offset	20 98
+	bbox         	27 13 26 84
+	frame	data/chars/psycho/atk11.gif
+offset	28 120
+	bbox	0 17 38 94
+	frame	data/chars/psycho/atk00.gif
+offset	41 122
+	bbox          17 12 34 83
+	frame	data/chars/psycho/atk01.gif
+offset	39 123
+	frame	data/chars/psycho/atk02.gif
+offset	35 123
+	frame	data/chars/psycho/atk03.gif
+offset	28 109
+	bbox          20 14 28 78
+	frame	data/chars/psycho/atk04.gif
+offset	14 96
+                  bbox          28 11 26 72
+	frame	data/chars/psycho/atk05.gif
+offset	18 96
+                  bbox          34 10 25 69 
+	frame	data/chars/psycho/atk06.gif
+offset	14 87
+                  bbox          33 12 32 62
+                  attack        54 6 58 24 7       
+	frame	data/chars/psycho/atk07.gif
+offset	14 87
+                  attack        0 0 0 0 0  
+	frame	data/chars/psycho/atk08.gif
+offset	14 87
+	frame	data/chars/psycho/atk09.gif
+offset	16 92
+	bbox	29 11 29 63
+	frame	data/chars/psycho/atk10.gif
+offset	20 98
+	bbox         	27 13 26 84
+	frame	data/chars/psycho/atk11.gif
+offset	41 119
+	bbox	8 15 34 98
+	frame	data/chars/psycho/2atk00.gif
+offset	27 110
+	frame	data/chars/psycho/2atk02.gif
+offset	14 99
+	bbox	15 13 35 84
+	frame	data/chars/psycho/2atk03.gif
+offset	14 99
+	frame	data/chars/psycho/2atk04.gif
+offset	13 93
+	bbox	38 10 25 77
+	frame	data/chars/psycho/2atk05.gif
+offset	13 94
+	attack        56 0 47 39 8 1
+	frame	data/chars/psycho/2atk06.gif
+offset	13 93
+	attack       0 0 0 0 0 0	
+	frame	data/chars/psycho/2atk07.gif
+offset	13 93
+                  frame	data/chars/psycho/2atk08.gif
+offset	13 93
+	frame	data/chars/psycho/2atk09.gif
+offset	13 103
+	bbox	28 12 28 82
+	frame	data/chars/psycho/2atk10.gif
+offset	22 115
+	bbox          11 17 35 88
+                  frame	data/chars/psycho/2atk11.gif
+
+

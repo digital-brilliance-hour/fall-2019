@@ -1,0 +1,400 @@
+name	extung2
+health	0
+speed	14
+mp 100
+land 1
+type	none
+shadow	   0
+gfxshadow  1
+diesound data/sounds/extung.wav
+icon	 data/chars/extung/icon.gif
+iconpain data/chars/extung/ipain.gif
+atchain    1 
+weapons    extung2 extung2
+load red
+load red2
+palette        	  data/chars/extung/pow.gif
+alternatepal	 data/chars/extung/pow.gif
+alternatepal	  data/chars/extung/pow.gif
+alternatepal	  data/chars/extung/pow.gif 
+com     a2      freespecial
+com  f f s      freespecial2
+com  d f s      freespecial3
+com      s      freespecial4
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+	frame	data/chars/extung/sel1.gif
+        delay 9
+	frame	data/chars/extung/sel1.gif
+	frame	data/chars/extung/sel2.gif	
+	frame	data/chars/extung/sel3.gif
+	frame	data/chars/extung/sel1.gif
+	frame	data/chars/extung/sel2.gif
+	frame	data/chars/extung/sel3.gif
+	frame	data/chars/extung/sel1.gif
+	frame	data/chars/extung/sel2.gif	
+	frame	data/chars/extung/sel3.gif
+	frame	data/chars/extung/sel1.gif
+	frame	data/chars/extung/sel2.gif
+	frame	data/chars/extung/sel3.gif
+
+anim waiting
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	92 177
+	frame	data/chars/extung/select.gif	
+
+anim select
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	92 177
+	sound	data/sounds/ok.wav
+	frame	data/chars/extung/select.gif	
+	frame	data/chars/extung/select2.gif	
+	frame	data/chars/extung/select2.gif
+	frame	data/chars/extung/select2.gif	
+	frame	data/chars/extung/select.gif	
+	frame	data/chars/extung/select.gif	
+
+anim freespecial4
+	custknife fire2
+	throwframe 1 1
+	loop	0
+	delay	22
+	offset	92 177
+	bbox	0
+	frame	data/chars/extung/block.gif
+	frame	data/chars/extung/block.gif
+	frame	data/chars/extung/block.gif
+
+
+
+anim idle
+	loop	1
+	delay	13
+	offset	92 177
+	bbox	77 98 43 78
+	frame	data/chars/extung/idle000.gif
+	frame	data/chars/extung/idle001.gif
+	frame	data/chars/extung/idle002.gif
+	frame	data/chars/extung/idle001.gif
+
+anim walk
+	loop	1
+	delay	13
+	offset	92 177
+	bbox	77 98 43 78
+	frame	data/chars/extung/walk000.gif
+	frame	data/chars/extung/walk001.gif
+	frame	data/chars/extung/walk002.gif
+	frame	data/chars/extung/walk001.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/extung/get000.gif
+#	frame	data/chars/extung/get000.gif
+	frame	data/chars/extung/get000.gif
+#	frame	data/chars/extung/get000.gif
+	delay	30
+	frame	data/chars/extung/get000.gif
+	delay	5
+	frame	data/chars/extung/get000.gif
+	frame	data/chars/extung/get000.gif
+	frame	data/chars/extung/get000.gif
+	frame	data/chars/extung/get000.gif
+
+anim jump
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	79 107 31 62
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/jump000.gif
+	frame	data/chars/extung/get000.gif
+
+
+
+
+anim jumpattack
+		custknife 
+	throwframe 4 2
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	79 107 31 62
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/jk1.gif
+	attack	66 141 87 36 12 1
+	frame	data/chars/extung/jk0.gif
+	frame	data/chars/extung/jk0.gif
+	frame	data/chars/extung/jk0.gif
+	attack	0
+	frame	data/chars/extung/jk1.gif
+
+
+
+anim attack1
+		custknife 
+	throwframe 4 2
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	77 98 43 78
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/punch000.gif
+	frame	data/chars/extung/punch000.gif
+	burn	141 107 50 25 22 1
+	frame	data/chars/extung/punch001.gif
+	frame	data/chars/extung/punch001.gif
+	burn	0
+	frame	data/chars/extung/punch000.gif
+
+
+anim attack2
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	8
+	offset	92 177
+	bbox	77 98 43 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/punch000.gif
+	frame	data/chars/extung/punch000.gif
+	attack	118 109 51 25 18
+	frame	data/chars/extung/punch001.gif
+	frame	data/chars/extung/punch001.gif
+	attack	0
+	frame	data/chars/extung/punch000.gif
+
+anim attack3
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/a4-000.gif
+	frame	data/chars/extung/a4-000.gif
+        move 4
+	attack	109 110 23 64 30 1
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-001.gif
+	frame	data/chars/extung/a4-000.gif
+	frame	data/chars/extung/a4-000.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	112 177
+	bbox	77 98 43 78
+	frame	data/chars/extung/grab.gif
+
+anim throw
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	10
+	offset	92 177
+	sound	data/sounds/extung1.wav
+	frame	data/chars/extung/trow1.gif
+	frame	data/chars/extung/trow2.gif
+	frame	data/chars/extung/trow2.gif
+	frame	data/chars/extung/trow1.gif
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	77 98 43 78
+	delay	8
+move -1
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	77 98 43 78
+	delay	8
+	frame	data/chars/extung/pain01.gif
+	delay	36
+	frame	data/chars/extung/pain01.gif
+	delay	6
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+	frame	data/chars/extung/pain01.gif
+
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/extung/fall00.gif
+	frame	data/chars/extung/fall00.gif
+	frame	data/chars/extung/fall01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/extung/shock1.gif
+	frame	data/chars/extung/shock3.gif
+	frame	data/chars/extung/shock2.gif
+	frame	data/chars/extung/shock1.gif
+	frame	data/chars/extung/shock3.gif
+	frame	data/chars/extung/shock2.gif
+	frame	data/chars/extung/shock1.gif
+	frame	data/chars/extung/shock3.gif
+	frame	data/chars/extung/shock2.gif
+	frame	data/chars/extung/shock1.gif
+	frame	data/chars/extung/shock3.gif
+	frame	data/chars/extung/shock2.gif
+	frame	data/chars/extung/fall01.gif
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/extung/rise1.gif
+	frame	data/chars/extung/rise1.gif
+	frame	data/chars/extung/get000.gif
+
+anim freespecial
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	8
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/extung/super1.gif
+	frame	data/chars/extung/super2.gif
+	attack	21 127 127 44 20 1
+	frame	data/chars/extung/super3.gif
+	frame	data/chars/extung/super4.gif
+
+
+anim freespecial2
+        energycost 0 1 0
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	8
+	bbox	0 0 0 0
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/extung/punch000.gif
+	attack	32 103 109 34 40 1
+	offset	92 197
+        move 20
+	sound	data/sounds/ex1.wav
+	frame	data/chars/extung/senp1.gif
+        frame	data/chars/extung/senp2.gif 
+	frame	data/chars/extung/senp3.gif
+	frame	data/chars/extung/senp4.gif
+	frame	data/chars/extung/senp5.gif
+	frame	data/chars/extung/senp1.gif
+        frame	data/chars/extung/senp2.gif 
+	frame	data/chars/extung/senp3.gif
+	frame	data/chars/extung/senp4.gif
+	frame	data/chars/extung/senp5.gif
+         attack 0 0 0 0 0 
+        offset 92 177
+	frame	data/chars/extung/punch000.gif
+
+anim freespecial3
+        energycost 0 1 0
+	custknife 
+	throwframe 4 2
+	loop	0
+	delay	10
+	offset	92 177
+	bbox	77 98 43 78
+	frame	data/chars/extung/super1.gif
+	offset	92 197
+	sound	data/sounds/extung2.wav
+	frame	data/chars/extung/super2.gif
+	frame	data/chars/extung/super3.gif
+        custknife red
+	throwframe 3 2
+	frame	data/chars/extung/super4.gif
+	frame	data/chars/extung/super1.gif
+	frame	data/chars/extung/super2.gif
+	frame	data/chars/extung/super3.gif
+	frame	data/chars/extung/super4.gif
+
+
+anim grabattack
+		custknife 
+	throwframe 4 2
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	77 98 43 78
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/punch000.gif
+	frame	data/chars/extung/punch000.gif
+	burn	141 107 50 25 22 1
+	frame	data/chars/extung/punch001.gif
+	frame	data/chars/extung/punch001.gif
+	burn	0
+	frame	data/chars/extung/punch000.gif
+
+
+anim grabattack2
+		custknife 
+	throwframe 4 2
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	77 98 43 78
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/extung/punch000.gif
+	frame	data/chars/extung/punch000.gif
+	attack	118 109 51 25 10
+	frame	data/chars/extung/punch001.gif
+	frame	data/chars/extung/punch001.gif
+	burn	0
+	frame	data/chars/extung/punch000.gif
+
+
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	77 98 43 78
+	frame	data/chars/extung/get000.gif
+

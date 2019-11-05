@@ -1,0 +1,116 @@
+name	Balrog
+health	100
+speed	8
+type	enemy
+gfxshadow	1
+dust   dust
+icon	data/chars/balrog/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/balrog/idle01.gif data/chars/balrog/map1.gif
+
+anim idle
+	loop	1
+	offset	89 177
+	bbox	62 71 62 105
+	delay	10
+	frame	data/chars/balrog/idle01.gif
+	frame	data/chars/balrog/idle02.gif
+	frame	data/chars/balrog/idle03.gif
+	frame	data/chars/balrog/idle04.gif
+	frame	data/chars/balrog/idle05.gif
+	frame	data/chars/balrog/idle06.gif
+	frame	data/chars/balrog/idle07.gif
+	frame	data/chars/balrog/idle08.gif
+	frame	data/chars/balrog/idle09.gif
+	frame	data/chars/balrog/idle010.gif
+	frame	data/chars/balrog/idle011.gif
+	frame	data/chars/balrog/idle012.gif
+	frame	data/chars/balrog/idle013.gif
+
+anim walk
+	loop	1
+	offset	89 177
+	bbox	67 67 60 112
+	delay	10
+	frame	data/chars/balrog/wk1.gif
+	frame	data/chars/balrog/wk2.gif
+	frame	data/chars/balrog/wk3.gif
+	frame	data/chars/balrog/wk4.gif
+	frame	data/chars/balrog/wk5.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	71 85 56 92
+	offset	89 177
+	frame	data/chars/balrog/pain1.gif
+	delay   40
+	frame	data/chars/balrog/pain2.gif
+	delay   11
+	frame	data/chars/balrog/pain3.gif
+
+
+
+anim fall
+	loop	0
+	delay	60
+        sound   data/chars/balrog/fall.wav
+	offset	92 129
+        attack  61 79 28 40 5 1
+		bbox  57  74  90  54
+	frame	data/chars/balrog/fall1.gif
+        offset  89 177
+        delay   20
+		bbox  58  115  99  60
+	frame	data/chars/balrog/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+		bbox  27  142  126  43
+	frame	data/chars/balrog/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	89 177
+	delay	10
+	frame	data/chars/balrog/rise1.gif
+	frame	data/chars/balrog/rise2.gif
+	frame	data/chars/balrog/rise3.gif
+	frame	data/chars/balrog/rise4.gif
+	frame	data/chars/balrog/idle01.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	8
+        sound   data/chars/balrog/hurra.wav
+	offset	89 177
+	bbox	62 74 62 103
+	frame	data/chars/balrog/a01.gif
+        attack  113 83 47 23 11
+	frame	data/chars/balrog/a02.gif
+        attack  0 0 0 0 0
+	frame	data/chars/balrog/a03.gif
+	frame	data/chars/balrog/a04.gif
+        delay   10
+	frame	data/chars/balrog/a05.gif
+	offset	89 177
+	bbox	81 78 53 102
+	frame	data/chars/balrog/a06.gif
+        attack  143 88 49 25 11 1
+		bbox  91  81  48  96
+	frame	data/chars/balrog/a07.gif
+        attack  0 0 0 0
+        delay   10
+	frame	data/chars/balrog/a08.gif
+	frame	data/chars/balrog/a09.gif
+        delay   10
+		bbox  76  72  54  105
+	frame	data/chars/balrog/a010.gif
+		bbox  67  70  56  107
+	frame	data/chars/balrog/idle01.gif
+

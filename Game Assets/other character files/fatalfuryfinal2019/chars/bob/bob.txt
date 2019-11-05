@@ -1,0 +1,308 @@
+name	Tony
+health	78
+speed	16
+type	enemy
+dust	dust
+gfxshadow  1
+aggression 70
+#nodieblink    3
+#noname	1
+#nolife	1
+falldie	2
+diesound data/sounds/die3.wav
+projectilehit   enemy npc obstacle
+
+
+Icon    data/chars/Bob/icon.gif
+
+remap	data/chars/Bob/Idle01.gif data/chars/Bob/map01.gif
+remap	data/chars/Bob/Idle01.gif data/chars/Bob/map01.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	30 114
+	bbox	7 2 42 109
+	frame	data/chars/Bob/idle01.gif
+	frame	data/chars/Bob/idle02.gif
+	frame	data/chars/Bob/idle03.gif
+	frame	data/chars/Bob/idle04.gif
+	frame	data/chars/Bob/idle05.gif
+	frame	data/chars/Bob/idle06.gif
+	frame	data/chars/Bob/idle07.gif
+	frame	data/chars/Bob/idle08.gif
+	frame	data/chars/Bob/idle09.gif
+	frame	data/chars/Bob/idle10.gif
+	frame	data/chars/Bob/idle11.gif
+	frame	data/chars/Bob/idle12.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	27 115
+	bbox	13 3 35 114
+	frame	data/chars/Bob/w01.gif
+	frame	data/chars/Bob/w02.gif
+	frame	data/chars/Bob/w03.gif
+	frame	data/chars/Bob/w04.gif
+	frame	data/chars/Bob/w05.gif
+	frame	data/chars/Bob/w06.gif
+
+
+anim attack1
+	loop	0
+	delay	10
+	bbox	82 85 38 71
+	offset	102 157
+	sound	data/chars/Bob/a1.wav
+	frame	data/chars/Bob/a101.gif
+	frame	data/chars/Bob/a102.gif
+	frame	data/chars/Bob/a103.gif
+		attack1  111  124  70  35  8
+	frame	data/chars/Bob/a104.gif
+		Attack1  0
+	frame	data/chars/Bob/a105.gif
+		blast  109  122  67  31  10
+	frame	data/chars/Bob/a106.gif
+	frame	data/chars/Bob/a107.gif
+		Attack1  0
+	frame	data/chars/Bob/a108.gif
+
+
+anim attack2
+		offset  53  119
+		bbox  21  18  52  100
+		delay  8
+	sound	data/chars/Bob/a2.wav
+	frame	data/chars/Bob/a201.gif
+	frame	data/chars/Bob/a202.gif
+	frame	data/chars/Bob/a203.gif
+		blast  41  -1  65  54  10
+	frame	data/chars/Bob/a204.gif
+	frame	data/chars/Bob/a205.gif
+		Attack1  0
+	frame	data/chars/Bob/a206.gif
+	frame	data/chars/Bob/a207.gif
+
+
+anim attack3
+		offset  69  141
+		bbox  38  28  50  111
+	sound	data/chars/Bob/a3.wav
+	frame	data/chars/Bob/a301.gif
+	frame	data/chars/Bob/a302.gif
+	frame	data/chars/Bob/a303.gif
+	frame	data/chars/Bob/a304.gif
+	frame	data/chars/Bob/a305.gif
+	frame	data/chars/Bob/a306.gif
+		blast  0  30  134  96  10
+	frame	data/chars/Bob/a307.gif
+		blast  52  3  78  102  10
+	frame	data/chars/Bob/a308.gif
+		blast  69  16  55  114  10
+	frame	data/chars/Bob/a309.gif
+	frame	data/chars/Bob/a310.gif
+		Attack1  0
+	frame	data/chars/Bob/a311.gif
+	frame	data/chars/Bob/a312.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	38 104
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Bob/pain01.gif
+	frame	data/chars/Bob/pain02.gif
+
+
+anim pain2
+	loop	0
+	offset	38 104
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Bob/painR01.gif
+	frame	data/chars/Bob/painR02.gif
+
+anim pain3
+	loop	0
+	offset	38 104
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Bob/painB01.gif
+	frame	data/chars/Bob/painB02.gif
+
+
+
+
+anim fall
+	loop	0
+	offset	65 121
+	delay	19
+	bbox	12 22 95 89
+	throwframe 3
+		Attack1  0
+	frame	data/chars/Bob/fall01.gif
+	bbox	-5 21 118 45
+		offset  53  57
+	frame	data/chars/Bob/fall02.gif
+	bbox	8 6 117 25
+		attack  0  0  0  0
+		offset  55  26
+	frame	data/chars/Bob/fall03.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  223  121  63
+	frame	data/chars/Bob/bburn.gif
+	frame	data/chars/Bob/burn2.gif
+	frame	data/chars/Bob/bburn.gif
+	frame	data/chars/Bob/burn2.gif
+	offset	56 28
+	frame	data/chars/Bob/fall03.gif
+
+
+
+anim fall9
+	loop	0
+	offset	56 31
+	delay	19
+	bbox	10 89 126 26 0
+	frame	data/chars/Bob/fall03.gif
+
+anim rise
+	loop	0
+	offset	52 136
+	delay	17
+	frame	data/chars/Bob/a310.gif
+	frame	data/chars/Bob/a309.gif
+	frame	data/chars/Bob/a305.gif
+	frame	data/chars/Bob/a304.gif
+	frame	data/chars/Bob/a303.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  87  226  115  64
+	frame	data/chars/Bob/burn1.gif
+	frame	data/chars/Bob/burn2.gif
+	frame	data/chars/Bob/burn1.gif
+	frame	data/chars/Bob/burn2.gif
+	offset	56 28
+	frame	data/chars/Bob/fall03.gif
+
+
+
+
+anim shock
+	loop	0
+		offset  39  102
+		bbox  6  11  64  91
+	frame  data/chars/Bob/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Bob/Shok1.gif
+	frame	data/chars/Bob/Shok2.gif
+		delay  10
+	frame  data/chars/Bob/Shok1.gif
+	frame  data/chars/Bob/Shok2.gif
+	offset	53 65
+		bbox  8  14  108  51
+	frame	data/chars/Bob/fall02.gif
+		offset  49  29
+	frame	data/chars/Bob/fall03.gif
+
+anim Jumpattack
+		offset  52  93
+		attack1  48  34  64  36  5
+		delay  8
+	sound	data/chars/Bob/ja.wav
+		bbox  10  5  53  87
+        frame	data/chars/Bob/j01.gif
+		Attack1  0
+        frame	data/chars/Bob/j02.gif
+        frame	data/chars/Bob/j03.gif
+		attack1  41  34  67  46  10
+        frame	data/chars/Bob/j04.gif
+		Attack1  0
+        frame	data/chars/Bob/j05.gif
+        frame	data/chars/Bob/j06.gif
+		attack1  46  30  66  43
+        frame	data/chars/Bob/j07.gif
+		Attack1  0
+        frame	data/chars/Bob/j08.gif
+        frame	data/chars/Bob/j09.gif
+        frame	data/chars/Bob/j10.gif
+
+anim pain4
+	loop	0
+	offset	36 104
+	delay	30
+	bbox  17  -1  46  105
+	frame	data/chars/Bob/pain01.gif
+	frame	data/chars/Bob/pain02.gif
+	frame	data/chars/Bob/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Bob/burn1.gif
+	frame	data/chars/Bob/burn2.gif
+	frame	data/chars/Bob/burn1.gif
+	frame	data/chars/Bob/burn2.gif
+	offset	60 28
+	frame	data/chars/Bob/fall03.gif
+
+anim  pain5
+	loop  0
+		offset  39  95
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Bob/pain01.gif
+	frame  data/chars/Bob/pain02.gif
+	frame  data/chars/Bob/fall01.gif
+		offset  62  64
+		move  0
+		Attack1  0
+	frame  data/chars/Bob/fall02.gif
+		movea  30
+	frame  data/chars/Bob/fall02.gif
+		delay  4
+	frame  data/chars/Bob/fall02.gif
+		movea  -30
+		bbox  4  8  114  57
+	frame  data/chars/Bob/fall02.gif
+		delay  2
+	frame  data/chars/Bob/fall02.gif
+	frame  data/chars/Bob/fall02.gif
+		movea  -20
+	frame  data/chars/Bob/fall02.gif
+	frame  data/chars/Bob/fall02.gif
+	frame  data/chars/Bob/fall02.gif
+	frame  data/chars/Bob/fall02.gif
+	frame  data/chars/Bob/fall02.gif
+		movea  0
+		offset  57  33
+		bbox  2  1  122  35
+	frame  data/chars/Bob/fall03.gif
+
+
+anim fall5
+	loop	0
+	offset	51 27
+	delay	19
+	bbox	1 0 123 28
+		Attack1  0
+	frame	data/chars/Bob/fall03.gif
+

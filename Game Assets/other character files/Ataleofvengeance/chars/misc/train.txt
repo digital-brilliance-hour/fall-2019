@@ -1,0 +1,74 @@
+name	train
+health	0
+type	item
+shadow	0
+setlayer     0
+anim idle
+	loop	0
+	delay	10
+	offset	294 200
+                  sound       data/sounds/train.wav
+	frame	data/chars/misc/2.gif
+	frame	data/chars/misc/3.gif
+	frame	data/chars/misc/4.gif
+	frame	data/chars/misc/5.gif
+	frame	data/chars/misc/6.gif
+	frame	data/chars/misc/7.gif
+	frame	data/chars/misc/8.gif
+	frame	data/chars/misc/9.gif
+	frame	data/chars/misc/10.gif
+	frame	data/chars/misc/11.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/14.gif
+	frame	data/chars/misc/15.gif
+	frame	data/chars/misc/12.gif
+	frame	data/chars/misc/13.gif
+	frame	data/chars/misc/21.gif
+	frame	data/chars/misc/22.gif
+	frame	data/chars/misc/23.gif
+	frame	data/chars/misc/24.gif
+	frame	data/chars/misc/25.gif
+	frame	data/chars/misc/26.gif
+	frame	data/chars/misc/27.gif
+	frame	data/chars/misc/28.gif
+	frame	data/chars/misc/29.gif
+	frame	data/chars/misc/30.gif
+	frame	data/chars/misc/31.gif
+	frame	data/chars/misc/32.gif
+	frame	data/chars/misc/33.gif
+	frame	data/chars/misc/34.gif
+	frame	data/chars/misc/35.gif
+                  frame	data/chars/misc/1.gif

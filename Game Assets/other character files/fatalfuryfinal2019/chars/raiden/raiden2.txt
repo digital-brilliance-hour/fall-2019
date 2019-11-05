@@ -1,0 +1,490 @@
+name	Raiden2
+health	100
+speed	10
+mp 100
+land 1
+type	none
+shadow	   0
+gfxshadow  1
+diesound data/sounds/maxdie.wav
+icon	 data/chars/terry/iwolf.gif
+iconpain data/chars/terry/iwolf2.gif
+atchain    1 
+load spurt
+palette           data/chars/Raiden/pow.gif
+alternatepal	  data/chars/Raiden/pow.gif
+alternatepal	  data/chars/Raiden/pow.gif
+alternatepal	  data/chars/Raiden/pow.gif
+weaploss 3
+
+com  a2     freespecial
+com  d d s      freespecial2
+com  d f s      freespecial3
+com  b b s      freespecial4
+com    s        freespecial5
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+	frame	data/chars/Raiden/sel1.gif
+        delay 12
+	frame	data/chars/Raiden/sel2.gif
+	frame	data/chars/Raiden/sel2.gif	
+	frame	data/chars/Raiden/sel2.gif
+	frame	data/chars/Raiden/sel2.gif	
+	frame	data/chars/Raiden/sel2.gif
+	frame	data/chars/Raiden/sel3.gif
+
+anim waiting
+shadowcoords 1000 1000
+        loop	1
+	delay	16
+	offset	0 0
+	frame	data/chars/Raiden/select.gif	
+	frame	data/chars/Raiden/selecta.gif	
+	frame	data/chars/Raiden/selectb.gif
+	frame	data/chars/Raiden/selecta.gif	
+
+anim select
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	0 0
+	sound	data/sounds/haha.wav
+	frame	data/chars/Raiden/select.gif	
+	frame	data/chars/Raiden/select2.gif	
+	frame	data/chars/Raiden/select2.gif
+	frame	data/chars/Raiden/select2.gif	
+	frame	data/chars/Raiden/select.gif	
+	frame	data/chars/Raiden/select.gif	
+
+anim idle
+	loop	1
+	delay	14
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/walk000.gif
+
+anim freespecial5
+	custknife fire2
+	throwframe 1 1
+	loop	0
+	delay	22
+	offset	92 177
+	bbox	0
+	frame	data/chars/raiden/block.gif
+	frame	data/chars/raiden/block.gif
+	frame	data/chars/raiden/block.gif
+
+
+
+anim walk
+	loop	1
+	delay	13
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/idle000.gif
+	frame	data/chars/Raiden/idle001.gif
+	frame	data/chars/Raiden/idle002.gif
+	frame	data/chars/Raiden/idle001.gif
+
+
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/Raiden/get000.gif
+#	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+#	frame	data/chars/Raiden/get001.gif
+	delay	30
+	frame	data/chars/Raiden/get001.gif
+	delay	5
+	frame	data/chars/Raiden/get001.gif
+	frame	data/chars/Raiden/get001.gif
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+
+anim jump
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump001.gif
+	frame	data/chars/Raiden/jump001.gif
+	frame	data/chars/Raiden/jump001.gif
+	frame	data/chars/Raiden/jump001.gif
+	frame	data/chars/Raiden/get000.gif
+
+
+
+
+anim jumpattack
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/jk1.gif
+	attack	85 123 78 56 8 1
+	frame	data/chars/Raiden/jk0.gif
+	frame	data/chars/Raiden/jk0.gif
+	frame	data/chars/Raiden/jk0.gif
+	attack	0
+	frame	data/chars/Raiden/jk1.gif
+
+anim jumpattack2
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	74 81 55 88
+	sound	data/sounds/punch.wav
+	frame	data/chars/Raiden/jumpat00.gif
+	attack	85 123 78 56 8 1
+	frame	data/chars/Raiden/jumpat00.gif
+	frame	data/chars/Raiden/jumpat00.gif
+	attack	0
+	frame	data/chars/Raiden/jumpat00.gif
+
+anim attack1
+	custknife fire
+	throwframe 2 1
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	burn	111 89 36 74 22 1
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+        burn 0
+	frame	data/chars/Raiden/get000.gif
+
+anim attack2
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	burn	111 89 36 74 22 1
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+        burn 0
+	frame	data/chars/Raiden/get000.gif
+
+anim attack3
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	burn	111 89 36 74 22 1
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+        burn 0
+	frame	data/chars/Raiden/get000.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/grab.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/haha.wav
+	frame	data/chars/Raiden/throw001.gif
+	frame	data/chars/Raiden/throw001.gif
+	frame	data/chars/Raiden/throw002.gif
+	frame	data/chars/Raiden/throw002.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw003.gif
+	frame	data/chars/Raiden/throw004.gif
+	frame	data/chars/Raiden/throw004.gif
+	frame	data/chars/Raiden/throw004.gif
+	frame	data/chars/Raiden/throw004.gif
+
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	74 81 55 88
+	delay	8
+        move -1
+	frame	data/chars/Raiden/pain01.gif
+	delay	36
+	frame	data/chars/Raiden/pain02.gif
+	delay	6
+	frame	data/chars/Raiden/pain02.gif
+	frame	data/chars/Raiden/pain01.gif
+	frame	data/chars/Raiden/pain01.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	74 81 55 88
+	delay	8
+	frame	data/chars/Raiden/pain01.gif
+	delay	36
+	frame	data/chars/Raiden/pain02.gif
+	delay	6
+	frame	data/chars/Raiden/pain02.gif
+	frame	data/chars/Raiden/pain01.gif
+	frame	data/chars/Raiden/pain01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/Raiden/shock1.gif
+	frame	data/chars/Raiden/shock3.gif
+	frame	data/chars/Raiden/shock2.gif
+	frame	data/chars/Raiden/shock1.gif
+	frame	data/chars/Raiden/shock3.gif
+	frame	data/chars/Raiden/shock2.gif
+	frame	data/chars/Raiden/shock1.gif
+	frame	data/chars/Raiden/shock3.gif
+	frame	data/chars/Raiden/shock2.gif
+	frame	data/chars/Raiden/shock1.gif
+	frame	data/chars/Raiden/shock3.gif
+	frame	data/chars/Raiden/shock2.gif
+	frame	data/chars/Raiden/fall01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/Raiden/fall00.gif
+	frame	data/chars/Raiden/fall00.gif
+	frame	data/chars/Raiden/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/Raiden/rise1.gif
+	frame	data/chars/Raiden/rise1.gif
+	frame	data/chars/Raiden/rise2.gif
+	frame	data/chars/Raiden/rise2.gif
+
+
+anim freespecial
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	6
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/turn1.gif
+	frame	data/chars/Raiden/turn1.gif
+	attack	23 89 86 56 20 1
+	frame	data/chars/Raiden/turn2.gif
+	frame	data/chars/Raiden/turn2.gif
+	frame	data/chars/Raiden/turn2.gif
+
+
+
+anim freespecial2
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	74 81 55 88
+        frame	data/chars/Raiden/get000.gif 
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get001.gif
+	frame	data/chars/Raiden/get001.gif
+	frame	data/chars/Raiden/get001.gif
+	frame	data/chars/Raiden/na2-00.gif
+	sound	data/sounds/extung1.wav
+	frame	data/chars/Raiden/na2-00.gif
+	offset	92 200
+        move 22
+	frame	data/chars/Raiden/jump000.gif
+	frame	data/chars/Raiden/jump000.gif
+	offset	92 240
+	attack	84 121 83 51 25 1
+	frame	data/chars/Raiden/jk0.gif
+	offset	92 280
+	frame	data/chars/Raiden/jk0.gif
+	offset	92 240
+	frame	data/chars/Raiden/jk0.gif
+	offset	92 200
+	frame	data/chars/Raiden/jk0.gif
+        move 0
+	attack	0 0 0 0 0 0
+	offset	92 177
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+	frame	data/chars/Raiden/get000.gif
+
+
+anim freespecial3
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/pow1.gif
+	frame	data/chars/Raiden/pow2.gif
+	frame	data/chars/Raiden/pow3.gif
+	custknife spurt
+	throwframe 4 2
+	frame	data/chars/Raiden/pow3.gif
+        sound        data/sounds/prr.wav
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+	frame	data/chars/Raiden/pow3.gif
+
+anim grabup
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	offset	92 177
+	bbox	0
+	delay	8
+	sound	data/sounds/punch.wav
+        hitfx   data/sounds/haha.wav
+	frame	data/chars/Raiden/sel0.gif
+	blast	93 86 73 61 30 1 1 1 0 0
+	frame	data/chars/Raiden/sel3.gif
+        attack  0
+	delay	14
+	frame	data/chars/Raiden/sel3.gif
+	frame	data/chars/Raiden/sel3.gif
+	frame	data/chars/Raiden/sel3.gif
+	frame	data/chars/Raiden/sel3.gif
+	frame	data/chars/Raiden/sel3.gif
+	frame	data/chars/Raiden/sel0.gif
+
+anim grabattack
+	custknife fire
+	throwframe 2 1
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	burn	111 89 36 74 22 1
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+        burn 0
+	frame	data/chars/Raiden/get000.gif
+
+anim grabattack2
+	custknife fire
+	throwframe 2 1
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-000.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	frame	data/chars/Raiden/a4-001.gif
+	burn	111 89 36 74 22 1
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+	frame	data/chars/Raiden/a4-002.gif
+        burn 0
+	frame	data/chars/Raiden/get000.gif
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	74 81 55 88
+	frame	data/chars/Raiden/get001.gif
+

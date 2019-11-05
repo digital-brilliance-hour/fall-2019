@@ -1,0 +1,23 @@
+name	Path2
+health	0
+type   endlevel
+branch branch2
+nolife  1
+shadow	0
+
+anim idle
+	loop	1
+	delay	10
+	offset		92 177
+        bbox    4 6 108 140
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path3.gif
+	frame	data/chars/misc/path2.gif
+
+

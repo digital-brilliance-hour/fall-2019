@@ -1,0 +1,20 @@
+name	dusts3
+type	none
+nolife	1
+#noname	1
+gfxshadow 1
+
+anim idle
+	loop	0
+		offset  67  10
+		delay  1
+	frame	data/chars/misc/D301.gif
+	frame	data/chars/misc/D302.gif
+	frame	data/chars/misc/D303.gif
+	frame	data/chars/misc/D304.gif
+	frame	data/chars/misc/D305.gif
+	frame	data/chars/misc/D306.gif
+	frame	data/chars/misc/D307.gif
+	frame	data/chars/misc/D308.gif
+	frame	data/chars/misc/D309.gif
+	frame	data/chars/misc/D310.gif

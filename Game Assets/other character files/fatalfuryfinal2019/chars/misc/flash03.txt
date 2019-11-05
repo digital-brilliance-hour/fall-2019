@@ -1,0 +1,23 @@
+# Hit flash
+
+name	Flash03
+type	none
+shadow	0
+
+
+
+anim idle
+	loop	0
+		delay  3
+		offset  57  53
+	frame	data/chars/misc/f301.gif
+	frame	data/chars/misc/f302.gif
+	frame	data/chars/misc/f303.gif
+	frame	data/chars/misc/f304.gif
+	frame	data/chars/misc/f305.gif
+	frame	data/chars/misc/f306.gif
+	frame	data/chars/misc/f307.gif
+	frame	data/chars/misc/f308.gif
+	frame	data/chars/misc/f309.gif
+	frame	data/chars/misc/f310.gif
+

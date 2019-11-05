@@ -1,0 +1,298 @@
+name	karl
+health	110
+speed	13
+type	enemy
+shadow	5
+gfxshadow 1
+score	1900 10
+icon	data/chars/TakumaG/icon.gif
+diesound data/sounds/misc/takdead.wav
+
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter1.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter2.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter3.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter4.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter5.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter6.gif
+remap	data/chars/TakumaG/stand1.gif data/chars/TakumaG/alter7.gif
+
+#load	Star
+#star	star
+#load	Bola
+#knife	Bola
+
+projectilehit enemy obstacle
+candamage player npc
+hostile player npc
+aggression 50
+
+anim idle
+	loop	1
+	offset	110 170
+	bbox	75 60 55 109
+	delay	10
+	frame	data/chars/TakumaG/stand1.gif
+	frame	data/chars/TakumaG/stand2.gif
+	frame	data/chars/TakumaG/stand3.gif	
+	frame	data/chars/TakumaG/stand4.gif
+	frame	data/chars/TakumaG/stand5.gif
+	frame	data/chars/TakumaG/stand6.gif
+	frame	data/chars/TakumaG/stand7.gif
+	frame	data/chars/TakumaG/stand8.gif
+	frame	data/chars/TakumaG/stand9.gif
+	frame	data/chars/TakumaG/stand10.gif
+
+anim walk
+	loop	1
+	offset	111 171
+	bbox	75 60 55 109
+	delay	10
+	frame	data/chars/TakumaG/walk1.gif
+	frame	data/chars/TakumaG/walk2.gif
+	frame	data/chars/TakumaG/walk3.gif
+	frame	data/chars/TakumaG/walk4.gif
+	offset	111 168
+	frame	data/chars/TakumaG/walk5.gif
+	frame	data/chars/TakumaG/walk6.gif
+	
+anim pain
+	loop	0
+	offset	110 170
+	bbox	75 60 55 109
+	sound	data/sounds/misc/mrzau.wav
+	delay	4
+	frame	data/chars/TakumaG/hit1.gif
+	delay	8
+	frame	data/chars/TakumaG/hit2.gif
+	delay	4
+	frame	data/chars/TakumaG/hit1.gif
+
+anim fall
+	loop	0
+	delay	9
+	offset	110 170
+	bbox	75 60 55 109
+	frame	data/chars/TakumaG/hit2.gif
+	delay	18
+	offset	97 175
+	bbox	65 85 60 50
+	attack	65 85 60 50 12 1
+	frame	data/chars/TakumaG/down1.gif
+	offset	92 152
+	bbox	60 105 65 30
+	attack	60 105 65 30 12 1
+	frame	data/chars/TakumaG/down2.gif
+	offset	100 166
+	bbox	70 120 65 45
+	attack	70 120 65 45 12 1
+	frame	data/chars/TakumaG/down3.gif
+	offset	95 178
+	bbox	0 0 0 0
+	attack	60 155 70 25 12 1
+	frame	data/chars/TakumaG/down4.gif
+
+anim rise
+	loop	0
+	offset	100 170
+	delay	15
+	frame	data/chars/TakumaG/rise.gif
+
+anim jumpattack
+	jumpframe 1 4 1 0
+	loop	0
+	range	80 165
+	delay	12
+	offset	110 170
+	throwframe 2 70
+	bbox	75 60 55 109
+	sound	data/sounds/misc/takafi.wav
+	frame	data/chars/TakumaG/kick7.gif
+	offset	110 197
+	bbox	75 70 55 70
+	frame	data/chars/TakumaG/jumpfi.gif
+	delay	20
+	frame	data/chars/TakumaG/jumpfi2.gif
+	frame	data/chars/TakumaG/jumpfi3.gif
+
+anim special
+	loop	0
+	delay	10
+	offset	110 170
+	sound	data/sounds/misc/raystcom.wav
+	frame	data/chars/TakumaG/rayst1.gif
+	frame	data/chars/TakumaG/rayst2.gif
+	frame	data/chars/TakumaG/rayst3.gif
+	frame	data/chars/TakumaG/rayst4.gif
+	delay	15
+	offset	110 220
+	blast	30 20 170 235 40 1
+	frame	data/chars/TakumaG/rayst16.gif
+	frame	data/chars/TakumaG/rayst15.gif
+	frame	data/chars/TakumaG/rayst14.gif
+	frame	data/chars/TakumaG/rayst8.gif
+	frame	data/chars/TakumaG/rayst7.gif
+	frame	data/chars/TakumaG/rayst6.gif
+	frame	data/chars/TakumaG/rayst5.gif
+	frame	data/chars/TakumaG/rayst5.gif
+	frame	data/chars/TakumaG/rayst6.gif
+	frame	data/chars/TakumaG/rayst7.gif
+	frame	data/chars/TakumaG/rayst8.gif
+	frame	data/chars/TakumaG/rayst9.gif
+	frame	data/chars/TakumaG/rayst10.gif
+	frame	data/chars/TakumaG/rayst11.gif
+	frame	data/chars/TakumaG/rayst12.gif
+	frame	data/chars/TakumaG/rayst13.gif
+	frame	data/chars/TakumaG/rayst14.gif
+	frame	data/chars/TakumaG/rayst15.gif
+	frame	data/chars/TakumaG/rayst16.gif
+	delay	10
+	offset	110 170
+	blast	0 0 0 0 0 0
+	frame	data/chars/TakumaG/rayst17.gif
+	frame	data/chars/TakumaG/rayst18.gif
+	frame	data/chars/TakumaG/rayst19.gif
+	frame	data/chars/TakumaG/rayst20.gif
+
+anim attack1
+	range	-10 40
+	loop	0
+	delay	13
+	offset	110 170
+	bbox	75 60 55 109
+	sound	data/sounds/misc/takupu.wav
+	frame	data/chars/TakumaG/punch1.gif
+	attack	105 75 75 50 35
+	frame	data/chars/TakumaG/punch2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/TakumaG/punch1.gif
+	
+anim attack2
+	range	40 80
+	loop	0
+	delay	13
+	offset	110 170
+	bbox	75 60 55 109
+	sound	data/sounds/misc/takkic.wav
+	frame	data/chars/TakumaG/kick1.gif
+	frame	data/chars/TakumaG/kick2.gif
+	frame	data/chars/TakumaG/kick3.gif
+	frame	data/chars/TakumaG/kick4.gif
+	attack	120 85 85 45 35 1
+	frame	data/chars/TakumaG/kick5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/TakumaG/kick6.gif
+	frame	data/chars/TakumaG/kick7.gif
+
+anim attack3
+	loop	0
+	range	180 300
+	delay	10
+	offset	110 170
+	throwframe 1 70
+	bbox	75 60 55 109
+	sound	data/sounds/misc/takafi.wav
+	frame	data/chars/TakumaG/bola1.gif
+	frame	data/chars/TakumaG/bola2.gif
+	frame	data/chars/TakumaG/bola3.gif
+	frame	data/chars/TakumaG/bola2.gif
+	frame	data/chars/TakumaG/bola3.gif
+	frame	data/chars/TakumaG/bola2.gif
+	frame	data/chars/TakumaG/bola3.gif
+
+anim freespecial
+	range	40 180
+	rangea	20 100
+	rangez	-16 16
+	counterattack 1
+	loop	0
+	delay	10
+	offset	110 170
+	sound	data/sounds/misc/raystcom.wav
+	frame	data/chars/TakumaG/rayst1.gif
+	frame	data/chars/TakumaG/rayst2.gif
+	frame	data/chars/TakumaG/rayst3.gif
+	frame	data/chars/TakumaG/rayst4.gif
+	delay	15
+	offset	110 220
+	blast	30 20 170 235 40 1
+	frame	data/chars/TakumaG/rayst16.gif
+	frame	data/chars/TakumaG/rayst15.gif
+	frame	data/chars/TakumaG/rayst14.gif
+	frame	data/chars/TakumaG/rayst8.gif
+	frame	data/chars/TakumaG/rayst7.gif
+	frame	data/chars/TakumaG/rayst6.gif
+	frame	data/chars/TakumaG/rayst5.gif
+	frame	data/chars/TakumaG/rayst5.gif
+	frame	data/chars/TakumaG/rayst6.gif
+	frame	data/chars/TakumaG/rayst7.gif
+	frame	data/chars/TakumaG/rayst8.gif
+	frame	data/chars/TakumaG/rayst9.gif
+	frame	data/chars/TakumaG/rayst10.gif
+	frame	data/chars/TakumaG/rayst11.gif
+	frame	data/chars/TakumaG/rayst12.gif
+	frame	data/chars/TakumaG/rayst13.gif
+	frame	data/chars/TakumaG/rayst14.gif
+	frame	data/chars/TakumaG/rayst15.gif
+	frame	data/chars/TakumaG/rayst16.gif
+	delay	10
+	offset	110 170
+	blast	0 0 0 0 0 0
+	frame	data/chars/TakumaG/rayst17.gif
+	frame	data/chars/TakumaG/rayst18.gif
+	frame	data/chars/TakumaG/rayst19.gif
+	frame	data/chars/TakumaG/rayst20.gif
+
+anim fall3
+	loop	0
+	offset	110 170
+	jumpframe 0 4 0 0
+	movez	-1
+	delay	15
+	frame	data/chars/TakumaG/hit1.gif
+	movez	0
+	delay	5
+	offset	85 125
+	frame	data/chars/TakumaG/pb1.gif
+	movez	4
+	move	32
+	frame	data/chars/TakumaG/pb2.gif
+	movez	-4
+	frame	data/chars/TakumaG/pb1r.gif
+	move	-32
+	frame	data/chars/TakumaG/pb2r.gif
+	movez	4
+	frame	data/chars/TakumaG/pb1.gif
+	move	32
+	frame	data/chars/TakumaG/pb2.gif
+	movez	-4
+	frame	data/chars/TakumaG/pb1r.gif
+	move	-32
+	frame	data/chars/TakumaG/pb2r.gif
+	movez	4
+	frame	data/chars/TakumaG/pb1.gif
+	move	32
+	frame	data/chars/TakumaG/pb2.gif
+	movez	-4
+	frame	data/chars/TakumaG/pb1r.gif
+	move	-32
+	frame	data/chars/TakumaG/pb2r.gif
+	movez	4
+	frame	data/chars/TakumaG/pb1.gif
+	movez	0
+	move	0
+	delay	45
+	bbox	35 5 100 155
+	frame	data/chars/TakumaG/pb2.gif
+
+anim fall4
+	loop	0
+	delay	25
+	offset	85 125
+	flipframe 1
+	frame	data/chars/TakumaG/pb2.gif
+	offset	100 166
+	attack	70 120 65 45 12 1
+	frame	data/chars/TakumaG/down3.gif
+	offset	95 178
+	attack	60 155 70 25 12 1
+	frame	data/chars/TakumaG/down4.gif

@@ -1,0 +1,260 @@
+name	BALROG
+health	100
+speed	10
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/balrog/1.gif
+iconpain     data/chars/balrog/2.gif
+aggression 1
+diesound data/sounds/BALRODIE.wav
+gfxshadow 1
+
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map1.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map2.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map3.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map4.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map5.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map6.gif
+remap	data/chars/BALROG/idle00.gif  data/chars/BALROG/map7.gif
+
+
+
+
+anim idle
+	loop	1
+	offset	38 102
+	bbox	6 0 81 104
+	delay	10
+	frame         data/chars/BALROG/idle00.gif
+offset	38 99
+	frame         data/chars/BALROG/idle01.gif
+offset	38 95
+	frame         data/chars/BALROG/idle02.gif
+offset	38 97
+	frame         data/chars/BALROG/idle03.gif
+offset	 38 99
+	frame         data/chars/BALROG/idle04.gif
+offset	38 97
+	frame         data/chars/BALROG/idle03.gif
+offset	38 95
+	frame         data/chars/BALROG/idle02.gif
+offset	38 99
+	frame         data/chars/BALROG/idle01.gif
+
+
+
+anim walk
+	loop	1
+	offset	30 101
+	bbox	2 1 74 104
+	delay	10
+	frame         data/chars/BALROG/wk00.gif
+offset        28 104
+                  frame         data/chars/BALROG/wk01.gif
+offset        29 102
+                  frame         data/chars/BALROG/wk02.gif
+offset        44 100
+                  bbox           18 7 71 97
+                  frame         data/chars/BALROG/wk03.gif
+offset        34 99
+	bbox	 2 1 74 104
+                  frame          data/chars/BALROG/wk04.gif
+offset        34 101
+                  frame         data/chars/BALROG/wk05.gif
+
+anim pain
+	loop	0
+	offset	50 102
+	bbox	0 0 94 108
+	sound       data/sounds/MALEPAIN.wav
+	delay	5
+	frame         data/chars/BALROG/pain1.gif
+offset	76 100
+                  bbox          0 0 105 103
+	delay	10
+	frame         data/chars/BALROG/pain2.gif
+offset	76 100
+DELAY     5
+	bbox	0 0 94 108
+	frame         data/chars/BALROG/pain1.gif
+
+anim fall
+	loop	0
+	offset	62 101
+	delay	5
+	frame         data/chars/BALROG/fall1.gif
+offset	80 88
+DELAY           70
+                 ATTACK        16 23 56 36 10 1
+	frame         data/chars/BALROG/fall2.gif
+offset	20 112
+DELAY        15
+                 ATTACK         0 0 0 0 0 0 
+	frame         data/chars/BALROG/fall3.gif
+offset	69 36
+DELAY     35
+	frame         data/chars/BALROG/fall4.gif
+
+anim rise
+	loop	0
+	offset	47 47
+	delay	10
+	frame         data/chars/BALROG/rise1.gif
+offset	53 60
+	frame         data/chars/BALROG/rise2.gif
+offset	38 77
+	frame         data/chars/BALROG/rise3.gif
+offset	17 90
+	frame         data/chars/BALROG/rise4.gif
+
+anim riseattack 
+range    0 100
+bbox        0 0 0 0 
+DELAY     5
+MOVE     10
+offset	41 94
+	frame         data/chars/BALROG/rise5.gif
+offset	38 95
+	frame         data/chars/BALROG/rise6.gif
+offset	35 128
+                  ATTACK         19 1 98 135 15 1
+	frame         data/chars/BALROG/rise7.gif
+offset	39 95
+	frame         data/chars/BALROG/rise8.gif
+offset	37 94
+                  ATTACK       0 0 0 0 0 0
+	frame         data/chars/BALROG/rise9.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	37 99
+	delay	8
+	bbox	13 2 78 104
+	frame         data/chars/BALROG/ATK01.gif
+offset	37 99
+ATTACK          52 1 89 75 10 
+	frame         data/chars/BALROG/ATK02.gif
+offset	37 99
+ATTACK        0 0 0 0 0
+offset	37 99
+	frame         data/chars/BALROG/ATK01.gif
+offset	37 99
+ATTACK          52 1 89 75 10 
+	frame         data/chars/BALROG/ATK02.gif
+offset	37 99
+ATTACK        0 0 0 0 0
+	frame         data/chars/BALROG/ATK01.gif
+offset	37 93
+                  BBOX        5 2 91 89 
+	frame         data/chars/BALROG/ATK04.gif
+offset	37 89
+                  BBOX        39 3 54 91  
+                  frame         data/chars/BALROG/ATK05.gif                    
+offset	36 80
+ATTACK           94 2 97 73 12 1
+	frame         data/chars/BALROG/ATK06.gif
+offset	37 89
+	frame         data/chars/BALROG/ATK07.gif
+ATTACK        0 0 0 0 0 0
+offset	37 95
+	frame         data/chars/BALROG/ATK08.gif
+
+anim attack2
+                  RANGE     50 160 
+	loop	0
+	offset	36 85
+	delay	8
+	bbox	7 0 89 90
+MOVE   5
+frame         data/chars/BALROG/ATK200.gif
+	offset          35 83
+BBOX            39 1 70 90	
+ATTACK        79 0 82 67 15
+
+frame         data/chars/BALROG/ATK201.gif
+	offset	34 88
+ATTACK        0 0 0 0 0          
+frame         data/chars/BALROG/ATK202.gif
+	offset	34 89
+frame         data/chars/BALROG/ATK203.gif
+	offset	36 90
+frame         data/chars/BALROG/ATK204.gif
+	offset	36 97
+frame         data/chars/BALROG/ATK205.gif
+BBOX       0 1 76 76
+	offset	40 70
+frame         data/chars/BALROG/ATK206.gif
+	offset	38 72
+BBOX        30 0 71 73
+frame         data/chars/BALROG/ATK207.gif
+	offset	38 81
+BBOX        32 2 90 86      
+frame         data/chars/BALROG/ATK208.gif
+	offset	37 123
+ATTACK        64 0 63 130 15 1
+frame         data/chars/BALROG/ATK209.gif
+	offset	36 81
+ATTACK        0 0 0 0 0 0
+BBOX        21 1 81 85               
+frame         data/chars/BALROG/ATK210.gif
+	offset	40 70
+BBOX       0 1 76 76
+frame         data/chars/BALROG/ATK206.gif
+	offset	36 85
+	bbox	7 0 89 90
+frame         data/chars/BALROG/ATK200.gif
+
+
+
+
+
+anim attack3
+                  RANGE    100 200
+	loop	0
+	delay	10
+	bbox	5 0 84 106
+	sound       data/sounds/BALROLAU.wav
+offset	38 99
+	frame         data/chars/BALROG/TAUNT1.gif
+offset	41 97
+	frame         data/chars/BALROG/TAUNT2.gif
+offset	38 100
+	frame         data/chars/BALROG/TAUNT3.gif
+offset	38 99
+	frame         data/chars/BALROG/TAUNT4.gif
+offset	41 97
+	frame         data/chars/BALROG/TAUNT2.gif
+offset	38 100
+	frame         data/chars/BALROG/TAUNT3.gif
+offset	38 99
+	frame         data/chars/BALROG/TAUNT4.gif
+offset	41 97
+	frame         data/chars/BALROG/TAUNT2.gif
+offset	38 100
+	frame         data/chars/BALROG/TAUNT3.gif
+offset	38 99
+	frame         data/chars/BALROG/TAUNT4.gif
+offset	41 97
+	frame         data/chars/BALROG/TAUNT2.gif
+offset	38 100
+	frame         data/chars/BALROG/TAUNT3.gif
+offset	38 99
+	frame         data/chars/BALROG/TAUNT4.gif
+offset	38 99
+	frame         data/chars/BALROG/TAUNT1.gif
+
+
+
+
+
+
+
+
+
+
+

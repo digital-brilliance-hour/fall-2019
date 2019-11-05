@@ -1,0 +1,263 @@
+name	Richard
+health	78
+speed	16
+type	enemy
+dust	dust
+gfxshadow  1
+aggression 70
+#nodieblink    3
+#noname	1
+#nolife	1
+falldie	2
+diesound data/sounds/die3.wav
+projectilehit   enemy npc obstacle
+
+
+Icon    data/chars/Richard/icon.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	31 107
+	bbox	7 2 42 109
+	frame	data/chars/Richard/idle01.gif
+		delay  11
+	frame	data/chars/Richard/idle02.gif
+	frame	data/chars/Richard/idle03.gif
+	frame	data/chars/Richard/idle04.gif
+	frame	data/chars/Richard/idle05.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	29 110
+	bbox	16 5 53 102
+	frame	data/chars/Richard/w01.gif
+	frame	data/chars/Richard/w02.gif
+	frame	data/chars/Richard/w03.gif
+	frame	data/chars/Richard/w04.gif
+	frame	data/chars/Richard/w05.gif
+	frame	data/chars/Richard/w06.gif
+	frame	data/chars/Richard/w07.gif
+	frame	data/chars/Richard/w08.gif
+
+anim attack1
+	loop	0
+	delay	7
+	bbox	20 3 38 108
+	offset	32 110
+	sound	data/chars/Richard/a1.wav
+	frame	data/chars/Richard/a101.gif
+	frame	data/chars/Richard/a102.gif
+		attack1  60  69  40  42  5
+		delay  4
+		move  3
+	frame	data/chars/Richard/a103.gif
+	frame	data/chars/Richard/a104.gif
+	frame	data/chars/Richard/a105.gif
+	frame	data/chars/Richard/a106.gif
+		Attack1  0
+		delay  7
+		move  0
+	frame	data/chars/Richard/a107.gif
+	frame	data/chars/Richard/a108.gif
+		move  3
+	frame	data/chars/Richard/a109.gif
+		attack1  60  34  33  46  5
+	frame	data/chars/Richard/a110.gif
+	frame	data/chars/Richard/a111.gif
+		Attack1  0
+		move  0
+	frame	data/chars/Richard/a112.gif
+		offset  17  111
+	frame	data/chars/Richard/a113.gif
+		offset  44  123
+		bbox  27  15  30  113
+		move  3
+	frame	data/chars/Richard/a114.gif
+		blast  57  5  46  60  10
+		move  5
+	frame	data/chars/Richard/a115.gif
+	frame	data/chars/Richard/a116.gif
+		Attack1  0
+		move  0
+	frame	data/chars/Richard/a117.gif
+	frame	data/chars/Richard/a118.gif
+
+
+
+anim throw
+		offset  85  138
+		bbox  42  36  71  102
+	sound	data/chars/Richard/t.wav
+		delay  5
+	frame	data/chars/Richard/T01.gif
+	frame	data/chars/Richard/T02.gif
+	frame	data/chars/Richard/T03.gif
+	frame	data/chars/Richard/T04.gif
+	frame	data/chars/Richard/T05.gif
+	frame	data/chars/Richard/T06.gif
+	frame	data/chars/Richard/T07.gif
+	frame	data/chars/Richard/T08.gif
+
+
+anim pain
+	loop	0
+	offset	55 111
+	delay	30
+	bbox  35  20  47  93
+	frame	data/chars/Richard/pain01.gif
+	frame	data/chars/Richard/pain02.gif
+
+anim fall
+	loop	0
+	offset	59 110
+	delay	19
+	bbox	12 22 95 89
+	throwframe 3
+		Attack1  0
+	frame	data/chars/Richard/pain01.gif
+	bbox	-5 21 118 45
+		offset  53  57
+	frame	data/chars/Richard/fall01.gif
+	bbox	8 6 117 25
+		attack  0  0  0  0
+		offset  55  26
+	frame	data/chars/Richard/fall02.gif
+
+
+anim fall9
+	loop	0
+	offset	56 31
+	delay	19
+	bbox	6 1 115 28 0
+	frame	data/chars/Richard/fall02.gif
+
+anim rise
+	loop	0
+	offset	46 120
+	delay	17
+	frame	data/chars/Richard/Rise.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  96  229  107  54
+	frame	data/chars/Richard/burn1.gif
+	frame	data/chars/Richard/burn2.gif
+	frame	data/chars/Richard/burn1.gif
+	frame	data/chars/Richard/burn2.gif
+	offset	56 28
+	frame	data/chars/Richard/fall02.gif
+
+
+anim shock
+	loop	0
+		offset  60  112
+		bbox  22  11  67  101
+	frame  data/chars/Richard/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Richard/Shok1.gif
+	frame	data/chars/Richard/Shok2.gif
+		delay  10
+	frame  data/chars/Richard/Shok1.gif
+	frame  data/chars/Richard/Shok2.gif
+	offset	57 53
+		bbox  0
+	frame	data/chars/Richard/fall01.gif
+		offset  49  29
+	frame	data/chars/Richard/fall02.gif
+
+anim pain2
+	loop	0
+	offset	59 110
+	delay	30
+	bbox  40  10  36  101
+	frame	data/chars/Richard/painR01.gif
+	frame	data/chars/Richard/painR02.gif
+
+anim pain3
+	loop	0
+	offset	61 111
+	delay	30
+	bbox  37  12  48  101
+	frame	data/chars/Richard/painB01.gif
+	frame	data/chars/Richard/painB02.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  97  238  98  47
+	frame	data/chars/Richard/bburn.gif
+	frame	data/chars/Richard/burn2.gif
+	frame	data/chars/Richard/bburn.gif
+	frame	data/chars/Richard/burn2.gif
+	offset	56 28
+	frame	data/chars/Richard/fall02.gif
+
+anim pain4
+	loop	0
+	offset	56 110
+	delay	30
+	bbox  43  4  39  107
+	frame	data/chars/Richard/pain01.gif
+	frame	data/chars/Richard/pain02.gif
+	frame	data/chars/Richard/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Richard/burn1.gif
+	frame	data/chars/Richard/burn2.gif
+	frame	data/chars/Richard/burn1.gif
+	frame	data/chars/Richard/burn2.gif
+	offset	62 29
+	frame	data/chars/Richard/fall02.gif
+anim  pain5
+	loop  0
+		offset  56  105
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Richard/pain01.gif
+	frame  data/chars/Richard/pain02.gif
+	frame  data/chars/Richard/pain01.gif
+		offset  64  54
+		move  0
+	frame  data/chars/Richard/fall01.gif
+		movea  30
+	frame  data/chars/Richard/fall01.gif
+		delay  4
+	frame  data/chars/Richard/fall01.gif
+		movea  -30
+		bbox  6  6  119  54
+	frame  data/chars/Richard/fall01.gif
+		delay  2
+	frame  data/chars/Richard/fall01.gif
+	frame  data/chars/Richard/fall01.gif
+		movea  -20
+	frame  data/chars/Richard/fall01.gif
+	frame  data/chars/Richard/fall01.gif
+	frame  data/chars/Richard/fall01.gif
+	frame  data/chars/Richard/fall01.gif
+	frame  data/chars/Richard/fall01.gif
+		movea  0
+		offset  72  33
+	frame  data/chars/Richard/fall02.gif
+
+
+anim fall5
+	loop	0
+	offset	57 29
+	delay	19
+	bbox	97 93 118 73
+		Attack1  0
+	frame	data/chars/Richard/fall02.gif
+

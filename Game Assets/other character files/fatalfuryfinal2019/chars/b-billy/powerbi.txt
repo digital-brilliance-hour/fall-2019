@@ -1,0 +1,143 @@
+name					PowerBi
+health					1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	delay	4
+	offset	61 110
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p03.gif
+		Attack1  0
+	frame	data/chars/Billy/p04.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p05.gif
+		Attack1  0
+	frame	data/chars/Billy/p06.gif
+		attack2  0  1  129  129  10  0  0  0  0  100
+	frame	data/chars/Billy/p01.gif
+		Attack1  0
+	frame	data/chars/Billy/p02.gif
+		burn  0  1  129  129  20  11  0  0  0  100
+		move  10
+	frame	data/chars/Billy/p03.gif
+	frame	data/chars/Billy/p04.gif
+	frame	data/chars/Billy/p05.gif
+	frame	data/chars/Billy/p06.gif
+	frame	data/chars/Billy/p01.gif
+	frame	data/chars/Billy/p02.gif
+	frame	data/chars/Billy/p03.gif
+	frame	data/chars/Billy/p04.gif
+	frame	data/chars/Billy/p05.gif
+	frame	data/chars/Billy/p06.gif
+	frame	data/chars/Billy/p01.gif
+	frame	data/chars/Billy/p02.gif
+	frame	data/chars/Billy/p03.gif
+	frame	data/chars/Billy/p04.gif
+	frame	data/chars/Billy/p05.gif
+	frame	data/chars/Billy/p06.gif
+

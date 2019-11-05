@@ -1,0 +1,244 @@
+name	PLAYA
+health	100
+speed	15
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/playa/1.gif
+iconpain     data/chars/playa/2.gif
+diesound data/sounds/sukedie.wav
+aggression 1
+gfxshadow 1
+
+remap	data/chars/playa/idle00.gif data/chars/playa/map1.gif
+remap	data/chars/playa/idle00.gif data/chars/playa/map2.gif
+remap	data/chars/playa/idle00.gif data/chars/playa/map3.gif
+remap	data/chars/playa/idle00.gif data/chars/playa/map4.gif
+
+anim idle
+	loop	1
+	offset	34 105
+	bbox	15 15 35 92
+	delay	10
+	frame	data/chars/playa/idle00.gif
+offset	34 105
+	frame	data/chars/playa/idle01.gif
+offset	34 105
+	frame	data/chars/playa/idle02.gif
+offset	34 106
+	frame	data/chars/playa/idle03.gif
+offset	34 106
+	frame	data/chars/playa/idle04.gif
+offset	34 106
+	frame	data/chars/playa/idle05.gif
+offset	34 106
+	frame	data/chars/playa/idle06.gif
+offset	34 106
+	frame	data/chars/playa/idle07.gif
+offset	34 106
+	frame	data/chars/playa/idle08.gif
+offset	34 106
+	frame	data/chars/playa/idle09.gif
+
+anim walk
+	loop	1
+	offset	30 105
+	bbox	14 12 34 92
+	delay	5
+	frame	data/chars/playa/walk00.gif
+offset	43 106
+                  bbox	27 11 35 95
+	frame	data/chars/playa/walk01.gif
+offset	35 108
+                  bbox	19 12 30 94
+	frame	data/chars/playa/walk02.gif
+offset	29 110
+	bbox	13 13 33 91
+	frame	data/chars/playa/walk03.gif
+offset	29 109
+                  bbox          14 13 30 89
+	frame	data/chars/playa/walk04.gif
+offset	27 107
+                  bbox          10 12 36 93
+	frame	data/chars/playa/walk05.gif
+
+anim pain
+	loop	0
+	offset	37 105
+	bbox	4 0 71 108
+	sound        data/sounds/MALEPAIN.wav
+	delay	5
+	frame	data/chars/playa/pain00.gif
+offset	47 98
+                  delay         5
+                  bbox         1 4 79 93
+	frame	data/chars/playa/pain01.gif                
+offset	58 96
+	delay	25
+	bbox	1 4 89 92
+	frame	data/chars/playa/pain02.gif
+offset	47 98
+	delay	5
+	bbox	1 4 79 93
+	frame	data/chars/playa/pain01.gif
+offset	37 105
+	delay	5
+	bbox	4 0 71 108
+	frame	data/chars/playa/pain00.gif
+
+anim fall
+	loop	0
+	delay	5
+	offset	21 107
+	frame	data/chars/playa/fall00.gif
+offset	34 106
+DELAY         65
+        ATTACK         4 31 41 29 10 1
+	frame	data/chars/playa/fall01.gif
+offset	42 112
+DELAY              15
+	frame	data/chars/playa/fall02.gif
+offset	63 57
+delay   5
+        ATTACK          0 0 0 0 0 0
+	frame	data/chars/playa/fall03.gif
+offset	66 29
+                  delay	35
+	frame	data/chars/playa/fall04.gif
+
+anim rise
+	loop	0
+	offset	66 29
+	delay	7
+                 	frame	data/chars/playa/rise00.gif
+offset	45 45
+	frame	data/chars/playa/rise01.gif
+offset	45 57
+	frame	data/chars/playa/rise02.gif
+offset	34 78
+	frame	data/chars/playa/rise03.gif
+offset	34 88
+	frame	data/chars/playa/rise04.gif
+
+
+
+
+
+
+
+
+
+
+
+anim attack1
+	range	10 90
+	loop	0
+	delay	5
+	offset	41 107
+	bbox	18 11 33 95
+	frame	data/chars/playa/atk00.gif
+offset	51 114
+	bbox          29 19 37 93	
+	frame	data/chars/playa/atk01.gif
+offset	31 97
+                  bbox          43 8 26 87
+	frame	data/chars/playa/atk02.gif
+offset	30 94
+	attack        60 12 64 41 6	
+	frame	data/chars/playa/atk03.gif
+offset	31 97
+	attack	0 0 0 0 0
+	frame	data/chars/playa/atk04.gif
+offset	32 98
+	frame	data/chars/playa/atk05.gif
+offset	31 102
+	frame	data/chars/playa/atk06.gif
+offset	32 105
+                  bbox          24 16 31 63 
+	frame	data/chars/playa/atk07.gif
+offset	33 105
+	frame	data/chars/playa/atk08.gif
+offset	32 107
+	bbox	22 11 28 87
+	frame	data/chars/playa/2atk00.gif
+offset	36 107
+	bbox	37 17 31 79
+	frame	data/chars/playa/2atk01.gif
+offset	7 111
+	bbox         25 7 27 41	
+	attack	45 22 39 47 6 
+	frame	data/chars/playa/2atk02.gif
+offset	1 110
+	attack	0 0 0 0 0 
+	frame	data/chars/playa/2atk03.gif
+offset	1 106
+	bbox	4 12 27 79
+	frame	data/chars/playa/2atk04.gif
+offset	18 106
+	bbox	9 13 26 81
+	frame	data/chars/playa/2atk05.gif
+offset	56 60
+	bbox	24 6 43 51
+	frame	data/chars/playa/3atk00.gif
+offset	56 53
+	bbox	12 3 50 52
+	frame	data/chars/playa/3atk01.gif
+offset	56 81
+	bbox         22 13 45 57	
+	frame	data/chars/playa/3atk02.gif
+offset	39 131 
+	bbox	2 47 37 71
+	attack	28 0 58 90 7 1
+	frame	data/chars/playa/3atk03.gif
+offset	42 118
+	frame	data/chars/playa/3atk04.gif
+offset	45 99
+	bbox	16 25 25 63
+	frame	data/chars/playa/3atk05.gif
+offset	52 75
+	bbox	25 5 48 47
+	frame	data/chars/playa/3atk06.gif
+offset	37 92
+	bbox	19 12 35 74
+	frame	data/chars/playa/3atk07.gif
+offset	34 95
+	attack	0 0 0 0 0 0
+                  frame	data/chars/playa/3atk08.gif
+
+anim attack2
+jumpframe 1 2
+        range	10  90                   
+	loop	0
+	offset	45 140
+	delay	7
+	bbox	23 18 28 94
+	frame	data/chars/playa/jumpk00.gif
+offset	35 148
+	bbox	19 15 36 64
+	frame	data/chars/playa/jumpk01.gif
+offset	39 142
+	bbox	23 7 42 53
+	frame	data/chars/playa/jumpk02.gif
+offset	40 143
+               	frame	data/chars/playa/jumpk03.gif
+offset	46 151
+                  bbox          8 0 43 80
+                  attack        33 35 55 80 9 1
+	frame	data/chars/playa/jumpk04.gif
+offset	45 149
+                  attack	0 0 0 0 0 0
+	frame	data/chars/playa/jumpk05.gif
+offset	46 148
+                	frame	data/chars/playa/jumpk06.gif
+offset	42 147
+                  bbox          21 11 42 62        
+	frame	data/chars/playa/jumpk07.gif
+
+
+
+
+
+
+
+
+

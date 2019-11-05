@@ -1,0 +1,308 @@
+name	VICE
+health	100
+speed	9
+type	enemy
+shadow	5
+dust    dust
+icon	data/chars/vice/1.gif
+iconpain     data/chars/vice/2.gif
+diesound data/sounds/fnjadie.wav
+aggression 1
+escapehits 3
+gfxshadow 1
+
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map1.gif
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map2.gif
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map3.gif
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map4.gif
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map5.gif
+remap	data/chars/VICE/idle00.gif  data/chars/VICE/map6.gif
+
+
+
+
+anim idle
+	loop	1
+	offset	29 98
+	bbox	0 0 51 104
+	delay	10
+	frame         data/chars/VICE/idle00.gif
+	frame         data/chars/VICE/idle01.gif
+offset	29 99
+	frame         data/chars/VICE/idle02.gif
+offset	29 100
+	frame         data/chars/VICE/idle03.gif
+	frame         data/chars/VICE/idle04.gif
+	frame         data/chars/VICE/idle05.gif
+	frame         data/chars/VICE/idle06.gif
+	frame         data/chars/VICE/idle07.gif
+offset	29 99
+	frame         data/chars/VICE/idle08.gif
+
+anim walk
+	loop	1
+	offset	31 88
+	bbox	6 0 45 90
+	delay	10
+	frame         data/chars/VICE/wk00.gif
+offset        32 87
+                  frame         data/chars/VICE/wk01.gif
+offset       33 86
+                  frame         data/chars/VICE/wk02.gif
+offset        29 84
+                  frame         data/chars/VICE/wk03.gif
+offset       27 83
+                  frame         data/chars/VICE/wk04.gif
+offset        29 83
+                  frame         data/chars/VICE/wk05.gif
+offset        27 84
+                  frame         data/chars/VICE/wk06.gif
+offset       28 85
+                  frame         data/chars/VICE/wk07.gif
+offset        30 86
+                  frame         data/chars/VICE/wk08.gif
+offset        28 88
+                  frame         data/chars/VICE/wk09.gif
+offset        27 89
+                  frame         data/chars/VICE/wk10.gif
+offset        27 89
+                  frame         data/chars/VICE/wk11.gif
+
+anim pain
+	loop	0
+	offset	29 98
+	bbox	0 0 51 103
+	sound       data/sounds/FEMALE.wav
+	delay	5
+	frame         data/chars/VICE/pain1.gif
+offset	35 96
+                  bbox          0 0 56 100
+	frame         data/chars/VICE/pain2.gif
+offset	45 90
+                  bbox        0 0 67 93
+	delay	10
+	frame         data/chars/VICE/pain3.gif
+offset	35 96
+                  bbox          0 0 56 100
+DELAY     5                
+	frame         data/chars/VICE/pain2.gif
+offset	29 98
+	bbox	0 0 51 103
+	frame         data/chars/VICE/pain1.gif
+
+Anim fall
+	loop	0
+	offset	40 93
+	delay	5
+	frame         data/chars/VICE/fall01.gif
+offset	48 76
+DELAY           70
+        ATTACK  2 4 42 25 10 1
+	frame         data/chars/VICE/fall02.gif
+offset	34 102
+DELAY        15
+        ATTACK  0 0 0 0 0 0
+	frame         data/chars/VICE/falL03.gif
+offset	53 22
+DELAY     35
+	frame         data/chars/VICE/fall04.gif
+
+anim rise
+	loop	0
+	offset	44 36
+	delay	10
+                  BBOX     0 0 0 0
+	frame         data/chars/VICE/rise1.gif
+offset	44 51
+	frame         data/chars/VICE/rise2.gif
+offset	41 54
+	frame         data/chars/VICE/rise3.gif
+offset	29 85
+	frame         data/chars/VICE/rise4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim attack1
+jumpframe 17 3    
+	loop	0
+	offset	28 102
+	delay	5
+	bbox	17 9 36 92
+	frame         data/chars/VICE/ATK01.gif
+offset	28 98
+	attack	 33 5 63 34 5
+	frame         data/chars/VICE/ATK02.gif
+offset	28 98
+	frame         data/chars/VICE/ATK03.gif
+offset	28 98
+                  bbox         9 0 51 100
+                  attack	0 0 0 0 0
+	frame         data/chars/VICE/ATK04.gif
+offset	26 97
+	frame         data/chars/VICE/ATK05.gif                    
+offset	26 97
+	frame         data/chars/VICE/ATK06.gif
+offset	26 97
+move    5
+                  attack          38 17 45 27 8
+                   BBOX        26 0 30 91
+	frame         data/chars/VICE/ATK07.gif
+Offset	27 96
+                  attack	 0 0 0 0 0       
+	frame         data/chars/VICE/ATK08.gif
+offset	27 96
+	frame         data/chars/VICE/ATK09.gif
+offset	26 97
+                  frame         data/chars/VICE/ATK10.gif
+offset	31 90
+                  BBOX       7 2 49 87
+                  frame         data/chars/VICE/ATK11.gif
+offset	30 87
+	frame         data/chars/VICE/ATK12.gif
+offset	27 93
+move    3
+                  BBOX       35 7 22 65
+                  attack	43 1 45 66 5
+	frame         data/chars/VICE/ATK13.gif
+offset	28 92
+                  attack	 0 0 0 0 0 
+                  frame         data/chars/VICE/ATK14.gif
+offset	28 92
+                  attack	43 1 45 66 5
+                  frame         data/chars/VICE/ATK15.gif
+offset	28 92
+                  frame         data/chars/VICE/ATK16.gif
+offset	28 95
+                  BBOX        28 8 33 86   
+                  attack	 0 0 0 0 0 
+                  frame         data/chars/VICE/ATK17.gif
+offset	28 120
+                  bbox           8 15 37 69
+	frame         data/chars/VICE/ATK18.gif
+offset	34 121
+                  attack         16 47 95 53 10 1
+                  delay          25
+	frame         data/chars/VICE/ATK19.gif
+offset	36 120
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/VICE/ATK20.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+ANIM ATTACK2
+                  RANGE     80 150 
+                  DELAY       5
+                  LOOP         0 
+                  move          20
+offset	35 69
+	bbox	9 2 60 69
+	frame         data/chars/VICE/ATK201.gif
+offset	47 60
+                  bbox           28 4 62 57
+ 	frame         data/chars/VICE/ATK202.gif
+offset	49 61
+	frame         data/chars/VICE/ATK203.gif
+offset	53 74
+                  bbox           9 2 83 64
+	frame         data/chars/VICE/ATK204.gif
+offset	52 105
+                 delay        10
+	attack	26 0 57 109 15 1
+                  BBOX       0 0 0 0
+	frame         data/chars/VICE/ATK205.gif                    
+offset	49 102
+delay     5
+	frame         data/chars/VICE/ATK206.gif
+offset	44 102
+                  attack	0 0 0 0 0 0
+	frame         data/chars/VICE/ATK207.gif
+Offset	41 96
+	frame         data/chars/VICE/ATK208.gif
+
+
+
+
+
+
+
+anim special2
+	loop	0
+	delay	5
+	offset	28 102
+	frame         data/chars/VICE/ATK01.gif
+        BBOX       7 2 49 87
+offset	30 87
+	frame         data/chars/VICE/ATK12.gif
+offset	27 93
+move    3
+                  BBOX       35 7 22 65
+                  attack	43 1 45 66 5
+	frame         data/chars/VICE/ATK13.gif
+offset	28 92
+                  attack	 0 0 0 0 0 
+                  frame         data/chars/VICE/ATK14.gif
+offset	28 92
+                  attack	43 1 45 66 5 1
+                  frame         data/chars/VICE/ATK15.gif
+offset	28 92
+                  frame         data/chars/VICE/ATK16.gif
+offset	28 95
+                  BBOX        28 8 33 86   
+                  attack	 0 0 0 0 0 0
+                  frame         data/chars/VICE/ATK17.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

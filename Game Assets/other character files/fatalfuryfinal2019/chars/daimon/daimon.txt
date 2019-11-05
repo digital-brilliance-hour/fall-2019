@@ -1,0 +1,759 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Sanchez
+health	136 0 100 1
+mpset 	70 0 50 0
+speed	9
+mp          		70
+mprate				3
+nolife				1
+falldie		1
+type	enemy
+Jmove 0 2
+#shadow	3
+#colourselect 1
+#energycoast 6
+gfxshadow	1
+subject_to_screen 1
+makeinv		3
+dust dusts2 dusts3 dusts
+riseinv		1
+#Wning	30 5 3 1 0
+icon	data/chars/Daimon/icon.gif
+diesound  data/sounds/Die5.wav
+
+parrow	data/chars/misc/1p.gif -30 -125
+parrow2	data/chars/misc/2p.gif -30 -125
+parrow3	data/chars/misc/3p.gif -30 -125
+
+remap	data/chars/Daimon/Idle08.gif data/chars/Daimon/map01.gif
+remap	data/chars/Daimon/Idle08.gif data/chars/Daimon/map02.gif
+remap	data/chars/Daimon/Idle08.gif data/chars/Daimon/map03.gif
+
+#load PowerD
+#load Super
+
+com d f a  freespecial2
+com d f d f a  freespecial3
+com u u freespecial6
+com d d freespecial5
+com a2 freespecial4
+com d f a2  freespecial7
+com d f d f a2  freespecial8
+
+
+
+anim waiting
+      loop	1
+	delay	10
+	offset	0 0
+	fshadow	0
+      frame	data/chars/Daimon/daimon00.gif
+
+
+anim SELECT
+	loop	0
+      delay	10
+	offset	0 0
+	fshadow	0
+	sound	data/chars/Daimon/select.wav
+      frame	data/chars/Daimon/daimon00.gif
+      frame	data/chars/Daimon/daimon01.gif
+      frame	data/chars/Daimon/daimon00.gif
+      frame	data/chars/Daimon/daimon01.gif
+      frame	data/chars/Daimon/daimon00.gif
+      frame	data/chars/Daimon/daimon01.gif
+      frame	data/chars/Daimon/daimon00.gif
+      frame	data/chars/Daimon/daimon01.gif
+      frame	data/chars/Daimon/daimon00.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	37 125
+	bbox	14 10 53 119
+	frame	data/chars/Daimon/idle01.gif
+	frame	data/chars/Daimon/idle02.gif
+	frame	data/chars/Daimon/idle03.gif
+	frame	data/chars/Daimon/idle04.gif
+	frame	data/chars/Daimon/idle05.gif
+	frame	data/chars/Daimon/idle06.gif
+	frame	data/chars/Daimon/idle07.gif
+	frame	data/chars/Daimon/idle08.gif
+	frame	data/chars/Daimon/idle09.gif
+	frame	data/chars/Daimon/idle10.gif
+	frame	data/chars/Daimon/idle11.gif
+	frame	data/chars/Daimon/idle12.gif
+
+anim walk
+	loop	1
+		offset  54  122
+		delay  10
+		bbox  25  3  70  118
+	frame	data/chars/Daimon/W01.gif
+	frame	data/chars/Daimon/W02.gif
+	frame	data/chars/Daimon/W03.gif
+	frame	data/chars/Daimon/W04.gif
+	frame	data/chars/Daimon/W05.gif
+	frame	data/chars/Daimon/W06.gif
+	frame	data/chars/Daimon/W07.gif
+		bbox  30  7  61  115
+	frame	data/chars/Daimon/W08.gif
+
+anim run
+	loop	1
+		offset  68  132
+		move  8
+		bbox  33  13  66  116
+		delay  4
+
+	frame	data/chars/Daimon/r02.gif
+
+	frame  data/chars/Daimon/r02.gif
+	frame	data/chars/Daimon/r03.gif
+	frame  data/chars/Daimon/r03.gif
+	frame	data/chars/Daimon/r04.gif
+	frame  data/chars/Daimon/r04.gif
+	frame	data/chars/Daimon/r05.gif
+	frame  data/chars/Daimon/r05.gif
+	frame	data/chars/Daimon/r06.gif
+	frame  data/chars/Daimon/r06.gif
+	frame	data/chars/Daimon/r07.gif
+	frame  data/chars/Daimon/r07.gif
+
+anim Jump
+	loop	0
+		offset  28  136
+		bbox  20  36  43  68
+	frame	data/chars/Daimon/J02.gif
+		offset  43  120
+		bbox  26  17  46  103
+	frame	data/chars/Daimon/J03.gif
+		offset  44  109
+		bbox  19  18  54  92
+	frame	data/chars/Daimon/J04.gif
+	frame  data/chars/Daimon/J04.gif
+	frame  data/chars/Daimon/J04.gif
+		offset  43  120
+	frame	data/chars/Daimon/J05.gif
+		offset  32  135
+	frame	data/chars/Daimon/J06.gif
+		offset  23  151
+		bbox  23  29  37  111
+	frame	data/chars/Daimon/J07.gif
+	offset	36 141
+	delay	6
+	bbox	30 11 28 130
+	frame	data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+	frame  data/chars/Daimon/J01.gif
+
+anim land
+	loop	0
+	offset	65 132
+	delay	25
+	bbox	47 5 50 128
+	frame	data/chars/Daimon/r01.gif
+
+anim grab
+	loop	0
+	offset	109 137
+	bbox	85 20 52 119
+	delay	1000
+	cancel 	0 			1		0		a2 			freespecial4
+	cancel 	0 	5	0 	d f a  freespecial2
+        cancel 	0 	5	0 	d f d f a  freespecial3
+	cancel 	0 	5	0 	d f d f a2  freespecial8
+        cancel 	0 	5	0 	d f a2  freespecial7
+        cancel 	0 	5	0 	d d  freespecial5
+        cancel 	0 	5	0 	u u  freespecial6
+	sound	data/sounds/grab.wav
+	frame	data/chars/Daimon/t01.gif
+
+
+
+
+anim grabattack
+	loop	0
+	delay	7
+	bbox	16 3 49 132
+		offset  46  139
+	sound	data/chars/Daimon/a2.wav
+	frame	data/chars/Daimon/a101.gif
+	frame	data/chars/Daimon/a102.gif
+		attack1  70  48  73  37  10
+	frame	data/chars/Daimon/a103.gif
+	frame	data/chars/Daimon/a104.gif
+
+
+anim grabattack2
+		loop	0
+		offset  63  128
+	hitflash flash03
+		bbox  25  46  56  86
+	frame	data/chars/Daimon/ra02.gif
+	sound	data/chars/Daimon/a3.wav
+		blast  59  -4  50  131  10
+	frame	data/chars/Daimon/ra03.gif
+		Attack1  0
+	frame	data/chars/Daimon/ra04.gif
+	frame	data/chars/Daimon/ra05.gif
+	frame	data/chars/Daimon/ra06.gif
+
+anim throw
+		offset  103  136
+		bbox  68  31  74  105
+		delay  4
+	frame	data/chars/Daimon/T01.gif
+	frame	data/chars/Daimon/T02.gif
+	frame	data/chars/Daimon/T03.gif
+	frame	data/chars/Daimon/T04.gif
+	frame	data/chars/Daimon/T05.gif
+	frame	data/chars/Daimon/T06.gif
+	frame	data/chars/Daimon/T07.gif
+		delay  4
+	frame	data/chars/Daimon/T08.gif
+	frame	data/chars/Daimon/T09.gif
+	frame	data/chars/Daimon/T10.gif
+	frame	data/chars/Daimon/T11.gif
+	frame	data/chars/Daimon/T12.gif
+	frame	data/chars/Daimon/T13.gif
+	frame	data/chars/Daimon/T14.gif
+	frame	data/chars/Daimon/T15.gif
+	frame	data/chars/Daimon/T16.gif
+	frame	data/chars/Daimon/T17.gif
+	frame	data/chars/Daimon/T18.gif
+
+
+anim attack1
+	loop	0
+	delay	7
+
+	cancel 	0 	5	0 	d f a  freespecial2
+        cancel 	0 	5	0 	d f d f a  freespecial3
+	cancel 	0 	5	0 	d f d f a2  freespecial7
+        cancel 	0 	5	0 	d f a2  freespecial8
+
+	bbox	7 25 40 103
+	offset	52 139
+	sound	data/chars/Daimon/a1.wav
+	frame	data/chars/Daimon/a101.gif
+		bbox  22  13  61  128
+	frame	data/chars/Daimon/a102.gif
+		attack1  80  40  53  51  15
+	frame	data/chars/Daimon/a103.gif
+	frame	data/chars/Daimon/a104.gif
+		Attack1  0
+	frame	data/chars/Daimon/a105.gif
+
+anim attack2
+	loop	0
+	delay	7
+
+	cancel 	0 	5	0 	d f a  freespecial2
+        cancel 	0 	5	0 	d f d f a  freespecial3
+	cancel 	0 	5	0 	d f d f a2  freespecial7
+        cancel 	0 	5	0 	d f a2  freespecial8
+
+	offset	85 126
+	bbox	49 -1 51 129 15
+	sound	data/chars/Daimon/a2.wav
+	frame	data/chars/Daimon/a201.gif
+	frame	data/chars/Daimon/a202.gif
+		attack1  72  16  62  65  15
+	frame	data/chars/Daimon/a203.gif
+		Attack1  0
+	frame	data/chars/Daimon/a204.gif
+	frame	data/chars/Daimon/a205.gif
+
+
+anim attack3
+	loop	0
+	delay	7
+
+	cancel 	0 	5	0 	d f a  freespecial2
+        cancel 	0 	5	0 	d f d f a  freespecial3
+	cancel 	0 	5	0 	d f d f a2  freespecial7
+        cancel 	0 	5	0 	d f a2  freespecial8
+
+	offset	59 140
+	bbox	36 13 50 128 15
+	sound	data/chars/Daimon/a3.wav
+	frame	data/chars/Daimon/a301.gif
+	frame	data/chars/Daimon/a302.gif
+		Attack1  0
+	frame	data/chars/Daimon/a303.gif
+		blast  81  26  60  83  15
+	frame	data/chars/Daimon/a304.gif
+		delay  15
+		blast  81  26  60  83
+	frame	data/chars/Daimon/a305.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Daimon/a306.gif
+	frame	data/chars/Daimon/a307.gif
+	frame	data/chars/Daimon/a308.gif
+
+anim freespecial5
+		offset  66  122
+		delay  6
+		movez  5
+		bbox  31  -1  63  124
+	frame  data/chars/Daimon/roll01.gif
+		bbox  0
+	frame  data/chars/Daimon/roll02.gif
+	frame  data/chars/Daimon/roll03.gif
+	frame  data/chars/Daimon/roll04.gif
+	frame  data/chars/Daimon/roll05.gif
+	frame  data/chars/Daimon/roll06.gif
+		bbox  30  16  68  107
+		movez  0
+	frame  data/chars/Daimon/roll07.gif
+	frame  data/chars/Daimon/roll08.gif
+
+
+anim freespecial6
+		offset  66  122
+		delay  6
+		movez  -5
+		bbox  39  9  52  111
+	frame  data/chars/Daimon/roll01.gif
+		bbox  0
+	frame  data/chars/Daimon/roll02.gif
+	frame  data/chars/Daimon/roll03.gif
+	frame  data/chars/Daimon/roll04.gif
+	frame  data/chars/Daimon/roll05.gif
+	frame  data/chars/Daimon/roll06.gif
+		bbox  23  3  70  103
+		movez  0
+	frame  data/chars/Daimon/roll07.gif
+		bbox  37  -1  61  124
+	frame  data/chars/Daimon/roll08.gif
+
+
+
+anim freespecial4
+	loop	0
+	delay	7
+
+	cancel 	0 	5	0 	d f a  freespecial2
+        cancel 	0 	5	0 	d f d f a  freespecial3
+	cancel 	0 	5	0 	d f d f a2  freespecial7
+        cancel 	0 	5	0 	d f a2  freespecial8
+
+	offset	59 140
+	bbox	36 13 50 128 15
+	hitflash flash03
+	sound	data/chars/Daimon/a3.wav
+	frame	data/chars/Daimon/a301.gif
+	frame	data/chars/Daimon/a302.gif
+		Attack1  0
+	frame	data/chars/Daimon/a303.gif
+		blast  81  26  60  83  15
+	frame	data/chars/Daimon/a304.gif
+		delay  15
+		blast  81  26  60  83
+	frame	data/chars/Daimon/a305.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Daimon/a306.gif
+	frame	data/chars/Daimon/a307.gif
+	frame	data/chars/Daimon/a308.gif
+
+anim pain
+	loop	0
+	offset	32 128
+	bbox	1 0 62 131
+	delay	8
+	frame	data/chars/Daimon/pain01.gif
+	frame	data/chars/Daimon/pain02.gif
+	frame	data/chars/Daimon/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	33 126
+	bbox	5 0 70 128
+	delay	8
+	frame	data/chars/Daimon/painR01.gif
+	frame	data/chars/Daimon/painR02.gif
+		bbox  11  1  62  125
+	frame	data/chars/Daimon/painR01.gif
+
+anim pain3
+	loop	0
+	offset	33 124
+	bbox	7 6 59 120
+	delay	8
+	frame	data/chars/Daimon/painB01.gif
+	frame	data/chars/Daimon/painB02.gif
+	frame	data/chars/Daimon/painB01.gif
+
+
+
+anim fall
+	loop	0
+	offset	47 111
+	attack
+	delay	7
+	landframe 2
+	delay	70
+	frame	data/chars/Daimon/fall01.gif
+		offset  49  82
+		Attack1  0
+	frame	data/chars/Daimon/fall02.gif
+		offset  48  77
+	frame	data/chars/Daimon/fall02.gif
+		offset  43  79
+	frame  data/chars/Daimon/fall02.gif
+		blast  17  10  83  84  5  1
+	frame  data/chars/Daimon/fall02.gif
+	frame  data/chars/Daimon/fall02.gif
+	frame  data/chars/Daimon/fall02.gif
+		offset  53  31
+		Attack1  0
+	frame	data/chars/Daimon/fall03.gif
+
+anim rise
+		offset  108  136
+		delay  5
+        frame	data/chars/Daimon/t16.gif
+        frame	data/chars/Daimon/t17.gif
+        frame	data/chars/Daimon/t18.gif
+        frame	data/chars/Daimon/t19.gif
+
+
+anim Jumpattack
+	loop	0
+		offset  51  100
+		bbox  23  21  47  73
+		delay  8
+	sound	data/chars/Daimon/a2.wav
+        frame	data/chars/Daimon/ja101.gif
+		delay  20
+		Attack1  0
+        frame	data/chars/Daimon/ja102.gif
+		Attack1  55  51  67  64  10
+		delay  8
+        frame	data/chars/Daimon/ja103.gif
+        frame	data/chars/Daimon/ja104.gif
+		Attack1  0
+        frame	data/chars/Daimon/ja105.gif
+        frame	data/chars/Daimon/ja106.gif
+
+anim Jumpattack2
+	sound	data/chars/Daimon/a3.wav
+		offset  81  105
+		bbox  50  19  66  81
+		delay  8
+        frame	data/chars/Daimon/ja201.gif
+		offset  62  106
+		bbox  13  4  96  103
+		Attack1  0
+       frame	data/chars/Daimon/ja202.gif
+		delay  10
+        frame	data/chars/Daimon/ja203.gif
+		blast  62  63  73  59  15
+        frame	data/chars/Daimon/ja204.gif
+        frame	data/chars/Daimon/ja205.gif
+		Attack1  0
+        frame	data/chars/Daimon/ja206.gif
+
+
+anim freespecial3
+
+	  summonframe 5 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 6
+		hitfx  data/sounds/beat3.wav
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  33  160
+		frame	data/chars/Daimon/Fs01.gif
+	frame	data/chars/Daimon/Fs02.gif
+	frame	data/chars/Daimon/Fs03.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs04.gif
+	frame	data/chars/Daimon/Fs05.gif
+	frame	data/chars/Daimon/Fs06.gif
+		attack1  -282  -73  866  394  30  0  0  1  10  100
+	frame	data/chars/Daimon/Fs07.gif
+	sound	data/chars/Daimon/sp02.wav
+	frame	data/chars/Daimon/Fs08.gif
+	frame	data/chars/Daimon/Fs09.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs10.gif
+	frame	data/chars/Daimon/Fs03.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs04.gif
+	frame	data/chars/Daimon/Fs05.gif
+	frame	data/chars/Daimon/Fs06.gif
+		attack1  -323  -55  905  374  30  0  0  1  10  100
+	frame	data/chars/Daimon/Fs07.gif
+	sound	data/chars/Daimon/sp02.wav
+	frame	data/chars/Daimon/Fs08.gif
+	frame	data/chars/Daimon/Fs09.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs10.gif
+	frame	data/chars/Daimon/Fs03.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs04.gif
+	frame	data/chars/Daimon/Fs05.gif
+	frame	data/chars/Daimon/Fs06.gif
+		attack1  -300  -154  834  527  30  0  0  1  10  100
+	frame	data/chars/Daimon/Fs08.gif
+	frame	data/chars/Daimon/Fs09.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs10.gif
+	frame	data/chars/Daimon/Fs03.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs04.gif
+	frame	data/chars/Daimon/Fs05.gif
+	frame	data/chars/Daimon/Fs06.gif
+		attack1  -323  -109  905  424  30  0  0  1  10  100
+	frame	data/chars/Daimon/Fs07.gif
+	sound	data/chars/Daimon/sp02.wav
+	frame	data/chars/Daimon/Fs08.gif
+	frame	data/chars/Daimon/Fs09.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs10.gif
+		offset  81  141
+	frame	data/chars/Daimon/SP01.gif
+	frame	data/chars/Daimon/SP02.gif
+	sound	data/chars/Daimon/sp.wav
+	frame	data/chars/Daimon/SP03.gif
+	frame	data/chars/Daimon/SP04.gif
+	frame	data/chars/Daimon/SP05.gif
+	frame	data/chars/Daimon/SP06.gif
+	frame	data/chars/Daimon/SP07.gif
+		blast  -482  -188  1217  523  35  0  1  50  100
+	frame	data/chars/Daimon/SP08.gif
+	frame	data/chars/Daimon/SP09.gif
+	frame	data/chars/Daimon/SP10.gif
+
+
+anim runattack
+		offset  54  125
+		bbox  4  45  95  79
+                energycost	10
+	        mponly 1
+		delay  4
+		move  0
+	frame  data/chars/Daimon/ra01.gif
+		bbox  39  7  38  125
+		attack1  53  44  52  53  10
+	sound	data/chars/Daimon/Ra.wav
+		move  5
+	frame  data/chars/Daimon/ra02.gif
+		sound  data/chars/Daimon/a3.wav
+		Attack1  0
+	frame  data/chars/Daimon/ra02.gif
+		attack1  64
+		sound  data/chars/Daimon/Ra.wav
+	frame  data/chars/Daimon/ra02.gif
+		sound  data/chars/Daimon/Ra.wav
+		Attack1  0
+	frame  data/chars/Daimon/ra02.gif
+		blast  59  -3  44  128
+		move  0
+		delay  20
+	frame  data/chars/Daimon/ra03.gif
+		delay  8
+	frame  data/chars/Daimon/ra04.gif
+		Attack1  0
+	frame  data/chars/Daimon/ra05.gif
+	frame  data/chars/Daimon/ra06.gif
+
+anim freespecial2
+	loop	0
+	delay	7
+        energycost	10
+	offset	38 161
+	mponly 1
+	bbox	19 29 47 140 15
+
+	sound	data/chars/Daimon/fs.wav
+	frame	data/chars/Daimon/Fs01.gif
+	frame	data/chars/Daimon/Fs02.gif
+	frame	data/chars/Daimon/Fs03.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs04.gif
+	frame	data/chars/Daimon/Fs05.gif
+	frame	data/chars/Daimon/Fs06.gif
+		blast  -204  33  515  143  10  0  1  10  100
+	frame	data/chars/Daimon/Fs07.gif
+	sound	data/chars/Daimon/sp02.wav
+	frame	data/chars/Daimon/Fs08.gif
+	frame	data/chars/Daimon/Fs09.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs10.gif
+	frame	data/chars/Daimon/Fs11.gif
+	frame	data/chars/Daimon/Fs12.gif
+	frame	data/chars/Daimon/Fs13.gif
+
+anim freespecial7
+	loop	0
+		offset  42  132
+		delay  7
+		bbox  18  12  49  121
+	sound	data/chars/Daimon/a2.wav
+	frame	data/chars/Daimon/Fs202.gif
+	frame	data/chars/Daimon/Fs203.gif
+	frame	data/chars/Daimon/Fs204.gif
+		attack1  -1  4  109  39  20
+	frame	data/chars/Daimon/Fs205.gif
+		Attack1  0
+	frame	data/chars/Daimon/Fs207.gif
+		blast  31  5  60  52  15
+	frame	data/chars/Daimon/Fs208.gif
+		offset  42  124
+		Attack1  0
+	sound	data/chars/Daimon/a3.wav
+        frame  data/chars/Daimon/roll01.gif
+		bbox  34  42  53  82
+	frame  data/chars/Daimon/roll02.gif
+		move  10
+	frame  data/chars/Daimon/roll03.gif
+		blast  8  37  91  87  10
+	frame  data/chars/Daimon/roll04.gif
+		Attack1  0
+	frame  data/chars/Daimon/roll05.gif
+		blast  8  37  91  87  10
+	frame  data/chars/Daimon/roll06.gif
+	frame  data/chars/Daimon/roll04.gif
+		Attack1  0
+	frame  data/chars/Daimon/roll05.gif
+		blast  8
+	frame  data/chars/Daimon/roll06.gif
+		bbox  30  16  68  107
+		movez  0
+		Attack1  0
+	frame  data/chars/Daimon/roll07.gif
+	frame  data/chars/Daimon/roll08.gif
+
+anim freespecial8
+
+	  summonframe 5 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 6
+		hitfx  data/sounds/beat3.wav
+		energycost  65
+		loop  0
+		mponly  1
+        custknife Powerd
+	throwframe  8 -5
+		delay  4
+		offset  82  142
+                sound	data/chars/Daimon/fs.wav
+		frame	data/chars/Daimon/sp01.gif
+		frame	data/chars/Daimon/sp02.gif
+		frame	data/chars/Daimon/sp03.gif
+		frame	data/chars/Daimon/sp04.gif
+		frame	data/chars/Daimon/sp05.gif
+		frame	data/chars/Daimon/sp06.gif
+		frame	data/chars/Daimon/sp07.gif
+		frame	data/chars/Daimon/sp08.gif
+                sound	data/chars/Daimon/sp02.wav
+		frame	data/chars/Daimon/sp09.gif
+		frame	data/chars/Daimon/sp10.gif
+		sound  data/chars/Daimon/sp02.wav
+	frame  data/chars/Daimon/sp09.gif
+	frame  data/chars/Daimon/sp08.gif
+	frame  data/chars/Daimon/sp10.gif
+	frame  data/chars/Daimon/sp08.gif
+		sound  data/chars/Daimon/sp02.wav
+	frame  data/chars/Daimon/sp09.gif
+	frame  data/chars/Daimon/sp10.gif
+
+anim death
+	flipframe  3
+
+		offset  105  139
+	sound	data/chars/Daimon/Death.wav
+		delay  10
+	frame	data/chars/Daimon/t18.gif
+	frame	data/chars/Daimon/t17.gif
+	frame	data/chars/Daimon/t16.gif
+		offset  131  139
+	frame	data/chars/Daimon/t13.gif
+	frame	data/chars/Daimon/t14.gif
+
+
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  76  211  146  80
+		drawmethod  350  300  0  0  0  -1  -1
+	frame	data/chars/Daimon/burn1.gif
+	frame	data/chars/Daimon/burn2.gif
+	frame	data/chars/Daimon/burn1.gif
+	frame	data/chars/Daimon/burn2.gif
+	offset	59 33
+		drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Daimon/fall03.gif
+
+anim Fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  94  237  105  47
+		drawmethod  350  300  0  0  0  -1  -1
+	frame	data/chars/Daimon/bburn.gif
+	frame	data/chars/Daimon/burn2.gif
+	frame	data/chars/Daimon/bburn.gif
+	frame	data/chars/Daimon/burn2.gif
+	offset	59 33
+		bbox  7  -1  148  31
+		drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Daimon/fall03.gif
+
+anim shock
+	loop	0
+		offset  32  126
+	frame  data/chars/Daimon/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Daimon/Shok1.gif
+	frame	data/chars/Daimon/Shok2.gif
+		delay  10
+	frame  data/chars/Daimon/Shok1.gif
+	frame  data/chars/Daimon/Shok2.gif
+	offset	75 76
+		bbox  0
+	frame	data/chars/Daimon/fall02.gif
+		offset  57  38
+	frame	data/chars/Daimon/fall03.gif
+
+anim pain4
+	loop	0
+	offset	39 126
+	delay	30
+	bbox  14  1  61  125
+	frame	data/chars/Daimon/pain01.gif
+	frame	data/chars/Daimon/pain02.gif
+	frame	data/chars/Daimon/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+		drawmethod  350  300  0  0  0  -1  -1
+	frame	data/chars/Daimon/burn1.gif
+	frame	data/chars/Daimon/burn2.gif
+	frame	data/chars/Daimon/burn1.gif
+	frame	data/chars/Daimon/burn2.gif
+	offset	64 34
+		drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Daimon/fall03.gif
+

@@ -1,0 +1,757 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Ralf
+health	136 0 100 1
+mpset 	70 0 50 0
+speed	12
+mp          		70
+mprate				3
+nolife				1
+falldie		1
+type	enemy
+Jmove 0 2
+#shadow	3
+#colourselect 1
+#energycoast 6
+gfxshadow	1
+subject_to_screen 1
+makeinv		3
+dust dusts2 dusts3 dusts
+riseinv		1
+#Wning	30 5 3 1 0
+icon	data/chars/Brian/icon.gif
+diesound  data/sounds/Die5.wav
+
+parrow	data/chars/misc/1p.gif -30 -125
+parrow2	data/chars/misc/2p.gif -30 -125
+parrow3	data/chars/misc/3p.gif -30 -125
+
+remap	data/chars/Brian/Idle01.gif data/chars/Brian/map01.gif
+remap	data/chars/Brian/Idle01.gif data/chars/Brian/map02.gif
+remap	data/chars/Brian/Idle01.gif data/chars/Brian/map03.gif
+
+#load Super
+#Load BrianP
+
+com d f a  freespecial2
+com d f d f a  freespecial3
+com a2 freespecial4
+com d f a2  freespecial7
+com d f d f a2  freespecial8
+com u u freespecial6
+com d d freespecial5
+#com a4 freespecial4
+
+
+
+anim waiting
+      loop	1
+	delay	10
+	offset	0 0
+	fshadow	0
+      frame	data/chars/Brian/Brian00.gif
+
+
+
+
+
+anim SELECT
+	loop	0
+      delay	10
+	offset	0 0
+	fshadow	0
+	sound	data/chars/Brian/select.wav
+      frame	data/chars/Brian/Brian01.gif
+      frame	data/chars/Brian/Brian00.gif
+      frame	data/chars/Brian/Brian01.gif
+      frame	data/chars/Brian/Brian00.gif
+      frame	data/chars/Brian/Brian01.gif
+      frame	data/chars/Brian/Brian00.gif
+      frame	data/chars/Brian/Brian01.gif
+      frame	data/chars/Brian/Brian00.gif
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	32 99
+	bbox	8 4 62 98
+	frame	data/chars/Brian/idle01.gif
+	frame	data/chars/Brian/idle02.gif
+	frame	data/chars/Brian/idle03.gif
+	frame	data/chars/Brian/idle04.gif
+	frame	data/chars/Brian/idle05.gif
+	frame	data/chars/Brian/idle06.gif
+	frame	data/chars/Brian/idle07.gif
+	frame	data/chars/Brian/idle08.gif
+	frame	data/chars/Brian/idle09.gif
+	frame	data/chars/Brian/idle10.gif
+	frame	data/chars/Brian/idle11.gif
+	frame	data/chars/Brian/idle12.gif
+	frame	data/chars/Brian/idle13.gif
+	frame	data/chars/Brian/idle14.gif
+	frame	data/chars/Brian/idle15.gif
+
+anim walk
+	loop	1
+		offset  38  121
+		delay  10
+		bbox  30  -2  29  115
+	frame	data/chars/Brian/W01.gif
+	frame	data/chars/Brian/W02.gif
+	frame	data/chars/Brian/W03.gif
+	frame	data/chars/Brian/W04.gif
+	frame	data/chars/Brian/W05.gif
+	frame	data/chars/Brian/W06.gif
+	frame	data/chars/Brian/W07.gif
+	frame	data/chars/Brian/W08.gif
+
+anim run
+	loop	1
+		move  8
+		bbox  33  3  82  69
+		delay  3
+
+		offset  57  109
+	frame  data/chars/Brian/r01.gif
+	frame  data/chars/Brian/r01.gif
+	frame  data/chars/Brian/r02.gif
+	frame  data/chars/Brian/r02.gif
+	frame  data/chars/Brian/r03.gif
+	frame  data/chars/Brian/r03.gif
+	frame	data/chars/Brian/r04.gif
+	frame  data/chars/Brian/r04.gif
+	frame	data/chars/Brian/r05.gif
+	frame  data/chars/Brian/r05.gif
+	frame	data/chars/Brian/r06.gif
+	frame  data/chars/Brian/r06.gif
+	frame	data/chars/Brian/r07.gif
+	frame  data/chars/Brian/r07.gif
+	frame	data/chars/Brian/r08.gif
+	frame  data/chars/Brian/r08.gif
+
+anim Jump
+	loop	0
+		offset  49  135
+		bbox  32  -1  54  103
+		delay  3
+	frame	data/chars/Brian/J01.gif
+	frame  data/chars/Brian/J02.gif
+	frame  data/chars/Brian/J03.gif
+	frame  data/chars/Brian/J04.gif
+	frame  data/chars/Brian/J05.gif
+	frame  data/chars/Brian/J06.gif
+	frame  data/chars/Brian/J07.gif
+	frame  data/chars/Brian/J08.gif
+
+
+
+
+anim land
+	loop	0
+	offset	56 109
+	delay	25
+	bbox	45 5 75 66
+	frame	data/chars/Brian/r01.gif
+
+anim grab
+	loop	0
+	offset	40 123
+	bbox	18 10 49 109
+	delay	1000
+	cancel 	0 			1 	0 	a2 		freespecial4
+	cancel 	0 	1	0 	d f a  freespecial2
+        cancel 	0 	1	0 	d f d f a  freespecial3
+	cancel 	0 	1	0 	d f d f a2  freespecial8
+        cancel 	0 	1	0 	d f a2  freespecial7
+        cancel 	0 	1	0 	d d  freespecial5
+        cancel 	0 	1	0 	u u  freespecial6
+	sound	data/sounds/grab.wav
+		Attack1  0
+	frame	data/chars/Brian/ga102.gif
+
+anim throw
+	loop	0
+	offset	72 147
+	delay	5
+		bbox  50  63  49  85
+	frame	data/chars/Brian/T01.gif
+	frame	data/chars/Brian/T02.gif
+	frame	data/chars/Brian/T03.gif
+	frame	data/chars/Brian/T04.gif
+	frame	data/chars/Brian/T05.gif
+	frame	data/chars/Brian/T06.gif
+
+anim grabattack
+	loop	0
+		offset  40  123
+		bbox  39  1  26  117
+		delay  7
+	sound	data/chars/Brian/a1.wav
+	frame	data/chars/Brian/Ga101.gif
+	frame	data/chars/Brian/Ga102.gif
+		attack1  48  36  49  57  10
+	frame	data/chars/Brian/Ga103.gif
+	frame	data/chars/Brian/Ga104.gif
+		Attack1  0
+	frame  data/chars/Brian/Ga105.gif
+	frame	data/chars/Brian/Ga106.gif
+
+anim grabattack2
+		loop	0
+	delay	5
+	offset	40 123
+	bbox	25 12 55 96 15
+	hitflash flash03
+	sound	data/chars/Brian/a3.wav
+		move  0
+	frame	data/chars/Brian/ga201.gif
+	frame	data/chars/Brian/ga202.gif
+		blast  75  26  75  87  15
+	frame	data/chars/Brian/ga203.gif
+	frame	data/chars/Brian/ga204.gif
+	frame	data/chars/Brian/ga205.gif
+		Attack1  0
+	frame	data/chars/Brian/ga206.gif
+	frame	data/chars/Brian/ga207.gif
+	frame	data/chars/Brian/ga208.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	4
+	bbox	5 13 45 104
+	offset	31 116
+	sound	data/chars/Brian/a1.wav
+	frame	data/chars/Brian/a101.gif
+		Attack1  0
+	frame  data/chars/Brian/a102.gif
+		delay  4
+		attack1  57  11  71  26  10
+	frame	data/chars/Brian/a103.gif
+	frame	data/chars/Brian/a104.gif
+		Attack1  0
+	frame	data/chars/Brian/a105.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	83 124
+	bbox	67 19 44 105 15
+	sound	data/chars/Brian/a2.wav
+		Attack1  0
+	frame	data/chars/Brian/a201.gif
+	frame	data/chars/Brian/a202.gif
+		Attack1  0
+	frame	data/chars/Brian/a203.gif
+		attack1  78  28  83  46  10
+	frame	data/chars/Brian/a204.gif
+	frame	data/chars/Brian/a205.gif
+		Attack1  0
+	frame	data/chars/Brian/a206.gif
+	frame	data/chars/Brian/a207.gif
+
+
+anim attack3
+	loop	0
+	delay	5
+	offset	66 108
+	hitflash flash03
+	bbox	35 9 47 100 15
+	sound	data/chars/Brian/a3.wav
+	frame	data/chars/Brian/a301.gif
+	frame	data/chars/Brian/a302.gif
+		Attack1  0
+	frame	data/chars/Brian/a303.gif
+		blast  49  -5  76  104  15
+	frame	data/chars/Brian/a304.gif
+		delay  5
+	frame	data/chars/Brian/a305.gif
+	frame	data/chars/Brian/a306.gif
+	frame	data/chars/Brian/a307.gif
+
+
+
+
+
+anim freespecial4
+	loop	0
+	delay	4
+	offset	66 110
+	hitflash flash03
+	bbox	35 3 48 107 15
+	sound	data/chars/Brian/a3.wav
+	frame	data/chars/Brian/a301.gif
+	frame	data/chars/Brian/a302.gif
+		Attack1  0
+	frame	data/chars/Brian/a303.gif
+		blast  61  9  56  101  15
+	frame	data/chars/Brian/a304.gif
+		delay  4
+	frame	data/chars/Brian/a305.gif
+		Attack1  0
+	frame	data/chars/Brian/a306.gif
+	frame	data/chars/Brian/a307.gif
+
+
+anim freespecial5
+		offset  64  96
+		delay  5
+		movez  5
+		bbox  44  2  41  109
+	frame  data/chars/Brian/roll01.gif
+		bbox  0
+	frame  data/chars/Brian/roll02.gif
+	frame  data/chars/Brian/roll03.gif
+	frame  data/chars/Brian/roll04.gif
+	frame  data/chars/Brian/roll05.gif
+	frame  data/chars/Brian/roll06.gif
+		bbox  31  10  47  79
+		movez  0
+	frame  data/chars/Brian/roll07.gif
+	frame  data/chars/Brian/roll08.gif
+
+
+anim freespecial6
+		offset  53  96
+		delay  5
+		movez  -5
+		bbox  24  11  82  82
+	frame  data/chars/Brian/roll01.gif
+		bbox  0
+	frame  data/chars/Brian/roll02.gif
+	frame  data/chars/Brian/roll03.gif
+	frame  data/chars/Brian/roll04.gif
+	frame  data/chars/Brian/roll05.gif
+	frame  data/chars/Brian/roll06.gif
+		bbox  29  9  52  82
+		movez  0
+	frame  data/chars/Brian/roll07.gif
+	frame  data/chars/Brian/roll08.gif
+
+anim pain
+	loop	0
+	offset	47 118
+	bbox	20 -1 53 115
+	delay	8
+	frame	data/chars/Brian/pain01.gif
+	frame	data/chars/Brian/pain02.gif
+	frame	data/chars/Brian/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	48 117
+	bbox	20 7 51 98
+	delay	8
+	frame	data/chars/Brian/painR01.gif
+	frame	data/chars/Brian/painR02.gif
+	frame	data/chars/Brian/painR01.gif
+
+anim pain3
+	loop	0
+	offset	49 118
+	bbox	28 7 47 111
+	delay	8
+	frame	data/chars/Brian/painB01.gif
+	frame	data/chars/Brian/painB02.gif
+	frame	data/chars/Brian/painB01.gif
+
+
+
+anim fall
+	loop	0
+	offset	33 89
+	attack
+	delay	7
+	landframe 2
+	delay	70
+	frame	data/chars/Brian/fall01.gif
+		Attack1  0
+		offset  48  80
+	frame	data/chars/Brian/fall02.gif
+	frame	data/chars/Brian/fall02.gif
+	frame  data/chars/Brian/fall02.gif
+		blast  2  52  96  54  5  1
+	frame  data/chars/Brian/fall02.gif
+	frame  data/chars/Brian/fall02.gif
+	frame  data/chars/Brian/fall02.gif
+		offset  54  46
+		Attack1  0
+	frame	data/chars/Brian/fall03.gif
+
+anim rise
+		offset  53  94
+		delay  7
+        frame	data/chars/Brian/rise01.gif
+        frame	data/chars/Brian/rise02.gif
+        frame	data/chars/Brian/rise03.gif
+        frame	data/chars/Brian/rise04.gif
+        frame	data/chars/Brian/rise05.gif
+
+
+anim Jumpattack
+	loop	0
+		offset  46  97
+		bbox  13  -2  41  92
+		delay  4
+	sound	data/chars/Brian/a1.wav
+        frame	data/chars/Brian/ja101.gif
+		Attack1  0
+        frame	data/chars/Brian/ja102.gif
+		delay  5
+		blast  44  31  77  47  10
+        frame	data/chars/Brian/ja103.gif
+        frame	data/chars/Brian/ja104.gif
+
+anim Jumpattack2
+	sound	data/chars/Brian/a3.wav
+		offset  68  91
+		bbox  55  3  45  89
+		delay  7
+        frame	data/chars/Brian/ja201.gif
+		blast  73  12  95  84  15
+       frame	data/chars/Brian/ja202.gif
+		delay  7
+        frame	data/chars/Brian/ja203.gif
+        frame	data/chars/Brian/ja204.gif
+
+
+anim freespecial3
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+         delay	5
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  74  112
+	frame  data/chars/Brian/fs101.gif
+	frame  data/chars/Brian/fs102.gif
+	frame  data/chars/Brian/fs103.gif
+	sound	data/chars/Brian/sp01.wav
+	frame  data/chars/Brian/fs104.gif
+	frame  data/chars/Brian/fs105.gif
+	frame  data/chars/Brian/fs106.gif
+	frame  data/chars/Brian/fs107.gif
+		offset  68  106
+		attack2  45  13  74  94  10  0  0  0  0  100
+		move  10
+		delay  3
+	frame  data/chars/Brian/SP101.gif
+		Attack1  0
+	frame  data/chars/Brian/SP102.gif
+		attack1  45  13  74  94  20  11  0  0  0  100
+	frame  data/chars/Brian/SP103.gif
+		Attack1  0  0  0  0
+	frame  data/chars/Brian/SP104.gif
+		attack2  45  13  74  94  10  0  0  0  0  100
+	frame  data/chars/Brian/SP101.gif
+		Attack1  0
+	frame  data/chars/Brian/SP102.gif
+		attack2  45  13  74  94  20  11  0  0  0  100
+	frame  data/chars/Brian/SP103.gif
+		Attack1  0
+	frame  data/chars/Brian/SP104.gif
+		attack2  45  13  74  94  10  0  0  0  0  100
+	frame  data/chars/Brian/SP101.gif
+		Attack1  0
+	frame  data/chars/Brian/SP102.gif
+		attack2  45  13  74  94  20  11  0  0  0  100
+	frame  data/chars/Brian/SP103.gif
+		Attack1  0
+	frame  data/chars/Brian/SP104.gif
+		attack2  45  13  74  94  10  0  0  0  0  100
+	frame  data/chars/Brian/SP101.gif
+		Attack1  0
+	frame  data/chars/Brian/SP102.gif
+		attack2  45  13  74  94  300  11  0  0  10  100
+	frame  data/chars/Brian/SP103.gif
+		Attack1  0
+	frame  data/chars/Brian/SP104.gif
+		offset  68  114
+		delay  7
+	frame  data/chars/Brian/fs110.gif
+		attack2  45
+	frame  data/chars/Brian/fs111.gif
+
+
+anim freespecial8
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+        energycost  65
+	mponly 1
+		movea  0
+		offset  75  111
+		move  0
+		delay  5
+		Attack1  0
+	frame  data/chars/Brian/SP201.gif
+	frame  data/chars/Brian/SP202.gif
+		sound  data/chars/Brian/sp02.wav
+		offset  50  102
+	frame  data/chars/Brian/j07.gif
+		offset  52  143
+		movea  20
+		blast  17  7  72  142  20  0  0  0  30
+		move  0
+		delay  3
+	frame  data/chars/Brian/SP204.gif
+	frame  data/chars/Brian/SP205.gif
+	frame  data/chars/Brian/SP206.gif
+	frame  data/chars/Brian/SP207.gif
+	frame  data/chars/Brian/SP208.gif
+	frame  data/chars/Brian/SP209.gif
+	frame  data/chars/Brian/SP210.gif
+	frame  data/chars/Brian/SP204.gif
+	frame  data/chars/Brian/SP205.gif
+	frame  data/chars/Brian/SP206.gif
+	frame  data/chars/Brian/SP207.gif
+	frame  data/chars/Brian/SP208.gif
+	frame  data/chars/Brian/SP209.gif
+	frame  data/chars/Brian/SP210.gif
+		offset  77  72
+		move  0
+		movea  0
+		Attack1  0
+	frame  data/chars/Brian/SP203.gif
+	frame  data/chars/Brian/SP203.gif
+	frame  data/chars/Brian/SP203.gif
+		offset  93  138
+		move  0
+		movea  -10
+		delay  2
+		Attack1  0
+	sound	data/chars/Brian/sp03.wav
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+        frame  data/chars/Brian/SP301.gif
+	frame  data/chars/Brian/SP302.gif
+	frame  data/chars/Brian/SP303.gif
+	frame  data/chars/Brian/SP304.gif
+		movea  -10
+	frame  data/chars/Brian/SP302.gif
+		movea  0
+	frame  data/chars/Brian/SP301.gif
+		offset  95  115
+		delay  5
+		Attack1  0
+	frame  data/chars/Brian/SP305.gif
+		blast  -25  63  247  65  50  0  0  30  60
+	frame  data/chars/Brian/SP306.gif
+	frame  data/chars/Brian/SP307.gif
+	frame  data/chars/Brian/SP308.gif
+	frame  data/chars/Brian/SP309.gif
+	frame  data/chars/Brian/SP310.gif
+	frame  data/chars/Brian/SP311.gif
+	frame  data/chars/Brian/SP312.gif
+	frame  data/chars/Brian/SP313.gif
+	frame  data/chars/Brian/SP314.gif
+	frame  data/chars/Brian/SP315.gif
+
+
+
+
+anim runattack
+		offset  39  125
+		bbox  6  41  66  84
+                energycost	10
+	        mponly 1
+		delay  5
+	sound	data/chars/Brian/ra.wav
+	frame  data/chars/Brian/ra101.gif
+		blast  28  56  60  59  10
+	frame  data/chars/Brian/ra102.gif
+		move  10
+		delay  3
+		Attack1  0
+		movea  5
+	frame  data/chars/Brian/ra103.gif
+		blast  37  8  66  63  10
+	frame  data/chars/Brian/ra104.gif
+		move  7
+		Attack1  0
+	frame  data/chars/Brian/ra105.gif
+		blast  23  2  78  112  10
+	frame  data/chars/Brian/ra106.gif
+		Attack1  0
+	frame  data/chars/Brian/ra106.gif
+		blast  31  0  68  110  10
+	frame  data/chars/Brian/ra106.gif
+		movea  0
+		move  0
+		offset  57  95
+		bbox  27  15  63  72
+	frame  data/chars/Brian/j06.gif
+
+
+
+anim freespecial2
+	loop	0
+	delay	5
+        energycost	10
+	offset	76 112
+	mponly 1
+	bbox	54 3 41 109 15
+
+	sound	data/chars/Brian/fs01.wav
+	frame  data/chars/Brian/fs101.gif
+	frame  data/chars/Brian/fs102.gif
+	frame  data/chars/Brian/fs103.gif
+	frame  data/chars/Brian/fs104.gif
+	frame  data/chars/Brian/fs105.gif
+	frame  data/chars/Brian/fs106.gif
+	frame  data/chars/Brian/fs107.gif
+		blast  80  24  58  71  20  0  0  10  20
+		move  10
+	frame  data/chars/Brian/fs108.gif
+	frame  data/chars/Brian/fs109.gif
+	frame  data/chars/Brian/fs109.gif
+	frame  data/chars/Brian/fs109.gif
+	frame  data/chars/Brian/fs109.gif
+	frame  data/chars/Brian/fs109.gif
+	frame  data/chars/Brian/fs110.gif
+		Attack1  0
+	frame  data/chars/Brian/fs111.gif
+
+
+anim freespecial7
+	loop	0
+	delay	5
+        custknife BrianP
+	throwframe  6
+        energycost	10
+	offset	59 120
+	mponly 1
+	bbox	42 14 36 107 15
+	hitflash flash03
+	sound	data/chars/Brian/fs02.wav
+		Attack1  0
+	frame  data/chars/Brian/fs201.gif
+	frame  data/chars/Brian/fs202.gif
+	frame  data/chars/Brian/fs203.gif
+	frame  data/chars/Brian/fs204.gif
+	frame  data/chars/Brian/fs205.gif
+	frame  data/chars/Brian/fs206.gif
+		Attack1  0
+	frame  data/chars/Brian/fs207.gif
+	frame  data/chars/Brian/fs208.gif
+	frame  data/chars/Brian/fs208.gif
+	frame  data/chars/Brian/fs208.gif
+		Attack1  0
+	frame  data/chars/Brian/fs209.gif
+
+
+
+
+anim death
+
+		offset  59  95
+	sound	data/chars/Brian/Death.wav
+		delay  8
+	frame	data/chars/Brian/fall02.gif
+		offset  51  48
+	frame	data/chars/Brian/fall03.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  235  131  52
+	frame	data/chars/Brian/burn1.gif
+	frame	data/chars/Brian/burn2.gif
+	frame	data/chars/Brian/burn1.gif
+	frame	data/chars/Brian/burn2.gif
+	offset	60 48
+		bbox  104  176  108  35
+	frame	data/chars/Brian/fall03.gif
+
+anim Fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  227  107  64
+	frame	data/chars/Brian/bburn.gif
+	frame	data/chars/Brian/burn2.gif
+	frame	data/chars/Brian/bburn.gif
+	frame	data/chars/Brian/burn2.gif
+	offset	56 46
+		bbox  98  181  124  33
+	frame	data/chars/Brian/fall03.gif
+
+anim shock
+	loop	0
+		offset  47  116
+	frame  data/chars/Brian/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Brian/Shok1.gif
+	frame	data/chars/Brian/Shok2.gif
+		delay  10
+	frame  data/chars/Brian/Shok1.gif
+	frame  data/chars/Brian/Shok2.gif
+	offset	61 90
+		bbox  0
+	frame	data/chars/Brian/fall02.gif
+		offset  42  47
+	frame	data/chars/Brian/fall03.gif
+
+anim pain4
+	loop	0
+	offset	50 117
+	delay	30
+	bbox  24  3  46  114
+	frame	data/chars/Brian/pain01.gif
+	frame	data/chars/Brian/pain02.gif
+	frame	data/chars/Brian/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Brian/burn1.gif
+	frame	data/chars/Brian/burn2.gif
+	frame	data/chars/Brian/burn1.gif
+	frame	data/chars/Brian/burn2.gif
+	offset	63 49
+		bbox  100  176  117  38
+	frame	data/chars/Brian/fall03.gif
+

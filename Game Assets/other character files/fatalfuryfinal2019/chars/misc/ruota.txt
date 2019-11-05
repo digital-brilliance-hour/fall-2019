@@ -1,0 +1,32 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	ruota
+health	1
+type	trap
+shadow	0
+icon	data/chars/misc/ruota3.gif
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	23 120
+	bbox	8 30 40 90
+move 15
+	attack	11 50 41 41 10 1
+	frame	data/chars/misc/ruota5.gif
+	frame	data/chars/misc/ruota7.gif
+	frame	data/chars/misc/ruota1.gif
+	frame	data/chars/misc/ruota6.gif
+	
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	23 120
+	frame	data/chars/misc/ruota2.gif
+
+

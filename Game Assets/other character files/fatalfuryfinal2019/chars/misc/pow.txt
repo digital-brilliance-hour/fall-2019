@@ -1,0 +1,36 @@
+name	 pow
+health	0
+type     item
+subtype  weapon
+typeshot 0
+counter  1
+weapnum  1
+nolife   1
+shootnum  20
+facing 1
+gfxshadow 1
+
+anim spawn
+	sound	data/sounds/jump.wav
+	loop	0
+	delay	20
+	offset	92 177
+	bbox	81 157 37 25
+	jumpframe	data/chars/misc/pow1.gif 4 0 0
+        delay 10
+	frame	data/chars/misc/pow2.gif 4 0 0
+        delay 20
+	frame	data/chars/misc/pow1.gif 4 0 0
+
+anim idle
+	loop	1
+	delay	20
+	offset	92 177
+	bbox	81 157 37 25
+	frame	data/chars/misc/pow1.gif
+        delay 10
+	frame	data/chars/misc/pow2.gif
+        delay 20
+	frame	data/chars/misc/pow1.gif
+
+

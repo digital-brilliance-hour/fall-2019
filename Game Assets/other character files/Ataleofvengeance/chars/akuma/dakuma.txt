@@ -1,0 +1,464 @@
+name	DEVIL_AKUMA
+health	3000
+speed	15
+type	enemy
+shadow	5
+dust    dust
+blockodds   1
+diesound data/sounds/kendie.wav
+icon	 data/chars/akuma/6.gif
+iconpain	 data/chars/akuma/3.gif
+aggression 15
+nopassiveblock 1
+gfxshadow 1
+
+remap	data/chars/akuma/idle00.gif  data/chars/akuma/map1.gif
+remap	data/chars/akuma/idle00.gif  data/chars/akuma/map2.gif
+remap	data/chars/akuma/idle00.gif  data/chars/akuma/map3.gif
+
+
+
+
+load knife
+
+
+
+anim idle
+	loop	1
+	offset	27 106
+	bbox	8 14 36 75
+	delay	12
+	frame         data/chars/akuma/idle04.gif
+offset	27 106
+	frame         data/chars/akuma/idle05.gif
+offset	28 108
+	frame         data/chars/akuma/idle06.gif
+offset	27 106
+	frame         data/chars/akuma/idle07.gif
+offset	28 108
+	frame         data/chars/akuma/idle06.gif
+offset	27 106
+	frame        data/chars/akuma/idle05.gif
+
+
+
+anim walk
+	loop	1
+	offset	29 113
+	bbox	17 15 37 91
+	delay	8
+	frame         data/chars/akuma/wk00.gif
+offset       15 112
+bbox          4 14 40 77
+                  frame         data/chars/akuma/wk01.gif
+offset       15 112
+                  frame         data/chars/akuma/wk02.gif
+offset       16 110
+                  frame         data/chars/akuma/wk03.gif
+	bbox	17 15 37 91
+offset        22 111
+                  frame          data/chars/akuma/wk04.gif
+
+
+
+anim pain
+	loop	0
+	offset	27 109
+	bbox	7 12 41 80
+	sound       data/sounds/kenPAIN.wav
+	delay	10
+	frame         data/chars/akuma/pain1.gif
+offset	40 110
+                  bbox         5 13 57 86
+	frame         data/chars/akuma/pain2.gif
+offset	49 107
+                  bbox          4 11 67 89
+	frame         data/chars/akuma/pain3.gif
+offset	40 110
+                  bbox          5 13 57 86
+	frame         data/chars/akuma/pain2.gif
+
+
+
+
+anim fall
+	loop	0
+	offset	37 83
+	delay	5
+	frame         data/chars/akuma/fall1.gif
+offset	34 80
+DELAY           70
+                  attack         6 9 43 26 10 1
+	frame         data/chars/akuma/fall2.gif
+offset	41 108
+DELAY        15
+                  attack        0 0 0 0 0 0
+	frame         data/chars/akuma/fall3.gif
+offset	44 40
+DELAY     35
+	frame         data/chars/akuma/fall4.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	38 56
+	delay	6
+	frame         data/chars/akuma/rise1.gif
+offset	28 77
+	frame         data/chars/akuma/rise2.gif
+offset	33 117
+	frame         data/chars/akuma/rise3.gif
+offset	43 96
+	frame         data/chars/akuma/rise4.gif
+offset	35 70
+	frame         data/chars/akuma/rise5.gif
+
+
+
+
+
+
+
+
+
+
+
+	
+
+anim riseattack 
+                   range    0 100
+                   DELAY   5
+                   MOVE     7
+                  offset	36 69
+	sound        data/sounds/kenrise.wav
+	frame         data/chars/akuma/risatk1.gif
+offset	28 77
+	frame         data/chars/akuma/risatk2.gif
+offset	25 69
+                  attack         32 35 82 38 20 1
+	frame         data/chars/akuma/risatk3.gif
+offset	11 70
+	frame         data/chars/akuma/risatk4.gif
+offset	15 68
+                  attack        0 0 0 0 0 0         
+	frame         data/chars/akuma/risatk5.gif
+offset	31 73
+ 	frame         data/chars/akuma/risatk6.gif
+offset	30 75
+	frame         data/chars/akuma/risatk7.gif
+offset	24 75
+	frame         data/chars/akuma/risatk8.gif
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	26 105
+	frame         data/chars/akuma/block1.gif
+offset	33 108
+                  frame         data/chars/akuma/block2.gif   
+offset	33 106
+                  frame         data/chars/akuma/block3.gif   
+offset	26 105
+	frame         data/chars/akuma/block1.gif
+move         -25
+offset	36 107
+                  frame         data/chars/akuma/block4.gif   
+offset	42 103
+                  frame         data/chars/akuma/block5.gif   
+offset	36 107
+                  frame         data/chars/akuma/block4.gif   
+
+
+
+
+
+anim UPPER
+jumpframe 0 3
+	loop	 0
+	offset         26 93
+	delay	 5
+                  sound         data/sounds/kenuper.wav
+	hitfx            data/sounds/hk.wav
+                  frame         data/chars/akuma/upper00.gif
+offset        23 106
+                  frame         data/chars/akuma/upper01.gif
+offset	10 128
+                  attack          17 0 34 110 20 1 
+delay         30
+                   frame         data/chars/akuma/upper02.gif
+offset	5 124
+delay         5
+                  frame         data/chars/akuma/upper03.gif
+offset	6 125
+                  frame         data/chars/akuma/upper04.gif
+offset	16 124
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/akuma/upper05.gif
+offset	27 108
+                  frame         data/chars/akuma/upper06.gif
+
+
+anim attack1
+jumpframe 34 3
+	loop	0
+	offset	27 108
+	delay	3
+	bbox	14 15 37 82
+                  sound         data/sounds/kenatk.wav    
+	hitfx           data/sounds/fast.wav
+	frame         data/chars/akuma/ATK01.gif
+offset	27 105
+bbox          29 14 28 73
+	frame         data/chars/akuma/ATK02.gif
+offset	25 110
+bbox         21 19 28 39 
+	frame         data/chars/akuma/ATK03.gif
+offset	25 108
+                  attack         39 18 59 47 10
+	frame         data/chars/akuma/ATK04.gif
+offset	25 110
+	frame         data/chars/akuma/ATK03.gif
+offset	27 105
+bbox          29 14 28 73         
+	frame         data/chars/akuma/ATK02.gif
+                  attack         0 0 0 0 0
+offset	27 108
+bbox	14 15 37 82
+	frame         data/chars/akuma/ATK01.gif
+offset	26 99
+bbox          19 13 35 68 
+                  frame         data/chars/akuma/ATK05.gif                    
+offset	30 91
+bbox         34 13 30 41
+                  attack         56 16 60 42 10
+	frame         data/chars/akuma/ATK06.gif
+offset	30 94
+	frame         data/chars/akuma/ATK07.gif
+offset	31 95
+                  attack        0 0 0 0 0
+	frame         data/chars/akuma/ATK08.gif
+offset	29 101
+bbox         18 20 40 48
+	frame         data/chars/akuma/ATK09.gif
+offset          32 131
+                 sound        data/sounds/kenatk.wav
+                 hitfx            data/sounds/fast.wav
+                 frame         data/chars/akuma/spec01.gif
+offset       35 136
+                 frame         data/chars/akuma/spec02.gif
+offset       13 140
+                 frame         data/chars/akuma/spec03.gif            
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 bbox           0 0 0 0
+                 attack         14 40 67 75 5   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 5     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 attack        0 0 0 0 0 
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 attack         14 40 67 75 5   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 5     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 attack        0 0 0 0 0 
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 attack         14 40 67 75 5   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 5     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 124 
+attack       0 0 0 0 0   
+                 frame         data/chars/akuma/spec09.gif
+offset       10 113   
+                 frame         data/chars/akuma/spec10.gif
+offset       32 113  
+                 attack        45 0 59 84 10  
+                 frame         data/chars/akuma/spec11.gif
+offset	26 93
+	delay	6
+attack       0 0 0 0 0   
+                  sound        data/sounds/kenuper.wav
+                   frame         data/chars/akuma/upper00.gif
+offset         23 106
+                  frame         data/chars/akuma/upper01.gif
+offset	10 128
+                  attack          17 0 34 110 20 1         
+delay         30
+                   frame         data/chars/akuma/upper02.gif
+offset	5 124
+delay         5
+                  frame         data/chars/akuma/upper03.gif
+offset	6 125
+                  frame         data/chars/akuma/upper04.gif
+offset	16 124
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/akuma/upper05.gif
+offset	27 108
+                  frame         data/chars/akuma/upper06.gif
+
+
+
+
+
+anim attack2
+                  range         70 120
+                  loop            0
+                  sound          data/sounds/kenrise.wav  
+                  delay           3
+                  bbox            
+offset	26 99
+bbox          19 13 35 68 
+                  frame         data/chars/akuma/ATK05.gif                    
+offset	30 91
+bbox         34 13 30 41
+	frame         data/chars/akuma/ATK06.gif
+offset	30 94
+                  move         25
+	frame         data/chars/akuma/ATK07.gif
+bbox        0 0 0 0
+offset        78 94
+                  attack         65 17 99 65 15 1
+                  frame         data/chars/akuma/shadow1.gif
+                  attack        0 0 0 0 0 0   
+                  frame         data/chars/akuma/shadow2.gif
+                  attack         31 13 133 58 15 1
+                  frame         data/chars/akuma/shadow3.gif
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/akuma/shadow3.gif
+                  attack         31 13 133 58 15 1
+                  frame         data/chars/akuma/shadow3.gif
+offset	31 95
+                  attack        0 0 0 0 0 0
+	frame         data/chars/akuma/ATK08.gif
+offset	29 101
+bbox         18 20 40 48
+	frame         data/chars/akuma/ATK09.gif
+
+
+
+
+
+anim attack3
+                  RANGE    80 150
+	loop	0
+                  throwframe 3 
+                  delay	8
+	sound       data/sounds/kenshoot.wav
+	hitfx           data/sounds/fast.wav
+offset	26 108
+                  bbox          9 17 37 54  
+	frame         data/chars/akuma/shoot01.gif
+offset	24 100
+	frame         data/chars/akuma/shoot02.gif
+offset	24 96
+bbox       0 0 0 0
+	frame         data/chars/akuma/shoot03.gif
+offset	26 97
+	frame         data/chars/akuma/shoot04.gif
+offset	25 100
+	frame         data/chars/akuma/shoot05.gif
+offset	26 108
+                  bbox          9 17 37 54  
+     	frame         data/chars/akuma/shoot01.gif
+
+
+
+anim special
+                 delay         4
+                 loop            0
+                 offset          32 131
+                 sound        data/sounds/kenatk.wav
+                 hitfx            data/sounds/fast.wav
+                 frame         data/chars/akuma/spec01.gif
+offset       35 136
+                 frame         data/chars/akuma/spec02.gif
+offset       13 140
+                 frame         data/chars/akuma/spec03.gif            
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 attack         14 40 67 75 10   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 10     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 attack        0 0 0 0 0 
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 attack         14 40 67 75 10   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 10     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 143
+                 frame         data/chars/akuma/spec04.gif
+offset        13 142  
+                 attack        0 0 0 0 0 
+                 frame         data/chars/akuma/spec05.gif
+offset       19 144
+                 attack         14 40 67 75 10 1   
+                 frame         data/chars/akuma/spec06.gif
+offset       32 143    
+                attack          0 0 0 0 0 0
+                 frame         data/chars/akuma/spec07.gif
+offset       47 146
+                 attack         0 42 56 74 10 1     
+                 frame         data/chars/akuma/spec08.gif
+offset       12 124 
+                 frame         data/chars/akuma/spec09.gif
+offset       10 113   
+                 frame         data/chars/akuma/spec10.gif
+offset       32 113  
+                 attack         0 0 0 0 0 0  
+                 frame         data/chars/akuma/spec11.gif
+
+
+
+
+
+
+
+
+
+
+

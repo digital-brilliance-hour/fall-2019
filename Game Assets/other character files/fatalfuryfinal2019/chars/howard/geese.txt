@@ -1,0 +1,511 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Howard
+health	700
+speed	20
+gfxshadow 1
+type	player
+falldie 1
+nolife  1
+dust dusts2 dusts3 dusts
+
+lifebarstatus 430 10 1 1 0 -300 -300 -300 -300
+lifeposition 38 210
+nameposition 40 200
+iconposition 7 205
+
+diesound	data/chars/Howard/Death.wav
+icon data/chars/Howard/icon.gif
+
+#load Super
+#load PowerG
+#load PowerG2
+#load PowerG3
+
+com a2 freespecial2
+com a3 freespecial3
+com a4 freespecial4
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	33 114
+	bbox	12 12 42 102
+	frame	data/chars/Howard/idle01.gif
+	frame	data/chars/Howard/idle02.gif
+	frame	data/chars/Howard/idle03.gif
+	frame	data/chars/Howard/idle04.gif
+	frame	data/chars/Howard/idle05.gif
+	frame	data/chars/Howard/idle06.gif
+
+
+
+
+anim walk
+	loop	1
+		offset  31  113
+		delay  10
+		bbox  12  6  41  107
+	frame	data/chars/Howard/W01.gif
+	frame	data/chars/Howard/W02.gif
+	frame	data/chars/Howard/W03.gif
+	frame	data/chars/Howard/W04.gif
+	frame	data/chars/Howard/W05.gif
+	frame	data/chars/Howard/W06.gif
+	frame	data/chars/Howard/W07.gif
+	frame	data/chars/Howard/W08.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	bbox	40 3 49 118
+	offset	45 117
+        sound	data/chars/Howard/a1.wav
+	frame	data/chars/Howard/a101.gif
+		attack1  62  39  41  27  10
+	frame	data/chars/Howard/a102.gif
+		Attack1  0
+	frame	data/chars/Howard/a103.gif
+		blast  82  37  55  54  10
+	frame	data/chars/Howard/a104.gif
+		Attack1  0
+	frame	data/chars/Howard/a105.gif
+	frame	data/chars/Howard/a106.gif
+	frame	data/chars/Howard/a107.gif
+		offset  45  117
+	frame	data/chars/Howard/a108.gif
+
+
+anim attack2
+	loop	0
+	delay	5
+	offset	61 119
+	bbox	43 4 37 116
+        sound	data/chars/Howard/a2.wav
+	frame	data/chars/Howard/a201.gif
+	frame	data/chars/Howard/a202.gif
+		attack1  52  26  64  38  15
+	frame	data/chars/Howard/a203.gif
+		Attack1  0
+	frame	data/chars/Howard/a204.gif
+		blast  38  -2  71  61  15
+	frame	data/chars/Howard/a205.gif
+		Attack1  0
+	frame	data/chars/Howard/a206.gif
+	frame	data/chars/Howard/a207.gif
+
+
+
+anim attack3
+	loop	0
+	delay	10
+	offset	40 108
+        sound	data/chars/Howard/a1.wav
+	bbox	8 4 47 105
+	frame	data/chars/Howard/a301.gif
+	frame	data/chars/Howard/a302.gif
+	frame	data/chars/Howard/a303.gif
+		blast  59  18  62  46  20
+	frame	data/chars/Howard/a304.gif
+	frame	data/chars/Howard/a305.gif
+	frame  data/chars/Howard/a305.gif
+	frame  data/chars/Howard/a305.gif
+		Attack1  0
+	frame	data/chars/Howard/a306.gif
+	frame	data/chars/Howard/a308.gif
+
+
+anim freespecial
+	loop	0
+	delay	5
+        range	100 250
+        custknife PowerG
+	throwframe  6 1
+	offset	52 145
+		bbox  19  34  57  110
+        sound	data/chars/Howard/fs01.wav
+	frame	data/chars/Howard/fs101.gif
+		move  0
+		Attack1  0
+	frame	data/chars/Howard/fs102.gif
+	frame	data/chars/Howard/fs103.gif
+	frame	data/chars/Howard/fs104.gif
+	frame	data/chars/Howard/fs105.gif
+		move  0
+		delay  8
+	frame	data/chars/Howard/fs106.gif
+	frame	data/chars/Howard/fs107.gif
+	frame	data/chars/Howard/fs108.gif
+        sound	data/chars/Howard/fs02.wav
+		Attack1  0
+	frame	data/chars/Howard/fs109.gif
+
+anim freespecial2
+	loop	0
+	delay	5
+        range	100 250
+        custknife PowerG2
+	throwframe  11 3 50
+	offset	54 144
+		bbox  26  46  40  98
+        sound	data/chars/Howard/fs03.wav
+	frame	data/chars/Howard/fs101.gif
+		move  0
+		Attack1  0
+	frame	data/chars/Howard/fs102.gif
+	frame	data/chars/Howard/fs103.gif
+	frame	data/chars/Howard/fs104.gif
+		attack1  82  1  47  146  10
+	frame	data/chars/Howard/fs105.gif
+		move  0
+		delay  8
+	frame	data/chars/Howard/fs106.gif
+        sound	data/chars/Howard/fs01.wav
+		Attack1  0
+	frame	data/chars/Howard/fs107.gif
+	frame	data/chars/Howard/fs108.gif
+	frame	data/chars/Howard/fs201.gif
+	frame	data/chars/Howard/fs202.gif
+		blast  59  16  45  121  10
+	frame	data/chars/Howard/fs203.gif
+	frame	data/chars/Howard/fs204.gif
+	frame	data/chars/Howard/fs205.gif
+        sound	data/chars/Howard/fs02.wav
+		Attack1  0
+	frame	data/chars/Howard/fs206.gif
+
+anim freespecial3
+	loop	0
+	delay	5
+	offset	56 113
+        range	50 150
+		bbox  42  28  54  130
+		move  0
+		Attack1  0
+        sound	data/chars/Howard/fs04.wav
+	frame	data/chars/Howard/fs301.gif
+		bbox  33  2  40  112
+	frame	data/chars/Howard/fs302.gif
+	frame	data/chars/Howard/fs303.gif
+	frame	data/chars/Howard/fs304.gif
+	frame	data/chars/Howard/fs305.gif
+        sound	data/chars/Howard/a1.wav
+		move  10
+	frame	data/chars/Howard/fs306.gif
+		attack1  61  32  42  29  10
+	frame	data/chars/Howard/fs307.gif
+	frame	data/chars/Howard/fs308.gif
+		move  0
+	frame	data/chars/Howard/fs309.gif
+	frame	data/chars/Howard/fs311.gif
+	frame	data/chars/Howard/fs312.gif
+	frame	data/chars/Howard/fs313.gif
+		Attack1  0
+        sound	data/chars/Howard/a1.wav
+	frame	data/chars/Howard/fs314.gif
+		attack1  63  42  41  40  10
+	frame	data/chars/Howard/fs315.gif
+	frame	data/chars/Howard/fs316.gif
+	frame	data/chars/Howard/fs317.gif
+		Attack1  0
+        sound	data/chars/Howard/a3.wav
+	frame	data/chars/Howard/fs318.gif
+		blast  70  30  56  29  15
+	frame	data/chars/Howard/fs319.gif
+	frame	data/chars/Howard/fs320.gif
+	frame	data/chars/Howard/fs321.gif
+		Attack1  0
+	frame	data/chars/Howard/fs322.gif
+	frame	data/chars/Howard/fs323.gif
+
+anim freespecial4
+	loop	0
+	delay	5
+        range	50 200
+	offset	50 120
+        sound	data/chars/Howard/a2.wav
+		bbox  35  32  43  88
+	frame	data/chars/Howard/ja101.gif
+		bbox  35  35  44  86
+		move  10
+		movea  10
+		movez  10
+	frame	data/chars/Howard/ja102.gif
+		offset  37  100
+		bbox  15  11  53  86
+	frame	data/chars/Howard/ja103.gif
+        sound	data/chars/Howard/a1.wav
+	frame	data/chars/Howard/ja104.gif
+		blast  20  60  74  38  15  0  0  0  52
+	frame	data/chars/Howard/ja105.gif
+		blast  16  58  78  52  15  0  0  10  52
+	frame	data/chars/Howard/ja106.gif
+	frame  data/chars/Howard/ja106.gif
+		move  10
+		movea  -10
+	frame  data/chars/Howard/ja106.gif
+	frame  data/chars/Howard/ja106.gif
+	frame  data/chars/Howard/ja102.gif
+	frame  data/chars/Howard/ja101.gif
+
+anim special
+	loop	0
+	delay	5
+         summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+        range	1 100
+        custknife PowerG3
+	throwframe  9 10
+	offset	47 138
+		bbox  17  28  58  113
+	frame	data/chars/Howard/sp101.gif
+	frame	data/chars/Howard/sp102.gif
+	frame	data/chars/Howard/sp103.gif
+	frame	data/chars/Howard/sp104.gif
+	frame	data/chars/Howard/sp105.gif
+	frame	data/chars/Howard/sp106.gif
+	frame	data/chars/Howard/sp107.gif
+		bbox  0
+	frame	data/chars/Howard/sp108.gif
+        sound	data/chars/Howard/sp.wav
+	frame	data/chars/Howard/sp109.gif
+	frame	data/chars/Howard/sp111.gif
+	frame	data/chars/Howard/sp110.gif
+	frame	data/chars/Howard/sp112.gif
+	frame	data/chars/Howard/sp113.gif
+	frame	data/chars/Howard/sp114.gif
+	frame	data/chars/Howard/sp115.gif
+	frame	data/chars/Howard/sp116.gif
+	frame	data/chars/Howard/sp117.gif
+	frame	data/chars/Howard/sp118.gif
+	frame	data/chars/Howard/sp119.gif
+	frame	data/chars/Howard/sp120.gif
+	frame	data/chars/Howard/sp121.gif
+	frame	data/chars/Howard/sp122.gif
+	frame	data/chars/Howard/sp123.gif
+	frame	data/chars/Howard/sp124.gif
+	frame	data/chars/Howard/sp125.gif
+	frame	data/chars/Howard/sp126.gif
+
+
+anim upper
+	loop	0
+	delay	6
+	offset	36 145
+	bbox	16 -1 57 146 15
+        Hitflash Flasht
+        sound	data/chars/Howard/a2.wav
+		Attack1  10  -11  83  99  30
+	frame	data/chars/Howard/u01.gif
+	frame	data/chars/Howard/u02.gif
+	frame	data/chars/Howard/u03.gif
+	frame	data/chars/Howard/u04.gif
+	frame	data/chars/Howard/u05.gif
+	frame	data/chars/Howard/u06.gif
+
+
+
+
+
+
+
+anim pain
+
+
+		offset  33  102
+		bbox  17  -1  38  104
+		delay  8
+	frame	data/chars/Howard/pain01.gif
+	frame	data/chars/Howard/pain02.gif
+	frame	data/chars/Howard/pain01.gif
+
+
+
+anim fall
+	loop	0
+		landframe  2
+		landframe  2
+		landframe  2
+		offset  42  99
+		bbox  5  8  56  91
+		delay  4
+	frame	data/chars/Howard/pain02.gif
+		bbox  20  9  66  98
+		Attack1  0
+		offset  53  109
+	frame	data/chars/Howard/fall01.gif
+		bbox  7  0  120  27
+		offset  69  22
+	frame	data/chars/Howard/fall02.gif
+
+
+
+anim rise
+	loop	0
+	offset	46 97
+	delay	10
+        sound	data/chars/Howard/a6.wav
+	frame	data/chars/Howard/Rise01.gif
+	frame	data/chars/Howard/Rise02.gif
+	frame	data/chars/Howard/Rise03.gif
+	frame	data/chars/Howard/Rise04.gif
+	frame	data/chars/Howard/Rise05.gif
+
+anim land
+	loop	0
+	offset	56 142
+	delay	25
+	bbox	35 36 50 110
+	frame	data/chars/Howard/fs202.gif
+
+
+anim death
+		offset  66  108
+		delay  10
+		move  -10
+		movea  10
+	frame	data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+		movea  -10
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+		offset  67  20
+	frame	data/chars/Howard/fall02.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  230  100  56
+	frame	data/chars/Howard/burn1.gif
+	frame	data/chars/Howard/burn2.gif
+	frame	data/chars/Howard/burn1.gif
+	frame	data/chars/Howard/burn2.gif
+	offset	58 21
+	frame	data/chars/Howard/fall02.gif
+
+anim pain2
+	loop	0
+	offset	35 97
+	delay	30
+	bbox  4  0  57  107
+	frame	data/chars/Howard/painR01.gif
+	frame	data/chars/Howard/painR02.gif
+
+anim pain3
+	loop	0
+	offset	29 103
+	delay	30
+	bbox  0  -4  64  107
+	frame	data/chars/Howard/painB01.gif
+	frame	data/chars/Howard/painB02.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  80  232  126  54
+	frame	data/chars/Howard/bburn.gif
+	frame	data/chars/Howard/burn2.gif
+	frame	data/chars/Howard/bburn.gif
+	frame	data/chars/Howard/burn2.gif
+	offset	62 23
+	frame	data/chars/Howard/fall02.gif
+
+
+anim shock
+	loop	0
+		offset  38  98
+		bbox  6  7  67  117
+	frame  data/chars/Howard/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Howard/Shok1.gif
+	frame	data/chars/Howard/Shok2.gif
+		delay  10
+	frame  data/chars/Howard/Shok1.gif
+	frame  data/chars/Howard/Shok2.gif
+	offset	57 103
+		bbox  0
+	frame	data/chars/Howard/fall01.gif
+		offset  59  22
+	frame	data/chars/Howard/fall02.gif
+
+anim pain4
+	loop	0
+	offset	29 103
+	delay	30
+	bbox  12  4  39  102
+	frame	data/chars/Howard/pain01.gif
+	frame	data/chars/Howard/pain02.gif
+	frame	data/chars/Howard/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Howard/burn1.gif
+	frame	data/chars/Howard/burn2.gif
+	frame	data/chars/Howard/burn1.gif
+	frame	data/chars/Howard/burn2.gif
+	offset	55 21
+	frame	data/chars/Howard/fall02.gif
+
+anim  pain5
+	loop  0
+		offset  28  102
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Howard/pain01.gif
+	frame  data/chars/Howard/pain02.gif
+	frame  data/chars/Howard/pain01.gif
+		offset  33  102
+		move  0
+	frame  data/chars/Howard/fall01.gif
+		movea  30
+	frame  data/chars/Howard/fall01.gif
+		delay  4
+	frame  data/chars/Howard/fall01.gif
+		movea  -30
+		bbox  1  -6  71  86
+	frame  data/chars/Howard/fall01.gif
+		delay  2
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+		movea  -20
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+	frame  data/chars/Howard/fall01.gif
+		movea  0
+		offset  62  23
+		bbox  6  -7  122  33
+	frame  data/chars/Howard/fall02.gif
+
+
+anim fall5
+	loop	0
+	offset	58 21
+	delay	19
+	bbox	5 -3 117 31
+		Attack1  0
+	frame	data/chars/Howard/fall02.gif
+

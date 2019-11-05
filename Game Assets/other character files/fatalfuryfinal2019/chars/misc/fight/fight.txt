@@ -1,0 +1,27 @@
+name	fight
+type    text
+shadow	0
+health  1
+noatflash 1
+nolife  1
+
+
+
+
+anim idle
+	loop	0
+	delay	16
+	offset	60 100
+        sound	data/sounds/ready.wav
+	frame	data/chars/misc/fight/1.gif
+	frame	data/chars/misc/fight/2.gif
+	frame	data/chars/misc/fight/3.gif
+	frame	data/chars/misc/fight/4.gif
+	frame	data/chars/misc/fight/5.gif
+	frame	data/chars/misc/fight/6.gif
+	frame	data/chars/misc/fight/6.gif
+	frame	data/chars/misc/fight/6.gif
+	frame	data/chars/misc/fight/7.gif
+
+
+

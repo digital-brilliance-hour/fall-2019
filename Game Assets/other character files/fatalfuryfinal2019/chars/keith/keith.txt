@@ -1,0 +1,126 @@
+name	keith
+health	40
+speed	9
+type	enemy
+shadow	   0
+gfxshadow  1
+icon	data/chars/keith/icon.gif
+diesound data/sounds/die1.wav
+
+palette data/chars/keith/walk1.gif
+alternatepal data/chars/keith/alt1.gif
+alternatepal data/chars/keith/alt2.gif
+alternatepal data/chars/keith/alt3.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 4 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/keith/ko1.gif
+	frame	data/chars/keith/ko1.gif
+	frame	data/chars/keith/ko1.gif
+	frame	data/chars/keith/ko3.gif
+	frame	data/chars/keith/ko3.gif
+
+anim idle
+	loop	1
+	offset	82 177
+	bbox	80 81 37 93
+	delay	7
+	frame	data/chars/keith/static1.gif
+
+
+anim walk
+	loop	1
+	offset	82 177
+	bbox	80 81 37 93
+	delay	14
+	frame	data/chars/keith/walk1.gif
+	frame	data/chars/keith/walk2.gif
+	frame	data/chars/keith/walk3.gif
+	frame	data/chars/keith/walk4.gif
+
+anim pain
+	loop	0
+	offset	82 177
+	bbox	80 81 37 93
+	delay	12
+move -1
+	frame	data/chars/keith/hurt1.gif
+	frame	data/chars/keith/hurt1.gif
+	frame	data/chars/keith/hurt1.gif
+
+anim grabbed
+	loop	0
+	offset	82 177
+	bbox	80 81 37 93
+	delay	12
+	frame	data/chars/keith/hurt1.gif
+	delay	50
+	frame	data/chars/keith/hurt1.gif
+	delay	12
+	frame	data/chars/keith/hurt1.gif
+
+anim fall
+	loop	0
+	delay	35
+	offset	82 177
+	frame	data/chars/keith/ko1.gif
+	frame	data/chars/keith/ko1.gif
+	frame	data/chars/keith/ko3.gif
+
+anim rise
+	loop	0
+	offset	82 177
+	delay	10
+	frame	data/chars/keith/punch3.gif
+
+
+
+anim attack1
+	range	10 80
+	loop	0
+	delay	7
+	offset	82 177
+	sound	data/sounds/punch.wav
+	bbox	23 12 44 102
+	frame	data/chars/keith/punch2.gif
+	attack	123 97 45 25 10
+	frame	data/chars/keith/punch1.gif
+	attack	0 0 0 0 0
+	frame	data/chars/keith/punch1.gif
+	delay	20
+	frame	data/chars/keith/punch2.gif
+
+
+anim attack2
+	range	10 80
+	loop	0
+	delay	7
+	offset	82 177
+	bbox	23 12 44 102
+	sound	data/sounds/punch.wav
+	frame	data/chars/keith/punch3.gif
+	attack	112 121 43 27 10 1
+	frame	data/chars/keith/punch4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/keith/punch4.gif
+	delay	20
+	frame	data/chars/keith/punch3.gif
+

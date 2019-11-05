@@ -1,0 +1,178 @@
+name	macho
+diesound data/sounds/die2.wav
+health	125
+speed	5
+type	enemy
+shadow	0
+gfxshadow 1
+icon	data/chars/macho/icon.gif
+palette  data/chars/macho/intro.gif
+alternatepal data/chars/macho/alt1.gif
+alternatepal data/chars/macho/alt2.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 3 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/macho/FALL1.gif
+	frame	data/chars/macho/FALL1.gif
+	frame	data/chars/macho/FALL1.gif
+	frame	data/chars/macho/FALL2.gif
+	frame	data/chars/macho/FALL2.gif
+anim spawn
+	loop	0
+	offset	92 177
+	delay	111
+	frame	data/chars/macho/intro.gif
+	frame	data/chars/macho/intro.gif
+
+anim idle
+	loop	1
+	offset	92 177
+	bbox	83 80 32 93
+	delay	10
+	frame	data/chars/macho/idle1.gif
+
+anim block
+	loop	0
+	bbox	83 80 32 93
+	delay	22
+        offset	92 177
+        move -3
+	frame	data/chars/macho/sweep01.gif
+	frame	data/chars/macho/sweep01.gif
+
+anim walk
+	loop	1
+	offset	92 177
+	bbox	83 80 32 93
+	delay	14
+	frame	data/chars/macho/walk01.gif
+	frame	data/chars/macho/walk02.gif
+	frame	data/chars/macho/walk03.gif
+	frame	data/chars/macho/walk04.gif
+	frame	data/chars/macho/walk05.gif
+	frame	data/chars/macho/walk02.gif
+	frame	data/chars/macho/walk06.gif
+
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	83 80 32 93
+	delay	12
+        move -1
+	frame	data/chars/macho/pain1.gif
+	frame	data/chars/macho/pain1.gif
+	frame	data/chars/macho/pain1.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	83 80 32 93
+	delay	12
+	frame	data/chars/macho/pain1.gif
+	delay	50
+	frame	data/chars/macho/pain1.gif
+	delay	12
+	frame	data/chars/macho/pain1.gif
+
+anim fall
+	loop	0
+	delay	35
+	offset	92 177
+	attack	41 18 34 84 12 1
+	frame	data/chars/macho/fall1.gif
+        attack	80 66 43 102 12 1
+	frame	data/chars/macho/fall1.gif
+	frame	data/chars/macho/fall2.gif
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	15
+	frame	data/chars/macho/pain1.gif
+
+
+anim attack1
+rANGE  70 100
+	loop	0
+	sound	data/sounds/punch.wav
+	delay	14
+	offset	92 177
+	frame	data/chars/macho/sweep01.gif
+	bbox	83 80 32 93
+	attack	139 103 52 51 10 1
+	frame	data/chars/macho/sweep02.gif
+	frame	data/chars/macho/sweep02.gif
+	frame	data/chars/macho/sweep01.gif
+
+
+
+anim special
+	range 30 70
+	loop	0
+	delay	16
+	offset	92 177
+	sound	data/sounds/punch.wav
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/macho/teaser1.gif
+	bbox	83 80 32 93
+	attack	132 98 55 19 7 1
+	frame	data/chars/macho/teaser2.gif
+	frame	data/chars/macho/teaser2.gif
+	frame	data/chars/macho/teaser1.gif
+
+anim attack3
+	range 30 70
+	loop	0
+	delay	16
+	offset	92 177
+	sound	data/sounds/punch.wav
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/macho/teaser1.gif
+	bbox	83 80 32 93
+	attack	132 98 55 19 5 1
+	frame	data/chars/macho/teaser2.gif
+	frame	data/chars/macho/teaser2.gif
+	frame	data/chars/macho/teaser1.gif
+
+
+anim throw
+range 30 70
+sound        data/sounds/throw.wav
+	loop	0
+	offset	92 177
+	delay	11
+	frame	data/chars/macho/throw1.gif
+	frame	data/chars/macho/throw1.gif
+	frame	data/chars/macho/throw2.gif
+	frame	data/chars/macho/throw3.gif
+	frame	data/chars/macho/throw3.gif
+
+anim rise
+
+	loop	0
+	offset	92 177
+	delay	11
+	frame	data/chars/macho/rise.gif
+
+

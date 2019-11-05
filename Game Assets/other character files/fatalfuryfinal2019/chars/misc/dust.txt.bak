@@ -1,0 +1,22 @@
+name	dusts
+type	none
+nolife	1
+#noname	1
+gfxshadow 1
+
+anim idle
+	loop	0
+		offset  83  84
+		delay  2
+	frame	data/chars/misc/D01.gif
+	frame	data/chars/misc/D02.gif
+	frame	data/chars/misc/D03.gif
+	frame	data/chars/misc/D04.gif
+	frame	data/chars/misc/D05.gif
+	frame	data/chars/misc/D06.gif
+	frame	data/chars/misc/D07.gif
+	frame	data/chars/misc/D08.gif
+	frame	data/chars/misc/D09.gif
+	frame	data/chars/misc/D10.gif
+
+

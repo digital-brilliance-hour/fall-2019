@@ -1,0 +1,347 @@
+name	GRANT
+health	1000
+speed	10
+type	enemy
+shadow	6
+dust    dust
+icon	data/chars/grant/1.gif
+iconpain	data/chars/grant/2.gif
+aggression 10
+diesound data/sounds/grantdie.wav
+gfxshadow 1
+
+
+remap data/chars/GRANT/spec10.pcx data/chars/GRANT/map1.gif
+
+
+
+anim idle
+	loop	1
+	offset	55 112
+	bbox	25 34 58 101
+	delay	8
+	frame         data/chars/GRANT/idle00.pcx
+offset	55 136
+	frame         data/chars/GRANT/idle01.pcx
+	frame         data/chars/GRANT/idle02.pcx
+	frame         data/chars/GRANT/idle03.pcx
+	frame         data/chars/GRANT/idle04.pcx
+	frame         data/chars/GRANT/idle05.pcx
+	frame         data/chars/GRANT/idle06.pcx
+	frame         data/chars/GRANT/idle05.pcx
+	frame         data/chars/GRANT/idle04.pcx
+	frame         data/chars/GRANT/idle03.pcx
+	frame         data/chars/GRANT/idle02.pcx
+	frame         data/chars/GRANT/idle01.pcx
+
+anim walk
+	loop	1
+	offset	55 136
+	bbox	31 36 48 95
+	delay	8
+	frame         data/chars/GRANT/wk00.pcx
+                  frame         data/chars/GRANT/wk01.pcx
+bbox          35 32 42 102
+                  frame         data/chars/GRANT/wk02.pcx
+                  frame         data/chars/GRANT/wk03.pcx
+offset        31 136
+bbox         11 31 44 108
+                  frame         data/chars/GRANT/wk04.pcx
+                  frame         data/chars/GRANT/wk05.pcx
+                  frame         data/chars/GRANT/wk06.pcx
+                  frame         data/chars/GRANT/wk07.pcx
+offset        55 136
+bbox         34 32 45 106 
+                  frame         data/chars/GRANT/wk08.pcx
+                  frame         data/chars/GRANT/wk09.pcx
+
+anim pain
+	loop	0
+	offset	55 136
+	bbox	16 34 71 109
+                  sound        data/sounds/granpain.wav
+	delay	5
+	frame         data/chars/GRANT/pain1.pcx
+offset	55 112
+bbox         16 15 75 102  
+	frame         data/chars/GRANT/pain2.pcx
+bbox          7 17 86 100 
+	frame         data/chars/GRANT/pain3.pcx
+bbox         16 15 75 102  
+	frame         data/chars/GRANT/pain2.pcx
+
+anim fall
+	loop	0
+	offset	55 136
+	delay	5
+	frame         data/chars/GRANT/fall1.pcx
+offset	79 88
+                  DELAY           80
+                 ATTACK         23 20 39 48 10 1
+	frame         data/chars/GRANT/fall2.pcx
+offset	79 40
+                  DELAY     35
+                 ATTACK         0 0 0 0 0 0
+	frame         data/chars/GRANT/fall4.pcx
+
+anim rise
+	loop	0
+	offset	79 64
+	delay	20
+	frame         data/chars/GRANT/rise1.pcx
+offset	55 88 
+	frame         data/chars/GRANT/rise2.pcx
+	frame         data/chars/GRANT/rise3.pcx
+	frame         data/chars/GRANT/rise4.pcx
+
+anim attack1
+	loop	0
+	offset	55 136
+	delay	5
+	bbox	27 36 51 102
+
+	frame         data/chars/GRANT/ATK01.pcx
+	frame         data/chars/GRANT/ATK02.pcx
+	frame         data/chars/GRANT/ATK03.pcx
+offset       55 112
+                  bbox         34 20 34 85
+	frame         data/chars/GRANT/ATK04.pcx
+attack        73 25 71 54 10
+                  frame         data/chars/GRANT/ATK05.pcx   
+	frame         data/chars/GRANT/ATK06.pcx
+                  frame         data/chars/GRANT/ATK07.pcx
+offset	55 136
+attack       0 0 0 0 0
+	bbox	27 36 51 102
+	frame         data/chars/GRANT/ATK02.pcx
+	frame         data/chars/GRANT/ATK08.pcx
+	frame         data/chars/GRANT/ATK09.pcx
+	frame         data/chars/GRANT/ATK10.pcx
+bbox         41 44 42 89
+attack       80 40 71 66 10  
+                  frame         data/chars/GRANT/ATK11.pcx   
+	frame         data/chars/GRANT/ATK12.pcx
+attack       0 0 0 0 0	
+                  frame         data/chars/GRANT/ATK13.pcx
+	frame         data/chars/GRANT/ATK14.pcx
+offset	55 112
+bbox         40 19 48 89
+	frame         data/chars/GRANT/ATK15.pcx
+offset	55 136
+	bbox	27 36 51 102
+	frame         data/chars/GRANT/ATK02.pcx
+offset	31 136
+bbox          11 30 39 106
+	frame         data/chars/GRANT/ATK16.pcx
+offset	55 136
+bbox          23 29 43 74
+attack       69 18 72 112 15 1  
+   	frame         data/chars/GRANT/ATK17.pcx
+offset	79 160
+bbox          54 54 52 92
+	frame         data/chars/GRANT/ATK18.pcx
+offset	79 136
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/ATK19.pcx
+   	frame         data/chars/GRANT/ATK20.pcx
+bbox         32 38 75 86
+	frame         data/chars/GRANT/ATK21.pcx
+	frame         data/chars/GRANT/ATK22.pcx
+
+anim attack2
+                  RANGE     170 300
+	loop	0
+	delay	5
+	bbox	 0 0 0 0
+                  offset           55 88
+                  move           20
+	hitfx             data/sounds/fast.wav
+                  sound         data/sounds/granrush.wav
+                   frame         data/chars/GRANT/ATK200.pcx
+offset         103 112
+attack        56 18 117 87 20 1
+                  frame         data/chars/GRANT/ATK201.pcx
+                   frame         data/chars/GRANT/ATK202.pcx
+attack        0 0 0 0 0 0 
+                  frame         data/chars/GRANT/ATK203.pcx
+                   frame         data/chars/GRANT/ATK202.pcx
+attack        32 25 117 73 20 1
+                  frame         data/chars/GRANT/ATK203.pcx
+                  frame         data/chars/GRANT/ATK204.pcx
+                  frame         data/chars/GRANT/ATK205.pcx
+offset	79 112
+attack       0 0 0 0 0 0
+                  frame         data/chars/GRANT/ATK206.pcx
+offset	55 112
+                  frame         data/chars/GRANT/ATK207.pcx
+offset	55 136
+                  frame         data/chars/GRANT/ATK208.pcx
+	frame         data/chars/GRANT/ATK02.pcx
+
+
+
+
+anim attack3
+                  range       20 90
+                  loop           0
+                  delay	8
+                  offset	79 136
+                  sound         data/sounds/granspec.wav
+	frame         data/chars/GRANT/spec01.pcx
+	frame         data/chars/GRANT/spec02.pcx
+offset	79 112
+	frame         data/chars/GRANT/spec03.pcx
+	frame         data/chars/GRANT/spec04.pcx
+	frame         data/chars/GRANT/spec05.pcx
+	frame         data/chars/GRANT/spec04.pcx
+	frame         data/chars/GRANT/spec03.pcx
+offset	79 136
+	frame         data/chars/GRANT/spec02.pcx
+	frame         data/chars/GRANT/spec01.pcx
+offset	79 112
+	frame         data/chars/GRANT/spec03.pcx
+	frame         data/chars/GRANT/spec04.pcx
+	frame         data/chars/GRANT/spec05.pcx
+offset	66 105
+attack       12 43 107 68 10
+	frame         data/chars/GRANT/spec06.pcx
+offset	69 103
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec07.pcx
+offset	80 106
+attack       13 21 147 90 10
+	frame         data/chars/GRANT/spec08.pcx
+offset	102 103
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec09.pcx
+offset	104 115
+attack       11 7 211 110 10
+	frame         data/chars/GRANT/spec10.pcx
+offset	110 120
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec11.pcx
+offset	117 125
+attack        6 5 237 131 10
+	frame         data/chars/GRANT/spec12.pcx
+offset	120 128
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec13.pcx
+offset	121 131
+blast          9 19 247 115 20 0
+	frame         data/chars/GRANT/spec14.pcx
+offset	120 132
+	frame         data/chars/GRANT/spec15.pcx
+offset	123 131
+	frame         data/chars/GRANT/spec16.pcx
+offset	114 109
+	frame         data/chars/GRANT/spec17.pcx
+offset	108 108
+	frame         data/chars/GRANT/spec18.pcx
+offset	93 107
+	frame         data/chars/GRANT/spec19.pcx
+offset	79 112
+	frame         data/chars/GRANT/spec20.pcx
+
+
+anim special
+                  loop           0
+                  delay	8
+                  offset	79 136
+                  sound         data/sounds/granspec.wav
+attack       40 42 97 97 1
+	frame         data/chars/GRANT/spec01.pcx
+	frame         data/chars/GRANT/spec02.pcx
+offset	79 112
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec03.pcx
+	frame         data/chars/GRANT/spec04.pcx
+attack       40 42 97 97 1
+	frame         data/chars/GRANT/spec05.pcx
+	frame         data/chars/GRANT/spec04.pcx
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec03.pcx
+offset	79 136
+	frame         data/chars/GRANT/spec02.pcx
+	frame         data/chars/GRANT/spec01.pcx
+offset	79 112
+attack       40 42 97 97 1
+	frame         data/chars/GRANT/spec03.pcx
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec04.pcx
+	frame         data/chars/GRANT/spec05.pcx
+offset	66 105
+attack       12 43 107 68 10
+	frame         data/chars/GRANT/spec06.pcx
+offset	69 103
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec07.pcx
+offset	80 106
+attack       13 21 147 90 10
+	frame         data/chars/GRANT/spec08.pcx
+offset	102 103
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec09.pcx
+offset	104 115
+attack       11 7 211 110 10
+	frame         data/chars/GRANT/spec10.pcx
+offset	110 120
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec11.pcx
+offset	117 125
+attack        6 5 237 131 10
+	frame         data/chars/GRANT/spec12.pcx
+offset	120 128
+attack       0 0 0 0 0
+	frame         data/chars/GRANT/spec13.pcx
+offset	121 131
+blast          9 19 247 115 20 0
+	frame         data/chars/GRANT/spec14.pcx
+offset	120 132
+	frame         data/chars/GRANT/spec15.pcx
+offset	123 131
+	frame         data/chars/GRANT/spec16.pcx
+offset	114 109
+	frame         data/chars/GRANT/spec17.pcx
+offset	108 108
+	frame         data/chars/GRANT/spec18.pcx
+offset	93 107
+	frame         data/chars/GRANT/spec19.pcx
+offset	79 112
+	frame         data/chars/GRANT/spec20.pcx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

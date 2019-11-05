@@ -1,0 +1,16 @@
+name end
+type endlevel
+gfxshadow 1
+
+
+
+anim idle
+	loop	1
+	offset	36 73
+	bbox	0 0 76 79
+	delay	12
+	frame         data/chars/misc/ends.gif
+
+
+
+

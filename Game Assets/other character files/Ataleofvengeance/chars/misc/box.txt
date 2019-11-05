@@ -1,0 +1,19 @@
+name	BOX
+health	15
+type	obstacle
+shadow	0
+diesound data/sounds/wood.wav
+icon	data/chars/misc/boxicon.gif
+gfxshadow 1
+
+anim idle
+	delay	10
+	offset	40 75
+	bbox	0 0 80 82
+        platform  -30 -30 120 120 10 200 
+	frame	data/chars/misc/box.gif
+
+anim fall
+	delay	10
+	offset	40 75
+	frame	data/chars/misc/boxx.gif

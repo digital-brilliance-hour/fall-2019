@@ -1,0 +1,135 @@
+name	Baek
+health	100
+speed	11
+type	enemy
+gfxshadow	1
+icon	data/chars/baek/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/baek/idle01.gif	data/chars/baek/alter1.gif
+remap	data/chars/baek/idle01.gif	data/chars/baek/alter2.gif
+remap	data/chars/baek/idle01.gif	data/chars/baek/alter3.gif
+remap	data/chars/baek/idle01.gif	data/chars/baek/alter4.gif
+
+
+anim idle
+	loop	0
+	offset	79 171
+	bbox	61 79 39 91
+	delay	20
+	frame	data/chars/baek/idle01.gif
+        delay   14
+	frame	data/chars/baek/idle02.gif
+	frame	data/chars/baek/idle03.gif
+	frame	data/chars/baek/idle04.gif
+	frame	data/chars/baek/idle05.gif
+        delay   20
+	frame	data/chars/baek/idle06.gif
+        delay   14
+	frame	data/chars/baek/idle05.gif
+	frame	data/chars/baek/idle04.gif
+	frame	data/chars/baek/idle03.gif
+	frame	data/chars/baek/idle02.gif
+
+
+anim walk
+	loop	1
+	offset	79 171
+	bbox	61 79 39 91
+	delay	9
+	frame	data/chars/baek/wk1.gif
+	frame	data/chars/baek/wk2.gif
+	frame	data/chars/baek/wk3.gif
+	frame	data/chars/baek/wk4.gif
+	frame	data/chars/baek/wk5.gif
+	frame	data/chars/baek/wk6.gif
+	frame	data/chars/baek/wk7.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	61 79 39 91
+        offset	79 171
+	frame	data/chars/baek/pain1.gif
+	delay   30
+	frame	data/chars/baek/pain2.gif
+	delay   11
+	frame	data/chars/baek/pain1.gif
+	
+	
+
+anim fall
+	loop	0
+	delay	60
+	offset	90 146
+        attack  60 57 36 40 5 1
+	frame	data/chars/baek/fall1.gif
+        offset  79 171
+        delay   20
+	frame	data/chars/baek/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/baek/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	79 171
+	delay	9
+	frame	data/chars/baek/rise1.gif
+        delay   20
+	frame	data/chars/baek/rise2.gif
+        delay   10
+	frame	data/chars/baek/rise3.gif
+
+
+anim attack1
+	range	0 50
+	loop	0
+	delay	6
+	bbox	61 79 39 91
+        offset	79 171
+	frame	data/chars/baek/a105.gif
+	frame	data/chars/baek/a101.gif
+        attack  75 87 72 32 14 
+	frame	data/chars/baek/a102.gif
+        delay   18
+	frame	data/chars/baek/a103.gif
+        delay   10
+        attack  0 0 0 0 0
+	frame	data/chars/baek/a104.gif
+	frame	data/chars/baek/a105.gif
+
+
+anim upper
+	range	0 50
+	loop	0
+	delay	8
+	bbox	61 79 39 91
+        offset	79 171
+	frame	data/chars/baek/a201.gif
+        delay   5
+        attack  90 36 73 96 18 1
+	frame	data/chars/baek/a202.gif
+	frame	data/chars/baek/a203.gif
+	frame	data/chars/baek/a204.gif
+	frame	data/chars/baek/a205.gif
+	frame	data/chars/baek/a204.gif
+	frame	data/chars/baek/a203.gif
+	frame	data/chars/baek/a202.gif
+	frame	data/chars/baek/a203.gif
+	frame	data/chars/baek/a204.gif
+	frame	data/chars/baek/a205.gif
+	frame	data/chars/baek/a204.gif
+	frame	data/chars/baek/a203.gif
+	frame	data/chars/baek/a202.gif
+        delay   10
+        attack  0 0 0 0 0 0
+	frame	data/chars/baek/a201.gif
+
+
+
+

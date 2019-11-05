@@ -1,0 +1,36 @@
+name	Door
+health	500
+type	obstacle
+falldie	1
+shadow	0
+nolife 1
+noicon 1
+nomove	1 0
+flash flashg
+icon	data/chars/misc/drumicon.gif
+diesound data/sounds/bang3.wav
+
+
+
+anim idle
+	delay	100
+	offset	130 280
+	bbox	80 197 80 80
+	platform -50 350 100 140 350 350 140 350
+#	platform 0 422 184 116 140 323
+	frame	data/chars/misc/door00.gif
+
+
+anim death
+	loop	0
+	delay	28
+	offset	130 280
+	drawmethod 260 260
+	quakeframe 1 3 10
+	frame	data/chars/misc/door01.gif
+	frame	data/chars/misc/door02.gif
+	frame	data/chars/misc/door03.gif
+	frame	data/chars/misc/door04.gif
+	frame	data/chars/misc/door05.gif
+	frame	data/chars/misc/door06.gif
+	frame	data/chars/misc/door07.gif

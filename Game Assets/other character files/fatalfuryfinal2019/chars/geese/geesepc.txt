@@ -1,0 +1,283 @@
+name	Geesepc
+health	500
+speed	10
+type	enemy
+shadow	   0
+gfxshadow  1
+aggression 100
+diesound data/sounds/OOO.wav
+icon	 data/chars/Geese/icon.gif
+iconpain data/chars/Geese/ipain.gif
+atchain    1 1 2 3 0 
+load rep1
+palette           data/chars/Geese/select.gif
+alternatepal	  data/chars/Geese/map1.gif 
+alternatepal	  data/chars/Geese/map2.gif 
+alternatepal	  data/chars/Geese/map3.gif 
+alternatepal      data/chars/burn/burn1.gif
+blockodds 1
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 4 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/geese/FALL00.gif
+	frame	data/chars/geese/FALL00.gif
+	frame	data/chars/geese/FALL00.gif
+	frame	data/chars/geese/FALL01.gif
+	frame	data/chars/geese/FALL01.gif
+
+anim block
+	loop	0
+	delay	90
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/geese/block.gif
+
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+	frame	data/chars/Geese/sel1.gif
+        delay 12
+	frame	data/chars/Geese/sel1.gif
+	frame	data/chars/Geese/sel1.gif	
+	frame	data/chars/Geese/sel2.gif
+	frame	data/chars/Geese/sel3.gif
+	frame	data/chars/Geese/sel3.gif
+	frame	data/chars/Geese/sel3.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/Geese/idle000.gif
+
+
+anim walk
+	loop	1
+	delay	16
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/Geese/walk000.gif
+	frame	data/chars/Geese/walk001.gif
+	frame	data/chars/Geese/walk002.gif
+	frame	data/chars/Geese/walk003.gif
+
+
+
+
+anim jumpattack
+range 160 190
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	83 88 33 78
+	frame	data/chars/Geese/jk1.gif
+	attack	89 138 83 48 7 1
+	frame	data/chars/Geese/jk0.gif
+	frame	data/chars/Geese/jk0.gif
+	frame	data/chars/Geese/jk0.gif
+	attack	0
+	frame	data/chars/Geese/jk1.gif
+
+
+anim riseattack
+range 0 110
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	0
+	jumpframe	data/chars/Geese/jk1.gif 2 2 0
+	attack	89 138 83 48 7 1
+	frame	data/chars/Geese/jk0.gif
+	frame	data/chars/Geese/jk0.gif
+	frame	data/chars/Geese/jk0.gif
+	attack	0
+	frame	data/chars/Geese/jk1.gif
+
+
+
+anim attack1
+        range 0 80
+	loop	0
+	delay	5
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/Geese/punch000.gif
+	frame	data/chars/Geese/punch000.gif
+	attack	118 93 39 13 7
+	frame	data/chars/Geese/punch001.gif
+	frame	data/chars/Geese/punch001.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Geese/punch000.gif
+
+anim attack2
+        range 0 80
+	loop	0
+	delay	6
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/Geese/na2-00.gif
+	frame	data/chars/Geese/na2-01.gif
+	frame	data/chars/Geese/na2-01.gif
+	attack	118 93 39 13 12
+	frame	data/chars/Geese/na2-01.gif
+	frame	data/chars/Geese/na2-01.gif
+	attack	0
+	frame	data/chars/Geese/na2-01.gif
+	frame	data/chars/Geese/na2-00.gif
+
+anim attack3
+        range 0 80
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/Geese/a4-000.gif
+	frame	data/chars/Geese/a4-000.gif
+	frame	data/chars/Geese/a4-001.gif
+	frame	data/chars/Geese/a4-001.gif
+	frame	data/chars/Geese/a4-001.gif
+	attack	133 100 52 48 20 1
+	frame	data/chars/Geese/a4-002.gif
+	frame	data/chars/Geese/a4-002.gif
+	frame	data/chars/Geese/a4-002.gif
+	frame	data/chars/Geese/a4-002.gif
+	frame	data/chars/Geese/a4-002.gif
+	frame	data/chars/Geese/a4-003.gif
+	frame	data/chars/Geese/a4-003.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/richard.wav
+	frame	data/chars/Geese/throw001.gif
+	frame	data/chars/Geese/throw002.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw004.gif
+	frame	data/chars/Geese/throw003.gif
+	frame	data/chars/Geese/throw002.gif
+	frame	data/chars/Geese/throw001.gif
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+move -1
+	frame	data/chars/Geese/pain01.gif
+	frame	data/chars/Geese/pain02.gif
+	frame	data/chars/Geese/pain02.gif
+	frame	data/chars/Geese/pain01.gif
+	frame	data/chars/Geese/pain01.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+	frame	data/chars/Geese/pain01.gif
+	delay	36
+	frame	data/chars/Geese/pain02.gif
+	delay	6
+	frame	data/chars/Geese/pain02.gif
+	frame	data/chars/Geese/pain01.gif
+	frame	data/chars/Geese/pain01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/Geese/shock1.gif
+	frame	data/chars/Geese/shock3.gif
+	frame	data/chars/Geese/shock2.gif
+	frame	data/chars/Geese/shock1.gif
+	frame	data/chars/Geese/shock3.gif
+	frame	data/chars/Geese/shock2.gif
+	frame	data/chars/Geese/shock1.gif
+	frame	data/chars/Geese/shock3.gif
+	frame	data/chars/Geese/shock2.gif
+	frame	data/chars/Geese/shock1.gif
+	frame	data/chars/Geese/shock3.gif
+	frame	data/chars/Geese/shock2.gif
+	frame	data/chars/Geese/fall01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/Geese/fall00.gif
+	frame	data/chars/Geese/fall00.gif
+	frame	data/chars/Geese/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/Geese/rise1.gif
+	frame	data/chars/Geese/rise2.gif
+	frame	data/chars/Geese/rise3.gif
+	frame	data/chars/Geese/rise3.gif
+
+
+
+
+anim freespecial3
+        range 200 300
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/Geese/pow1.gif
+	frame	data/chars/Geese/pow2.gif
+	frame	data/chars/Geese/pow3.gif
+	frame	data/chars/Geese/pow4.gif
+        sound        data/sounds/reep.wav
+	frame	data/chars/Geese/pow5.gif
+	frame	data/chars/Geese/pow6.gif
+	frame	data/chars/Geese/pow7.gif
+	frame	data/chars/Geese/pow8.gif
+	custknife rep1
+	throwframe 4 2
+	frame	data/chars/Geese/pow8.gif
+	frame	data/chars/Geese/pow8.gif
+	frame	data/chars/Geese/pow8.gif
+
+
+
+

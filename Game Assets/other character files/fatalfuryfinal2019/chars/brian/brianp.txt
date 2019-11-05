@@ -1,0 +1,37 @@
+name					BrianP
+health					1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+#falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	offset	37 94
+		attack1  0  -5  152  145  10  1  0  0  0  70
+		delay  4
+      frame	data/chars/Brian/p101.gif
+      frame	data/chars/Brian/p102.gif
+		Attack1  0
+      frame	data/chars/Brian/p103.gif
+      frame	data/chars/Brian/p104.gif
+		blast  -1  0  151  156  10
+      frame	data/chars/Brian/p105.gif
+      frame	data/chars/Brian/p106.gif
+      frame	data/chars/Brian/p107.gif
+		Attack1  0
+      frame	data/chars/Brian/p108.gif
+

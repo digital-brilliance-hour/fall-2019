@@ -1,0 +1,14 @@
+name	fakesh
+health	1
+type	enemy
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+anim idle
+	loop	0
+	delay	1
+	offset	582 5177
+	attack	0
+	frame	data/chars/terry/start.gif	
+
+

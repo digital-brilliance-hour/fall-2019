@@ -1,0 +1,26 @@
+name	laser
+health	1
+type	enemy
+gfxshadow 1
+remove 0
+candamage obstacle player enemy
+
+anim idle
+	loop	0
+	delay	10
+	offset	-50 260
+	attack	140 190 100 100 15 1
+	sound	data/chars/cannonboss/laser01.wav
+	frame	data/chars/misc/laser00.gif
+	frame	data/chars/misc/laser01.gif
+	frame	data/chars/misc/laser02.gif
+	frame	data/chars/misc/laser03.gif
+	frame	data/chars/misc/laser04.gif
+	frame	data/chars/misc/laser05.gif
+	frame	data/chars/misc/laser06.gif
+	frame	data/chars/misc/laser07.gif
+	frame	data/chars/misc/laser08.gif
+	frame	data/chars/misc/laser09.gif
+	frame	data/chars/misc/laser10.gif
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif

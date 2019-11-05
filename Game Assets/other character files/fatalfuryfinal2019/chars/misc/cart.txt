@@ -1,0 +1,32 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	cart
+health	15
+type	obstacle
+shadow	0
+gfxshadow 1
+icon	data/chars/misc/cart3.gif
+diesound data/sounds/wood.wav
+noatflash 1
+flash flashc
+
+anim idle
+	loop	1
+	delay	16
+	offset	92 177
+	bbox	61 85 64 97
+	frame	data/chars/misc/cart1.gif
+	frame	data/chars/misc/cart4.gif
+	frame	data/chars/misc/cart5.gif
+	frame	data/chars/misc/cart4.gif
+
+
+
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	92 177
+	frame	data/chars/misc/cart2.gif

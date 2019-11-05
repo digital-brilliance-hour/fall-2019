@@ -1,0 +1,250 @@
+name	TODO
+health	100
+speed	14
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/todo/1.gif
+iconpain     data/chars/todo/2.gif
+diesound data/sounds/eagledie.wav
+aggression 1
+gfxshadow 1
+
+remap data/chars/todo/idle00.gif data/chars/todo/map1.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map2.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map3.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map4.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map5.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map6.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map7.gif
+remap data/chars/todo/idle00.gif data/chars/todo/map8.gif
+
+
+
+anim idle
+	loop	1
+	offset	38 102
+	bbox	21 13 55 103
+	delay	10
+	frame         data/chars/todo/idle00.gif
+	frame         data/chars/todo/idle01.gif
+	frame         data/chars/todo/idle02.gif
+	frame         data/chars/todo/idle03.gif
+	frame         data/chars/todo/idle04.gif
+	frame         data/chars/todo/idle05.gif
+                  frame         data/chars/todo/idle06.gif
+	frame         data/chars/todo/idle05.gif
+	frame         data/chars/todo/idle04.gif
+	frame         data/chars/todo/idle03.gif
+	frame         data/chars/todo/idle02.gif
+	frame         data/chars/todo/idle01.gif
+
+
+
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	26 104
+	bbox	24 10 51 107
+	delay	10
+	frame         data/chars/todo/wk00.gif
+                  frame         data/chars/todo/wk01.gif
+	offset	28 104
+                  frame         data/chars/todo/wk02.gif
+	offset	30 104
+                  frame         data/chars/todo/wk03.gif
+	offset	32 103
+                  frame         data/chars/todo/wk04.gif
+	offset	34 102
+                  frame         data/chars/todo/wk05.gif
+	offset	35 101
+	frame         data/chars/todo/wk06.gif
+	offset	32 101
+                  frame         data/chars/todo/wk07.gif
+	offset	31 102
+                  frame         data/chars/todo/wk08.gif
+	offset	27 102
+                  frame         data/chars/todo/wk09.gif
+	offset	25 102
+                  frame         data/chars/todo/wk10.gif
+	offset	24 103
+                  frame         data/chars/todo/wk11.gif
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	37 97
+	bbox	16 16 64 104
+	sound       data/sounds/MALEPAIN.wav
+	delay	5
+	frame         data/chars/todo/pain1.gif
+offset	37 97
+                  bbox         14 16 70 100
+	delay	5
+	frame         data/chars/todo/pain2.gif
+offset	45 95
+DELAY     10
+	bbox	5 15 83 102
+	frame         data/chars/todo/pain3.gif
+
+
+
+anim fall
+	loop	0
+	offset	18 100
+	delay	5
+	frame         data/chars/todo/fall01.gif
+offset	38 73
+DELAY           70
+        ATTACK  3 5 36 33 10 1
+	frame         data/chars/todo/fall02.gif
+offset	51 55
+DELAY        15
+	frame         data/chars/todo/fall03.gif
+offset	61 35
+        ATTACK   0 0 0 0 0 0
+DELAY     35
+	frame         data/chars/todo/fall04.gif
+
+anim rise
+	loop	0
+	offset	53 35
+	delay	10
+	frame         data/chars/todo/rise1.gif
+offset	48 47
+	frame         data/chars/todo/rise2.gif
+offset	41 58
+	frame         data/chars/todo/rise3.gif
+offset	38 71
+	frame         data/chars/todo/rise4.gif
+offset	38 80
+	frame         data/chars/todo/rise5.gif
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	28 104
+	delay	4
+	bbox	20 18 44 106
+	frame         data/chars/todo/kick1.gif
+offset	41 99
+	bbox	20 28 51 96
+	frame         data/chars/todo/kick2.gif
+offset	40 100
+	bbox	14 25 63 100
+	frame         data/chars/todo/kick3.gif
+offset	43 97
+	frame         data/chars/todo/kick4.gif
+offset	39 104
+                  frame         data/chars/todo/kick5.gif   
+offset	28 118
+bbox        25 21 56 92
+	frame         data/chars/todo/kick6.gif
+offset	32 125
+attack        57 2 68 125 13
+	bbox	21 36 40 79
+                  frame         data/chars/todo/kick7.gif
+offset	32 113
+	frame         data/chars/todo/kick8.gif
+offset	31 114
+attack        0 0 0 0 0	
+	frame         data/chars/todo/kick9.gif
+offset	11 101
+attack        
+	frame         data/chars/todo/kick10.gif
+offset	6 109
+bbox         20 20 57 105
+                  frame         data/chars/todo/kick11.gif   
+offset	41 99
+	bbox	20 28 51 96
+	frame         data/chars/todo/kick2.gif
+offset	40 100
+	bbox	14 25 63 100
+	frame         data/chars/todo/kick3.gif
+offset	43 97
+	frame         data/chars/todo/kick4.gif
+offset	39 104
+                  frame         data/chars/todo/kick5.gif   
+offset	28 118
+bbox        25 21 56 92
+	frame         data/chars/todo/kick6.gif
+offset	32 125
+attack        57 2 68 125 13 1
+	bbox	21 36 40 79
+                  frame         data/chars/todo/kick7.gif
+offset	32 113
+	frame         data/chars/todo/kick8.gif
+offset	31 114
+attack        0 0 0 0 0 0
+	frame         data/chars/todo/kick9.gif
+offset	11 101
+attack        
+	frame         data/chars/todo/kick10.gif
+offset	6 109
+bbox         20 20 57 105
+                  frame         data/chars/todo/kick11.gif 
+
+
+
+anim grab
+                  range      10 50
+	loop	0
+                  delay        3000				
+	offset	38 107
+	bbox	21 13 55 103
+	frame         data/chars/todo/grab.gif
+
+
+
+anim throw
+	loop	0
+	offset	29 108
+	delay	5
+	bbox	0 0 0 0
+	hitfx           data/sounds/fast.wav
+frame         data/chars/todo/thr1.gif
+	offset   55 104
+                   bbox        
+frame         data/chars/todo/thr2.gif
+	offset	51 105
+frame         data/chars/todo/thr3.gif
+	offset	49 108
+frame         data/chars/todo/thr4.gif
+	offset	36 113
+frame         data/chars/todo/thr5.gif
+	offset	38 124
+frame         data/chars/todo/thr6.gif
+	offset	45 123
+frame         data/chars/todo/thr8.gif
+	offset	64 93
+frame         data/chars/todo/thr9.gif
+	offset	83 95
+frame         data/chars/todo/thr10.gif
+	offset	83 92
+frame         data/chars/todo/thr11.gif
+	offset	82 89
+frame         data/chars/todo/thr12.gif
+	offset	64 100
+frame         data/chars/todo/thr13.gif
+	offset	44 105
+frame         data/chars/todo/thr14.gif
+		
+
+
+
+

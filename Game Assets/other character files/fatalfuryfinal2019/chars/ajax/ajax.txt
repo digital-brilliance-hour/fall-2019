@@ -1,0 +1,283 @@
+name	Ajax
+health	78
+speed	16
+type	enemy
+dust	dust
+gfxshadow  1
+aggression 70
+#nodieblink    3
+#noname	1
+#nolife	1
+falldie	2
+diesound data/sounds/die3.wav
+projectilehit   enemy npc obstacle
+
+
+Icon    data/chars/Ajax/icon.gif
+
+remap	data/chars/Ajax/Idle.gif data/chars/Ajax/map01.gif
+
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	30 106
+	bbox	7 2 42 109
+	frame	data/chars/Ajax/idle.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	27 111
+	bbox	16 11 32 100
+	frame	data/chars/Ajax/w01.gif
+	frame	data/chars/Ajax/w02.gif
+	frame	data/chars/Ajax/w03.gif
+	frame	data/chars/Ajax/w04.gif
+	frame	data/chars/Ajax/w05.gif
+	frame	data/chars/Ajax/w06.gif
+
+
+anim attack1
+	loop	0
+	delay	10
+	bbox	14 -3 43 107
+	offset	36 104
+	sound	data/chars/Ajax/a1.wav
+	frame	data/chars/Ajax/a101.gif
+	frame	data/chars/Ajax/a102.gif
+	frame	data/chars/Ajax/a103.gif
+		blast  56  10  53  18  8
+	frame	data/chars/Ajax/a104.gif
+	frame	data/chars/Ajax/a105.gif
+		blast  109  122  67  31  10
+	frame	data/chars/Ajax/a106.gif
+	frame	data/chars/Ajax/a107.gif
+		Attack1  0
+	frame	data/chars/Ajax/a108.gif
+
+
+anim attack2
+		offset  56  108
+		bbox  26  24  45  84
+		delay  8
+	sound	data/chars/Ajax/a2.wav
+	frame	data/chars/Ajax/a201.gif
+	frame	data/chars/Ajax/a202.gif
+		blast  73  11  53  51  10
+	frame	data/chars/Ajax/a203.gif
+		blast  41  -1  65  54  10
+	frame	data/chars/Ajax/a204.gif
+	frame	data/chars/Ajax/a205.gif
+		Attack1  0
+	frame	data/chars/Ajax/a206.gif
+	frame	data/chars/Ajax/a207.gif
+	frame	data/chars/Ajax/a208.gif
+
+anim attack3
+		offset  35  130
+		bbox  9  34  53  97
+	sound	data/chars/Ajax/a3.wav
+		Attack1  0
+	frame	data/chars/Ajax/a301.gif
+		delay  7
+	frame	data/chars/Ajax/a302.gif
+	frame	data/chars/Ajax/a303.gif
+	frame	data/chars/Ajax/a304.gif
+		blast  53  -5  33  127  10
+		move  10
+	frame	data/chars/Ajax/a305.gif
+	frame	data/chars/Ajax/a306.gif
+	frame	data/chars/Ajax/a307.gif
+		blast  52  3  78  102  10
+	frame	data/chars/Ajax/a308.gif
+		Attack1  0
+		move  0
+	frame	data/chars/Ajax/a309.gif
+	frame	data/chars/Ajax/a310.gif
+		Attack1  0
+	frame	data/chars/Ajax/a311.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	55 99
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Ajax/pain01.gif
+	frame	data/chars/Ajax/pain02.gif
+
+
+anim pain2
+	loop	0
+	offset	55 99
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Ajax/painR01.gif
+	frame	data/chars/Ajax/painR02.gif
+
+anim pain3
+	loop	0
+	offset	58 99
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Ajax/painB01.gif
+	frame	data/chars/Ajax/painB02.gif
+
+
+
+
+anim fall
+	loop	0
+	offset	65 121
+	delay	19
+	bbox	12 22 95 89
+	throwframe 3
+		Attack1  0
+	frame	data/chars/Ajax/fall01.gif
+	bbox	-5 21 118 45
+		offset  53  57
+	frame	data/chars/Ajax/fall02.gif
+	bbox	8 6 117 25
+		attack  0  0  0  0
+		offset  55  26
+	frame	data/chars/Ajax/fall02.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  223  121  63
+	frame	data/chars/Ajax/bburn.gif
+	frame	data/chars/Ajax/burn2.gif
+	frame	data/chars/Ajax/bburn.gif
+	frame	data/chars/Ajax/burn2.gif
+	offset	56 28
+	frame	data/chars/Ajax/fall02.gif
+
+
+
+anim fall9
+	loop	0
+	offset	56 31
+	delay	19
+	bbox	10 89 126 26 0
+	frame	data/chars/Ajax/fall02.gif
+
+anim rise
+	loop	0
+	offset	37 98
+	delay	17
+	frame	data/chars/Ajax/rise01.gif
+	frame	data/chars/Ajax/rise02.gif
+	frame	data/chars/Ajax/rise03.gif
+	frame	data/chars/Ajax/rise04.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  87  226  115  64
+	frame	data/chars/Ajax/burn1.gif
+	frame	data/chars/Ajax/burn2.gif
+	frame	data/chars/Ajax/burn1.gif
+	frame	data/chars/Ajax/burn2.gif
+	offset	56 28
+	frame	data/chars/Ajax/fall02.gif
+
+
+
+
+anim shock
+	loop	0
+		offset  39  102
+		bbox  6  11  64  91
+	frame  data/chars/Ajax/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Ajax/Shok1.gif
+	frame	data/chars/Ajax/Shok2.gif
+		delay  10
+	frame  data/chars/Ajax/Shok1.gif
+	frame  data/chars/Ajax/Shok2.gif
+	offset	33 75
+		bbox  5  33  66  49
+	frame	data/chars/Ajax/fall01.gif
+		offset  49  29
+		bbox  3  8  112  25
+	frame	data/chars/Ajax/fall02.gif
+
+
+
+anim pain4
+	loop	0
+	offset	56 99
+	delay	30
+	bbox  17  -1  46  105
+	frame	data/chars/Ajax/pain01.gif
+	frame	data/chars/Ajax/pain02.gif
+	frame	data/chars/Ajax/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Ajax/burn1.gif
+	frame	data/chars/Ajax/burn2.gif
+	frame	data/chars/Ajax/burn1.gif
+	frame	data/chars/Ajax/burn2.gif
+	offset	60 28
+	frame	data/chars/Ajax/fall02.gif
+
+anim  pain5
+	loop  0
+		offset  39  95
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Ajax/pain01.gif
+	frame  data/chars/Ajax/pain02.gif
+		offset  42  81
+	frame  data/chars/Ajax/fall01.gif
+		offset  58  33
+		move  0
+		Attack1  0
+	frame  data/chars/Ajax/fall02.gif
+		movea  30
+	frame  data/chars/Ajax/fall02.gif
+		delay  4
+	frame  data/chars/Ajax/fall02.gif
+		movea  -30
+		bbox  3  7  115  29
+	frame  data/chars/Ajax/fall02.gif
+		delay  2
+	frame  data/chars/Ajax/fall02.gif
+	frame  data/chars/Ajax/fall02.gif
+		movea  -20
+	frame  data/chars/Ajax/fall02.gif
+	frame  data/chars/Ajax/fall02.gif
+	frame  data/chars/Ajax/fall02.gif
+	frame  data/chars/Ajax/fall02.gif
+	frame  data/chars/Ajax/fall02.gif
+		movea  0
+		offset  57  33
+		bbox  2  1  122  35
+	frame  data/chars/Ajax/fall02.gif
+
+
+anim fall5
+	loop	0
+	offset	51 27
+	delay	19
+	bbox	1 0 123 28
+		Attack1  0
+	frame	data/chars/Ajax/fall02.gif
+

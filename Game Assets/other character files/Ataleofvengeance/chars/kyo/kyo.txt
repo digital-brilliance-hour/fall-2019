@@ -1,0 +1,1057 @@
+name	KYO
+health	100
+speed	13
+type	player
+shadow	4
+dust    dust
+mp      100
+running	20 3.5 2 1 0
+noquake 1
+holdblock 1
+makeinv 4
+gfxshadow 1
+
+icon	data/chars/kyo/1.gif
+iconpain     data/chars/kyo/2.gif
+iconmphigh  data/sprites/h1.gif
+  
+
+diesound data/sounds/kyodie.wav
+
+com      a2 freespecial
+com     d f a freespecial2
+com     f d a freespecial3
+com     u f a freespecial4
+
+iconmphigh  data/sprites/h1.gif loop	1
+
+iconmphalf  data/sprites/m1.gif loop	1
+
+iconmplow  data/sprites/l1.gif loop	1
+
+
+remap	data/chars/kyo/idle00.gif data/chars/kyo/alt1.gif
+remap	data/chars/kyo/idle00.gif data/chars/kyo/alt2.gif
+remap	data/chars/kyo/idle00.gif data/chars/kyo/alt3.gif
+
+
+anim idle
+	loop	1
+	delay	8
+	offset	30 101
+	bbox	7 7 42 91
+	frame	data/chars/kyo/idle00.gif
+offset	30 102
+              frame	data/chars/kyo/idle01.gif
+offset	30 102
+              frame	data/chars/kyo/idle02.gif
+offset	30 101
+              frame	data/chars/kyo/idle03.gif
+offset	30 102
+              frame	data/chars/kyo/idle04.gif
+offset	30 102
+              frame	data/chars/kyo/idle05.gif
+offset	30 101
+              frame	data/chars/kyo/idle06.gif
+
+
+anim faint
+	loop	1
+	delay	17
+	bbox	20 9 30 68
+offset	32 91
+              frame	data/chars/kyo/faint1.gif
+offset	32 90
+              frame	data/chars/kyo/faint2.gif
+offset	32 89
+              frame	data/chars/kyo/faint3.gif
+offset	32 90
+              frame	data/chars/kyo/faint2.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	30 101
+	bbox	12 4 39 100
+	frame	data/chars/kyo/wk00.gif
+offset	      35 103
+              frame	data/chars/kyo/wk01.gif
+offset	      36 105 
+              frame	data/chars/kyo/wk02.gif
+offset	      26 107
+              bbox	3 4 41 92
+              frame	data/chars/kyo/wk03.gif
+offset	      24 108
+              frame	data/chars/kyo/wk04.gif
+offset	      24 107
+              frame	data/chars/kyo/wk05.gif
+offset	      23 105
+              frame	data/chars/kyo/wk06.gif
+offset	      23 103
+              bbox	12 4 39 100
+              frame	data/chars/kyo/wk07.gif
+
+anim run
+	loop	1
+	delay	8
+	offset	51 94
+	bbox	30 4 50 70
+	frame	data/chars/kyo/run1.gif
+offset	51 91
+	bbox	42 3 43 68
+	frame	data/chars/kyo/run2.gif
+offset	34 84
+	bbox	22 5 44 72	
+                  frame	data/chars/kyo/run3.gif
+offset	52 92
+	bbox	35 3 51 73 
+                  frame	data/chars/kyo/run4.gif
+offset	55 90
+	bbox	41 3 48 76
+                  frame	data/chars/kyo/run5.gif
+offset	37 84
+	bbox	24 3 40 71
+                  frame	data/chars/kyo/run6.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	37 82
+                  bbox          0 0 0 0
+	frame	data/chars/kyo/get00.gif
+offset	32 67
+                  frame	data/chars/kyo/get01.gif
+offset	25 74
+                  frame	data/chars/kyo/get02.gif
+offset	22 70
+                  frame	data/chars/kyo/get03.gif
+offset	29 86
+                  frame	data/chars/kyo/get04.gif
+
+anim block
+	loop	0
+	delay	5
+	offset	33 97
+	frame	data/chars/kyo/block1.gif
+offset	37 92
+        bbox    13 7 31 64
+	delay	5
+        frame	data/chars/kyo/block2.gif
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	32 99
+	bbox	21 7 37 81
+	frame	data/chars/kyo/1atk00.gif
+offset        34 99 
+                  attack      47 9 53 24 7
+                  bbox	23 10 32 80
+	frame	data/chars/kyo/1atk01.gif
+offset        36 99  
+ 	frame	data/chars/kyo/1atk02.gif
+offset        36 99
+ 	frame	data/chars/kyo/1atk03.gif
+offset        31 99
+                  bbox         16 4 38 86 
+                  attack       0 0 0 0 0 0
+ 	frame	data/chars/kyo/1atk04.gif
+
+anim attack2
+	loop	0
+	delay	5
+	offset	9 100
+	bbox	7 5 28 82
+	frame	data/chars/kyo/2atk00.gif
+                  attack       27 32 61 51 4
+offset	3 102             
+                  frame	data/chars/kyo/2atk01.gif    
+offset	4 100
+                  attack        0 0 0 0 0
+                  frame	data/chars/kyo/2atk02.gif
+offset	5 100
+                  frame	data/chars/kyo/2atk03.gif
+offset	17 105
+                  bbox          4 6 35 83 
+                  frame	data/chars/kyo/3atk00.gif
+offset	15 100
+                   bbox          5 5 32 89
+                   frame	data/chars/kyo/3atk01.gif
+offset 	26 104
+                   bbox        5 7 27 44
+                   attack      30 0 82 49  6  
+                   frame	data/chars/kyo/3atk02.gif
+offset	26 102           
+                   frame	data/chars/kyo/3atk03.gif
+offset	23 101        
+                   frame	data/chars/kyo/3atk04.gif
+offset	23 106          
+                   frame	data/chars/kyo/3atk05.gif
+offset	21 105
+                   bbox        5 6 41 87
+                   attack       0 0 0 0 0
+                   frame	data/chars/kyo/3atk06.gif
+offset	21 102
+                   bbox         8 7 40 83  
+                   frame	data/chars/kyo/3atk07.gif
+offset	30 99
+                  frame	data/chars/kyo/3atk08.gif
+
+anim attack3
+	loop	0
+              	offset	30 92
+	bbox	5 6 44 85
+                  delay         5  
+	sound        data/sounds/fast.wav
+
+	frame	data/chars/kyo/4atk00.gif
+offset	36 105
+	bbox	36 3 24 95
+ 	frame	data/chars/kyo/4atk01.gif
+offset	28 106
+	bbox	10 7 45 65
+	frame	data/chars/kyo/4atk02.gif
+offset	17 113
+	bbox	1 6 40 67
+	frame	data/chars/kyo/4atk03.gif
+offset	21 113
+	bbox	0 8 36 50
+                  attack       34 28 67 31 10 1
+	frame	data/chars/kyo/4atk04.gif
+offset	22 113
+                 	frame	data/chars/kyo/4atk05.gif
+offset	24 113
+ 	frame	data/chars/kyo/4atk06.gif
+offset	26 115
+                  bbox          11 10 42 72
+	frame	data/chars/kyo/4atk07.gif
+offset	27 117
+	frame	data/chars/kyo/4atk08.gif
+offset	25 92
+                  frame	data/chars/kyo/4atk09.gif
+offset	21 87
+            	frame	data/chars/kyo/4atk10.gif       
+offset	29 95
+                  attack        0 0 0 0 0 0 
+	frame	data/chars/kyo/4atk11.gif
+
+
+
+
+
+
+
+
+
+anim runattack
+	loop	0
+	delay	5
+        followanim 3
+	followcond 1
+	bbox	32 6 35 67
+	move       15
+	sound       data/sounds/kyorjatk.wav
+offset	26 81
+	frame	data/chars/kyo/free9.gif
+offset	17 84
+        bbox    15 6 33 68
+	frame	data/chars/kyo/free10.gif
+offset	26 88
+        bbox    0 0 0 0
+	frame	data/chars/kyo/free11.gif
+offset	34 112
+        attack  38 4 26 104 5
+        move    0
+	frame	data/chars/kyo/free12.gif
+offset	31 112
+        attack  0 0 0 0 0 
+	frame	data/chars/kyo/free13.gif
+	frame	data/chars/kyo/free14.gif
+	frame	data/chars/kyo/free15.gif
+offset	21 103
+	frame	data/chars/kyo/free16.gif
+offset	26 99
+	frame	data/chars/kyo/free17.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim follow3
+jumpframe 28 3
+	loop	0
+	delay	6
+        energycost 10
+        fastattack 1
+	bbox	2 9 36 74
+	sound       data/sounds/kyortk.wav
+offset	17 105
+        frame	data/chars/kyo/3atk00.gif
+offset	15 100
+        bbox    4 8 39 74
+        frame	data/chars/kyo/3atk01.gif
+offset	36 148
+        bbox    21 48 42 65
+        attack  48 55 71 94 1
+	frame	data/chars/kyo/free18.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0 
+        frame	data/chars/kyo/3atk01.gif
+offset	21 102
+        bbox    13 3 40 73
+        attack  36 21 90 72 1
+	frame	data/chars/kyo/free5.gif
+offset	36 148
+        bbox    21 48 42 65
+        attack  0 0 0 0 0
+	frame  	data/chars/kyo/free19.gif
+offset	36 148
+        attack  42 73 87 75 1
+	frame	data/chars/kyo/free20.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0
+        frame	data/chars/kyo/3atk01.gif
+offset	36 148
+        bbox    21 48 42 65
+	frame  	data/chars/kyo/free19.gif
+offset	15 100
+        bbox    4 8 39 74
+        frame	data/chars/kyo/3atk01.gif
+offset	21 102
+        bbox    13 3 40 73
+        attack  36 21 90 72 1
+	frame	data/chars/kyo/free5.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0
+        frame	data/chars/kyo/3atk01.gif
+offset	36 148
+        bbox    21 48 42 65
+        attack  48 55 71 94 1
+	frame	data/chars/kyo/free18.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0 
+        frame	data/chars/kyo/3atk01.gif
+offset	21 102
+        bbox    13 3 40 73
+        attack  36 21 90 72 1
+	frame	data/chars/kyo/free5.gif
+offset	36 148
+        bbox    21 48 42 65
+        attack  0 0 0 0 0
+	frame  	data/chars/kyo/free19.gif
+offset	36 148
+        attack  42 73 87 75 1
+	frame	data/chars/kyo/free20.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0
+        frame	data/chars/kyo/3atk01.gif
+offset	36 148
+        bbox    21 48 42 65
+	frame  	data/chars/kyo/free19.gif
+offset	15 100
+        bbox    4 8 39 74
+        frame	data/chars/kyo/3atk01.gif
+offset	21 102
+        bbox    13 3 40 73
+        attack  36 21 90 72 1
+	frame	data/chars/kyo/free5.gif
+offset	15 100
+        bbox    4 8 39 74
+        attack  0 0 0 0 0
+        frame	data/chars/kyo/3atk01.gif
+offset	36 148
+        bbox    21 48 42 65
+        attack  48 55 71 94 1
+	frame	data/chars/kyo/free18.gif
+offset	42 89
+        attack  0 0 0 0 0 
+	frame	data/chars/kyo/frsp19.gif
+offset	64 70
+	frame	data/chars/kyo/frsp20.gif
+offset	58 74
+        bbox    0 0 0 0 
+	frame	data/chars/kyo/frsp21.gif
+offset	52 109
+	frame	data/chars/kyo/frsp22.gif
+offset	28 115
+        attack  29 6 35 75 1
+	frame	data/chars/kyo/frsp23.gif
+offset	31 135
+        attack  0 0 0 0 0
+	frame	data/chars/kyo/frsp24.gif
+offset	33 128
+        attack  41 0 44 84 5
+        frame	data/chars/kyo/frsp25.gif
+offset	34 116
+        attack  0 0 0 0 0  
+	frame	data/chars/kyo/frsp26.gif
+offset	31 111
+	frame	data/chars/kyo/frsp27.gif
+offset	33 110
+	frame	data/chars/kyo/frsp28.gif 
+offset	35 114
+        attack  37 0 51 72 5 1
+	frame	data/chars/kyo/frsp29.gif 
+offset	32 112
+	frame	data/chars/kyo/frsp30.gif 
+offset	33 109
+	frame	data/chars/kyo/frsp31.gif 
+offset	21 107
+        attack  0 0 0 0 0 0
+	frame	data/chars/kyo/frsp32.gif 
+
+
+
+
+
+
+
+    
+
+anim runjumpattack
+	loop	0
+	offset	48 88
+	delay   7
+	sound       data/sounds/kyoairk.wav
+
+	frame	data/chars/kyo/rjatk00.gif
+offset        23 107   
+                  frame	data/chars/kyo/rjatk01.gif 
+offset        26 106
+                  delay         30
+                  attack       33 7 67 48 10 1
+                  frame	data/chars/kyo/rjatk02.gif 
+offset        29 106
+	attack        0 0 0 0 0 0
+	frame	data/chars/kyo/rjatk03.gif
+
+anim freespecial
+jumpframe 3 3      
+	loop	0
+	delay         4
+        fastattack 1   
+	offset	45 90
+        energycost 50
+	sound        data/sounds/kyospec.wav
+
+        bbox          0 0 0 0 
+        frame	data/chars/kyo/spec00.gif
+offset         58 96
+	frame	data/chars/kyo/spec01.gif
+offset	43 144
+	frame	data/chars/kyo/spec02.gif
+offset	18 150
+	frame	data/chars/kyo/spec03.gif
+offset	29 141
+ATTACK          0 0 119 119 10
+	frame	data/chars/kyo/spec04.gif
+offset	34 144
+ATTACK           0 0 0 0 0    
+	frame	data/chars/kyo/spec05.gif
+offset	25 141
+	frame	data/chars/kyo/spec06.gif
+offset        74 128
+ATTACK          0 0 93 103 10
+	frame	data/chars/kyo/spec07.gif
+offset	43 144
+ATTACK           0 0 0 0 0    
+	frame	data/chars/kyo/spec02.gif
+offset	18 150
+	frame	data/chars/kyo/spec03.gif
+offset	29 141
+ATTACK          0 0 119 119 10
+	frame	data/chars/kyo/spec04.gif
+offset	34 144
+ATTACK           0 0 0 0 0   
+	frame	data/chars/kyo/spec05.gif
+offset	25 141
+	frame	data/chars/kyo/spec06.gif
+offset        74 128
+ATTACK          0 0 93 103 10
+	frame	data/chars/kyo/spec07.gif
+offset	43 144
+	frame	data/chars/kyo/spec02.gif
+offset	18 150
+ATTACK           0 0 0 0 0   
+	frame	data/chars/kyo/spec03.gif
+offset	29 141
+ATTACK          0 0 119 119 15 1
+	frame	data/chars/kyo/spec04.gif
+offset	34 144
+ATTACK           0 0 0 0 0 0 
+	frame	data/chars/kyo/spec05.gif
+offset	25 141
+               	frame	data/chars/kyo/spec06.gif
+offset        74 128
+ATTACK          0 0 93 103 15 1
+	frame	data/chars/kyo/spec07.gif
+offset         22 124
+	frame	data/chars/kyo/spec08.gif
+offset         22 114
+	frame	data/chars/kyo/spec09.gif
+offset         30 92
+ATTACK           0 0 0 0 0 0 
+	frame	data/chars/kyo/spec10.gif
+
+
+
+anim freespecial2
+	loop	0
+	delay	5
+	offset	30 99
+        followanim 1
+	followcond 1
+	bbox	0 0 0 0
+	fastattack 1
+move   15
+	sound       data/sounds/kyoairk.wav
+	frame	data/chars/kyo/ratk00.gif
+offset	38 95
+	frame	data/chars/kyo/ratk01.gif
+offset	36 90
+	frame	data/chars/kyo/ratk02.gif
+offset	38 88
+	frame	data/chars/kyo/ratk03.gif
+offset	34 87
+	frame	data/chars/kyo/ratk04.gif
+offset	28 87
+        move    0
+                  attack        50 1 38 31 5
+	frame	data/chars/kyo/ratk05.gif
+offset	21 86
+                  attack       0 0 0 0 0
+	frame	data/chars/kyo/ratk06.gif
+offset	20 85
+	frame	data/chars/kyo/ratk07.gif
+offset	21 85
+	frame	data/chars/kyo/ratk08.gif
+
+
+
+anim follow1
+jumpframe 25
+	loop	0
+	delay	5
+	offset	30 99
+        energycost 20
+	bbox	0 0 0 0
+	fastattack 1
+	sound       data/sounds/kyofree.wav
+offset	20 85
+	frame	data/chars/kyo/ratk11.gif 
+offset	49 99
+	frame	data/chars/kyo/frsp00.gif
+offset	39 96
+	frame	data/chars/kyo/frsp01.gif
+offset	44 94
+	frame	data/chars/kyo/frsp02.gif
+offset	48 92
+	frame	data/chars/kyo/frsp03.gif
+offset	34 89
+	frame	data/chars/kyo/frsp04.gif
+offset	30 90
+                  attack        50 4 51 24 8 
+	frame	data/chars/kyo/frsp05.gif
+offset	23 90
+attack      0 0 0 0 0
+	frame	data/chars/kyo/frsp06.gif
+offset	23 90
+	frame	data/chars/kyo/frsp07.gif
+offset	14 95
+	frame	data/chars/kyo/frsp08.gif
+offset	27 98
+	frame	data/chars/kyo/frsp09.gif
+offset	30 99
+	frame	data/chars/kyo/frsp10.gif 
+offset	35 82
+	frame	data/chars/kyo/frsp11.gif 
+offset	35 82
+	frame	data/chars/kyo/frsp12.gif 
+offset	27 97
+	frame	data/chars/kyo/frsp13.gif 
+offset	28 106
+	frame	data/chars/kyo/frsp14.gif 
+offset	30 133
+                  attack       46 0 30 128 10
+	frame	data/chars/kyo/frsp15.gif 
+offset	30 128
+	frame	data/chars/kyo/frsp16.gif 
+offset	30 113
+                  attack        0 0 0 0 0  
+                  frame	data/chars/kyo/frsp17.gif 
+offset	36 99
+	frame	data/chars/kyo/frsp18.gif
+offset	42 89
+	frame	data/chars/kyo/frsp19.gif
+offset	64 70
+	frame	data/chars/kyo/frsp20.gif
+offset	58 74
+	frame	data/chars/kyo/frsp21.gif
+offset	52 109
+	frame	data/chars/kyo/frsp22.gif
+offset	28 115
+
+delay        3
+                  attack        29 6 35 75 10
+	frame	data/chars/kyo/frsp23.gif
+offset	31 135
+                  attack        0 0 0 0 0
+	frame	data/chars/kyo/frsp24.gif
+offset	33 128
+                  attack        41 0 44 84 10
+                  frame	data/chars/kyo/frsp25.gif
+offset	34 116
+                  attack        0 0 0 0 0  
+	frame	data/chars/kyo/frsp26.gif
+offset	31 111
+	frame	data/chars/kyo/frsp27.gif
+offset	33 110
+	frame	data/chars/kyo/frsp28.gif 
+offset	35 114
+                  attack        37 0 51 72 15 1 
+	frame	data/chars/kyo/frsp29.gif 
+offset	32 112
+	frame	data/chars/kyo/frsp30.gif 
+offset	33 109
+	frame	data/chars/kyo/frsp31.gif 
+offset	21 107
+                  attack        0 0 0 0 0 0
+	frame	data/chars/kyo/frsp32.gif 
+
+anim freespecial3
+	loop	0
+	delay	5
+	offset	30 99
+	bbox	0 0 0 0
+        followanim 2
+	followcond 1
+	move        15
+	fastattack 1
+	sound       data/sounds/kyoairk.wav
+	frame	data/chars/kyo/ratk00.gif
+offset	38 95
+	frame	data/chars/kyo/ratk01.gif
+offset	36 90
+	frame	data/chars/kyo/ratk02.gif
+offset	38 88
+	frame	data/chars/kyo/ratk03.gif
+offset	34 87
+	frame	data/chars/kyo/ratk04.gif
+        move    0
+offset	28 87
+                  attack        50 1 38 31 7
+	frame	data/chars/kyo/ratk05.gif
+offset	21 86
+                  attack       0 0 0 0 0
+	frame	data/chars/kyo/ratk06.gif
+offset	20 85
+	frame	data/chars/kyo/ratk07.gif
+offset	21 85
+	frame	data/chars/kyo/ratk08.gif
+offset	21 85
+	frame	data/chars/kyo/ratk09.gif
+offset	21 85
+	frame	data/chars/kyo/ratk10.gif 
+offset	20 85
+	frame	data/chars/kyo/ratk11.gif 
+
+
+
+anim follow2
+jumpframe 10 3
+	loop	0
+	delay	5
+        energycost 15
+	bbox	0 0 0 0
+	fastattack 1
+	sound       data/sounds/kyoratk.wav
+offset	20 77
+	frame	data/chars/kyo/ratk12.gif
+offset	15 90
+	frame	data/chars/kyo/ratk13.gif
+offset	17 103
+	frame	data/chars/kyo/ratk14.gif
+offset	17 126
+                  attack        50 -2 33 51 7  
+	frame	data/chars/kyo/ratk15.gif
+offset	17 112
+                  attack        0 0 0 0 0
+	frame	data/chars/kyo/ratk16.gif
+offset	17 101
+	frame	data/chars/kyo/ratk17.gif
+offset	17 95
+	frame	data/chars/kyo/ratk18.gif
+offset	17 91
+	frame	data/chars/kyo/ratk19.gif
+offset	17 86
+	frame	data/chars/kyo/ratk20.gif
+offset	19 108
+	frame	data/chars/kyo/ratk21.gif 
+offset	37 106
+                  attack        40 14 40 58 7
+	frame	data/chars/kyo/ratk22.gif  
+offset	34 105
+                  attack        0 0 0 0 0
+	frame	data/chars/kyo/ratk23.gif
+offset	32 107
+	frame	data/chars/kyo/ratk24.gif
+offset	30 113
+	frame	data/chars/kyo/ratk25.gif
+offset	30 113
+	frame	data/chars/kyo/ratk26.gif
+offset	20 104
+	frame	data/chars/kyo/ratk27.gif
+offset        27 111
+                  attack        27 36 87 35 7 1
+	frame	data/chars/kyo/ratk28.gif
+offset	30 104
+                  attack        0 0 0 0 0 0 
+	frame	data/chars/kyo/ratk29.gif
+offset         28 101
+	frame	data/chars/kyo/ratk30.gif
+offset	21 102
+	frame	data/chars/kyo/ratk31.gif
+offset	20 101
+	frame	data/chars/kyo/ratk32.gif 
+
+
+
+
+anim freespecial4
+	loop	0
+	delay	5
+        energycost 10
+	offset	31 95
+        bbox	0 0 0 0
+	fastattack 1
+move   25
+	sound       data/sounds/kyoairk.wav
+	frame	data/chars/kyo/free1.gif
+offset	31 96
+	frame	data/chars/kyo/free2.gif
+offset	26 96
+	frame	data/chars/kyo/free3.gif
+offset	43 102
+        blast  36 21 90 72 15 1
+        delay   22
+        move    0
+	frame	data/chars/kyo/free4.gif
+offset	42 102
+        delay   5 
+	frame	data/chars/kyo/free5.gif
+offset	33 101
+	frame	data/chars/kyo/free6.gif
+offset	25 92
+	frame	data/chars/kyo/free7.gif
+offset	21 87
+	frame	data/chars/kyo/free8.gif
+
+
+
+
+anim jump
+	loop	0
+	delay   10
+	offset	32 90
+	bbox	17 7 35 80
+	frame	data/chars/kyo/jump00.gif
+offset	25 120 
+	bbox	7 10 26 111	
+                  frame	data/chars/kyo/jump01.gif
+offset	21 122
+	frame	data/chars/kyo/jump02.gif
+offset	18 108
+	bbox         6 7 32 83	
+                  frame	data/chars/kyo/jump03.gif
+offset	39 104
+	bbox	25 5 42 72
+                  frame	data/chars/kyo/jump04.gif
+offset	42 102
+	bbox	31 6 38 59
+                  frame	data/chars/kyo/jump05.gif
+offset	42 100
+	bbox	28 4 46 60
+                  frame	data/chars/kyo/jump06.gif
+offset	42 102
+	bbox	31 6 38 59
+                  frame	data/chars/kyo/jump05.gif
+offset	39 104
+	bbox	25 5 42 72
+                  frame	data/chars/kyo/jump04.gif
+offset	18 108
+	bbox	6 7 32 83	
+                  frame	data/chars/kyo/jump03.gif
+offset	21 122
+	bbox	7 10 26 111
+                  frame	data/chars/kyo/jump02.gif
+offset	25 120 
+	frame	data/chars/kyo/jump01.gif
+offset        32 90 
+	bbox	17 7 35 80
+                  frame	data/chars/kyo/jump00.gif
+
+anim jumpforward
+	loop	0
+	offset	48 106
+	delay        5
+	bbox         29 9 42 70
+	sound       data/sounds/kyoairk.wav
+
+	frame	data/chars/kyo/ak00.gif
+offset	46 106
+	frame	data/chars/kyo/ak01.gif
+offset	29 103
+	frame	data/chars/kyo/ak02.gif
+offset	45 102
+                  attack        52 24 70 52 10 1
+                  delay         25
+	frame	data/chars/kyo/newk.gif
+        delay   5  
+offset	45 102
+                  attack        0 0 0 0 0 0
+	frame	data/chars/kyo/newk.gif
+offset	39 104
+	bbox	25 5 42 72
+                  frame	data/chars/kyo/jump04.gif
+
+
+
+
+
+anim jumpattack
+	loop	0
+	offset	31 111
+	delay        7
+	bbox         57 65 19 44
+	sound       data/sounds/kyoairk.wav
+
+	frame	data/chars/kyo/frsp27.gif
+offset	33 110
+                  frame	data/chars/kyo/frsp28.gif 
+offset	35 114
+                  attack        37 0 51 72 5 1
+                  delay         25 
+	frame	data/chars/kyo/frsp29.gif 
+offset	33 110
+                  attack        0 0 0 0 0 0
+	frame	data/chars/kyo/frsp28.gif 
+
+
+
+anim jumpattack2
+dive 3 3
+	loop	0
+	offset	52 123
+        fastattack 1
+        delay       5
+	sound       data/sounds/kyoairk.wav
+	frame	data/chars/kyo/dive1.gif
+offset	55 117
+	frame	data/chars/kyo/dive2.gif
+offset	27 129
+	frame	data/chars/kyo/dive3.gif
+offset	15 99
+        attack  5 8 41 52 10 1 
+	frame	data/chars/kyo/dive4.gif
+        attack  0 0 0 0 0 0
+
+  
+anim grab
+	loop	0
+                  delay         2000				
+	bbox	27 6 34 94
+	offset	34 87
+	frame	data/chars/kyo/ratk04.gif
+
+anim grabattack
+	loop	0
+	offset	30 100
+	bbox	0 0 0 0
+	delay	5
+                	hitfx           data/sounds/GRABATCK.wav
+	frame	data/chars/kyo/hold00.gif
+offset	28 100
+                  attack        52 11 27 21 7
+                  frame	data/chars/kyo/hold01.gif
+offset	29 100
+                  frame	data/chars/kyo/hold02.gif
+                  attack        0 0 0 0 0
+	delay	2
+	frame	data/chars/kyo/1atk03.gif
+
+anim grabattack2
+	loop	0
+	bbox	0 0 0 0
+        fastattack 1 
+	delay	5
+                	hitfx           data/sounds/GRABATCK.wav
+	offset	15 90
+	frame	data/chars/kyo/ratk13.gif
+offset	17 103
+	frame	data/chars/kyo/ratk14.gif
+offset	17 126
+                  attack        50 -2 33 51 7 1 
+	frame	data/chars/kyo/ratk15.gif
+offset	17 103
+        attack  0 0 0 0 0 0 
+	frame	data/chars/kyo/ratk14.gif
+
+
+
+anim throw
+	loop	0
+	offset	29 101
+	delay	9
+                  bbox         0 0 0 0 
+	sound       data/sounds/kyothw.wav
+	frame	data/chars/kyo/tr00.gif
+offset	24 81
+	frame	data/chars/kyo/tr01.gif
+offset	20 70
+	frame	data/chars/kyo/tr02.gif
+offset	25 74
+	delay         23
+	frame	data/chars/kyo/tr03.gif
+offset	20 70
+	delay         8
+	frame	data/chars/kyo/tr02.gif
+offset	24 81
+	frame	data/chars/kyo/tr01.gif
+offset	26 90
+	frame	data/chars/kyo/tr04.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	32 101
+	bbox	2 0 55 105
+	frame	data/chars/kyo/pain00.gif
+offset	42 99
+	bbox	0 0 67 102
+	frame	data/chars/kyo/pain01.gif
+offset	58 98
+	bbox	1 4 73 96
+                  delay        18
+	frame	data/chars/kyo/pain02.gif
+offset	42 99
+	bbox	0 0 67 102
+	frame	data/chars/kyo/pain01.gif
+offset	32 101
+	bbox	2 0 55 105
+	frame	data/chars/kyo/pain00.gif
+
+anim fall
+	loop	0
+	delay       5
+                 offset	 27 106
+	frame	data/chars/kyo/fall00.gif
+offset	38 86
+	delay      65
+         ATTACK         5 12 35 30 10 1
+	frame	data/chars/kyo/fall01.gif
+offset	38 101
+                  delay     15
+         ATTACK         0 0 0 0 0 0
+                  frame	data/chars/kyo/fall02.gif
+offset	50 69
+                  delay      5
+                   frame	data/chars/kyo/fall03.gif
+offset        64 24
+                  delay      35
+                  frame	data/chars/kyo/fall04.gif
+
+
+anim rise
+	loop	0
+	offset	71 61
+	delay         7
+                  bbox           0 0 0 0  
+	frame	data/chars/kyo/rise00.gif
+offset	78 60
+	frame	data/chars/kyo/rise01.gif
+offset	69 94
+	frame	data/chars/kyo/rise02.gif
+offset	65 99
+	frame	data/chars/kyo/rise03.gif
+offset	27 73
+	frame	data/chars/kyo/rise04.gif
+offset	29 87
+	frame	data/chars/kyo/rise05.gif
+
+
+anim waiting	
+                  loop	0
+	delay	10
+	offset	30 106
+	frame	data/chars/kyo/wait05.gif
+offset	30 107
+	frame	data/chars/kyo/wait06.gif
+offset	30 136
+	frame	data/chars/kyo/wait07.gif
+offset	30 133
+	frame	data/chars/kyo/wait08.gif
+	frame	data/chars/kyo/wait09.gif
+	frame	data/chars/kyo/wait10.gif
+	frame	data/chars/kyo/wait11.gif
+	frame	data/chars/kyo/wait12.gif
+
+
+
+
+anim special
+jumpframe 1 3
+	loop	0
+	delay        4
+	bbox        0 0 0 0 
+        energycost 10
+	sound       data/sounds/kyoairk.wav
+
+offset	21 122
+	frame	data/chars/kyo/jump02.gif
+offset	18 108
+        frame	data/chars/kyo/jump03.gif
+offset	39 104
+        frame	data/chars/kyo/jump04.gif
+offset	48 106
+        frame	data/chars/kyo/ak00.gif
+offset	46 106
+	frame	data/chars/kyo/ak01.gif
+offset	29 103
+	frame	data/chars/kyo/ak02.gif
+offset  75 120
+delay   20
+blast   0 70 150 48 10 2
+	frame	data/chars/kyo/e1.gif
+blast   0 0 0 0 0 0
+delay   5
+offset	46 106
+	frame	data/chars/kyo/ak01.gif
+offset	48 106
+        frame	data/chars/kyo/ak00.gif
+offset	18 108
+        frame	data/chars/kyo/jump03.gif
+offset	21 122
+	frame	data/chars/kyo/jump02.gif
+
+
+
+
+
+
+
+

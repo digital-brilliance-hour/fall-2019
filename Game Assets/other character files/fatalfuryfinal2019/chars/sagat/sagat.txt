@@ -1,0 +1,110 @@
+name	Sagat
+health	100
+speed	9
+type	enemy
+shadow	4
+icon	data/chars/sagat/icon.gif
+diesound data/sounds/die2.wav
+
+anim idle
+	loop	1
+	offset	127 266
+	bbox	100 154 52 107
+	delay	7
+	frame	data/chars/sagat/idle1x.gif
+	frame	data/chars/sagat/idle2x.gif
+	frame	data/chars/sagat/idle3x.gif
+	frame	data/chars/sagat/idle4x.gif
+	frame	data/chars/sagat/idle5x.gif
+	frame	data/chars/sagat/idle6x.gif
+	frame	data/chars/sagat/idle7x.gif
+	frame	data/chars/sagat/idle8x.gif
+
+anim walk
+	loop	1
+	offset	127 266
+	bbox	100 154 52 107
+	delay	7
+	frame	data/chars/sagat/walk1.gif
+	frame	data/chars/sagat/walk2.gif
+	frame	data/chars/sagat/walk3.gif
+	frame	data/chars/sagat/walk4.gif
+	frame	data/chars/sagat/walk5.gif
+	frame	data/chars/sagat/walk6.gif
+	frame	data/chars/sagat/walk7.gif
+
+anim pain
+	loop	0
+	delay	8
+	offset	127 266
+	bbox	100 154 52 107
+	frame	data/chars/sagat/pain1.gif
+	delay   40
+	frame	data/chars/sagat/pain2.gif
+	delay   11
+	frame	data/chars/sagat/pain1.gif
+
+anim fall
+	loop	0
+	delay	60
+	offset	127 266
+        attack  85 247 35 32 5 1
+	frame	data/chars/sagat/fall1.gif
+        delay   20
+        attack  0 0 0 0 0 0
+	frame	data/chars/sagat/fall2.gif
+
+anim rise
+	loop	0
+	offset	127 266
+	delay	10
+	frame	data/chars/sagat/rise1.gif
+	frame	data/chars/sagat/sp07.gif
+
+anim attack1
+	range	0 80
+	loop	0
+	delay	6
+	offset	127 266
+	bbox	100 154 52 107
+	frame	data/chars/sagat/kick1.gif
+	frame	data/chars/sagat/kick2.gif
+	frame	data/chars/sagat/kick3.gif
+	frame	data/chars/sagat/kick4.gif
+	delay   9
+	attack  179 187 89 37 18 1
+	frame	data/chars/sagat/kick5.gif
+	attack  0 0 0 0 0 0
+	delay   7
+	frame	data/chars/sagat/kick6.gif
+	frame	data/chars/sagat/kick7.gif
+	frame	data/chars/sagat/kick8.gif
+	frame	data/chars/sagat/kick9.gif
+	frame	data/chars/sagat/kick10.gif
+
+anim upper
+	range	0 80
+	loop	0
+	delay	4
+	offset	127 266
+	jumpframe 4
+	sound   data/sounds/sa1.wav
+	frame	data/chars/sagat/sp07.gif
+	frame	data/chars/sagat/sp08.gif
+	frame	data/chars/sagat/sp09.gif
+	attack  172 207 35 41 15 1
+	frame	data/chars/sagat/sp10.gif
+	offset  117 276
+	attack  119 90 30 149 15 1
+	delay   35
+	frame	data/chars/sagat/sp11.gif
+	delay   10
+	offset	127 266
+	attack  0 0 0 0 0 0
+	frame	data/chars/sagat/sp12.gif
+	frame	data/chars/sagat/sp13.gif
+	frame	data/chars/sagat/sp14.gif
+	frame	data/chars/sagat/sp15.gif
+	frame	data/chars/sagat/sp16.gif
+	frame	data/chars/sagat/idle1.gif
+

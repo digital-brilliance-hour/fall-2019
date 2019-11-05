@@ -1,0 +1,21 @@
+name	Shot
+health	1
+type	none
+shadow	0
+candamage enemy obstacle
+anim idle
+	hitflash   flas0004
+	loop	0
+	delay	10
+	offset	82 177
+	attack	62 79 55 104 10 0
+	frame	data/chars/misc/shot1.gif
+	frame	data/chars/misc/shot2.gif
+	frame	data/chars/misc/shot3.gif
+	frame	data/chars/misc/shot4.gif
+	frame	data/chars/misc/shot5.gif
+	frame	data/chars/misc/shot4.gif
+	frame	data/chars/misc/shot3.gif
+	frame	data/chars/misc/shot2.gif
+        attack 0 0 0 0 0
+	frame	data/chars/misc/empty.gif

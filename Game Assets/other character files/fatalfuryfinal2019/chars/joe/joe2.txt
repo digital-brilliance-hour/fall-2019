@@ -1,0 +1,490 @@
+name	joe2
+health	100
+speed	10
+mp 100
+land 1
+type	none
+shadow	   0
+gfxshadow  1
+diesound data/sounds/jdie.wav
+icon	 data/chars/terry/iwolf.gif
+iconpain data/chars/terry/iwolf2.gif
+atchain    1 
+load hur
+palette           data/chars/joe/pow.gif
+alternatepal	  data/chars/joe/pow.gif
+alternatepal	  data/chars/joe/pow.gif
+alternatepal	  data/chars/joe/pow.gif
+weaploss 3
+
+com  s s s      freespecial
+com  f f s      freespecial2
+com  d f s      freespecial3
+com  b b s      freespecial4
+com     a2      freespecial5
+com     s       freespecial6
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 70
+	bbox	0 0 0 0
+	frame	data/chars/joe/sel2.gif
+        delay 10
+	frame	data/chars/joe/sel3.gif	
+	frame	data/chars/joe/sel4.gif
+	frame	data/chars/joe/sel4.gif
+	frame	data/chars/joe/sel4.gif
+	frame	data/chars/joe/sel3.gif
+	frame	data/chars/joe/sel2.gif
+	frame	data/chars/joe/sel1.gif
+
+
+anim waiting
+shadowcoords 1000 1000
+        loop	1
+	delay	12
+	offset	0 0
+	frame	data/chars/joe/select.gif	
+	frame	data/chars/joe/selecta.gif	
+	frame	data/chars/joe/selectb.gif	
+	frame	data/chars/joe/selecta.gif	
+
+anim select
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	0 0
+	sound	data/sounds/joe1.wav
+	frame	data/chars/joe/select.gif	
+	frame	data/chars/joe/select2.gif	
+	frame	data/chars/joe/select2.gif
+	frame	data/chars/joe/select2.gif	
+	frame	data/chars/joe/select.gif	
+	frame	data/chars/joe/select.gif	
+
+anim idle
+	loop	1
+	delay	9
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/idle000.gif
+	frame	data/chars/joe/idle001.gif
+	frame	data/chars/joe/idle002.gif
+	frame	data/chars/joe/idle001.gif
+
+anim walk
+	loop	1
+	delay	15
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/walk000.gif
+	frame	data/chars/joe/walk001.gif
+	frame	data/chars/joe/walk002.gif
+
+anim freespecial6
+	custknife fire2
+	throwframe 1 1
+	loop	0
+	delay	22
+	offset	92 177
+	bbox	0
+	frame	data/chars/joe/block.gif
+	frame	data/chars/joe/block.gif
+	frame	data/chars/joe/block.gif
+
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/joe/get001.gif
+#	frame	data/chars/joe/get001.gif
+	frame	data/chars/joe/get001.gif
+#	frame	data/chars/joe/get000.gif
+	delay	30
+	frame	data/chars/joe/get000.gif
+	delay	5
+	frame	data/chars/joe/get000.gif
+	frame	data/chars/joe/get000.gif
+	frame	data/chars/joe/get001.gif
+	frame	data/chars/joe/get001.gif
+
+anim jump
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/jump000.gif
+	frame	data/chars/joe/jump001.gif
+	frame	data/chars/joe/jump001.gif
+	frame	data/chars/joe/jump002.gif
+	frame	data/chars/joe/jump002.gif
+	frame	data/chars/joe/jump003.gif
+	frame	data/chars/joe/jump003.gif
+	frame	data/chars/joe/jump003.gif
+	frame	data/chars/joe/jump003.gif
+	frame	data/chars/joe/get000.gif
+
+
+
+
+anim jumpattack
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	76 81 33 90
+	sound	data/sounds/punch.wav
+	frame	data/chars/joe/jk1.gif
+	attack	121 123 25 27 7 1
+	frame	data/chars/joe/jk0.gif
+	frame	data/chars/joe/jk0.gif
+	frame	data/chars/joe/jk0.gif
+	attack	0
+	frame	data/chars/joe/jk1.gif
+
+anim jumpattack2
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	76 81 33 90
+	sound	data/sounds/punch.wav
+	frame	data/chars/joe/jumpat00.gif
+	attack	107 130 32 46 7 0
+	frame	data/chars/joe/jumpat01.gif
+	frame	data/chars/joe/jumpat01.gif
+	attack	0
+	frame	data/chars/joe/jumpat00.gif
+
+anim attack1
+	custknife fire
+	throwframe 2 1
+        sound	data/sounds/punch.wav
+	loop	0
+	delay	10
+	offset	92 177
+	frame	data/chars/joe/fire2.gif
+	frame	data/chars/joe/fire3.gif
+	burn	119 78 36 39 18 1 
+	frame	data/chars/joe/fire4.gif
+	frame	data/chars/joe/fire4.gif
+        burn 0
+	frame	data/chars/joe/fire3.gif
+
+
+anim attack2
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	6
+	offset	92 177
+	bbox	76 81 33 90
+	sound	data/sounds/punch.wav
+	frame	data/chars/joe/na2-00.gif
+	frame	data/chars/joe/na2-01.gif
+	frame	data/chars/joe/na2-02.gif
+	attack	110 87 48 23 12
+	frame	data/chars/joe/na2-02.gif
+	frame	data/chars/joe/na2-01.gif
+	attack	0
+	frame	data/chars/joe/na2-00.gif
+	frame	data/chars/joe/na2-00.gif
+
+anim attack3
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	6
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/joe/spec001.gif
+	frame	data/chars/joe/spec001.gif
+	frame	data/chars/joe/spec002.gif
+	frame	data/chars/joe/spec002.gif
+	frame	data/chars/joe/spec002.gif
+	attack	112 95 63 27 20 1
+	frame	data/chars/joe/a4-002.gif
+	frame	data/chars/joe/a4-002.gif
+	frame	data/chars/joe/a4-002.gif
+	frame	data/chars/joe/sel1.gif
+	frame	data/chars/joe/sel1.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/grab.gif
+
+anim throw
+	custknife fakesh
+	throwframe 4 2
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/marytoss.wav
+	frame	data/chars/joe/throw001.gif
+	frame	data/chars/joe/throw002.gif
+	frame	data/chars/joe/throw003.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw004.gif
+	frame	data/chars/joe/throw003.gif
+	frame	data/chars/joe/throw002.gif
+	frame	data/chars/joe/throw001.gif
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	76 81 33 90
+	delay	8
+        move -1
+	frame	data/chars/joe/pain01.gif
+	frame	data/chars/joe/pain02.gif
+	frame	data/chars/joe/pain02.gif
+	frame	data/chars/joe/pain01.gif
+
+
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	76 81 33 90
+	delay	8
+	frame	data/chars/joe/pain01.gif
+	delay	36
+	frame	data/chars/joe/pain02.gif
+	delay	6
+	frame	data/chars/joe/pain02.gif
+	frame	data/chars/joe/pain01.gif
+	frame	data/chars/joe/pain01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/joe/shock1.gif
+	frame	data/chars/joe/shock3.gif
+	frame	data/chars/joe/shock2.gif
+	frame	data/chars/joe/shock1.gif
+	frame	data/chars/joe/shock3.gif
+	frame	data/chars/joe/shock2.gif
+	frame	data/chars/joe/shock1.gif
+	frame	data/chars/joe/shock3.gif
+	frame	data/chars/joe/shock2.gif
+	frame	data/chars/joe/shock1.gif
+	frame	data/chars/joe/shock3.gif
+	frame	data/chars/joe/shock2.gif
+	frame	data/chars/joe/fall01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/joe/fall00.gif
+	frame	data/chars/joe/fall00.gif
+	frame	data/chars/joe/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/joe/rise1.gif
+	frame	data/chars/joe/rise2.gif
+	frame	data/chars/joe/rise3.gif
+	frame	data/chars/joe/rise3.gif
+
+
+anim freespecial
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+        sound	data/sounds/joe2.wav
+	loop	0
+	delay	13
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/super1.gif
+	attack	119 78 36 39 4 
+        frame	data/chars/joe/super2.gif 
+        attack 0 0 0 0 0 
+	frame	data/chars/joe/super3.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/joe/super4.gif
+         attack 0
+	frame	data/chars/joe/super5.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/joe/super6.gif
+        attack 0
+	frame	data/chars/joe/super7.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/joe/super8.gif
+         attack 0
+	frame	data/chars/joe/super9.gif
+	attack	119 78 36 39 4 
+        sound	data/sounds/joe3.wav
+	frame	data/chars/joe/super10.gif
+        attack 0
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/joe/super11.gif
+	attack	119 78 36 39 8 1
+	frame	data/chars/joe/super12.gif
+        attack 0 0 0 0
+	frame	data/chars/joe/super12.gif
+	offset	89 177
+	frame	data/chars/joe/na2-02.gif
+	frame	data/chars/joe/na2-01.gif
+
+
+anim freespecial2
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	76 81 33 90
+        frame	data/chars/joe/SPEC000.gif 
+	frame	data/chars/joe/SPEC000.gif
+	frame	data/chars/joe/SPEC000.gif
+	frame	data/chars/joe/SPEC000.gif
+	frame	data/chars/joe/SPEC001.gif
+	frame	data/chars/joe/SPEC002.gif
+	sound	data/sounds/joe4.wav
+	burn	121 85 57 38 18 1
+        move 25
+	frame	data/chars/joe/SPEC003.gif
+	offset	92 180
+	frame	data/chars/joe/SPEC004.gif
+	offset	92 183
+	frame	data/chars/joe/SPEC005.gif
+	offset	92 186
+	frame	data/chars/joe/SPEC003.gif
+	offset	92 183
+	frame	data/chars/joe/SPEC004.gif
+	offset	92 180
+	frame	data/chars/joe/SPEC005.gif
+
+
+anim freespecial3
+
+        energycost 0 1 0
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/pow1.gif
+	frame	data/chars/joe/pow2.gif
+	frame	data/chars/joe/pow3.gif
+        sound        data/sounds/joe.wav
+	frame	data/chars/joe/pow4.gif
+	custknife hur
+	throwframe 4 2
+	frame	data/chars/joe/pow4.gif
+	frame	data/chars/joe/pow4.gif
+	frame	data/chars/joe/pow4.gif
+	frame	data/chars/joe/pow4.gif
+	frame	data/chars/joe/pow4.gif
+	frame	data/chars/joe/pow4.gif
+
+anim freespecial4
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	jumpframe 0
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	76 81 33 90
+	sound	data/sounds/joe5.wav
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+    jumpframe	data/chars/joe/crack1.gif 4 1 0
+	frame	data/chars/joe/crack2.gif
+	frame	data/chars/joe/crack3.gif
+	frame	data/chars/joe/crack4.gif
+	burn	92 91 55 80 15 1
+	frame	data/chars/joe/crack5.gif
+	frame	data/chars/joe/crack6.gif
+	burn	0 0 0 0 0 0
+	frame	data/chars/joe/crack2.gif
+	frame	data/chars/joe/crack1.gif
+
+anim freespecial5
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/joe/turn1.gif
+	frame	data/chars/joe/turn2.gif
+	frame	data/chars/joe/turn4.gif
+	attack	23 90 41 58 20 1
+	frame	data/chars/joe/turn4.gif
+	frame	data/chars/joe/turn4.gif
+	frame	data/chars/joe/turn2.gif
+	frame	data/chars/joe/turn1.gif
+
+
+anim grabattack
+	custknife fire
+	throwframe 2 1
+        sound	data/sounds/punch.wav
+	loop	0
+	delay	10
+	offset	92 177
+	frame	data/chars/joe/fire2.gif
+	frame	data/chars/joe/fire3.gif
+	burn	119 78 36 39 18 1 
+	frame	data/chars/joe/fire5.gif
+	frame	data/chars/joe/fire5.gif
+        burn 0
+	frame	data/chars/joe/fire3.gif
+
+
+anim grabattack2
+	custknife fire
+	throwframe 2 1
+        sound	data/sounds/punch.wav
+	loop	0
+	delay	10
+	offset	92 177
+	frame	data/chars/joe/fire2.gif
+	frame	data/chars/joe/fire3.gif
+	burn	119 78 36 39 18 1 
+	frame	data/chars/joe/fire5.gif
+	frame	data/chars/joe/fire5.gif
+        burn 0
+	frame	data/chars/joe/fire3.gif
+
+
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/joe/get001.gif
+

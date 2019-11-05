@@ -1,0 +1,283 @@
+name	YUN
+health	100
+speed	11
+type	enemy
+shadow	4
+dust    dust
+diesound data/sounds/sukedie.wav
+icon	data/chars/yun/1.gif
+iconpain	data/chars/yun/2.gif
+aggression 1
+gfxshadow 1
+
+remap	data/chars/yun/idle01.gif  data/chars/yun/map1.gif
+remap	data/chars/yun/idle01.gif  data/chars/yun/map2.gif
+remap	data/chars/yun/idle01.gif  data/chars/yun/map3.gif
+remap	data/chars/yun/idle01.gif  data/chars/yun/map4.gif
+remap	data/chars/yun/idle01.gif  data/chars/yun/map5.gif
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	78 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/idle00.gif
+	delay   8
+	frame	data/chars/yun/idle01.gif
+	frame	data/chars/yun/idle02.gif
+	frame	data/chars/yun/idle03.gif
+	frame	data/chars/yun/idle04.gif
+	delay   15
+	frame	data/chars/yun/idle05.gif
+	delay   8
+	frame	data/chars/yun/idle04.gif
+	frame	data/chars/yun/idle03.gif
+	frame	data/chars/yun/idle02.gif
+	frame	data/chars/yun/idle01.gif
+
+anim walk
+	loop	1
+	delay	6
+	offset	74 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/wk01.gif
+	frame	data/chars/yun/wk02.gif
+	frame	data/chars/yun/wk03.gif
+	frame	data/chars/yun/wk04.gif
+	frame	data/chars/yun/wk05.gif
+	frame	data/chars/yun/wk06.gif
+	frame	data/chars/yun/wk07.gif
+	frame	data/chars/yun/wk08.gif
+	frame	data/chars/yun/wk09.gif
+	frame	data/chars/yun/wk10.gif
+	frame	data/chars/yun/wk11.gif
+	frame	data/chars/yun/wk12.gif
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	78 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/a101.gif
+	attack  93 97 55 18 8
+	frame	data/chars/yun/a102.gif
+	attack  0 0 0 0 0
+	frame	data/chars/yun/a103.gif
+	frame	data/chars/yun/a201.gif
+        delay	5
+	offset	78 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/a301.gif
+	frame	data/chars/yun/a302.gif
+	attack  110 127 62 27 7
+	delay   7
+	frame	data/chars/yun/a303.gif
+	attack  0 0 0 0 0
+	delay   5
+	frame	data/chars/yun/a305.gif
+	frame	data/chars/yun/a201.gif
+	frame	data/chars/yun/a202.gif
+	frame	data/chars/yun/a203.gif
+	attack  97 95 53 21 7
+	delay   7
+	frame	data/chars/yun/a204.gif
+	delay   5
+	frame	data/chars/yun/a205.gif
+	frame	data/chars/yun/a206.gif
+	frame	data/chars/yun/a207.gif
+	frame	data/chars/yun/a208.gif
+	frame	data/chars/yun/a201.gif
+        delay	4
+	offset	78 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/a401.gif
+	frame	data/chars/yun/a402.gif
+	move    8
+	bbox    0 0 0 0 
+	frame	data/chars/yun/a403.gif
+	frame	data/chars/yun/a404.gif
+	frame	data/chars/yun/a405.gif
+	frame	data/chars/yun/a406.gif
+	move    0
+	attack  93 86 31 73 10 1
+	frame	data/chars/yun/a407.gif
+	frame	data/chars/yun/a408.gif
+	delay   15
+	frame	data/chars/yun/a409.gif
+	attack  0 0 0 0 0 0
+	delay   8
+	frame	data/chars/yun/a410.gif
+	frame	data/chars/yun/a411.gif
+
+
+
+
+anim attack2
+        range   50 100
+	loop	0
+	delay	6
+	offset	78 176
+	bbox	57 96 42 80
+	jumpframe 1 2
+	sound   data/chars/yun/yun3.wav
+	frame	data/chars/yun/fr01.gif
+	offset  78 196
+	frame	data/chars/yun/fr02.gif
+	attack  83 118 75 27 8
+	bbox	0 0 0 0
+	frame	data/chars/yun/fr03.gif
+	attack  0 0 0 0 0 
+	frame	data/chars/yun/fr04.gif
+	frame	data/chars/yun/fr05.gif
+	frame	data/chars/yun/fr07.gif
+	attack  91 117 67 28 9 1
+	frame	data/chars/yun/fr08.gif
+	delay   8
+	attack  0 0 0 0 0 0
+	frame	data/chars/yun/fr09.gif
+	bbox	57 96 42 80
+	offset  78 176
+	frame	data/chars/yun/get.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim special
+	loop	0
+	delay	7
+	offset 	78 176
+	sound   data/chars/yun/yun2.wav
+	frame	data/chars/yun/sp01.gif
+	frame	data/chars/yun/sp02.gif
+	blast   33 100 104 62 15 0
+	frame	data/chars/yun/sp03.gif
+	frame	data/chars/yun/sp04.gif
+	frame	data/chars/yun/sp05.gif
+	frame	data/chars/yun/sp06.gif
+	delay   14
+	blast   0 0 0 0 0
+	frame	data/chars/yun/sp07.gif
+	delay   5
+	frame	data/chars/yun/sp08.gif
+	frame	data/chars/yun/sp09.gif
+	delay   20
+	frame	data/chars/yun/sp10.gif
+	delay   8
+	frame	data/chars/yun/sp09.gif
+	frame	data/chars/yun/sp11.gif
+	frame	data/chars/yun/a201.gif
+
+
+anim grab
+	loop	0
+	delay	1000
+	offset	82 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/grab.gif
+
+anim grabattack
+	loop	0
+        range   0 10
+	offset	82 176
+	bbox	57 96 42 80
+	attack  114 108 21 44 9
+	delay   20
+	frame	data/chars/yun/hold1.gif
+	attack  0 0 0 0 0
+	delay   3
+	frame	data/chars/yun/grab.gif
+
+anim grabattack2
+	loop	0
+	delay	6
+        range   0 10
+	offset	78 176
+	bbox	57 96 42 80
+	frame	data/chars/yun/up01.gif
+	frame	data/chars/yun/up02.gif
+	frame	data/chars/yun/up03.gif
+	frame	data/chars/yun/up04.gif
+	frame	data/chars/yun/up05.gif
+	blast   108 76 24 66 14 0
+	frame	data/chars/yun/up06.gif
+	frame	data/chars/yun/up07.gif
+	frame	data/chars/yun/up08.gif
+	blast   0 0 0 0 0 0
+	delay   17
+	frame	data/chars/yun/up09.gif
+	delay   8
+	frame	data/chars/yun/up10.gif
+	frame	data/chars/yun/up11.gif
+
+anim throw
+	loop	0
+	offset	78 176
+	delay   5
+	move    -5
+	sound   data/chars/yun/yun1.wav
+	frame	data/chars/yun/th1.gif
+	frame	data/chars/yun/th2.gif
+	frame	data/chars/yun/th3.gif
+	frame	data/chars/yun/th4.gif
+	delay   17
+	move    0
+	frame	data/chars/yun/th5.gif
+	delay   6
+	move    5
+	frame	data/chars/yun/th4.gif
+	frame	data/chars/yun/th3.gif
+	frame	data/chars/yun/get.gif
+
+anim pain
+	loop	0
+	delay   5
+	offset	78 176
+	bbox	46 89 64 89
+	sound   data/sounds/MALEPAIN.wav
+	frame	data/chars/yun/pain1.gif
+	bbox	45 89 72 89
+	frame	data/chars/yun/pain2.gif
+	delay   25
+	bbox	44 97 77 78
+	frame	data/chars/yun/pain3.gif
+	bbox	45 89 72 89
+        delay   5
+	frame	data/chars/yun/pain2.gif
+	bbox	46 89 64 89
+	frame	data/chars/yun/pain1.gif
+
+
+
+anim fall
+	loop	0
+	offset	78 176
+	delay	60
+        ATTACK  42 128 35 42 10 1
+	frame	data/chars/yun/fall1.gif
+        delay   20
+	attack  0 0 0 0 0 0
+	frame	data/chars/yun/fall2.gif
+
+anim rise
+	loop	0
+	offset	78 176
+	delay	6
+	frame	data/chars/yun/th4.gif
+	frame	data/chars/yun/th3.gif
+	delay   13
+	frame	data/chars/yun/get.gif
+
+

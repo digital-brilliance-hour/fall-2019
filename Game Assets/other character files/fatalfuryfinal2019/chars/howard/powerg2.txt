@@ -1,0 +1,34 @@
+name					PowerG2
+health					1
+nolife					1
+type					npc
+hostile					Player  npc obstacle
+candamage				player  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	1
+	delay	2
+	offset	78 123
+		blast  10  18  98  106  20  0  0  30  0
+		move  10
+	frame	data/chars/Geese/P201.gif
+		Attack1  0
+	frame	data/chars/Geese/P202.gif
+		blast  14  5  99  118  20  0  0  30  0  100
+	frame	data/chars/Geese/P203.gif
+		Attack1  0
+	frame	data/chars/Geese/P204.gif
+

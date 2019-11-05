@@ -1,0 +1,131 @@
+name	karl
+health	40
+speed	10
+type	enemy
+shadow	   0
+gfxshadow  1
+icon	data/chars/karl/icon.gif
+diesound data/sounds/die1.wav
+
+palette data/chars/karl/walk1.gif
+alternatepal data/chars/karl/alt1.gif
+alternatepal data/chars/karl/alt2.gif
+alternatepal data/chars/karl/alt3.gif
+alternatepal data/chars/karl/alt4.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 5 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/karl/ko1.gif
+	frame	data/chars/karl/ko1.gif
+	frame	data/chars/karl/ko1.gif
+	frame	data/chars/karl/ko3.gif
+	frame	data/chars/karl/ko3.gif
+
+anim idle
+	loop	1
+	offset	82 177
+	bbox	73 93 40 89
+	delay	7
+	frame	data/chars/karl/static1.gif
+
+
+anim walk
+	loop	1
+	offset	82 177
+	bbox	73 93 40 89
+	delay	14
+	frame	data/chars/karl/walk1.gif
+	frame	data/chars/karl/walk2.gif
+	frame	data/chars/karl/walk3.gif
+	frame	data/chars/karl/walk4.gif
+
+anim pain
+	loop	0
+	offset	82 177
+	bbox	73 93 40 89
+	delay	12
+move -1
+	frame	data/chars/karl/hurt1.gif
+	frame	data/chars/karl/hurt1.gif
+	frame	data/chars/karl/hurt1.gif
+
+anim grabbed
+	loop	0
+	offset	82 177
+	bbox	73 93 40 89
+	delay	12
+	frame	data/chars/karl/hurt1.gif
+	delay	50
+	frame	data/chars/karl/hurt1.gif
+	delay	12
+	frame	data/chars/karl/hurt1.gif
+
+anim fall
+	loop	0
+	delay	35
+	offset	82 177
+	frame	data/chars/karl/ko1.gif
+	frame	data/chars/karl/ko1.gif
+	frame	data/chars/karl/ko3.gif
+
+anim rise
+	loop	0
+	offset	82 177
+	delay	10
+	frame	data/chars/karl/punch3.gif
+
+
+
+anim jumpattack
+	range	110 160
+	loop	0
+	delay	7
+	offset	82 177
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	bbox	23 12 44 102
+	frame	data/chars/karl/punch1.gif
+	attack	82 138 70 42 10 1
+	frame	data/chars/karl/punch2.gif
+	frame	data/chars/karl/punch2.gif
+	frame	data/chars/karl/punch2.gif
+	attack	0 
+	frame	data/chars/karl/punch1.gif
+
+anim attack2
+	range	10 80
+	loop	0
+	delay	7
+	offset	82 177
+	bbox	23 12 44 102
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/karl/kick1.gif
+	attack	89 99 72 39 10 1
+	frame	data/chars/karl/kick2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/karl/kick2.gif
+	delay	20
+	frame	data/chars/karl/kick2.gif
+
+

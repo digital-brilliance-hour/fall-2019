@@ -1,0 +1,19 @@
+name	GO09
+type	endlevel
+branch	GO09
+shadow	0
+
+anim idle
+	loop	1
+	delay	10
+	offset	16 32
+	bbox	222 149 32 32
+	frame	data/chars/misc/GO/go201.gif
+	frame	data/chars/misc/GO/go202.gif
+	frame	data/chars/misc/GO/go203.gif
+	frame	data/chars/misc/GO/go204.gif
+	frame	data/chars/misc/GO/go205.gif
+	frame	data/chars/misc/GO/go206.gif
+	frame	data/chars/misc/GO/go207.gif
+	frame	data/chars/misc/GO/go208.gif
+

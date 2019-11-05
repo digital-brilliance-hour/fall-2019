@@ -1,0 +1,310 @@
+name	Eiji
+health	103
+speed	16
+type	enemy
+dust	dust
+gfxshadow  1
+aggression 70
+#nodieblink    3
+#noname	1
+#nolife	1
+falldie	2
+diesound data/sounds/die3.wav
+projectilehit   enemy npc obstacle
+
+icon    data/chars/Kaz/Icon.gif
+
+remap	data/chars/Kaz/idle01.gif data/chars/Kaz/map01.gif
+
+anim idle
+	loop	1
+	delay	20
+	offset	36 111
+	bbox	19 2 46 109
+	frame	data/chars/Kaz/idle01.gif
+	frame	data/chars/Kaz/idle02.gif
+	frame	data/chars/Kaz/idle03.gif
+		delay  80
+	frame  data/chars/Kaz/idle02.gif
+
+anim jump
+		offset  19  138
+		bbox  13  23  26  113
+		delay  10
+	frame	data/chars/Kaz/j01.gif
+		offset  26  108
+		bbox  14  13  33  94
+	frame	data/chars/Kaz/j02.gif
+		offset  18  90
+		bbox  1  4  38  84
+	frame	data/chars/Kaz/j03.gif
+		offset  27  108
+		bbox  11  16  36  94
+	frame	data/chars/Kaz/j02.gif
+		offset  23  139
+	frame	data/chars/Kaz/j01.gif
+
+
+anim jumpattack
+		offset  60  78
+		bbox  14  7  54  67
+		delay  7
+	frame	data/chars/Kaz/ja01.gif
+		blast  38  47  59  39  10
+		delay  20
+	frame	data/chars/Kaz/ja02.gif
+	frame  data/chars/Kaz/ja02.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	40 108
+	bbox	18 10 53 96
+	frame	data/chars/Kaz/w01.gif
+	frame	data/chars/Kaz/w02.gif
+		offset  40  105
+	frame	data/chars/Kaz/w03.gif
+		offset  45  112
+	frame	data/chars/Kaz/w04.gif
+		offset  28  106
+	frame	data/chars/Kaz/w05.gif
+		offset  28  114
+	frame	data/chars/Kaz/w06.gif
+		offset  40  111
+	frame	data/chars/Kaz/w07.gif
+
+anim attack1
+	loop	0
+	delay	8
+	bbox	23 -2 46 109
+	offset	46 106
+	sound	data/chars/Kaz/a01.wav
+	frame	data/chars/Kaz/a101.gif
+		offset  42  109
+		attack1  54  18  57  23  10
+	frame	data/chars/Kaz/a102.gif
+	frame	data/chars/Kaz/a102.gif
+		offset  46  106
+		Attack1  0
+	frame	data/chars/Kaz/a101.gif
+
+
+anim attack2
+	loop	0
+	delay	5
+	bbox	14 3 45 85
+	offset	38 86
+	sound	data/chars/Kaz/a02.wav
+	frame	data/chars/Kaz/a201.gif
+		sound  data/chars/Kaz/a02.wav
+	frame  data/chars/Kaz/a201.gif
+		offset  42  82
+		attack1  47  41  69  35  10
+	frame	data/chars/Kaz/a202.gif
+		Attack1  0
+	frame  data/chars/Kaz/a202.gif
+		offset  64  82
+		blast  6  44  46  40  10
+	frame	data/chars/Kaz/a203.gif
+		Attack1  0
+	frame  data/chars/Kaz/a203.gif
+		offset  71  85
+	frame	data/chars/Kaz/a204.gif
+	frame  data/chars/Kaz/a204.gif
+		offset  53  112
+	frame	data/chars/Kaz/a301.gif
+	frame  data/chars/Kaz/a301.gif
+		offset  53  114
+		blast  36  19  72  51  10
+	frame	data/chars/Kaz/a302.gif
+	frame  data/chars/Kaz/a302.gif
+		offset  31  118
+		Attack1  0
+	frame	data/chars/Kaz/a303.gif
+	frame  data/chars/Kaz/a303.gif
+		offset  45  110
+	frame	data/chars/Kaz/a304.gif
+
+anim attack3
+
+		offset  53  114
+		delay  10
+	frame	data/chars/Kaz/a301.gif
+		blast  38  7  73  56  15
+	frame	data/chars/Kaz/a302.gif
+		offset  31  118
+		Attack1  0
+	frame	data/chars/Kaz/a303.gif
+		offset  41  110
+	frame	data/chars/Kaz/a304.gif
+
+anim pain
+	loop	0
+	offset	33 108
+	delay	30
+	bbox  13  6  46  103
+	frame	data/chars/Kaz/pain01.gif
+		offset  43  106
+		bbox  16  5  52  102
+	frame	data/chars/Kaz/pain02.gif
+
+anim fall
+	loop	0
+	offset	35 99
+	delay	19
+	bbox	10 4 64 96
+	throwframe 3
+		Attack1  0
+	frame	data/chars/Kaz/fall01.gif
+	bbox	3 32 78 51
+	frame	data/chars/Kaz/fall01.gif
+	bbox	7 21 116 26
+		attack  0  0  0  0
+		offset  67  47
+	frame	data/chars/Kaz/fall02.gif
+
+
+anim fall9
+	loop	0
+	offset	64 45
+	delay	19
+	bbox	10 17 107 30 0
+	frame	data/chars/Kaz/fall02.gif
+
+anim rise
+	loop	0
+		offset  20  85
+	frame	data/chars/Kaz/j03.gif
+	offset	26 110
+	delay	17
+	frame	data/chars/Kaz/j02.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  230  100  56
+	frame	data/chars/Kaz/burn1.gif
+	frame	data/chars/Kaz/burn2.gif
+	frame	data/chars/Kaz/burn1.gif
+	frame	data/chars/Kaz/burn2.gif
+	offset	61 45
+	frame	data/chars/Kaz/fall02.gif
+
+anim pain2
+	loop	0
+	offset	33 108
+	delay	30
+	bbox  15  3  42  106
+	frame	data/chars/Kaz/painR01.gif
+		offset  43  106
+	frame	data/chars/Kaz/painR02.gif
+
+anim pain3
+	loop	0
+	offset	33 108
+	delay	30
+	bbox  12  2  42  106
+	frame	data/chars/Kaz/painB01.gif
+		offset  43  106
+	frame	data/chars/Kaz/painB02.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  80  232  126  54
+	frame	data/chars/Kaz/bburn.gif
+	frame	data/chars/Kaz/burn2.gif
+	frame	data/chars/Kaz/bburn.gif
+	frame	data/chars/Kaz/burn2.gif
+	offset	60 44
+	frame	data/chars/Kaz/fall02.gif
+
+
+anim shock
+	loop	0
+		offset  55  103
+		bbox  6  3  77  98
+	frame  data/chars/Kaz/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Kaz/Shok1.gif
+	frame	data/chars/Kaz/Shok2.gif
+		delay  10
+	frame  data/chars/Kaz/Shok1.gif
+	frame  data/chars/Kaz/Shok2.gif
+	offset	61 109
+		bbox  0
+	frame	data/chars/Kaz/fall01.gif
+		offset  62  41
+	frame	data/chars/Kaz/fall02.gif
+
+anim pain4
+	loop	0
+	offset	33 108
+	delay	30
+	bbox  16  2  39  107
+	frame	data/chars/Kaz/pain01.gif
+		offset  43  106
+	frame	data/chars/Kaz/pain02.gif
+		offset  33  108
+	frame	data/chars/Kaz/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Kaz/burn1.gif
+	frame	data/chars/Kaz/burn2.gif
+	frame	data/chars/Kaz/burn1.gif
+	frame	data/chars/Kaz/burn2.gif
+	offset	59 46
+	frame	data/chars/Kaz/fall02.gif
+
+anim  pain5
+	loop  0
+		offset  35  109
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Kaz/pain01.gif
+		offset  46  105
+	frame  data/chars/Kaz/pain02.gif
+		offset  33  109
+	frame  data/chars/Kaz/pain01.gif
+		offset  37  108
+		move  0
+	frame  data/chars/Kaz/fall01.gif
+		movea  30
+	frame  data/chars/Kaz/fall01.gif
+		delay  4
+	frame  data/chars/Kaz/fall01.gif
+		movea  -30
+		bbox  11  6  67  92
+	frame  data/chars/Kaz/fall01.gif
+		delay  2
+	frame  data/chars/Kaz/fall01.gif
+	frame  data/chars/Kaz/fall01.gif
+		movea  -20
+	frame  data/chars/Kaz/fall01.gif
+	frame  data/chars/Kaz/fall01.gif
+	frame  data/chars/Kaz/fall01.gif
+	frame  data/chars/Kaz/fall01.gif
+	frame  data/chars/Kaz/fall01.gif
+		movea  0
+		offset  65  45
+		bbox  14  14  111  37
+	frame  data/chars/Kaz/fall02.gif
+
+
+anim fall5
+	loop	0
+	offset	60 46
+	delay	19
+		Attack1  0
+	frame	data/chars/Kaz/fall02.gif
+

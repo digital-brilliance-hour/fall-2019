@@ -1,0 +1,347 @@
+name	GAI
+health	100
+speed	12
+type	enemy
+shadow	5
+dust    dust
+icon	data/chars/gai/1.gif
+iconpain     data/chars/gai/2.gif
+diesound data/sounds/sukedie.wav
+aggression 1
+escapehits 3
+gfxshadow 1
+
+remap	data/chars/gai/atk5.gif  data/chars/gai/map1.gif
+remap	data/chars/gai/atk5.gif  data/chars/gai/map2.gif
+remap	data/chars/gai/atk5.gif  data/chars/gai/map3.gif
+remap	data/chars/gai/atk5.gif  data/chars/gai/map4.gif
+remap	data/chars/gai/atk5.gif  data/chars/gai/map5.gif
+
+
+
+
+
+anim idle
+	loop	1
+	offset	21 106
+	bbox	2 16 34 74
+	delay	10
+	frame   data/chars/gai/idle1.gif
+offset	19 111
+	frame   data/chars/gai/idle2.gif
+offset	20 109
+	frame   data/chars/gai/idle3.gif
+offset	19 111
+	frame   data/chars/gai/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset	42 98
+	bbox	24 8 41 67
+	delay	10
+        frame   data/chars/gai/wk1.gif
+offset  40 98
+        frame   data/chars/gai/wk2.gif
+offset  27 101
+	bbox	10 7 35 73
+        frame   data/chars/gai/wk3.gif
+offset  21 102
+        frame   data/chars/gai/wk4.gif
+offset  19 103
+	bbox	1 10 37 83
+        frame   data/chars/gai/wk5.gif
+offset  20 102
+        frame   data/chars/gai/wk6.gif
+offset  29 102
+	bbox	12 11 35 69
+        frame   data/chars/gai/wk7.gif
+offset  41 100
+	bbox	22 10 35 68
+        frame   data/chars/gai/wk8.gif
+
+
+
+anim pain
+	loop	0
+	offset	35 100
+	bbox	11 12 47 68
+	sound   data/sounds/male.wav
+	delay	5
+	frame   data/chars/gai/pain1.gif
+offset	39 101
+        bbox    4 16 59 63 
+	frame   data/chars/gai/pain2.gif
+offset	50 94
+        bbox    12 10 67 66
+	delay	10
+	frame   data/chars/gai/pain3.gif
+offset	39 101
+        bbox    4 16 59 63
+        DELAY   5
+	frame   data/chars/gai/pain2.gif
+offset	35 100
+	bbox	11 12 47 68
+	frame   data/chars/gai/pain1.gif
+
+
+
+Anim fall
+	loop	0
+	offset	43 108
+	delay	5
+	frame   data/chars/gai/fall1.gif
+offset	44 97
+        DELAY   70
+                 ATTACK         3 24 41 30 10 1
+	frame   data/chars/gai/fall2.gif
+offset	31 116
+        DELAY   15
+                 ATTACK         0 0 0 0 0 0
+	frame   data/chars/gai/fall3.gif
+offset	54 70
+        DELAY   20
+	frame   data/chars/gai/fall4.gif
+offset	43 26
+        DELAY   10
+	frame   data/chars/gai/fall5.gif
+
+
+anim rise
+	loop	0
+	offset	38 39
+	delay	10
+        BBOX    0 0 0 0
+	frame   data/chars/gai/rise1.gif
+offset	50 58
+	frame   data/chars/gai/rise2.gif
+
+
+
+
+anim grab
+        range   0 15
+	loop	0
+        delay   20	
+        fastattack 1	
+offset	33 101
+	bbox	0 0 0 0 
+	frame   data/chars/gai/grab.gif
+offset	16 96 
+        delay   4 
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	16 96
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	16 96
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	16 96
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	16 96
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	16 96
+	bbox	17 8 33 68 
+	frame   data/chars/gai/grab1.gif
+offset	-3 96
+	bbox	1 6 22 33
+        attack  24 14 24 66 2
+	frame   data/chars/gai/grab2.gif
+offset	-4 97
+	bbox	2 9 33 46
+        attack  0 0 0 0 0
+	frame   data/chars/gai/grab3.gif
+offset	5 99
+	bbox	3 10 36 62
+	frame   data/chars/gai/grab4.gif
+offset	33 105
+	bbox	0 0 0 0 
+	frame   data/chars/gai/grab5.gif
+offset	24 105
+	frame   data/chars/gai/grab6.gif
+offset	21 102
+	frame   data/chars/gai/grab7.gif
+offset	2 104
+        blast   38 1 45 103 15 1
+	frame   data/chars/gai/grab8.gif
+offset	-4 103
+	frame   data/chars/gai/grab9.gif
+offset	21 102
+	frame   data/chars/gai/grab7.gif
+
+
+
+
+anim attack1
+        loop	0
+	offset	33 97
+	delay	5
+	bbox	22 7 35 81
+        fastattack 1
+	frame   data/chars/gai/ATK1.gif
+offset	34 99
+        bbox    33 9 29 65
+	frame   data/chars/gai/ATK2.gif
+offset	33 98
+        bbox    38 9 18 65
+        attack  56 9 51 55 5
+	frame   data/chars/gai/ATK3.gif
+offset	32 97
+        bbox    26 6 31 68
+        attack  0 0 0 0 0
+        frame   data/chars/gai/ATK4.gif
+offset	45 93
+        bbox    36 7 43 61
+	frame   data/chars/gai/ATK5.gif
+offset	45 93
+        bbox    35 13 32 49
+        attack  67 17 50 58 5
+	frame   data/chars/gai/ATK6.gif
+offset	45 93
+        bbox    36 7 43 61
+        attack  0 0 0 0 0
+	frame   data/chars/gai/ATK5.gif
+offset	33 105
+	bbox	0 0 0 0 
+	frame   data/chars/gai/grab5.gif
+offset	24 105
+	frame   data/chars/gai/grab6.gif
+offset	21 102
+	frame   data/chars/gai/grab7.gif
+offset	2 104
+        blast   38 1 45 103 15 1
+	frame   data/chars/gai/grab8.gif
+offset	-4 103
+	frame   data/chars/gai/grab9.gif
+offset	21 102
+	frame   data/chars/gai/grab7.gif
+
+
+ANIM ATTACK2
+jumpframe 3 2
+        range   10 80
+        loop	0
+	delay	5
+	bbox	0 0 0 0
+        fastattack 1
+offset	53 85
+        frame   data/chars/gai/ATK7.gif
+Offset	24 105
+        frame   data/chars/gai/ATK8.gif
+offset	15 101
+	frame   data/chars/gai/ATK9.gif
+offset	26 101
+        attack  12 32 90 53 15 1
+        frame   data/chars/gai/ATK10.gif
+offset	29 102
+        frame   data/chars/gai/ATK11.gif
+offset	31 105
+	frame   data/chars/gai/ATK12.gif
+offset	12 104
+        attack  0 0 0 0 0 0  
+	frame   data/chars/gai/ATK13.gif
+offset	13 104
+        frame   data/chars/gai/ATK14.gif
+
+
+
+
+
+anim special2
+        loop	0
+	offset	33 97
+	delay	5
+	bbox	22 7 35 81
+        fastattack 1
+	frame   data/chars/gai/ATK1.gif
+offset	34 99
+        bbox    33 9 29 65
+	frame   data/chars/gai/ATK2.gif
+offset	33 98
+        bbox    38 9 18 65
+        attack  56 9 51 55 5
+	frame   data/chars/gai/ATK3.gif
+offset	32 97
+        bbox    26 6 31 68
+        attack  0 0 0 0 0
+        frame   data/chars/gai/ATK4.gif
+offset	45 93
+        bbox    36 7 43 61
+	frame   data/chars/gai/ATK5.gif
+offset	45 93
+        bbox    35 13 32 49
+        attack  67 17 50 58 5
+	frame   data/chars/gai/ATK6.gif
+offset	45 93
+        bbox    36 7 43 61
+        attack  0 0 0 0 0
+	frame   data/chars/gai/ATK5.gif
+
+
+
+
+
+
+
+
+
+

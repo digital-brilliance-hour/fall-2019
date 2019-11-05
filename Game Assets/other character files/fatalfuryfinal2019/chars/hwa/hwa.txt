@@ -1,0 +1,436 @@
+name	hwa
+health	100
+speed	10
+mp 100
+land 1
+type	player
+shadow	   0
+gfxshadow  1
+diesound data/sounds/maxdie.wav
+icon	 data/chars/hwa/icon.gif
+iconpain data/chars/hwa/ipain.gif
+atchain    1 2 1 3 0 
+load spurt
+palette           data/chars/hwa/select.gif
+alternatepal	  data/chars/hwa/map1.gif 
+alternatepal	  data/chars/hwa/map2.gif 
+alternatepal	  data/chars/hwa/map3.gif 
+
+weapons hwa2
+
+com     a2     freespecial
+com  d f s      freespecial2
+com  s s s s    freespecial3
+
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+	frame	data/chars/hwa/sel1.gif
+	sound	data/sounds/haha.wav
+        delay 10
+	frame	data/chars/hwa/sel2.gif
+	frame	data/chars/hwa/sel3.gif	
+	frame	data/chars/hwa/sel4.gif
+	frame	data/chars/hwa/sel2.gif
+	frame	data/chars/hwa/sel3.gif
+	frame	data/chars/hwa/sel4.gif
+	frame	data/chars/hwa/sel2.gif
+	frame	data/chars/hwa/sel3.gif
+	frame	data/chars/hwa/sel4.gif
+
+
+anim waiting
+shadowcoords 1000 1000
+        loop	1
+	delay	12
+	offset	0 0
+	frame	data/chars/hwa/select.gif	
+	frame	data/chars/hwa/selecta.gif	
+	frame	data/chars/hwa/selectb.gif	
+	frame	data/chars/hwa/selectc.gif	
+
+anim select
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	0 0
+	sound	data/sounds/haha.wav
+	frame	data/chars/hwa/select.gif	
+	frame	data/chars/hwa/select2.gif	
+	frame	data/chars/hwa/select2.gif
+	frame	data/chars/hwa/select2.gif	
+	frame	data/chars/hwa/select.gif	
+	frame	data/chars/hwa/select.gif	
+
+anim idle
+	loop	1
+	delay	15
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/idle000.gif
+	frame	data/chars/hwa/idle001.gif
+	frame	data/chars/hwa/idle002.gif
+	frame	data/chars/hwa/idle003.gif
+
+anim walk
+	loop	1
+	delay	16
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/walk000.gif
+	frame	data/chars/hwa/walk001.gif
+	frame	data/chars/hwa/walk002.gif
+	frame	data/chars/hwa/walk001.gif
+
+anim block
+	loop	0
+	delay	90
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/block.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/hwa/get001.gif
+#	frame	data/chars/hwa/get001.gif
+	frame	data/chars/hwa/get001.gif
+#	frame	data/chars/hwa/get000.gif
+	delay	30
+	frame	data/chars/hwa/get000.gif
+	delay	5
+	frame	data/chars/hwa/get000.gif
+	frame	data/chars/hwa/get000.gif
+	frame	data/chars/hwa/get001.gif
+	frame	data/chars/hwa/get001.gif
+
+anim jump
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/jump000.gif
+	frame	data/chars/hwa/jump001.gif
+	frame	data/chars/hwa/jump001.gif
+	frame	data/chars/hwa/jump002.gif
+	frame	data/chars/hwa/jump002.gif
+	frame	data/chars/hwa/jump002.gif
+	frame	data/chars/hwa/jump002.gif
+	frame	data/chars/hwa/jump001.gif
+	frame	data/chars/hwa/jump001.gif
+	frame	data/chars/hwa/get000.gif
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	83 88 33 78
+	frame	data/chars/hwa/jk1.gif
+	attack	89 138 83 48 7 1
+	frame	data/chars/hwa/jk0.gif
+	frame	data/chars/hwa/jk0.gif
+	frame	data/chars/hwa/jk0.gif
+	attack	0
+	frame	data/chars/hwa/jk1.gif
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/hwa/jumpat00.gif
+	attack	101 118 53 60 7 1
+	frame	data/chars/hwa/jumpat01.gif
+	frame	data/chars/hwa/jumpat01.gif
+	attack	0
+	frame	data/chars/hwa/jumpat00.gif
+
+anim attack1
+	loop	0
+	delay	5
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/hwa/punch000.gif
+	frame	data/chars/hwa/punch000.gif
+	attack	118 93 39 13 7
+	frame	data/chars/hwa/punch001.gif
+	frame	data/chars/hwa/punch001.gif
+	attack	0 0 0 0 0
+	frame	data/chars/hwa/punch000.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/hwa/na2-00.gif
+	frame	data/chars/hwa/na2-00.gif
+	frame	data/chars/hwa/na2-01.gif
+	attack	118 93 39 13 12
+	frame	data/chars/hwa/na2-01.gif
+	frame	data/chars/hwa/na2-01.gif
+	attack	0
+	frame	data/chars/hwa/na2-02.gif
+	frame	data/chars/hwa/na2-02.gif
+
+anim attack3
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/hwa/a4-000.gif
+	frame	data/chars/hwa/a4-000.gif
+	frame	data/chars/hwa/a4-001.gif
+	frame	data/chars/hwa/a4-001.gif
+	frame	data/chars/hwa/a4-001.gif
+	attack	122 81 40 51 20 1
+	frame	data/chars/hwa/a4-002.gif
+	frame	data/chars/hwa/a4-002.gif
+	frame	data/chars/hwa/a4-002.gif
+	frame	data/chars/hwa/a4-002.gif
+	frame	data/chars/hwa/a4-002.gif
+	frame	data/chars/hwa/a4-001.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/grab.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/maxuh.wav
+	frame	data/chars/hwa/throw001.gif
+	frame	data/chars/hwa/throw002.gif
+	frame	data/chars/hwa/throw003.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw004.gif
+	frame	data/chars/hwa/throw003.gif
+	frame	data/chars/hwa/throw002.gif
+	frame	data/chars/hwa/throw001.gif
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+move -1
+	frame	data/chars/hwa/pain01.gif
+	frame	data/chars/hwa/pain02.gif
+	frame	data/chars/hwa/pain02.gif
+	frame	data/chars/hwa/pain01.gif
+	frame	data/chars/hwa/pain01.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+	frame	data/chars/hwa/pain01.gif
+	delay	36
+	frame	data/chars/hwa/pain02.gif
+	delay	6
+	frame	data/chars/hwa/pain02.gif
+	frame	data/chars/hwa/pain01.gif
+	frame	data/chars/hwa/pain01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/hwa/shock1.gif
+	frame	data/chars/hwa/shock3.gif
+	frame	data/chars/hwa/shock2.gif
+	frame	data/chars/hwa/shock1.gif
+	frame	data/chars/hwa/shock3.gif
+	frame	data/chars/hwa/shock2.gif
+	frame	data/chars/hwa/shock1.gif
+	frame	data/chars/hwa/shock3.gif
+	frame	data/chars/hwa/shock2.gif
+	frame	data/chars/hwa/shock1.gif
+	frame	data/chars/hwa/shock3.gif
+	frame	data/chars/hwa/shock2.gif
+	frame	data/chars/hwa/fall01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/hwa/fall00.gif
+	frame	data/chars/hwa/fall00.gif
+	frame	data/chars/hwa/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/hwa/rise1.gif
+	frame	data/chars/hwa/rise2.gif
+	frame	data/chars/hwa/rise3.gif
+	frame	data/chars/hwa/rise3.gif
+
+
+anim freespecial
+	loop	0
+	delay	8
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/hwa/turn1.gif
+	frame	data/chars/hwa/turn2.gif
+	attack	2 91 63 49 20 1
+        offset  98 177
+	frame	data/chars/hwa/turn3.gif
+	frame	data/chars/hwa/turn3.gif
+	frame	data/chars/hwa/turn2.gif
+
+
+anim freespecial2
+
+        energycost 15 1 0
+        sound	data/sounds/joe2.wav
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	76 81 33 90
+	frame	data/chars/hwa/super1.gif
+	attack	119 78 36 39 4 
+        frame	data/chars/hwa/super2.gif 
+        attack 0 0 0 0 0 
+	frame	data/chars/hwa/super3.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/hwa/super4.gif
+         attack 0
+	frame	data/chars/hwa/super5.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/hwa/super6.gif
+        attack 0
+	frame	data/chars/hwa/super1.gif
+	attack	119 78 36 39 4 
+        frame	data/chars/hwa/super2.gif 
+        attack 0 0 0 0 0 
+	frame	data/chars/hwa/super3.gif
+	attack	119 78 36 39 4 
+	frame	data/chars/hwa/super4.gif
+         attack 0
+	frame	data/chars/hwa/super5.gif
+	attack	119 78 36 39 4 1
+	frame	data/chars/hwa/super6.gif
+        attack 0
+	frame	data/chars/hwa/super1.gif
+
+
+
+anim freespecial3
+        energycost 20 1 0
+	loop	0
+	delay	12
+	offset	92 177
+	frame	data/chars/hwa/drink1.gif
+	frame	data/chars/hwa/drink2.gif
+	frame	data/chars/hwa/drink3.gif
+	frame	data/chars/hwa/drink4.gif
+	sound	data/sounds/jump.wav
+	frame	data/chars/hwa/drink5.gif
+	frame	data/chars/hwa/drink6.gif
+	frame	data/chars/hwa/drink7.gif
+	frame	data/chars/hwa/drink8.gif
+	frame	data/chars/hwa/drink9.gif
+	frame	data/chars/hwa/drink10.gif
+	frame	data/chars/hwa/drink11.gif
+         delay 12
+	sound	data/sounds/beve.wav
+	frame	data/chars/hwa/beve1.gif
+	frame	data/chars/hwa/beve2.gif
+	frame	data/chars/hwa/beve3.gif
+	frame	data/chars/hwa/beve2.gif
+	frame	data/chars/hwa/beve3.gif
+	frame	data/chars/hwa/beve2.gif
+	frame	data/chars/hwa/beve3.gif
+	frame	data/chars/hwa/beve2.gif
+	frame	data/chars/hwa/beve3.gif
+	frame	data/chars/hwa/beve4.gif
+	frame	data/chars/hwa/beve5.gif
+	frame	data/chars/hwa/beve6.gif
+	frame	data/chars/hwa/beve7.gif
+	frame	data/chars/hwa/beve8.gif
+	frame	data/chars/hwa/beve9.gif
+	frame	data/chars/hwa/beve10.gif
+        weaponframe 24 1
+
+
+
+
+anim grabattack
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+	sound	data/sounds/punch.wav
+	frame	data/chars/hwa/knee1.gif
+	delay	32
+	attack	112 111 28 25 10
+	frame	data/chars/hwa/knee2.gif
+	delay	8
+	frame	data/chars/hwa/knee1.gif
+
+
+anim grabattack2
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	83 88 33 78
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/hwa/a3-000.gif
+	frame	data/chars/hwa/a3-000.gif
+	frame	data/chars/hwa/a3-001.gif
+	delay	5
+	frame	data/chars/hwa/a3-001.gif
+	attack	112 76 35 47 20 1
+	frame	data/chars/hwa/a3-001.gif
+	frame	data/chars/hwa/a3-002.gif
+	frame	data/chars/hwa/a3-002.gif
+	frame	data/chars/hwa/a3-002.gif
+	frame	data/chars/hwa/a3-001.gif
+	frame	data/chars/hwa/a3-001.gif
+	frame	data/chars/hwa/a3-001.gif
+	frame	data/chars/hwa/a3-000.gif
+
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/hwa/get001.gif
+

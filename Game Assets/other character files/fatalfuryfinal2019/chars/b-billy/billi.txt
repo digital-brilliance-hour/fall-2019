@@ -1,0 +1,198 @@
+name	Billi
+health	300
+speed	9
+type	player
+gfxshadow	1
+icon	data/chars/b-billy/icon.gif
+diesound data/sounds/die1.wav
+
+remap	data/chars/b-billy/idle/1.gif data/chars/b-billy/alt1.gif
+remap	data/chars/b-billy/idle/1.gif data/chars/b-billy/alt2.gif
+remap	data/chars/b-billy/idle/1.gif data/chars/b-billy/alt3.gif
+remap	data/chars/b-billy/idle/1.gif data/chars/b-billy/alt4.gif
+
+
+anim idle
+	loop	1
+	offset	49 93
+	bbox	31 4 41 92
+	delay	10
+	frame	data/chars/b-billy/idle/1.gif
+	frame	data/chars/b-billy/idle/2.gif
+	frame	data/chars/b-billy/idle/3.gif
+	frame	data/chars/b-billy/idle/4.gif
+	frame	data/chars/b-billy/idle/5.gif
+	frame	data/chars/b-billy/idle/6.gif
+	frame	data/chars/b-billy/idle/7.gif
+	frame	data/chars/b-billy/idle/8.gif
+	frame	data/chars/b-billy/idle/9.gif
+
+anim walk
+	loop	1
+	offset	64 108
+	bbox	48 9 36 101
+	delay	10
+	frame	data/chars/b-billy/walk/1.gif
+	frame	data/chars/b-billy/walk/2.gif
+	frame	data/chars/b-billy/walk/3.gif
+	frame	data/chars/b-billy/walk/4.gif
+	frame	data/chars/b-billy/walk/5.gif
+	frame	data/chars/b-billy/walk/6.gif
+
+anim pain
+	loop	0
+	offset	58 104
+	bbox	32 9 35 96
+	delay	6
+	frame	data/chars/b-billy/pain/1.gif
+	frame	data/chars/b-billy/pain/2.gif
+	delay	46
+	frame	data/chars/b-billy/pain/3.gif
+	delay	10
+	frame	data/chars/b-billy/pain/2.gif
+	frame	data/chars/b-billy/pain/1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	66 103
+	attack	47 16 50 85 15 1
+	frame	data/chars/b-billy/fall/1.gif
+	attack	33 20 62 74 15 1
+	frame	data/chars/b-billy/fall/2.gif
+	attack	18 63 54 33 15 1
+	frame	data/chars/b-billy/fall/3.gif
+	attack	17 87 92 23 15 1
+	frame	data/chars/b-billy/fall/4.gif
+
+anim rise
+	loop	0
+	offset	53 80
+	delay	15
+	frame	data/chars/b-billy/rise/1.gif
+	frame	data/chars/b-billy/rise/2.gif
+	frame	data/chars/b-billy/rise/3.gif
+	frame	data/chars/b-billy/rise/4.gif
+	frame	data/chars/b-billy/rise/5.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	8
+	offset	77 119
+	bbox	54 35 36 85
+	frame	data/chars/b-billy/attack1/1.gif
+	bbox	52 35 36 85
+	frame	data/chars/b-billy/attack1/2.gif
+	bbox	77 35 36 85
+	attack	16 63 71 42 15 1
+	frame	data/chars/b-billy/attack1/3.gif
+	bbox	75 41 50 80
+	attack	95 41 111 71 15 1
+	frame	data/chars/b-billy/attack1/4.gif
+	attack	125 38 84 15 15 1
+	frame	data/chars/b-billy/attack1/5.gif
+	attack	99 7 61 45 15 1
+	frame	data/chars/b-billy/attack1/6.gif
+	attack	25 9 86 43 10 0
+	frame	data/chars/b-billy/attack1/7.gif
+	attack	27 14 39 40 6 0
+	frame	data/chars/b-billy/attack1/8.gif
+	frame	data/chars/b-billy/attack1/9.gif
+
+anim attack2
+	range	170 270
+	loop	0
+	delay	8
+	offset	68 146
+	bbox	55 69 33 78
+	frame	data/chars/b-billy/attack2/1.gif
+	frame	data/chars/b-billy/attack2/2.gif
+	frame	data/chars/b-billy/attack2/3.gif
+	attack	103 83 137 34 15 0
+	frame	data/chars/b-billy/attack2/4.gif
+	frame	data/chars/b-billy/attack2/5.gif
+	frame	data/chars/b-billy/attack2/6.gif
+	frame	data/chars/b-billy/attack2/7.gif
+	frame	data/chars/b-billy/attack2/8.gif
+	frame	data/chars/b-billy/attack2/9.gif
+	move	10
+	bbox	60 69 33 78
+	attack	120 78 105 16 15 0
+	frame	data/chars/b-billy/attack2/10.gif
+	attack	120 78 110 16 15 0
+	frame	data/chars/b-billy/attack2/11.gif
+	attack	120 78 115 16 15 0
+	frame	data/chars/b-billy/attack2/12.gif
+	attack	120 78 133 16 15 0
+	frame	data/chars/b-billy/attack2/13.gif
+	attack	120 78 142 16 15 0
+	frame	data/chars/b-billy/attack2/14.gif
+	attack	120 78 148 16 15 0
+	frame	data/chars/b-billy/attack2/15.gif
+	attack	120 78 148 20 15 0
+	frame	data/chars/b-billy/attack2/16.gif
+	attack	120 78 135 25 15 0
+	frame	data/chars/b-billy/attack2/17.gif
+	attack	110 90 125 13 15 0
+	frame	data/chars/b-billy/attack2/18.gif
+	attack	0 0 0 0 0 0
+	bbox	45 69 33 78
+	frame	data/chars/b-billy/attack2/19.gif
+	frame	data/chars/b-billy/attack2/20.gif
+	frame	data/chars/b-billy/attack2/21.gif
+
+anim jumpattack
+	range	100 170
+	loop	0
+	offset	120 187
+	delay	8
+	bbox	117 10 33 80
+	frame	data/chars/b-billy/jattack/1.gif
+	bbox	134 110 33 80
+	frame	data/chars/b-billy/jattack/2.gif
+	bbox	139 109 36 80
+	frame	data/chars/b-billy/jattack/3.gif
+	bbox	121 96 33 75
+	frame	data/chars/b-billy/jattack/4.gif
+	bbox	89 91 45 61
+	frame	data/chars/b-billy/jattack/5.gif
+	bbox	95 73 42 56
+	frame	data/chars/b-billy/jattack/6.gif
+	attack	108 89 76 24 15 1
+	bbox	65 76 41 45
+	frame	data/chars/b-billy/jattack/7.gif
+	attack	108 99 76 24 15 1
+	bbox	65 86 41 45
+	frame	data/chars/b-billy/jattack/8.gif
+	attack	0 0 0 0 0 0
+	bbox	100 92 33 71
+	frame	data/chars/b-billy/jattack/9.gif
+	bbox	103 106 32 85
+	frame	data/chars/b-billy/jattack/10.gif
+
+anim special
+	loop	0
+	delay	6
+	offset	55 182
+	frame	data/chars/b-billy/special/1.gif	
+	frame	data/chars/b-billy/special/2.gif
+	attack	35 88 70 95 20 1		
+	frame	data/chars/b-billy/special/3.gif
+	attack	14 46 154 140 20 1		
+	frame	data/chars/b-billy/special/4.gif	
+	attack	23 59 157 128 20 1	
+	frame	data/chars/b-billy/special/5.gif
+	attack	18 65 162 135 20 1		
+	frame	data/chars/b-billy/special/6.gif
+	attack	14 69 106 127 20 1		
+	frame	data/chars/b-billy/special/7.gif
+	attack	54 83 45 101 20 1		
+	frame	data/chars/b-billy/special/8.gif
+	attack	0 0 0 0 0 0		
+	frame	data/chars/b-billy/special/9.gif
+
+
+
+

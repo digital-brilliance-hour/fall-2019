@@ -1,0 +1,126 @@
+name	ripper
+health	100
+speed	7
+type	enemy
+shadow	0
+icon	data/chars/ripper/icon.gif
+diesound data/sounds/die2.wav
+gfxshadow 1
+palette data/chars/ripper/stand01.gif
+alternatepal data/chars/ripper/alter.gif
+alternatepal data/chars/burn/burn1.gif
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 2 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/ripper/FALL2.gif
+	frame	data/chars/ripper/FALL2.gif
+	frame	data/chars/ripper/FALL2.gif
+	frame	data/chars/ripper/FALL3.gif
+	frame	data/chars/ripper/FALL3.gif
+#Important addition
+load	Knife
+
+
+
+anim idle
+	loop	1
+	offset	92 177
+	bbox	72 84 41 85
+	delay	10
+	frame	data/chars/ripper/stand01.gif
+
+anim walk
+	loop	1
+	offset	92 177
+	delay	14
+	bbox	72 84 41 85
+	frame	data/chars/ripper/walk01.gif
+	frame	data/chars/ripper/walk02.gif
+	frame	data/chars/ripper/walk03.gif
+	frame	data/chars/ripper/walk04.gif
+	frame	data/chars/ripper/walk05.gif
+	frame	data/chars/ripper/walk06.gif
+
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	72 84 41 85
+	delay	12
+move -1
+	frame	data/chars/ripper/hurt1.gif
+	frame	data/chars/ripper/hurt1.gif
+	frame	data/chars/ripper/hurt1.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	72 84 41 85
+	delay	12
+	frame	data/chars/ripper/hurt1.gif
+	delay	50
+	frame	data/chars/ripper/hurt1.gif
+	delay	12
+	frame	data/chars/ripper/hurt1.gif
+
+anim fall
+	loop	0
+	delay	35
+	offset	92 177
+	frame	data/chars/ripper/fall2.gif
+	frame	data/chars/ripper/fall2.gif
+	frame	data/chars/ripper/fall3.gif
+
+anim rise
+	loop	0
+	delay	15
+	offset	92 177
+	frame	data/chars/ripper/hurt1.gif
+
+
+anim attack1
+
+	range	180 300
+	throwframe	11
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	72 84 41 85
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot02.gif
+        sound        data/sounds/sparo.wav
+	custknife knife
+	throwframe 4 2
+	frame	data/chars/ripper/shoot02.gif
+	frame	data/chars/ripper/shoot02.gif
+	frame	data/chars/ripper/shoot02.gif
+	frame	data/chars/ripper/shoot03.gif
+	frame	data/chars/ripper/shoot03.gif
+	frame	data/chars/ripper/shoot03.gif
+	frame	data/chars/ripper/shoot03.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot01.gif
+	frame	data/chars/ripper/shoot02.gif
+	bbox	37 25 43 105
+	frame	data/chars/ripper/shoot02.gif

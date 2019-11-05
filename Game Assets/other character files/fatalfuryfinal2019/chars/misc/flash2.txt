@@ -1,0 +1,21 @@
+# Hit flash
+
+name	Flash2
+health	1
+type	none
+shadow	0
+diesound	data/sounds/gun3.wav
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	36 40
+	sound data/sounds/hurt.wav
+	frame	data/chars/misc/2flash00.gif
+	frame	data/chars/misc/2flash01.gif
+	frame	data/chars/misc/2flash02.gif
+	frame	data/chars/misc/2flash03.gif
+	frame	data/chars/misc/2flash04.gif
+	frame	data/chars/misc/2flash05.gif
+	frame	data/chars/misc/2flash06.gif

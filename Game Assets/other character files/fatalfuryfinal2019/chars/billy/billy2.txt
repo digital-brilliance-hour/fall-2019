@@ -1,0 +1,393 @@
+name	billy2
+health	100
+speed	9
+mp 100
+land 1
+type	none
+shadow	   0
+gfxshadow  1
+diesound data/sounds/billy2.wav
+icon	 data/chars/terry/iwolf.gif
+iconpain data/chars/terry/iwolf2.gif
+atchain    1 
+load bast
+palette           data/chars/billy/pow.gif
+alternatepal	  data/chars/billy/pow.gif 
+alternatepal	  data/chars/billy/pow.gif 
+alternatepal	  data/chars/billy/pow.gif 
+weaploss 3
+
+com  f f s      freespecial
+com  b b s      freespecial2
+com  d d s      freespecial3
+com     a2      freespecial4
+com     s      freespecial5
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+	frame	data/chars/billy/sel1.gif
+        delay 12
+	frame	data/chars/billy/sel1.gif
+	frame	data/chars/billy/sel1.gif	
+	frame	data/chars/billy/sel2.gif
+	frame	data/chars/billy/sel3.gif
+
+anim waiting
+shadowcoords 1000 1000
+        loop	1
+	delay	12
+	offset	0 0
+	frame	data/chars/billy/select.gif	
+	frame	data/chars/billy/selecta.gif	
+	
+anim freespecial5
+	custknife fire2
+	throwframe 1 1
+	loop	0
+	delay	22
+	offset	92 177
+	bbox	0
+	frame	data/chars/billy/block.gif
+	frame	data/chars/billy/block.gif
+	frame	data/chars/billy/block.gif
+
+
+anim select
+shadowcoords 1000 1000
+        loop	0
+	delay	8
+	offset	0 0
+	sound	data/sounds/billy3.wav
+	frame	data/chars/billy/select.gif	
+	frame	data/chars/billy/select2.gif	
+	frame	data/chars/billy/select2.gif
+	frame	data/chars/billy/select2.gif	
+	frame	data/chars/billy/select.gif	
+	frame	data/chars/billy/select.gif	
+
+anim idle
+	loop	1
+	delay	10
+	offset	92 177
+	bbox	71 98 38 72
+	frame	data/chars/billy/idle000.gif
+
+
+anim walk
+	loop	1
+	delay	20
+	offset	92 177
+	bbox	71 98 38 72
+	frame	data/chars/billy/walk000.gif
+	frame	data/chars/billy/walk001.gif
+	frame	data/chars/billy/walk002.gif
+
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/billy/get001.gif
+#	frame	data/chars/billy/get001.gif
+	frame	data/chars/billy/get001.gif
+#	frame	data/chars/billy/get000.gif
+	delay	30
+	frame	data/chars/billy/get000.gif
+	delay	5
+	frame	data/chars/billy/get000.gif
+	frame	data/chars/billy/get000.gif
+	frame	data/chars/billy/get001.gif
+	frame	data/chars/billy/get001.gif
+
+anim jump
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	71 98 38 72
+	frame	data/chars/billy/jump000.gif
+	frame	data/chars/billy/jump001.gif
+	frame	data/chars/billy/jump001.gif
+	frame	data/chars/billy/jump002.gif
+	frame	data/chars/billy/jump002.gif
+	frame	data/chars/billy/jump003.gif
+	frame	data/chars/billy/jump003.gif
+	frame	data/chars/billy/jump003.gif
+	frame	data/chars/billy/jump003.gif
+	frame	data/chars/billy/get000.gif
+
+
+
+
+anim jumpattack
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	71 98 38 72
+	frame	data/chars/billy/jk1.gif
+	attack	88 113 42 73 7 1
+	frame	data/chars/billy/jk2.gif
+	frame	data/chars/billy/jk2.gif
+	frame	data/chars/billy/jk2.gif
+	attack	0
+	frame	data/chars/billy/jk1.gif
+
+
+
+anim attack1
+	custknife fire
+	throwframe 1 1
+	loop	0
+	delay	12
+	offset	92 177
+	bbox	71 98 38 72
+	sound	data/sounds/punch.wav
+	frame	data/chars/billy/knee1.gif
+	burn	108 78 61 54 20 1
+	frame	data/chars/billy/knee2.gif
+	frame	data/chars/billy/knee2.gif
+	burn	0
+	frame	data/chars/billy/knee1.gif
+
+anim attack2
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	12
+	offset	92 177
+	bbox	71 98 38 72
+	sound	data/sounds/punch.wav
+	frame	data/chars/billy/knee1.gif
+	burn	108 78 61 54 20 1
+	frame	data/chars/billy/knee2.gif
+	frame	data/chars/billy/knee2.gif
+	burn	0
+	frame	data/chars/billy/knee1.gif
+
+anim attack3
+	custknife fakesh
+	throwframe 1 1
+	loop	0
+	delay	12
+	offset	92 177
+	bbox	71 98 38 72
+	sound	data/sounds/punch.wav
+	frame	data/chars/billy/knee1.gif
+	burn	108 78 61 54 20 1
+	frame	data/chars/billy/knee2.gif
+	frame	data/chars/billy/knee2.gif
+	burn	0
+	frame	data/chars/billy/knee1.gif
+
+
+anim grab
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	71 98 38 72
+	frame	data/chars/billy/grab.gif
+
+anim throw
+	loop	0
+	delay	14
+	offset	92 177
+	sound	data/sounds/extung1.wav
+	frame	data/chars/billy/a4-000.gif
+	frame	data/chars/billy/a4-001.gif
+	frame	data/chars/billy/a4-002.gif
+	frame	data/chars/billy/a4-003.gif
+	frame	data/chars/billy/a4-004.gif
+	
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	71 98 38 72
+	delay	8
+        move -1
+	frame	data/chars/billy/pain01.gif
+	frame	data/chars/billy/pain02.gif
+	frame	data/chars/billy/pain02.gif
+	frame	data/chars/billy/pain01.gif
+	frame	data/chars/billy/pain01.gif
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	71 98 38 72
+	delay	8
+	frame	data/chars/billy/pain01.gif
+	delay	36
+	frame	data/chars/billy/pain02.gif
+	delay	6
+	frame	data/chars/billy/pain02.gif
+	frame	data/chars/billy/pain01.gif
+	frame	data/chars/billy/pain01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/billy/fall00.gif
+	frame	data/chars/billy/fall00.gif
+	frame	data/chars/billy/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/billy/rise1.gif
+	frame	data/chars/billy/rise2.gif
+	frame	data/chars/billy/rise3.gif
+	frame	data/chars/billy/rise3.gif
+
+
+anim freespecial
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	delay	11
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	71 98 38 72
+   jumpframe	data/chars/billy/crack1.gif 0 2 0
+	frame	data/chars/billy/crack2.gif
+	sound	data/sounds/billy3.wav
+	frame	data/chars/billy/crack3.gif
+	attack	117 80 82 47 15 1
+	frame	data/chars/billy/crack4.gif
+	frame	data/chars/billy/crack5.gif
+
+
+anim freespecial2
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	loop	0
+	delay	13
+	offset	92 177
+	frame	data/chars/billy/pow1.gif
+	frame	data/chars/billy/pow2.gif
+	frame	data/chars/billy/pow3.gif
+        sound        data/sounds/billy1.wav
+	custknife bast
+	throwframe 3 2
+	frame	data/chars/billy/pow3.gif
+	frame	data/chars/billy/pow3.gif
+	frame	data/chars/billy/pow3.gif
+	offset	110 177
+	frame	data/chars/billy/pow4.gif
+	frame	data/chars/billy/pow5.gif
+	frame	data/chars/billy/pow6.gif
+	frame	data/chars/billy/pow4.gif
+	frame	data/chars/billy/pow5.gif
+	frame	data/chars/billy/pow6.gif
+	frame	data/chars/billy/pow4.gif
+	frame	data/chars/billy/pow5.gif
+	frame	data/chars/billy/pow6.gif
+	frame	data/chars/billy/pow7.gif
+	frame	data/chars/billy/pow8.gif
+	frame	data/chars/billy/pow9.gif
+	frame	data/chars/billy/pow10.gif
+	sound	data/sounds/jump.wav
+	frame	data/chars/billy/pow11.gif
+	frame	data/chars/billy/pow12.gif
+	frame	data/chars/billy/pow13.gif
+	frame	data/chars/billy/pow14.gif
+
+
+anim freespecial3
+	custknife fakesh
+	throwframe 1 1
+        energycost 0 1 0
+	jumpframe 0
+	loop	0
+	delay	8
+	offset	92 177
+	sound	data/sounds/jump.wav
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+    jumpframe	data/chars/billy/jump000.gif 4 0 0
+	frame	data/chars/billy/jump001.gif
+	frame	data/chars/billy/jump001.gif
+	frame	data/chars/billy/jump002.gif
+	frame	data/chars/billy/jump002.gif
+	frame	data/chars/billy/jumpat00.gif
+	frame	data/chars/billy/jumpat00.gif
+	blast	77 100 42 84 15 1
+	frame	data/chars/billy/jumpat01.gif
+	frame	data/chars/billy/jumpat01.gif
+	frame	data/chars/billy/jumpat01.gif
+	frame	data/chars/billy/jumpat01.gif
+	frame	data/chars/billy/jumpat02.gif
+	frame	data/chars/billy/jumpat02.gif
+	frame	data/chars/billy/jumpat02.gif
+	frame	data/chars/billy/jumpat03.gif
+	sound	data/sounds/billy3.wav
+	frame	data/chars/billy/jumpat04.gif
+	frame	data/chars/billy/jumpat01.gif
+	attack	0 0 0 0 0 0
+
+anim freespecial4
+	loop	0
+	delay	7
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/billy/a4-000.gif
+	frame	data/chars/billy/a4-001.gif
+	frame	data/chars/billy/a4-002.gif
+	attack	36 93 47 41 20 1
+	frame	data/chars/billy/a4-002.gif
+	frame	data/chars/billy/a4-003.gif
+	frame	data/chars/billy/a4-004.gif
+
+
+anim grabattack
+	custknife fire
+	throwframe 1 1
+	loop	0
+	delay	12
+	offset	92 177
+	bbox	71 98 38 72
+	sound	data/sounds/punch.wav
+	frame	data/chars/billy/knee1.gif
+	burn	116 98 84 24 20 1
+	frame	data/chars/billy/knee2.gif
+	frame	data/chars/billy/knee2.gif
+	burn	0
+	frame	data/chars/billy/knee1.gif
+
+
+anim grabattack2
+	custknife fire
+	throwframe 1 1
+	loop	0
+	delay	12
+	offset	92 177
+	bbox	71 98 38 72
+	sound	data/sounds/punch.wav
+	frame	data/chars/billy/knee1.gif
+	burn	116 98 84 24 20 1
+	frame	data/chars/billy/knee2.gif
+	frame	data/chars/billy/knee2.gif
+	burn	0
+	frame	data/chars/billy/knee1.gif
+
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	71 98 38 72
+	frame	data/chars/billy/get001.gif
+

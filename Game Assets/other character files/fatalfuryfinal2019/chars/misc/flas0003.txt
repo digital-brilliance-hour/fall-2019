@@ -1,0 +1,17 @@
+#Wave hit flash.
+
+name	Flas0003
+type	none
+shadow	0
+
+
+
+anim idle
+	anim idle
+	loop	0
+	delay	8
+	offset	92 127
+	frame	data/chars/misc/hur5.gif
+	frame	data/chars/misc/hur6.gif
+
+	

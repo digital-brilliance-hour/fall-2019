@@ -1,0 +1,24 @@
+name	spurt1
+health	1
+type	none
+shadow	0
+remove  0
+candamage player
+nomove 1 1
+anim idle
+	loop	0
+	delay	6
+	offset	40 190
+	frame	data/chars/misc/spurt1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spurt2.gif
+	frame	data/chars/misc/empty.gif
+	attack	87 92 69 37 15 1
+	frame	data/chars/misc/spurt3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spurt4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spurt5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spurt6.gif
+        attack 0 0 0 0 0

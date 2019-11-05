@@ -1,0 +1,385 @@
+name	Johnny
+health	100
+speed	7
+type	enemy
+gfxshadow	1
+diesound data/chars/johnny/die.wav
+icon	data/chars/johnny/icon.gif
+aggression 5
+
+remap 	data/chars/johnny/std01.gif data/chars/johnny/map1.gif
+remap 	data/chars/johnny/std01.gif data/chars/johnny/map2.gif
+
+#load     palla
+#knife    ball
+
+anim idle
+	loop	1
+	offset	65 146
+	bbox    45 33 47 109
+        delay   12
+        frame	data/chars/johnny/std01.gif
+        frame	data/chars/johnny/std02.gif
+        frame	data/chars/johnny/std03.gif
+        frame	data/chars/johnny/std02.gif
+
+
+anim walk
+	loop	1
+	offset	48 138
+	bbox    39 18 34 116
+        delay   16
+        frame	data/chars/johnny/aru01.gif
+        frame	data/chars/johnny/aru02.gif
+        frame	data/chars/johnny/aru03.gif
+        frame	data/chars/johnny/aru04.gif
+        frame	data/chars/johnny/aru05.gif
+        frame	data/chars/johnny/aru06.gif
+
+
+
+anim pain1
+	loop	0
+	offset	103 150
+	bbox    73 31 47 112
+        delay   20
+        frame	data/chars/johnny/pain1.gif
+        frame	data/chars/johnny/pain2.gif
+        frame	data/chars/johnny/pain1.gif
+
+anim pain2
+	loop	0
+	offset	95 145
+	bbox    70 35 50 102
+        delay   15
+        frame	data/chars/johnny/pain3.gif
+        frame	data/chars/johnny/pain4.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain4.gif
+        frame	data/chars/johnny/pain3.gif
+
+anim pain4
+	loop	0
+	offset	95 145
+
+	sound	data/chars/johnny/pain.wav
+        delay	2
+	move    -7
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        move    -2
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        move    -1
+        frame	data/chars/johnny/pain5.gif
+        frame	data/chars/johnny/pain5.gif
+        move    0
+        delay   24
+        frame	data/chars/johnny/pain5.gif
+        delay   10
+        frame	data/chars/johnny/pain4.gif
+        frame	data/chars/johnny/pain3.gif
+
+anim pain5
+	loop	0
+	offset	103 150
+	bbox    73 31 47 112
+        delay   20
+        frame	data/chars/johnny/pain1.gif
+        frame	data/chars/johnny/pain2.gif
+        frame	data/chars/johnny/pain1.gif
+
+anim pain6
+	loop	0
+	offset	110 208
+	bbox    84 95 39 106
+        delay   10
+        sound	data/sounds/piyo.wav
+        frame	data/chars/johnny/piyo01.gif
+        frame	data/chars/johnny/piyo02.gif
+        frame	data/chars/johnny/piyo03.gif
+        frame	data/chars/johnny/piyo04.gif
+        frame	data/chars/johnny/piyo05.gif
+        frame	data/chars/johnny/piyo06.gif
+        frame	data/chars/johnny/piyo07.gif
+        frame	data/chars/johnny/piyo01.gif
+        frame	data/chars/johnny/piyo02.gif
+        frame	data/chars/johnny/piyo03.gif
+        frame	data/chars/johnny/piyo04.gif
+        frame	data/chars/johnny/piyo05.gif
+        frame	data/chars/johnny/piyo06.gif
+        frame	data/chars/johnny/piyo07.gif
+
+anim fall1
+	loop	0
+	offset	122 151
+	delay   20
+        frame	data/chars/johnny/fall1.gif
+        offset  140 130
+        attack2  70 40 31 62 7 1 
+        frame	data/chars/johnny/fall2.gif
+        attack2  64 40 32 54 7 1  
+        frame	data/chars/johnny/fall3.gif
+        offset  105 102
+        attack2  34 68 35 38 7 1  
+        frame	data/chars/johnny/fall4.gif
+
+anim fall2
+	loop	0
+        offset	95 145
+	bbox    70 35 50 102
+        delay   25
+        frame	data/chars/johnny/pain5.gif
+        offset  140 130
+        bbox    71 49 113 64
+        frame	data/chars/johnny/fall2.gif
+        bbox    67 39 109 61
+        frame	data/chars/johnny/fall3.gif
+        offset  105 102
+        bbox    0 0 0 0
+        frame	data/chars/johnny/fall4.gif
+
+anim fall4
+	loop	0
+        offset	95 145
+	bbox    70 35 50 102
+        delay   25
+        frame	data/chars/johnny/pain5.gif
+        offset  140 130
+        bbox    71 49 113 64
+        frame	data/chars/johnny/fall2.gif
+        bbox    67 39 109 61
+        frame	data/chars/johnny/fall3.gif
+        offset  105 102
+        bbox    0 0 0 0
+        frame	data/chars/johnny/fall4.gif
+
+anim fall5
+	loop	0
+        offset	95 145
+	bbox    70 35 50 102
+        delay   25
+        frame	data/chars/johnny/pain5.gif
+        offset  140 130
+        bbox    71 49 113 64
+        frame	data/chars/johnny/fall2.gif
+        bbox    67 39 109 61
+        frame	data/chars/johnny/fall3.gif
+        offset  105 102
+        bbox    0 0 0 0
+        frame	data/chars/johnny/fall4.gif
+
+anim fall6
+	loop	0
+        offset	95 145
+	bbox    70 35 50 102
+        delay   25
+        frame	data/chars/johnny/pain5.gif
+        offset  140 130
+        bbox    71 49 113 64
+        delay   18
+        frame	data/chars/johnny/fall2.gif
+        bbox    67 39 109 61
+        frame	data/chars/johnny/fall3.gif
+        offset  105 102
+        bbox    0 0 0 0
+        frame	data/chars/johnny/fall4.gif
+
+anim burn
+	loop	0
+	offset	70 128
+	delay   3
+	sound	data/sounds/fire.wav
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+
+anim rise
+	loop	0
+	offset	98 143
+	delay   16
+        frame	data/chars/johnny/rise1.gif
+        frame	data/chars/johnny/rise2.gif
+        frame	data/chars/johnny/rise3.gif
+
+anim attack1
+        range   120 180 
+        loop	0
+	offset	80 170
+	bbox    53 82 75 83
+        delay   28
+        sound	data/chars/johnny/beat1.wav
+        hitflash   Flash2
+         hitfx      data/sounds/beat5.wav
+        frame	data/chars/johnny/ak1-1.gif
+        frame	data/chars/johnny/ak1-2.gif
+        frame	data/chars/johnny/ak1-3.gif
+        frame	data/chars/johnny/ak1-4.gif
+        move    10
+        delay   3
+        frame	data/chars/johnny/ak1-5.gif
+        frame	data/chars/johnny/ak1-5.gif
+        frame	data/chars/johnny/ak1-5.gif
+        bbox    68 71 25 75
+        blast   97 82 58 58 14 1 0 0 24
+        delay   2
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        move    2
+        frame	data/chars/johnny/ak1-6.gif
+        frame	data/chars/johnny/ak1-6.gif
+        blast   0 0 0 0 0
+        move    0
+        frame	data/chars/johnny/ak1-6.gif
+        delay   18
+        frame	data/chars/johnny/ak1-7.gif
+        frame	data/chars/johnny/ak1-8.gif
+
+anim attack2
+        range   10 70 
+        loop	0
+	offset	72 199
+	bbox    56 78 41 112
+        delay   20
+        move    2
+        followanim 1
+        sound	data/chars/johnny/beat2.wav
+        hitflash   Flash2
+        hitfx      data/sounds/beat5.wav
+        frame	data/chars/johnny/ak2-1.gif
+        delay   10
+        frame	data/chars/johnny/ak2-2.gif
+        frame	data/chars/johnny/ak2-3.gif
+        attack2 98 128 47 23 5 0 0 0 24
+        frame	data/chars/johnny/ak2-4.gif
+        attack4 0 0 0 0 0
+        frame	data/chars/johnny/ak2-5.gif
+        attack4 114 71 55 50 5 0 0 0 24
+        frame	data/chars/johnny/ak2-6.gif
+        attack4 0 0 0 0 0
+        delay   20
+        frame	data/chars/johnny/ak2-6.gif
+
+anim follow1
+        loop	0
+        offset	72 199
+	bbox    56 78 41 112
+        delay   12
+        throwframe 7
+        custknife palla
+        attack2 0 0 0 0 0
+        hitflash   Flash2
+        hitfx      data/sounds/beat5.wav
+        frame	data/chars/johnny/ak2-5.gif
+        attack4 114 71 55 60 5 0 0 0 24
+        frame	data/chars/johnny/ak2-6.gif
+        attack4 0 0 0 0 0
+        delay   20
+        frame	data/chars/johnny/ak2-6.gif
+      
+	offset	90 175
+	bbox    67 53 37 113
+        delay   14
+        frame	data/chars/johnny/f01.gif
+        delay   35
+        frame	data/chars/johnny/f02.gif
+        delay   10
+        frame	data/chars/johnny/f03.gif
+        delay   1
+        frame	data/chars/johnny/f04.gif
+        delay   10
+        frame	data/chars/johnny/f04.gif
+       delay   20
+        frame	data/chars/johnny/f05.gif
+
+
+
+
+anim attack3
+        range   65 100 
+        loop	0
+	offset	98 143
+	delay   25
+        bbox    108 53 60 82
+        hitflash   Flash2
+        hitfx      data/sounds/beat5.wav
+        frame	data/chars/johnny/rise3.gif
+        sound	data/chars/johnny/beat2.wav
+	bbox    56 78 41 112
+        move    6
+        delay   10
+        offset	90 150
+        frame	data/chars/johnny/ak3-1.gif
+        bbox     56 74 48 47
+        delay    3
+        attack  116 104 71 36 6 1 0 0 24
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        frame	data/chars/johnny/ak3-2.gif
+        move    0
+
+
+        attack  0 0 0 0 0 
+        frame	data/chars/johnny/ak3-3.gif
+        delay   25
+        frame	data/chars/johnny/ak3-4.gif
+

@@ -1,0 +1,21 @@
+# Hit flash
+
+name	Flashc
+type	none
+shadow	0
+
+
+
+anim idle
+	anim idle
+	loop	0
+	delay	2
+	offset	60 80
+	frame	data/chars/misc/flas0001.gif
+	frame	data/chars/misc/flas0002.gif
+	frame	data/chars/misc/flas0003.gif
+	frame	data/chars/misc/flas0004.gif
+	frame	data/chars/misc/flas0005.gif
+	frame	data/chars/misc/flas0006.gif
+	frame	data/chars/misc/flas0007.gif
+	frame	data/chars/misc/flas0008.gif

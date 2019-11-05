@@ -1,0 +1,31 @@
+# Hit flash
+
+name	Explosion
+health	1
+type	none
+nolife	1
+#noname	1
+gfxshadow 1
+diesound	data/sounds/bang3.wav
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	130 80
+	attack	120 180 90 25 25 1
+	burn	120 180 90 25 25 1
+	frame	data/chars/misc/exp01.gif
+	frame	data/chars/misc/exp02.gif
+	frame	data/chars/misc/exp03.gif
+	frame	data/chars/misc/exp04.gif
+	frame	data/chars/misc/exp05.gif
+	frame	data/chars/misc/exp06.gif
+	frame	data/chars/misc/exp07.gif
+	frame	data/chars/misc/exp08.gif
+	frame	data/chars/misc/exp09.gif
+	frame	data/chars/misc/exp10.gif
+	frame	data/chars/misc/exp11.gif
+	frame	data/chars/misc/exp12.gif
+	frame	data/chars/misc/exp13.gif
+	frame	data/chars/misc/exp14.gif

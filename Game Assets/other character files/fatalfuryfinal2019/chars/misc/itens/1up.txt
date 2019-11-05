@@ -1,0 +1,39 @@
+name	1up
+health	0
+noname 1
+type	item
+subtype	touch
+gfxshadow 1
+#icon	data/chars/misc/cakeicon.gif
+
+anim spawn
+	loop	0
+	delay	60
+	offset	53 69
+	bbox	35 43 41 27
+	jumpframe 0 3 0 0
+		drawmethod  100  100  0  0  0  -1  -1
+	frame	data/chars/misc/Itens/02.gif
+		delay  5
+	frame	data/chars/misc/Itens/03.gif
+	frame	data/chars/misc/Itens/04.gif
+	frame	data/chars/misc/Itens/05.gif
+		delay  1
+	frame	data/chars/misc/Itens/06.gif
+	frame	data/chars/misc/Itens/07.gif
+
+anim idle
+	loop	1
+	delay	60
+	offset	53 69
+	bbox	35 43 41 27
+		drawmethod  100  100  0  0  0  -1  -1
+	frame	data/chars/misc/Itens/1Up.gif
+		delay  5
+	frame	data/chars/misc/Itens/02.gif
+	frame	data/chars/misc/Itens/03.gif
+	frame	data/chars/misc/Itens/04.gif
+	frame	data/chars/misc/Itens/05.gif
+	frame	data/chars/misc/Itens/06.gif
+	frame	data/chars/misc/Itens/07.gif
+

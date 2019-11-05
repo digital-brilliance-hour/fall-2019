@@ -1,0 +1,572 @@
+
+
+name	carman
+health	100
+speed	11
+type	enemy
+gfxshadow	1
+diesound data/chars/carman/die.wav
+icon	data/chars/carman/icon.gif
+blockodds 1
+candamage player npc
+hostile player npc
+thold        76
+remap data/chars/carman/std01.gif data/chars/carman/map1.gif
+remap data/chars/carman/std01.gif data/chars/carman/map2.gif
+
+aggression 3
+
+anim idle
+	loop	1
+	offset	62 145
+	bbox    47 19 28 121
+        delay   10
+        frame	data/chars/carman/std01.gif
+        frame	data/chars/carman/std02.gif
+        frame	data/chars/carman/std03.gif
+        frame	data/chars/carman/std04.gif
+        frame	data/chars/carman/std05.gif
+        frame	data/chars/carman/std06.gif
+        frame	data/chars/carman/std07.gif
+        frame	data/chars/carman/std08.gif
+        frame	data/chars/carman/std09.gif
+        frame	data/chars/carman/std08.gif
+        frame	data/chars/carman/std07.gif
+        frame	data/chars/carman/std06.gif
+        frame	data/chars/carman/std05.gif
+        frame	data/chars/carman/std04.gif
+        frame	data/chars/carman/std03.gif
+        frame	data/chars/carman/std02.gif
+        
+anim block
+	loop    0
+	delay   3
+	offset	48 137
+	bbox	30 8 48 19
+	move    -7
+        bflash bflash
+        frame   data/chars/carman/g.gif
+	bbox    0 0 0 0
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+	move    0
+	delay   28
+        frame   data/chars/carman/g.gif
+
+        offset	64 135
+	delay   6
+        
+        move    3
+        hitfx   data/sounds/hk.wav
+        frame	data/chars/carman/ak2-1.gif
+        frame	data/chars/carman/ak2-2.gif
+        frame	data/chars/carman/ak2-3.gif
+        sound   data/chars/carman/beat1.wav
+        delay   1
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        delay   6
+        frame	data/chars/carman/ak2-5.gif
+        attack2 74 83 56 30 8 0 0 0 24
+        frame	data/chars/carman/ak2-6.gif
+        attack  0 0 0 0 0
+        
+        frame	data/chars/carman/ak2-7.gif
+        attack4 77 26 60 36 10 0 0 0 24
+        bbox    77 26 60 36
+        
+        frame	data/chars/carman/ak2-8.gif
+        attack  0 0 0 0 0
+        offset	62 138
+        bbox    53 23 24 105
+        delay   6
+        frame	data/chars/carman/ak2-9.gif
+        frame	data/chars/carman/ak2-10.gif
+        delay   25
+        move    0
+        frame	data/chars/carman/ak2-11.gif
+       
+
+
+
+anim pain6
+	loop    0
+	delay   3
+	offset	48 137
+	bbox	30 8 48 19
+	move    -7
+        frame   data/chars/carman/g.gif
+	bbox    0 0 0 0
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+        frame   data/chars/carman/g.gif
+	move    0
+	delay   25
+        frame   data/chars/carman/g.gif
+
+anim walk
+	loop	1
+	offset	69 145
+	bbox    57 22 30 120
+        delay   6
+        frame	data/chars/carman/aru001.gif
+        frame	data/chars/carman/aru002.gif
+        offset	67 145
+        frame	data/chars/carman/aru003.gif
+        offset	65 145
+        frame	data/chars/carman/aru004.gif
+        offset	61 145
+        delay   8
+        frame	data/chars/carman/aru005.gif
+        offset	62 145
+        delay   6
+        frame	data/chars/carman/aru006.gif
+        offset	63 145
+        frame	data/chars/carman/aru007.gif
+        offset	70 145
+        frame	data/chars/carman/aru008.gif
+        offset	73 145
+        frame	data/chars/carman/aru009.gif
+        offset	74 145
+        delay   8
+        frame	data/chars/carman/aru010.gif
+        offset	76 145
+        delay   6
+        frame	data/chars/carman/aru011.gif
+
+
+anim pain
+	loop	0
+	offset	63 145
+	delay   10
+        bbox    46 21 31 121
+        frame	data/chars/carman/pain1.gif
+        frame	data/chars/carman/pain2.gif
+        delay   20
+        frame	data/chars/carman/pain3.gif
+        delay   10
+        frame	data/chars/carman/pain2.gif
+        frame	data/chars/carman/pain1.gif
+
+anim pain2
+	loop	0
+	offset	64 144
+	delay   18
+        bbox    54 24 33 112
+        frame	data/chars/carman/pain4.gif
+        offset	70 144
+        frame	data/chars/carman/pain4.gif
+        offset	65 144
+        frame	data/chars/carman/pain4.gif
+
+anim pain4
+	loop	0
+	offset	62 145
+
+	sound	data/chars/carman/pain.wav
+        delay	2
+	move    -7
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    -2
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    -1
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    0
+        delay   24
+        frame	data/chars/carman/pain6.gif
+        delay   10
+        frame	data/chars/carman/pain5.gif
+        frame	data/chars/carman/pain4.gif
+
+anim pain6
+	loop	0
+	offset	62 145
+
+	sound	data/chars/carman/pain.wav
+        delay	2
+	move    -7
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    -2
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    -1
+        frame	data/chars/carman/pain6.gif
+        frame	data/chars/carman/pain6.gif
+        move    0
+        delay   24
+        frame	data/chars/carman/pain6.gif
+        delay   10
+        frame	data/chars/carman/pain5.gif
+        frame	data/chars/carman/pain4.gif
+
+anim fall
+	loop	0
+	offset	92 142
+	delay   30
+        frame	data/chars/carman/fall1.gif
+        attack2 36 26 25 62 8 1 0 0 12
+        frame	data/chars/carman/fall2.gif
+        delay   10
+        offset  87 142
+        attack2 32 70 30 45 8 1 0 0 12
+        frame	data/chars/carman/fall3.gif
+        offset  72 36
+        attack2 6 12 34 27 8 1 0 0 12
+        frame	data/chars/carman/fall4.gif
+
+anim fall2
+	loop	0
+	offset	92 142
+	delay   30
+        bbox    47 24 71 93
+        frame	data/chars/carman/fall1.gif
+        bbox    38 30 93 69
+        delay   20
+        frame	data/chars/carman/fall2.gif
+        delay   20
+        offset  87 142
+        bbox    35 64 93 41
+        frame	data/chars/carman/fall3.gif
+        offset  72 36
+        bbox    0 0 0 0
+        frame	data/chars/carman/fall4.gif
+
+anim fall4
+	loop	0
+	offset	92 142
+	delay   30
+        bbox    47 24 71 93
+        frame	data/chars/carman/fall1.gif
+        bbox    38 30 93 69
+        frame	data/chars/carman/fall2.gif
+        delay   10
+        offset  87 142
+        bbox    35 64 93 41
+        frame	data/chars/carman/fall3.gif
+        offset  72 36
+        bbox    0 0 0 0
+        frame	data/chars/carman/fall4.gif
+
+anim fall5
+	loop	0
+	offset	92 142
+	delay   30
+        bbox    47 24 71 93
+        frame	data/chars/carman/fall1.gif
+        bbox    38 30 93 69
+        frame	data/chars/carman/fall2.gif
+        delay   10
+        offset  87 142
+        bbox    35 64 93 41
+        frame	data/chars/carman/fall3.gif
+        offset  72 36
+        bbox    0 0 0 0
+        frame	data/chars/carman/fall4.gif
+
+anim fall6
+	loop	0
+	offset	92 142
+	delay   30
+        bbox    47 24 71 93
+        frame	data/chars/carman/fall1.gif
+        bbox    38 30 93 69
+        frame	data/chars/carman/fall2.gif
+        delay   10
+        offset  87 142
+        bbox    35 64 93 41
+        frame	data/chars/carman/fall3.gif
+        offset  72 36
+        bbox    0 0 0 0
+        frame	data/chars/carman/fall4.gif
+
+anim burn
+	loop	0
+	offset	70 128
+	delay   3
+	sound	data/sounds/fire.wav
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+        frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+	frame	data/chars/misc/burn4.gif
+       
+
+anim rise
+	loop	0
+	offset	72 103
+	delay   8
+        frame	data/chars/carman/rise1.gif
+        frame	data/chars/carman/rise2.gif
+        frame	data/chars/carman/rise3.gif
+        frame	data/chars/carman/rise4.gif
+        frame	data/chars/carman/rise5.gif
+        frame	data/chars/carman/rise6.gif
+        delay   15
+        frame	data/chars/carman/rise7.gif
+        
+anim attack1
+        range   10 70
+        loop	0
+	offset	60 145
+	delay   30
+        hitfx   data/sounds/hk.wav
+       
+        frame	data/chars/carman/ak4-1.gif
+        offset	70 156
+	delay   6
+        bbox    54 30 33 120
+        frame	data/chars/carman/ak1-1.gif
+        frame	data/chars/carman/ak1-2.gif
+        frame	data/chars/carman/ak1-3.gif
+        attack  93 49 54 33 3 0 0 0 8
+        bbox    93 49 54 33
+        delay    6
+        frame	data/chars/carman/ak1-4.gif
+        attack  0 0 0 0 0
+        offset	79 147
+	delay   6
+        bbox    70 25 19 118
+        frame	data/chars/carman/ak4-2.gif
+        frame	data/chars/carman/ak4-3.gif
+        attack  87 54 62 22 3 0 0 0 8
+        bbox    87 54 62 22
+        frame	data/chars/carman/ak4-4.gif
+        attack  0 0 0 0 0
+        offset	70 156
+	delay   6
+        bbox    54 30 33 120
+        frame	data/chars/carman/ak1-1.gif
+        frame	data/chars/carman/ak1-2.gif
+        frame	data/chars/carman/ak1-3.gif
+        attack  93 49 54 33 3 0 0 0 8
+        bbox    93 49 54 33
+        delay    6
+        frame	data/chars/carman/ak1-4.gif
+        attack  0 0 0 0 0
+        offset	79 147
+	delay   6
+        bbox    70 25 19 118
+        frame	data/chars/carman/ak4-2.gif
+        frame	data/chars/carman/ak4-3.gif
+        attack  87 54 62 22 3 0 0 0 8
+         bbox    87 54 62 22
+        frame	data/chars/carman/ak4-4.gif
+        attack  0 0 0 0 0
+
+        bbox    54 30 33 120
+        delay   6
+        offset  65 177
+        frame	data/chars/carman/ak4-6.gif
+        frame	data/chars/carman/ak4-7.gif
+        
+        delay   6
+        frame	data/chars/carman/ak4-8.gif
+        frame	data/chars/carman/ak4-9.gif
+        frame	data/chars/carman/ak4-10.gif
+        attack  67 53 58 33 8 0 0 0 8
+        bbox    67 53 58 33 
+        frame	data/chars/carman/ak4-11.gif
+        attack  0 0 0 0 0
+        bbox    54 30 33 120
+        frame	data/chars/carman/ak4-12.gif
+        frame	data/chars/carman/ak4-13.gif
+        
+        offset	64 135
+	delay   6
+        bbox    53 23 24 105
+        move    2
+        frame	data/chars/carman/ak2-1.gif
+        frame	data/chars/carman/ak2-2.gif
+        frame	data/chars/carman/ak2-3.gif
+       
+        frame	data/chars/carman/ak2-4.gif
+        delay   6
+        frame	data/chars/carman/ak2-5.gif
+        attack2 74 83 56 30 10 0 0 0 14
+        frame	data/chars/carman/ak2-6.gif
+        attack  0 0 0 0 0
+        
+        frame	data/chars/carman/ak2-7.gif
+        attack2 77 26 60 36 10 1 0 0 24
+        bbox    77 26 60 36
+        frame	data/chars/carman/ak2-8.gif
+        attack  0 0 0 0 0
+        offset	62 138
+        bbox    53 23 24 105
+        delay   6
+        frame	data/chars/carman/ak2-9.gif
+        frame	data/chars/carman/ak2-10.gif
+        delay   25
+        move    0
+        frame	data/chars/carman/ak2-11.gif
+        sound   data/chars/carman/win.wav
+        offset	53 140
+        bbox    40 5 27 130
+        delay   20
+        frame	data/chars/carman/win1.gif
+        frame	data/chars/carman/win2.gif
+        frame	data/chars/carman/win3.gif
+        frame	data/chars/carman/win4.gif
+        frame	data/chars/carman/win5.gif
+       
+anim attack2
+        range   130 160
+        loop	0
+	offset	75 163
+	delay   20
+        hitfx   data/sounds/hk.wav
+        bbox    59 55 47 97
+        frame	data/chars/carman/ak3-1.gif
+        delay   2
+        move    12
+        offset	86 163
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-2.gif
+        frame	data/chars/carman/ak3-3.gif
+        frame	data/chars/carman/ak3-4.gif
+        frame	data/chars/carman/ak3-5.gif
+        frame	data/chars/carman/ak3-6.gif
+        frame	data/chars/carman/ak3-7.gif
+        attack  83 38 66 27 10 1 0 0 24
+        move    0
+        offset  96 160
+        sound   data/chars/carman/beat2.wav
+        bbox    83 38 66 27
+        frame	data/chars/carman/ak3-8.gif
+        attack  0 0 0 0 0
+        bbox    68 39 22 113
+        frame	data/chars/carman/ak3-9.gif
+        frame	data/chars/carman/ak3-10.gif
+        frame	data/chars/carman/ak3-11.gif
+        offset  101 162
+        delay   30
+        frame	data/chars/carman/ak3-12.gif
+
+anim attack3
+        range   55 100
+        loop	0
+        offset	64 135
+	delay   6
+        bbox    53 23 24 105
+        move    3
+        hitfx   data/sounds/hk.wav
+        frame	data/chars/carman/ak2-1.gif
+        frame	data/chars/carman/ak2-2.gif
+        frame	data/chars/carman/ak2-3.gif
+        sound   data/chars/carman/beat1.wav
+        delay   1
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        frame	data/chars/carman/ak2-4.gif
+        delay   6
+        frame	data/chars/carman/ak2-5.gif
+        attack2 74 83 56 30 10 0 0 0 24
+        frame	data/chars/carman/ak2-6.gif
+        attack  0 0 0 0 0
+        
+        frame	data/chars/carman/ak2-7.gif
+        attack2 77 26 60 36 10 1 0 0 24
+        bbox    77 26 60 36
+        
+        frame	data/chars/carman/ak2-8.gif
+        attack  0 0 0 0 0
+        offset	62 138
+        bbox    53 23 24 105
+        delay   6
+        frame	data/chars/carman/ak2-9.gif
+        frame	data/chars/carman/ak2-10.gif
+        delay   25
+        move    0
+        frame	data/chars/carman/ak2-11.gif
+
+
+anim riseattack       
+        loop    0
+        offset  84 128
+        sound   data/chars/carman/beat1.wav
+        delay   5
+        hitfx   data/sounds/hk.wav
+        frame	data/chars/carman/ak1-9.gif
+        frame	data/chars/carman/ak1-10.gif
+        frame	data/chars/carman/ak1-11.gif
+        frame	data/chars/carman/ak1-12.gif
+        frame	data/chars/carman/ak1-13.gif
+        frame	data/chars/carman/ak1-14.gif
+        attack  88 79 75 30 8 1 0 0 18
+        delay   16
+        frame	data/chars/carman/ak1-15.gif
+        attack  0 0 0 0 0
+        delay   6
+        frame	data/chars/carman/ak1-16.gif
+        delay   25
+        frame	data/chars/carman/ak1-17.gif
+        

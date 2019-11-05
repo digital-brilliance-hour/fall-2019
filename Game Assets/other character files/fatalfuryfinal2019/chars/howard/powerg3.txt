@@ -1,0 +1,71 @@
+name					PowerG3
+health					1
+nolife					1
+type					npc
+hostile					Player  npc obstacle
+candamage				Player  npc obstacle
+speed					0
+nomove					1
+noquake					1
+#falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	delay	4
+	offset	76 192
+		attack1  2  142  152  58  10  0  0  0  0
+		move  0
+	frame	data/chars/Geese/P301.gif
+		Attack1  0
+	frame	data/chars/Geese/P302.gif
+		attack1  1  49  156  160  15  0  0  0  0  160
+	frame	data/chars/Geese/P303.gif
+		Attack1  0
+	frame	data/chars/Geese/P304.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P305.gif
+		Attack1  0
+	frame	data/chars/Geese/P306.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P307.gif
+		Attack1  0
+	frame	data/chars/Geese/P308.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P309.gif
+		Attack1  0
+	frame	data/chars/Geese/P310.gif
+	frame	data/chars/Geese/P313.gif
+		attack1  3  1  154  209  5  0  0  0  0  200
+	frame	data/chars/Geese/P311.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P312.gif
+		Attack1  0
+	frame	data/chars/Geese/P314.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P315.gif
+		Attack1  0
+	frame	data/chars/Geese/P316.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P317.gif
+		Attack1  0
+	frame	data/chars/Geese/P318.gif
+		attack1  2  4  150  207  15  0  0  0  0  200
+	frame	data/chars/Geese/P319.gif
+		Attack1  0
+	frame	data/chars/Geese/P320.gif
+	frame	data/chars/Geese/P321.gif
+		blast  2  4  150  207  15  0  0  0  200  200
+	frame	data/chars/Geese/P322.gif
+		Attack1  0
+	frame	data/chars/Geese/P323.gif
+	frame	data/chars/Geese/P324.gif
+

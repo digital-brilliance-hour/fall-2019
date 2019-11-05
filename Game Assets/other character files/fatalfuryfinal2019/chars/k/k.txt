@@ -1,0 +1,19 @@
+name	K'
+health	60
+type	enemy
+shadow	0
+icon	data/chars/k/icon.gif
+diesound data/sounds/die2.wav
+
+
+palette data/chars/biker-k/biker.gif
+
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	92 177
+	frame	data/chars/k/ko3.gif
+	frame	data/chars/k/ko5.gif
+

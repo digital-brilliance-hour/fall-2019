@@ -1,0 +1,51 @@
+name					PowerD
+health					1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	1
+	delay	3
+	offset	64 218
+		Attack1  0
+	frame	data/chars/Daimon/PowerD/p01.gif
+		burn  21  27  125  192  40  11  0  0  50  125
+	frame	data/chars/Daimon/PowerD/p02.gif
+	frame	data/chars/Daimon/PowerD/p03.gif
+	frame	data/chars/Daimon/PowerD/p04.gif
+	frame	data/chars/Daimon/PowerD/p05.gif
+	frame	data/chars/Daimon/PowerD/p06.gif
+	frame	data/chars/Daimon/PowerD/p07.gif
+	frame	data/chars/Daimon/PowerD/p08.gif
+		move  50
+	frame	data/chars/Daimon/PowerD/Empty.gif
+		move  0
+	frame	data/chars/Daimon/PowerD/p01.gif
+		burn  21  27  125  192  40  11  0  0  50  125
+	frame	data/chars/Daimon/PowerD/p02.gif
+	frame	data/chars/Daimon/PowerD/p03.gif
+	frame	data/chars/Daimon/PowerD/p04.gif
+	frame	data/chars/Daimon/PowerD/p05.gif
+	frame	data/chars/Daimon/PowerD/p06.gif
+	frame	data/chars/Daimon/PowerD/p07.gif
+	frame	data/chars/Daimon/PowerD/p08.gif
+	frame	data/chars/Daimon/PowerD/p11.gif
+		Attack1  0
+		move  50
+	frame	data/chars/Daimon/PowerD/Empty.gif
+

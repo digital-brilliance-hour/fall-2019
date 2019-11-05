@@ -1,0 +1,19 @@
+name	CRATE
+health	10
+type	obstacle
+shadow	0
+diesound data/sounds/wood.wav
+icon	data/chars/misc/cricon.gif
+gfxshadow 1
+
+anim idle
+	delay	10
+	offset	28 62
+	bbox	0 -20 55 87
+        platform  -30 -30 90 90 10 200
+        frame	data/chars/misc/crate.gif
+
+anim fall
+	delay	10
+	offset	28 62
+	frame	data/chars/misc/cratex.gif

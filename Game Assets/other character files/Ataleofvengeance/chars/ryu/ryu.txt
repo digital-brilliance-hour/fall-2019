@@ -1,0 +1,999 @@
+name	RYU
+health	100
+speed	12
+type	player
+shadow	5
+dust    dust
+mp      100
+running	20 3.5 2 1 0
+noquake 1
+makeinv 3
+holdblock 1
+gfxshadow 1
+diesound data/sounds/ryudie.wav
+
+com      a2 freespecial
+com     d f a freespecial2
+com     f d a freespecial3
+com     u f a freespecial4
+
+icon	data/chars/ryu/1.gif
+iconpain     data/chars/ryu/2.gif
+
+
+iconmphigh  data/sprites/h1.gif loop	1
+
+iconmphalf  data/sprites/m1.gif loop	1
+
+iconmplow  data/sprites/l1.gif loop	1
+
+
+
+
+
+
+remap	data/chars/ryu/idle00.gif data/chars/ryu/alt1.gif
+remap	data/chars/ryu/idle00.gif data/chars/ryu/alt2.gif
+remap	data/chars/ryu/idle00.gif data/chars/ryu/alt3.gif
+
+
+
+anim idle
+	loop	1
+	delay	7
+	bbox	9 8 35 91
+offset	25 97
+                  frame	data/chars/ryu/idle01.gif
+offset	25 99
+                  frame	data/chars/ryu/idle02.gif
+offset	25 102
+                  frame	data/chars/ryu/idle03.gif
+offset	25 102
+                  frame	data/chars/ryu/idle04.gif
+offset	25 100
+                  frame	data/chars/ryu/idle05.gif
+offset	25 99
+                  frame	data/chars/ryu/idle06.gif
+
+
+anim faint
+	loop	1
+	delay	15
+	offset	26 97
+	bbox	10 9 32 78
+	frame	data/chars/ryu/faint1.gif
+offset	26 96
+        frame	data/chars/ryu/faint2.gif
+offset	27 95
+        frame	data/chars/ryu/faint3.gif
+offset	27 95
+        frame	data/chars/ryu/faint4.gif
+offset	27 97
+        frame	data/chars/ryu/faint5.gif
+offset	26 98
+        frame	data/chars/ryu/faint6.gif   
+
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	20 105
+	bbox	3 11 35 86
+	frame	data/chars/ryu/wk00.gif
+offset	19 103
+                  frame	data/chars/ryu/wk01.gif
+offset	19 103
+                   frame	data/chars/ryu/wk02.gif
+offset	19 97
+                  frame	data/chars/ryu/wk03.gif
+offset	24 98
+                  bbox	8 15 39 86
+                  frame       data/chars/ryu/wk04.gif
+offset	33 100
+                  bbox	17 12 38 85
+                  frame	data/chars/ryu/wk05.gif
+offset 	27 103
+                  bbox	10 13 34 86
+                  frame	data/chars/ryu/wk06.gif
+offset 	21 104
+                  bbox	3 11 33 74
+                  frame	data/chars/ryu/wk07.gif
+
+anim run
+	loop	1
+	delay	8
+	offset	46 96
+	bbox	40 4 35 88
+	frame	data/chars/ryu/run1.gif
+offset	46 96
+	frame	data/chars/ryu/run2.gif
+offset	32 93
+                  bbox          20 10 27 81 
+                  frame	data/chars/ryu/run3.gif
+offset	49 95
+                  bbox	40 4 35 88
+                  frame	data/chars/ryu/run4.gif
+offset	46 95
+                  frame	data/chars/ryu/run5.gif
+offset	35 92
+                  frame	data/chars/ryu/run6.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	25 66
+                  bbox          0 0 0 0 
+	frame	data/chars/ryu/get00.gif
+offset	35 65
+                  frame	data/chars/ryu/get01.gif
+
+
+
+
+anim block
+	loop	0
+	delay	5
+	offset	31 99
+	frame	data/chars/ryu/block1.gif
+offset	33 102
+        bbox    39 7 2 81
+	delay	5
+        frame	data/chars/ryu/block2.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	24 99
+	bbox	15 8 33 76
+	frame	data/chars/ryu/1atk03.gif
+offset         24 99
+                  attack       45 7 50 18 7
+	frame	data/chars/ryu/1atk01.gif
+offset        24 99
+                  attack       0 0 0 0 0 
+                	frame	data/chars/ryu/1atk02.gif
+offset         24 99
+ 	frame	data/chars/ryu/1atk03.gif
+offset        25 99
+                  frame	data/chars/ryu/1atk04.gif
+
+anim attack2
+	loop	0
+	delay	5
+	offset	 23 99
+	bbox	 27 7 29 88
+	frame	data/chars/ryu/2atk00.gif
+offset	21 99  
+                  attack         49 12 49 18 7
+                  frame	data/chars/ryu/2atk01.gif    
+offset	 20 99
+                  frame	data/chars/ryu/2atk02.gif
+offset	 21 99
+                  frame	data/chars/ryu/2atk03.gif
+offset	 22 99
+                  frame	data/chars/ryu/2atk04.gif
+offset	 24 99
+                  bbox          16 10 36 84
+                  attack        0 0 0 0 0
+                  frame	data/chars/ryu/2atk05.gif
+offset	 26 100
+                  bbox          2 8 33 76
+                  frame	data/chars/ryu/3atk00.gif
+offset	 46 100
+                   bbox         4 3 39 38 
+                   frame	data/chars/ryu/3atk04.gif
+offset	 53 104
+                  attack         37 0 75 95 8
+                  frame	data/chars/ryu/3atk02.gif
+offset	 51 104
+                  attack       0 0 0 0 0 
+                  frame	data/chars/ryu/3atk03.gif
+offset	 46 100
+                  frame	data/chars/ryu/3atk04.gif
+offset	 26 100
+                   bbox         2 7 38 86
+                   frame	data/chars/ryu/3atk05.gif
+offset	 25 99
+                   bbox         13 8 30 86  
+                   frame	data/chars/ryu/3atk06.gif
+
+anim attack3
+	loop	0
+              	offset	11 98
+	bbox	4 10 27 79
+                  delay          5
+	sound        data/sounds/fast.wav
+
+	frame	data/chars/ryu/4atk00.gif
+offset	12 93
+                  bbox          5 7 36 42 
+ 	frame	data/chars/ryu/4atk01.gif
+offset	12 91
+	frame	data/chars/ryu/4atk02.gif
+offset	13 101
+                   bbox         3 16 37 40
+      	frame	data/chars/ryu/4atk03.gif
+offset	15 105
+                  attack        39 0 54 73 10 1
+                  frame	data/chars/ryu/4atk04.gif
+offset	13 102
+                	frame	data/chars/ryu/4atk05.gif
+offset	22 93
+                  bbox          17 1 33 83 
+ 	frame	data/chars/ryu/4atk06.gif
+offset	26 97
+                  bbox          21 12 30 77 
+                  attack        0 0 0 0 0 0
+	frame	data/chars/ryu/4atk07.gif
+
+
+anim runattack
+	loop	0
+	delay	5
+	offset	34 107
+	move        1
+        bbox          0 0 0 0
+	followanim 1
+	followcond 1
+	fastattack 1
+	sound      data/sounds/ryuratk.wav
+	frame	data/chars/ryu/ratk00.gif
+offset	19 103
+	frame	data/chars/ryu/ratk01.gif
+offset	-2 99
+                  attack        34 6 35 68 8
+	frame	data/chars/ryu/ratk02.gif
+                  attack        0 0 0 0 0
+offset	-2 100
+                  attack        34 6 35 68 8
+              	frame	data/chars/ryu/ratk03.gif
+offset	-2 100
+	frame	data/chars/ryu/ratk04.gif
+offset	-6 100
+	frame	data/chars/ryu/ratk05.gif
+offset	2 99
+                  attack       0 0 0 0 0 
+	frame	data/chars/ryu/ratk06.gif
+offset	20 99
+	frame	data/chars/ryu/ratk07.gif
+
+
+anim follow1
+jumpframe 35 
+	loop	0
+	delay	3
+	offset	26 101
+	bbox	19 12 27 66
+	move    0
+        energycost 10
+	fastattack 1
+	sound      data/sounds/shoryuke.wav
+        frame	data/chars/ryu/ratk08.gif
+offset	24 93
+	bbox	20 10 34 68
+	frame	data/chars/ryu/ratk09.gif
+offset	26 89
+	bbox	25 10 32 55
+	frame	data/chars/ryu/ratk10.gif
+offset	27 82
+	bbox	31 8 29 47
+	frame	data/chars/ryu/ratk11.gif
+offset	27 87
+	frame	data/chars/ryu/ratk12.gif
+offset	27 87
+        frame	data/chars/ryu/ratk13.gif
+offset	27 87
+        attack  48 9 59 45 2 
+	frame	data/chars/ryu/ratk14.gif
+offset	28 88
+	bbox	27 13 35 59
+        attack        0 0 0 0 0 
+	frame	data/chars/ryu/ratk15.gif
+offset	26 91
+	bbox	21 10 37 61
+	frame	data/chars/ryu/ratk16.gif
+offset	26 91
+	frame	data/chars/ryu/ratk18.gif
+offset	28 88
+	frame	data/chars/ryu/ratk19.gif
+offset	27 87
+        attack        48 9 59 45 2 
+	frame	data/chars/ryu/ratk20.gif
+        attack        0 0 0 0 0 
+offset	28 88
+	frame	data/chars/ryu/ratk19.gif
+offset	26 91
+	frame	data/chars/ryu/ratk18.gif
+offset	24 93
+	bbox	20 10 34 68
+	frame	data/chars/ryu/ratk09.gif
+offset	26 89
+	bbox	25 10 32 55
+	frame	data/chars/ryu/ratk10.gif
+offset	27 87
+        attack        48 9 59 45 2 
+	frame	data/chars/ryu/ratk14.gif
+offset	28 88
+	bbox	27 13 35 59
+        attack        0 0 0 0 0 
+	frame	data/chars/ryu/ratk15.gif
+offset	26 91
+	bbox	21 10 37 61
+	frame	data/chars/ryu/ratk16.gif
+offset	26 91
+	frame	data/chars/ryu/ratk18.gif
+offset	28 88
+	frame	data/chars/ryu/ratk19.gif
+offset	27 87
+        attack        48 9 59 45 2
+	frame	data/chars/ryu/ratk20.gif
+        attack        0 0 0 0 0 
+offset	28 88
+	frame	data/chars/ryu/ratk19.gif
+offset	26 91
+	frame	data/chars/ryu/ratk18.gif
+offset	24 93
+	bbox	20 10 34 68
+	frame	data/chars/ryu/ratk09.gif
+offset	26 89
+	bbox	25 10 32 55
+	frame	data/chars/ryu/ratk10.gif
+offset	27 87
+	bbox	27 13 35 59
+        attack        48 9 59 45 2 
+	frame	data/chars/ryu/ratk14.gif
+offset	28 88
+        attack        0 0 0 0 0 
+	frame	data/chars/ryu/ratk15.gif
+offset	26 91
+	frame	data/chars/ryu/ratk16.gif
+offset	26 91
+	frame	data/chars/ryu/ratk18.gif
+offset	28 88
+	frame	data/chars/ryu/ratk19.gif
+offset	27 87
+        attack        48 9 59 45 2 
+	frame	data/chars/ryu/ratk20.gif
+        attack        0 0 0 0 0 
+offset	27 85
+        bbox    0 0 0 0
+        delay   5
+        frame	data/chars/ryu/free10.gif
+offset	26 90
+        frame	data/chars/ryu/free11.gif
+offset	25 100
+        attack       31 10 38 66 2
+        move        10
+        frame	data/chars/ryu/free12.gif
+offset	16 141
+        attack       0 0 0 0 
+        move          0
+        frame	data/chars/ryu/free13.gif
+offset	10 138
+        frame	data/chars/ryu/free14.gif
+offset	13 138
+        attack          6 0 28 107 15 1
+        frame	data/chars/ryu/free15.gif
+offset	13 138
+        frame	data/chars/ryu/free16.gif
+offset	25 135
+        attack       0 0 0 0 0 0  
+        frame	data/chars/ryu/free17.gif
+offset	23 138
+        frame	data/chars/ryu/free18.gif
+offset	23 137
+        frame	data/chars/ryu/free19.gif
+offset	28 120
+        frame	data/chars/ryu/free20.gif
+
+
+
+
+anim runjumpattack
+	loop	0
+	offset	43 101
+                  delay        5
+	sound       data/sounds/ryurjatk.wav
+
+	frame	data/chars/ryu/rjatk00.gif
+offset        45 108
+                  frame	data/chars/ryu/rjatk01.gif 
+offset        44 101
+                  frame	data/chars/ryu/rjatk02.gif 
+offset        44 102
+                  frame	data/chars/ryu/rjatk03.gif 
+offset        44 102
+                  delay        25
+                  attack       26 30 101 31 15 1
+                  frame	data/chars/ryu/rjatk04.gif 
+offset        45 108
+                  delay         5
+                  frame	data/chars/ryu/rjatk01.gif 
+offset        43 101
+                  attack       0 0 0 0 0 0
+                  frame	data/chars/ryu/rjatk00.gif 
+
+
+
+
+
+anim freespecial
+	loop	0
+	delay   3
+	offset	19 109
+        bbox    0 0 0 0	
+        energycost 50
+	sound   data/sounds/ryuspec.wav
+
+        fastattack 1
+        frame	data/chars/ryu/jump01.gif
+offset	21 102
+        frame	data/chars/ryu/jump02.gif
+offset  31 126
+	frame	data/chars/ryu/spec00.gif
+offset  31 136
+        frame	data/chars/ryu/spec01.gif
+offset  29 131
+        frame	data/chars/ryu/spec02.gif
+offset  46 137
+        frame	data/chars/ryu/spec03.gif
+offset  22 138
+        frame	data/chars/ryu/spec04.gif
+offset  15 136
+        frame	data/chars/ryu/spec05.gif
+offset  15 137
+        attack  0 0 81 109 8     
+        frame	data/chars/ryu/spec06.gif
+offset  22 134
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec07.gif
+offset  57 138
+        attack  0 0 81 112 8
+        frame	data/chars/ryu/spec08.gif
+offset  52 137
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec09.gif
+offset  20 135
+        frame	data/chars/ryu/spec10.gif
+offset  15 136
+        frame	data/chars/ryu/spec05.gif
+offset  15 137
+        attack  0 0 81 109 8     
+        frame	data/chars/ryu/spec06.gif
+offset  22 134
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec07.gif
+offset  57 138
+        attack  0 0 81 112 8
+        frame	data/chars/ryu/spec08.gif
+offset  52 137
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec09.gif
+offset  15 136
+        frame	data/chars/ryu/spec05.gif
+offset  15 137
+        attack  0 0 81 109 8     
+        frame	data/chars/ryu/spec06.gif
+offset  22 134
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec07.gif
+offset  57 138
+        attack  0 0 81 112 8
+        frame	data/chars/ryu/spec08.gif
+offset  52 137
+        attack  0 0 0 0 0
+        frame	data/chars/ryu/spec09.gif
+offset  15 136
+        frame	data/chars/ryu/spec05.gif
+offset  15 137
+        blast   0 0 81 109 8 1     
+        frame	data/chars/ryu/spec06.gif
+offset  22 134
+        frame	data/chars/ryu/spec07.gif
+offset  57 138
+        blast   0 0 81 112 8 1
+        frame	data/chars/ryu/spec08.gif
+offset  52 137
+        frame	data/chars/ryu/spec09.gif
+offset  20 135
+        frame	data/chars/ryu/spec10.gif
+offset  15 136
+        frame	data/chars/ryu/spec11.gif
+offset  15 137
+        frame	data/chars/ryu/spec12.gif
+offset  22 135
+        frame	data/chars/ryu/spec13.gif
+offset  52 138
+        frame	data/chars/ryu/spec14.gif
+offset  45 136
+        frame	data/chars/ryu/spec15.gif
+offset  21 135
+        frame	data/chars/ryu/spec16.gif
+
+
+anim freespecial2
+	loop	0
+	delay	5
+	offset	24 87
+        bbox          0 0 0 0 
+	fastattack 1
+        followanim 2
+	followcond 1
+        move        5
+
+	sound      data/sounds/ryuratk.wav
+	frame	data/chars/ryu/frsp00.gif
+offset	24 93
+                  frame	data/chars/ryu/frsp01.gif
+offset	23 97
+                  frame	data/chars/ryu/frsp02.gif
+offset	25 118
+                  attack        30 0 36 72 8
+                  frame	data/chars/ryu/frsp03.gif
+offset	24 113
+                  attack        0 0 0 0 0
+                  frame	data/chars/ryu/frsp04.gif
+offset	24 113
+                  frame	data/chars/ryu/frsp05.gif
+offset	24 108
+                  frame	data/chars/ryu/frsp06.gif
+offset	24 98
+                  frame	data/chars/ryu/frsp07.gif
+offset	24 98
+                  frame	data/chars/ryu/frsp08.gif
+
+
+anim follow2
+jumpframe 22
+	loop	0
+	delay	5
+        energycost 15
+        bbox          0 0 0 0 
+        sound       data/sounds/ryufree.wav
+offset	17 97
+                  frame	data/chars/ryu/frsp09.gif
+offset	6 100
+                  frame	data/chars/ryu/frsp10.gif
+offset	17 129
+                  attack        23 0 37 131 8   
+                  frame	data/chars/ryu/frsp11.gif
+offset	15 125
+                   attack      0 0 0 0 0
+                  frame	data/chars/ryu/frsp12.gif
+offset	7 103
+                  attack          41 2 60 96 8
+                  frame	data/chars/ryu/frsp13.gif
+offset	8 98
+                  attack        0 0 0 0 0
+                  frame	data/chars/ryu/frsp14.gif
+offset	10 99
+                  frame	data/chars/ryu/frsp15.gif
+offset	16 101
+                  frame	data/chars/ryu/frsp16.gif
+offset	36 90
+                  frame	data/chars/ryu/frsp17.gif
+offset	36 91
+                  frame	data/chars/ryu/frsp18.gif
+offset	34 97
+                  frame	data/chars/ryu/frsp19.gif
+offset	33 96
+                  frame	data/chars/ryu/frsp20.gif
+offset	27 93
+                  frame	data/chars/ryu/frsp21.gif
+offset	26 92
+                  attack        52 12 47 39 8
+                  frame	data/chars/ryu/frsp22.gif
+                  attack        0 0 0 0 0
+offset	16 92
+                   frame	data/chars/ryu/frsp23.gif
+offset	15 94
+                  frame	data/chars/ryu/frsp24.gif
+offset	22 96
+                  frame	data/chars/ryu/frsp25.gif
+offset	27 89
+                  delay         6  
+                  frame	data/chars/ryu/frsp26.gif
+offset	27 78
+                  frame	data/chars/ryu/frsp27.gif
+offset	26 90
+                  frame	data/chars/ryu/frsp28.gif
+offset	26 88
+                  frame	data/chars/ryu/frsp29.gif
+offset	26 93
+                  frame	data/chars/ryu/frsp30.gif
+offset	26 97
+                  frame	data/chars/ryu/frsp31.gif
+offset	23 164
+                  frame	data/chars/ryu/frsp32.gif
+offset	22 164
+                  attack        10 0 32 137 15 1
+                  frame	data/chars/ryu/frsp33.gif
+                  attack        0 0 0 0 0
+offset	23 162
+                  frame	data/chars/ryu/frsp34.gif
+offset	19 129
+                   frame	data/chars/ryu/jump01.gif
+offset	23 119
+                 	frame	data/chars/ryu/jump00.gif
+
+
+anim freespecial3
+jumpframe 12
+	loop	0
+	delay	5
+	offset	24 91
+        energycost 15
+        bbox          0 0 0 0 
+        move         3
+	sound        data/sounds/a.wav
+                  frame	data/chars/ryu/free1.gif
+offset	22 66
+                  frame	data/chars/ryu/free2.gif
+offset	36 66
+                  frame	data/chars/ryu/free3.gif
+offset	18 62
+                  frame	data/chars/ryu/free4.gif
+offset	29 60
+                  frame	data/chars/ryu/free5.gif
+offset	35 60
+                   attack       27 27 87 37 10
+                  frame	data/chars/ryu/free6.gif
+offset	19 61
+                  frame	data/chars/ryu/free7.gif
+offset	26 61
+                   attack       0 0 0 0 
+                  frame	data/chars/ryu/free8.gif
+offset	24 63
+                  frame	data/chars/ryu/free9.gif
+offset	27 85
+                  frame	data/chars/ryu/free10.gif
+offset	26 90
+                  frame	data/chars/ryu/free11.gif
+offset	25 100
+                   attack       31 10 38 66 10
+                  frame	data/chars/ryu/free12.gif
+offset	16 141
+                   attack       0 0 0 0 
+                  frame	data/chars/ryu/free13.gif
+offset	10 138
+                  frame	data/chars/ryu/free14.gif
+offset	13 138
+                   attack       6 0 28 107 15 1
+                  frame	data/chars/ryu/free15.gif
+offset	13 138
+                  frame	data/chars/ryu/free16.gif
+offset	25 135
+                   attack       0 0 0 0 0
+                  frame	data/chars/ryu/free17.gif
+offset	23 138
+                  frame	data/chars/ryu/free18.gif
+offset	23 137
+                  frame	data/chars/ryu/free19.gif
+offset	28 120
+                  frame	data/chars/ryu/free20.gif
+
+anim freespecial4
+	loop	0
+	delay	5
+	offset	25 99
+        energycost 10
+        bbox          0 0 0 0 
+        sound        data/sounds/ryuratk.wav
+                  frame	data/chars/ryu/free21.gif
+offset	24 99
+                  move         10
+                  frame	data/chars/ryu/free22.gif
+offset	24 100
+                  frame	data/chars/ryu/free23.gif
+offset	24 100
+                  frame	data/chars/ryu/free24.gif
+offset	22 96
+                  frame	data/chars/ryu/free25.gif
+offset	23 94
+                  frame	data/chars/ryu/free26.gif
+offset	24 81
+                  blast           29 1 69 81 20 1 0
+                  frame	data/chars/ryu/free27.gif
+offset	23 81
+                  move         0
+                  frame	data/chars/ryu/free28.gif
+offset	23 82
+                  blast           0 0 0 0 0 0 0
+                  frame	data/chars/ryu/free29.gif
+offset	23 83
+                  frame	data/chars/ryu/free30.gif
+offset	23 85
+                  frame	data/chars/ryu/free31.gif
+offset	25 92
+                  frame	data/chars/ryu/free32.gif
+offset	24 99
+                  frame	data/chars/ryu/free33.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim jump
+	loop	0
+	delay         10
+	offset	23 119
+                  bbox          8 17 31 98 
+	frame	data/chars/ryu/jump00.gif
+offset	19 109
+                   bbox         4 12 26 71
+                   frame	data/chars/ryu/jump01.gif
+offset	21 102
+                   bbox         6 9 38 54 
+                   frame	data/chars/ryu/jump02.gif
+offset	21 99
+                  frame	data/chars/ryu/jump03.gif
+offset	24 98
+                  frame	data/chars/ryu/jump04.gif
+offset	21 99
+                  frame	data/chars/ryu/jump03.gif
+offset	21 102
+                   frame	data/chars/ryu/jump02.gif
+offset	19 109
+                   frame	data/chars/ryu/jump01.gif
+offset         23 119 
+                   frame	data/chars/ryu/jump00.gif
+
+
+anim jumpforward
+	 loop	0
+	 offset	 23 108
+	 delay         5
+                   bbox          7 14 31 62
+	 sound        data/sounds/ryuak.wav
+
+	 frame	data/chars/ryu/ak00.gif
+offset	 25 108
+	 frame	data/chars/ryu/ak01.gif
+offset	 29 105
+	attack      13 41 86 34 10 1
+	 frame	data/chars/ryu/ak02.gif
+offset	 27 104
+                   delay        23
+                 	 frame	data/chars/ryu/ak03.gif
+offset	 25 111
+                   attack       0 0 0 0 0 0
+	 frame	data/chars/ryu/ak04.gif
+
+anim jumpattack
+	loop	0
+	offset	201 184
+	delay        4
+                  bbox         177 92 34 92
+	sound       data/sounds/ryuak.wav
+
+	frame	data/chars/ryu/ver00.gif
+offset	32 115
+                  bbox         1 19 28 44
+	delay        3
+	frame	data/chars/ryu/ver01.gif
+offset	35 112
+	delay         3
+	frame	data/chars/ryu/ver02.gif
+offset	37 112
+	delay         20
+                  attack        31 0 47 67 7 1
+                  frame	data/chars/ryu/ver03.gif
+offset	201 184
+                   attack       0 0 0 0 0 0
+                   frame	data/chars/ryu/ver00.gif
+
+anim jumpattack2
+dive 3 3
+	loop	0
+	offset	32 100
+                  delay        25
+	sound       data/sounds/ryurjatk.wav
+
+                  attack       14 39 62 70 10 1
+	frame	data/chars/ryu/dive1.gif
+offset        34 98
+                  attack        0 0 0 0 0 0 
+                  frame	data/chars/ryu/dive2.gif 
+offset        34 98
+                  frame	data/chars/ryu/dive3.gif 
+
+anim grab
+	loop	 0
+                  delay          3000				
+	offset	 21 99
+	bbox	 27 7 29 88
+                  frame	 data/chars/ryu/2atk03.gif
+
+anim grabattack
+	loop	0
+	delay	5
+	offset	34 107
+                  bbox          0 0 0 0 
+	hitfx           data/sounds/GRABATCK.wav
+	frame	data/chars/ryu/ratk00.gif
+offset	19 103
+	frame	data/chars/ryu/ratk01.gif
+offset	-2 99
+	frame	data/chars/ryu/ratk02.gif
+offset	-2 100
+                  frame	data/chars/ryu/ratk03.gif
+offset	-2 100
+                  attack        34 6 35 68 8
+	frame	data/chars/ryu/ratk04.gif
+offset	-6 100
+	frame	data/chars/ryu/ratk05.gif
+offset	2 99
+                  attack       0 0 0 0 0 
+	frame	data/chars/ryu/ratk06.gif
+	
+anim grabattack2
+	loop	0
+	delay	5
+        bbox          0 0 0 0
+	hitfx           data/sounds/GRABATCK.wav
+	offset	24 87
+        fastattack 1
+        move        5
+	frame	data/chars/ryu/frsp00.gif
+offset	24 93
+                  frame	data/chars/ryu/frsp01.gif
+offset	23 97
+                  frame	data/chars/ryu/frsp02.gif
+offset	25 118
+                  attack        30 0 36 72 8 1
+                  frame	data/chars/ryu/frsp03.gif
+offset	24 113
+                  attack        0 0 0 0 0 0
+                  frame	data/chars/ryu/frsp04.gif
+offset	24 113
+                  frame	data/chars/ryu/frsp05.gif
+offset	24 108
+                  frame	data/chars/ryu/frsp06.gif
+offset	24 98
+                  frame	data/chars/ryu/frsp07.gif
+offset	24 98
+                  frame	data/chars/ryu/frsp08.gif
+
+anim throw
+	loop	0
+	delay	8
+                  bbox          0 0 0 0
+	sound        data/sounds/terthw.wav
+offset	11 98
+	frame	data/chars/ryu/tr02.gif
+offset	10 87
+	frame	data/chars/ryu/tr03.gif
+offset	5 77
+	delay         23
+	frame	data/chars/ryu/tr04.gif
+offset	8 72
+                  delay         8
+	frame	data/chars/ryu/tr05.gif
+offset	9 70
+	frame	data/chars/ryu/tr06.gif
+offset	31 78
+	frame	data/chars/ryu/tr07.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	37 100
+	bbox	0 0 51 104
+	frame	data/chars/ryu/pain00.gif
+offset	46 97
+                  bbox          0 0 58 101
+	frame	data/chars/ryu/pain01.gif
+offset	59 96
+                  delay        18
+                  bbox          0 0 56 99
+	frame	data/chars/ryu/pain02.gif
+                  bbox          0 0 58 101   
+offset	46 97
+	frame	data/chars/ryu/pain01.gif
+offset	37 100
+	bbox	0 0 51 104 
+	frame	data/chars/ryu/pain00.gif
+
+
+anim fall
+	loop	0
+	delay       20
+                  offset	37 86
+	frame	data/chars/ryu/fall00.gif
+offset	33 85
+DELAY            45
+        ATTACK  3 9 43 26 10 1
+                  frame	data/chars/ryu/fall01.gif
+offset	36 118
+DELAY            10
+                  frame	data/chars/ryu/fall02.gif
+offset        38 48
+        ATTACK  0 0 0 0 0 0
+                  frame	data/chars/ryu/fall03.gif
+offset	45 34
+
+                  frame	data/chars/ryu/fall04.gif
+
+anim rise
+	loop	0
+	offset	50 53
+	delay        7
+                  bbox          0 0 0 0   
+	frame	data/chars/ryu/rise00.gif
+offset	35 75
+	frame	data/chars/ryu/rise01.gif
+offset	39 114
+	frame	data/chars/ryu/rise02.gif
+offset	48 92
+	frame	data/chars/ryu/rise03.gif
+offset	40 76
+	frame	data/chars/ryu/rise04.gif
+
+anim waiting
+                  loop	0
+	delay         13
+
+offset	24 104
+              frame	data/chars/ryu/wait00.gif
+offset	24 104
+              frame	data/chars/ryu/wait01.gif
+offset	24 105
+              frame	data/chars/ryu/wait02.gif
+offset	24 106
+              frame	data/chars/ryu/wait03.gif
+offset	24 106
+              frame	data/chars/ryu/wait04.gif
+offset	24 106
+              frame	data/chars/ryu/wait05.gif
+offset	24 106
+              frame	data/chars/ryu/wait06.gif
+offset	24 108
+              frame	data/chars/ryu/wait07.gif
+offset	24 104
+	frame	data/chars/ryu/wait08.gif
+
+
+
+anim special
+	loop	0
+	delay	6
+	offset	75 112
+	bbox	0 0 0 0
+        energycost 10
+	fastattack 1
+	sound      data/sounds/ryuratk.wav
+        frame	data/chars/ryu/e1.gif
+	frame	data/chars/ryu/e2.gif
+	frame	data/chars/ryu/e3.gif
+blast   15 33 124 38 10 2 
+delay   20   
+	frame	data/chars/ryu/e4.gif
+delay   10        
+	frame	data/chars/ryu/e2.gif
+        frame	data/chars/ryu/e1.gif
+
+
+
+
+
+
+

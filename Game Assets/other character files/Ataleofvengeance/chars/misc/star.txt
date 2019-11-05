@@ -1,0 +1,31 @@
+name	star
+health	1
+type	enemy
+shadow	0
+remove 1
+anim idle
+	loop	1
+        delay   2
+	offset	-26 22
+	frame	data/chars/misc/hadoken0.gif
+	offset	-25 24
+	frame	data/chars/misc/hadoken1.gif
+	offset	-24 28
+	frame	data/chars/misc/hadoken2.gif
+	offset	-21 28
+	frame	data/chars/misc/hadoken3.gif
+	offset	-21 28
+        frame	data/chars/misc/hadoken4.gif
+	offset	-16 28
+	frame	data/chars/misc/hadoken5.gif
+	offset  -19 27
+        blast   64 0 15 59 33 0
+	frame	data/chars/misc/hadoken6.gif
+	offset	-15 26
+	frame	data/chars/misc/hadoken7.gif
+	offset	-14 23
+        frame	data/chars/misc/hadoken8.gif
+	offset	-15 22
+	frame	data/chars/misc/hadoken9.gif
+
+

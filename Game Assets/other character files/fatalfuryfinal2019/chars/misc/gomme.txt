@@ -1,0 +1,24 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Gomme
+health	1
+type	obstacle
+shadow	0
+diesound data/sounds/klunk.wav
+noatflash 1
+flash flashc
+icon	data/chars/misc/ruote3.gif
+
+
+anim idle
+	delay	100
+	offset	92 177
+	bbox	80 92 37 87
+	frame	data/chars/misc/ruote1.gif
+
+
+anim fall
+	delay	1000
+	offset	92 177
+	frame	data/chars/misc/ruote2.gif

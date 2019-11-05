@@ -1,0 +1,102 @@
+name	 lightni2
+health	 10
+type	 panel
+speed	 10
+alpha    1
+setlayer -200
+anim spawn 
+
+	delay	20
+	offset	480 275
+	bbox	0
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	1000
+	frame data/chars/misc/rain/blan0001.gif
+
+anim idle 
+
+	loop	1
+	delay	20
+	offset	480 275
+	bbox	0
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	700
+	frame data/chars/misc/rain/blan0001.gif
+	
+	delay	20
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	2000
+	frame data/chars/misc/rain/blan0001.gif
+	
+	delay	20
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	20
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	1500
+	
+	delay	20
+	offset	1000 280
+	bbox	0
+	sound data/chars/misc/rain/soun0004.wav
+	frame data/chars/misc/rain/ligh0001.gif
+	delay	8
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	frame data/chars/misc/rain/ligh0002.gif
+	frame data/chars/misc/rain/ligh0003.gif
+	delay	12
+	frame data/chars/misc/rain/ligh0002.gif
+	delay	700
+	frame data/chars/misc/rain/blan0001.gif
+
+anim fall
+
+	frame data/chars/misc/rain/blan0001.gif
+
+
+
+
+
+
+
+	

@@ -1,0 +1,30 @@
+name	Money
+health	0
+score	1000
+type	item
+shadow	0
+gfxshadow 1
+facing 1
+icon	data/chars/misc/monicon.gif
+
+anim spawn
+	loop	0
+	delay	20
+	offset	92 177
+	bbox	83 147 33 33
+	jumpframe	data/chars/misc/money.gif 4 0 0
+delay 10
+	frame	data/chars/misc/money2.gif
+delay 20
+	frame	data/chars/misc/money.gif
+
+anim idle
+	loop	1
+	delay	20
+	offset	92 177
+	bbox	83 147 33 33
+	frame	data/chars/misc/money.gif
+delay 10
+	frame	data/chars/misc/money2.gif
+delay 20
+	frame	data/chars/misc/money.gif

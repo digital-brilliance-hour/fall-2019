@@ -1,0 +1,21 @@
+name	Fire2
+type	none
+shadow	0
+nomove 1 1
+remove  0
+alpha 1
+candamage enemy obstacle
+
+anim idle
+	loop	0
+	delay	10
+	offset	92 177
+	sound	data/sounds/fire.wav
+	frame	data/chars/fire/1.gif
+       	hitflash Flash2
+	hitfx   data/sounds/burn.wav
+        burn 48 61 94 117 10 1	
+        frame	data/chars/fire/2.gif
+	frame	data/chars/fire/3.gif
+
+

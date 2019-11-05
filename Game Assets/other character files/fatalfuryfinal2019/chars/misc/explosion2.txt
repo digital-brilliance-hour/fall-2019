@@ -1,0 +1,22 @@
+# Hit flash
+
+name	Explosion2
+health	1
+type	none
+nolife	1
+#noname	1
+gfxshadow 1
+diesound	data/sounds/bang3.wav
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	130 140
+	frame	data/chars/misc/explosion2-00.gif
+	frame	data/chars/misc/explosion2-01.gif
+	frame	data/chars/misc/explosion2-02.gif
+	frame	data/chars/misc/explosion2-03.gif
+	frame	data/chars/misc/explosion2-04.gif
+	frame	data/chars/misc/explosion2-05.gif
+	frame	data/chars/misc/explosion2-06.gif

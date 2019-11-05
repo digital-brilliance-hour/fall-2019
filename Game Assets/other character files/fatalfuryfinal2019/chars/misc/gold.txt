@@ -1,0 +1,31 @@
+name	Gold
+health	0
+score	5000
+type	item
+shadow	0
+gfxshadow 1
+icon	data/chars/misc/goldicon.gif
+
+anim spawn
+	loop	0
+	offset	92 177
+	bbox	81 156 35 26
+	delay	20
+	jumpframe	data/chars/misc/gold00.gif 4 0 0
+	delay	10
+	frame	data/chars/misc/gold01.gif
+        delay 20
+	frame	data/chars/misc/gold00.gif
+
+
+
+anim idle
+	loop	1
+	offset	92 177
+	bbox	81 156 35 26
+	delay	20
+	frame	data/chars/misc/gold00.gif
+	delay	10
+	frame	data/chars/misc/gold01.gif
+        delay 20
+	frame	data/chars/misc/gold00.gif

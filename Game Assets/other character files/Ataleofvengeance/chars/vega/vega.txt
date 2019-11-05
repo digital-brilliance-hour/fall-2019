@@ -1,0 +1,230 @@
+name	VEGA
+health	200
+speed	11
+type	enemy
+shadow	4
+dust    dust
+diesound data/sounds/sukedie.wav
+icon	data/chars/vega/1.gif
+iconpain	data/chars/vega/2.gif
+aggression 1
+gfxshadow 1
+
+remap	data/chars/vega/idle1.gif  data/chars/vega/map1.gif
+remap	data/chars/vega/idle1.gif  data/chars/vega/map2.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	48 125
+	bbox	22 29 45 89
+	frame	data/chars/vega/idle1.gif
+	bbox	23 32 45 92
+	frame	data/chars/vega/idle2.gif
+	offset	48 101
+	bbox	22 12 48 86
+	frame	data/chars/vega/idle3.gif
+	offset	48 125
+	bbox	23 32 45 92
+	frame	data/chars/vega/idle2.gif
+
+
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	55 125
+	bbox	39 24 43 98
+	frame	data/chars/vega/wk1.gif
+	bbox	38 28 43 95
+	frame	data/chars/vega/wk2.gif
+	bbox	39 20 38 102
+	frame	data/chars/vega/wk3.gif
+	bbox	18 19 35 98
+	offset	31 125
+	frame	data/chars/vega/wk4.gif
+	bbox	18 18 35 98
+	frame	data/chars/vega/wk5.gif
+	bbox	16 19 37 87
+	frame	data/chars/vega/wk6.gif
+
+
+
+anim attack1
+	loop	0
+	delay	5
+        move    10
+	offset	48 125
+	bbox	34 31 37 78
+	frame	data/chars/vega/atk1.gif
+offset	72 125
+        attack  86 50 40 60 7
+        move    0 
+	bbox	60 22 38 28   
+        frame	data/chars/vega/atk2.gif    
+        frame	data/chars/vega/atk3.gif
+offset	48 125
+	bbox	18 36 36 68
+        frame	data/chars/vega/atk4.gif    
+        attack  0 0 0 0 0
+        frame	data/chars/vega/atk5.gif
+        frame	data/chars/vega/atk6.gif
+offset	72 125
+	bbox	0 0 0 0
+        frame	data/chars/vega/atk7.gif
+        attack  58 62 102 45 7
+        frame	data/chars/vega/atk8.gif
+        frame	data/chars/vega/atk9.gif
+offset	48 125
+        attack  0 0 0 0 0
+	bbox	15 36 42 70
+ 	frame	data/chars/vega/atk10.gif
+offset	48 101
+	bbox	58 24 50 62
+	frame	data/chars/vega/atk11.gif
+offset	48 77
+        bbox    0 0 0 0 
+        attack  107 17 107 42 10 1
+	frame	data/chars/vega/atk12.gif
+	frame	data/chars/vega/atk13.gif
+	frame	data/chars/vega/atk14.gif
+        attack  0 0 0 0 0 0
+offset	48 101
+	frame	data/chars/vega/atk12.gif
+
+
+
+
+
+anim attack2
+jumpframe 1 4       
+        range   10 100
+	loop	0
+	bbox	22 16 36 88
+        delay   7
+	hitfx   data/sounds/hk.wav
+offset	48 125
+        frame	data/chars/vega/atk15.gif
+offset	48 113
+	bbox	20 9 39 75
+ 	frame	data/chars/vega/atk16.gif
+offset	48 111
+	bbox	19 7 42 58
+        frame	data/chars/vega/atk17.gif
+offset	35 125
+	bbox	14 21 43 54
+ 	frame	data/chars/vega/atk18.gif
+offset	32 119
+        delay   13 
+	bbox	8 33 42 42
+        frame	data/chars/vega/atk19.gif
+offset	114 118
+        attack  2 22 195 59 15 1
+	bbox	0 0 0 0
+        delay   30
+	sound   data/sounds/fast.wav
+ 	frame	data/chars/vega/atk20.gif
+offset	115 126
+        delay   3
+        frame	data/chars/vega/atk21.gif
+offset	108 127
+        attack  0 0 0 0 0 0
+ 	frame	data/chars/vega/atk22.gif
+offset	41 116
+ 	frame	data/chars/vega/atk23.gif
+offset	34 87
+        frame	data/chars/vega/atk24.gif
+offset	35 125
+ 	frame	data/chars/vega/atk18.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	delay   5
+	offset	42 101
+	bbox	5 10 66 92
+	sound   data/sounds/MALEPAIN.wav
+	frame	data/chars/vega/pain1.gif
+	bbox	6 5 84 99
+	offset	59 101
+	frame	data/chars/vega/pain2.gif
+	delay   25
+	bbox	6 8 81 92
+	offset	68 101
+	frame	data/chars/vega/pain3.gif
+	bbox	6 5 84 99
+        delay   5
+	offset	59 101
+	frame	data/chars/vega/pain2.gif
+	bbox	5 10 66 92
+	offset	42 101
+	frame	data/chars/vega/pain1.gif
+
+
+
+
+anim fall
+	loop	0
+	delay   5
+        offset	44 109
+	frame	data/chars/vega/fall1.gif
+offset	54 101
+        delay   65
+        ATTACK  5 33 48 26 10 1
+        frame	data/chars/vega/fall2.gif
+offset	42 97
+        delay   15
+        frame	data/chars/vega/fall3.gif
+offset  55 42
+        delay   5
+        ATTACK  0 0 0 0 0 0
+        frame	data/chars/vega/fall4.gif
+offset	61 29
+        delay   35
+        frame	data/chars/vega/fall5.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	85 53
+	delay	6
+	frame	data/chars/vega/rise1.gif
+	frame	data/chars/vega/rise2.gif
+	offset	85 77
+	frame	data/chars/vega/rise3.gif
+	offset	61 125
+	frame	data/chars/vega/rise4.gif
+	offset	109 101
+	frame	data/chars/vega/rise5.gif
+	offset	109 125
+	frame	data/chars/vega/rise6.gif
+
+
+
+
+
+
+
+
+
+
+

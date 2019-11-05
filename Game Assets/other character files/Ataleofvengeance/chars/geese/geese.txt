@@ -1,0 +1,368 @@
+name	GEESE
+health	1500
+speed	12
+type	enemy
+shadow	6
+dust    dust
+blockodds   1
+icon	data/chars/geese/1.gif
+iconpain     data/chars/geese/2.gif
+aggression 1
+diesound data/sounds/geesedie.wav
+nopassiveblock 1
+gfxshadow 1
+
+load shot
+
+
+anim idle
+	loop	1
+	offset	32 111
+	bbox	7 4 46 112
+	delay	8
+	frame         data/chars/geese/idle00.gif
+	frame         data/chars/geese/idle01.gif
+offset	32 112
+	frame         data/chars/geese/idle02.gif
+	frame         data/chars/geese/idle03.gif
+	frame         data/chars/geese/idle04.gif
+	frame         data/chars/geese/idle05.gif
+	frame         data/chars/geese/idle04.gif
+	frame         data/chars/geese/idle03.gif
+	frame         data/chars/geese/idle02.gif
+offset	32 111
+	frame         data/chars/geese/idle01.gif
+
+
+
+anim walk
+	loop	1
+	offset	27 108
+	bbox	5 7 44 100
+	delay	8
+	frame         data/chars/geese/wk00.gif
+offset       27 107
+                  frame         data/chars/geese/wk01.gif
+offset        27 106
+                  frame         data/chars/geese/wk02.gif
+                  frame         data/chars/geese/wk03.gif
+offset        27 108
+                  frame          data/chars/geese/wk04.gif
+offset        27 109
+                  frame         data/chars/geese/wk05.gif
+                  frame         data/chars/geese/wk06.gif
+offset        36 107
+                  bbox            20 7 49 95 
+                  frame          data/chars/geese/wk07.gif
+offset        40 106
+                  frame          data/chars/geese/wk08.gif
+offset        46 104
+                  frame         data/chars/geese/wk09.gif
+offset        40 106
+                  frame         data/chars/geese/wk10.gif
+offset        33 108
+                  frame          data/chars/geese/wk11.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	37 109
+	bbox	2 1 62 111
+	sound       data/sounds/geesPAIN.wav
+	delay	10
+	frame         data/chars/geese/pain1.gif
+offset	46 105
+                  bbox         0 3 76 103
+	frame         data/chars/geese/pain2.gif
+offset	58 96
+                  bbox         1 3 86 93
+	frame         data/chars/geese/pain3.gif
+offset	46 105
+                  bbox         0 3 76 103
+	frame         data/chars/geese/pain2.gif
+
+
+
+
+
+anim fall
+	loop	0
+	offset	37 105
+	delay	5
+	frame         data/chars/geese/fall1.gif
+offset	45 92
+DELAY           70
+                 ATTACK         2 18 39 27 10 1
+	frame         data/chars/geese/fall2.gif
+offset	43 59
+DELAY        15
+                 ATTACK         0 0 0 0 0 0
+	frame         data/chars/geese/fall3.gif
+offset	51 23
+DELAY     35
+	frame         data/chars/geese/fall4.gif
+
+
+
+
+
+anim rise
+	loop	0
+	offset	32 40
+	delay	6
+	frame         data/chars/geese/rise1.gif
+offset	29 65
+	frame         data/chars/geese/rise2.gif
+offset	30 74
+	frame         data/chars/geese/rise3.gif
+offset	32 102
+	frame         data/chars/geese/rise4.gif
+	
+
+anim riseattack 
+                   range    0 100
+                   DELAY    6
+                   MOVE     10
+                  offset	42 83
+	sound        data/sounds/geeseatk.wav
+	frame         data/chars/geese/riseatk1.gif
+offset	-6 73
+	frame         data/chars/geese/riseatk2.gif
+offset	-1 64
+	frame         data/chars/geese/riseatk3.gif
+offset	1 66
+                  attack          14 10 97 52 10 1
+	frame         data/chars/geese/riseatk4.gif
+offset	-6 70
+	frame         data/chars/geese/riseatk5.gif
+offset	-1 74
+                  attack         0 0 0 0 0 0  
+ 	frame         data/chars/geese/riseatk6.gif
+offset	6 81
+	frame         data/chars/geese/riseatk7.gif
+                  
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	32 111
+	frame         data/chars/geese/block1.gif
+offset	42 95
+                  frame         data/chars/geese/block2.gif   
+offset	46 88
+                  frame         data/chars/geese/block3.gif   
+
+
+
+
+
+
+anim UPPER
+	loop	0
+	offset	14 100
+	delay	5
+                  sound        data/sounds/geesuper.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/geese/ATK200.gif
+offset         19 84
+                  frame         data/chars/geese/ATK201.gif
+offset	51 78
+                   frame         data/chars/geese/ATK202.gif
+offset	56 94
+                  frame         data/chars/geese/ATK203.gif
+offset	25 94
+                  frame         data/chars/geese/ATK204.gif
+offset	13 163
+                  attack     24 3 42 120 15 1
+delay         20      
+                  frame         data/chars/geese/ATK205.gif
+offset	9 161
+delay        5
+                  frame         data/chars/geese/ATK206.gif
+offset	8 149
+                  attack        0 0 0 0 0 0
+                  frame         data/chars/geese/ATK207.gif
+
+
+
+anim attack1
+	loop	0
+	offset	32 109
+	delay	6
+	bbox	16 8 38 102
+                  sound         data/sounds/geeseatk.wav    
+	hitfx           data/sounds/fast.wav
+	frame         data/chars/geese/ATK01.gif
+offset	32 108
+                  attack         42 12 63 54 10
+	frame         data/chars/geese/ATK02.gif
+offset	32 109
+	frame         data/chars/geese/ATK03.gif
+offset	32 110
+	frame         data/chars/geese/ATK04.gif
+offset	31 104
+                  attack         0 0 0 0 0
+                  bbox           27 7 35 95
+                  frame         data/chars/geese/ATK05.gif                    
+offset	31 101
+	frame         data/chars/geese/ATK06.gif
+offset	30 96
+                   bbox          36 14 37 61
+	frame         data/chars/geese/ATK07.gif
+offset	30 94
+                  attack        75 9 68 59 10 
+	frame         data/chars/geese/ATK08.gif
+offset	30 94
+	frame         data/chars/geese/ATK09.gif
+offset	30 96
+                  attack         0 0 0 0 0
+                   bbox          36 14 37 61 
+	frame         data/chars/geese/ATK07.gif
+offset	31 104
+                  bbox           27 7 35 95
+                  frame         data/chars/geese/ATK05.gif
+offset	49 106
+                  bbox           8 9 38 76
+	frame         data/chars/geese/ATK10.gif
+offset	50 101
+                  frame         data/chars/geese/ATK11.gif                    
+offset	44 91
+                  attack         31 12 87 56 10 
+                  bbox           3 3 33 51
+	frame         data/chars/geese/ATK12.gif
+offset	46 94
+	frame         data/chars/geese/ATK13.gif
+offset	47 97
+    	frame         data/chars/geese/ATK14.gif
+offset	46 100
+                  attack         0 0 0 0 0
+	frame         data/chars/geese/ATK15.gif
+offset	32 111
+	frame         data/chars/geese/idle00.gif
+offset	30 94
+                  bbox          16 4 37 86
+	frame         data/chars/geese/ATK16.gif
+offset	46 115
+                   bbox          34 5 31 83
+	frame         data/chars/geese/ATK17.gif
+offset	57 115
+	frame         data/chars/geese/ATK18.gif
+offset	43 116
+                  bbox           21 12 43 74 
+	frame         data/chars/geese/ATK19.gif
+offset	37 115
+	frame         data/chars/geese/ATK20.gif
+offset	40 112
+	frame         data/chars/geese/ATK21.gif
+offset	34 112
+                  attack         16 31 94 64 10 1
+	frame         data/chars/geese/ATK22.gif
+offset	31 111
+	frame         data/chars/geese/ATK23.gif
+offset	26 112
+                  attack         0 0 0 0 0 0
+	frame         data/chars/geese/ATK24.gif
+
+
+
+
+
+
+anim attack2
+                  RANGE    100 200
+	loop	0
+                  shootframe 4 
+                  delay	7
+	sound       data/sounds/repuken.wav
+	hitfx           data/sounds/fast.wav
+offset	36 135
+	frame         data/chars/geese/shoot01.gif
+offset	39 133
+	frame         data/chars/geese/shoot02.gif
+offset	39 91
+	frame         data/chars/geese/shoot03.gif
+offset	34 140
+	frame         data/chars/geese/shoot04.gif
+offset	32 124
+	frame         data/chars/geese/shoot05.gif
+offset	29 112
+     	frame         data/chars/geese/shoot06.gif
+offset	30 110
+	frame         data/chars/geese/shoot07.gif
+offset	32 102
+	frame         data/chars/geese/shoot08.gif
+offset	32 102
+	frame         data/chars/geese/shoot09.gif
+
+
+
+
+
+
+
+anim special
+	loop	0
+	offset	45 109
+	delay	6
+                  sound       data/sounds/geesspec.wav
+	frame         data/chars/geese/special1.gif
+offset	45 108
+	frame         data/chars/geese/special2.gif
+offset	46 94
+                  blast           18 10 54 62 20 0
+	frame         data/chars/geese/special3.gif
+offset	49 100
+	frame         data/chars/geese/special4.gif
+offset	46 100
+	frame         data/chars/geese/special5.gif
+offset	44 100
+	frame         data/chars/geese/special6.gif
+offset	44 100
+	frame         data/chars/geese/special7.gif
+offset	43 103
+	frame         data/chars/geese/special8.gif
+
+
+anim attack3
+                  range       100 150
+                  loop	0
+	offset	32 112
+	delay	8
+                  bbox           8 5 41 107
+                  sound       data/sounds/geesetun.wav
+	frame         data/chars/geese/taunt1.gif
+offset	33 111
+	frame         data/chars/geese/taunt2.gif
+	frame         data/chars/geese/taunt3.gif
+	frame         data/chars/geese/taunt4.gif
+	frame         data/chars/geese/taunt5.gif
+	frame         data/chars/geese/taunt6.gif
+	frame         data/chars/geese/taunt7.gif
+
+
+
+
+
+anim waiting
+offset	28 108
+	frame         data/chars/geese/shoot10.gif
+offset	31 103
+	frame         data/chars/geese/shoot11.gif
+offset	30 142
+        frame         data/chars/geese/shoot12.gif
+offset	42 132
+     	frame         data/chars/geese/shoot13.gif
+offset	40 121
+	frame         data/chars/geese/shoot14.gif
+offset	39 116
+	frame         data/chars/geese/shoot15.gif
+offset	36 105
+	frame         data/chars/geese/shoot16.gif
+offset	32 109
+	frame         data/chars/geese/shoot17.gif
+
+

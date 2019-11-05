@@ -1,0 +1,17 @@
+
+
+name	palla
+health	1
+type	enemy
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+anim idle
+	loop	0
+	delay	1000
+	offset	20 64
+	attack	52 21 31 40 8 1 0 0 24  
+	 hitflash flash5
+        hitfx   data/chars/kula/beat.wav
+        frame	data/chars/johnny/ball1.gif
+ #       frame	data/chars/johnny/ball2.gif

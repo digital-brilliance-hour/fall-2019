@@ -1,0 +1,291 @@
+name	EAGLE
+health	100
+speed	10
+type	enemy
+shadow	5
+dust    dust
+icon	data/chars/eagle/1.gif
+iconpain     data/chars/eagle/2.gif
+aggression 1
+escapehits 3 
+diesound data/sounds/EAgledie.wav
+gfxshadow 1
+
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map1.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map2.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map3.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map4.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map5.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map6.gif
+remap	data/chars/EAGLE/idle00.gif  data/chars/EAGLE/map7.gif
+
+
+
+
+
+anim idle
+	loop	1
+	offset	28 107
+	bbox	0 0 49 108
+	delay	10
+	frame         data/chars/EAGLE/idle00.gif
+offset	28 107
+	frame         data/chars/EAGLE/idle01.gif
+offset	28 108
+	frame         data/chars/EAGLE/idle02.gif
+offset	28 109
+	frame         data/chars/EAGLE/idle03.gif
+offset	28 109
+	frame         data/chars/EAGLE/idle04.gif
+offset	29 108
+	frame         data/chars/EAGLE/idle05.gif
+offset	28 109
+	frame         data/chars/EAGLE/idle04.gif
+offset	28 109
+	frame         data/chars/EAGLE/idle03.gif
+offset	28 108
+	frame         data/chars/EAGLE/idle02.gif
+offset	28 107
+	frame         data/chars/EAGLE/idle01.gif
+                  frame         data/chars/EAGLE/idle00.gif
+
+anim walk
+	loop	1
+	offset	28 115
+	bbox	0 8 55 114
+	delay	10
+	frame         data/chars/EAGLE/wk00.gif
+offset        27 117
+                  frame         data/chars/EAGLE/wk01.gif
+offset        28 118
+                  frame         data/chars/EAGLE/wk02.gif
+offset        30 117
+                  frame         data/chars/EAGLE/wk03.gif
+offset        31 115
+                  frame         data/chars/EAGLE/wk04.gif
+offset        33 113
+                  frame         data/chars/EAGLE/wk05.gif
+offset        39 115
+                  frame         data/chars/EAGLE/wk06.gif
+offset        30 117
+                  frame         data/chars/EAGLE/wk07.gif
+offset        28 118
+                  frame         data/chars/EAGLE/wk08.gif
+offset        27 117
+                  frame         data/chars/EAGLE/wk09.gif
+
+anim pain
+	loop	0
+	offset	30 106
+	bbox	0 1 50 107
+	sound       data/sounds/MALEPAIN.wav
+	delay	5
+	frame         data/chars/EAGLE/pain1.gif
+offset	36 100
+                  bbox          0 3 60 96
+	frame         data/chars/EAGLE/pain2.gif
+offset	50 90
+                  bbox          0 0 83 91
+	delay	10
+	frame         data/chars/EAGLE/pain3.gif
+offset	36 100
+                  bbox          0 3 60 96
+DELAY     5                
+	frame         data/chars/EAGLE/pain2.gif
+offset	30 106	
+                  bbox	0 1 50 107
+	frame         data/chars/EAGLE/pain1.gif
+
+Anim fall
+	loop	0
+	offset	35 97
+	delay	5
+	frame         data/chars/EAGLE/fall01.gif
+offset	44 82
+DELAY           70
+                 ATTACK         3 9 43 25 10 1
+	frame         data/chars/EAGLE/fall02.gif
+offset	38 112
+DELAY        15
+                 ATTACK         0 0 0 0 0 0
+	frame         data/chars/EAGLE/falL03.gif
+offset	50 27
+DELAY     35
+	frame         data/chars/EAGLE/fall04.gif
+
+anim rise
+	loop	0
+	offset	54 43
+	delay	10
+                  BBOX     0 0 0 0
+	frame         data/chars/EAGLE/rise1.gif
+offset	48 45
+	frame         data/chars/EAGLE/rise2.gif
+offset	46 68
+	frame         data/chars/EAGLE/rise3.gif
+offset	38 88
+	frame         data/chars/EAGLE/rise4.gif
+offset	28 104
+	frame         data/chars/EAGLE/rise5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	28 132
+	delay	5
+	bbox	20 22 51 103
+	frame         data/chars/EAGLE/ATK01.gif
+offset	28 127
+	frame         data/chars/EAGLE/ATK02.gif
+offset	28 117
+                  BBOX       36 13 40 100
+	frame         data/chars/EAGLE/ATK03.gif
+offset	28 112
+	attack	57 24 71 76 10
+	frame         data/chars/EAGLE/ATK04.gif
+offset	35 114
+                  BBOX       46 20 34 87 
+                  attack	0 0 0 0 0
+	frame         data/chars/EAGLE/ATK05.gif                    
+offset	28 107
+	frame         data/chars/EAGLE/ATK06.gif
+offset	28 101
+                   BBOX       26 6 42 86
+	frame         data/chars/EAGLE/ATK07.gif
+Offset	28 111
+                  BBOX        11 15 57 93
+	frame         data/chars/EAGLE/ATK08.gif
+offset	30 125
+                   BBOX       23 25 55 84
+	frame         data/chars/EAGLE/ATK09.gif
+offset	30 124
+                  frame         data/chars/EAGLE/ATK10.gif
+offset	29 108
+                  BBOX       40 21 23 46
+                  attack	 55 18 98 68 10
+                  frame         data/chars/EAGLE/ATK11.gif
+offset	23 94
+                  BBOX       32 8 43 84
+	frame         data/chars/EAGLE/ATK12.gif
+offset	22 94
+                  attack	 0 0 0 0 0 
+	frame         data/chars/EAGLE/ATK13.gif
+offset	34 93
+                  attack	
+                  frame         data/chars/EAGLE/ATK14.gif
+offset	33 91
+                  frame         data/chars/EAGLE/ATK15.gif
+offset	28 106
+                  BBOX        1 4 49 104 
+                  frame         data/chars/EAGLE/ATK16.gif
+offset	63 90
+                  BBOX        40 3 56 84
+                  frame         data/chars/EAGLE/ATK17.gif
+offset	67 89
+	frame         data/chars/EAGLE/ATK18.gif
+offset	69 84
+	frame         data/chars/EAGLE/ATK19.gif
+offset	62 89
+                  frame         data/chars/EAGLE/ATK20.gif
+                  attack        51 19 102 55 15 1
+                  BBOX       28 17 53 64 	
+offset	54 100
+                  frame         data/chars/EAGLE/ATK21.gif
+                  attack	 0 0 0 0 0 0
+offset	54 98
+                  frame         data/chars/EAGLE/ATK22.gif
+
+
+ANIM ATTACK2
+                  RANGE     150 250  
+                  DELAY       5
+                  MOVE        20   
+                  LOOP         0 
+offset	63 90
+                  BBOX        40 3 56 84
+                  frame         data/chars/EAGLE/ATK17.gif
+offset	67 89
+	frame         data/chars/EAGLE/ATK18.gif
+offset	69 84
+	frame         data/chars/EAGLE/ATK19.gif
+offset	62 89
+                  frame         data/chars/EAGLE/ATK20.gif
+                  attack        51 19 102 55 15 1
+                  BBOX       28 17 53 64 	
+offset	54 100
+                  frame         data/chars/EAGLE/ATK21.gif
+                  attack	 0 0 0 0 0 0
+                  DELAY           30 
+offset	54 98
+                  frame         data/chars/EAGLE/ATK22.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim special2
+	loop	0
+	offset	28 132
+	delay	5
+	bbox	20 22 51 103
+	frame         data/chars/EAGLE/ATK01.gif
+offset	28 127
+	frame         data/chars/EAGLE/ATK02.gif
+offset	28 117
+                  BBOX       36 13 40 100
+	frame         data/chars/EAGLE/ATK03.gif
+offset	28 112
+	attack	57 24 71 76 10 1
+	frame         data/chars/EAGLE/ATK04.gif
+offset	35 114
+                  BBOX       46 20 34 87 
+                  attack	0 0 0 0 0 0
+	frame         data/chars/EAGLE/ATK05.gif                    
+offset	28 107
+	frame         data/chars/EAGLE/ATK06.gif
+offset	28 101
+                   BBOX       26 6 42 86
+	frame         data/chars/EAGLE/ATK07.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

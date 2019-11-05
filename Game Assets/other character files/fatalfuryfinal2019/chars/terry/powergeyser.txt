@@ -1,0 +1,108 @@
+name					powergeyser
+health					1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	delay	1
+	offset	56 174
+		Attack1  0
+		move  30
+	frame	data/chars/Terry/empty.gif
+	frame  data/chars/Terry/empty.gif
+		delay  2
+		move  0
+	sound	data/chars/Terry/a.wav
+	frame  data/chars/Terry/Pg01.gif
+	frame	data/chars/Terry/Pg02.gif
+	frame	data/chars/Terry/Pg03.gif
+	frame	data/chars/Terry/Pg04.gif
+		blast  37  23  63  151  30  0  0  0  151
+	frame	data/chars/Terry/Pg05.gif
+	frame	data/chars/Terry/Pg06.gif
+		blast  37  23  63  151  30  0  1  0  151
+	frame	data/chars/Terry/Pg07.gif
+		blast  37  23  63  151  30  1  1  0  151
+	frame	data/chars/Terry/Pg08.gif
+		blast  37  23  63  151  30  1  0  0  151
+	frame	data/chars/Terry/Pg09.gif
+		blast  37  23  63  151  30  0  0  0  151
+	frame	data/chars/Terry/Pg10.gif
+	frame	data/chars/Terry/Pg11.gif
+		Attack1  0
+	frame	data/chars/Terry/Pg12.gif
+	frame	data/chars/Terry/Pg13.gif
+	frame	data/chars/Terry/Pg14.gif
+	frame	data/chars/Terry/Pg15.gif
+	frame	data/chars/Terry/Pg16.gif
+		move  20
+		delay  1
+	frame  data/chars/Terry/empty.gif
+	frame  data/chars/Terry/empty.gif
+	frame  data/chars/Terry/empty.gif
+		move  0
+		delay  2
+	sound	data/chars/Terry/a.wav
+	frame	data/chars/Terry/Pg01.gif
+	frame	data/chars/Terry/Pg02.gif
+	frame	data/chars/Terry/Pg03.gif
+	frame	data/chars/Terry/Pg04.gif
+	frame	data/chars/Terry/Pg05.gif
+		blast  23  27  74  147  30  0  0  0  151
+	frame	data/chars/Terry/Pg06.gif
+	frame	data/chars/Terry/Pg07.gif
+	frame	data/chars/Terry/Pg08.gif
+	frame	data/chars/Terry/Pg09.gif
+	frame	data/chars/Terry/Pg10.gif
+	frame	data/chars/Terry/Pg11.gif
+	frame	data/chars/Terry/Pg12.gif
+	frame	data/chars/Terry/Pg13.gif
+		Attack1  0
+	frame	data/chars/Terry/Pg14.gif
+	frame	data/chars/Terry/Pg15.gif
+	frame	data/chars/Terry/Pg16.gif
+		move  20
+		delay  1
+	frame  data/chars/Terry/empty.gif
+	frame  data/chars/Terry/empty.gif
+	frame  data/chars/Terry/empty.gif
+		move  0
+		delay  2
+	sound	data/chars/Terry/a.wav
+	frame	data/chars/Terry/Pg01.gif
+	frame	data/chars/Terry/Pg03.gif
+		delay  2
+	frame	data/chars/Terry/Pg02.gif
+	frame	data/chars/Terry/Pg04.gif
+		blast  34  36  62  138  30  0  0  0  151
+	frame	data/chars/Terry/Pg05.gif
+	frame	data/chars/Terry/Pg06.gif
+	frame	data/chars/Terry/Pg07.gif
+	frame	data/chars/Terry/Pg08.gif
+	frame	data/chars/Terry/Pg09.gif
+	frame	data/chars/Terry/Pg10.gif
+	frame	data/chars/Terry/Pg11.gif
+		blast  34  36  62  138  30  0  0  0  151
+	frame	data/chars/Terry/Pg12.gif
+	frame	data/chars/Terry/Pg13.gif
+		blast  34  36  62  138  30  0  0  50
+	frame	data/chars/Terry/Pg14.gif
+	frame	data/chars/Terry/Pg15.gif
+	frame	data/chars/Terry/Pg16.gif
+

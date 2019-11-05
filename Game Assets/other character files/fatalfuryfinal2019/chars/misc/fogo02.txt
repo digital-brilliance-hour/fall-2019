@@ -1,0 +1,41 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Fogo02
+health	1
+type	None
+shadow	0
+#icon	data/chars/misc/boxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+        loop 1
+	delay	5
+	offset	14 180
+	frame	data/chars/misc/Fire01.gif
+	frame	data/chars/misc/Fire02.gif
+	frame	data/chars/misc/Fire03.gif
+	frame	data/chars/misc/Fire04.gif
+	frame	data/chars/misc/Fire05.gif
+	frame	data/chars/misc/Fire06.gif
+	frame	data/chars/misc/Fire07.gif
+	frame	data/chars/misc/Fire08.gif
+	frame	data/chars/misc/Fire09.gif
+        frame	data/chars/misc/Fire10.gif
+
+anim fall
+	delay	10
+	offset	14 180
+		bbox  0  53  31  77
+	frame	data/chars/misc/Fire01.gif
+	frame	data/chars/misc/Fire02.gif
+	frame	data/chars/misc/Fire03.gif
+	frame	data/chars/misc/Fire04.gif
+	frame	data/chars/misc/Fire05.gif
+	frame	data/chars/misc/Fire06.gif
+	frame	data/chars/misc/Fire07.gif
+	frame	data/chars/misc/Fire08.gif
+	frame	data/chars/misc/Fire09.gif
+        frame	data/chars/misc/Fire10.gif
+

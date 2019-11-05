@@ -1,0 +1,29 @@
+name	Biker-K'
+diesound data/sounds/die2.wav
+type	enemy
+subtype	biker
+health	1
+shadow	0
+icon	data/chars/k/icon.gif
+gfxshadow 1
+#Important addition
+load	K'
+palette data/chars/biker-k/biker.gif
+
+
+# Not really idle, but what the heck
+anim idle
+	loop	1
+	delay	100
+	offset	92 177
+	bbox	41 78 105 90
+	attack	38 120 122 43 10 1
+	frame	data/chars/biker-k/biker.gif
+
+anim pain
+	loop	1
+	delay	5
+	offset	92 177
+	frame	data/chars/biker-k/alt1.gif
+
+

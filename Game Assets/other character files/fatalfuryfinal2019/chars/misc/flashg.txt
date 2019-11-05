@@ -1,0 +1,19 @@
+# Hit flash
+
+name	Flashg
+type	none
+shadow	0
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	36 66
+	frame	data/chars/misc/flashg00.gif
+	frame	data/chars/misc/flashg01.gif
+	frame	data/chars/misc/flashg02.gif
+	frame	data/chars/misc/flashg03.gif
+	frame	data/chars/misc/flashg04.gif
+	frame	data/chars/misc/flashg05.gif
+	frame	data/chars/misc/flashg06.gif
+	frame	data/chars/misc/flashg07.gif

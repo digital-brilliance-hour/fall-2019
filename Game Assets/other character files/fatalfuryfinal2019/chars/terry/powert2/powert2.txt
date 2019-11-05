@@ -1,0 +1,64 @@
+name					PowerT2
+health					1
+setlayer    -1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	delay	3
+	offset	64 197
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p01.gif
+	frame	data/chars/Terry/PowerT2/p02.gif
+	frame	data/chars/Terry/PowerT2/p03.gif
+		attack1  33  94  144  103  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p03.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p04.gif
+		attack1  14  60  209  136  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p04.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p05.gif
+		attack1  29  67  208  133  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p05.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p06.gif
+		attack1  16  64  213  132  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p06.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p07.gif
+		attack1  17  44  209  153  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p07.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p08.gif
+		attack1  17  44  209  153  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p08.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p09.gif
+		attack1  17  44  209  153  15  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p09.gif
+		Attack1  0
+	frame	data/chars/Terry/PowerT2/p10.gif
+		blast  -1  76  280  122  20  0  0  0  0  103
+	frame	data/chars/Terry/PowerT2/p11.gif
+	frame	data/chars/Terry/PowerT2/p12.gif
+	frame	data/chars/Terry/PowerT2/p13.gif
+	frame	data/chars/Terry/PowerT2/p14.gif
+	frame	data/chars/Terry/PowerT2/p15.gif
+

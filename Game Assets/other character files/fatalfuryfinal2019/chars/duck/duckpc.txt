@@ -1,0 +1,398 @@
+name	duckPC
+health	300
+speed	10
+mp 100
+land 1
+type	enemy
+shadow	   0
+gfxshadow  1
+diesound data/sounds/duck1.wav
+icon	 data/chars/duck/icon.gif
+iconpain data/chars/duck/ipain.gif
+atchain    1 1 2 3 0 
+load shot
+palette           data/chars/duck/select.gif
+alternatepal	  data/chars/duck/map1.gif 
+alternatepal	  data/chars/duck/map2.gif 
+alternatepal	  data/chars/duck/map3.gif 
+alternatepal      data/chars/burn/burn1.gif
+blockodds 1
+
+anim burn
+	loop	0
+	delay	5
+	offset	82 177
+        sound   data/sounds/burn.wav
+        drawmethod 256 256 0 0 0 0 4 0 0 0
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+	frame	data/chars/burn/burn1.gif
+	frame	data/chars/burn/burn2.gif
+	frame	data/chars/burn/burn3.gif
+	frame	data/chars/burn/burn4.gif
+        drawmethod 256 256 0 0 0 0 -1 0 0 0
+	frame	data/chars/duck/FALL00.gif
+	frame	data/chars/duck/FALL00.gif
+	frame	data/chars/duck/FALL00.gif
+	frame	data/chars/duck/FALL01.gif
+	frame	data/chars/duck/FALL01.gif
+
+anim spawn
+        loop	0
+	offset	92 177
+        delay 80
+	bbox	0 0 0 0
+
+	frame	data/chars/duck/idle00.gif
+        delay 8
+	frame	data/chars/duck/sel1.gif
+	frame	data/chars/duck/sel2.gif
+	frame	data/chars/duck/sel3.gif	
+	frame	data/chars/duck/sel4.gif
+	frame	data/chars/duck/sel1.gif
+	frame	data/chars/duck/sel2.gif
+	frame	data/chars/duck/sel3.gif	
+	frame	data/chars/duck/sel4.gif
+	sound	data/sounds/duck2.wav
+	frame	data/chars/duck/sel5.gif
+	frame	data/chars/duck/sel5.gif
+	frame	data/chars/duck/sel5.gif
+	frame	data/chars/duck/sel5.gif
+	frame	data/chars/duck/sel5.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/duck/idle00.gif
+
+anim walk
+	loop	1
+	delay	20
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/duck/idle000.gif
+	frame	data/chars/duck/idle001.gif
+	frame	data/chars/duck/idle002.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	92 177
+	frame	data/chars/duck/get001.gif
+#	frame	data/chars/duck/get001.gif
+	frame	data/chars/duck/get001.gif
+#	frame	data/chars/duck/get000.gif
+	delay	30
+	frame	data/chars/duck/get000.gif
+	delay	5
+	frame	data/chars/duck/get000.gif
+	frame	data/chars/duck/get000.gif
+	frame	data/chars/duck/get001.gif
+	frame	data/chars/duck/get001.gif
+
+anim block
+	loop	0
+	delay	90
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/duck/block.gif
+
+
+anim jumpattack
+        range  100 140
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/punch.wav
+	bbox	83 88 33 78
+	frame	data/chars/duck/jk1.gif
+	attack	99 125 55 44 7 1
+	frame	data/chars/duck/jk0.gif
+	frame	data/chars/duck/jk0.gif
+	frame	data/chars/duck/jk0.gif
+	frame	data/chars/duck/jk0.gif
+	attack	0
+	frame	data/chars/duck/jk1.gif
+
+
+
+anim attack1
+        range 0 80
+	loop	0
+	delay	5
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/duck/punch000.gif
+	frame	data/chars/duck/punch000.gif
+	attack	118 93 39 13 7
+	frame	data/chars/duck/punch001.gif
+	frame	data/chars/duck/punch001.gif
+	attack	0 0 0 0 0
+	frame	data/chars/duck/punch000.gif
+
+anim attack2
+        range 0 80
+	loop	0
+	delay	9
+	offset	92 177
+	bbox	83 88 33 78
+	sound	data/sounds/punch.wav
+	frame	data/chars/duck/punch000.gif
+	frame	data/chars/duck/na2-00.gif
+	attack	118 93 39 13 12
+	frame	data/chars/duck/na2-00.gif
+	frame	data/chars/duck/punch000.gif
+
+
+anim attack3
+        range 0 80
+	loop	0
+	delay	4
+	offset	92 177
+	bbox	36 35 38 115
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/duck/a4-000.gif
+	frame	data/chars/duck/a4-000.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	attack	122 81 40 51 20 1
+	frame	data/chars/duck/a4-002.gif
+	frame	data/chars/duck/a4-002.gif
+	frame	data/chars/duck/a4-002.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-004.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/duck/grab.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	92 177
+	sound	data/sounds/duck2.wav
+	frame	data/chars/duck/throw004.gif
+	frame	data/chars/duck/throw001.gif
+	frame	data/chars/duck/throw001.gif
+	frame	data/chars/duck/throw001.gif
+	frame	data/chars/duck/throw002.gif
+	frame	data/chars/duck/throw002.gif
+	frame	data/chars/duck/throw002.gif
+	frame	data/chars/duck/throw002.gif
+	frame	data/chars/duck/throw003.gif
+	frame	data/chars/duck/throw003.gif
+	frame	data/chars/duck/throw003.gif
+
+
+anim pain
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+move -1
+	frame	data/chars/duck/pain01.gif
+	frame	data/chars/duck/pain02.gif
+	frame	data/chars/duck/pain02.gif
+	frame	data/chars/duck/pain01.gif
+
+
+anim grabbed
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+	frame	data/chars/duck/pain01.gif
+	delay	36
+	frame	data/chars/duck/pain02.gif
+	delay	6
+	frame	data/chars/duck/pain02.gif
+	frame	data/chars/duck/pain01.gif
+	frame	data/chars/duck/pain01.gif
+
+anim shock
+	loop	0
+	offset	92 177
+	delay	5
+	frame	data/chars/duck/shock1.gif
+	frame	data/chars/duck/shock3.gif
+	frame	data/chars/duck/shock2.gif
+	frame	data/chars/duck/shock1.gif
+	frame	data/chars/duck/shock3.gif
+	frame	data/chars/duck/shock2.gif
+	frame	data/chars/duck/shock1.gif
+	frame	data/chars/duck/shock3.gif
+	frame	data/chars/duck/shock2.gif
+	frame	data/chars/duck/shock1.gif
+	frame	data/chars/duck/shock3.gif
+	frame	data/chars/duck/shock2.gif
+	frame	data/chars/duck/fall01.gif
+
+anim fall
+	loop	0
+	offset	92 177
+	delay	35
+	frame	data/chars/duck/fall00.gif
+	frame	data/chars/duck/fall00.gif
+	frame	data/chars/duck/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	92 177
+	delay	10
+	frame	data/chars/duck/rise1.gif
+	frame	data/chars/duck/rise1.gif
+	frame	data/chars/duck/rise2.gif
+	frame	data/chars/duck/rise2.gif
+	frame	data/chars/duck/rise3.gif
+	frame	data/chars/duck/rise3.gif
+
+
+
+
+anim riseattack
+        range 10 80
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	0
+	sound	data/sounds/richard.wav
+    jumpframe	data/chars/duck/SPEC000.gif 0 2 0
+	frame	data/chars/duck/SPEC000.gif
+	attack	75 124 91 58 11 1
+	frame	data/chars/duck/SPEC001.gif
+	frame	data/chars/duck/SPEC001.gif
+	frame	data/chars/duck/SPEC001.gif
+	frame	data/chars/duck/SPEC001.gif
+
+anim freespecial3
+        range 200 280
+        energycost 15 1 0
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	83 88 33 78
+	sound	data/sounds/swish.wav
+    jumpframe	data/chars/duck/Super1.gif 0 2 0
+	attack	64 99 52 52 15 1
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+        frame	data/chars/duck/Super1.gif 
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+        frame	data/chars/duck/Super1.gif 
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+followanim 1
+	followcond 1
+
+anim follow1
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	83 88 33 78
+	sound	data/sounds/swish.wav
+    jumpframe	data/chars/duck/Super1.gif 2 -2 0
+	attack	64 99 52 52 15 1
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+        frame	data/chars/duck/Super1.gif 
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+anim special
+        energycost 15 1 0
+	loop	0
+	delay	8
+	offset	92 177
+	hitflash Flash2
+	hitfx   data/sounds/beat2.wav
+	bbox	83 88 33 78
+	sound	data/sounds/swish.wav
+    jumpframe	data/chars/duck/Super1.gif 4 0 0
+	attack	64 99 52 52 15 1
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+        frame	data/chars/duck/Super1.gif 
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+        frame	data/chars/duck/Super1.gif 
+	frame	data/chars/duck/Super2.gif
+	frame	data/chars/duck/Super3.gif
+	frame	data/chars/duck/Super4.gif
+
+
+anim grabattack
+	loop	0
+	offset	92 177
+	bbox	83 88 33 78
+	delay	8
+	sound	data/sounds/punch.wav
+	frame	data/chars/duck/punch000.gif
+	delay	32
+	attack	112 111 28 25 10
+	frame	data/chars/duck/punch001.gif
+	delay	8
+	frame	data/chars/duck/punch000.gif
+
+
+anim grabattack2
+	loop	0
+	delay	3
+	offset	92 177
+	bbox	83 88 33 78
+	hitflash Flash2
+	sound	data/sounds/punch.wav
+	hitfx   data/sounds/beat2.wav
+	frame	data/chars/duck/a4-000.gif
+	frame	data/chars/duck/a4-000.gif
+	frame	data/chars/duck/a4-001.gif
+	delay	5
+	frame	data/chars/duck/a4-001.gif
+	attack	112 76 35 47 20 1
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-003.gif
+	frame	data/chars/duck/a4-003.gif
+	frame	data/chars/duck/a4-003.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-001.gif
+	frame	data/chars/duck/a4-000.gif
+
+anim land
+	loop	0
+	delay	25
+	offset	92 177
+	bbox	83 88 33 78
+	frame	data/chars/duck/get001.gif
+

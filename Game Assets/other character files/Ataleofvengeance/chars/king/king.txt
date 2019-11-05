@@ -1,0 +1,340 @@
+name	KING
+health	80
+speed	15
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/king/1.gif
+iconpain     data/chars/king/2.gif
+diesound data/sounds/fninja.wav
+aggression 1
+escapehits 3
+gfxshadow 1
+
+remap	data/chars/king/idle00.gif  data/chars/king/map1.gif
+remap	data/chars/king/idle00.gif  data/chars/king/map2.gif
+remap	data/chars/king/idle00.gif  data/chars/king/map3.gif
+
+
+anim idle
+	loop	1
+	offset	22 106
+	bbox	0 0 48 105
+	delay	8
+	frame         data/chars/king/idle00.gif
+offset	22 104
+	frame         data/chars/king/idle01.gif
+offset	22 102
+	frame         data/chars/king/idle02.gif
+offset	23 101
+	frame         data/chars/king/idle03.gif
+offset	22 102
+	frame         data/chars/king/idle02.gif
+offset	22 104
+	frame         data/chars/king/idle01.gif
+
+
+
+anim walk
+	loop	1
+	offset	18 102
+	bbox	3 0 56 108
+	delay	6
+	frame         data/chars/king/wk01.gif
+offset       15 101
+                  frame         data/chars/king/wk02.gif
+offset       20 100
+                  frame         data/chars/king/wk03.gif
+offset        33 98
+                  frame         data/chars/king/wk04.gif
+offset        33 98
+                  bbox           9 0 59 100
+                  frame         data/chars/king/wk05.gif
+offset        23 99
+                  frame         data/chars/king/wk06.gif
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	25 97
+	bbox	0 0 59 100
+	sound       data/sounds/female.wav
+	delay	5
+	frame         data/chars/king/pain1.gif
+offset	31 94
+                  bbox          0 0 65 100 
+	delay	5
+	frame         data/chars/king/pain2.gif
+offset	41 88
+                  bbox           0 0 73 90
+                  delay	10
+	frame         data/chars/king/pain3.gif
+offset	31 98
+                  bbox          0 0 65 100 
+	delay	5
+	frame         data/chars/king/pain2.gif
+
+
+anim fall
+	loop	0
+	offset	40 96
+	delay	5
+	frame         data/chars/king/fall01.gif
+offset	48 65
+                  DELAY      70
+         ATTACK         7 10 37 27 10 1
+	frame         data/chars/king/fall02.gif
+offset	34 43
+                  DELAY      15
+         ATTACK        0 0 0 0 0 0
+	frame         data/chars/king/fall03.gif
+offset	48 23
+                  DELAY      35
+	frame         data/chars/king/fall04.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	33 44
+	delay	20
+	frame         data/chars/king/rise1.gif
+offset	26 47
+	frame         data/chars/king/rise2.gif
+offset	22 57
+	frame         data/chars/king/rise3.gif
+offset	19 86
+	frame         data/chars/king/rise4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	20 102
+	delay	5
+	bbox	0 0 47 106 
+	frame         data/chars/king/ATK01.gif
+offset	20 100
+                  bbox           2 1 61 102
+	frame         data/chars/king/ATK02.gif
+offset	18 98
+	bbox          8 2 45 95
+	frame         data/chars/king/ATK03.gif
+offset        19 97
+                  attack          44 10 57 71 6
+                  bbox           26 2 25 92
+	frame         data/chars/king/ATK04.gif
+offset        18 96
+                  attack         0 0 0 0 0 
+                  frame         data/chars/king/ATK05.gif   
+offset        19 97
+                  bbox           26 2 25 92
+	frame         data/chars/king/ATK04.gif
+offset	18 98
+	bbox          8 2 45 95
+	frame         data/chars/king/ATK03.gif
+offset	20 102
+	bbox	0 0 47 106 
+	frame         data/chars/king/ATK01.gif
+offset	22 106 
+                  bbox          2 2 48 108   
+	frame         data/chars/king/ATK06.gif
+offset	25 107
+                  frame         data/chars/king/ATK07.gif
+offset	26 107
+                  bbox          2 2 66 105  
+	frame         data/chars/king/ATK08.gif
+offset	26 96
+                  attack         29 14 67 72 6
+	bbox	0 1 38 91
+	frame         data/chars/king/ATK09.gif
+offset	25 104
+	frame         data/chars/king/ATK10.gif
+offset	23 101
+                  bbox          0 1 52 104
+                  attack        0 0 0 0 0
+                  frame         data/chars/king/ATK11.gif   
+offset	19 108
+	frame         data/chars/king/ATK12.gif
+offset	31 99
+	bbox	 0 3 54 94
+                  frame         data/chars/king/ATK13.gif
+offset	28 100
+                   bbox          2 2 27 94
+                  attack          16 0 70 80 10
+	frame         data/chars/king/ATK14.gif
+offset	32 95
+                  attack         0 0 0 0 0
+	frame         data/chars/king/ATK15.gif
+offset	45 98
+                  bbox           8 2 50 91
+	frame         data/chars/king/ATK16.gif
+offset	48 98
+                  bbox           19 5 37 88
+   	frame         data/chars/king/ATK17.gif
+offset	36 98
+                  bbox           5 2 46 96 
+	frame         data/chars/king/ATK18.gif
+jumpframe 18 2 
+                 	loop	0
+	delay	5
+	bbox	 5 7 31 105
+                  offset         5 116
+	hitfx             data/sounds/fast.wav
+                  sound         data/sounds/kingjump.wav
+                   frame         data/chars/king/ATK200.gif
+offset         4 125
+                  bbox           0 10 38 77 
+                  frame         data/chars/king/ATK201.gif
+offset	12 117
+                   bbox           3 7 32 63
+                   attack         26 0 66 72 15 1
+                   frame         data/chars/king/ATK202.gif
+offset	15 119
+                  attack         0 0 0 0 0 0 
+                  frame         data/chars/king/ATK203.gif
+offset	20 110
+                  bbox           16 1 38 70
+                  frame         data/chars/king/ATK204.gif
+offset	23 112
+                  bbox           8 6 50 107 
+                  frame         data/chars/king/ATK205.gif
+offset	29 83
+                  frame         data/chars/king/ATK206.gif
+
+
+
+
+
+
+
+
+anim attack2
+jumpframe 1 2
+                  RANGE     50 100
+		loop	0
+	delay	5
+	bbox	 5 7 31 105
+                  offset         5 116
+	hitfx             data/sounds/fast.wav
+                  sound         data/sounds/kingjump.wav
+                   frame         data/chars/king/ATK200.gif
+offset         4 125
+                  bbox           0 10 38 77 
+                  frame         data/chars/king/ATK201.gif
+offset	12 117
+                   bbox           3 7 32 63
+                   attack         26 0 66 72 15 1
+                   frame         data/chars/king/ATK202.gif
+offset	15 119
+                  attack         0 0 0 0 0 0 
+                  frame         data/chars/king/ATK203.gif
+offset	20 110
+                  bbox           16 1 38 70
+                  frame         data/chars/king/ATK204.gif
+offset	23 112
+                  bbox           8 6 50 107 
+                  frame         data/chars/king/ATK205.gif
+offset	29 83
+                  frame         data/chars/king/ATK206.gif
+
+
+
+
+
+
+anim attack3
+                  RANGE    150 200
+	loop	0
+	delay	4
+move      10
+offset	71 89
+                  attack         0 0 0 0 0 0
+	frame         data/chars/king/ATK311.gif
+offset	71 116
+                  attack         -5 0 44 81 10 1  
+	bbox	46 4 51 92
+                  frame         data/chars/king/ATK310.gif
+offset	56 125
+	frame         data/chars/king/ATK309.gif
+offset	71 115
+                  bbox           0 0 95 60
+                  attack         0 0 0 0 0 
+                  frame         data/chars/king/ATK308.gif   
+offset	47 119
+                  attack         -5 0 62 70 15 1 
+                  bbox          50 0 54 70
+	frame         data/chars/king/ATK307.gif
+offset	27 120
+	bbox	 9 3 52 111
+                  frame         data/chars/king/ATK306.gif
+offset	33 125
+                  attack         0 0 0 0 0 0
+	bbox	 9 3 52 111
+	frame         data/chars/king/ATK305.gif
+offset	30 103
+                  frame         data/chars/king/ATK304.gif 
+offset	33 104
+                  bbox         2 2 77 89 
+	frame         data/chars/king/ATK303.gif
+
+
+
+
+
+
+
+
+anim special2
+	loop	0
+	delay	5
+	offset	22 106 
+        bbox          2 2 48 108   
+	frame         data/chars/king/ATK06.gif
+offset	25 107
+                  frame         data/chars/king/ATK07.gif
+offset	26 107
+                  bbox          2 2 66 105  
+	frame         data/chars/king/ATK08.gif
+offset	26 96
+                  attack         29 14 67 72 6 1
+	bbox	0 1 38 91
+	frame         data/chars/king/ATK09.gif
+offset	25 104
+	frame         data/chars/king/ATK10.gif
+offset	23 101
+                  bbox          0 1 52 104
+                  attack        0 0 0 0 0 0
+                  frame         data/chars/king/ATK11.gif   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

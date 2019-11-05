@@ -1,0 +1,23 @@
+name	Red
+health	1
+type	none
+shadow	0
+facing 1
+candamage enemy obstacle
+anim idle
+	hitflash   flas0002
+	loop	0
+	delay	8
+	offset	92 207
+	burn	62 79 55 104 15 1
+	frame	data/chars/misc/tung1.gif
+        custknife red2
+	throwframe 1 2
+	frame	data/chars/misc/tung11.gif
+	frame	data/chars/misc/tung22.gif
+	frame	data/chars/misc/tung33.gif
+	frame	data/chars/misc/tung44.gif
+	frame	data/chars/misc/tung55.gif
+	frame	data/chars/misc/tung66.gif
+        burn 0 0 0 0 0
+	frame	data/chars/misc/empty.gif

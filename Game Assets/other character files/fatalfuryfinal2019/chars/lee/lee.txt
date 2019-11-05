@@ -1,0 +1,131 @@
+name	Lee
+health	100
+speed	6
+type	ENEMY
+gfxshadow	1
+diesound data/sounds/die2.wav
+remap data/chars/lee/idle/1.gif data/chars/lee/alt1.gif
+remap data/chars/lee/idle/1.gif data/chars/lee/alt2.gif
+icon	data/chars/lee/icon.gif
+
+anim idle
+	delay	13
+	loop	1
+	offset	70 195
+	bbox	37 102 57 99
+	frame	data/chars/lee/idle/1.gif
+	frame	data/chars/lee/idle/2.gif
+	frame	data/chars/lee/idle/3.gif
+	frame	data/chars/lee/idle/4.gif
+	frame	data/chars/lee/idle/5.gif
+	frame	data/chars/lee/idle/6.gif
+		
+anim walk
+	loop	1
+	delay	7
+	offset	245 195
+	bbox	224 95 54 103
+	frame	data/chars/lee/walk/1.gif
+	frame	data/chars/lee/walk/2.gif
+	frame	data/chars/lee/walk/3.gif
+	frame	data/chars/lee/walk/4.gif
+	frame	data/chars/lee/walk/5.gif
+	frame	data/chars/lee/walk/6.gif
+	frame	data/chars/lee/walk/7.gif
+	frame	data/chars/lee/walk/8.gif
+	
+anim attack1
+	range	20 200
+	loop	0
+	delay	5
+	offset	70 195
+	bbox	34 107 50 90
+	frame	data/chars/lee/attack1/1.gif
+	frame	data/chars/lee/attack1/2.gif
+	bbox	31 117 75 82
+	frame	data/chars/lee/attack1/3.gif
+	bbox	35 125 86 74
+	frame	data/chars/lee/attack1/4.gif
+	frame	data/chars/lee/attack1/5.gif
+	bbox	42 128 75 71
+	frame	data/chars/lee/attack1/6.gif
+	attack	169 41 73 160 10
+	frame	data/chars/lee/attack1/7.gif
+	attack	173 41 85 159 10
+	frame	data/chars/lee/attack1/8.gif
+	attack	176 42 92 157 10
+	frame	data/chars/lee/attack1/9.gif
+	attack	181 36 91 163 10
+	frame	data/chars/lee/attack1/10.gif
+	attack	202 50 62 151 10
+	bbox	35 103 55 93
+	frame	data/chars/lee/attack1/11.gif
+	attack	209 49 72 151 10
+	frame	data/chars/lee/attack1/12.gif
+	attack	215 49 65 151 10
+	frame	data/chars/lee/attack1/13.gif
+	attack	226 53 55 147 10
+	frame	data/chars/lee/attack1/14.gif
+	attack	0 0 0 0 0
+	frame	data/chars/lee/attack1/15.gif
+	frame	data/chars/lee/attack1/16.gif
+
+anim throw
+	loop	0
+	delay	4
+	offset	70 195
+	frame	data/chars/lee/throw/1.gif
+	frame	data/chars/lee/throw/2.gif
+	frame	data/chars/lee/throw/4.gif
+	frame	data/chars/lee/throw/5.gif
+	frame	data/chars/lee/throw/6.gif
+	frame	data/chars/lee/throw/7.gif
+	frame	data/chars/lee/throw/8.gif
+	frame	data/chars/lee/throw/6.gif
+	frame	data/chars/lee/throw/5.gif
+	frame	data/chars/lee/throw/4.gif
+	frame	data/chars/lee/throw/3.gif
+	frame	data/chars/lee/throw/2.gif
+	frame	data/chars/lee/throw/1.gif
+	
+anim pain
+	loop	0
+	offset	113 195
+	bbox	65 102 74 102
+	delay	10
+	frame	data/chars/lee/pain/1.gif
+	bbox	65 102 74 102
+	frame	data/chars/lee/pain/2.gif
+	bbox	65 102 74 102
+	frame	data/chars/lee/pain/3.gif
+	frame	data/chars/lee/pain/2.gif
+	frame	data/chars/lee/pain/1.gif
+	
+anim fall
+	loop	0
+	offset	60 75
+	delay	20
+	attack	32 22 39 41 10 1
+	frame	data/chars/lee/fall/1.gif
+	attack	10 36 62 28 10 1
+	frame	data/chars/lee/fall/2.gif
+	attack	11 35 74 23 10 1
+	frame	data/chars/lee/fall/3.gif
+	attack	19 30 49 32 10 1
+	frame	data/chars/lee/fall/4.gif
+	
+
+anim rise
+	loop	0
+	offset	80 200
+	delay	10
+	frame	data/chars/lee/rise/1.gif
+	frame	data/chars/lee/rise/2.gif
+	frame	data/chars/lee/rise/3.gif
+	frame	data/chars/lee/rise/4.gif
+	frame	data/chars/lee/rise/5.gif
+	frame	data/chars/lee/rise/6.gif
+	offset	80 190
+	frame	data/chars/lee/rise/6.gif
+	
+	

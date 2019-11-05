@@ -1,0 +1,17 @@
+name	Fire
+type	none
+shadow	0
+nomove 1 1
+
+anim idle
+	loop	0
+	delay	8
+	offset	55 177
+	sound	data/sounds/burn.wav
+	frame	data/chars/fire/fire1.gif	
+        frame	data/chars/fire/fire2.gif
+	frame	data/chars/fire/fire3.gif
+	frame	data/chars/fire/fire4.gif
+	frame	data/chars/fire/fire5.gif
+	frame	data/chars/fire/fire6.gif
+
