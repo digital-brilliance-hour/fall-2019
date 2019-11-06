@@ -1,0 +1,20 @@
+music		data/music/remix.bor
+
+background	data/bgs/stage2-subway/subway.png
+
+panel		data/bgs/stage2-subway/subway.png none none
+
+order	a
+
+
+
+
+#---------------------
+
+spawn	Angel
+coords	380 160
+at	800
+
+
+wait
+at	900

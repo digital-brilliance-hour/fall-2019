@@ -68,3 +68,4 @@ Load Kaguya Data/Chars/Kaguya/Kaguya.txt
 =======
 >>>>>>> lazuli
 Load lazuli Data/Chars/lazuli/lazuli.txt
+Load hibiki Data/Chars/hibiki/hibiki.txt
