@@ -1,0 +1,29 @@
+name	jdustie
+health	1
+type	none
+shadow	0
+speed   0
+remove  0
+lifespan 1
+palette	data/chars/misc/dusta3.gif
+nolife 1
+#antigravity 100
+subject_to_platform 0
+subject_to_obstacle 0
+subject_to_wall 0
+subject_to_hole 0
+subject_to_gravity 0
+no_adjust_base 1
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	44 25
+	delay	10
+	frame	data/chars/misc/dusta1.gif
+	frame	data/chars/misc/dusta2.gif
+	frame	data/chars/misc/dusta3.gif
+	frame	data/chars/misc/dusta4.gif
+	frame	data/chars/misc/dusta5.gif
+	frame	data/chars/misc/end.gif

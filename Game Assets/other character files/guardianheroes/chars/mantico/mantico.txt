@@ -1,0 +1,701 @@
+name	mantico
+health	200
+speed	11
+type	enemy
+dust    dust
+cantgrab 1
+aggression 8
+bflash bflash
+blockodds 1
+thold     49
+gfxshadow	1
+#nopain 1
+falldie 2
+aimove chase
+icon	data/chars/mantico/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+fmap 3
+load    thorn 
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette data/chars/mantico/idle.gif
+
+alternatepal	data/chars/mantico/testpal.gif
+
+anim spawn
+	loop	0
+	offset	178 170
+	bbox	0 0 0 0
+	quakeframe 18 10 3
+	delay   2
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	move    7
+	delay   2
+	bbox	0 0 0 0
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	move    0
+	delay   4
+	blast   0 0 0 0 0 0 0 0 0 0
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/mantico/a204.gif
+	sound   data/sounds/chiroar.wav
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+	offset	178 170
+	frame	data/chars/mantico/a205.gif
+	delay   18
+	offset	175 170
+	frame	data/chars/mantico/a205.gif
+
+anim idle
+	loop	1
+	offset	178 170
+	bbox	150 105 135 70
+	delay	6
+	frame	data/chars/mantico/idle.gif
+
+anim walk
+	loop	1
+	offset	178 170
+	bbox	150 105 135 70
+	delay   12
+	frame	data/chars/mantico/walk1.gif
+	frame	data/chars/mantico/walk2.gif
+	frame	data/chars/mantico/walk3.gif
+	frame	data/chars/mantico/walk4.gif
+	frame	data/chars/mantico/walk5.gif
+	frame	data/chars/mantico/walk6.gif
+	frame	data/chars/mantico/walk7.gif
+	frame	data/chars/mantico/walk8.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/mantico/guard.gif
+	offset	176 170
+	frame	data/chars/mantico/guard.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/mantico/guard.gif
+	offset	176 170
+	frame	data/chars/mantico/guard.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/mantico/guard.gif
+	offset	176 170
+	frame	data/chars/mantico/guard.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/mantico/guard.gif
+	offset	176 170
+	frame	data/chars/mantico/guard.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/mantico/guard.gif
+	offset	176 170
+	frame	data/chars/mantico/guard.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/mantico/guard.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	178 170
+	bbox	150 105 135 70
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	delay   23
+	frame	data/chars/mantico/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/mantico/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	178 170
+	bbox	150 105 135 70
+	frame	data/chars/mantico/pain1.gif
+
+anim burn
+	loop	0
+	offset	178 170
+	delay   4
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	frame	data/chars/mantico/fall1.gif
+	delay   20
+	frame	data/chars/mantico/fall3.gif
+	frame	data/chars/mantico/fall2.gif
+
+anim bpain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/mantico/pain1.gif
+	offset	175 170
+	frame	data/chars/mantico/pain1.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/mantico/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	178 170
+	frame	data/chars/mantico/pain1.gif
+	delay	20
+	frame	data/chars/mantico/fall1.gif
+        delay   20
+	frame	data/chars/mantico/fall3.gif
+	frame	data/chars/mantico/fall2.gif
+
+anim death
+	loop	0
+	offset	178 170
+	quakeframe 26 10 5
+	delay	12
+	frame	data/chars/mantico/fall2.gif
+	frame	data/chars/mantico/rise1.gif
+	delay	4
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+	offset	178 170
+	frame	data/chars/mantico/rise2.gif
+	offset	175 170
+	frame	data/chars/mantico/rise2.gif
+      delay   12
+	offset	178 170
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/mantico/fall3.gif
+	frame	data/chars/mantico/fall2.gif
+	frame	data/chars/mantico/fall3.gif
+      delay   150
+	frame	data/chars/mantico/fall2.gif
+
+anim rise
+	loop	0
+	offset	178 170
+	delay	12
+	frame	data/chars/mantico/fall2.gif
+	frame	data/chars/mantico/rise1.gif
+	frame	data/chars/mantico/rise2.gif
+	delay	35
+	frame	data/chars/mantico/idle.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	6
+	offset	178 170
+	bbox	150 105 135 70
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/mantico/a101.gif
+	frame	data/chars/mantico/a102.gif
+	delay	6
+	sound   data/sounds/punch1.wav
+	attack  200 112 135 57 25 1 0 0 15
+	frame	data/chars/mantico/a103.gif
+	frame	data/chars/mantico/a104.gif
+	frame	data/chars/mantico/a103.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mantico/a102.gif
+	frame	data/chars/mantico/a101.gif
+
+anim attack2
+	range	101 200
+	loop	0
+	custknife thorn
+	playshot thorn
+	throwframe 6
+	shootframe 12 1
+	offset	178 170
+	bbox	150 105 135 70
+	delay	9
+	sound   data/sounds/punch1.wav
+	frame	data/chars/mantico/a301.gif
+	offset	178 175
+	frame	data/chars/mantico/a302.gif
+	offset	178 180
+	frame	data/chars/mantico/a303.gif
+	offset	178 185
+	frame	data/chars/mantico/a304.gif
+	offset	178 190
+	frame	data/chars/mantico/a305.gif
+	offset	178 195
+	frame	data/chars/mantico/a306.gif
+
+	offset	178 195
+	sound   data/sounds/punch1.wav
+	frame	data/chars/mantico/a313.gif
+	frame	data/chars/mantico/a314.gif
+	frame	data/chars/mantico/a315.gif
+	frame	data/chars/mantico/a316.gif
+	frame	data/chars/mantico/a317.gif
+	frame	data/chars/mantico/a318.gif
+	sound   data/sounds/punch1.wav
+	frame	data/chars/mantico/a313.gif
+	frame	data/chars/mantico/a314.gif
+	frame	data/chars/mantico/a315.gif
+	frame	data/chars/mantico/a316.gif
+	frame	data/chars/mantico/a317.gif
+	frame	data/chars/mantico/a318.gif
+
+	sound   data/sounds/punch1.wav
+	offset	178 195
+	frame	data/chars/mantico/a306.gif
+	offset	178 190
+	frame	data/chars/mantico/a305.gif
+	offset	178 185
+	frame	data/chars/mantico/a304.gif
+	offset	178 180
+	frame	data/chars/mantico/a303.gif
+	offset	178 175
+	frame	data/chars/mantico/a302.gif
+	offset	178 170
+	frame	data/chars/mantico/a301.gif
+
+anim attack3
+	range	201 275
+	loop	0
+	bbox	150 105 135 70
+	offset	178 170
+	quakeframe 12 10 3
+	sound   data/sounds/chiroar.wav
+	delay   2
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	move    8
+	delay   2
+	bbox	0 0 0 0
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	move    0
+	delay   4
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mantico/a204.gif
+	frame	data/chars/mantico/a205.gif
+	delay   2
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	move    8
+	delay   2
+	bbox	0 0 0 0
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	move    0
+	delay   4
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mantico/a204.gif
+	frame	data/chars/mantico/a205.gif
+	delay   2
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	move    8
+	delay   2
+	bbox	0 0 0 0
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	move    3
+	delay   4
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mantico/a204.gif
+	delay   18
+	frame	data/chars/mantico/a205.gif
+
+anim riseattack
+	range	0 200
+	loop	0
+	offset	178 170
+	bbox	0 0 0 0
+	quakeframe 12 10 3
+	sound   data/sounds/chiroar.wav
+	delay   2
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	frame	data/chars/mantico/a201.gif
+	move    7
+	delay   2
+	sound   data/sounds/stand.wav
+	bbox	0 0 0 0
+
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a202.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	frame	data/chars/mantico/a203.gif
+	move    3
+	delay   18
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mantico/a204.gif
+	frame	data/chars/mantico/a205.gif

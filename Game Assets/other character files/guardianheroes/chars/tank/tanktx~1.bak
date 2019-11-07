@@ -1,0 +1,73 @@
+name tank
+type enemy
+health 200
+speed 4
+gfxshadow 1
+nolife 1
+nopain 1
+nodrop 1
+subject_to_screen 1
+falldie 1
+nodieblink 2
+knife canon
+
+anim idle
+	frame data/chars/tank/0.gif
+
+anim walk
+	loop 1
+	delay 10
+	frame data/chars/tank/1.gif
+	frame data/chars/tank/2.gif
+	frame data/chars/tank/3.gif
+	frame data/chars/tank/4.gif
+	frame data/chars/tank/5.gif
+	frame data/chars/tank/6.gif
+
+anim attack1
+	delay 7
+	throwframe 2 104
+	frame data/chars/tank/7.gif
+	frame data/chars/tank/8.gif
+	frame data/chars/tank/9.gif
+	frame data/chars/tank/10.gif
+	frame data/chars/tank/11.gif
+	frame data/chars/tank/12.gif
+	frame data/chars/tank/13.gif
+	frame data/chars/tank/14.gif
+	frame data/chars/tank/15.gif
+	frame data/chars/tank/16.gif
+	frame data/chars/tank/17.gif
+	delay 200
+	frame data/chars/tank/18.gif
+
+anim death
+	delay 6
+	frame data/chars/tank/20.gif
+	frame data/chars/tank/21.gif
+	frame data/chars/tank/22.gif
+	frame data/chars/tank/23.gif
+	frame data/chars/tank/24.gif
+	frame data/chars/tank/25.gif
+	frame data/chars/tank/26.gif
+	frame data/chars/tank/27.gif
+	frame data/chars/tank/28.gif
+	frame data/chars/tank/29.gif
+	frame data/chars/tank/30.gif
+	frame data/chars/tank/31.gif
+	frame data/chars/tank/32.gif
+	frame data/chars/tank/33.gif
+	frame data/chars/tank/34.gif
+	frame data/chars/tank/35.gif
+	frame data/chars/tank/36.gif
+	frame data/chars/tank/37.gif
+	frame data/chars/tank/38.gif
+	frame data/chars/tank/39.gif
+	frame data/chars/tank/40.gif
+	frame data/chars/tank/41.gif
+	frame data/chars/tank/42.gif
+	frame data/chars/tank/43.gif
+	frame data/chars/tank/44.gif
+	frame data/chars/tank/19.gif
+
+

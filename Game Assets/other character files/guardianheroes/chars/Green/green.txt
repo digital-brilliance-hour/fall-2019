@@ -1,0 +1,157 @@
+name	Ork_Berserker
+health	150
+speed	10
+type	enemy
+shadow	5
+gfxshadow 1
+aggression 25
+nodieblink 3
+falldie 1
+icon	data/chars/green/icon.gif
+diesound data/sounds/orkdie.wav
+palette	data/chars/green/pal.gif
+
+alternatepal	data/chars/green/testpal.gif
+alternatepal	data/chars/green/testpal2.gif
+alternatepal	data/chars/green/testpal3.gif
+alternatepal	data/chars/green/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  41 135
+	bbox 	19 16 75 114
+	delay	15
+	frame	data/chars/green/idle1.gif
+	frame	data/chars/green/idle2.gif
+	frame	data/chars/green/idle3.gif
+	frame	data/chars/green/idle4.gif
+	frame	data/chars/green/idle5.gif
+	frame	data/chars/green/idle6.gif
+	frame	data/chars/green/idle7.gif
+	frame	data/chars/green/idle8.gif
+
+	
+anim walk
+	loop	1
+	offset  85 162
+	bbox 	55 47 75 114
+	delay	13
+	frame	data/chars/green/walk1.gif
+	frame	data/chars/green/walk2.gif
+	frame	data/chars/green/walk3.gif
+	frame	data/chars/green/walk4.gif
+	frame	data/chars/green/walk5.gif
+	frame	data/chars/green/walk6.gif
+	frame	data/chars/green/walk7.gif
+	frame	data/chars/green/walk8.gif
+
+		
+anim pain
+	loop	0
+	offset	109 210
+	delay	6
+	bbox	83 95 75 114
+	frame	data/chars/green/pain1.gif
+
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	147 176
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/green/fall1.gif
+	frame	data/chars/green/fall2.gif
+	delay	1000
+	frame	data/chars/green/fall3.gif
+	delay	10
+	frame	data/chars/green/fall4.gif
+	frame	data/chars/green/fall4.gif
+
+
+anim rise
+	loop	0
+	offset	109 210
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/green/rise1.gif
+
+
+
+
+anim attack1
+	range	100 200
+	loop	0
+	delay	10
+	offset	109 210
+	bbox	87 88 75 114
+	frame	data/chars/green/atk1.gif
+	frame	data/chars/green/atk2.gif
+	frame	data/chars/green/atk3.gif
+	attack	127 100 131 90 25 1
+	frame	data/chars/green/atk4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/green/atk5.gif
+
+
+	
+anim attack2
+	range	0 100
+	loop	0
+	delay	9
+	offset	109 210
+	bbox	64 69 75 114
+	sound	data/sounds/dbroar.wav
+	frame	data/chars/green/2atk1.gif
+	frame	data/chars/green/2atk2.gif
+	attack	130 95 106 104 25 1
+	frame	data/chars/green/2atk3.gif
+	frame	data/chars/green/2atk4.gif
+	attack	0 0 0 0 0 0
+
+
+
+			
+anim throw
+	loop	0
+	delay	8
+	offset	109 210
+	sound	data/sounds/dbroar.wav
+	frame	data/chars/green/2atk4.gif
+	frame	data/chars/green/2atk3.gif
+	frame	data/chars/green/2atk2.gif
+	frame	data/chars/green/2atk1.gif
+
+anim special
+	loop	0
+	delay	7
+	offset	109 210
+	bbox	87 88 75 114
+	sound	data/sounds/dbroar.wav
+	frame	data/chars/green/atk1.gif
+	frame	data/chars/green/atk2.gif
+	frame	data/chars/green/atk3.gif
+	attack	127 100 131 90 25 1
+	frame	data/chars/green/atk4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/green/atk5.gif
+
+anim death
+	loop	0
+	delay	17
+	offset	196 212
+	move	-10
+	frame	data/chars/green/d1
+	frame	data/chars/green/d2
+	frame	data/chars/green/d3
+	move	0
+	frame	data/chars/green/d4
+
+
+
+
+
+	

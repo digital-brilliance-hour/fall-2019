@@ -1,0 +1,141 @@
+
+name	  gihor
+health 	 150
+speed	 14
+#running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/gillius/icon.gif
+diesound    data/chars/burnking/sounds/die.wav
+animal	1
+modelflag 1
+atchain 1 1 1 1
+weaploss	2
+facing 1
+nodrop	1
+falldie 2
+load	x
+knife	x
+
+alternatepal	data/chars/gillius/horse/testpal.gif
+#alternatepal	data/chars/gillius/horse/testpal2.gif
+#alternatepal	data/chars/gillius/horse/testpal3.gif
+
+#done//
+
+anim get
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+	frame	data/chars/gillius/horse/walk1.gif
+#	frame	data/chars/gillius/horse/walk2.gif
+#	frame	data/chars/gillius/horse/walk3.gif
+#	frame	data/chars/gillius/horse/walk4.gif
+#       frame	data/chars/gillius/horse/walk5.gif
+#       frame	data/chars/gillius/horse/walk6.gif
+
+
+
+anim idle
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/gillius/horse/walk1.gif
+	frame	data/chars/gillius/horse/walk2.gif
+	frame	data/chars/gillius/horse/walk3.gif
+	frame	data/chars/gillius/horse/walk4.gif
+        frame	data/chars/gillius/horse/walk5.gif
+        frame	data/chars/gillius/horse/walk6.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/gillius/horse/walk1.gif
+	frame	data/chars/gillius/horse/walk2.gif
+	frame	data/chars/gillius/horse/walk3.gif
+	frame	data/chars/gillius/horse/walk4.gif
+        frame	data/chars/gillius/horse/walk5.gif
+        frame	data/chars/gillius/horse/walk6.gif
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	5
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/gillius/horse/atk1.gif
+	frame	data/chars/gillius/horse/atk2.gif
+	frame	data/chars/gillius/horse/atk3.gif
+	frame	data/chars/gillius/horse/atk4.gif
+	frame	data/chars/gillius/horse/atk5.gif
+	frame	data/chars/gillius/horse/atk6.gif
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	5
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/gillius/horse/atk1.gif
+	frame	data/chars/gillius/horse/atk2.gif
+	frame	data/chars/gillius/horse/atk3.gif
+	frame	data/chars/gillius/horse/atk4.gif
+	frame	data/chars/gillius/horse/atk5.gif
+	frame	data/chars/gillius/horse/atk6.gif
+
+
+anim fall
+	loop	0
+	offset  48 100
+	delay	20
+	frame	data/chars/gillius/fall1.gif
+	offset  94 108
+	frame	data/chars/gillius/fall2.gif
+	offset  79 93
+	frame	data/chars/gillius/fall3.gif
+	offset  94 34
+	frame	data/chars/gillius/fall4.gif
+
+anim death
+	loop	0
+	offset  94 34
+	delay	20
+	frame	data/chars/gillius/horse/die1.gif
+
+anim pain
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/gillius/horse/pain1.gif
+	frame	data/chars/gillius/horse/pain2.gif
+	frame	data/chars/gillius/horse/pain3.gif
+	frame	data/chars/gillius/horse/pain4.gif
+	frame	data/chars/gillius/horse/pain5.gif
+	frame	data/chars/gillius/horse/pain6.gif
+
+
+
+
+

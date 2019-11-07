@@ -1,0 +1,579 @@
+
+name	  gillius
+health 	 150
+speed	 11
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/gillius/icon.gif
+diesound	data/chars/gillius/2heaven.wav
+palette	data/chars/gillius/pal2.gif
+weapons	gibear gibull gijag giele gihor gillius
+COM A2 freespecial4
+
+alternatepal	data/chars/gillius/testpal.gif
+#remap	data/chars/gillius/idle1.gif	data/chars/gillius/alt1.gif
+#remap	data/chars/gillius/idle1.gif	data/chars/gillius/alt2.gif
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        65 89
+	bbox 	23 11 41 91
+	delay	18
+	frame	data/chars/gillius/idle1.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        66 91
+	frame	data/chars/gillius/idle3.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        65 89
+	frame	data/chars/gillius/idle1.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        66 91
+	frame	data/chars/gillius/idle3.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        65 89
+	frame	data/chars/gillius/idle1.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        66 91
+	frame	data/chars/gillius/idle3.gif
+	offset        65 88
+	frame	data/chars/gillius/idle2.gif
+	offset        65 89
+	frame	data/chars/gillius/idle1.gif
+	offset        54 83
+	delay	20
+	frame	data/chars/gillius/idle4.gif
+	offset        46 100
+	frame	data/chars/gillius/idle5.gif
+	frame	data/chars/gillius/idle6.gif
+	frame	data/chars/gillius/idle7.gif
+	frame	data/chars/gillius/idle8.gif
+
+
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  73 86
+	bbox 	25 8 38 97
+	delay	9
+	frame	data/chars/gillius/walk1.gif
+	offset  72 87
+	frame	data/chars/gillius/walk2.gif
+	offset  72 89
+	frame	data/chars/gillius/walk3.gif
+	offset  71 89
+	frame	data/chars/gillius/walk4.gif
+	offset  72 86
+	frame	data/chars/gillius/walk5.gif
+	offset  72 85
+	frame	data/chars/gillius/walk6.gif
+
+
+anim run
+	loop	1
+	delay	8
+	offset	55 82
+	bbox	65	30	33	65
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/gillius/run1.gif
+	offset	53 87
+	frame	data/chars/gillius/run2.gif
+	offset	53 88
+	frame	data/chars/gillius/run3.gif
+	offset	53 83
+	frame	data/chars/gillius/run4.gif
+	offset	55 91
+	frame	data/chars/gillius/run5.gif
+	offset	53 81
+	frame	data/chars/gillius/run6.gif
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	65 124
+              bbox       37 35 35 88
+	sound	data/chars/gillius/go.wav
+	frame	data/chars/gillius/3atk1.gif
+	offset	40 125
+	frame	data/chars/gillius/3atk2.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	50 73
+	frame	data/chars/gillius/3atk6.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	10
+	offset	79 62
+	frame	data/chars/gillius/rise1.gif
+	offset	62 72
+	frame	data/chars/gillius/rise2.gif
+	offset	79 62
+	frame	data/chars/gillius/rise1.gif
+
+
+#done//
+#Punch
+anim attack1
+	cancel 2 3 0 a2 freespecial5
+	range	5 50
+	loop	0
+	delay	7
+	offset	42 86
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/gillius/atk1.gif
+	offset	42 91
+	frame	data/chars/gillius/atk2.gif
+                  attack	70 7 75 58 10 0 0 0 10
+	offset	42 86
+	frame	data/chars/gillius/atk1.gif
+        attack         0 0 0 0 0
+
+
+#done//
+#Kick
+anim attack2
+	cancel 3 4 0 a2 freespecial5
+	range	5 40
+	loop	0
+	delay	7
+	offset	42 72
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/gillius/2atk1.gif
+	offset	42 86
+	frame	data/chars/gillius/2atk2.gif
+	offset	62 86
+                  bbox          57 10 37 95
+	    frame	data/chars/gillius/2atk3.gif
+	offset	42 111
+                  attack	71 3 74 67 15 0 0 0 10
+                  frame	data/chars/gillius/2atk4.gif
+                  attack	0 0 0 0 0
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 6 8 0 a2 freespecial3
+	range	5 90
+	loop	0
+	delay	8
+	offset	65 124
+              bbox       37 35 35 88
+	sound	data/chars/gillius/hey.wav
+	frame	data/chars/gillius/3atk1.gif
+	offset	40 125
+	frame	data/chars/gillius/3atk2.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	50 73
+	frame	data/chars/gillius/3atk6.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	10
+	offset	42 118
+	sound	data/chars/gillius/thunder.wav
+	frame	data/chars/gillius/spec1.gif
+	offset	40 120
+	attack	67 76 360 200 10 0 0 10
+	frame	data/chars/gillius/spec2.gif
+	offset	39 92
+	attack	0 0 0 0 0 0
+	attack	67 76 360 200 10 0 0 10
+	frame	data/chars/gillius/spec3.gif
+	offset	39 63
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/spec4.gif
+	offset	240 274
+	attack	67 76 360 200 10 0 0 10
+	frame	data/chars/gillius/spec5.gif
+	sound	data/sounds/marvel/thorligh.wav
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/spec51.gif
+	attack	67 76 360 200 20 1 0 0 10
+	frame	data/chars/gillius/spec52.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/spec53.gif
+	attack	67 76 360 200 20 1 0 0 10
+	frame	data/chars/gillius/spec54.gif
+	attack	0 0 0 0 0 0
+	attack	67 76 360 200 20 1 0 0 10
+	frame	data/chars/gillius/spec55.gif
+	attack	0 0 0 0 0 0
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	8
+	offset	65 124
+              bbox       37 35 35 88
+	sound	data/chars/gillius/hey.wav
+	frame	data/chars/gillius/3atk1.gif
+	offset	40 125
+	frame	data/chars/gillius/3atk2.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	50 73
+	frame	data/chars/gillius/3atk6.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+	loop	0
+	delay	8
+	offset	42 99
+	bbox	57 50 53 104
+	sound	data/sounds/marvel/gfire.wav
+	frame	data/chars/gillius/2spec1.gif
+	offset	44 229
+	frame	data/chars/gillius/2spec2.gif
+	frame	data/chars/gillius/2spec3.gif
+	frame	data/chars/gillius/2spec4.gif
+	frame	data/chars/gillius/2spec5.gif
+	frame	data/chars/gillius/2spec6.gif
+	attack	98 8 172 328 10 0 0 0 10
+	offset	44 229
+	attack	98 8 172 328 10 0 0 0 10
+	frame	data/chars/gillius/2spec61.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/2spec62.gif
+	attack	98 8 172 328 10 0 0 0 10
+	offset	44 334
+	frame	data/chars/gillius/2spec63.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/2spec64.gif
+	attack	98 8 172 328 10 0 0 0 10
+	frame	data/chars/gillius/2spec65.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/2spec66.gif
+	attack	98 8 172 328 10 0 0 0 10
+	frame	data/chars/gillius/2spec67.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/2spec68.gif
+	attack	98 8 172 328 10 1 0 0 10
+	frame	data/chars/gillius/2spec69.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/2spec7.gif
+	attack	98 8 172 328 10 1 0 0 10
+	frame	data/chars/gillius/2spec71.gif
+	attack	0 0 0 0 0 0
+	
+
+anim freespecial3
+	range	5 90
+	loop	0
+	delay	7
+	offset	65 124
+              bbox       37 35 35 88
+	sound	data/chars/gillius/2heaven.wav
+	frame	data/chars/gillius/3atk1.gif
+	offset	40 125
+	frame	data/chars/gillius/3atk2.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+	attack	98 23 133 100 20 0 0 0 10
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gillius/fspec1.gif
+	attack	98 23 387 102 15 0 0 0 10
+	frame	data/chars/gillius/fspec2.gif
+        attack	0 0 0 0 0
+	frame	data/chars/gillius/fspec3.gif
+	attack	98 23 387 102 15 0 0 0 10
+	frame	data/chars/gillius/fspec4.gif
+        attack	0 0 0 0 0
+	frame	data/chars/gillius/fspec5.gif
+	attack	98 23 387 102 15 1 0 0 10
+	frame	data/chars/gillius/fspec6.gif
+	attack	98 23 387 102 15 1 0 0 10
+	frame	data/chars/gillius/fspec7.gif
+	attack	98 23 387 102 15 1 0 0 10
+	frame	data/chars/gillius/fspec8.gif
+	frame	data/chars/gillius/fspec9.gif
+	frame	data/chars/gillius/fspec91.gif
+        attack	0 0 0 0 0
+	              bbox       53 23 45 100
+	frame	data/chars/gillius/fspec92.gif
+	frame	data/chars/gillius/fspec93.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	7
+	offset	65 124
+              bbox       37 35 35 88
+	sound	data/chars/gillius/hey.wav
+	frame	data/chars/gillius/3atk1.gif
+	offset	40 125
+	frame	data/chars/gillius/3atk2.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	50 73
+	frame	data/chars/gillius/3atk6.gif
+	offset	42 87
+	frame	data/chars/gillius/3atk5.gif
+	offset	42 123
+	frame	data/chars/gillius/3atk4.gif
+              attack	0 0 0 0 0
+
+anim freespecial5
+	cancel 7 8 0 a2 freespecial4
+	loop	0
+	delay	6
+	offset	42 100
+	sound	data/chars/gillius/go.wav
+	frame	data/chars/gillius/throw1.gif
+	frame	data/chars/gillius/throw1.gif
+	offset	54 101
+	frame	data/chars/gillius/throw2.gif
+	attack	0 5 164 135 20 1 0 0 20
+	dropv	3 0 0
+	frame	data/chars/gillius/throw2.gif
+	offset	55 99
+        frame	data/chars/gillius/throw3.gif
+	frame	data/chars/gillius/throw3.gif
+	offset	54 101
+	frame	data/chars/gillius/throw2.gif
+	frame	data/chars/gillius/throw2.gif
+              attack	0 0 0 0 0
+
+
+
+#done
+anim jump
+	loop	0
+	offset	71 114
+	delay	15
+	bbox	47 37 33 79
+	sound	data/chars/gillius/sounds/jump.wav
+	frame	data/chars/gillius/jump1.gif
+	offset	83 108
+	frame	data/chars/gillius/jump2.gif
+	offset	78 110
+	frame	data/chars/gillius/jump3.gif
+	offset	83 108
+	frame	data/chars/gillius/jump2.gif
+	offset	71 114
+	frame	data/chars/gillius/jump1.gif
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	84 149
+	delay	6
+	bbox	47 19 34 64
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/gillius/jatk1.gif
+	attack	41 14 60 71 10 1
+	offset	37 142
+	frame	data/chars/gillius/jatk2.gif
+	offset	44 97
+	frame	data/chars/gillius/jatk3.gif
+	offset	34 99
+	frame	data/chars/gillius/jatk4.gif
+	offset	34 99
+	frame	data/chars/gillius/jatk5.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	42 99
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/gillius/grab.gif
+
+
+#done//
+anim grabattack2
+	loop	0
+	delay	7
+	offset	46 87
+              bbox       37 35 35 88
+	sound	data/chars/gillius/hey.wav
+	frame	data/chars/gillius/gatk1.gif
+	frame	data/chars/gillius/gatk1.gif
+	offset	39 89
+	frame	data/chars/gillius/gatk2.gif
+	      bbox       53 23 45 100
+	attack	0 5 164 235 20 1
+	frame	data/chars/gillius/gatk2.gif
+	offset	43 91
+        frame	data/chars/gillius/gatk3.gif
+	frame	data/chars/gillius/gatk3.gif
+	offset	39 89
+	frame	data/chars/gillius/gatk2.gif
+	frame	data/chars/gillius/gatk2.gif
+              attack	0 0 0 0 0
+
+
+#done//
+anim grabattack
+	range	5 50
+	loop	0
+	delay	7
+	offset	42 86
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/gillius/atk1.gif
+	offset	42 91
+	frame	data/chars/gillius/atk2.gif
+                  attack	70 7 70 58 10 0
+	offset	42 86
+	frame	data/chars/gillius/atk1.gif
+        attack         0 0 0 0 0
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	42 100
+	sound	data/chars/gillius/go.wav
+	frame	data/chars/gillius/throw1.gif
+	frame	data/chars/gillius/throw1.gif
+	offset	54 101
+	frame	data/chars/gillius/throw2.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/gillius/throw2.gif
+	offset	55 99
+        frame	data/chars/gillius/throw3.gif
+	frame	data/chars/gillius/throw3.gif
+	offset	54 101
+	frame	data/chars/gillius/throw2.gif
+	frame	data/chars/gillius/throw2.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  68 88
+	bbox 	31 14 35 83
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/gillius/pain1.gif
+	offset  66 90
+	frame	data/chars/gillius/pain2.gif
+	offset  79 91
+	frame	data/chars/gillius/pain3.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  48 100
+	delay	20
+	frame	data/chars/gillius/fall1.gif
+	offset  94 108
+	frame	data/chars/gillius/fall2.gif
+	offset  79 93
+	frame	data/chars/gillius/fall3.gif
+	offset  94 34
+	frame	data/chars/gillius/fall4.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	10
+	offset	79 62
+	frame	data/chars/gillius/rise1.gif
+	offset	62 72
+	frame	data/chars/gillius/rise2.gif
+
+
+
+#done//
+anim land
+	loop	0
+	delay	10
+	offset	79 62
+	frame	data/chars/gillius/rise1.gif
+	offset	62 72
+	frame	data/chars/gillius/rise2.gif
+
+

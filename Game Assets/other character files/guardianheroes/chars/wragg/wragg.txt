@@ -1,0 +1,198 @@
+name	Wragg
+health	100
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1
+#aimove chase
+icon	data/chars/wragg/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/wragg/idle1.gif
+
+
+#alternatepal	data/chars/wragg/testpal.gif
+#alternatepal	data/chars/wragg/testpal2.gif
+#alternatepal	data/chars/wragg/testpal3.gif
+#alternatepal	data/chars/wragg/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  78 80
+	bbox 	52 15 63 56
+	delay	11
+	frame	data/chars/wragg/idle1.gif
+	frame	data/chars/wragg/idle2.gif
+	frame	data/chars/wragg/idle3.gif
+	frame	data/chars/wragg/idle4.gif
+	frame	data/chars/wragg/idle5.gif
+	frame	data/chars/wragg/idle6.gif
+	frame	data/chars/wragg/idle7.gif
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	51 91
+	bbox 	24 24 50 60
+	delay	8
+	frame	data/chars/wragg/walk1.gif
+	frame	data/chars/wragg/walk2.gif
+	frame	data/chars/wragg/walk3.gif
+	frame	data/chars/wragg/walk4.gif
+	frame	data/chars/wragg/walk5.gif
+	frame	data/chars/wragg/walk6.gif
+	frame	data/chars/wragg/walk7.gif
+	frame	data/chars/wragg/walk8.gif
+
+
+
+
+
+anim run
+	loop	1
+	offset	93 86
+	bbox 	76 14 50 60
+	delay	8
+	frame	data/chars/wragg/run1.gif
+	frame	data/chars/wragg/run2.gif
+	frame	data/chars/wragg/run3.gif
+	frame	data/chars/wragg/run4.gif
+	frame	data/chars/wragg/run5.gif
+	frame	data/chars/wragg/run6.gif
+	frame	data/chars/wragg/run7.gif
+	frame	data/chars/wragg/run8.gif
+
+
+
+anim runattack
+	range	0 130
+	loop	0
+	delay	9
+	offset	124 158
+	bbox 	100 92 57 60
+	frame	data/chars/wragg/atk8.gif
+	attack	148 31 138 127 17 1 0 0 24
+	frame	data/chars/wragg/atk9.gif
+	frame	data/chars/wragg/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wragg/atk11.gif
+	frame	data/chars/wragg/atk12.gif
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	78 80
+	bbox 	52 15 63 56
+	frame	data/chars/wragg/idle1.gif
+
+
+
+anim fall
+	landframe	3
+	loop	0
+	delay	13
+	offset	115 78
+	bbox 	151 148 60 60
+	frame	data/chars/wragg/fall01.gif
+	delay	1000
+	frame	data/chars/wragg/fall01.gif
+	offset	115 62
+	delay	20
+	frame	data/chars/wragg/fall02.gif
+	frame	data/chars/wragg/fall02.gif
+
+anim death
+	loop	0
+	delay	17
+	offset	186 220
+	frame	data/chars/wragg/death1
+	frame	data/chars/wragg/death2
+	frame	data/chars/wragg/death3
+	frame	data/chars/wragg/death4
+
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	74 79
+	bbox 	182 831 38 90
+	frame	data/chars/wragg/rise1.gif
+
+
+anim riseattack
+	range	0 130
+	loop	0
+	delay	9
+	offset	124 158
+	bbox 	100 92 57 60
+	frame	data/chars/wragg/atk8.gif
+	attack	148 31 138 127 17 1 0 0 24
+	frame	data/chars/wragg/atk9.gif
+	frame	data/chars/wragg/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wragg/atk11.gif
+	frame	data/chars/wragg/atk12.gif
+
+
+anim attack1
+	range	0 138
+	loop	0
+	delay	9
+	offset	124 158
+	bbox 	100 92 57 60
+	frame	data/chars/wragg/atk1.gif
+	frame	data/chars/wragg/atk2.gif
+	frame	data/chars/wragg/atk3.gif
+	attack	148 31 138 127 10 0 0 0 14
+	frame	data/chars/wragg/atk4.gif
+	frame	data/chars/wragg/atk5.gif
+	frame	data/chars/wragg/atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wragg/atk7.gif
+	frame	data/chars/wragg/atk8.gif
+	attack	148 31 138 127 17 1 0 0 24
+	frame	data/chars/wragg/atk9.gif
+	frame	data/chars/wragg/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wragg/atk11.gif
+	frame	data/chars/wragg/atk12.gif
+
+
+
+anim special
+	range	0 130
+	loop	0
+	delay	9
+	offset	124 158
+	bbox 	100 92 57 60
+	frame	data/chars/wragg/atk8.gif
+	attack	148 31 138 127 17 1 0 0 24
+	frame	data/chars/wragg/atk9.gif
+	frame	data/chars/wragg/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wragg/atk11.gif
+	frame	data/chars/wragg/atk12.gif
+
+

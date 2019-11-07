@@ -1,0 +1,493 @@
+name	cyclops
+health	200
+speed	8
+type	enemy
+shadow	3
+dust    dust
+cantgrab 1
+aggression 8
+bflash bflash
+nopain 1
+nodrop 1
+falldie 2
+nodieblink 3
+defense burn 75%
+defense shock 75%
+defense blast 75%
+defense attack2 75%
+icon	data/chars/cyclops/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/cikedie.wav
+load    rock 
+fmap 2
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/cyclops/idle.gif
+
+alternatepal	data/chars/cyclops/testpal.gif
+alternatepal	data/chars/cyclops/testpal2.gif
+alternatepal	data/chars/cyclops/testpal3.gif
+
+
+anim spawn
+	loop	0
+	offset	100 195
+	bbox	78 98 53 100
+	delay	8
+	jumpframe  0 5 2
+	quakeframe 1 10 3
+	sound   data/sounds/cikehit.wav
+	delay	110
+	frame	data/chars/cyclops/ju02.gif
+	delay	10
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/cyclops/ju01.gif
+	frame	data/chars/cyclops/ju01.gif
+	frame	data/chars/cyclops/ju01.gif
+	frame	data/chars/cyclops/ju01.gif
+	frame	data/chars/cyclops/ju01.gif
+	delay	15
+	frame	data/chars/cyclops/idle.gif
+
+anim idle
+	loop	1
+	offset	100 195
+	bbox	78 98 53 100
+	delay	6
+	frame	data/chars/cyclops/idle.gif
+
+anim walk
+	loop	1
+	offset	100 195
+	bbox	78 98 53 100
+	delay   15
+	frame	data/chars/cyclops/wk01.gif
+	frame	data/chars/cyclops/wk02.gif
+	frame	data/chars/cyclops/wk03.gif
+	frame	data/chars/cyclops/wk04.gif
+	frame	data/chars/cyclops/wk05.gif
+	frame	data/chars/cyclops/wk06.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	100 195
+	bbox	78 98 53 100
+	move    -10
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -8
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -6
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	move    -4
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -2
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	delay   20
+	move    0
+	frame	data/chars/cyclops/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	100 195
+	bbox	78 98 53 100
+	frame	data/chars/cyclops/pain1.gif
+
+anim burn
+	loop	0
+	delay	40
+	offset	100 195
+	frame	data/chars/cyclops/fall1.gif
+	delay	20
+	frame	data/chars/cyclops/fall1.gif
+        delay   20
+	frame	data/chars/cyclops/fall3.gif
+        delay   100
+	frame	data/chars/cyclops/fall2.gif
+        delay   10
+	frame	data/chars/cyclops/fall2.gif
+
+anim bpain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	100 195
+	bbox	78 98 53 100
+	move    -10
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -8
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -6
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	move    -4
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -2
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	delay   20
+	move    0
+	frame	data/chars/cyclops/pain1.gif
+
+anim shock
+	loop	0
+	delay	40
+	offset	100 195
+	frame	data/chars/cyclops/fall1.gif
+	delay	20
+	frame	data/chars/cyclops/fall1.gif
+        delay   20
+	frame	data/chars/cyclops/fall3.gif
+        delay   100
+	frame	data/chars/cyclops/fall2.gif
+        delay   10
+	frame	data/chars/cyclops/fall2.gif
+
+anim spain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	100 195
+	bbox	78 98 53 100
+	move    -10
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -8
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -6
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	move    -4
+	offset	100 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	move    -2
+	frame	data/chars/cyclops/pain1.gif
+	offset	98 195
+	frame	data/chars/cyclops/pain1.gif
+	offset	100 195
+	delay   20
+	move    0
+	frame	data/chars/cyclops/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	100 195
+	frame	data/chars/cyclops/fall1.gif
+	delay	20
+	frame	data/chars/cyclops/fall1.gif
+        delay   20
+	frame	data/chars/cyclops/fall3.gif
+        delay   100
+	frame	data/chars/cyclops/fall2.gif
+        delay   10
+	frame	data/chars/cyclops/fall2.gif
+
+anim rise
+	loop	0
+	offset	100 195
+	delay	20
+	frame	data/chars/cyclops/fall2.gif
+	frame	data/chars/cyclops/ju01.gif
+	delay	35
+	frame	data/chars/cyclops/idle.gif
+
+anim attack1
+	range	0 90
+	loop	0
+	delay	32
+	offset	100 195
+	bbox	78 98 53 100
+	delay	10
+	sound   data/sounds/punch1.wav
+	frame	data/chars/cyclops/a101.gif
+	frame	data/chars/cyclops/a102.gif
+	delay	20
+	attack  101 114 94 84 25 0 0 0 15
+	frame	data/chars/cyclops/a103.gif
+	delay	10
+	attack  0 0 0 0 0 0 0 0 0
+	frame	data/chars/cyclops/a102.gif
+
+	sound   data/sounds/punch1.wav
+	frame	data/chars/cyclops/a101.gif
+	frame	data/chars/cyclops/a102.gif
+	delay	20
+	attack  101 114 94 84 25 0 0 0 15
+	frame	data/chars/cyclops/a103.gif
+	delay	10
+	attack  0 0 0 0 0 0 0 0 0
+	frame	data/chars/cyclops/a102.gif
+
+	sound   data/sounds/punch1.wav
+	frame	data/chars/cyclops/a101.gif
+	frame	data/chars/cyclops/a102.gif
+	delay	20
+	attack  101 114 94 84 25 0 0 0 15
+	frame	data/chars/cyclops/a103.gif
+	delay	10
+	attack  0 0 0 0 0 0 0 0 0
+	frame	data/chars/cyclops/a102.gif
+
+	delay	30
+	frame	data/chars/cyclops/idle.gif
+
+anim attack2
+	range	91 190
+	loop	0
+	bbox	78 98 53 100
+	quakeframe 8 10 3
+
+	delay	8
+	sound   data/sounds/cikehit.wav
+	offset	100 195
+	frame	data/chars/cyclops/a101.gif
+	offset	98 195
+	frame	data/chars/cyclops/a101.gif
+	offset	100 195
+	frame	data/chars/cyclops/a101.gif
+	offset	98 195
+	frame	data/chars/cyclops/a101.gif
+	offset	100 195
+	frame	data/chars/cyclops/a101.gif
+	offset	98 195
+	frame	data/chars/cyclops/a101.gif
+	offset	100 195
+	frame	data/chars/cyclops/a101.gif
+	offset	98 195
+	frame	data/chars/cyclops/a101.gif
+
+	offset	100 195
+	move    5
+	delay   2
+#	sound   data/sounds/run.wav
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	frame	data/chars/cyclops/a102.gif
+	blast   101 114 94 84 25 1 0 0 15
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	frame	data/chars/cyclops/a103.gif
+	move    3
+	delay   10
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/cyclops/a102.gif
+	delay   30
+	frame	data/chars/cyclops/idle.gif
+
+anim attack3
+	loop	0
+	range	0 190
+	custknife rock
+	throwframe 6
+	bbox	78 98 53 100
+	offset	100 195
+	jumpframe  1 5 0
+	quakeframe 4 10 3
+
+	delay   20
+	frame	data/chars/cyclops/ju01.gif
+	delay	55
+	bbox	0 0 0 0
+	frame	data/chars/cyclops/ju02.gif
+	frame	data/chars/cyclops/a201.gif
+	delay   10
+	sound   data/sounds/bigfall.wav
+	bbox	78 98 53 100
+	frame	data/chars/cyclops/a202.gif
+	frame	data/chars/cyclops/a203.gif
+	frame	data/chars/cyclops/a204.gif
+	delay	50
+	frame	data/chars/cyclops/a205.gif

@@ -1,0 +1,700 @@
+name	behold
+health	200
+speed	14
+type	enemy
+shadow	3
+dust    dust
+cantgrab 1
+aggression 25
+bflash bflash
+blockodds 1
+thold     49
+#nopain 1
+nodrop 1
+nodieblink 3
+falldie 1
+#aimove chase
+defense burn 95%
+defense freeze 95%
+defense shock 95%
+defense blast 95%
+defense attack2 95%
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+icon	data/chars/behold/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/ogdie.wav
+fmap 2
+palette	data/chars/behold/idle1.gif
+alternatepal	data/chars/behold/alter1
+alternatepal	data/chars/behold/alter2
+
+
+anim spawn
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay	12
+	sound   data/sounds/ogroar.wav
+	frame	data/chars/behold/idle1.gif
+	frame	data/chars/behold/idle2.gif
+	frame	data/chars/behold/idle3.gif
+	frame	data/chars/behold/idle4.gif
+	frame	data/chars/behold/idle5.gif
+
+anim idle
+	loop	1
+	offset	72 158
+	bbox	34 92 71 55
+	delay	12
+	frame	data/chars/behold/idle1.gif
+	frame	data/chars/behold/idle2.gif
+	frame	data/chars/behold/idle3.gif
+	frame	data/chars/behold/idle4.gif
+	frame	data/chars/behold/idle5.gif
+
+anim walk
+	loop	1
+	offset	72 158
+	bbox	34 92 71 55
+	delay   12
+	frame	data/chars/behold/walk1.gif
+	frame	data/chars/behold/walk2.gif
+	frame	data/chars/behold/walk3.gif
+	frame	data/chars/behold/walk2.gif
+
+anim turn
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay   12
+	frame	data/chars/behold/turn1.gif
+	frame	data/chars/behold/turn2.gif
+	frame	data/chars/behold/turn3.gif
+	frame	data/chars/behold/turn4.gif
+	frame	data/chars/behold/turn5.gif
+	frame	data/chars/behold/turn6.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/behold/guard.gif
+	offset  74 158
+	frame	data/chars/behold/guard.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/guard.gif
+	offset  74 158
+	frame	data/chars/behold/guard.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/guard.gif
+	offset  74 158
+	frame	data/chars/behold/guard.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/guard.gif
+	offset  74 158
+	frame	data/chars/behold/guard.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/guard.gif
+	offset  74 158
+	frame	data/chars/behold/guard.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/guard.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	72 158
+	bbox	34 92 71 55
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   23
+	frame	data/chars/behold/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/pain1.gif
+
+anim pain3
+	loop	0
+	delay	3
+	offset	72 158
+	bbox	34 92 71 55
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   23
+	frame	data/chars/behold/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	72 158
+	bbox	34 92 71 55
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+
+anim burn
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/pain1.gif
+
+anim bpain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/pain1.gif
+
+anim shock
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/pain1.gif
+
+anim spain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	72 158
+	bbox	34 92 71 55
+	move    -10
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -8
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -6
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	move    -4
+	offset  72 158
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	move    -2
+	frame	data/chars/behold/pain1.gif
+	offset  74 158
+	frame	data/chars/behold/pain1.gif
+	offset  72 158
+	delay   20
+	move    0
+	frame	data/chars/behold/pain1.gif
+
+anim fall
+	landframe	3
+	loop	0
+	delay	60
+	offset	72 158
+	frame	data/chars/behold/pain1.gif
+	delay	1000
+	frame	data/chars/behold/fall1.gif
+	delay	10
+	frame	data/chars/behold/fall2.gif
+	frame	data/chars/behold/fall2.gif
+
+anim rise
+	loop	0
+	offset	72 158
+	delay	35
+	frame	data/chars/behold/pain1.gif
+
+anim attack1
+	range	0 144
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay	1
+	move 3
+	attack  34 90 72 56 35 1 1 0 20
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	frame	data/chars/behold/a103.gif
+	delay	12
+	attack  0 0 0 0 0 0 0 0 0
+	frame	data/chars/behold/a101.gif
+	frame	data/chars/behold/a102.gif
+	frame	data/chars/behold/a103.gif
+
+anim attack2
+	range	145 195
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay	2
+	sound data/sounds/behit.wav
+	frame	data/chars/behold/a402.gif
+	frame	data/chars/behold/a403.gif
+	frame	data/chars/behold/a404.gif
+	frame	data/chars/behold/a405.gif
+	frame	data/chars/behold/a406.gif
+	frame	data/chars/behold/a407.gif
+	frame	data/chars/behold/a408.gif
+	frame	data/chars/behold/a409.gif
+	frame	data/chars/behold/a410.gif
+	frame	data/chars/behold/a411.gif
+	frame	data/chars/behold/a412.gif
+	frame	data/chars/behold/a413.gif
+	frame	data/chars/behold/a414.gif
+	frame	data/chars/behold/a415.gif
+	frame	data/chars/behold/a416.gif
+	frame	data/chars/behold/a417.gif
+	frame	data/chars/behold/a418.gif
+	frame	data/chars/behold/a419.gif
+	freeze  35 62 256 100 5 3 1 1 10
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	frame	data/chars/behold/a420.gif
+	frame	data/chars/behold/a421.gif
+	frame	data/chars/behold/a422.gif
+	freeze  0 0 0 0 0 0 0 0 0
+	frame	data/chars/behold/a402.gif
+
+anim attack3
+	range	145 215
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay	2
+	sound data/sounds/behit.wav
+	frame	data/chars/behold/a305.gif
+	frame	data/chars/behold/a306.gif
+	frame	data/chars/behold/a307.gif
+	frame	data/chars/behold/a308.gif
+	frame	data/chars/behold/a309.gif
+	frame	data/chars/behold/a310.gif
+	frame	data/chars/behold/a311.gif
+	frame	data/chars/behold/a312.gif
+	frame	data/chars/behold/a313.gif
+	frame	data/chars/behold/a314.gif
+	frame	data/chars/behold/a315.gif
+	frame	data/chars/behold/a316.gif
+	frame	data/chars/behold/a317.gif
+	frame	data/chars/behold/a318.gif
+	frame	data/chars/behold/a319.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	shock  35 62 282 100 35 1 1 0 5
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	frame	data/chars/behold/a320.gif
+	frame	data/chars/behold/a321.gif
+	frame	data/chars/behold/a322.gif
+	shock  0 0 0 0 0 0 0 0 0
+	frame	data/chars/behold/a305.gif
+
+anim attack4
+	range	145 235
+	loop	0
+	offset	72 158
+	bbox	34 92 71 55
+	delay	2
+	sound data/sounds/behit.wav
+	frame	data/chars/behold/a208.gif
+	frame	data/chars/behold/a209.gif
+	frame	data/chars/behold/a210.gif
+	frame	data/chars/behold/a211.gif
+	frame	data/chars/behold/a212.gif
+	frame	data/chars/behold/a213.gif
+	frame	data/chars/behold/a214.gif
+	frame	data/chars/behold/a215.gif
+	frame	data/chars/behold/a216.gif
+	frame	data/chars/behold/a217.gif
+	frame	data/chars/behold/a218.gif
+	frame	data/chars/behold/a219.gif
+	frame	data/chars/behold/a220.gif
+	frame	data/chars/behold/a221.gif
+	frame	data/chars/behold/a222.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	burn  35 62 313 100 35 1 1 0 5
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	frame	data/chars/behold/a223.gif
+	frame	data/chars/behold/a224.gif
+	frame	data/chars/behold/a225.gif
+	burn  0 0 0 0 0 0 0 0 0
+	frame	data/chars/behold/a305.gif
+
+anim death
+	loop	0
+	delay	60
+	offset	72 158
+	frame	data/chars/behold/pain1.gif
+	frame	data/chars/behold/fall1.gif
+	frame	data/chars/behold/fall2.gif
+	frame	data/chars/behold/fall2.gif
+	delay	80
+	frame	data/chars/behold/d1
+	frame	data/chars/behold/d2
+	frame	data/chars/behold/d3
+
+
+
+

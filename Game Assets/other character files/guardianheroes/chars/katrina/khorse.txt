@@ -1,0 +1,136 @@
+
+name	  khorse
+health 	 150
+speed	 14
+#running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/katrina/icon1
+diesound    data/chars/burnking/sounds/die.wav
+animal	1
+modelflag 1
+atchain 1 1 1 1
+weaploss	2
+facing 1
+nodrop	1
+falldie	2
+load	winds
+knife	winds
+
+alternatepal	data/chars/katrina/horse/testpal
+
+
+#done//
+
+anim get
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+	frame	data/chars/katrina/horse/run1
+	frame	data/chars/katrina/horse/run2
+	frame	data/chars/katrina/horse/run3
+	frame	data/chars/katrina/horse/run4
+        frame	data/chars/katrina/horse/run5
+        frame	data/chars/katrina/horse/run6
+
+
+
+anim idle
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/katrina/horse/run1
+	frame	data/chars/katrina/horse/run2
+	frame	data/chars/katrina/horse/run3
+	frame	data/chars/katrina/horse/run4
+        frame	data/chars/katrina/horse/run5
+        frame	data/chars/katrina/horse/run6
+
+	
+
+#done//
+anim run
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/katrina/horse/run1
+	frame	data/chars/katrina/horse/run2
+	frame	data/chars/katrina/horse/run3
+	frame	data/chars/katrina/horse/run4
+        frame	data/chars/katrina/horse/run5
+        frame	data/chars/katrina/horse/run6
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	3
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/katrina/horse/atk1
+	frame	data/chars/katrina/horse/atk2
+	frame	data/chars/katrina/horse/atk3
+	frame	data/chars/katrina/horse/atk4
+	frame	data/chars/katrina/horse/atk5
+	frame	data/chars/katrina/horse/atk6
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	3
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/katrina/horse/atk1
+	frame	data/chars/katrina/horse/atk2
+	frame	data/chars/katrina/horse/atk3
+	frame	data/chars/katrina/horse/atk4
+	frame	data/chars/katrina/horse/atk5
+	frame	data/chars/katrina/horse/atk6
+
+
+anim fall
+	loop	0
+	bbox 	147 100 100 100
+	delay	7
+	offset  87 175
+	frame	data/chars/katrina/horse/die1
+
+anim death
+	loop	0
+	bbox 	147 100 100 100
+	delay	7
+	offset  87 175
+	frame	data/chars/katrina/horse/die1
+
+anim pain
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/katrina/horse/pain1
+	frame	data/chars/katrina/horse/pain2
+	frame	data/chars/katrina/horse/pain3
+	frame	data/chars/katrina/horse/pain4
+	frame	data/chars/katrina/horse/pain5
+	frame	data/chars/katrina/horse/pain6
+
+
+
+
+

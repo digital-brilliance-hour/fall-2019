@@ -1,0 +1,191 @@
+name	villgod2
+health	1500
+speed	10
+running	15	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+aggression 1000
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+nopain 1
+aimove chase
+subtype chase
+icon	data/chars/villgod2/icon.gif
+
+knockdowncount 1
+offscreenkill 10000
+palette	data/chars/villgod2/idle1.gif
+remap data/chars/villgod2/idle1.gif data/chars/villgod2/testpal.gif
+remap data/chars/villgod2/idle1.gif data/chars/villgod2/testpal2.gif
+
+falldie 2
+nodieblink 1
+
+
+anim idle
+	loop	1
+	offset  158 200
+	bbox 	99 93 130 109
+	delay	20
+	frame	data/chars/villgod2/idle1.gif
+	frame	data/chars/villgod2/idle2.gif
+	frame	data/chars/villgod2/idle3.gif
+	frame	data/chars/villgod2/idle2.gif
+
+
+anim walk
+	loop	1
+	offset  158 200
+	bbox 	99 93 130 109
+	delay	16
+	frame	data/chars/villgod2/idle1.gif
+	frame	data/chars/villgod2/idle2.gif
+	frame	data/chars/villgod2/idle3.gif
+	frame	data/chars/villgod2/idle2.gif
+
+anim run
+	loop	1
+	offset	158 200
+	bbox 	103 101 130 110
+	delay	13
+	frame	data/chars/villgod2/run1.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	delay	13
+	offset	158 200
+	bbox	0 0 0 0
+	frame	data/chars/villgod2/fall1.gif
+	delay	1000
+	frame	data/chars/villgod2/fall2.gif
+	offset	158 193
+	delay	20
+	frame	data/chars/villgod2/fall3.gif
+	frame	data/chars/villgod2/fall3.gif
+
+
+anim death
+	loop	0
+	offset  158 193
+        custknife xx
+        throwframe 0 1
+        delay   40
+	frame	data/chars/villgod2/fall3.gif
+        delay   350
+	frame	data/chars/villgod2/fall3.gif
+        delay   200
+	frame	data/chars/misc/end.gif
+
+anim rise
+	loop	0
+	delay	16
+	offset	158 200
+	frame	data/chars/villgod2/fall1.gif
+
+anim attack2
+
+        custknife arf
+        throwframe 0 120
+
+
+        subentity shock
+        spawnframe 7 128 1 1 0
+
+        hitflash pflash
+        hitfx   data/sounds/lol.wav
+        range   0 150
+	loop	0
+	delay	9
+	offset	158 200
+	bbox	94 99 130 110
+        quakeframe 6 5 4
+	frame	data/chars/villgod2/atk2.gif
+	frame	data/chars/villgod2/atk2.gif
+	frame	data/chars/villgod2/atk2.gif
+	frame	data/chars/villgod2/atk2.gif
+	frame	data/chars/villgod2/atk2.gif
+	frame	data/chars/villgod2/atk2.gif
+        sound   data/sounds/stomp.wav
+	attack	133 61 167 143 50 1 1 0 20
+        delay   6
+	frame	data/chars/villgod2/atk3.gif
+	frame	data/chars/villgod2/atk4.gif
+        delay   9
+	attack	0 0 0 0 0 0
+	frame	data/chars/villgod2/atk4.gif
+	frame	data/chars/villgod2/atk4.gif
+	frame	data/chars/villgod2/atk4.gif
+	frame	data/chars/villgod2/atk4.gif
+	frame	data/chars/villgod2/atk4.gif
+
+anim attack3
+        hitflash pflash
+        hitfx   data/sounds/fist2.wav
+        range   0 150
+	loop	0
+	delay	8
+	offset	158 200
+	bbox	108 99 130 110
+
+	frame	data/chars/villgod2/2atk1.gif
+	frame	data/chars/villgod2/2atk1.gif
+	frame	data/chars/villgod2/2atk1.gif
+
+	frame	data/chars/villgod2/2atk2.gif
+	attack	123 103 165 100 30 1 0 0 20
+	frame	data/chars/villgod2/2atk3.gif
+	frame	data/chars/villgod2/2atk4.gif
+	attack	0 0 0 0 0 0
+        offset  158 200
+	bbox 	99 93 130 109
+	delay	20
+	frame	data/chars/villgod2/idle1.gif
+	frame	data/chars/villgod2/idle2.gif
+	frame	data/chars/villgod2/idle3.gif
+	frame	data/chars/villgod2/idle2.gif
+
+anim attack1
+        custknife arf
+        throwframe 0 150
+
+        subentity eflame
+        spawnframe 10 -75 1 1 0
+
+        hitflash bflash
+        hitfx   data/sounds/fist2.wav
+        range   0 150
+	loop	0
+	delay	14
+	offset	158 200
+	bbox 	99 93 130 109
+	frame	data/chars/villgod2/spec1.gif
+	frame	data/chars/villgod2/spec2.gif
+	frame	data/chars/villgod2/spec3.gif
+	sound	data/sounds/villgod2.wav
+	frame	data/chars/villgod2/spec4.gif
+	burn	180 103 76 100 30 1 0 0 10
+	frame	data/chars/villgod2/spec5.gif
+	frame	data/chars/villgod2/spec6.gif
+	frame	data/chars/villgod2/spec7.gif
+	burn	0 0 0 0 0 0
+	frame	data/chars/villgod2/spec8.gif
+
+	frame	data/chars/villgod2/spec7.gif
+	frame	data/chars/villgod2/spec6.gif
+	frame	data/chars/villgod2/spec5.gif
+        delay   30
+	frame	data/chars/villgod2/spec4.gif
+
+        offset  158 200
+	delay	20
+	frame	data/chars/villgod2/idle1.gif
+	frame	data/chars/villgod2/idle2.gif
+	frame	data/chars/villgod2/idle3.gif
+	frame	data/chars/villgod2/idle2.gif
+
+

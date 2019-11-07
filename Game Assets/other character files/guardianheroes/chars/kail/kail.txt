@@ -1,0 +1,342 @@
+name	kail
+health	500
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/kail/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/kail/idle1.gif
+
+
+alternatepal	data/chars/kail/testpal.gif
+alternatepal	data/chars/kail/testpal2.gif
+alternatepal	data/chars/kail/testpal3.gif
+alternatepal	data/chars/kail/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  200 934
+	bbox 	182 831 38 90
+	delay	16
+	frame	data/chars/kail/idle1.gif
+	frame	data/chars/kail/idle2.gif
+	frame	data/chars/kail/idle3.gif
+	frame	data/chars/kail/idle4.gif
+	frame	data/chars/kail/idle3.gif
+	frame	data/chars/kail/idle2.gif
+
+
+
+
+anim walk
+	loop	1
+	offset	196 936
+	bbox 	182 831 38 90
+	delay	8
+	frame	data/chars/kail/walk1.gif
+	frame	data/chars/kail/walk2.gif
+	frame	data/chars/kail/walk3.gif
+	frame	data/chars/kail/walk4.gif
+	frame	data/chars/kail/walk5.gif
+	frame	data/chars/kail/walk6.gif
+	frame	data/chars/kail/walk7.gif
+	frame	data/chars/kail/walk8.gif
+	frame	data/chars/kail/walk9.gif
+	frame	data/chars/kail/walk10.gif
+	frame	data/chars/kail/walk11.gif
+
+
+
+
+anim run
+	loop	1
+	offset	196 936
+	bbox 	182 831 38 90
+	delay	6
+	frame	data/chars/kail/walk1.gif
+	frame	data/chars/kail/walk2.gif
+	frame	data/chars/kail/walk3.gif
+	frame	data/chars/kail/walk4.gif
+	frame	data/chars/kail/walk5.gif
+	frame	data/chars/kail/walk6.gif
+	frame	data/chars/kail/walk7.gif
+	frame	data/chars/kail/walk8.gif
+	frame	data/chars/kail/walk9.gif
+	frame	data/chars/kail/walk10.gif
+	frame	data/chars/kail/walk11.gif
+
+anim runattack
+	range	0 170
+	loop	0
+	delay	16
+	move	7
+	offset	199 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/2atk1.gif
+	attack	192 848 170 78 10 0 0 0 24
+	frame	data/chars/kail/2atk2.gif
+	attack	0 0 0 0 0 0
+	attack	192 848 170 78 20 1 0 0 24
+	frame	data/chars/kail/2atk3.gif
+	frame	data/chars/kail/2atk4.gif
+	frame	data/chars/kail/2atk5.gif
+	frame	data/chars/kail/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/2atk7.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	220 948
+	bbox 	182 831 38 90
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/kail/block1.gif
+	offset	220 948
+	frame	data/chars/kail/block2.gif
+	move    -8
+	offset	222 948
+	frame	data/chars/kail/block2.gif
+	offset	220 948
+	frame	data/chars/kail/block2.gif
+	move    -6
+	offset	222 948
+	frame	data/chars/kail/block2.gif
+	offset	220 948
+	frame	data/chars/kail/block2.gif
+	move    -4
+	offset	222 948
+	frame	data/chars/kail/block2.gif
+	offset	220 948
+	frame	data/chars/kail/block2.gif
+	offset	222 948
+	move    -2
+	frame	data/chars/kail/block2.gif
+	offset	222 948
+	frame	data/chars/kail/block2.gif
+	offset	220 948
+	delay   20
+	move    0
+	frame	data/chars/kail/block1.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	214 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/pain1.gif
+
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	214 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/fall1.gif
+	frame	data/chars/kail/fall2.gif
+	delay	1000
+	frame	data/chars/kail/fall3.gif
+	delay	20
+	frame	data/chars/kail/fall4.gif
+	frame	data/chars/kail/fall4.gif
+
+anim death
+	loop	0
+	delay	15
+	offset	214 936
+	frame	data/chars/kail/d1
+	frame	data/chars/kail/d2
+	frame	data/chars/kail/d3
+	frame	data/chars/kail/d4
+	frame	data/chars/kail/d5
+
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	214 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/rise1.gif
+	frame	data/chars/kail/rise2.gif
+
+anim riseattack
+	range	0 120
+	loop	0
+	delay	8
+	offset	200 933
+	bbox 	182 831 38 90
+	frame	data/chars/kail/atk1.gif
+	frame	data/chars/kail/atk2.gif
+	attack	187 833 147 90 25 1 0 0 20
+	frame	data/chars/kail/atk3.gif
+	frame	data/chars/kail/atk4.gif
+	frame	data/chars/kail/atk5.gif
+	frame	data/chars/kail/atk6.gif
+	frame	data/chars/kail/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim attack1
+	range	0 120
+	loop	0
+	delay	9
+	offset	200 933
+	bbox 	182 831 38 90
+	frame	data/chars/kail/atk1.gif
+	frame	data/chars/kail/atk2.gif
+	attack	187 833 147 90 25 1 0 0 20
+	frame	data/chars/kail/atk3.gif
+	frame	data/chars/kail/atk4.gif
+	frame	data/chars/kail/atk5.gif
+	frame	data/chars/kail/atk6.gif
+	frame	data/chars/kail/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim special
+	range	0 280
+	loop	0
+	delay	12
+	offset	198 934
+	bbox 	182 831 38 90
+	frame	data/chars/kail/3atk1.gif
+	frame	data/chars/kail/3atk2.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk4.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk6.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk8.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk10.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk11.gif
+	attack	0 0 0 0 0 0
+
+anim throw
+	range	0 100
+	loop	0
+	delay	16
+	offset	199 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/2atk1.gif
+	attack	192 848 170 78 10 0 0 0 24
+	frame	data/chars/kail/2atk2.gif
+	attack	0 0 0 0 0 0
+	attack	192 848 170 78 20 1 0 0 24
+	frame	data/chars/kail/2atk3.gif
+	frame	data/chars/kail/2atk4.gif
+	frame	data/chars/kail/2atk5.gif
+	frame	data/chars/kail/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/2atk7.gif
+
+
+anim attack2
+	range	120 170
+	loop	0
+	delay	14
+	offset	199 936
+	bbox 	182 831 38 90
+	frame	data/chars/kail/2atk1.gif
+	attack	192 848 170 78 10 0 0 0 38
+	frame	data/chars/kail/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/2atk3.gif
+	attack	192 848 170 78 20 1 0 0 24
+	frame	data/chars/kail/2atk4.gif
+	frame	data/chars/kail/2atk5.gif
+	frame	data/chars/kail/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/2atk7.gif
+
+anim attack3
+	range	180 280
+	loop	0
+	delay	10
+	offset	198 934
+	bbox 	182 831 38 90
+	frame	data/chars/kail/3atk1.gif
+	frame	data/chars/kail/3atk2.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk4.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk6.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk8.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk10.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk11.gif
+	attack	0 0 0 0 0 0
+
+
+anim upper
+	range	0 280
+	loop	0
+	delay	10
+	offset	198 934
+	bbox 	182 831 38 90
+	frame	data/chars/kail/3atk1.gif
+	frame	data/chars/kail/3atk2.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk4.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk6.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk8.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kail/3atk10.gif
+	attack	131 725 280 200 25 1 0 0 24
+	frame	data/chars/kail/3atk11.gif
+	attack	0 0 0 0 0 0

@@ -1,0 +1,211 @@
+name	warork
+health	150
+speed	11
+#running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 50
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/warork/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+palette	data/chars/warork/idle1.gif
+
+
+alternatepal	data/chars/warork/testpal.gif
+alternatepal	data/chars/warork/testpal2.gif
+#alternatepal	data/chars/warork/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  165 205
+	bbox 	142 105 82 121
+	delay	22
+	frame	data/chars/warork/idle1.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  165 205
+	bbox 	142 105 82 121
+	delay	16
+	frame	data/chars/warork/walk1.gif
+	frame	data/chars/warork/walk2.gif
+	frame	data/chars/warork/walk3.gif
+	frame	data/chars/warork/walk4.gif
+	frame	data/chars/warork/walk5.gif
+	frame	data/chars/warork/walk6.gif
+	frame	data/chars/warork/walk7.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  165 205
+	bbox 	142 105 82 121
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/warork/block1.gif
+	offset	167 205
+	frame	data/chars/warork/block2.gif
+	move    -8
+	offset  165 205
+	frame	data/chars/warork/block2.gif
+	offset	167 205
+	frame	data/chars/warork/block2.gif
+	move    -6
+	offset  165 205
+	frame	data/chars/warork/block2.gif
+	offset	167 205
+	frame	data/chars/warork/block2.gif
+	move    -4
+	offset  165 205
+	frame	data/chars/warork/block2.gif
+	offset	167 205
+	frame	data/chars/warork/block2.gif
+	offset  165 205
+	move    -2
+	frame	data/chars/warork/block2.gif
+	offset	167 205
+	frame	data/chars/warork/block2.gif
+	offset  165 205
+	delay   20
+	move    0
+	frame	data/chars/warork/block1.gif
+
+anim pain
+	loop	0
+	offset  165 205
+	bbox 	142 105 82 121
+	frame	data/chars/warork/pain1.gif
+	frame	data/chars/warork/pain2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  165 205
+	bbox 	142 105 82 121
+	frame	data/chars/warork/fall1.gif
+	delay	1000
+	frame	data/chars/warork/fall2.gif
+	delay	20
+	frame	data/chars/warork/fall3.gif
+	frame	data/chars/warork/fall3.gif
+
+
+
+anim death
+	loop	0
+	offset  165 205
+	delay	18
+	move	-15
+	frame	data/chars/warork/d1
+	frame	data/chars/warork/d2
+	frame	data/chars/warork/d3
+	move	0
+	frame	data/chars/warork/d4
+
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  165 205
+#	bbox 	142 105 82 121
+	frame	data/chars/warork/rise1.gif
+
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	8
+	offset  165 205
+#	bbox 	142 105 82 121
+	frame	data/chars/warork/atk1.gif
+	frame	data/chars/warork/atk2.gif
+	frame	data/chars/warork/atk3.gif
+	attack	203 113 102 116 25 1 0 0 26
+	frame	data/chars/warork/atk4.gif
+	frame	data/chars/warork/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/warork/atk6.gif
+	frame	data/chars/warork/atk7.gif
+	frame	data/chars/warork/atk3.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	9
+	offset  165 205
+	bbox 	142 105 82 121
+	frame	data/chars/warork/atk1.gif
+	frame	data/chars/warork/atk2.gif
+	frame	data/chars/warork/atk3.gif
+	attack	203 113 102 116 25 1 0 0 26
+	dropv	2 4 0
+	frame	data/chars/warork/atk4.gif
+	frame	data/chars/warork/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/warork/atk6.gif
+	frame	data/chars/warork/atk7.gif
+	frame	data/chars/warork/atk3.gif
+
+
+
+anim attack2
+	range	90 190
+	loop	0
+	delay	10
+	offset  165 205
+	bbox 	142 105 82 121
+	frame	data/chars/warork/2atk1.gif
+	frame	data/chars/warork/2atk2.gif
+	attack	188 52 190 182 25 1 0 0 26
+	dropv	2 4 0
+	frame	data/chars/warork/2atk3.gif
+	frame	data/chars/warork/2atk4.gif
+	frame	data/chars/warork/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/warork/2atk6.gif
+
+anim special
+	range	0 190
+	loop	0
+	delay	9
+	offset  165 205
+	bbox 	142 105 82 121
+	frame	data/chars/warork/2atk1.gif
+	frame	data/chars/warork/2atk2.gif
+	attack	188 52 190 182 25 1 0 0 26
+	dropv	2 4 0
+	frame	data/chars/warork/2atk3.gif
+	frame	data/chars/warork/2atk4.gif
+	frame	data/chars/warork/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/warork/2atk6.gif
+
+
+
+
+
+
+

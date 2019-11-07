@@ -1,0 +1,169 @@
+
+name	  kbull
+health 	 150
+speed	 12
+running	23	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/katrina/icon1
+diesound    data/chars/burnking/sounds/die.wav
+animal	1
+modelflag 1
+atchain 1 1 2 3
+
+alternatepal	data/chars/katrina/bull/testpal
+
+#done//
+
+anim get
+	loop	0
+	offset  88 223
+	delay	20
+	sound	Data/sounds/bull.wav
+	frame	data/chars/katrina/bull/pain1
+	frame	data/chars/katrina/bull/pain2
+
+anim idle
+	loop	1
+	offset        129 227
+	bbox 	105 125 55 75
+	delay	15
+	frame	data/chars/katrina/bull/idle1
+	frame	data/chars/katrina/bull/idle2
+	frame	data/chars/katrina/bull/idle3
+	frame	data/chars/katrina/bull/idle4
+	frame	data/chars/katrina/bull/idle5
+	frame	data/chars/katrina/bull/idle6
+	frame	data/chars/katrina/bull/idle7
+	frame	data/chars/katrina/bull/idle8
+	frame	data/chars/katrina/bull/idle9
+	frame	data/chars/katrina/bull/idle10
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  141 175
+	bbox 	105 125 55 75
+	delay	7
+	frame	data/chars/katrina/bull/walk1
+	frame	data/chars/katrina/bull/walk2
+	frame	data/chars/katrina/bull/walk3
+	frame	data/chars/katrina/bull/walk4
+        frame	data/chars/katrina/bull/walk5
+        frame	data/chars/katrina/bull/walk6
+        frame	data/chars/katrina/bull/walk7
+	frame	data/chars/katrina/bull/walk8
+
+anim run
+	loop	1
+	offset  147 181
+	bbox 	105 125 55 75
+	delay	7
+	attack	185 95 100 80 10 1 0 0 20
+	frame	data/chars/katrina/bull/run1
+	frame	data/chars/katrina/bull/run2
+	frame	data/chars/katrina/bull/run3
+	frame	data/chars/katrina/bull/run4
+	frame	data/chars/katrina/bull/run5
+	frame	data/chars/katrina/bull/run6
+	attack	0 0 0 0 0 0
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	5
+	move	7
+	offset	126 226
+	bbox 	105 125 55 75
+	sound	Data/sounds/bull.wav
+	frame	data/chars/katrina/bull/2atk1
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/katrina/bull/2atk2
+	frame	data/chars/katrina/bull/2atk3
+	frame	data/chars/katrina/bull/2atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/bull/2atk5
+	frame	data/chars/katrina/bull/2atk6
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	123 196
+	bbox 	105 125 55 75
+	frame	data/chars/katrina/bull/atk1
+	attack	169 115 150 85 15 0 0 0 14
+	frame	data/chars/katrina/bull/atk2
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/bull/atk3
+      
+anim attack2
+	range	5 150
+	loop	0
+	delay	5
+	offset	126 226
+	bbox 	105 125 55 75
+	sound	Data/sounds/bull.wav
+	frame	data/chars/katrina/bull/2atk1
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/katrina/bull/2atk2
+	frame	data/chars/katrina/bull/2atk3
+	frame	data/chars/katrina/bull/2atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/bull/2atk5
+	frame	data/chars/katrina/bull/2atk6
+
+anim attack3
+	range	5 150
+	loop	0
+	delay	5
+	offset	126 226
+	bbox 	105 125 55 75
+	sound	Data/sounds/bull.wav
+	frame	data/chars/katrina/bull/2atk1
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/katrina/bull/2atk2
+	frame	data/chars/katrina/bull/2atk3
+	frame	data/chars/katrina/bull/2atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/bull/2atk5
+	frame	data/chars/katrina/bull/2atk6
+
+anim special
+	range	5 150
+	loop	0
+	delay	5
+	offset	126 226
+	sound	Data/sounds/bull.wav
+	frame	data/chars/katrina/bull/2atk1
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/katrina/bull/2atk2
+	frame	data/chars/katrina/bull/2atk3
+	frame	data/chars/katrina/bull/2atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/bull/2atk5
+	frame	data/chars/katrina/bull/2atk6
+
+
+anim fall
+	loop	0
+	offset  88 223
+	delay	20
+	frame	data/chars/katrina/bull/pain1
+	frame	data/chars/katrina/bull/pain2
+
+anim pain
+	loop	0
+	offset  88 223
+	delay	20
+	frame	data/chars/katrina/bull/pain1
+	frame	data/chars/katrina/bull/pain2
+
+

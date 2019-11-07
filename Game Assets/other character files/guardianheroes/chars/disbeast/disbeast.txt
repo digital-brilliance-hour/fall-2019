@@ -1,0 +1,723 @@
+name	disbeast
+health	300
+speed	18
+type	enemy
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nopain 1
+falldie 2
+icon	data/chars/disbeast/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/dbdie.wav
+nodieblink 3
+fmap 1
+palette	data/chars/disbeast/idle1.gif
+alternatepal	data/chars/disbeast/testpal.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+#remap	data/chars/disbeast/idle1.gif   data/chars/disbeast/freeze.gif
+
+anim spawn
+	loop	0
+	offset	141 140
+	bbox	0 0 0 0
+	delay	1
+	quakeframe 27 10 3
+	move	0
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/disbeast/ju01.gif
+	frame	data/chars/disbeast/ju02.gif
+	frame	data/chars/disbeast/ju03.gif
+	frame	data/chars/disbeast/ju04.gif
+
+	delay	1
+	move	4
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju01.gif
+
+	move	0
+	sound data/sounds/dbroar.wav
+	frame	data/chars/disbeast/roar1.gif
+	delay	2
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	delay	4
+	frame	data/chars/disbeast/roar4.gif
+
+anim idle
+	loop	1
+	offset	141 140
+	bbox	113 93 112 55
+	delay	6
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+
+anim walk
+	loop	1
+	offset	141 140
+	bbox	113 93 112 55
+	delay	2
+	frame	data/chars/disbeast/ju01.gif
+	frame	data/chars/disbeast/ju02.gif
+	frame	data/chars/disbeast/ju03.gif
+	frame	data/chars/disbeast/ju04.gif
+
+	delay	3
+	offset	141 140
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 142
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 144
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 146
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 148
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 150
+	frame	data/chars/disbeast/ju05.gif
+	offset	141 150
+	frame	data/chars/disbeast/ju06.gif
+	offset	141 148
+	frame	data/chars/disbeast/ju06.gif
+	offset	141 146
+	frame	data/chars/disbeast/ju06.gif
+	offset	141 144
+	frame	data/chars/disbeast/ju06.gif
+	offset	141 142
+	frame	data/chars/disbeast/ju06.gif
+	offset	141 140
+	frame	data/chars/disbeast/ju06.gif
+
+anim jumpdelay
+	loop	0
+	offset	141 140
+	bbox	113 93 112 55
+	delay	12
+	frame	data/chars/disbeast/ju01.gif
+	delay	4
+	frame	data/chars/disbeast/ju02.gif
+	frame	data/chars/disbeast/ju03.gif
+	frame	data/chars/disbeast/ju04.gif
+
+anim jump
+	loop	0
+	offset	141 140
+	bbox	113 93 112 55
+	delay	4
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju05.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+	frame	data/chars/disbeast/ju06.gif
+
+anim jumpland
+	loop	0
+	offset	141 140
+	bbox	113 93 112 55
+	delay	12
+	frame	data/chars/disbeast/ju01.gif
+
+anim block
+	loop	0
+	delay	3
+	offset	141 140
+	bbox	113 93 112 55
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/disbeast/ju01.gif
+	offset	139 140
+	frame	data/chars/disbeast/ju01.gif
+	offset	141 140
+	move    -8
+	frame	data/chars/disbeast/ju01.gif
+	offset	139 140
+	frame	data/chars/disbeast/ju01.gif
+	offset	141 140
+	move    -6
+	frame	data/chars/disbeast/ju01.gif
+	offset	139 140
+	frame	data/chars/disbeast/ju01.gif
+	move    -4
+	offset	141 140
+	frame	data/chars/disbeast/ju01.gif
+	offset	139 140
+	frame	data/chars/disbeast/ju01.gif
+	offset	141 140
+	move    -2
+	frame	data/chars/disbeast/ju01.gif
+	offset	139 140
+	frame	data/chars/disbeast/ju01.gif
+	offset	141 140
+	delay   20
+	move    0
+	frame	data/chars/disbeast/ju01.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	141 140
+	bbox	113 93 112 55
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	delay   23
+	frame	data/chars/disbeast/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	141 140
+	bbox	113 93 112 55
+	move    -10
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -8
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -6
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	move    -4
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -2
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	delay   20
+	move    0
+	frame	data/chars/disbeast/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	141 140
+	bbox	113 93 112 55
+	frame	data/chars/disbeast/pain1.gif
+
+anim burn
+	loop	0
+	offset	141 140
+	delay   4
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	frame	data/chars/disbeast/fall1.gif
+	delay   20
+	frame	data/chars/disbeast/fall3.gif
+	frame	data/chars/disbeast/fall2.gif
+
+anim bpain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	141 140
+	bbox	113 93 112 55
+	move    -10
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -8
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -6
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	move    -4
+	offset	141 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	move    -2
+	frame	data/chars/disbeast/pain1.gif
+	offset	139 140
+	frame	data/chars/disbeast/pain1.gif
+	offset	141 140
+	delay   20
+	move    0
+	frame	data/chars/disbeast/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	141 140
+	frame	data/chars/disbeast/fall1.gif
+	delay	20
+	frame	data/chars/disbeast/fall3.gif
+        delay   20
+	frame	data/chars/disbeast/fall3.gif
+	frame	data/chars/disbeast/fall2.gif
+
+anim death
+	loop	0
+	offset	141 140
+	quakeframe 26 10 5
+	delay	12
+	frame	data/chars/disbeast/rise1.gif
+	frame	data/chars/disbeast/rise2.gif
+	delay	4
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	141 140
+	frame	data/chars/disbeast/rise3.gif
+	offset	139 140
+	frame	data/chars/disbeast/rise3.gif
+      delay   12
+	offset	141 140
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/disbeast/fall3.gif
+	frame	data/chars/disbeast/fall2.gif
+	frame	data/chars/disbeast/fall3.gif
+      delay   150
+	frame	data/chars/disbeast/fall2.gif
+
+anim rise
+	loop	0
+	offset	141 140
+	delay	12
+	frame	data/chars/disbeast/fall2.gif
+	frame	data/chars/disbeast/rise1.gif
+	frame	data/chars/disbeast/rise2.gif
+	frame	data/chars/disbeast/rise3.gif
+	frame	data/chars/disbeast/rise4.gif
+	delay	35
+	frame	data/chars/disbeast/idle1.gif
+
+anim attack1
+	range	0 250
+	loop	0
+	delay	6
+	offset	141 140
+	bbox	113 93 112 55
+	sound   data/sounds/dbhit.wav
+	frame	data/chars/disbeast/a101.gif
+	frame	data/chars/disbeast/a102.gif
+	frame	data/chars/disbeast/a103.gif
+	frame	data/chars/disbeast/a104.gif
+	sound   data/sounds/punch1.wav
+	attack  116 82 330 66 20 0 0 0 15
+	frame	data/chars/disbeast/a105.gif
+	frame	data/chars/disbeast/a106.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/disbeast/a104.gif
+	delay	6
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+
+anim attack2
+	range	0 250
+	loop	0
+	delay	6
+	offset	141 140
+	bbox	113 93 112 55
+	sound   data/sounds/dbhit.wav
+	frame	data/chars/disbeast/a201.gif
+	frame	data/chars/disbeast/a202.gif
+	frame	data/chars/disbeast/a203.gif
+	frame	data/chars/disbeast/a204.gif
+	sound   data/sounds/punch1.wav
+	attack  116 82 330 66 20 0 0 0 15
+	frame	data/chars/disbeast/a205.gif
+	frame	data/chars/disbeast/a206.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/disbeast/a204.gif
+	delay	6
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+	frame	data/chars/disbeast/idle1.gif
+	frame	data/chars/disbeast/idle2.gif
+	frame	data/chars/disbeast/idle3.gif
+	frame	data/chars/disbeast/idle4.gif
+
+anim riseattack
+	range	0 250
+	loop	0
+	delay	6
+	offset	141 140
+	bbox	0 0 0 0
+	frame	data/chars/disbeast/a101.gif
+	frame	data/chars/disbeast/a102.gif
+	frame	data/chars/disbeast/a103.gif
+	frame	data/chars/disbeast/a104.gif
+	sound   data/sounds/punch1.wav
+	attack  116 82 330 66 10 1 0 15
+	frame	data/chars/disbeast/a105.gif
+	frame	data/chars/disbeast/a106.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/disbeast/a104.gif
+
+	delay	4
+	sound data/sounds/dbroar.wav
+	frame	data/chars/disbeast/roar1.gif
+	delay	2
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	frame	data/chars/disbeast/roar2.gif
+	frame	data/chars/disbeast/roar3.gif
+	delay	4
+	frame	data/chars/disbeast/roar4.gif
+

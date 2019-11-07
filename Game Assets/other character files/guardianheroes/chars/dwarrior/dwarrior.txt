@@ -1,0 +1,156 @@
+name	Dwarrior
+diesound data/sounds/DIE3.wav
+health	150
+speed	6
+type	enemy
+shadow	5
+icon	data/chars/dwarrior/icon.gif
+falldie 1
+nodieblink 3
+
+
+anim idle
+	loop	1
+	delay	13
+	offset	96 153
+	bbox	71 31 60 118
+	frame	data/chars/dwarrior/std1.gif
+	frame	data/chars/dwarrior/std2.gif
+	frame	data/chars/dwarrior/std3.gif
+	frame	data/chars/dwarrior/std4.gif
+	frame	data/chars/dwarrior/std3.gif
+	frame	data/chars/dwarrior/std2.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	78 156
+	bbox	67 39 48 116
+	frame	data/chars/dwarrior/wlk1.gif
+        frame	data/chars/dwarrior/wlk2.gif
+	frame	data/chars/dwarrior/wlk3.gif
+        frame	data/chars/dwarrior/wlk4.gif 
+	frame	data/chars/dwarrior/wlk5.gif
+        frame	data/chars/dwarrior/wlk6.gif
+	frame	data/chars/dwarrior/wlk7.gif
+        frame	data/chars/dwarrior/wlk8.gif
+	frame	data/chars/dwarrior/wlk9.gif
+        frame	data/chars/dwarrior/wlk8.gif
+	frame	data/chars/dwarrior/wlk7.gif
+        frame	data/chars/dwarrior/wlk6.gif
+	frame	data/chars/dwarrior/wlk5.gif
+        frame	data/chars/dwarrior/wlk4.gif
+	frame	data/chars/dwarrior/wlk3.gif
+        frame	data/chars/dwarrior/wlk2.gif
+
+anim attack1 
+	loop	0     
+	delay	30
+	offset	152 154
+        bbox	132 33 40 124
+        range	0 210
+	frame	data/chars/dwarrior/atk1.gif
+        delay   3
+        move    10
+	frame	data/chars/dwarrior/atk2.gif
+        move    10
+	sound	data/sounds/Roar.wav
+	frame	data/chars/dwarrior/atk2.gif
+        move    10
+        attack	173 71 126 68 30 1
+	frame	data/chars/dwarrior/atk3.gif
+        move    10
+        attack	173 71 126 68 30 1
+	frame	data/chars/dwarrior/atk3.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk3.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+        attack	173 71 126 68 30 1
+        move    10
+	frame	data/chars/dwarrior/atk4.gif
+	offset	182 154
+        move 0 
+        attack	0 0 0 0 0 0
+	delay	20
+	frame	data/chars/dwarrior/atk4.gif
+
+
+anim special
+	loop	0
+	delay	30
+	offset	89 190
+	frame	data/chars/dwarrior/rise.gif
+	sound	data/sounds/Roar.wav
+	blast	99 65 118 125 28
+	offset	148 187
+	frame	data/chars/dwarrior/sp.gif
+
+anim pain
+	loop	0
+	offset	117 161
+	bbox	72 36 65 123
+	delay	20
+        frame	data/chars/dwarrior/dmg1.gif
+
+
+anim fall
+	loop	0
+	offset	127 137
+	delay	20
+	attack	80 76 75 51 15 1
+	frame	data/chars/dwarrior/dmg2.gif
+	frame	data/chars/dwarrior/dmg3.gif
+	frame	data/chars/dwarrior/dmg4.gif
+	frame	data/chars/dwarrior/dmg5.gif
+
+
+anim rise
+	loop	0
+	delay	50
+	offset	127 137
+	frame	data/chars/dwarrior/dmg5.gif
+        delay	20
+	offset	89 190
+	frame	data/chars/dwarrior/rise.gif
+
+anim death
+	loop	0
+	offset	127 137
+	delay	20
+	attack	80 76 75 51 15 1
+	frame	data/chars/dwarrior/d1
+	frame	data/chars/dwarrior/d2
+	frame	data/chars/dwarrior/d3
+	frame	data/chars/dwarrior/d4
+	frame	data/chars/dwarrior/d5
+
+
+
+

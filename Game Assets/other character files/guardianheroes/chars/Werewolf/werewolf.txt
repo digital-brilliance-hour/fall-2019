@@ -1,0 +1,231 @@
+name	werewolf
+health	200
+speed	12
+type	enemy
+shadow	5
+icon	data/chars/werewolf/icon.gif
+aggression 40
+gfxshadow	1
+aimove	chase
+#cantgrab 1
+nodieblink 3
+falldie	1
+diesound data/sounds/die1.wav
+palette	data/chars/werewolf/pal.gif
+
+alternatepal	data/chars/werewolf/testpal.gif
+alternatepal	data/chars/werewolf/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  68 82
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/werewolf/idle1.gif
+	offset  71 82
+	frame	data/chars/werewolf/idle2.gif
+	offset  71 82
+	frame	data/chars/werewolf/idle3.gif
+	offset  73 81
+	frame	data/chars/werewolf/idle4.gif
+	offset  73 81
+	frame	data/chars/werewolf/idle5.gif
+	offset  71 81
+	frame	data/chars/werewolf/idle6.gif
+	offset  71 81
+	frame	data/chars/werewolf/idle7.gif
+	offset  55 79
+	frame	data/chars/werewolf/idle8.gif
+	offset  55 79
+	frame	data/chars/werewolf/idle9.gif
+	offset  47 79
+	frame	data/chars/werewolf/idle10.gif
+	offset  47 79
+	frame	data/chars/werewolf/idle11.gif
+	offset  47 78
+	frame	data/chars/werewolf/idle12.gif
+	offset  47 78
+	frame	data/chars/werewolf/idle13.gif
+	offset  47 78
+	frame	data/chars/werewolf/idle12.gif
+	offset  47 79
+	frame	data/chars/werewolf/idle11.gif
+	offset  47 79
+	frame	data/chars/werewolf/idle10.gif
+	offset  55 79
+	frame	data/chars/werewolf/idle9.gif
+	offset  55 79
+	frame	data/chars/werewolf/idle8.gif
+	offset  71 81
+	frame	data/chars/werewolf/idle7.gif
+	offset  71 81
+	frame	data/chars/werewolf/idle6.gif
+	offset  73 81
+	frame	data/chars/werewolf/idle5.gif
+	offset  73 81
+	frame	data/chars/werewolf/idle4.gif
+	offset  71 82
+	frame	data/chars/werewolf/idle3.gif
+	offset  71 82
+	frame	data/chars/werewolf/idle2.gif
+
+
+
+	
+anim walk
+	loop	1
+	offset  79 71
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/werewolf/walk1.gif
+	offset  86 67
+	frame	data/chars/werewolf/walk2.gif
+	offset  91 60
+	frame	data/chars/werewolf/walk3.gif
+	offset  89 57
+	frame	data/chars/werewolf/walk4.gif
+	offset  85 58
+	frame	data/chars/werewolf/walk5.gif
+	offset  83 58
+	frame	data/chars/werewolf/walk6.gif
+	offset  85 57
+	frame	data/chars/werewolf/walk7.gif
+	offset  91 58
+	frame	data/chars/werewolf/walk8.gif
+	offset  91 58
+	frame	data/chars/werewolf/walk9.gif
+	offset  93 60
+	frame	data/chars/werewolf/walk10.gif
+	offset  91 60
+	frame	data/chars/werewolf/walk11.gif
+	offset  90 60
+	frame	data/chars/werewolf/walk12.gif
+	offset  93 59
+	frame	data/chars/werewolf/walk13.gif
+	offset  91 59
+	frame	data/chars/werewolf/walk14.gif
+
+
+		
+anim pain
+	loop	0
+	offset	47 83
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/werewolf/pain1.gif
+	offset  82 73
+	frame	data/chars/werewolf/pain2.gif
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	52 89
+	ATTACK	27 32 82 87 15 1
+	bbox	12 10 58 90
+	delay	11
+	frame	data/chars/werewolf/fall1.gif
+	offset	56 102
+	frame	data/chars/werewolf/fall2.gif
+	offset	97 72
+	delay	100
+	frame	data/chars/werewolf/fall3.gif
+	offset	113 29
+	delay	20
+	frame	data/chars/werewolf/fall4.gif
+	frame	data/chars/werewolf/fall4.gif
+
+
+
+anim rise
+	loop	0
+	offset	43 116
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/werewolf/rise1.gif
+	offset	57 131
+	frame	data/chars/werewolf/rise2.gif
+	offset	36 118
+	frame	data/chars/werewolf/rise3.gif
+
+
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	8
+	offset	88 101
+	bbox	0 0 139 101
+	frame	data/chars/werewolf/atk1.gif
+	offset	75 98
+	frame	data/chars/werewolf/atk2.gif
+	offset	51 69
+	frame	data/chars/werewolf/atk3.gif
+	attack	80 0 100 61 10
+	offset	47 70
+	frame	data/chars/werewolf/atk4.gif
+	attack	0 0 0 0 0
+	offset	48 74
+	frame	data/chars/werewolf/atk5.gif
+	offset	51 76
+	frame	data/chars/werewolf/atk6.gif
+	attack	70 0 85 94 10
+	offset	50 96
+	frame	data/chars/werewolf/atk7.gif
+	attack	0 0 0 0 0 0
+	offset	51 78
+	frame	data/chars/werewolf/atk8.gif
+	offset	54 85
+	frame	data/chars/werewolf/atk9.gif
+	offset	75 88
+	frame	data/chars/werewolf/atk10.gif
+	offset	64 96
+	frame	data/chars/werewolf/atk11.gif
+	offset	56 99
+	frame	data/chars/werewolf/atk12.gif
+	attack	70 0 85 94 10 1
+	offset	47 97
+	frame	data/chars/werewolf/atk13.gif
+	offset	47 97
+	frame	data/chars/werewolf/atk14.gif
+	attack	0 0 0 0 0 0
+	offset	50 93
+	frame	data/chars/werewolf/atk15.gif
+	offset	47 89
+	frame	data/chars/werewolf/atk16.gif
+	offset	49 84
+	frame	data/chars/werewolf/atk17.gif
+	offset	46 89
+	frame	data/chars/werewolf/atk18.gif
+
+
+
+
+	
+anim death
+	loop	0
+	delay	16
+	move	-10
+	offset	52 89
+	frame	data/chars/werewolf/d1
+	offset	233 213
+	frame	data/chars/werewolf/d2
+	frame	data/chars/werewolf/d3
+	frame	data/chars/werewolf/d4
+	frame	data/chars/werewolf/d5
+	move	0
+	frame	data/chars/werewolf/d6
+
+
+
+
+			
+#anim throw
+
+
+	

@@ -1,0 +1,59 @@
+name    	 Neck
+health  	 10
+speedf   	 0
+nomove   	 1
+shadow   	 1
+type    	 npc
+death   	 1
+setlayer   	 2
+antigravity  	 100
+animationscript  data/scripts/escript.c
+
+palette	         data/chars/vehelits/vehelits.gif
+alternatepal	 data/chars/vehelits/gargoyle.gif
+alternatepal	 data/chars/vehelits/belial.gif
+alternatepal	 data/chars/vehelits/vbright.gif
+
+
+
+anim idle
+	loop	1
+	delay	1
+	offset	19 20
+        @cmd    suicidePar
+        @cmd    mapPar
+        @cmd    telechain
+	frame	data/chars/vehelits/vehebody.gif
+        @cmd    suicidePar
+        @cmd    mapPar
+        @cmd    telechain
+	frame	data/chars/vehelits/vehebody.gif
+
+
+anim death
+	delay	150
+        bouncefactor 2
+	offset	19 20
+        @cmd    degravity 0
+	frame	data/chars/vehelits/vehebody.gif
+        @cmd    suicide
+	delay	10
+	frame	data/chars/misc/empty.gif
+
+anim pain
+	delay	10
+	offset	19 20
+	frame	data/chars/vehelits/vehebody.gif
+
+anim fall
+	offset	19 20
+	delay	1
+        @cmd    stop
+	frame	data/chars/vehelits/vehebody.gif
+        @cmd    beidle
+	frame	data/chars/vehelits/vehebody.gif
+
+anim rise
+	delay	5
+	offset	19 20
+	frame	data/chars/vehelits/vehebody.gif

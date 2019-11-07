@@ -1,0 +1,21 @@
+name	view
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/view/view1.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 160
+	frame	data/bgs/dragons/view/view1.gif
+	frame	data/bgs/dragons/view/view2.gif
+	frame	data/bgs/dragons/view/view3.gif
+	frame	data/bgs/dragons/view/view4.gif
+	frame	data/bgs/dragons/view/view5.gif
+	frame	data/bgs/dragons/view/view6.gif
+	frame	data/bgs/dragons/view/view7.gif
+	frame	data/bgs/dragons/view/view8.gif
+	frame	data/bgs/dragons/view/view9.gif
+	frame	data/bgs/dragons/view/view10.gif

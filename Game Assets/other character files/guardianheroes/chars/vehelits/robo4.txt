@@ -1,0 +1,205 @@
+name    	 robo4
+health  	 200
+speed   	 9
+#speedf   	 0
+#nomove   	 1
+type    	 enemy
+#facing  	 2
+nodrop  	 1
+noquake   	 1
+cantgrab  	 1
+noatflash 1
+flash	robof
+death   	 1
+score   	 7000 5
+#antigravity  	 100
+setlayer   	 100
+hostile  	 player
+candamage  	 player
+icon    	 data/chars/vehelits/vicon.gif
+animationscript  data/chars/vehelits/escript.c
+takedamagescript data/chars/vehelits/blink.c
+load	         rorigin22
+load	         robobody
+
+palette	         data/chars/vehelits/robo.gif
+alternatepal	 data/chars/vehelits/gargoyle.gif
+alternatepal	 data/chars/vehelits/belial.gif
+alternatepal	 data/chars/vehelits/vbright.gif
+
+
+anim spawn
+	delay	1
+	offset	49 24
+	seta	95
+	frame	data/chars/vehelits/robo.gif
+        @cmd    spawnChainPoint "rorigin22" 0 0 0
+	frame	data/chars/vehelits/robo.gif
+        @cmd    spawnChainLink "robobody" 0.875 0 0 0
+        @cmd    spawnChainLink "robobody" 0.75 0 0 0
+        @cmd    spawnChainLink "robobody" 0.625 0 0 0
+        @cmd    spawnChainLink "robobody" 0.5 0 0 0
+        @cmd    spawnChainLink "robobody" 0.375 0 0 0
+        @cmd    spawnChainLink "robobody" 0.25 0 0 0
+        @cmd    spawnChainLink "robobody" 0.125 0 0 0
+	frame	data/chars/vehelits/robo.gif
+        @cmd    anichange "ANI_FOLLOW1"
+	frame	data/chars/vehelits/robo.gif
+
+anim follow1
+	loop	1
+	delay	240
+	seta	95
+	offset	49 24
+        sound	data/chars/vehelits/cry.wav
+	frame	data/chars/vehelits/robo.gif
+	delay	2
+        @cmd    attack1 -160 0 0 70 "ANI_FOLLOW2"
+	frame	data/chars/vehelits/robo.gif
+
+anim follow2
+	delay	2
+	seta	95
+	offset	49 24
+	frame	data/chars/vehelits/robo.gif
+
+anim idle
+	loop	1
+	delay	12
+	seta	95
+	offset	49 24
+        @cmd    clearL
+	bbox	23 3 50 64
+	attack	23 3 50 64 12 1
+	frame	data/chars/vehelits/robo.gif
+	attack	0
+	frame	data/chars/vehelits/robo.gif
+
+anim walk
+	loop	1
+	delay	12
+	seta	95
+	offset	49 24
+	bbox	23 3 50 64
+	attack	23 3 50 64 12 1
+	frame	data/chars/vehelits/robo.gif
+	attack	0
+	frame	data/chars/vehelits/robo.gif
+
+
+anim attack2
+	range	0 320
+	rangez	-60 60
+	delay	2
+	seta	95
+	offset	49 24
+	bbox	23 3 50 64
+	attack	21 4 58 55 12 1
+        sound	data/chars/vehelits/cry.wav
+	frame	data/chars/vehelits/robo.gif
+	delay	20
+	frame	data/chars/vehelits/robo.gif
+	delay	100
+	attack	21 4 58 55 15 1
+	dropv	2 4 0
+        @cmd    targetdash 2 2 0 0 1
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+	attack	0
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+        @cmd    looper 1 5
+	frame	data/chars/vehelits/robo.gif
+
+anim attack1
+	range	0 320
+	rangez	-60 60
+	delay	2
+	seta	95
+	offset	49 24
+	bbox	23 3 50 64
+	attack	21 4 58 55 12 1
+	frame	data/chars/vehelits/robo.gif
+	delay	35
+        @cmd    dasher 0 0 4
+        sound	data/chars/vehelits/cry.wav
+	frame	data/chars/vehelits/robo.gif
+	delay	6
+        @cmd    stop
+	seta	165
+	frame	data/chars/vehelits/robo.gif
+	frame	data/chars/vehelits/robo.gif
+        @cmd    targetdash 2 2 0 0 1
+	frame	data/chars/vehelits/robo.gif
+        @cmd    looper 3 14
+	frame	data/chars/vehelits/robo.gif
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+	delay	70
+	seta	55
+	attack	21 4 58 55 25 1
+	dropv	2 4 0
+	frame	data/chars/vehelits/robo.gif
+	delay	20
+	attack	0
+        @cmd    dasher 0 0 4
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+	seta	95
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+
+anim death
+	delay	150
+#	seta	95
+	offset	49 24
+        bouncefactor 3
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+	frame	data/chars/misc/empty.gif
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif
+
+anim pain
+	delay	25
+	seta	95
+	offset	49 24
+	attack	23 3 50 64 12 1
+        @cmd    dasher -4 0 0
+        sound	data/chars/vehelits/pain.wav
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+	attack	0
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+
+anim pain2
+	delay	25
+	seta	95
+	offset	49 24
+	attack	23 3 50 64 12 1
+        @cmd    dasher -4 0 0
+        sound	data/chars/vehelits/pain.wav
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+	attack	0
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+
+anim fall
+	offset	49 24
+	delay	30
+	seta	95
+        @cmd    dasher -4 0 0
+	frame	data/chars/vehelits/robo.gif
+	delay	10
+        @cmd    stop
+	frame	data/chars/vehelits/robo.gif
+        @cmd    beidle
+	frame	data/chars/vehelits/robo.gif
+
+anim rise
+	delay	5
+	seta	95
+	offset	49 24
+	frame	data/chars/vehelits/robo.gif

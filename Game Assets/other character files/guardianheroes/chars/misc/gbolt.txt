@@ -1,0 +1,63 @@
+name	gbolt
+health	1000
+type	pshot
+shadow	0
+speed   0
+alpha 1
+lifespan 5
+nomove 1
+remove 0
+palette	data/chars/misc/12.gif
+remap	data/chars/misc/12.gif data/chars/misc/13.gif
+aggression 100
+candamage enemy npc
+subject_to_gravity 0
+
+anim idle
+        loop 0
+        hitflash redflash
+        move    0
+        movea   0
+        movez   0
+       
+        drawmethod remap 1
+
+        hitfx   data/sounds/burn.wav
+        offset  -30 339
+        delay   3
+        sound   data/sounds/explosion.wav
+        shock   87 300 59 39 15 0 1 0 0 30
+	frame	data/chars/misc/01.gif
+	frame	data/chars/misc/02.gif
+        shock   0 0 0 0 0
+	frame	data/chars/misc/03.gif
+        shock   81 293 73 47 15 0 1 0 0 30
+	frame	data/chars/misc/04.gif
+	frame	data/chars/misc/05.gif
+        shock   0 0 0 0 0
+	frame	data/chars/misc/06.gif
+	frame	data/chars/misc/7.gif
+        shock   67 278 99 62 15 0 1 0 0 30
+	frame	data/chars/misc/8.gif
+	frame	data/chars/misc/9.gif
+        shock   0 0 0 0 0
+	frame	data/chars/misc/10.gif
+	frame	data/chars/misc/11.gif
+        shock   60 270 116 69 15 0 1 0 0 30
+	frame	data/chars/misc/12.gif
+        delay   3
+	frame	data/chars/misc/11.gif
+        shock   0 0 0 0 0
+	frame	data/chars/misc/10.gif
+	frame	data/chars/misc/9.gif
+	frame	data/chars/misc/8.gif
+	frame	data/chars/misc/7.gif
+	frame	data/chars/misc/06.gif
+	frame	data/chars/misc/05.gif
+	frame	data/chars/misc/04.gif
+	frame	data/chars/misc/03.gif
+	frame	data/chars/misc/02.gif
+	frame	data/chars/misc/01.gif
+        delay   1000
+	frame	data/chars/misc/end.gif
+

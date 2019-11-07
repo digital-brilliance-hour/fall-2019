@@ -1,0 +1,22 @@
+name	canon
+health	1
+type	enemy
+speed 40
+shadow	0
+candamage player
+#icon	data/chars/misc/meaticon.gif
+
+anim idle
+	loop	1
+	hitflash Cann
+	hitfx 	data/sfx/explode.wav
+	delay 7
+		offset  20  21
+		blast  0  0  39  60  30
+	frame	data/chars/tank/can1.gif
+	frame	data/chars/tank/can2.gif
+
+
+
+
+

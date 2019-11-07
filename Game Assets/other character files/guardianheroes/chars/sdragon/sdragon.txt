@@ -1,0 +1,174 @@
+name	sdragon
+health	250
+speed	8
+type	enemy
+shadow	7
+icon	data/chars/sdragon/icon.gif
+aggression 30
+cantgrab 1
+#nopain	1
+nodrop	1
+#falldie	1
+nodieblink 3
+diesound data/sounds/die1.wav
+palette	data/chars/sdragon/idle1.gif
+
+alternatepal	data/chars/sdragon/testpal.gif
+alternatepal	data/chars/sdragon/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  108 89
+	bbox 	23 4 54 85
+	delay	11
+	frame	data/chars/sdragon/idle1.gif
+	offset  104 80
+	frame	data/chars/sdragon/idle2.gif
+	offset  95 80
+	frame	data/chars/sdragon/idle3.gif
+	offset  70 80
+	frame	data/chars/sdragon/idle4.gif
+	offset  52 81
+	frame	data/chars/sdragon/idle5.gif
+	offset  51 84
+	frame	data/chars/sdragon/idle6.gif
+	offset  55 99
+	frame	data/chars/sdragon/idle7.gif
+	offset  71 108
+	frame	data/chars/sdragon/idle8.gif
+	offset  95 128
+	frame	data/chars/sdragon/idle9.gif
+	offset  92 138
+	frame	data/chars/sdragon/idle10.gif
+	offset  103 115
+	frame	data/chars/sdragon/idle11.gif
+	offset  108 102
+	frame	data/chars/sdragon/idle12.gif
+
+
+	
+anim walk
+	loop	1
+	offset  108 91
+	bbox 	61 28 94 62
+	delay	11
+#	quakeframe	2 6 9
+	frame	data/chars/sdragon/walk1.gif
+	offset  104 91
+	frame	data/chars/sdragon/walk2.gif
+	offset  95 91
+	frame	data/chars/sdragon/walk3.gif
+	offset  70 91
+	frame	data/chars/sdragon/walk4.gif
+	offset  56 91
+	frame	data/chars/sdragon/walk5.gif
+	offset  56 91
+	frame	data/chars/sdragon/walk6.gif
+	offset  56 99
+	frame	data/chars/sdragon/walk7.gif
+	offset  71 108
+	frame	data/chars/sdragon/walk8.gif
+	offset  95 128
+	frame	data/chars/sdragon/walk9.gif
+	offset  92 138
+	frame	data/chars/sdragon/walk10.gif
+	offset  103 115
+	frame	data/chars/sdragon/walk11.gif
+	offset  108 102
+	frame	data/chars/sdragon/walk12.gif
+
+		
+anim pain
+	loop	0
+	offset  108 89
+	move	-10
+	bbox 	23 4 54 85
+	delay	8
+	frame	data/chars/sdragon/idle1.gif
+	offset  104 80
+	frame	data/chars/sdragon/idle2.gif
+
+	
+anim fall
+	landframe	3
+	loop	0
+	offset	104 95
+	ATTACK	27 32 82 87 15 1
+	bbox 	23 4 54 85
+	delay	16
+	frame	data/chars/sdragon/fall1.gif
+	offset	87 107
+	delay	100
+	frame	data/chars/sdragon/fall2.gif
+	offset	78 125
+	delay	20
+	frame	data/chars/sdragon/fall3.gif
+	frame	data/chars/sdragon/fall3.gif
+
+
+
+
+#anim rise
+
+
+
+
+
+anim attack1
+	range	200 300
+	loop	0
+	delay	10
+	offset	98 103
+	bbox	44 58 63 84
+	frame	data/chars/sdragon/atk1.gif
+	offset	74 116
+	frame	data/chars/sdragon/atk2.gif
+	offset	108 110
+	frame	data/chars/sdragon/atk3.gif
+	offset	116 106
+	frame	data/chars/sdragon/atk4.gif
+	offset	99 128
+	attack	0 0 375 120 30 1
+	frame	data/chars/sdragon/atk5.gif
+	offset	91 140
+	frame	data/chars/sdragon/atk6.gif
+	attack	0 0 0 0 0 0
+
+
+
+	
+anim attack2
+	range	0 200
+	loop	0
+	delay	10
+	offset	98 118
+	bbox	44 58 63 84
+	frame	data/chars/sdragon/2atk1.gif
+	offset	113 116
+	frame	data/chars/sdragon/2atk2.gif
+	offset	126 108
+	frame	data/chars/sdragon/2atk3.gif
+	offset	135 114
+	frame	data/chars/sdragon/2atk4.gif
+	offset	135 114
+	attack	0 0 375 120 30 1
+	frame	data/chars/sdragon/2atk5.gif
+	offset	107 76
+	frame	data/chars/sdragon/2atk6.gif
+	attack	0 0 0 0 0 0
+
+
+			
+#anim throw
+
+#anim death
+
+
+
+	

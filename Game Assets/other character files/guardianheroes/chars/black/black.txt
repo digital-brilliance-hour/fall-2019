@@ -1,0 +1,449 @@
+
+name	BLACK
+health	250
+speed	8
+type	enemy
+shadow	5
+diesound data/chars/BLACK/pain2.wav
+
+remap	data/chars/black/i1.gif data/chars/black/map1.gif
+
+icon	data/chars/BLACK/icon.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	55 159
+	bbox	35 2 49 163
+	frame	data/chars/BLACK/I1.GIF
+	offset  55 158
+	frame	data/chars/BLACK/I2.GIF
+	offset  54 158
+	frame	data/chars/BLACK/I3.GIF
+	offset  54 159
+	frame	data/chars/BLACK/I4.GIF
+	offset  55 159
+	frame	data/chars/BLACK/I5.gif
+	offset  56 159
+	frame	data/chars/BLACK/I6.gif
+	offset  56 160
+	frame	data/chars/BLACK/I7.gif
+	offset  57 161
+	frame	data/chars/BLACK/I8.gif
+	offset  56 160
+	frame	data/chars/BLACK/I9.gif
+	offset  57 161
+	frame	data/chars/BLACK/I10.gif
+	offset  56 160
+	frame	data/chars/BLACK/I11.GIF
+	offset  57 161
+	frame	data/chars/BLACK/I12.GIF
+	offset  56 160
+	frame	data/chars/BLACK/I13.GIF
+	offset  57 161
+	frame	data/chars/BLACK/I14.GIF
+	offset  56 160
+	frame	data/chars/BLACK/I15.gif
+	offset  57 161
+	frame	data/chars/BLACK/I16.gif
+	offset  57 162
+	frame	data/chars/BLACK/I17.gif
+	offset  56 161
+	frame	data/chars/BLACK/I18.gif
+	offset  55 161
+	frame	data/chars/BLACK/I19.gif
+	offset  57 161
+	frame	data/chars/BLACK/I20.gif
+	offset  55 159
+	frame	data/chars/BLACK/I21.GIF
+	offset  55 159
+	frame	data/chars/BLACK/I22.GIF
+	offset  55 159
+	frame	data/chars/BLACK/I23.GIF
+	offset  55 159
+	frame	data/chars/BLACK/I24.GIF
+	offset  55 159
+	frame	data/chars/BLACK/I25.gif
+	offset  55 159
+	frame	data/chars/BLACK/I26.gif
+	offset  55 159
+	frame	data/chars/BLACK/I27.gif
+	offset  55 159
+	frame	data/chars/BLACK/I28.gif
+	offset  55 159
+	frame	data/chars/BLACK/I29.gif
+	offset  55 159
+	frame	data/chars/BLACK/I30.gif	
+	offset  55 159
+	frame	data/chars/BLACK/I31.gif
+	offset  55 159
+	frame	data/chars/BLACK/I32.gif
+
+anim walk
+	loop	1
+	delay	14
+	offset	78 143
+	bbox	45 5 51 150
+	frame	data/chars/BLACK/w1.gif
+	offset	83 145
+	frame	data/chars/BLACK/w2.gif
+	offset	77 150
+	frame	data/chars/BLACK/w3.gif
+	offset	64 157
+	frame	data/chars/BLACK/w4.gif
+	offset	57 159
+	frame	data/chars/BLACK/w5.gif
+	offset	56 152
+	frame	data/chars/BLACK/w6.gif
+	offset	73 143
+	frame	data/chars/BLACK/w7.gif
+	offset	76 145
+	frame	data/chars/BLACK/w8.gif
+	offset	61 150
+	frame	data/chars/BLACK/w9.gif
+	offset	67 158
+	frame	data/chars/BLACK/w10.gif
+	offset	65 158
+	frame	data/chars/BLACK/w11.gif
+	offset	69 153
+	frame	data/chars/BLACK/w12.gif
+
+anim attack1
+        range   0 70
+	loop	0
+	delay	5
+	bbox	40 12 58 123
+	offset	58 159
+	frame	data/chars/BLACK/a1.gif
+	bbox	24 5 19 94
+	offset	44 142
+	frame	data/chars/BLACK/a2.gif
+	attack	88 46 101 42 4
+	offset	45 141
+	frame	data/chars/BLACK/a3.gif
+	offset	44 156
+	attack	0 0 0 0 0 0
+	frame	data/chars/BLACK/a1.gif
+	offset	47 165
+	bbox	38 12 58 133
+	delay	5
+	frame	data/chars/BLACK/ga1.gif
+	offset	47 145
+	frame	data/chars/BLACK/ga2.gif
+	offset	47 145
+	attack	94 40 91 38 4
+	frame	data/chars/BLACK/ga3.gif
+	offset	47 145
+	attack	0 0 0 0 0 0
+	frame	data/chars/BLACK/ga4.gif
+	attack  0
+	frame	data/chars/BLACK/ga5.gif
+	offset	47 145
+	frame	data/chars/BLACK/ga6.gif
+	delay	10
+	offset	62 173
+	bbox	42 41 61 128
+	frame	data/chars/BLACK/c1.gif
+	offset	60 186
+        sound   data/chars/BLACK/kicker.wav
+	bbox	24 28 16 97
+	frame	data/chars/BLACK/c2.gif
+	offset	46 177
+	blast	62 0 149 138 6
+	frame	data/chars/BLACK/c3.gif
+	offset	46 175
+	frame	data/chars/BLACK/c4.gif
+	offset	46 146
+	frame	data/chars/BLACK/c5.gif
+	offset	54 159
+	blast   0
+	frame	data/chars/BLACK/c6.gif	
+        offset	52 158
+	frame	data/chars/BLACK/c7.gif
+
+
+anim special
+	loop	0
+	delay	5
+        offset	64 159
+	frame	data/chars/black/s1.gif
+	offset	51 167
+	frame	data/chars/black/s2.gif
+	offset	51 167
+	frame	data/chars/black/s3.gif
+	offset	51 167
+	frame	data/chars/black/s4.gif
+	offset	45 166
+	frame	data/chars/black/s5.gif
+	offset	41 170
+	frame	data/chars/black/s6.gif
+	offset	41 170
+	frame	data/chars/black/s7.gif
+	offset	70 175
+	frame	data/chars/black/s8.gif
+	offset	116 180
+	delay	8
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/1.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/2.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/3.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/4.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/5.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/6.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/7.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/8.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/9.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/10.gif
+	frame	data/chars/black/2.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/3.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/4.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/5.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/6.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/7.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/8.gif
+	offset	116 180
+	attack	6 6 241 177 5 1
+	frame	data/chars/black/9.gif
+	offset	116 177
+	attack  0
+	frame	data/chars/black/10.gif
+
+
+anim attack2
+        range   270 330
+	loop	0
+	offset	53 159
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/BLACK/f1.gif
+	offset  50 165
+	frame	data/chars/BLACK/f2.gif
+	offset  53 165
+	frame	data/chars/BLACK/f3.gif
+	offset  57 168
+	frame	data/chars/BLACK/f4.gif
+	offset  58 168
+	delay   4
+	frame	data/chars/BLACK/f5.gif
+	offset  48 153
+	frame	data/chars/BLACK/f6.gif
+	offset  55 284
+	delay	7
+	frame	data/chars/BLACK/f7.gif
+	frame	data/chars/BLACK/f8.gif
+	frame	data/chars/BLACK/f9.gif
+	frame	data/chars/BLACK/f10.gif
+	delay	10
+	frame	data/chars/BLACK/f11.gif
+	frame	data/chars/BLACK/f12.gif
+	frame	data/chars/BLACK/f13.gif
+	frame	data/chars/BLACK/f14.gif
+	delay	10
+	frame	data/chars/BLACK/f15.gif
+	attack	240 210 172 81 15 1
+	frame	data/chars/BLACK/f16.gif
+	attack	268 3 125 288 15  1
+	frame	data/chars/BLACK/f17.gif
+	attack  0
+	frame	data/chars/BLACK/f18.gif
+	frame	data/chars/BLACK/f19.gif
+
+
+anim jumpattack
+	offset	56 147
+	delay	9
+	bbox	36 4 73 75
+	frame	data/chars/BLACK/j1.gif
+	offset  54 146
+	frame	data/chars/BLACK/j2.gif
+	offset  50 147
+	frame	data/chars/BLACK/j3.gif
+	offset  50 146
+	frame	data/chars/BLACK/j4.gif
+	loop	0
+	offset	88 179
+	delay	8
+	bbox	26 8 54 80
+	frame	data/chars/BLACK/ja1.gif
+	offset	88 175
+	frame	data/chars/BLACK/ja2.gif
+	offset	61 175
+	frame	data/chars/BLACK/ja3.gif
+	offset	61 143
+	attack	47 47 139 71 5
+	frame	data/chars/BLACK/ja4.gif
+	frame	data/chars/BLACK/ja5.gif
+	attack	0
+	offset	77 166
+	frame	data/chars/BLACK/ja6.gif
+
+anim jumpattack2
+	offset	56 147
+	delay	9
+	bbox	36 4 73 75
+	frame	data/chars/BLACK/j1.gif
+	offset  54 146
+	frame	data/chars/BLACK/j2.gif
+	offset  50 147
+	frame	data/chars/BLACK/j3.gif
+	offset  50 146
+	frame	data/chars/BLACK/j4.gif
+	loop	0
+	delay	15
+	offset	73 188
+	bbox	31 6 61 65
+	frame	data/chars/BLACK/jb1.gif
+	bbox	23 20 34 35
+	offset	70 180
+	attack	118 41 84 51 5 0
+	frame	data/chars/BLACK/jb2.gif
+	offset	70 179
+	frame	data/chars/BLACK/jb3.gif
+	offset	76 172
+	frame	data/chars/BLACK/jb4.gif
+
+
+anim grab
+	delay	4
+	loop	0
+	offset	47 147
+	bbox    18 18 59 137
+	frame	data/chars/BLACK/grab.gif
+	offset	45 111
+	bbox	48 8 49 92
+	frame	data/chars/BLACK/b1.gif
+	offset	46 120
+	frame	data/chars/BLACK/b2.gif
+	offset	44 126
+	frame	data/chars/BLACK/b3.gif
+	offset  45 149
+	frame	data/chars/BLACK/b4.gif
+	offset  44 153
+	attack	70 12 103 45 6
+	frame	data/chars/BLACK/b5.gif
+	offset  44 153
+	frame	data/chars/BLACK/b6.gif
+	offset  45 143
+	frame	data/chars/BLACK/b7.gif
+	attack  0
+	frame	data/chars/BLACK/b1.gif
+	offset	46 120
+	frame	data/chars/BLACK/b2.gif
+	offset	44 126
+	frame	data/chars/BLACK/b3.gif
+	offset  45 149
+	frame	data/chars/BLACK/b4.gif
+	offset  44 153
+	attack	70 12 103 45 6
+	frame	data/chars/BLACK/b5.gif
+	offset  44 153
+	frame	data/chars/BLACK/b6.gif
+	offset  45 143
+	frame	data/chars/BLACK/b7.gif
+	delay	9
+	attack  0
+	offset	63 150
+	bbox	34 9 54 142
+	frame	data/chars/BLACK/gb1.gif
+	offset	83 161
+	frame	data/chars/BLACK/gb2.gif
+	offset	87 163
+	frame	data/chars/BLACK/gb3.gif
+	offset	57 111
+	attack	73 61 92 52 6 1
+	frame	data/chars/BLACK/gb4.gif
+	frame	data/chars/BLACK/gb4.gif
+	offset	58 121
+	frame	data/chars/BLACK/gb5.gif
+	offset	57 119
+	attack  0
+	frame	data/chars/BLACK/gb6.gif
+	offset	58 121
+	frame	data/chars/BLACK/gb7.gif
+	offset	57 119
+	frame	data/chars/BLACK/gb8.gif
+	offset	58 121
+	frame	data/chars/BLACK/gb9.gif
+	offset	62 127
+	frame	data/chars/BLACK/gb10.gif
+	offset	51 147
+	frame	data/chars/BLACK/gb11.gif
+
+anim upper
+	delay	4
+	loop	0
+	offset	45 111
+	bbox	48 8 49 92
+	frame	data/chars/BLACK/b1.gif
+	offset	46 120
+	frame	data/chars/BLACK/b2.gif
+	offset	44 126
+	frame	data/chars/BLACK/b3.gif
+	offset  45 149
+	frame	data/chars/BLACK/b4.gif
+	offset  44 153
+	attack	70 12 103 45 6
+	frame	data/chars/BLACK/b5.gif
+	offset  44 153
+	frame	data/chars/BLACK/b6.gif
+	offset  45 143
+	frame	data/chars/BLACK/b7.gif
+
+anim pain
+	loop	0
+	offset	179 152
+	bbox	0 3 80 112
+	delay	5
+	frame	data/chars/BLACK/pain1.gif
+	offset	127 156
+	frame	data/chars/BLACK/pain2.gif
+	offset	127 159
+	frame	data/chars/BLACK/pain3.gif
+
+anim fall
+	loop	0
+	offset	87 140
+	delay	25
+	frame	data/chars/BLACK/fall1.gif
+	offset	132 56	
+	frame	data/chars/BLACK/fall2.gif
+
+anim rise
+	loop	0
+	offset	72 130
+	delay	35
+	frame	data/chars/BLACK/rise1.gif
+
+
+

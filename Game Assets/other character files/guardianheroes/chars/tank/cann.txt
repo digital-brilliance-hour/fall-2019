@@ -1,0 +1,34 @@
+# Hit flash
+
+name	Cann
+type	none
+shadow	0
+
+
+
+anim idle
+	loop	0
+	delay 7
+		offset  35  36
+	frame data/chars/tank/53.gif
+		offset  26  23
+	frame data/chars/tank/54.gif
+		offset  61  46
+	frame data/chars/tank/55.gif
+		offset  42  34
+	frame data/chars/tank/56.gif
+		offset  48  45
+	frame data/chars/tank/57.gif
+		offset  62  52
+	frame data/chars/tank/58.gif
+	frame data/chars/tank/59.gif
+	frame data/chars/tank/60.gif
+	frame data/chars/tank/61.gif
+		offset  56  54
+	frame data/chars/tank/62.gif
+	frame data/chars/tank/63.gif
+		offset  56  43
+	frame data/chars/tank/64.gif
+
+
+

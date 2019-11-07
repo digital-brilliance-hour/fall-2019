@@ -1,0 +1,288 @@
+name	captain
+health	100
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 40
+bflash bflash
+blockodds 1
+falldie	1
+thold     49
+#nodrop	2
+#nopain 1
+aimove chase
+icon	data/chars/captain/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+#nodieblink 3
+#fmap 3
+
+palette	data/chars/captain/idle1.gif
+
+#alternatepal	data/chars/captain/testpal.gif
+#alternatepal	data/chars/captain/testpal2.gif
+#alternatepal	data/chars/captain/testpal3.gif
+#alternatepal	data/chars/captain/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  90 83
+	bbox 	56 12 83 66
+	delay	11
+	frame	data/chars/captain/idle1.gif
+	frame	data/chars/captain/idle2.gif
+	frame	data/chars/captain/idle3.gif
+	frame	data/chars/captain/idle4.gif
+	frame	data/chars/captain/idle5.gif
+	frame	data/chars/captain/idle6.gif
+	frame	data/chars/captain/idle7.gif
+	frame	data/chars/captain/idle8.gif
+	frame	data/chars/captain/idle9.gif
+	frame	data/chars/captain/idle10.gif
+	frame	data/chars/captain/idle11.gif
+	frame	data/chars/captain/idle12.gif
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	57 100
+	bbox 	30 28 59 65
+	delay	8
+	frame	data/chars/captain/walk1.gif
+	frame	data/chars/captain/walk2.gif
+	frame	data/chars/captain/walk3.gif
+	frame	data/chars/captain/walk4.gif
+	frame	data/chars/captain/walk5.gif
+	frame	data/chars/captain/walk6.gif
+	frame	data/chars/captain/walk7.gif
+	frame	data/chars/captain/walk8.gif
+
+
+
+
+
+anim run
+	loop	1
+	offset	87 86
+	bbox 	63 14 64 68
+	delay	6
+	frame	data/chars/captain/run1.gif
+	frame	data/chars/captain/run2.gif
+	frame	data/chars/captain/run3.gif
+	frame	data/chars/captain/run4.gif
+	frame	data/chars/captain/run5.gif
+	frame	data/chars/captain/run6.gif
+	frame	data/chars/captain/run7.gif
+	frame	data/chars/captain/run8.gif
+
+
+
+
+anim runattack
+	range	0 117
+	loop	0
+	move	4
+	delay	6
+	offset	104 100
+	bbox 	56 24 94 76
+	frame	data/chars/captain/atk1.gif
+	frame	data/chars/captain/atk2.gif
+	frame	data/chars/captain/atk3.gif
+	frame	data/chars/captain/atk4.gif
+	frame	data/chars/captain/atk5.gif
+	attack	107 16 117 80 20 1 0 0 28
+	frame	data/chars/captain/atk6.gif
+	frame	data/chars/captain/atk7.gif
+	frame	data/chars/captain/atk8.gif
+	frame	data/chars/captain/atk9.gif
+	frame	data/chars/captain/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/atk11.gif
+	frame	data/chars/captain/atk12.gif
+	frame	data/chars/captain/atk13.gif
+	frame	data/chars/captain/atk14.gif
+	frame	data/chars/captain/atk15.gif
+
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	60 136
+	bbox 	22 65 65 65
+	frame	data/chars/captain/pain1.gif
+	frame	data/chars/captain/pain1.gif
+	frame	data/chars/captain/pain1.gif
+
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	54 138
+	bbox 	56 12 83 66
+	frame	data/chars/captain/fall1.gif
+	frame	data/chars/captain/fall2.gif
+	delay	1000
+	frame	data/chars/captain/fall3.gif
+	offset	57 126
+	delay	20
+	frame	data/chars/captain/fall4.gif
+	frame	data/chars/captain/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset	54 138
+	bbox 	56 12 83 66
+	frame	data/chars/captain/fall1.gif
+	frame	data/chars/captain/fall2.gif
+	delay	1000
+	frame	data/chars/captain/fall3.gif
+	offset	57 126
+	delay	20
+	frame	data/chars/captain/fall4.gif
+	frame	data/chars/captain/fall4.gif
+
+
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	67 140
+	bbox 	79 82 60 60
+	frame	data/chars/captain/rise1.gif
+	frame	data/chars/captain/rise2.gif
+	frame	data/chars/captain/rise3.gif
+
+
+anim riseattack
+	range	0 117
+	loop	0
+	delay	6
+	offset	104 100
+	bbox 	56 24 94 76
+	frame	data/chars/captain/atk1.gif
+	frame	data/chars/captain/atk2.gif
+	frame	data/chars/captain/atk3.gif
+	frame	data/chars/captain/atk4.gif
+	frame	data/chars/captain/atk5.gif
+	attack	107 16 117 80 20 1 0 0 28
+	frame	data/chars/captain/atk6.gif
+	frame	data/chars/captain/atk7.gif
+	frame	data/chars/captain/atk8.gif
+	frame	data/chars/captain/atk9.gif
+	frame	data/chars/captain/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/atk11.gif
+	frame	data/chars/captain/atk12.gif
+	frame	data/chars/captain/atk13.gif
+	frame	data/chars/captain/atk14.gif
+	frame	data/chars/captain/atk15.gif
+
+
+
+anim attack1
+	range	0 117
+	loop	0
+	delay	6
+	offset	104 100
+	bbox 	56 24 94 76
+	frame	data/chars/captain/atk1.gif
+	frame	data/chars/captain/atk2.gif
+	frame	data/chars/captain/atk3.gif
+	frame	data/chars/captain/atk4.gif
+	frame	data/chars/captain/atk5.gif
+	attack	107 16 117 80 20 1 0 0 28
+	frame	data/chars/captain/atk6.gif
+	frame	data/chars/captain/atk7.gif
+	frame	data/chars/captain/atk8.gif
+	frame	data/chars/captain/atk9.gif
+	frame	data/chars/captain/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/atk11.gif
+	frame	data/chars/captain/atk12.gif
+	frame	data/chars/captain/atk13.gif
+	frame	data/chars/captain/atk14.gif
+	frame	data/chars/captain/atk15.gif
+
+
+anim attack2
+	range	118 183
+	loop	0
+	delay	7
+	offset	75 178
+	bbox 	42 107 65 65
+	frame	data/chars/captain/2atk1.gif
+	frame	data/chars/captain/2atk2.gif
+	frame	data/chars/captain/2atk3.gif
+	attack	88 22 183 162 20 1 0 0 28
+	frame	data/chars/captain/2atk4.gif
+	frame	data/chars/captain/2atk5.gif
+	frame	data/chars/captain/2atk6.gif
+	frame	data/chars/captain/2atk7.gif
+	frame	data/chars/captain/2atk8.gif
+	frame	data/chars/captain/2atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/2atk10.gif
+	frame	data/chars/captain/2atk11.gif
+
+
+
+
+
+anim special
+	range	0 183
+	loop	0
+	delay	7
+	offset	75 178
+	bbox 	42 107 65 65
+	frame	data/chars/captain/2atk1.gif
+	frame	data/chars/captain/2atk2.gif
+	frame	data/chars/captain/2atk3.gif
+	attack	88 22 183 162 20 1 0 0 28
+	frame	data/chars/captain/2atk4.gif
+	frame	data/chars/captain/2atk5.gif
+	frame	data/chars/captain/2atk6.gif
+	frame	data/chars/captain/2atk7.gif
+	frame	data/chars/captain/2atk8.gif
+	frame	data/chars/captain/2atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/2atk10.gif
+	frame	data/chars/captain/2atk11.gif
+
+
+anim upper
+	range	0 183
+	loop	0
+	delay	7
+	offset	75 178
+	bbox 	42 107 65 65
+	frame	data/chars/captain/2atk1.gif
+	frame	data/chars/captain/2atk2.gif
+	frame	data/chars/captain/2atk3.gif
+	attack	88 22 183 162 20 1 0 0 28
+	frame	data/chars/captain/2atk4.gif
+	frame	data/chars/captain/2atk5.gif
+	frame	data/chars/captain/2atk6.gif
+	frame	data/chars/captain/2atk7.gif
+	frame	data/chars/captain/2atk8.gif
+	frame	data/chars/captain/2atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/captain/2atk10.gif
+	frame	data/chars/captain/2atk11.gif
+

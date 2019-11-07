@@ -1,0 +1,230 @@
+name	gambo
+health	200
+speed	13
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 25
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie 1
+aimove chase
+icon	data/chars/gambo/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+atchain	1 1 2
+palette	data/chars/gambo/idle1.gif
+
+
+#alternatepal	data/chars/gambo/testpal.gif
+#alternatepal	data/chars/gambo/testpal2.gif
+#alternatepal	data/chars/gambo/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  78 182
+	bbox 	44 95 73 86
+	delay	22
+	frame	data/chars/gambo/idle1.gif
+	frame	data/chars/gambo/idle2.gif
+	frame	data/chars/gambo/idle3.gif
+	frame	data/chars/gambo/idle4.gif
+	frame	data/chars/gambo/idle3.gif
+	frame	data/chars/gambo/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset  78 182
+	bbox 	44 95 73 86
+	delay	16
+	frame	data/chars/gambo/walk1.gif
+	frame	data/chars/gambo/walk2.gif
+	frame	data/chars/gambo/walk3.gif
+	frame	data/chars/gambo/walk4.gif
+	frame	data/chars/gambo/walk5.gif
+	frame	data/chars/gambo/walk6.gif
+
+anim run
+	loop	1
+	offset  78 182
+	bbox 	44 95 73 86
+	delay	12
+	frame	data/chars/gambo/walk1.gif
+	frame	data/chars/gambo/walk2.gif
+	frame	data/chars/gambo/walk3.gif
+	frame	data/chars/gambo/walk4.gif
+	frame	data/chars/gambo/walk5.gif
+	frame	data/chars/gambo/walk6.gif
+
+anim runattack
+	range	0 63
+	loop	0
+	move	4
+	delay	8
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/2atk1.gif
+	attack	92 94 63 52 20 1 0 0 29
+	frame	data/chars/gambo/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gambo/2atk1.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  78 182
+	bbox 	43 88 67 82
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/gambo/block1.gif
+	offset	80 182
+	frame	data/chars/gambo/block2.gif
+	move    -8
+	offset  78 182
+	frame	data/chars/gambo/block2.gif
+	offset	80 182
+	frame	data/chars/gambo/block2.gif
+	move    -6
+	offset  78 182
+	frame	data/chars/gambo/block2.gif
+	offset	80 182
+	frame	data/chars/gambo/block2.gif
+	move    -4
+	offset  78 182
+	frame	data/chars/gambo/block2.gif
+	offset	80 182
+	frame	data/chars/gambo/block2.gif
+	offset  78 182
+	move    -2
+	frame	data/chars/gambo/block2.gif
+	offset	80 182
+	frame	data/chars/gambo/block2.gif
+	offset  78 182
+	delay   20
+	move    0
+	frame	data/chars/gambo/block1.gif
+
+anim pain
+	loop	0
+	delay	12
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/pain1.gif
+	frame	data/chars/gambo/pain1.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/fall1.gif
+	delay	1000
+	frame	data/chars/gambo/fall2.gif
+	delay	20
+	frame	data/chars/gambo/fall3.gif
+	frame	data/chars/gambo/fall3.gif
+
+
+
+anim death
+	landframe	3
+	loop	0
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/fall1.gif
+	delay	1000
+	frame	data/chars/gambo/fall2.gif
+	delay	20
+	frame	data/chars/gambo/fall3.gif
+	frame	data/chars/gambo/fall3.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  78 182
+	frame	data/chars/gambo/rise1.gif
+
+
+anim riseattack
+	range	0 63
+	loop	0
+	delay	10
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/2atk1.gif
+	attack	92 94 63 52 20 1 0 0 29
+	frame	data/chars/gambo/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gambo/2atk1.gif
+
+anim attack1
+	range	0 50
+	loop	0
+	delay	7
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/atk1.gif
+	attack	93 92 47 49 10 0 0 0 14
+	frame	data/chars/gambo/atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gambo/atk1.gif
+
+
+
+anim attack2
+	range	0 50
+	loop	0
+	delay	8
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/2atk1.gif
+	attack	92 94 63 52 20 1 0 0 29
+	frame	data/chars/gambo/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gambo/2atk1.gif
+
+anim special
+	range	0 50
+	loop	0
+	delay	8
+	offset  78 182
+	bbox 	44 95 73 86
+	frame	data/chars/gambo/2atk1.gif
+	attack	92 94 63 52 20 1 0 0 29
+	frame	data/chars/gambo/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gambo/2atk1.gif
+
+
+anim death
+	loop	0
+	offset  78 182
+	delay	20
+	move	-30
+	frame	data/chars/gambo/d1
+	frame	data/chars/gambo/d2
+	frame	data/chars/gambo/d3
+	move	0
+	frame	data/chars/gambo/d4
+
+
+
+
+
+
+

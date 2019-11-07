@@ -1,0 +1,785 @@
+
+name	  undead
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/undead/icon.gif
+diesound   data/chars/undead/yell.wav
+#weapons	seni ironman
+palette	data/chars/undead/idle1.gif
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+weapons	ubear ubull ujag uele uhor undead
+
+alternatepal	data/chars/undead/testpal.gif
+
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        38 97
+	bbox 	12 22 49 72
+	delay	18
+	frame	data/chars/undead/idle1.gif
+	offset        38 97
+	frame	data/chars/undead/idle2.gif
+	offset        38 96
+	frame	data/chars/undead/idle3.gif
+	offset        38 96
+	frame	data/chars/undead/idle4.gif
+	offset        38 96
+	frame	data/chars/undead/idle5.gif
+	offset        38 97
+	frame	data/chars/undead/idle6.gif
+	frame	data/chars/undead/idle7.gif
+	
+	
+
+#done//
+anim walk
+	loop	1
+	offset  33 93
+	bbox 	10 11 49 72
+	delay	13
+	frame	data/chars/undead/walk1.gif
+	offset  26 94
+	frame	data/chars/undead/walk2.gif
+	offset  25 93
+	frame	data/chars/undead/walk3.gif
+	offset  35 92
+	frame	data/chars/undead/walk4.gif
+	offset  28 93
+	frame	data/chars/undead/walk5.gif
+	offset  25 95
+	frame	data/chars/undead/walk6.gif
+
+
+anim run
+	loop	1
+	delay	13
+	offset	53 104
+	bbox	31 40 49 72
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/undead/run1.gif
+	offset	62 103
+	frame	data/chars/undead/run2.gif
+	offset	31 106
+	frame	data/chars/undead/run3.gif
+	offset	42 107
+	frame	data/chars/undead/run4.gif
+	offset	55 99
+	frame	data/chars/undead/run5.gif
+	offset	28 109
+	frame	data/chars/undead/run6.gif
+
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	38 82
+              bbox       12 22 49 72
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/hatk1.gif
+	offset	37 62
+	frame	data/chars/undead/hatk2.gif
+	offset	38 67
+	frame	data/chars/undead/hatk3.gif
+              attack	74 5 110 60 25 1
+	offset	37 73
+	frame	data/chars/undead/hatk4.gif
+	offset	37 73
+	frame	data/chars/undead/hatk5.gif
+	offset	37 77
+	frame	data/chars/undead/hatk6.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	20
+	offset	39 68
+	frame	data/chars/undead/jump1.gif
+
+
+#done//
+#Punch
+anim attack1
+	cancel 8 10 0 a2 freespecial5
+	range	5 50
+	loop	0
+	delay	2
+	offset	38 114
+	bbox	12 22 49 72
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/undead/atk1.gif
+	offset	67 109
+	frame	data/chars/undead/atk2.gif
+	offset	60 96
+	frame	data/chars/undead/atk3.gif
+	offset	60 96
+	frame	data/chars/undead/atk4.gif
+	offset	46 109
+	frame	data/chars/undead/atk5.gif
+	offset	38 109
+	frame	data/chars/undead/atk6.gif
+	offset	46 102
+        attack	68 3 100 97 15 0 0 0 10
+	frame	data/chars/undead/atk7.gif
+	offset	46 79
+	frame	data/chars/undead/atk8.gif
+	frame	data/chars/undead/atk9.gif
+	offset	42 97
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/atk10.gif
+  
+
+
+
+#done//
+#Kick
+anim attack2
+	cancel 16 19 0 a2 freespecial3
+	range	5 40
+	loop	0
+	delay	2
+	offset	57 120
+	bbox	12 22 49 72
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/undead/2atk1.gif
+	offset	51 113
+	frame	data/chars/undead/2atk2.gif
+	offset	38 115
+	frame	data/chars/undead/2atk3.gif
+	offset	38 111
+	frame	data/chars/undead/2atk4.gif
+	offset	38 104
+                  bbox          57 10 37 95
+	    frame	data/chars/undead/2atk5.gif
+	offset	32 84
+        attack	42 4 95 80 12 0 0 0 15
+	frame	data/chars/undead/2atk6.gif
+	frame	data/chars/undead/2atk7.gif
+	frame	data/chars/undead/2atk8.gif
+        attack	0 0 0 0 0 0
+	offset	80 90
+	frame	data/chars/undead/2atk9.gif
+	offset	73 124
+	frame	data/chars/undead/2atk10.gif
+	offset	48 124
+	frame	data/chars/undead/2atk11.gif
+	offset	62 105
+	frame	data/chars/undead/2atk12.gif
+	offset	44 84
+	frame	data/chars/undead/2atk13.gif
+	offset	38 84
+	frame	data/chars/undead/2atk14.gif
+	frame	data/chars/undead/2atk15.gif
+        attack	42 4 85 80 13 0 0 0 15
+	offset	36 90
+	frame	data/chars/undead/2atk16.gif
+	frame	data/chars/undead/2atk17.gif
+	offset	57 120
+	frame	data/chars/undead/2atk18.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/2atk19.gif
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 7 9 0 a2 freespecial2
+	range	5 90
+	loop	0
+	delay	7
+	offset	68 118
+              bbox       12 22 49 72
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/3atk1.gif
+	offset	64 114
+	frame	data/chars/undead/3atk2.gif
+	offset	38 114
+	frame	data/chars/undead/3atk3.gif
+	offset	35 118
+        attack	63 1 110 99 25 1 0 0 25
+	frame	data/chars/undead/3atk4.gif
+	offset	35 100
+	frame	data/chars/undead/3atk5.gif
+	offset	36 55
+	frame	data/chars/undead/3atk6.gif
+	offset	36 55
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/3atk7.gif
+	offset	37 68
+	frame	data/chars/undead/3atk8.gif
+	offset	37 89
+	frame	data/chars/undead/3atk9.gif
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	8
+	offset	35 84
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/spec1.gif
+	offset	70 99
+	attack	0 0 160 120 25 1 0 0 25
+	frame	data/chars/undead/spec2.gif
+	offset	62 91
+	frame	data/chars/undead/spec3.gif
+	frame	data/chars/undead/spec4.gif
+	offset	56 103
+	frame	data/chars/undead/spec5.gif
+	offset	54 103
+	frame	data/chars/undead/spec6.gif
+	attack	0 0 0 0 0 0
+	offset	54 84
+	frame	data/chars/undead/spec7.gif
+	attack	0 0 160 120 25 1 0 0 25
+	frame	data/chars/undead/spec8.gif
+	offset	88 99
+	frame	data/chars/undead/spec9.gif
+	offset	70 99
+	frame	data/chars/undead/spec10.gif
+	offset	62 91
+	frame	data/chars/undead/spec3.gif
+	frame	data/chars/undead/spec4.gif
+	offset	56 103
+	frame	data/chars/undead/spec5.gif
+	offset	54 103
+	frame	data/chars/undead/spec6.gif
+	offset	54 84
+	attack	0 0 0 0 0 0
+	frame	data/chars/undead/spec7.gif
+	attack	0 0 160 120 25 1 0 0 25
+	frame	data/chars/undead/spec8.gif
+	offset	88 99
+	frame	data/chars/undead/spec9.gif
+	offset	70 99
+	frame	data/chars/undead/spec10.gif
+	offset	62 91
+	frame	data/chars/undead/spec3.gif
+	frame	data/chars/undead/spec4.gif
+	offset	56 103
+	frame	data/chars/undead/spec5.gif
+	offset	54 103
+	frame	data/chars/undead/spec6.gif
+	offset	54 84
+	frame	data/chars/undead/spec7.gif
+	frame	data/chars/undead/spec8.gif
+	offset	88 99
+	frame	data/chars/undead/spec9.gif
+	offset	70 99
+	frame	data/chars/undead/spec10.gif
+	attack	0 0 0 0 0 0
+
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	38 82
+              bbox       12 22 49 72
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/undead/hatk1.gif
+	offset	37 62
+	frame	data/chars/undead/hatk2.gif
+	offset	38 67
+	frame	data/chars/undead/hatk3.gif
+              attack	74 5 110 60 25 1
+	offset	37 73
+	frame	data/chars/undead/hatk4.gif
+	offset	37 73
+	frame	data/chars/undead/hatk5.gif
+	offset	37 77
+	frame	data/chars/undead/hatk6.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+        loop	0
+	delay	6
+
+        hitfx   data/sounds/burn.wav
+        sound   data/sounds/dattebayo.wav
+
+
+        subentity hokuto
+        spawnframe 0 1 1 1 1
+        
+        custknife hxx
+        throwframe 0 1
+
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+	offset	38 100
+        frame	data/chars/undead/intro2.gif
+	offset	38 98
+        frame	data/chars/undead/intro1.gif
+
+	sound	data/chars/undead/yell.wav
+
+        delay   14
+	offset	38 99
+	frame	data/chars/undead/intro3.gif
+	offset	46 99
+	frame	data/chars/undead/intro4.gif
+
+	offset	45 93
+        delay   10
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+	frame	data/chars/undead/intro6.gif
+	frame	data/chars/undead/intro5.gif
+
+	
+
+anim freespecial3
+	range	5 40
+	loop	0
+	delay	2
+	offset	57 120
+	bbox	12 22 49 72
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/2atk1.gif
+	offset	51 113
+	frame	data/chars/undead/2atk2.gif
+	offset	38 115
+	frame	data/chars/undead/2atk3.gif
+	offset	38 111
+	frame	data/chars/undead/2atk4.gif
+	offset	38 104
+                  bbox          57 10 37 95
+	    frame	data/chars/undead/2atk5.gif
+	offset	32 84
+        attack	42 4 95 80 12 0 0 0 15
+	frame	data/chars/undead/2atk6.gif
+	frame	data/chars/undead/2atk7.gif
+	frame	data/chars/undead/2atk8.gif
+        attack	0 0 0 0 0 0
+	offset	80 90
+	frame	data/chars/undead/2atk9.gif
+	offset	73 124
+	frame	data/chars/undead/2atk10.gif
+	offset	48 124
+	frame	data/chars/undead/2atk11.gif
+	offset	62 105
+	frame	data/chars/undead/2atk12.gif
+	offset	44 84
+	frame	data/chars/undead/2atk13.gif
+	offset	38 84
+	frame	data/chars/undead/2atk14.gif
+	frame	data/chars/undead/2atk15.gif
+        attack	42 4 85 80 13 0 0 0 15
+	offset	36 90
+	frame	data/chars/undead/2atk16.gif
+	frame	data/chars/undead/2atk17.gif
+	offset	57 120
+	frame	data/chars/undead/2atk18.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/2atk19.gif
+	offset	57 120
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/undead/2atk1.gif
+	offset	51 113
+	frame	data/chars/undead/2atk2.gif
+	offset	38 115
+	frame	data/chars/undead/2atk3.gif
+	offset	38 111
+	frame	data/chars/undead/2atk4.gif
+	offset	38 104
+                  bbox          57 10 37 95
+	    frame	data/chars/undead/2atk5.gif
+	offset	32 84
+        attack	42 4 95 80 15 0 0 0 15
+	frame	data/chars/undead/2atk6.gif
+	frame	data/chars/undead/2atk7.gif
+	frame	data/chars/undead/2atk8.gif
+        attack	0 0 0 0 0 0
+	offset	80 90
+	frame	data/chars/undead/2atk9.gif
+	offset	73 124
+	frame	data/chars/undead/2atk10.gif
+	offset	48 124
+	frame	data/chars/undead/2atk11.gif
+	offset	62 105
+	frame	data/chars/undead/2atk12.gif
+	offset	44 84
+	frame	data/chars/undead/2atk13.gif
+	offset	38 84
+	frame	data/chars/undead/2atk14.gif
+	frame	data/chars/undead/2atk15.gif
+        attack	42 4 85 80 25 1 0 0 15
+	offset	36 90
+	frame	data/chars/undead/2atk16.gif
+	frame	data/chars/undead/2atk17.gif
+	offset	57 120
+	frame	data/chars/undead/2atk18.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/2atk19.gif
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	7
+	offset	68 118
+              bbox       12 22 49 72
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/3atk1.gif
+	offset	64 114
+	frame	data/chars/undead/3atk2.gif
+	offset	38 114
+	frame	data/chars/undead/3atk3.gif
+	offset	35 118
+        attack	63 1 110 99 25 1 0 0 25
+	frame	data/chars/undead/3atk4.gif
+	offset	35 100
+	frame	data/chars/undead/3atk5.gif
+	offset	36 55
+	frame	data/chars/undead/3atk6.gif
+	offset	36 55
+        attack	0 0 0 0 0 0
+	frame	data/chars/undead/3atk7.gif
+	offset	37 68
+	frame	data/chars/undead/3atk8.gif
+	offset	37 89
+	frame	data/chars/undead/3atk9.gif
+
+anim freespecial5
+	cancel 7 9 0 a2 freespecial4
+	loop	0
+	delay	6
+	offset	38 82
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/throw1.gif
+	offset	38 62
+	frame	data/chars/undead/throw2.gif
+	offset	38 66
+	frame	data/chars/undead/throw3.gif
+	attack	0 5 164 135 20 1 0 0 22
+	dropv	4 0 0
+	offset	32 79
+	frame	data/chars/undead/throw4.gif
+        frame	data/chars/undead/throw5.gif
+	offset	31 181
+	frame	data/chars/undead/throw6.gif
+	frame	data/chars/undead/throw7.gif
+	frame	data/chars/undead/throw8.gif
+	offset	33 163
+	frame	data/chars/undead/throw9.gif
+              attack	0 0 0 0 0
+
+	
+
+#done
+anim jump
+	loop	0
+	offset	39 68
+	delay	15
+	bbox	12 22 49 72
+	sound	data/chars/undead/sounds/jump.wav
+	frame	data/chars/undead/jump1.gif
+	offset	33 103
+	frame	data/chars/undead/jump2.gif
+	offset	33 98
+	frame	data/chars/undead/jump3.gif
+	offset	44 123
+	frame	data/chars/undead/jump4.gif
+
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	44 98
+	delay	5
+	bbox	12 22 49 72
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/jatk1.gif
+	offset	56 112
+	frame	data/chars/undead/jatk2.gif
+	offset	49 118
+	frame	data/chars/undead/jatk3.gif
+	offset	27 122
+	attack	44 1 106 108 10 1 0 0 0 15
+	frame	data/chars/undead/jatk4.gif
+	offset	27 98
+	frame	data/chars/undead/jatk5.gif
+	offset	27 88
+	frame	data/chars/undead/jatk6.gif
+	offset	36 75
+	frame	data/chars/undead/jatk7.gif
+	frame	data/chars/undead/jatk8.gif
+	frame	data/chars/undead/jatk9.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	36 77
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/undead/grab.gif
+
+
+#done//
+anim grabattack2
+	range	5 90
+	loop	0
+	delay	8
+	offset	38 82
+              bbox       12 22 49 72
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/undead/hatk1.gif
+	offset	37 62
+	frame	data/chars/undead/hatk2.gif
+	offset	38 67
+	frame	data/chars/undead/hatk3.gif
+              attack	74 5 110 60 25 1
+	offset	37 73
+	frame	data/chars/undead/hatk4.gif
+	offset	37 73
+	frame	data/chars/undead/hatk5.gif
+	offset	37 77
+	frame	data/chars/undead/hatk6.gif
+              attack	0 0 0 0 0
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	7
+	offset	38 114
+	bbox	12 22 49 72
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/undead/gatk1.gif
+	offset	38 124
+	frame	data/chars/undead/gatk2.gif
+        attack	71 3 64 67 15 0
+	offset	38 120
+	frame	data/chars/undead/gatk3.gif
+	offset	38 124
+	frame	data/chars/undead/gatk4.gif
+	offset	38 114
+	frame	data/chars/undead/gatk5.gif
+        attack	0 0 0 0 0
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	38 82
+	sound	data/chars/undead/grunt.wav
+	frame	data/chars/undead/throw1.gif
+	offset	38 62
+	frame	data/chars/undead/throw2.gif
+	offset	38 66
+	frame	data/chars/undead/throw3.gif
+	attack	0 5 164 135 20 1
+	offset	32 79
+	frame	data/chars/undead/throw4.gif
+        frame	data/chars/undead/throw5.gif
+	offset	31 181
+	frame	data/chars/undead/throw6.gif
+	frame	data/chars/undead/throw7.gif
+	frame	data/chars/undead/throw8.gif
+	offset	33 163
+	frame	data/chars/undead/throw9.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  38 102
+	bbox 	12 27 49 72
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/undead/pain1.gif
+	offset  38 103
+	frame	data/chars/undead/pain2.gif
+	offset  57 110
+	frame	data/chars/undead/pain3.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  47 90
+	delay	20
+	frame	data/chars/undead/fall1.gif
+	offset  44 98
+	frame	data/chars/undead/fall2.gif
+	offset  39 124
+	frame	data/chars/undead/fall3.gif
+	offset  50 58
+	frame	data/chars/undead/fall4.gif
+	offset  54 35
+	frame	data/chars/undead/fall5.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	10
+	offset	57 38
+	frame	data/chars/undead/rise1.gif
+	offset	44 73
+	frame	data/chars/undead/rise2.gif
+	offset	56 73
+	frame	data/chars/undead/rise3.gif
+
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	10
+	offset	39 68
+	frame	data/chars/undead/jump1.gif
+
+
+

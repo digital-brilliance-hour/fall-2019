@@ -1,0 +1,251 @@
+name	wizard
+health	100
+speed	10
+running	22	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 50
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chasex
+icon	data/chars/wizard/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+palette	data/chars/wizard/idle1.gif
+
+alternatepal	data/chars/wizard/testpal.gif
+alternatepal	data/chars/wizard/testpal2.gif
+alternatepal	data/chars/wizard/testpal3.gif
+alternatepal	data/chars/wizard/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  86 156
+	bbox 	64 99 42 58
+	delay	22
+	frame	data/chars/wizard/idle1.gif
+	frame	data/chars/wizard/idle2.gif
+	frame	data/chars/wizard/idle3.gif
+	frame	data/chars/wizard/idle4.gif
+	frame	data/chars/wizard/idle3.gif
+	frame	data/chars/wizard/idle2.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  86 156
+	bbox 	64 99 42 58
+	delay	16
+	frame	data/chars/wizard/walk1.gif
+	frame	data/chars/wizard/walk2.gif
+	frame	data/chars/wizard/walk3.gif
+	frame	data/chars/wizard/walk4.gif
+	frame	data/chars/wizard/walk3.gif
+	frame	data/chars/wizard/walk2.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  86 156
+	bbox 	64 99 42 58
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/wizard/block1.gif
+	offset  88 156
+	frame	data/chars/wizard/block2.gif
+	move    -8
+	offset  86 156
+	frame	data/chars/wizard/block2.gif
+	offset  88 156
+	frame	data/chars/wizard/block2.gif
+	move    -6
+	offset  86 156
+	frame	data/chars/wizard/block2.gif
+	offset  88 156
+	frame	data/chars/wizard/block2.gif
+	move    -4
+	offset  86 156
+	frame	data/chars/wizard/block2.gif
+	offset  88 156
+	frame	data/chars/wizard/block2.gif
+	offset  86 156
+	move    -2
+	frame	data/chars/wizard/block2.gif
+	offset  88 156
+	frame	data/chars/wizard/block2.gif
+	offset  86 156
+	delay   20
+	move    0
+	frame	data/chars/wizard/block1.gif
+
+anim pain
+	loop	0
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/pain1.gif
+	frame	data/chars/wizard/pain2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/fall1.gif
+	delay	1000
+	frame	data/chars/wizard/fall2.gif
+	delay	20
+	frame	data/chars/wizard/fall3.gif
+	frame	data/chars/wizard/fall3.gif
+
+
+
+anim death
+	loop	0
+	offset  86 156
+	delay	17
+	move	-12
+	frame	data/chars/wizard/d1
+	frame	data/chars/wizard/d2
+	frame	data/chars/wizard/d3
+	move	0
+	frame	data/chars/wizard/d4
+
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/pain1.gif
+
+
+anim attack1
+	range	0 80
+	loop	0
+	delay	10
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/atk1.gif
+	frame	data/chars/wizard/atk2.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk4.gif
+	attack	104 59 70 65 25 1 0 0 28
+	dropv	2 4 0
+	frame	data/chars/wizard/atk5.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk7.gif
+	frame	data/chars/wizard/atk8.gif
+	frame	data/chars/wizard/atk7.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/atk4.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk2.gif
+
+
+
+
+anim attack2
+	range	180 300 
+	loop	0
+	delay	7
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/atk1.gif
+	frame	data/chars/wizard/atk2.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk4.gif
+	attack	104 59 70 65 25 1 0 0 28
+	dropv	2 4 0
+	frame	data/chars/wizard/atk5.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk7.gif
+	attack	0 0 0 0 0 0
+	attack	294 5 66 355 5 0 0 0 16
+	offset  86 356
+	bbox 	64 299 42 58
+	frame	data/chars/wizard/spec1.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec2.gif
+	attack	294 5 66 355 2 0 0 0 16
+	frame	data/chars/wizard/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec4.gif
+	attack	294 5 66 355 2 0 0 0 16
+	frame	data/chars/wizard/spec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec6.gif
+	attack	294 5 66 355 5 0 0 0 16
+	frame	data/chars/wizard/spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec8.gif
+	attack	294 5 66 355 10 1 0 0 16
+	frame	data/chars/wizard/spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec6.gif
+	attack	294 5 66 355 10 1 0 0 16
+	frame	data/chars/wizard/spec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/spec4.gif
+	attack	294 5 66 355 10 1 0 0 16
+	frame	data/chars/wizard/spec3.gif
+	frame	data/chars/wizard/spec2.gif
+	frame	data/chars/wizard/spec1.gif
+	attack	0 0 0 0 0 0
+	offset  86 156
+	bbox 	64 99 42 58
+	attack	104 59 70 65 25 1 0 0 28
+	frame	data/chars/wizard/atk7.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/atk4.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk2.gif
+
+anim special
+	range	0 80
+	loop	0
+	delay	10
+	offset  86 156
+	bbox 	64 99 42 58
+	frame	data/chars/wizard/atk1.gif
+	frame	data/chars/wizard/atk2.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk4.gif
+	attack	104 59 70 65 25 1 0 0 28
+	dropv	2 4 0
+	frame	data/chars/wizard/atk5.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk7.gif
+	frame	data/chars/wizard/atk8.gif
+	frame	data/chars/wizard/atk7.gif
+	frame	data/chars/wizard/atk6.gif
+	frame	data/chars/wizard/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/wizard/atk4.gif
+	frame	data/chars/wizard/atk3.gif
+	frame	data/chars/wizard/atk2.gif
+
+
+
+
+

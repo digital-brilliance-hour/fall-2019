@@ -1,0 +1,22 @@
+name	Flash2
+type	none
+toflip 1
+load blood2
+palette data/chars/misc/f1
+anim idle
+	delay	1
+	offset	32 46
+	custbomb blood2
+	tossframe 3 1
+	quakeframe 1 1 1
+	frame	data/chars/misc/empty
+	delay	6
+	frame	data/chars/misc/f1
+	frame	data/chars/misc/f2
+	frame	data/chars/misc/f3
+	frame	data/chars/misc/f4
+	frame	data/chars/misc/f5
+	frame	data/chars/misc/f6
+	frame	data/chars/misc/f7
+
+	

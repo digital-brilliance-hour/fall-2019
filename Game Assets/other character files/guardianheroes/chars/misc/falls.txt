@@ -1,0 +1,16 @@
+name	falls
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/falls/fall1.gif
+
+anim idle
+	loop	1
+	delay	13
+	offset	0 140
+	frame	data/bgs/dragons/falls/fall1.gif
+	frame	data/bgs/dragons/falls/fall2.gif
+	frame	data/bgs/dragons/falls/fall3.gif
+	frame	data/bgs/dragons/falls/fall4.gif
+

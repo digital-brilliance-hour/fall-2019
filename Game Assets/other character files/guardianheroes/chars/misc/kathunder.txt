@@ -1,0 +1,91 @@
+name	kathunder
+health	1
+type	npc
+shadow	0
+remove  0
+alpha 1
+palette	data/chars/misc/thunder1.gif
+candamage enemy
+nomove 1 1
+lifespan 4
+subject_to_gravity 0
+nolife 1
+
+anim idle
+
+
+        subentity hokuto
+        spawnframe 0 1 1 1 1
+
+	loop	0
+
+        hitfx   data/sounds/burn.wav
+
+
+        sound   data/sounds/thunder1.wav
+
+
+	offset	48 104
+
+
+        delay   50
+	frame	data/chars/misc/end.gif
+
+        delay   50
+	frame	data/chars/misc/end.gif
+
+        sound   data/sounds/thunder2.wav
+	shock	103 15 501 52 15 0 1 0 0 25
+        delay   7
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	shock	0 0 0 0 0 0
+	frame	data/chars/misc/thunder1.gif
+	shock	103 15 501 52 15 0 1 0 0 25
+	frame	data/chars/misc/thunder1b.gif
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+
+	frame	data/chars/misc/thunder1.gif
+	shock	0 0 0 0 0 0
+	frame	data/chars/misc/thunder1b.gif
+	shock	103 15 501 52 15 0 1 0 0 25
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	shock	0 0 0 0 0 0
+	frame	data/chars/misc/thunder1.gif
+	shock	103 15 501 52 15 0 1 0 0 25
+	frame	data/chars/misc/thunder1b.gif
+
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	shock	0 0 0 0 0 0
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+	frame	data/chars/misc/thunder1.gif
+	frame	data/chars/misc/thunder1b.gif
+
+
+
+        delay   5
+	frame	data/chars/misc/thunder2.gif
+        shock  0 0 0 0
+	frame	data/chars/misc/thunder3.gif
+	shock	103 15 501 52 25 1 1 0 0 25
+	frame	data/chars/misc/thunder4.gif
+	frame	data/chars/misc/thunder5.gif
+	frame	data/chars/misc/thunder6.gif
+	frame	data/chars/misc/thunder7.gif
+	shock	0 0 0 0
+
+
+
+
+        frame   data/chars/misc/end.gif
+

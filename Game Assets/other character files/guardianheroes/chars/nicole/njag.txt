@@ -1,0 +1,155 @@
+
+name	  njag
+health 	 150
+speed	 14
+running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/nicole/icon
+diesound       	sound	Data/sounds/jag.wav
+animal	1
+modelflag 1
+
+
+alternatepal	data/chars/nicole/jaguar/testpal
+
+
+
+#done//
+
+anim get
+	loop	0
+	offset  125 251
+	delay	20
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/nicole/jaguar/rise1
+
+
+anim idle
+	loop	1
+	offset  125 251
+	bbox 	99 156 70 77
+	delay	15
+	frame	data/chars/nicole/jaguar/idle1
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  126 255
+	bbox 	102 160 70 77
+	delay	7
+	frame	data/chars/nicole/jaguar/walk1
+	frame	data/chars/nicole/jaguar/walk2
+	frame	data/chars/nicole/jaguar/walk3
+	frame	data/chars/nicole/jaguar/walk4
+        frame	data/chars/nicole/jaguar/walk5
+        frame	data/chars/nicole/jaguar/walk6
+        frame	data/chars/nicole/jaguar/walk7
+
+
+anim run
+	loop	1
+	offset  130 264
+	bbox 	105 171 70 77
+	delay	7
+	frame	data/chars/nicole/jaguar/run1
+	frame	data/chars/nicole/jaguar/run2
+	frame	data/chars/nicole/jaguar/run3
+	frame	data/chars/nicole/jaguar/run4
+	frame	data/chars/nicole/jaguar/run5
+
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	4
+	move	9
+	offset	118 327
+	bbox	93 242
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/nicole/jaguar/2atk1
+	attack	83 198 180 126 25 1 0 0 28
+	frame	data/chars/nicole/jaguar/2atk2
+	frame	data/chars/nicole/jaguar/2atk3
+	frame	data/chars/nicole/jaguar/2atk4
+	frame	data/chars/nicole/jaguar/2atk5
+	frame	data/chars/nicole/jaguar/2atk6
+	frame	data/chars/nicole/jaguar/2atk7
+	frame	data/chars/nicole/jaguar/2atk8
+	frame	data/chars/nicole/jaguar/2atk9
+	frame	data/chars/nicole/jaguar/2atk10
+	frame	data/chars/nicole/jaguar/2atk11
+	frame	data/chars/nicole/jaguar/2atk12
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/jaguar/2atk13
+	frame	data/chars/nicole/jaguar/2atk14
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	7
+	offset	121 330
+	bbox	100 243 70 77
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/nicole/jaguar/atk1
+	frame	data/chars/nicole/jaguar/atk2
+	frame	data/chars/nicole/jaguar/atk3
+	attack	121 217 92 110 10 0 0 0 16
+	frame	data/chars/nicole/jaguar/atk4
+	frame	data/chars/nicole/jaguar/atk5
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/jaguar/atk6
+	attack	139 212 98 120 18 1 0 0 28
+	frame	data/chars/nicole/jaguar/atk7
+	frame	data/chars/nicole/jaguar/atk8
+	frame	data/chars/nicole/jaguar/atk9
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/jaguar/atk10
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	4
+	move	9
+	offset	118 327
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/nicole/jaguar/2atk1
+	attack	83 198 180 126 25 1 0 0 28
+	frame	data/chars/nicole/jaguar/2atk2
+	frame	data/chars/nicole/jaguar/2atk3
+	frame	data/chars/nicole/jaguar/2atk4
+	frame	data/chars/nicole/jaguar/2atk5
+	frame	data/chars/nicole/jaguar/2atk6
+	frame	data/chars/nicole/jaguar/2atk7
+	frame	data/chars/nicole/jaguar/2atk8
+	frame	data/chars/nicole/jaguar/2atk9
+	frame	data/chars/nicole/jaguar/2atk10
+	frame	data/chars/nicole/jaguar/2atk11
+	frame	data/chars/nicole/jaguar/2atk12
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/jaguar/2atk13
+	frame	data/chars/nicole/jaguar/2atk14
+
+
+anim fall
+	loop	0
+	offset  125 251
+	delay	20
+	frame	data/chars/nicole/jaguar/pain1
+
+anim pain
+	loop	0
+	offset  125 251
+	delay	20
+	frame	data/chars/nicole/jaguar/pain1
+
+

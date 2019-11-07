@@ -1,0 +1,262 @@
+name	superzur
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/superzur/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+palette	data/chars/superzur/idle1.gif
+
+
+#alternatepal	data/chars/superzur/testpal.gif
+#alternatepal	data/chars/superzur/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  85 186
+	bbox 	59 102 58 83
+	delay	16
+	frame	data/chars/superzur/idle1.gif
+	frame	data/chars/superzur/idle2.gif
+	frame	data/chars/superzur/idle3.gif
+	frame	data/chars/superzur/idle4.gif
+	frame	data/chars/superzur/idle3.gif
+	frame	data/chars/superzur/idle2.gif
+
+anim walk
+	loop	1
+	offset  85 186
+	bbox 	59 102 58 83
+	delay	13
+	frame	data/chars/superzur/walk1.gif
+	frame	data/chars/superzur/walk2.gif
+	frame	data/chars/superzur/walk3.gif
+	frame	data/chars/superzur/walk4.gif
+	frame	data/chars/superzur/walk5.gif
+	frame	data/chars/superzur/walk6.gif
+
+anim run
+	loop	1
+	offset  85 186
+	bbox 	59 102 58 83
+	delay	13
+	frame	data/chars/superzur/run1.gif
+	frame	data/chars/superzur/run2.gif
+	frame	data/chars/superzur/run3.gif
+	frame	data/chars/superzur/run4.gif
+	frame	data/chars/superzur/run5.gif
+	frame	data/chars/superzur/run6.gif
+
+anim runattack
+	range	0 66
+	loop	0
+	delay	4
+	move	15
+	offset  85 186
+#	bbox 	59 102 58 83
+	sound	data/chars/superzur/ratk.wav
+	frame	data/chars/superzur/ratk1.gif
+	attack	31 105 130 45 25 1 0 0 20
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	frame	data/chars/superzur/ratk2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/superzur/ratk1.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  85 186
+	bbox 	59 102 58 83
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/superzur/block1.gif
+	offset	87 186
+	frame	data/chars/superzur/block2.gif
+	move    -8
+	offset	85 186
+	frame	data/chars/superzur/block2.gif
+	offset	87 186
+	frame	data/chars/superzur/block2.gif
+	move    -6
+	offset	85 186
+	frame	data/chars/superzur/block2.gif
+	offset	87 186
+	frame	data/chars/superzur/block2.gif
+	move    -4
+	offset	85 186
+	frame	data/chars/superzur/block2.gif
+	offset	87 186
+	frame	data/chars/superzur/block2.gif
+	offset	85 186
+	move    -2
+	frame	data/chars/superzur/block2.gif
+	offset	87 186
+	frame	data/chars/superzur/block2.gif
+	offset	85 186
+	delay   20
+	move    0
+	frame	data/chars/superzur/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset  85 186
+	bbox 	59 102 58 83
+	frame	data/chars/superzur/pain1.gif
+	frame	data/chars/superzur/pain2.gif
+	frame	data/chars/superzur/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset  85 186
+	sound	data/chars/superzur/fall.wav
+	frame	data/chars/superzur/fall1.gif
+	frame	data/chars/superzur/fall2.gif
+	delay	1000
+	frame	data/chars/superzur/fall3.gif
+	delay	20
+	frame	data/chars/superzur/fall4.gif
+	frame	data/chars/superzur/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset  85 186
+	sound	data/chars/superzur/fall.wav
+	frame	data/chars/superzur/fall1.gif
+	frame	data/chars/superzur/fall2.gif
+	delay	1000
+	frame	data/chars/superzur/fall3.gif
+	delay	20
+	frame	data/chars/superzur/fall4.gif
+	frame	data/chars/superzur/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  85 186
+	bbox 	59 102 58 83
+	frame	data/chars/superzur/rise1.gif
+
+anim riseattack
+	range	0 65
+	loop	0
+	move	10
+	delay	7
+	offset  85 186
+	sound	data/chars/superzur/zur.wav
+	frame	data/chars/superzur/atk1.gif
+	frame	data/chars/superzur/atk2.gif
+	attack	95 100 84 51 10 0 0 0 14
+	frame	data/chars/superzur/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/superzur/atk4.gif
+	frame	data/chars/superzur/atk5.gif
+	frame	data/chars/superzur/atk6.gif
+	frame	data/chars/superzur/atk7.gif
+	attack	32 89 130 100 20 1 0 0 26
+	frame	data/chars/superzur/atk8.gif
+	frame	data/chars/superzur/atk9.gif
+	frame	data/chars/superzur/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/superzur/atk11.gif
+
+
+
+anim attack1
+	range	0 65
+	loop	0
+	delay	7
+	offset  85 186
+	bbox 	59 102 58 83
+	sound	data/chars/superzur/zur.wav
+	frame	data/chars/superzur/atk1.gif
+	frame	data/chars/superzur/atk2.gif
+	attack	95 100 84 51 10 0 0 0 14
+	frame	data/chars/superzur/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/superzur/atk4.gif
+	frame	data/chars/superzur/atk5.gif
+	frame	data/chars/superzur/atk6.gif
+	frame	data/chars/superzur/atk7.gif
+	attack	32 89 130 100 20 1 0 0 26
+	frame	data/chars/superzur/atk8.gif
+	frame	data/chars/superzur/atk9.gif
+	frame	data/chars/superzur/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/superzur/atk11.gif
+
+anim attack2
+	range	200 250
+	loop	0
+	delay	14
+	throwframe	3
+	offset  85 186
+	bbox 	59 102 58 83
+	sound	data/chars/superzur/enei.wav
+	frame	data/chars/superzur/2atk1.gif
+	frame	data/chars/superzur/2atk2.gif
+	frame	data/chars/superzur/2atk3.gif
+	frame	data/chars/superzur/2atk2.gif
+
+
+
+
+anim special
+	range	0 65
+	loop	0
+	delay	10
+	offset  85 186
+	sound	data/chars/superzur/enei.wav
+	frame	data/chars/superzur/spec1.gif
+	frame	data/chars/superzur/spec2.gif
+	attack	10 49 127 138 20 1 0 0 14
+	frame	data/chars/superzur/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/superzur/spec2.gif
+
+
+
+
+
+
+
+
+

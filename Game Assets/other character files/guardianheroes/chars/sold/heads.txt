@@ -1,0 +1,39 @@
+name heads
+type pshot
+health 1
+speed 4
+candamage enemy obstacle
+noatflash 1
+
+palette	data/chars/sold/idle1
+
+
+anim idle 
+	offset 44 40
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	frame data/chars/sold/head1
+
+anim attack1
+	offset 44 40
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 200
+	landframe 1
+	frame data/chars/sold/head2
+	delay 999999999999
+	frame data/chars/sold/head2
+
+anim fall
+	offset 44 40
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 200
+	landframe 1
+	frame data/chars/sold/head2
+	delay 999999999999
+	frame data/chars/sold/head2
+
+
+

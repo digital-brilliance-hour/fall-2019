@@ -1,0 +1,14 @@
+name	battlef
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/battle/battle1.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 244
+	frame	data/bgs/dragons/battle/front.gif
+
+	

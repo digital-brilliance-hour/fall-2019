@@ -1,0 +1,299 @@
+name	calibur
+health	500
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+nodrop	2
+aggression 40
+bflash bflash
+blockodds 1
+falldie	1
+thold     49
+#nodrop	2
+#nopain 1
+aimove chase
+icon	data/chars/calibur/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/calibur/idle1.gif
+
+#alternatepal	data/chars/calibur/testpal.gif
+#alternatepal	data/chars/calibur/testpal2.gif
+#alternatepal	data/chars/calibur/testpal3.gif
+#alternatepal	data/chars/calibur/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  76 148
+	bbox 	34 56 90 90
+	delay	11
+	frame	data/chars/calibur/idle1.gif
+	frame	data/chars/calibur/idle2.gif
+	frame	data/chars/calibur/idle3.gif
+	frame	data/chars/calibur/idle4.gif
+	frame	data/chars/calibur/idle5.gif
+	frame	data/chars/calibur/idle6.gif
+	frame	data/chars/calibur/idle7.gif
+	frame	data/chars/calibur/idle8.gif
+	frame	data/chars/calibur/idle9.gif
+	frame	data/chars/calibur/idle10.gif
+	frame	data/chars/calibur/idle11.gif
+	frame	data/chars/calibur/idle12.gif
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	91 151
+	bbox 	42 59 88 90
+	delay	8
+	frame	data/chars/calibur/walk1.gif
+	frame	data/chars/calibur/walk2.gif
+	frame	data/chars/calibur/walk3.gif
+	frame	data/chars/calibur/walk4.gif
+	frame	data/chars/calibur/walk5.gif
+	frame	data/chars/calibur/walk6.gif
+	frame	data/chars/calibur/walk7.gif
+	frame	data/chars/calibur/walk8.gif
+
+
+
+
+
+anim run
+	loop	1
+	offset	91 151
+	bbox 	42 59 88 90
+	delay	6
+	frame	data/chars/calibur/walk1.gif
+	frame	data/chars/calibur/walk2.gif
+	frame	data/chars/calibur/walk3.gif
+	frame	data/chars/calibur/walk4.gif
+	frame	data/chars/calibur/walk5.gif
+	frame	data/chars/calibur/walk6.gif
+	frame	data/chars/calibur/walk7.gif
+	frame	data/chars/calibur/walk8.gif
+
+
+
+
+anim runattack
+	range	0 200
+	loop	0
+	delay	6
+	move	5
+	offset	222 120
+	bbox 	174 26 90 90
+	frame	data/chars/calibur/2atk6.gif
+	attack	197 2 236 126 20 1 0 0 28
+	frame	data/chars/calibur/2atk7.gif
+	frame	data/chars/calibur/2atk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/2atk9.gif
+	frame	data/chars/calibur/2atk10.gif
+
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	68 134
+	bbox 	142 95 90 90
+	frame	data/chars/calibur/pain1.gif
+	frame	data/chars/calibur/pain2.gif
+	frame	data/chars/calibur/pain1.gif
+
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	54 138
+	frame	data/chars/captain/fall1.gif
+	frame	data/chars/captain/fall2.gif
+	delay	1000
+	frame	data/chars/captain/fall3.gif
+	offset	57 126
+	delay	20
+	frame	data/chars/captain/fall4.gif
+	frame	data/chars/captain/fall4.gif
+
+anim death
+	loop	0
+	delay	13
+	offset	215 190
+	frame	data/chars/calibur/death1.gif
+	frame	data/chars/calibur/death2.gif
+	frame	data/chars/calibur/death3.gif
+	frame	data/chars/calibur/death4.gif
+	frame	data/chars/calibur/death5.gif
+	frame	data/chars/calibur/death6.gif
+	frame	data/chars/calibur/death7.gif
+	frame	data/chars/calibur/death8.gif
+	frame	data/chars/calibur/death9.gif
+	frame	data/chars/calibur/death10.gif
+	frame	data/chars/calibur/death11.gif
+	frame	data/chars/calibur/death12.gif
+	frame	data/chars/calibur/death13.gif
+	frame	data/chars/calibur/death14.gif
+	frame	data/chars/calibur/death15.gif
+	frame	data/chars/calibur/death16.gif
+	frame	data/chars/calibur/death17.gif
+	frame	data/chars/calibur/death18.gif
+	frame	data/chars/calibur/death19.gif
+	frame	data/chars/calibur/death20.gif
+	frame	data/chars/calibur/death21.gif
+	frame	data/chars/calibur/death22.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	204 202
+	bbox 	142 95 90 90
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/calibur/block1.gif
+	offset	204 202
+	frame	data/chars/calibur/block2.gif
+	move    -8
+	offset	206 202
+	frame	data/chars/calibur/block2.gif
+	offset	204 202
+	frame	data/chars/calibur/block2.gif
+	move    -6
+	offset	206 202
+	frame	data/chars/calibur/block2.gif
+	offset	204 202
+	frame	data/chars/calibur/block2.gif
+	move    -4
+	offset	206 202
+	frame	data/chars/calibur/block2.gif
+	offset	204 202
+	frame	data/chars/calibur/block2.gif
+	offset	206 202
+	move    -2
+	frame	data/chars/calibur/block2.gif
+	offset	204 202
+	frame	data/chars/calibur/block2.gif
+	offset	204 202
+	delay   20
+	move    0
+	frame	data/chars/calibur/block1.gif
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	67 140
+	bbox 	79 82 60 60
+	frame	data/chars/captain/rise1.gif
+	frame	data/chars/captain/rise2.gif
+	frame	data/chars/captain/rise3.gif
+
+
+anim riseattack
+	range	0 200
+	loop	0
+	delay	6
+	offset	222 120
+	bbox 	174 26 90 90
+	frame	data/chars/calibur/2atk6.gif
+	attack	197 2 236 126 20 1 0 0 28
+	frame	data/chars/calibur/2atk7.gif
+	frame	data/chars/calibur/2atk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/2atk9.gif
+	frame	data/chars/calibur/2atk10.gif
+
+
+
+anim attack1
+	range	0 188
+	loop	0
+	delay	10
+	offset	136 173
+	bbox 	90 94 90 90
+	frame	data/chars/calibur/atk1.gif
+	frame	data/chars/calibur/atk2.gif
+	attack	147 3 188 172 20 1 0 0 28
+	frame	data/chars/calibur/atk3.gif
+	frame	data/chars/calibur/atk4.gif
+	frame	data/chars/calibur/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/atk6.gif
+
+
+
+anim attack2
+	range	180 218
+	loop	0
+	delay	7
+	offset	222 120
+	bbox 	174 26 90 90
+	frame	data/chars/calibur/2atk1.gif
+	frame	data/chars/calibur/2atk2.gif
+	attack	1 5 218 130 15 0 0 0 20
+	frame	data/chars/calibur/2atk3.gif
+	frame	data/chars/calibur/2atk4.gif
+	frame	data/chars/calibur/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/2atk6.gif
+	attack	197 2 236 126 20 1 0 0 28
+	frame	data/chars/calibur/2atk7.gif
+	frame	data/chars/calibur/2atk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/2atk9.gif
+	frame	data/chars/calibur/2atk10.gif
+
+
+
+
+
+anim special
+	range	0 183
+	loop	0
+	delay	7
+	offset	222 120
+	bbox 	174 26 90 90
+	frame	data/chars/calibur/2atk6.gif
+	attack	197 2 236 126 20 1 0 0 28
+	frame	data/chars/calibur/2atk7.gif
+	frame	data/chars/calibur/2atk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/2atk9.gif
+	frame	data/chars/calibur/2atk10.gif
+
+
+anim upper
+	range	0 188
+	loop	0
+	delay	6
+	offset	136 173
+	bbox 	90 94 90 90
+	frame	data/chars/calibur/atk1.gif
+	frame	data/chars/calibur/atk2.gif
+	attack	147 3 188 172 20 1 0 0 28
+	frame	data/chars/calibur/atk3.gif
+	frame	data/chars/calibur/atk4.gif
+	frame	data/chars/calibur/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/calibur/atk6.gif
+

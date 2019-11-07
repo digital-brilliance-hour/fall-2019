@@ -1,0 +1,212 @@
+name	pyron
+health	500
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/pyron/icon.gif
+diesound data/sounds/die1.wav
+noatflash 1
+flash	robof
+
+
+anim idle
+	loop	1
+	offset	51 204
+	bbox	33 29 42 80
+	delay	12
+	frame	data/chars/pyron/idle1.gif
+	frame	data/chars/pyron/idle2.gif
+	frame	data/chars/pyron/idle3.gif
+	frame	data/chars/pyron/idle4.gif
+	frame	data/chars/pyron/idle5.gif
+	frame	data/chars/pyron/idle6.gif
+	frame	data/chars/pyron/idle7.gif
+
+anim walk
+	loop	1
+	offset	126 194
+	bbox	108 112 42 79
+	delay	10
+	frame	data/chars/pyron/walk1.gif
+	frame	data/chars/pyron/walk2.gif
+	frame	data/chars/pyron/walk3.gif
+	frame	data/chars/pyron/walk4.gif
+	frame	data/chars/pyron/walk5.gif
+	
+anim pain
+	loop	0
+	offset	76 104
+	bbox	28 17 63 88
+	delay	10
+	frame	data/chars/pyron/pain1.gif
+	bbox	20 16 71 88
+#	delay	10
+	frame	data/chars/pyron/pain2.gif
+	bbox	9 27 85 73
+	frame	data/chars/pyron/pain3.gif
+	bbox	20 16 71 88
+	frame	data/chars/pyron/pain2.gif
+	bbox	28 17 63 88
+	frame	data/chars/pyron/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	10
+	offset	87 91
+	attack	58 50 60 52 15 1
+	frame	data/chars/pyron/fall1.gif
+	attack	44 56 60 52 15 1
+	frame	data/chars/pyron/fall2.gif
+	attack	48 59 60 52 15 1
+	frame	data/chars/pyron/fall3.gif
+	attack	51 31 49 110 15 1
+	frame	data/chars/pyron/fall4.gif
+	frame	data/chars/pyron/fall5.gif
+	frame	data/chars/pyron/fall6.gif
+	frame	data/chars/pyron/fall7.gif
+	frame	data/chars/pyron/fall8.gif
+
+anim rise
+	loop	0
+	offset	70 235
+	delay	12
+	frame	data/chars/pyron/rise1.gif
+	frame	data/chars/pyron/rise2.gif
+	frame	data/chars/pyron/rise3.gif
+	frame	data/chars/pyron/rise4.gif
+	frame	data/chars/pyron/rise5.gif
+	frame	data/chars/pyron/rise6.gif
+	frame	data/chars/pyron/rise5.gif
+	frame	data/chars/pyron/rise4.gif
+	frame	data/chars/pyron/rise5.gif
+	frame	data/chars/pyron/rise6.gif
+#	frame	data/chars/pyron/rise7.gif
+#	frame	data/chars/pyron/rise8.gif
+#	frame	data/chars/pyron/rise7.gif
+#	frame	data/chars/pyron/rise8.gif
+#	frame	data/chars/pyron/rise7.gif
+#	frame	data/chars/pyron/rise8.gif
+	
+anim attack1
+	range	1 115
+	loop	0
+	delay	10
+	offset	130 104
+	bbox	106 23 51 82
+	frame	data/chars/pyron/atk1.gif
+	attack	161 24 55 24 5
+	frame	data/chars/pyron/atk2.gif
+	attack	0 0 0 0 0 0
+	bbox	118 30 49 68
+	attack	169 33 55 27 7 
+	frame	data/chars/pyron/atk3.gif
+	frame	data/chars/pyron/atk4.gif
+	frame	data/chars/pyron/atk5.gif
+	frame	data/chars/pyron/atk6.gif
+	attack	173 2 66 92 9
+	frame	data/chars/pyron/atk7.gif
+	attack	0 0 0 0 0 0
+	attack	176 2 80 92 11
+	frame	data/chars/pyron/atk8.gif
+	attack	0 0 0 0 0 0
+	attack	186 16 73 64 13
+	frame	data/chars/pyron/atk9.gif
+	attack	0 0 0 0 0 0
+	attack	185 14 58 67 15 1
+	frame	data/chars/pyron/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/pyron/atk9.gif
+	
+		
+anim attack2
+	range	1 115
+	loop	0
+	delay	10
+#	sound	data/sounds/zoef.wav
+	offset	80 117
+	bbox	30 32 46 82
+	frame	data/chars/pyron/atk201.gif
+	bbox	37 32 46 82
+	frame	data/chars/pyron/atk202.gif
+	bbox	42 34 61 76
+	delay	10
+	attack	96 46 79 29 5 
+	frame	data/chars/pyron/atk203.gif
+	attack	0 0 0 0 0 0
+	delay	12
+	bbox	38 30 52 85
+	frame	data/chars/pyron/atk204.gif
+	bbox	30 32 46 82
+	frame	data/chars/pyron/atk201.gif
+	bbox	57 25 44 88
+	frame	data/chars/pyron/atk205.gif
+	bbox	63 24 44 88
+	attack	101 13 79 37 10
+	frame	data/chars/pyron/atk206.gif
+	attack	0 0 0 0 0 0
+	delay	15
+	attack	104 16 74 77 15 1
+	frame	data/chars/pyron/atk207.gif
+	attack	0 0 0 0 0 0
+		
+anim jumpattack
+	loop	0
+	offset	70 138
+	delay	12
+	bbox	55 35 41 105
+	frame	data/chars/pyron/jatk1.gif
+	bbox	56 22 38 84
+	frame	data/chars/pyron/jatk2.gif
+	bbox	51 20 42 70
+	frame	data/chars/pyron/jatk3.gif
+	bbox	24 21 68 58
+	attack	92 57 77 33 10 
+	frame	data/chars/pyron/jatk4.gif
+	attack	0 0 0 0 0 0
+	bbox	26 25 68 58
+	attack	99 51 79 48 10
+	frame	data/chars/pyron/jatk5.gif
+	attack	0 0 0 0 0 0
+	bbox	49 23 43 62
+	attack	144 65 37 33 10 1
+	frame	data/chars/pyron/jatk6.gif
+	attack	0 0 0 0 0 0
+
+anim special
+	range	1 115
+	loop	0
+	delay	15
+	offset	120 96
+#	sound	data/sounds/maxboom.wav
+	frame	data/chars/pyron/spec1.gif
+	attack	7 17 228 77 5 
+	frame	data/chars/pyron/spec2.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec3.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec4.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5 
+	frame	data/chars/pyron/spec2.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec3.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec4.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec2.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 5
+	frame	data/chars/pyron/spec3.gif
+	attack	0 0 0 0 0 0
+	attack	7 17 228 77 20 1
+	frame	data/chars/pyron/spec4.gif
+	attack	0 0 0 0 0 0
+	
+	
+

@@ -1,0 +1,16 @@
+name	iceb
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/icebone/ice1.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 180
+	frame	data/bgs/dragons/icebone/ice1.gif
+	frame	data/bgs/dragons/icebone/ice2.gif
+	frame	data/bgs/dragons/icebone/ice3.gif
+	frame	data/bgs/dragons/icebone/ice4.gif
+

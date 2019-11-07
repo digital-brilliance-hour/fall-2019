@@ -1,0 +1,129 @@
+name	zomb
+health	150
+speed	9
+#running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+#aggression 10
+bflash bflash
+blockodds 1
+thold     49
+nodrop	2
+nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/zomb/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/zomb/idle1.gif
+
+
+alternatepal	data/chars/zomb/testpal.gif
+#alternatepal	data/chars/zomb/testpal2.gif
+#alternatepal	data/chars/zomb/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  56 278
+	bbox 	27 145 100 140
+	delay	22
+	frame	data/chars/zomb/idle1.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  56 278
+	bbox 	27 145 100 140
+	delay	24
+	frame	data/chars/zomb/walk1.gif
+	frame	data/chars/zomb/walk2.gif
+	frame	data/chars/zomb/walk3.gif
+	frame	data/chars/zomb/walk4.gif
+	frame	data/chars/zomb/walk5.gif
+	frame	data/chars/zomb/walk6.gif
+
+anim pain
+	loop	0
+	offset  56 278
+	bbox 	27 145 100 140
+	frame	data/chars/zomb/fall1.gif
+	frame	data/chars/zomb/fall2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  56 278
+	bbox 	27 145 100 140
+	frame	data/chars/zomb/fall1.gif
+	delay	1000
+	frame	data/chars/zomb/fall2.gif
+	delay	20
+	frame	data/chars/zomb/fall3.gif
+	frame	data/chars/zomb/fall3.gif
+
+
+
+anim death
+	loop	0
+	offset  56 278
+	bbox 	27 145 100 140
+	delay	30
+	frame	data/chars/zomb/d1
+	frame	data/chars/zomb/d2
+	frame	data/chars/zomb/d3
+	frame	data/chars/zomb/d4
+	frame	data/chars/zomb/d5
+	frame	data/chars/zomb/d6
+
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  56 278
+	bbox 	27 145 100 140
+	frame	data/chars/zomb/fall1.gif
+	frame	data/chars/zomb/fall2.gif
+
+
+
+anim attack1
+	range	0 190
+	loop	0
+	delay	10
+	offset  56 278
+	bbox 	27 145 100 140
+	frame	data/chars/zomb/atk1.gif
+	frame	data/chars/zomb/atk2.gif
+	attack	88 95 117 181 25 1 0 0 28
+	frame	data/chars/zomb/atk3.gif
+	frame	data/chars/zomb/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/zomb/atk5.gif
+	frame	data/chars/zomb/atk6.gif
+	attack	88 95 117 181 25 1 0 0 28
+	frame	data/chars/zomb/atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/zomb/atk8.gif
+
+
+
+
+
+
+

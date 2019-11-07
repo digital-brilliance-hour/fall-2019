@@ -1,0 +1,177 @@
+name	Barbarian
+health	150
+speed	10
+type	enemy
+shadow	5
+aggression 30
+nodieblink 3
+icon	data/chars/barbar/icon.gif
+diesound data/sounds/die1.wav
+palette	data/chars/barbar/pal.gif
+falldie 1
+alternatepal	data/chars/barbar/testpal.gif
+
+
+anim idle
+	loop	1
+	offset  56 90
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/barbar/idle1.gif
+
+	
+anim walk
+	loop	1
+	offset  109 145
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/barbar/walk1.gif
+	frame	data/chars/barbar/walk2.gif
+	frame	data/chars/barbar/walk3.gif
+	frame	data/chars/barbar/walk4.gif
+	frame	data/chars/barbar/walk5.gif
+	frame	data/chars/barbar/walk6.gif
+	frame	data/chars/barbar/walk7.gif
+	frame	data/chars/barbar/walk8.gif
+
+		
+anim pain
+	loop	0
+	offset	113 145
+	delay	6
+	bbox	12 10 58 90
+	frame	data/chars/barbar/pain1.gif
+	frame	data/chars/barbar/pain2.gif
+
+
+	
+anim fall
+	landframe	4
+	loop	1
+	offset	113 145
+	ATTACK	27 32 82 87 15 1
+	bbox	37 64 72 65
+	delay	20
+	frame	data/chars/barbar/fall1.gif
+	frame	data/chars/barbar/fall2.gif
+	delay	1000
+	frame	data/chars/barbar/fall3.gif
+	delay	20
+	frame	data/chars/barbar/fall4.gif
+	frame	data/chars/barbar/fall4.gif
+
+
+anim rise
+	loop	0
+	offset	113 145
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/barbar/rise1.gif
+
+
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	12
+	offset	127 147
+	bbox	44 58 63 84
+	frame	data/chars/barbar/atk1.gif
+	frame	data/chars/barbar/atk2.gif
+	attack	136 50 94 128 10
+	frame	data/chars/barbar/atk3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/barbar/atk4.gif
+	offset	132 151
+	frame	data/chars/barbar/atk5.gif
+	frame	data/chars/barbar/atk6.gif
+	frame	data/chars/barbar/atk7.gif
+	attack	136 50 94 128 10 1
+	frame	data/chars/barbar/atk8.gif
+	frame	data/chars/barbar/atk9.gif
+	attack	0 0 0 0 0
+	frame	data/chars/barbar/atk10.gif
+	frame	data/chars/barbar/atk11.gif
+
+
+
+	
+anim attack2
+	range	100 200
+	loop	0
+	delay	13
+	offset	154 154
+	bbox	78 48 68 72
+	frame	data/chars/barbar/2atk1.gif
+	attack	124 73 200 75 25 1
+	frame	data/chars/barbar/2atk2.gif
+	frame	data/chars/barbar/2atk3.gif
+	frame	data/chars/barbar/2atk4.gif
+	frame	data/chars/barbar/2atk5.gif
+	frame	data/chars/barbar/2atk6.gif
+	frame	data/chars/barbar/2atk7.gif
+	frame	data/chars/barbar/2atk8.gif
+	frame	data/chars/barbar/2atk9.gif
+	frame	data/chars/barbar/2atk10.gif
+	frame	data/chars/barbar/2atk11.gif
+	frame	data/chars/barbar/2atk12.gif
+	frame	data/chars/barbar/2atk13.gif
+	frame	data/chars/barbar/2atk14.gif
+	frame	data/chars/barbar/2atk15.gif
+	frame	data/chars/barbar/2atk16.gif
+	frame	data/chars/barbar/2atk17.gif
+	frame	data/chars/barbar/2atk18.gif
+	frame	data/chars/barbar/2atk19.gif
+	frame	data/chars/barbar/2atk20.gif
+	attack	0 0 0 0 0 0
+
+
+
+			
+#anim throw
+
+
+anim special
+	loop	0
+	delay	13
+	offset	154 154
+	bbox	78 48 68 72
+	frame	data/chars/barbar/2atk1.gif
+	attack	124 73 200 75 25 1
+	frame	data/chars/barbar/2atk2.gif
+	frame	data/chars/barbar/2atk3.gif
+	frame	data/chars/barbar/2atk4.gif
+	frame	data/chars/barbar/2atk5.gif
+	frame	data/chars/barbar/2atk6.gif
+	frame	data/chars/barbar/2atk7.gif
+	frame	data/chars/barbar/2atk8.gif
+	frame	data/chars/barbar/2atk9.gif
+	frame	data/chars/barbar/2atk10.gif
+	frame	data/chars/barbar/2atk11.gif
+	frame	data/chars/barbar/2atk12.gif
+	frame	data/chars/barbar/2atk13.gif
+	frame	data/chars/barbar/2atk14.gif
+	frame	data/chars/barbar/2atk15.gif
+	frame	data/chars/barbar/2atk16.gif
+	frame	data/chars/barbar/2atk17.gif
+	frame	data/chars/barbar/2atk18.gif
+	frame	data/chars/barbar/2atk19.gif
+	frame	data/chars/barbar/2atk20.gif
+	attack	0 0 0 0 0 0
+
+anim death
+	loop	0
+	offset	113 145
+	delay	20
+	frame	data/chars/barbar/d1
+	frame	data/chars/barbar/d2
+	frame	data/chars/barbar/d3
+	frame	data/chars/barbar/d4
+	frame	data/chars/barbar/d5
+	frame	data/chars/barbar/d6
+	frame	data/chars/barbar/d7
+
+
+
+	

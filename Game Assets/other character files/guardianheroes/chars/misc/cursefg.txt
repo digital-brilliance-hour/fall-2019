@@ -1,0 +1,21 @@
+name	cursefg
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/curse1.gif
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 60
+	frame	data/chars/misc/curse1.gif
+	frame	data/chars/misc/curse2.gif
+	frame	data/chars/misc/curse3.gif
+	frame	data/chars/misc/curse4.gif
+
+
+
+
+

@@ -1,0 +1,15 @@
+name	gaxe
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/gaxe/gaxe1.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 120
+	frame	data/bgs/dragons/gaxe/gaxe1.gif
+	frame	data/bgs/dragons/gaxe/gaxe2.gif
+	frame	data/bgs/dragons/gaxe/gaxe3.gif
+	frame	data/bgs/dragons/gaxe/gaxe4.gif

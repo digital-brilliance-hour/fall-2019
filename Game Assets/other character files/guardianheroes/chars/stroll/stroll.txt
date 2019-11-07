@@ -1,0 +1,533 @@
+name	stroll
+health	200
+speed	16
+type	enemy
+shadow	5
+dust    dust
+cantgrab 1
+aggression 1
+bflash bflash
+blockodds 1
+gfxshadow 1
+aimove chase
+thold     49
+icon	data/chars/stroll/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/orkdie.wav
+nodieblink 3
+falldie	1
+fmap 1
+
+palette	data/chars/stroll/idle.gif
+
+alternatepal	data/chars/stroll/testpal.gif
+alternatepal	data/chars/stroll/testpal2.gif
+alternatepal	data/chars/stroll/testpal3.gif
+
+anim spawn
+	loop	0
+	offset	190 182
+	bbox	170 100 65 90
+	delay	10
+	sound   data/sounds/troroar.wav
+	frame	data/chars/stroll/roar1.gif
+	frame	data/chars/stroll/roar2.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar5.gif
+
+
+anim idle
+	loop	1
+	offset	190 182
+	bbox	170 100 65 90
+	delay	6
+	frame	data/chars/stroll/idle.gif
+
+anim walk
+	loop	1
+	offset	190 182
+	bbox	170 100 65 90
+	delay   12
+	frame	data/chars/stroll/walk1.gif
+	frame	data/chars/stroll/walk2.gif
+	frame	data/chars/stroll/walk3.gif
+	frame	data/chars/stroll/walk4.gif
+	frame	data/chars/stroll/walk5.gif
+	frame	data/chars/stroll/walk6.gif
+	frame	data/chars/stroll/walk7.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	190 182
+	bbox	60 30 35 55
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/stroll/guard.gif
+	offset	188 182
+	frame	data/chars/stroll/guard.gif
+	offset	190 182
+	move    -8
+	frame	data/chars/stroll/guard.gif
+	offset	188 182
+	frame	data/chars/stroll/guard.gif
+	offset	190 182
+	move    -6
+	frame	data/chars/stroll/guard.gif
+	offset	188 182
+	frame	data/chars/stroll/guard.gif
+	move    -4
+	offset	190 182
+	frame	data/chars/stroll/guard.gif
+	offset	188 182
+	frame	data/chars/stroll/guard.gif
+	offset	190 182
+	move    -2
+	frame	data/chars/stroll/guard.gif
+	offset	188 182
+	frame	data/chars/stroll/guard.gif
+	offset	190 182
+	delay   20
+	move    0
+	delay   10
+	frame	data/chars/stroll/guard.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	190 182
+	bbox	170 100 65 90
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	delay   23
+	frame	data/chars/stroll/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	190 182
+	bbox	170 100 65 90
+	move    -10
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	move    -8
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	move    -6
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	move    -4
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	move    -2
+	frame	data/chars/stroll/pain1.gif
+	offset	187 182
+	frame	data/chars/stroll/pain1.gif
+	offset	190 182
+	delay   20
+	move    0
+	frame	data/chars/stroll/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog01.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+
+	offset	18 55
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/frog01.gif
+	frame	data/chars/misc/frog02.gif
+	frame	data/chars/misc/frog03.gif
+	frame	data/chars/misc/frog04.gif
+	frame	data/chars/misc/frog05.gif
+	frame	data/chars/misc/frog06.gif
+	frame	data/chars/misc/frog07.gif
+	delay	200
+	frame	data/chars/misc/frog08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	offset	18 55
+	frame	data/chars/misc/frog08.gif
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	190 182
+	bbox	170 100 65 90
+	frame	data/chars/stroll/pain1.gif
+
+anim burn
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	190 182
+	delay   20
+	frame	data/chars/stroll/fall3.gif
+	frame	data/chars/stroll/fall2.gif
+
+anim bpain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	190 182
+	delay   20
+	frame	data/chars/stroll/pain1.gif
+
+anim shock
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	190 182
+	delay   20
+	frame	data/chars/stroll/fall3.gif
+	frame	data/chars/stroll/fall2.gif
+
+anim spain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	190 182
+	delay   20
+	frame	data/chars/stroll/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	190 182
+	frame	data/chars/stroll/pain1.gif
+	delay	20
+	frame	data/chars/stroll/fall1.gif
+        delay   20
+	frame	data/chars/stroll/fall3.gif
+	frame	data/chars/stroll/fall2.gif
+
+anim rise
+	loop	0
+	offset	190 182
+	delay	12
+	frame	data/chars/stroll/fall2.gif
+	delay	10
+	frame	data/chars/stroll/rise1.gif
+	frame	data/chars/stroll/rise2.gif
+	frame	data/chars/stroll/rise3.gif
+	frame	data/chars/stroll/rise4.gif
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	8
+	offset	190 182
+	bbox	170 100 65 90
+	sound   data/sounds/punch1.wav
+	frame	data/chars/stroll/a101.gif
+	attack   190 95 110 70 15 0 0 0 15
+	frame	data/chars/stroll/a102.gif
+	frame	data/chars/stroll/a103.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/stroll/a102.gif
+	sound   data/sounds/punch1.wav
+	frame	data/chars/stroll/a101.gif
+	attack   190 95 110 70 15 0 0 0 15
+	frame	data/chars/stroll/a102.gif
+	frame	data/chars/stroll/a103.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/stroll/a102.gif
+	frame	data/chars/stroll/a101.gif
+
+	sound   data/sounds/punch1.wav
+	frame	data/chars/stroll/a201.gif
+	frame	data/chars/stroll/a202.gif
+	blast   220 100 110 80 20 1 0 0 15
+	frame	data/chars/stroll/a203.gif
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/stroll/a204.gif
+	frame	data/chars/stroll/a203.gif
+	frame	data/chars/stroll/a202.gif
+
+	delay	10
+	sound   data/sounds/troroar.wav
+	frame	data/chars/stroll/roar1.gif
+	frame	data/chars/stroll/roar2.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar5.gif
+
+anim jumpattack
+	range	0 100
+	loop	0
+	delay	5
+	offset	190 182
+	bbox	170 100 65 90
+	jumpframe 1 3
+	sound   data/sounds/troatt.wav
+	frame	data/chars/stroll/ju1.gif
+	delay   9
+	sound   data/sounds/stand.wav
+	frame	data/chars/stroll/ju2.gif
+	delay   2
+	frame	data/chars/stroll/ju3.gif
+	frame	data/chars/stroll/ju3.gif
+	frame	data/chars/stroll/ju4.gif
+	frame	data/chars/stroll/ju4.gif
+	attack  165 70 115 80 25 1 0 0 25
+	frame	data/chars/stroll/ju5.gif
+	delay   35
+	frame	data/chars/stroll/ju5.gif
+
+anim jumpland
+	delay	15
+	offset	190 182
+	bbox	0 0 0 0
+	sound   data/sounds/stand.wav
+	frame	data/chars/stroll/ju1.gif
+
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	8
+	offset	190 182
+	bbox	0 0 0 0
+	sound   data/sounds/punch1.wav
+	frame	data/chars/stroll/a201.gif
+	frame	data/chars/stroll/a202.gif
+	blast   220 100 110 80 25 1 0 0 15
+	frame	data/chars/stroll/a203.gif
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/stroll/a204.gif
+	frame	data/chars/stroll/a203.gif
+	frame	data/chars/stroll/a202.gif
+
+	bbox	170 100 65 90
+	delay	10
+	sound   data/sounds/troroar.wav
+	frame	data/chars/stroll/roar1.gif
+	frame	data/chars/stroll/roar2.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar3.gif
+	frame	data/chars/stroll/roar4.gif
+	frame	data/chars/stroll/roar5.gif
+
+
+anim death
+	loop	0
+	delay	15
+	offset	190 182
+	move	-10
+	frame	data/chars/stroll/d1
+	frame	data/chars/stroll/d2
+	frame	data/chars/stroll/d3
+	frame	data/chars/stroll/d4
+	move	0
+	frame	data/chars/stroll/d5
+
+
+
+

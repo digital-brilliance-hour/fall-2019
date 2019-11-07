@@ -1,0 +1,57 @@
+name    	 Origin
+speedf   	 0
+nomove   	 1
+type    	 npc
+death   	 1
+facing   	 1
+setlayer   	 1
+antigravity  	 100
+animationscript  data/scripts/escript.c
+
+palette	         data/chars/vehelits/vehelits.gif
+alternatepal	 data/chars/vehelits/gargoyle.gif
+alternatepal	 data/chars/vehelits/belial.gif
+alternatepal	 data/chars/vehelits/vbright.gif
+
+anim idle
+	loop	1
+	delay	5
+	seta	95
+	offset	49 59
+        @cmd    suicidePar
+        @cmd    mapPar
+	frame	data/chars/vehelits/vorigin.gif
+        @cmd    suicidePar
+        @cmd    mapPar
+	frame	data/chars/vehelits/vorigin.gif
+
+
+anim death
+	offset	49 59
+	delay	200
+	seta	95
+	frame	data/chars/vehelits/vorigin.gif
+	delay	10
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif
+
+anim pain
+	delay	10
+	offset	49 59
+	seta	95
+	frame	data/chars/vehelits/vorigin.gif
+
+anim fall
+	offset	49 59
+	delay	10
+	seta	95
+        @cmd    stop
+	frame	data/chars/vehelits/vorigin.gif
+        @cmd    beidle
+	frame	data/chars/vehelits/vorigin.gif
+
+anim rise
+	delay	10
+	offset	49 59
+	seta	95
+	frame	data/chars/vehelits/vorigin.gif

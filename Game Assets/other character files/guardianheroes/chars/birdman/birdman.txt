@@ -1,0 +1,135 @@
+name	Birdman
+health	140
+speed	6
+type	enemy
+gfxshadow 1
+icon	data/chars/Birdman/icon.gif
+diesound data/sounds/die3.wav
+noquake	1
+nolife 	1
+death 2
+aimove chase
+nodieblink 3
+
+noatflash 1
+flash	aflash
+
+blockodds 5
+palette	data/chars/birdman/idle1.gif
+alternatepal	data/chars/Birdman/map1.gif
+alternatepal	data/chars/Birdman/map2.gif
+#remap	data/chars/Birdman/idle1.gif data/chars/Birdman/map3.gif
+
+
+anim idle
+	loop	1
+	offset	56 86
+	bbox	50 26 22 46
+	delay	50
+	frame	data/chars/Birdman/idle1.gif
+	frame	data/chars/Birdman/idle2.gif
+	
+	
+anim walk
+	loop	1
+	offset	54 92
+	bbox	50 22 22 56
+	delay	20
+	frame	data/chars/Birdman/walk1.gif
+	frame	data/chars/Birdman/walk2.gif
+	frame	data/chars/Birdman/walk3.gif
+	frame	data/chars/Birdman/walk4.gif
+	frame	data/chars/Birdman/walk5.gif
+	frame	data/chars/Birdman/walk6.gif
+
+anim pain
+	sound	data/sounds/ching10.wav
+	loop	0
+	offset	54 84
+	bbox	32 20 34 60
+	delay	12
+	frame	data/chars/Birdman/pain1.gif
+	offset	56 86
+	delay	50
+	bbox	50 26 22 46
+	frame	data/chars/Birdman/idle2.gif
+	delay	12
+	offset	54 84
+	bbox	32 20 34 60
+	frame	data/chars/Birdman/pain1.gif
+
+anim fall
+    landframe 1
+	bbox	32 20 34 60
+	sound	data/sounds/fallagh.WAV
+	loop	0
+	delay	40
+	offset	50 92	
+	attack	34 56 76 50 15 1
+	frame	data/chars/Birdman/fall1.gif
+	offset	48 90
+	attack	47 21 30 51 15 1
+	delay	20
+	frame	data/chars/Birdman/fall2.gif
+	attack	0
+	delay	1
+	frame	data/chars/Birdman/fall2.gif
+	
+
+anim rise
+	loop	0
+	delay	15
+	offset	50 92
+	frame	data/chars/Birdman/chop4.gif
+	
+
+anim attack1
+	sound	data/sounds/Swish2.wav
+	range	0 80
+	loop	0
+	delay	6
+	offset	58 86
+    bbox    59 36 28 50
+	frame	data/chars/Birdman/chop1.gif
+	attack	38 0 112 90 25 1
+	frame	data/chars/Birdman/chop2.gif
+	frame	data/chars/Birdman/chop3.gif
+	frame	data/chars/Birdman/chop4.gif
+	attack	0 0 0 0 0 0
+
+
+anim attack2
+	sound	data/sounds/Swish1.wav
+	range	0 80
+	loop	0
+	delay	8
+	offset	58 86
+    bbox    59 36 28 50
+	frame	data/chars/Birdman/chop1.gif
+	attack	38 0 112 90 25 
+	frame	data/chars/Birdman/chop2.gif
+	sound	data/sounds/Swish2.wav
+	delay	6
+	frame	data/chars/Birdman/chop1.gif
+	attack	38 0 112 90 25 1
+	frame	data/chars/Birdman/chop2.gif
+	frame	data/chars/Birdman/chop3.gif
+	frame	data/chars/Birdman/chop4.gif
+	attack	0 0 0 0 0 0
+
+anim death
+	offset	48 90
+	delay 	100
+	frame	data/chars/Birdman/fall2.gif
+	delay 50
+	frame	data/chars/Birdman/die.gif
+	delay 10
+	frame	data/chars/Birdman/die2.gif
+	frame	data/chars/Birdman/die3.gif
+	frame	data/chars/Birdman/die4.gif
+	frame	data/chars/Birdman/die5.gif
+	frame	data/chars/Birdman/die6.gif
+	delay 200
+	frame	data/chars/Birdman/die7.gif
+
+

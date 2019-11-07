@@ -1,0 +1,75 @@
+name	SBFiA
+health	1
+speed	7
+type	pshot
+shadow	0
+remove	0
+noquake	1
+flash	SBFiB
+
+anim idle
+	loop	0
+	offset	17	124
+#	seta	0
+	delay	2
+	sound	data/sounds/Fire1.wav
+	burn	16	113	11	11	20	0	0	0	15
+	frame	data/chars/Sol/SBFiA_01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_02.gif
+	burn	19	89	19	32	18	0	0	0	15
+	frame	data/chars/Sol/SBFiA_03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_04.gif
+	burn	23	82	36	44	16	0	0	0	15
+	frame	data/chars/Sol/SBFiA_05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_06.gif
+	burn	23	74	45	50	14	0	0	0	15
+	frame	data/chars/Sol/SBFiA_07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_08.gif
+	burn	16	42	79	83	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_10.gif
+	burn	24	22	80	101	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_11.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_12.gif
+	burn	23	29	98	93	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_13.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_14.gif
+	burn	23	29	104	93	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_15.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_16.gif
+	burn	50	24	98	96	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_17.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_18.gif
+	burn	65	17	87	103	12	0	0	0	15
+	frame	data/chars/Sol/SBFiA_19.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_20.gif
+	burn	98	13	63	107	10	0	0	0	15
+	frame	data/chars/Sol/SBFiA_21.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_22.gif
+	burn	104	19	51	100	6	0	0	0	15
+	frame	data/chars/Sol/SBFiA_23.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_24.gif
+	burn	123	34	25	38	4	0	0	0	15
+	frame	data/chars/Sol/SBFiA_25.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_26.gif
+	burn	124	69	6	6	2	0	0	0	15
+	frame	data/chars/Sol/SBFiA_27.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/Sol/SBFiA_28.gif
+	burn	0	0	0	0	0	0	0	0	0
+	move	500
+	frame	data/chars/misc/empty.gif
+

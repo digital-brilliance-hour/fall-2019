@@ -1,0 +1,18 @@
+name	gears
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	350 200
+	frame	data/chars/misc/gear1.gif
+	frame	data/chars/misc/gear2.gif
+	frame	data/chars/misc/gear3.gif
+	frame	data/chars/misc/gear4.gif
+	frame	data/chars/misc/gear5.gif
+	frame	data/chars/misc/gear6.gif
+	frame	data/chars/misc/gear7.gif
+	frame	data/chars/misc/gear8.gif

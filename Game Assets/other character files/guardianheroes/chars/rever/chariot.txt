@@ -1,0 +1,124 @@
+name	chariot
+health	200
+speed	16
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 25
+facing	2
+noatflash 1
+flash	robof
+bflash bflash
+blockodds 1
+thold     49
+nodrop	1
+nopain 1
+#falldie 
+aimove chasex
+icon	data/chars/rever/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+#nodieblink 3
+#fmap 3
+atchain	1 1 1
+palette	data/chars/rever/chuck1.gif
+load	knife
+knife	knife
+
+#alternatepal	data/chars/rever/testpal.gif
+#alternatepal	data/chars/rever/testpal2.gif
+#alternatepal	data/chars/rever/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+	frame	data/chars/rever/chuck2.gif
+	frame	data/chars/rever/chuck3.gif
+	frame	data/chars/rever/chuck4.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+	frame	data/chars/rever/chuck2.gif
+	frame	data/chars/rever/chuck3.gif
+	frame	data/chars/rever/chuck4.gif
+
+
+anim pain
+	loop	0
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+
+
+
+anim fall
+	loop	0
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+	frame	data/chars/rever/chuck2.gif
+	frame	data/chars/rever/chuck3.gif
+	frame	data/chars/rever/chuck4.gif
+
+
+
+anim death
+	loop	0
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+	frame	data/chars/rever/chuck2.gif
+	frame	data/chars/rever/chuck3.gif
+	frame	data/chars/rever/chuck4.gif
+
+
+
+anim rise
+	loop	0
+	offset  134 115
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/chuck1.gif
+	frame	data/chars/rever/chuck2.gif
+	frame	data/chars/rever/chuck3.gif
+	frame	data/chars/rever/chuck4.gif
+
+anim attack1
+	range	0 200
+	loop	0
+	offset  134 115
+	throwframe	4
+	bbox 	74 18 150 105
+	delay	9
+	frame	data/chars/rever/atk1.gif
+	frame	data/chars/rever/atk2.gif
+	frame	data/chars/rever/atk3.gif
+	frame	data/chars/rever/atk4.gif
+	frame	data/chars/rever/atk5.gif
+	frame	data/chars/rever/atk6.gif
+	frame	data/chars/rever/atk7.gif
+	frame	data/chars/rever/atk8.gif
+
+
+
+
+
+
+

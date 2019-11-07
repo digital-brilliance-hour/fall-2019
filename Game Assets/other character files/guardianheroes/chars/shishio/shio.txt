@@ -1,0 +1,125 @@
+name	Shishio
+health	80
+speed	7
+type	enemy
+shadow	6
+cantgrab 1
+nopain 1
+nodrop 1
+nodieblink 3
+falldie	1
+aimove	chase
+gfxshadow	1
+icon	data/chars/shishio/icon.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/shishio/std1.gif
+alternatepal	data/chars/shishio/map2.gif
+alternatepal	data/chars/shishio/map1.gif
+#remap	data/chars/shishio/dmg1.gif	data/chars/shishio/map2.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	55 140
+	bbox	32 13 45 127
+	frame	data/chars/shishio/std1.gif
+
+
+anim walk
+	loop	1
+	delay	11
+	offset	59 148
+	bbox	41 10 35 142
+	frame	data/chars/shishio/wlk1.gif
+	frame	data/chars/shishio/wlk2.gif
+	frame	data/chars/shishio/wlk3.gif
+	frame	data/chars/shishio/wlk4.gif
+	frame	data/chars/shishio/wlk5.gif
+	frame	data/chars/shishio/wlk6.gif
+	frame	data/chars/shishio/wlk7.gif
+	frame	data/chars/shishio/wlk8.gif
+	frame	data/chars/shishio/wlk9.gif
+	frame	data/chars/shishio/wlk10.gif
+
+
+anim attack1 
+	loop	0     
+	delay	7
+        range   0 180
+	offset	70 198
+         bbox	49 83 71 118
+	frame	data/chars/shishio/atk7.gif
+	frame	data/chars/shishio/atk8.gif
+	frame	data/chars/shishio/atk9.gif
+	frame	data/chars/shishio/atk10.gif
+        attack	75 73 166 197 18 1
+	frame	data/chars/shishio/atk11.gif
+	frame	data/chars/shishio/atk12.gif
+	frame	data/chars/shishio/atk13.gif
+	frame	data/chars/shishio/atk14.gif
+        attack	0
+	delay	60
+	frame	data/chars/shishio/atk15.gif
+	delay	26
+	frame	data/chars/shishio/atk16.gif
+
+
+anim pain
+	loop	0
+	offset	69 144
+	bbox	40 13 47 132
+	delay	11
+	frame	data/chars/shishio/dmg1.gif
+	frame	data/chars/shishio/dmg2.gif
+
+
+anim fall
+	loop	0
+	offset	89 106
+	delay	20
+	attack	48 28 92 77 13 1
+	frame	data/chars/shishio/dmg3.gif
+	frame	data/chars/shishio/dmg4.gif
+	frame	data/chars/shishio/dmg5.gif
+
+
+
+anim rise
+	loop	0
+	offset	89 106
+	delay	20
+        frame	data/chars/shishio/dmg6.gif
+	frame	data/chars/shishio/dmg7.gif
+
+anim death
+	loop	0
+	offset	189 262
+	delay	17
+	move	-10
+	frame	data/chars/shishio/d1
+	frame	data/chars/shishio/d2
+	frame	data/chars/shishio/d3
+	frame	data/chars/shishio/d4
+	move	0
+	frame	data/chars/shishio/d5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

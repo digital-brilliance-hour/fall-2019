@@ -1,0 +1,19 @@
+name	rc
+health	0
+type	none
+speed	10
+shadow	0
+icon	data/chars/misc/1upi.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	175 243
+	frame	data/chars/misc/Rc1.gif
+	frame	data/chars/misc/Rc2.gif
+	frame	data/chars/misc/Rc3.gif
+	frame	data/chars/misc/Rc4.gif
+	frame	data/chars/misc/Rc5.gif
+	frame	data/chars/misc/Rc6.gif
+	frame	data/chars/misc/Rc7.gif
+	frame	data/chars/misc/Rc8.gif

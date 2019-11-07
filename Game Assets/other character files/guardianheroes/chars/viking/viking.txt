@@ -1,0 +1,170 @@
+name	viking
+health	100
+speed	10
+type	enemy
+shadow	5
+icon	data/chars/viking/icon.gif
+aggression 30
+#cantgrab 1
+nodieblink 3
+falldie	1
+diesound data/sounds/die1.wav
+palette	data/chars/viking/idle1.gif
+
+alternatepal	data/chars/viking/testpal.gif
+#alternatepal	data/chars/sold/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  49 104
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/viking/idle1.gif
+	offset  49 102
+	frame	data/chars/viking/idle2.gif
+	offset  49 100
+	frame	data/chars/viking/idle3.gif
+	offset  49 102
+	frame	data/chars/viking/idle2.gif
+
+
+
+	
+anim walk
+	loop	1
+	offset  30 112
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/viking/walk1.gif
+	offset  45 111
+	frame	data/chars/viking/walk2.gif
+	offset  25 112
+	frame	data/chars/viking/walk3.gif
+	offset  29 113
+	frame	data/chars/viking/walk4.gif
+	offset  45 108
+	frame	data/chars/viking/walk5.gif
+	offset  26 110
+	frame	data/chars/viking/walk6.gif
+
+
+		
+anim pain
+	loop	0
+	offset	86 115
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/viking/pain1.gif
+	offset  102 104
+	frame	data/chars/viking/pain2.gif
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	92 97
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/viking/fall1.gif
+	offset	97 94
+	frame	data/chars/viking/fall2.gif
+	offset	63 64
+	delay	100
+	frame	data/chars/viking/fall3.gif
+	offset	71 38
+	delay	20
+	frame	data/chars/viking/fall4.gif
+	frame	data/chars/viking/fall4.gif
+
+
+
+anim rise
+	loop	0
+	offset	56 65
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/viking/rise1.gif
+	offset	50 81
+	frame	data/chars/viking/rise2.gif
+	offset	31 83
+	frame	data/chars/viking/rise3.gif
+
+
+
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	8
+	offset	57 119
+	bbox	44 58 63 84
+	frame	data/chars/viking/atk1.gif
+	offset	36 120
+	frame	data/chars/viking/atk2.gif
+	offset	33 120
+	attack	80 0 100 61 20 1
+	frame	data/chars/viking/atk3.gif
+	offset	33 101
+	frame	data/chars/viking/atk4.gif
+	offset	39 117
+	frame	data/chars/viking/atk5.gif
+	attack	0 0 0 0 0
+
+
+
+
+
+
+
+
+	
+anim special
+	range	0 150
+	loop	0
+	delay	8
+	offset	58 110
+	bbox	44 58 63 84
+	frame	data/chars/viking/spec1.gif
+	offset	50 81
+	frame	data/chars/viking/spec2.gif
+	offset	31 83
+	attack	80 0 100 61 20 1
+	frame	data/chars/viking/spec3.gif
+	attack	0 0 0 0 0 0
+
+
+
+			
+anim death
+	loop	0
+	delay	18
+	offset	31 83
+	frame	data/chars/viking/d1
+	offset	50 81
+	frame	data/chars/viking/d2
+	offset	56 65
+	frame	data/chars/viking/d3
+	offset	71 88
+	frame	data/chars/viking/d4
+	frame	data/chars/viking/d5
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

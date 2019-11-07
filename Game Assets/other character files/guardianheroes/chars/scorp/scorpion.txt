@@ -1,0 +1,87 @@
+name	Scorpion
+health	100
+speed	10
+type	enemy
+shadow	5
+icon	data/chars/scorp/icon.gif
+
+
+alternatepal	data/chars/scorp/testpal.gif
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	102 130
+	bbox	63 47 81 87
+	frame	data/chars/scorp/wlk01.gif
+
+anim walk
+	loop	1
+	delay	12
+	offset	102 130
+	bbox	63 47 81 87
+	frame	data/chars/scorp/wlk01.gif
+	frame	data/chars/scorp/wlk02.gif
+	frame	data/chars/scorp/wlk03.gif
+	frame	data/chars/scorp/wlk04.gif
+	frame	data/chars/scorp/wlk05.gif
+	frame	data/chars/scorp/wlk06.gif
+
+anim attack1 
+	loop	0     
+	delay	12
+	offset	99 142
+        range	100 170
+         bbox	66 62 75 86
+        frame	data/chars/scorp/atk01.gif
+        frame	data/chars/scorp/atk02.gif
+        frame	data/chars/scorp/atk03.gif
+        frame	data/chars/scorp/atk04.gif
+        attack	137 76 165 74 28 1
+        delay	25
+        frame	data/chars/scorp/atk05.gif
+        delay	13
+        attack	0 0 0 0 0 0
+       frame	data/chars/scorp/atk04.gif
+
+anim attack2 
+	loop	0    
+	delay	12
+	offset	96 137
+        range	0 90
+         bbox	71 55 55 86
+        frame	data/chars/scorp/atk06.gif
+        frame	data/chars/scorp/atk07.gif
+        attack	134 28 91 111 10 0
+        frame	data/chars/scorp/atk08.gif
+        attack	0 0 0 0 0 0
+        frame	data/chars/scorp/atk09.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	95 156
+	bbox	46 44 91 115
+	delay	15
+        frame	data/chars/scorp/dmg1.gif
+        frame	data/chars/scorp/dmg2.gif
+
+anim fall
+	loop	0
+	offset	103 124
+	delay	25
+	attack	72 54 62 72 10 1
+	frame	data/chars/scorp/fall1.gif
+	frame	data/chars/scorp/fall2.gif
+
+
+
+anim rise
+	loop	0
+	offset	95 133
+	delay	18
+	frame	data/chars/scorp/rise.gif
+

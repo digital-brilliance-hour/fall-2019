@@ -1,0 +1,94 @@
+name	Necro
+health	80
+speed	8
+type	enemy
+shadow	4
+icon	data/chars/necro/icon.gif
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	47 100
+	bbox	34 7 39 92
+	frame	data/chars/necro/std.gif
+
+
+anim walk
+	loop	1
+	delay	14
+	offset	64 114
+	bbox	47 19 49 97
+	frame	data/chars/necro/wlk01.gif
+	frame	data/chars/necro/wlk02.gif
+	frame	data/chars/necro/wlk03.gif
+	frame	data/chars/necro/wlk04.gif
+	frame	data/chars/necro/wlk05.gif
+	frame	data/chars/necro/wlk06.gif
+	frame	data/chars/necro/wlk07.gif
+	frame	data/chars/necro/wlk08.gif
+	frame	data/chars/necro/wlk09.gif
+
+
+anim attack1 
+	loop	0
+        range	0  100
+	delay	9
+	offset	83 118
+         bbox	77 21 34 97
+        frame	data/chars/necro/atk01.gif
+        attack	109 34 90 78 10 0
+        frame	data/chars/necro/atk02.gif
+        frame	data/chars/necro/atk03.gif
+        attack	0 0 0 0 0 0
+        frame	data/chars/necro/atk04.gif
+        frame	data/chars/necro/atk05.gif
+
+anim attack2
+	loop	0
+        range	160 220
+	delay	12
+	offset	84 114
+        bbox	68 25 32 89
+       frame	data/chars/necro/atk06.gif
+       frame	data/chars/necro/atk07.gif
+       frame	data/chars/necro/atk08.gif
+       frame	data/chars/necro/atk09.gif
+        attack	103 33 183 70 13 0
+       frame	data/chars/necro/atk10.gif
+       frame	data/chars/necro/atk11.gif
+       frame	data/chars/necro/atk12.gif
+        attack	0 0 0 0 0 0
+       frame	data/chars/necro/atk13.gif
+       frame	data/chars/necro/atk14.gif
+
+
+anim pain
+	loop	0
+	offset	68 119
+	bbox	45 25 43 94
+	delay	15
+        frame	data/chars/necro/dmg1.gif
+        frame	data/chars/necro/dmg2.gif
+        frame	data/chars/necro/dmg3.gif
+
+anim fall
+	loop	0
+	offset	72 56
+	delay	25
+	attack	36 24 81 35 10 1
+        frame	data/chars/necro/fall1.gif
+        frame	data/chars/necro/fall2.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	80 89
+	delay	16
+        frame	data/chars/necro/fall4.gif
+        frame	data/chars/necro/fall3.gif
+
+

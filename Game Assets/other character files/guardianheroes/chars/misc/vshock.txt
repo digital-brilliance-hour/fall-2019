@@ -1,0 +1,37 @@
+name	vshock
+health	10000
+type	none
+shadow	0
+speed   0
+remove  0
+nomove  1 1
+lifespan 2
+alpha 1
+palette	data/chars/misc/shock12.gif
+subject_to_gravity 0
+
+anim idle
+	loop	0
+	delay	3
+	offset	100 1
+        drawmethod 256 256 0 0 0 1 0 0 90
+        sound   data/sounds/bigslash.wav
+	frame	data/chars/misc/shock1.gif
+	frame	data/chars/misc/shock2.gif
+	frame	data/chars/misc/shock3.gif
+	frame	data/chars/misc/shock4.gif
+	frame	data/chars/misc/shock5.gif
+	frame	data/chars/misc/shock6.gif
+	frame	data/chars/misc/shock7.gif
+	frame	data/chars/misc/shock8.gif
+	frame	data/chars/misc/shock9.gif
+	frame	data/chars/misc/shock10.gif
+	frame	data/chars/misc/shock11.gif
+	frame	data/chars/misc/shock12.gif
+	frame	data/chars/misc/shock13.gif
+	frame	data/chars/misc/shock14.gif
+	frame	data/chars/misc/shock15.gif
+
+	frame	data/chars/misc/end.gif
+
+

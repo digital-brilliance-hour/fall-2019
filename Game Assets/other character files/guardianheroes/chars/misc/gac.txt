@@ -1,0 +1,18 @@
+name	gac
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/gac1.gif
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 137
+	frame	data/chars/misc/gac1.gif
+	frame	data/chars/misc/gac2.gif
+	frame	data/chars/misc/gac3.gif
+	frame	data/chars/misc/gac4.gif
+	frame	data/chars/misc/gac5.gif
+

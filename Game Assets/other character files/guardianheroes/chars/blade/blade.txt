@@ -1,0 +1,298 @@
+name	blade
+health	600
+speed	12
+running	27	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/blade/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/blade/idle1.gif
+
+
+alternatepal	data/chars/blade/testpal.gif
+#alternatepal	data/chars/blade/testpal2.gif
+
+load	dshot
+knife	dshot
+
+anim idle
+	loop	1
+	offset  91 175
+	bbox 	30 36 102 134
+	delay	16
+	frame	data/chars/blade/idle1.gif
+	frame	data/chars/blade/idle2.gif
+	offset  91 174
+	frame	data/chars/blade/idle3.gif
+	frame	data/chars/blade/idle4.gif
+	frame	data/chars/blade/idle3.gif
+	offset  91 175
+	frame	data/chars/blade/idle2.gif
+
+anim walk
+	loop	1
+	offset	66 245
+	bbox 	28 120 92 124
+	delay	13
+	frame	data/chars/blade/walk1.gif
+	frame	data/chars/blade/walk2.gif
+	frame	data/chars/blade/walk3.gif
+	frame	data/chars/blade/walk4.gif
+	frame	data/chars/blade/walk5.gif
+	frame	data/chars/blade/walk6.gif
+
+anim run
+	loop	1
+	offset	66 245
+	bbox 	28 120 92 124
+	delay	10
+	frame	data/chars/blade/walk1.gif
+	frame	data/chars/blade/walk2.gif
+	frame	data/chars/blade/walk3.gif
+	frame	data/chars/blade/walk4.gif
+	frame	data/chars/blade/walk5.gif
+	frame	data/chars/blade/walk6.gif
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	6
+	offset	120 180
+	bbox	60 48 120 122
+	frame	data/chars/blade/atk1.gif
+	offset	115 176
+	frame	data/chars/blade/atk2.gif
+	offset	103 166
+	frame	data/chars/blade/atk3.gif
+	offset	89 165
+	frame	data/chars/blade/atk4.gif
+	frame	data/chars/blade/atk5.gif
+	offset	82 167
+	attack	102 49 214 117 25 1 0 0 25
+	frame	data/chars/blade/atk6.gif
+	offset	66 231
+	frame	data/chars/blade/atk7.gif
+	offset	66 196
+	frame	data/chars/blade/atk8.gif
+	attack	0 0 0 0 0 0
+	offset	82 166
+	frame	data/chars/blade/atk9.gif
+	offset	80 166
+	frame	data/chars/blade/atk10.gif
+	frame	data/chars/blade/atk11.gif
+	frame	data/chars/blade/atk12.gif
+	frame	data/chars/blade/atk13.gif
+	offset	32 167
+	frame	data/chars/blade/atk14.gif
+	offset	89 163
+	frame	data/chars/blade/atk15.gif
+	offset	115 176
+	frame	data/chars/blade/atk16.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	123 145
+	bbox	101 75 38 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/blade/2atk2.gif
+	offset	125 145
+	frame	data/chars/blade/2atk2.gif
+	move    -8
+	offset	123 145
+	frame	data/chars/blade/2atk2.gif
+	offset	125 145
+	frame	data/chars/blade/2atk2.gif
+	move    -6
+	offset	123 145
+	frame	data/chars/blade/2atk2.gif
+	offset	125 145
+	frame	data/chars/blade/2atk2.gif
+	move    -4
+	offset	123 145
+	frame	data/chars/blade/2atk2.gif
+	offset	125 145
+	frame	data/chars/blade/2atk2.gif
+	offset	123 145
+	move    -2
+	frame	data/chars/blade/2atk2.gif
+	offset	125 145
+	frame	data/chars/blade/2atk2.gif
+	offset	123 145
+	delay   20
+	move    0
+	frame	data/chars/blade/2atk2.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	91 169
+	bbox	101 75 38 84
+	frame	data/chars/blade/pain1.gif
+	offset	88 169
+	frame	data/chars/blade/pain2.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset	80 159
+	frame	data/chars/blade/fall1.gif
+	offset	89 160
+	frame	data/chars/blade/fall2.gif
+	offset	93 169
+	frame	data/chars/blade/fall3.gif
+	offset	93 144
+	frame	data/chars/blade/fall4.gif
+	offset	95 136
+	frame	data/chars/blade/fall5.gif
+	offset	97 115
+	frame	data/chars/blade/fall6.gif
+	offset	97 88
+	frame	data/chars/blade/fall7.gif
+	offset	81 83
+	frame	data/chars/blade/fall8.gif
+	offset	88 49
+	frame	data/chars/blade/fall9.gif
+	offset	87 49
+	frame	data/chars/blade/fall10.gif
+
+anim death
+	loop	0
+	delay	13
+	offset	80 159
+	frame	data/chars/blade/fall1.gif
+	offset	89 160
+	frame	data/chars/blade/fall2.gif
+	offset	93 169
+	frame	data/chars/blade/fall3.gif
+	offset	93 144
+	frame	data/chars/blade/fall4.gif
+	offset	95 136
+	frame	data/chars/blade/fall5.gif
+	offset	97 115
+	frame	data/chars/blade/fall6.gif
+	offset	97 88
+	frame	data/chars/blade/fall7.gif
+	offset	81 83
+	frame	data/chars/blade/fall8.gif
+	offset	88 49
+	frame	data/chars/blade/fall9.gif
+	offset	87 49
+	frame	data/chars/blade/fall10.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	87 49
+	frame	data/chars/blade/fall10.gif
+
+#anim riseattack
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	6
+	offset	120 180
+	bbox	60 48 120 122
+	frame	data/chars/blade/atk1.gif
+	offset	115 176
+	frame	data/chars/blade/atk2.gif
+	offset	103 166
+	frame	data/chars/blade/atk3.gif
+	offset	89 165
+	frame	data/chars/blade/atk4.gif
+	frame	data/chars/blade/atk5.gif
+	offset	82 167
+	attack	102 49 214 117 25 1 0 0 25
+	frame	data/chars/blade/atk6.gif
+	offset	66 231
+	frame	data/chars/blade/atk7.gif
+	offset	66 196
+	frame	data/chars/blade/atk8.gif
+	attack	0 0 0 0 0 0
+	offset	82 166
+	frame	data/chars/blade/atk9.gif
+	offset	80 166
+	frame	data/chars/blade/atk10.gif
+	frame	data/chars/blade/atk11.gif
+	frame	data/chars/blade/atk12.gif
+	frame	data/chars/blade/atk13.gif
+	offset	32 167
+	frame	data/chars/blade/atk14.gif
+	offset	89 163
+	frame	data/chars/blade/atk15.gif
+	offset	115 176
+	frame	data/chars/blade/atk16.gif
+	
+
+#anim special
+
+
+anim throw
+	range	0 100
+	loop	0
+	delay	10
+	offset	74 171
+	frame	data/chars/blade/throw1.gif
+	offset	111 173
+	frame	data/chars/blade/throw2.gif
+	offset	86 173
+	frame	data/chars/blade/throw3.gif
+	offset	76 173
+	frame	data/chars/blade/throw4.gif
+	offset	108 167
+	frame	data/chars/blade/throw5.gif
+
+anim attack2
+	range	250 800
+	loop	0
+	delay	9
+	throwframe	9
+	offset	108 153
+	bbox	60 48 120 122
+	frame	data/chars/blade/2atk1.gif
+	offset	123 145
+	frame	data/chars/blade/2atk2.gif
+	offset	127 143
+	frame	data/chars/blade/2atk3.gif
+	offset	133 136
+	frame	data/chars/blade/2atk4.gif
+	frame	data/chars/blade/2atk5.gif
+	frame	data/chars/blade/2atk6.gif
+	offset	132 136
+	frame	data/chars/blade/2atk7.gif
+	frame	data/chars/blade/2atk8.gif
+	offset	176 136
+	frame	data/chars/blade/2atk9.gif
+	offset	172 136
+	frame	data/chars/blade/2atk10.gif
+	offset	114 149
+	frame	data/chars/blade/2atk11.gif
+	offset	83 160
+	frame	data/chars/blade/2atk12.gif
+

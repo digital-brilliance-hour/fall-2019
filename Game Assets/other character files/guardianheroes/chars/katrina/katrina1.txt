@@ -1,0 +1,491 @@
+name	  Katrina
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/katrina/icon1
+diesound	Data/sounds/die1.wav
+weapons	kbear kbull kjag kele khorse Katrina
+palette	data/chars/katrina/idle1
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+alternatepal	data/chars/katrina/testpal
+atchain	1 1 2 3
+
+
+
+
+#done//
+anim idle
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	14
+	frame	data/chars/katrina/idle1.gif
+	frame	data/chars/katrina/idle2.gif
+	frame	data/chars/katrina/idle3.gif
+	frame	data/chars/katrina/idle4.gif
+	frame	data/chars/katrina/idle3.gif
+	frame	data/chars/katrina/idle2.gif
+	
+	
+
+#done//
+anim walk
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	12
+	frame	data/chars/katrina/walk1.gif
+	offset  87 173
+	frame	data/chars/katrina/walk2.gif
+	frame	data/chars/katrina/walk3.gif
+	frame	data/chars/katrina/walk4.gif
+	frame	data/chars/katrina/walk5.gif
+	frame	data/chars/katrina/walk6.gif
+
+
+anim run
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	12
+        sound	data/sounds/run.wav
+	frame	data/chars/katrina/run1.gif
+	frame	data/chars/katrina/run2.gif
+	frame	data/chars/katrina/run3.gif
+	frame	data/chars/katrina/run4.gif
+	frame	data/chars/katrina/run5.gif
+	frame	data/chars/katrina/run6.gif
+
+
+anim runattack
+	loop	0
+	delay	6
+	move	17
+	offset  87 175
+        bbox    3 92 53 83
+        hitfx   data/sounds/beat2.wav
+	sound	data/sounds/hyah.wav
+
+        custknife dustie
+        throwframe 1 1
+
+        subentity vshock
+        spawnframe 1 1 1 15 0
+
+
+	frame	data/chars/katrina/ratk1.gif
+	frame	data/chars/katrina/ratk2.gif
+	frame	data/chars/katrina/ratk3.gif
+	frame	data/chars/katrina/ratk4.gif
+	blast	80 90 102 25 70 0 0 30
+	frame	data/chars/katrina/ratk5.gif
+	frame	data/chars/katrina/ratk6.gif
+	frame	data/chars/katrina/ratk7.gif
+	frame	data/chars/katrina/ratk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/ratk9.gif
+	frame	data/chars/katrina/ratk10.gif
+
+
+#done
+anim get
+	loop	0
+	delay	12
+	offset	119 169
+	frame	data/chars/katrina/2spec13.gif
+	frame	data/chars/katrina/rise3.gif
+
+
+#done//
+#Punch
+anim attack1
+	loop	0
+	delay	5
+	offset  87 175
+	bbox 	63 92 53 83
+	frame	data/chars/katrina/atk1.gif
+	frame	data/chars/katrina/atk2.gif
+	attack	115 100 66 40 10 0 0 0 18
+	frame	data/chars/katrina/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/atk1.gif
+
+
+
+#done//
+#Kick
+anim attack2
+	loop	0
+	delay	5
+	offset  87 175
+	bbox 	79 102 38 76
+        move    16
+	frame	data/chars/katrina/gatk1.gif
+        move    8
+	frame	data/chars/katrina/gatk2.gif
+	attack	82 104 69 74 10 0 0 0 18
+	frame	data/chars/katrina/gatk3.gif
+        move    4
+	frame	data/chars/katrina/gatk3.gif
+	attack	0 0 0 0 0 0
+        move    0
+	frame	data/chars/katrina/gatk1.gif
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	loop	0
+	delay	7
+	offset  87 175
+	bbox 	0 0 0 0
+	sound	data/sounds/hyah.wav
+	frame	data/chars/katrina/3atk1.gif
+	frame	data/chars/katrina/3atk2.gif
+	attack	100 95 118 53 25 1 1 0 25
+	frame	data/chars/katrina/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/3atk4.gif
+
+	sound	data/sounds/v2.wav
+
+	frame	data/chars/katrina/3atk5.gif
+
+
+	
+
+
+#done//
+anim special
+	delay	4
+	offset  87 175
+	sound	data/sounds/dora.wav
+	frame	data/chars/katrina/2spec1.gif
+	frame	data/chars/katrina/2spec2.gif
+	frame	data/chars/katrina/2spec3.gif
+	frame	data/chars/katrina/2spec4.gif
+
+	frame	data/chars/katrina/2spec5.gif
+	attack	65 45 135 132 25 1 1 0 20
+	frame	data/chars/katrina/2spec6.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec7.gif
+
+	frame	data/chars/katrina/2spec8.gif
+
+	frame	data/chars/katrina/2spec9.gif
+	attack	65 45 135 132 10 1 1 0 20
+	frame	data/chars/katrina/2spec9.gif
+	attack	0 0 0 0 0 0 0
+        delay   8
+	frame	data/chars/katrina/2spec10.gif
+ 
+
+#done
+anim freespecial
+	loop	0
+	delay	7
+	offset  87 175
+	bbox 	0 0 0 0
+	sound	data/sounds/hyah.wav
+	frame	data/chars/katrina/3atk1.gif
+	frame	data/chars/katrina/3atk2.gif
+	attack	100 95 118 53 25 0 1 0 20
+	frame	data/chars/katrina/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/3atk4.gif
+
+	sound	data/sounds/v2.wav
+
+	frame	data/chars/katrina/3atk5.gif
+
+
+
+anim freespecial2
+        loop    0
+	delay	4
+        offset  87 175
+        subentity flame
+        spawnframe 6 1 1 1 0
+	sound	data/sounds/dora.wav
+	frame	data/chars/katrina/2spec2.gif
+	frame	data/chars/katrina/2spec3.gif
+	frame	data/chars/katrina/2spec4.gif
+	frame	data/chars/katrina/2spec5.gif
+	attack	65 45 135 132 15 0 1 0 30
+	frame	data/chars/katrina/2spec6.gif
+	frame	data/chars/katrina/2spec7.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec11.gif
+	burn	65 45 135 132 60 1 1 0 30
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec13.gif
+	
+
+anim freespecial3
+	sound	data/sounds/dora.wav
+        
+        custknife kashoc
+        throwframe 0 1
+
+        subentity kathunder
+        spawnframe 0 -25 1 5 0
+
+	offset  87 175
+        delay   100
+	frame	data/chars/katrina/spec1.gif
+
+
+	delay	6
+	offset  87 175
+	frame	data/chars/katrina/atk1.gif
+        delay   200
+	sound	data/sounds/hyah.wav
+	frame	data/chars/katrina/spec2.gif
+        delay   6
+	frame	data/chars/katrina/atk1.gif
+
+anim freespecial4
+#        energycost 20
+#        mponly 1
+
+        loop    0
+	delay	4
+        offset  87 175
+	sound	data/sounds/dora.wav
+	frame	data/chars/katrina/2spec2.gif
+	frame	data/chars/katrina/2spec3.gif
+	frame	data/chars/katrina/2spec4.gif
+	frame	data/chars/katrina/2spec5.gif
+	attack	65 45 135 132 15 0 1 0 30
+	frame	data/chars/katrina/2spec6.gif
+	frame	data/chars/katrina/2spec7.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec11.gif
+	attack	65 45 135 132 25 1 1 0 30
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec13.gif
+
+anim freespecial5
+#        energycost 20
+#        mponly 1
+
+        loop    0
+	delay	4
+        offset  87 175
+	sound	data/sounds/dora.wav
+	frame	data/chars/katrina/2spec2.gif
+	frame	data/chars/katrina/2spec3.gif
+	frame	data/chars/katrina/2spec4.gif
+	frame	data/chars/katrina/2spec5.gif
+	attack	65 45 135 132 15 0 1 0 30
+	frame	data/chars/katrina/2spec6.gif
+	frame	data/chars/katrina/2spec7.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec11.gif
+	attack	65 45 135 132 60 1 1 0 30
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec13.gif
+
+anim freespecial6
+#        energycost 20
+#        mponly 1
+        loop    0
+	delay	4
+        offset  87 175
+	sound	data/sounds/dora.wav
+	frame	data/chars/katrina/2spec2.gif
+	frame	data/chars/katrina/2spec3.gif
+	frame	data/chars/katrina/2spec4.gif
+	frame	data/chars/katrina/2spec5.gif
+	attack	65 45 135 132 15 0 1 0 30
+	frame	data/chars/katrina/2spec6.gif
+	frame	data/chars/katrina/2spec7.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec11.gif
+	attack	65 45 135 132 60 1 1 0 30
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	frame	data/chars/katrina/2spec12.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/katrina/2spec13.gif
+
+
+	
+	
+
+#done
+anim jump
+	loop	0
+	offset  87 175
+        BBOX    63 92 53 83
+	delay	15
+	frame	data/chars/katrina/jump2.gif
+	frame	data/chars/katrina/jump3.gif
+        delay   50
+	frame	data/chars/katrina/jump4.gif
+	frame	data/chars/katrina/jump3.gif
+
+
+
+#done
+anim jumpattack
+	loop	0
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	5
+        sound   data/sounds/punch.wav
+	frame	data/chars/katrina/jatk1.gif
+	frame	data/chars/katrina/jatk2.gif
+	attack	96 91 64 82 25 0 0 0 30
+	frame	data/chars/katrina/jatk3.gif
+	frame	data/chars/katrina/jatk4.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset  87 175
+	delay	10
+	frame	data/chars/katrina/intro4.gif
+
+
+#done//
+anim grabattack2
+        hitfx   data/sounds/beat2.wav
+	loop	0
+	delay	7
+	offset  87 175
+	bbox 	0 0 0 0
+	sound	data/sounds/hyah.wav
+	frame	data/chars/katrina/3atk1.gif
+	frame	data/chars/katrina/3atk2.gif
+	attack	100 95 118 53 25 1 1 0 20
+	frame	data/chars/katrina/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/3atk4.gif
+
+	sound	data/sounds/v2.wav
+
+	frame	data/chars/katrina/3atk5.gif
+
+#done//
+anim grabattack
+	loop	0
+	delay	5
+        hitfx   data/sounds/fist2.wav
+	offset  87 175
+	bbox 	79 102 38 76
+	frame	data/chars/katrina/gatk1.gif
+	frame	data/chars/katrina/gatk2.gif
+	attack	82 104 69 74 10 0 0 0 25
+	frame	data/chars/katrina/gatk3.gif
+	frame	data/chars/katrina/gatk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/katrina/gatk1.gif
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	offset  87 175
+	delay	10
+	frame	data/chars/katrina/intro4.gif
+	frame	data/chars/katrina/intro3.gif
+	frame	data/chars/katrina/intro2.gif
+
+
+
+
+#done
+anim pain
+	loop	0
+	delay	10
+	offset  87 175
+	bbox 	63 92 53 83
+        move    -8
+	frame	data/chars/katrina/pain1.gif
+        move    -6
+	frame	data/chars/katrina/pain1.gif
+        move    -4
+	frame	data/chars/katrina/pain2.gif
+        move    -2
+	frame	data/chars/katrina/pain2.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	delay	13
+	offset  87 175
+        landframe 3
+	frame	data/chars/katrina/fall2.gif
+	frame	data/chars/katrina/fall2.gif
+	frame	data/chars/katrina/fall3.gif
+	frame	data/chars/katrina/fall3.gif
+	frame	data/chars/katrina/fall4.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	11
+	offset	87 175
+	frame	data/chars/katrina/rise1.gif
+	frame	data/chars/katrina/rise2.gif
+	frame	data/chars/katrina/rise3.gif
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	11
+	offset	87 175
+	frame	data/chars/katrina/rise1.gif
+	frame	data/chars/katrina/rise2.gif
+	frame	data/chars/katrina/rise3.gif
+
+
+
+

@@ -1,0 +1,54 @@
+name    	 rOrigin
+speedf   	 0
+nomove   	 1
+type    	 enemy
+death   	 1
+facing   	 1
+setlayer   	 1
+antigravity  	 100
+animationscript  data/chars/vehelits/escript.c
+noatflash 1
+flash	robof
+palette	         data/chars/vehelits/robo.gif
+alternatepal	 data/chars/vehelits/gargoyle.gif
+alternatepal	 data/chars/vehelits/belial.gif
+alternatepal	 data/chars/vehelits/vbright.gif
+
+anim idle
+	loop	1
+	delay	5
+	offset	49 59
+        @cmd    suicidePar
+        @cmd    mapPar
+	frame	data/chars/vehelits/rorigin.gif
+        @cmd    suicidePar
+        @cmd    mapPar
+	frame	data/chars/vehelits/rorigin.gif
+
+
+anim death
+	offset	49 59
+	delay	200
+	frame	data/chars/vehelits/rorigin.gif
+	delay	10
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif
+
+anim pain
+	delay	10
+	offset	49 59
+	seta	95
+	frame	data/chars/vehelits/rorigin.gif
+
+anim fall
+	offset	49 59
+	delay	10
+        @cmd    stop
+	frame	data/chars/vehelits/rorigin.gif
+        @cmd    beidle
+	frame	data/chars/vehelits/rorigin.gif
+
+anim rise
+	delay	10
+	offset	49 59
+	frame	data/chars/vehelits/rorigin.gif

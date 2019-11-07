@@ -1,0 +1,151 @@
+name	Asura
+health	200
+speed	10
+type	enemy
+shadow	6
+icon	data/chars/asura/icon.gif
+falldie 1
+nodieblink 3
+
+anim idle
+	loop	1
+	delay	10
+	offset	71 113
+	bbox	55 9 31 108 
+	frame	data/chars/asura/std1.gif
+	frame	data/chars/asura/std2.gif
+	frame	data/chars/asura/std3.gif
+	frame	data/chars/asura/std4.gif
+	frame	data/chars/asura/std3.gif
+	frame	data/chars/asura/std2.gif
+
+
+anim walk
+	loop	1
+	delay	9
+	offset	75 114
+	bbox	61 10 30 107
+	frame	data/chars/asura/wlk1.gif
+	frame	data/chars/asura/wlk2.gif
+	frame	data/chars/asura/wlk3.gif
+	frame	data/chars/asura/wlk4.gif
+	frame	data/chars/asura/wlk5.gif
+	frame	data/chars/asura/wlk6.gif
+
+anim attack1 
+	loop	0
+	delay	9
+	offset	100 146
+         bbox	77 33 45 115 
+         range	0 96
+	frame	data/chars/asura/atk1.gif
+	frame	data/chars/asura/atk2.gif
+	frame	data/chars/asura/atk3.gif
+       attack	108 50 126 94 15 1
+	frame	data/chars/asura/atk4.gif
+       attack	108 50 196 94 15 1
+	frame	data/chars/asura/atk5.gif
+       attack	108 50 196 94 15 1
+	frame	data/chars/asura/atk6.gif
+	delay	26
+      attack	0 
+	frame	data/chars/asura/atk6.gif
+	delay	5
+	frame	data/chars/asura/atk5.gif
+	frame	data/chars/asura/atk4.gif
+	frame	data/chars/asura/atk3.gif
+	frame	data/chars/asura/atk2.gif
+	frame	data/chars/asura/atk1.gif
+
+
+anim attack2
+	loop	0
+	delay	8
+	offset	132 171
+         bbox	124 65 27 109 
+         range	97 180
+	frame	data/chars/asura/atk12.gif
+	frame	data/chars/asura/atk13.gif
+	frame	data/chars/asura/atk14.gif
+	frame	data/chars/asura/atk15.gif
+         bbox	147 79 55 96 
+        attack	195 10 149 175 22 1
+	frame	data/chars/asura/atk16.gif
+	frame	data/chars/asura/atk17.gif
+        attack	0
+	delay	26
+	frame	data/chars/asura/atk17.gif
+	delay	5
+	frame	data/chars/asura/atk18.gif
+	frame	data/chars/asura/atk19.gif
+	frame	data/chars/asura/atk20.gif
+
+
+anim upper
+	loop	0
+	delay	6
+	offset	70 207
+         bbox	46 84 45 125
+	frame	data/chars/asura/atk7.gif
+        attack  57 0 137 209 12 1
+	frame	data/chars/asura/atk8.gif
+        attack  57 0 137 209 12 1
+	frame	data/chars/asura/atk9.gif
+        attack  0
+	frame	data/chars/asura/atk10.gif
+	frame	data/chars/asura/atk11.gif
+
+
+
+anim pain
+	loop	0
+	delay	15
+	offset	57 108
+	bbox	32 5 39 109 
+	frame	data/chars/asura/dmg1.gif
+	frame	data/chars/asura/dmg2.gif
+
+anim fall
+	loop	0
+	offset	65 98
+	delay	25
+	attack	50 34 52 57 13 1
+	frame	data/chars/asura/dmg3.gif
+	frame	data/chars/asura/dmg4.gif
+	frame	data/chars/asura/dmg5.gif
+
+
+
+anim rise
+	loop	0
+	offset  65 98
+	delay	20
+	frame	data/chars/asura/dmg6.gif
+	frame	data/chars/asura/dmg7.gif
+
+	
+anim block
+	loop	0
+	offset	51 127
+	bbox	55 0 51 130 
+	delay   3
+	frame	data/chars/asura/atk21.gif
+	delay	40
+	frame	data/chars/asura/atk21.gif
+
+anim death
+	loop	0
+	delay	25
+	offset	57 108
+	frame	data/chars/asura/d1
+	frame	data/chars/asura/d2
+	offset	65 98
+	delay	25
+	attack	50 34 52 57 13 1
+	frame	data/chars/asura/d3
+	frame	data/chars/asura/d4
+	frame	data/chars/asura/d5
+
+
+	
+

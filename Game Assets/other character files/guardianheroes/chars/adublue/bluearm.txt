@@ -1,0 +1,421 @@
+name	bluearm
+health	500
+speed	16
+type	enemy
+shadow	3
+noquake 1
+dust    dust
+cantgrab 1
+aggression -3
+nodrop 1
+bflash bflash
+falldie 1
+nodieblink 1
+facing 2
+subject_to_screen 1
+icon	data/chars/adublue/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/orcdie.wav
+fmap 1
+
+palette	data/chars/adublue/aridle1.gif
+
+alternatepal	data/chars/adublue/testpal3.gif
+
+anim spawn
+	loop	0
+	offset	215 183
+	bbox	0 0 0 0
+	delay	150
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/adublue/ardea33.gif
+	frame	data/chars/adublue/ardea32.gif
+	frame	data/chars/adublue/ardea31.gif
+	frame	data/chars/adublue/ardea30.gif
+	frame	data/chars/adublue/ardea29.gif
+	frame	data/chars/adublue/ardea28.gif
+	frame	data/chars/adublue/ardea27.gif
+	frame	data/chars/adublue/ardea26.gif
+	frame	data/chars/adublue/ardea25.gif
+	frame	data/chars/adublue/ardea24.gif
+	frame	data/chars/adublue/ardea23.gif
+	frame	data/chars/adublue/ardea22.gif
+	frame	data/chars/adublue/ardea21.gif
+	frame	data/chars/adublue/ardea20.gif
+	frame	data/chars/adublue/ardea19.gif
+	frame	data/chars/adublue/ardea18.gif
+	frame	data/chars/adublue/ardea17.gif
+	frame	data/chars/adublue/ardea16.gif
+	frame	data/chars/adublue/ardea15.gif
+	frame	data/chars/adublue/ardea14.gif
+	frame	data/chars/adublue/ardea13.gif
+	frame	data/chars/adublue/ardea12.gif
+	frame	data/chars/adublue/ardea11.gif
+	frame	data/chars/adublue/ardea10.gif
+	frame	data/chars/adublue/ardea09.gif
+	frame	data/chars/adublue/ardea08.gif
+	frame	data/chars/adublue/ardea07.gif
+	frame	data/chars/adublue/ardea06.gif
+	frame	data/chars/adublue/ardea05.gif
+	frame	data/chars/adublue/ardea04.gif
+	frame	data/chars/adublue/ardea03.gif
+	frame	data/chars/adublue/ardea02.gif
+	frame	data/chars/adublue/ardea01.gif
+
+	delay	6
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	delay	3
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset	215 183
+	frame	data/chars/adublue/aridle1.gif
+	delay	6
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+
+
+anim idle
+	loop	1
+	offset	215 183
+	bbox	170 100 65 65
+	delay	1
+	frame	data/chars/adublue/aridle1.gif
+
+anim walk
+	loop	1
+	offset	215 183
+	bbox	170 100 65 65
+	delay   12
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+
+anim backwalk
+	loop	1
+	offset	215 183
+	bbox	170 100 65 65
+	delay   12
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+	frame	data/chars/adublue/aridle1.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim pain2
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim pain3
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	215 183
+	bbox	170 100 65 65
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+
+anim burn
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim bpain
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim fall
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 213 183
+	frame	data/chars/adublue/aridle1.gif
+	offset 215 183
+	delay   23
+	frame	data/chars/adublue/aridle1.gif
+
+anim rise
+	loop	0
+	offset	215 183
+	delay	35
+	frame	data/chars/adublue/aridle1.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	215 183
+	bbox	170 100 65 65
+	frame	data/chars/adublue/ardea01.gif
+	frame	data/chars/adublue/ardea02.gif
+	frame	data/chars/adublue/ardea03.gif
+	frame	data/chars/adublue/ardea04.gif
+	frame	data/chars/adublue/ardea05.gif
+	frame	data/chars/adublue/ardea06.gif
+	frame	data/chars/adublue/ardea07.gif
+	frame	data/chars/adublue/ardea08.gif
+	frame	data/chars/adublue/ardea09.gif
+	frame	data/chars/adublue/ardea10.gif
+	frame	data/chars/adublue/ardea11.gif
+	frame	data/chars/adublue/ardea12.gif
+	frame	data/chars/adublue/ardea13.gif
+	frame	data/chars/adublue/ardea14.gif
+	frame	data/chars/adublue/ardea15.gif
+	frame	data/chars/adublue/ardea16.gif
+	frame	data/chars/adublue/ardea17.gif
+	frame	data/chars/adublue/ardea18.gif
+	frame	data/chars/adublue/ardea19.gif
+	frame	data/chars/adublue/ardea20.gif
+	frame	data/chars/adublue/ardea21.gif
+	frame	data/chars/adublue/ardea22.gif
+	frame	data/chars/adublue/ardea23.gif
+	frame	data/chars/adublue/ardea24.gif
+	frame	data/chars/adublue/ardea25.gif
+	frame	data/chars/adublue/ardea26.gif
+	frame	data/chars/adublue/ardea27.gif
+	frame	data/chars/adublue/ardea28.gif
+	frame	data/chars/adublue/ardea29.gif
+	frame	data/chars/adublue/ardea30.gif
+	frame	data/chars/adublue/ardea31.gif
+	frame	data/chars/adublue/ardea32.gif
+
+	delay	105
+	move 1000
+	frame	data/chars/adublue/ardea33.gif
+
+anim attack1
+	range	0 200
+	delay	8
+	offset	215 183
+	bbox	170 100 65 65
+	sound   data/sounds/punch1.wav
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara102.gif
+	delay   1
+	blast   165 95 95 80 20 0 0 0 15
+	move    5
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	move    4
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	move    3
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	move    2
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	frame	data/chars/adublue/ara102.gif
+	move    1
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	frame	data/chars/adublue/ara101.gif
+	blast   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/ara101.gif
+

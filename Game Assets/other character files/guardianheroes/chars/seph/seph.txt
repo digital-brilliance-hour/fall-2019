@@ -1,0 +1,185 @@
+name	Sephirot
+health	600
+speed	9
+type	enemy
+shadow	5
+icon	data/chars/seph/icon.gif
+
+
+anim idle
+	loop	1
+	delay	40
+	offset	57 111
+	bbox	0 38 30 112
+	frame	data/chars/seph/std.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	59 115
+	bbox	47 4 24 113
+        frame	data/chars/seph/wlk1.gif
+        frame	data/chars/seph/wlk2.gif
+        frame	data/chars/seph/wlk3.gif
+        frame	data/chars/seph/wlk4.gif
+        frame	data/chars/seph/wlk5.gif
+        frame	data/chars/seph/wlk6.gif
+
+
+anim attack1 
+	loop	0
+	delay	6
+	offset	60 106
+        range   0 95
+         bbox	52 16 29 93
+	frame	data/chars/seph/atk1.gif
+        attack	73 6 79 102 12 0
+	sound	data/chars/seph/sword.wav
+	frame	data/chars/seph/atk2.gif
+	frame	data/chars/seph/atk3.gif
+        attack	0 0 0 0 0 0
+        delay	10
+	frame	data/chars/seph/atk4.gif
+	offset	105 105
+         bbox	91 35 32 71
+	frame	data/chars/seph/atk5.gif
+        attack	36 3 186 71 12 1
+	sound	data/chars/seph/sword.wav
+	frame	data/chars/seph/atk6.gif
+	frame	data/chars/seph/atk7.gif
+        attack	0 0 0 0 0 0
+        delay	16
+	frame	data/chars/seph/atk8.gif
+
+
+
+anim attack2
+	loop	0
+	delay	10
+	offset	62 105
+        range   100 160
+         bbox	38 36 30 65
+	frame	data/chars/seph/atk13.gif
+	delay	2
+        move 9
+        attack	44 35 118 71 15 1
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 9
+	frame	data/chars/seph/atk14.gif
+        move 0
+	delay	20
+        attack	0 0 0 0 0 0
+	frame	data/chars/seph/atk15.gif
+
+
+anim upper
+	loop	0
+	delay	10
+	offset	84 141
+         bbox	89 92 75 67
+	frame	data/chars/seph/atk9.gif
+        attack  50 0 114 146 25 1
+	sound	data/chars/seph/sword.wav
+	frame	data/chars/seph/atk10.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/seph/atk11.gif
+	delay	21
+	frame	data/chars/seph/atk12.gif
+
+
+anim special
+	loop	0
+	delay	6
+	offset	105 105
+	frame	data/chars/seph/atk5.gif
+	sound	data/chars/seph/sword.wav
+	blast	36 3 186 71 20
+	frame	data/chars/seph/atk6.gif
+	frame	data/chars/seph/atk7.gif
+        attack	0 
+        delay	18
+	frame	data/chars/seph/atk8.gif
+
+
+
+anim pain
+	loop	0
+	offset	53 122
+	bbox	16 17 62 109
+	delay	15
+	frame	data/chars/seph/dmg1.gif
+        frame	data/chars/seph/dmg2.gif
+	
+
+anim fall
+	loop	0
+	offset	75 100
+	delay	20
+	attack	50 58 57 45 12 1
+	frame	data/chars/seph/fall1.gif
+	frame	data/chars/seph/fall2.gif
+	frame	data/chars/seph/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	75 100
+	delay	20
+	frame	data/chars/seph/fall4.gif

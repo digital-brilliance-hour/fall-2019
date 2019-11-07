@@ -1,0 +1,17 @@
+name	snow01
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+alpha	6
+setlayer 0
+
+
+anim idle
+	loop	1
+	delay	8
+	offset	0 244
+	frame	data/chars/misc/snow0101.gif
+	frame	data/chars/misc/snow0102.gif
+	frame	data/chars/misc/snow0103.gif
+	

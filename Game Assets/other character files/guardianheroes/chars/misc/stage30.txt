@@ -1,0 +1,14 @@
+name	stage30
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/bgs/dragons/stage30/front.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	1 256
+	frame	data/bgs/dragons/stage30/front.gif
+

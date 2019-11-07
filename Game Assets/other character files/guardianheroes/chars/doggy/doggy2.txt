@@ -1,0 +1,65 @@
+name	doggy2
+health	400
+speed   15
+type	enemy
+shadow	0
+
+anim idle
+	loop	1
+	delay	6
+	offset	21 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/stay1.gif
+	frame	data/chars/doggy/stay2.gif
+	frame	data/chars/doggy/stay3.gif
+
+anim walk
+	loop	1
+	delay	6
+	offset	26 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+
+anim pain
+	loop	0
+	delay	6
+	offset	26 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+
+anim fall
+	loop	0
+	delay	6
+	offset	21 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/stay1.gif
+	frame	data/chars/doggy/sit.gif
+
+anim rise
+	loop	0
+	delay	6
+	offset	26 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	26 48
+	attack	0 13 50 41 10 1
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+	frame	data/chars/doggy/run1.gif
+	frame	data/chars/doggy/run2.gif
+
+
+

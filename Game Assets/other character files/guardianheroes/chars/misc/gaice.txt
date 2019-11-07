@@ -1,0 +1,18 @@
+name	gaice
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/gaice2.gif
+
+anim idle
+	loop	1
+	delay	22
+	offset	0 150
+	frame	data/chars/misc/gaice2.gif
+	frame	data/chars/misc/gaice3.gif
+	frame	data/chars/misc/gaice4.gif
+	frame	data/chars/misc/gaice5.gif
+
+

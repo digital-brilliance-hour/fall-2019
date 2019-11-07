@@ -1,0 +1,44 @@
+name head1
+type none
+health 1
+speed 4
+candamage enemy obstacle
+noatflash 1
+weapons	head1	3ork1
+palette	data/chars/3ork1/pal.gif
+alternatepal	data/chars/3ork1/testpal.gif
+alternatepal	data/chars/3ork1/testpal2.gif
+alternatepal	data/chars/3ork1/testpal3.gif
+alternatepal	data/chars/3ork1/testpal4.gif
+
+
+
+anim idle 
+	offset 50 85
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	frame data/chars/3ork1/head1
+
+anim attack1
+	offset 50 85
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 200
+	landframe 1
+	frame data/chars/3ork1/head2
+	delay 999999999999
+	frame data/chars/3ork1/head2
+
+anim fall
+	offset 50 85
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 200
+	landframe 1
+	frame data/chars/3ork1/head2
+	delay 999999999999
+	frame data/chars/3ork1/head2
+
+
+

@@ -1,0 +1,19 @@
+name	river
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/chars/misc/river1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 165
+	frame	data/chars/misc/river1.gif
+	frame	data/chars/misc/river2.gif
+	frame	data/chars/misc/river3.gif
+	frame	data/chars/misc/river4.gif
+	frame	data/chars/misc/river5.gif
+	frame	data/chars/misc/river6.gif
+	frame	data/chars/misc/river7.gif
+	frame	data/chars/misc/river8.gif

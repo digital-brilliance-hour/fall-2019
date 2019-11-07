@@ -1,0 +1,227 @@
+Name	knight4
+health	400
+type	enemy
+speed	6
+gfxshadow 1
+icon	data/chars/knight4/icon.gif
+diesound data/sounds/new/whimper.wav
+falldie 2
+cantgrab 1
+nolife 	1
+nodieblink 3
+aggression 40
+aimove chase
+aimove chasez
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+noatflash 1
+flash	aflash
+escapehits 5
+
+remap	data/chars/knight4/walk03.gif data/chars/knight4/map1.gif
+remap	data/chars/knight4/walk03.gif data/chars/knight4/map2.gif
+remap	data/chars/knight4/walk03.gif data/chars/knight4/map3.gif
+
+#remap	data/chars/knight4/stand1.gif data/chars/knight4/alt2.gif
+#remap	data/chars/knight4/stand1.gif data/chars/lobster/alt2.gif
+#remap	data/chars/knight4/stand1.gif data/chars/lobster/alt4.gif
+#remap	data/chars/knight4/stand1.gif data/chars/lobster/alt5.gif
+
+
+anim idle
+	loop	1
+	OFFSET 	76 128
+	bbox	60 48 28 60
+	delay	35
+	frame	data/chars/knight4/stand1.gif
+	frame	data/chars/knight4/stand2.gif
+	sound	data/sounds/new/scornlaf.wav
+	frame	data/chars/knight4/stand1.gif
+	frame	data/chars/knight4/stand2.gif
+
+
+anim pain
+	#sound	data/sounds/ching3.wav
+	sound	data/sounds/new/ching.wav
+	loop	0
+	offset	48 130
+	bbox	30 64 38 62
+	delay	8
+	frame	data/chars/knight4/stab2.gif
+	offset	88 126
+	bbox	50 48 50 72
+	delay	36
+	frame	data/chars/knight4/pain.gif
+	bbox	30 64 38 62
+	offset	48 130
+	delay	6
+	frame	data/chars/knight4/stab2.gif
+
+
+anim fall
+    landframe 1
+	bbox	30 64 38 62
+	sound	data/sounds/ching5.wav
+	loop	0
+	delay	60
+	offset	66 104
+	frame	data/chars/knight4/fall1.gif	
+	delay	140
+	offset	72 124
+	frame	data/chars/knight4/fall2.gif
+			
+
+anim walk
+	loop	1
+	delay	20
+	offset	76 128
+	bbox	64 56 28 60
+	frame	data/chars/knight4/walk01.gif
+	frame	data/chars/knight4/walk02.gif
+	frame	data/chars/knight4/walk03.gif
+	frame	data/chars/knight4/walk04.gif
+	frame	data/chars/knight4/walk05.gif
+	
+
+anim rise
+	loop	0
+	offset	68 130
+	delay 20
+	frame	data/chars/knight4/rise0.gif
+	frame	data/chars/knight4/rise1.gif
+	bbox	60 76 36 54
+	frame	data/chars/knight4/rise2.gif	
+	frame	data/chars/knight4/rise3.gif
+	frame	data/chars/knight4/rise2.gif	
+	frame	data/chars/knight4/rise3.gif
+	frame	data/chars/knight4/rise2.gif	
+	frame	data/chars/knight4/rise3.gif
+	frame	data/chars/knight4/rise4.gif	
+
+anim attack1
+	sound	data/sounds/Hammer.wav
+	range	0 84
+	loop	0
+	delay	8
+	offset	90 94
+    bbox    78 30 34 62
+	frame	data/chars/knight4/punch01.gif
+    bbox   91 20 34 81
+	frame	data/chars/knight4/punch02.gif
+	attack	106 2 84 90	 35 1
+    bbox    97 12 32 78
+	frame	data/chars/knight4/punch03.gif
+    bbox    94 13 29 81
+	frame	data/chars/knight4/punch04.gif
+	offset	46 132
+    bbox    20 63 45 69
+	frame	data/chars/knight4/stab1.gif	
+	offset	68 130	
+    bbox 59 61 32 68
+	frame	data/chars/knight4/rise4.gif	
+
+
+
+anim special2
+    energycost 5
+	sound	data/sounds/Hammer.wav
+	range	0 84
+	loop	0
+	delay	8
+	offset	90 94
+	frame	data/chars/knight4/punch01.gif
+	frame	data/chars/knight4/punch02.gif
+	attack	106 2 84 90	 35 1
+	frame	data/chars/knight4/punch03.gif
+	frame	data/chars/knight4/punch04.gif
+	offset	46 132
+	frame	data/chars/knight4/stab1.gif	
+	offset	68 130	
+	frame	data/chars/knight4/rise4.gif	
+		
+		
+
+anim attack2
+	range	0 64
+	loop	0
+	delay	5
+	offset	46 132
+    bbox    20 63 45 69
+	frame	data/chars/knight4/stab1.gif
+	attack	52 52 64 66 30 0
+	frame	data/chars/knight4/stab2.gif
+	delay 7
+	frame	data/chars/knight4/stab3.gif
+	delay 5
+	attack 0
+	frame	data/chars/knight4/stab2.gif
+	frame	data/chars/knight4/stab1.gif
+
+anim attack3
+	range	0 74
+	loop	0
+	delay	8
+	offset	46 132
+    bbox    20 63 45 69
+	frame	data/chars/knight4/stab1.gif
+	attack	52 52 74 66 30 1
+	frame	data/chars/knight4/stab2.gif
+	delay 7
+	frame	data/chars/knight4/stab3.gif
+	delay 5
+	attack 0
+	frame	data/chars/knight4/stab2.gif
+	frame	data/chars/knight4/stab1.gif
+
+anim upper
+	sound	data/sounds/Hammer.wav
+	range	0 60
+	loop	0
+	delay	8
+	offset	90 94
+    bbox    78 30 34 62
+	frame	data/chars/knight4/punch01.gif
+    bbox   91 20 34 81
+	frame	data/chars/knight4/punch02.gif
+	attack	114 2 64 90	 25 1
+    bbox    97 12 32 78
+	frame	data/chars/knight4/punch03.gif
+	attack 0
+    bbox    94 13 29 81
+	frame	data/chars/knight4/punch04.gif
+	offset	46 132
+    bbox    20 63 45 69
+	frame	data/chars/knight4/stab1.gif	
+	offset	68 130	
+    bbox 59 61 32 68
+	frame	data/chars/knight4/rise4.gif
+
+anim throw
+	loop	0
+	delay	8
+	offset	90 94
+	frame	data/chars/knight4/punch02.gif
+	frame	data/chars/knight4/punch03.gif
+	frame	data/chars/knight4/punch04.gif
+
+anim death
+	delay	30
+	offset	72 124
+	frame	data/chars/knight4/fall2.gif
+	delay 50
+	frame	data/chars/knight4/die1.gif
+	delay 10
+	frame	data/chars/knight4/die2.gif
+	frame	data/chars/knight4/die3.gif
+	frame	data/chars/knight4/die4.gif
+	frame	data/chars/knight4/die5.gif
+	frame	data/chars/knight4/die6.gif
+	frame	data/chars/knight4/die7.gif
+	frame	data/chars/knight4/die8.gif
+	frame	data/chars/knight4/die9.gif
+	frame	data/chars/knight4/die10.gif
+
+

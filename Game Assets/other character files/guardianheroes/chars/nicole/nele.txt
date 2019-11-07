@@ -1,0 +1,236 @@
+
+name	  nele
+health 	 150
+speed	 14
+running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/nicole/icon
+diesound         	sound	Data/sounds/elep.wav
+animal	1
+modelflag 1
+atchain 1 1 2 3
+
+alternatepal	data/chars/nicole/elephant/testpal
+
+
+#done//
+
+anim get
+	loop	0
+	offset  162 263
+	delay	15
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/nicole/elephant/rise1
+	frame	data/chars/nicole/elephant/rise2
+	frame	data/chars/nicole/elephant/rise3
+
+
+
+anim idle
+	loop	1
+	offset  162 263
+	bbox 	66 116 224 131
+	delay	15
+	frame	data/chars/nicole/elephant/idle1
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  104 261
+	bbox 	17 115 224 131
+	delay	7
+	frame	data/chars/nicole/elephant/walk1
+	frame	data/chars/nicole/elephant/walk2
+	frame	data/chars/nicole/elephant/walk3
+	frame	data/chars/nicole/elephant/walk4
+        frame	data/chars/nicole/elephant/walk5
+        frame	data/chars/nicole/elephant/walk6
+        frame	data/chars/nicole/elephant/walk7
+
+
+anim run
+	loop	1
+	offset  152 258
+	bbox 	42 128 224 131
+	delay	7
+	frame	data/chars/nicole/elephant/run1
+	frame	data/chars/nicole/elephant/run2
+	frame	data/chars/nicole/elephant/run3
+	frame	data/chars/nicole/elephant/run4
+	frame	data/chars/nicole/elephant/run5
+	frame	data/chars/nicole/elephant/run6
+	frame	data/chars/nicole/elephant/run7
+	frame	data/chars/nicole/elephant/run8
+	frame	data/chars/nicole/elephant/run9
+	frame	data/chars/nicole/elephant/run10
+	frame	data/chars/nicole/elephant/run11
+	frame	data/chars/nicole/elephant/run12
+	frame	data/chars/nicole/elephant/run13
+	frame	data/chars/nicole/elephant/run14
+
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	5
+	move	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/nicole/elephant/3atk1
+	frame	data/chars/nicole/elephant/3atk2
+	frame	data/chars/nicole/elephant/3atk3
+	frame	data/chars/nicole/elephant/3atk4
+	frame	data/chars/nicole/elephant/3atk5
+	frame	data/chars/nicole/elephant/3atk6
+	frame	data/chars/nicole/elephant/3atk7
+	frame	data/chars/nicole/elephant/3atk8
+	frame	data/chars/nicole/elephant/3atk9
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/nicole/elephant/3atk10
+	frame	data/chars/nicole/elephant/3atk11
+	frame	data/chars/nicole/elephant/3atk12
+	frame	data/chars/nicole/elephant/3atk13
+	frame	data/chars/nicole/elephant/3atk14
+	frame	data/chars/nicole/elephant/3atk15
+	move	0
+	frame	data/chars/nicole/elephant/3atk16
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/elephant/3atk17
+	frame	data/chars/nicole/elephant/3atk18
+	frame	data/chars/nicole/elephant/3atk19
+	frame	data/chars/nicole/elephant/3atk20
+	frame	data/chars/nicole/elephant/3atk21
+	frame	data/chars/nicole/elephant/3atk22
+	frame	data/chars/nicole/elephant/3atk23
+	frame	data/chars/nicole/elephant/3atk24
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	109 275
+	bbox	24 141 224 131
+#	sound	data/sounds/marvel/doomshot.wav
+	frame	data/chars/nicole/elephant/atk1
+	frame	data/chars/nicole/elephant/atk2
+	attack	160 145 157 130 25 1 0 0 28
+	frame	data/chars/nicole/elephant/atk3
+	frame	data/chars/nicole/elephant/atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/elephant/atk5
+	frame	data/chars/nicole/elephant/atk6
+	frame	data/chars/nicole/elephant/atk7
+
+
+anim attack2
+	range	5 50
+	loop	0
+	delay	5
+	offset	116 285
+	bbox	30 146 224 131
+#	sound	data/sounds/marvel/doomshot.wav
+	frame	data/chars/nicole/elephant/2atk1
+	frame	data/chars/nicole/elephant/2atk2
+	attack	204 97 181 190 25 1 0 0 28
+	frame	data/chars/nicole/elephant/2atk3
+	frame	data/chars/nicole/elephant/2atk4
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/elephant/2atk5
+	frame	data/chars/nicole/elephant/2atk6
+
+anim attack3
+	range	5 50
+	loop	0
+	delay	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/nicole/elephant/3atk1
+	frame	data/chars/nicole/elephant/3atk2
+	frame	data/chars/nicole/elephant/3atk3
+	frame	data/chars/nicole/elephant/3atk4
+	frame	data/chars/nicole/elephant/3atk5
+	frame	data/chars/nicole/elephant/3atk6
+	frame	data/chars/nicole/elephant/3atk7
+	frame	data/chars/nicole/elephant/3atk8
+	frame	data/chars/nicole/elephant/3atk9
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/nicole/elephant/3atk10
+	frame	data/chars/nicole/elephant/3atk11
+	frame	data/chars/nicole/elephant/3atk12
+	frame	data/chars/nicole/elephant/3atk13
+	frame	data/chars/nicole/elephant/3atk14
+	frame	data/chars/nicole/elephant/3atk15
+	frame	data/chars/nicole/elephant/3atk16
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/elephant/3atk17
+	frame	data/chars/nicole/elephant/3atk18
+	frame	data/chars/nicole/elephant/3atk19
+	frame	data/chars/nicole/elephant/3atk20
+	frame	data/chars/nicole/elephant/3atk21
+	frame	data/chars/nicole/elephant/3atk22
+	frame	data/chars/nicole/elephant/3atk23
+	frame	data/chars/nicole/elephant/3atk24
+
+
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/nicole/elephant/3atk1
+	frame	data/chars/nicole/elephant/3atk2
+	frame	data/chars/nicole/elephant/3atk3
+	frame	data/chars/nicole/elephant/3atk4
+	frame	data/chars/nicole/elephant/3atk5
+	frame	data/chars/nicole/elephant/3atk6
+	frame	data/chars/nicole/elephant/3atk7
+	frame	data/chars/nicole/elephant/3atk8
+	frame	data/chars/nicole/elephant/3atk9
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/nicole/elephant/3atk10
+	frame	data/chars/nicole/elephant/3atk11
+	frame	data/chars/nicole/elephant/3atk12
+	frame	data/chars/nicole/elephant/3atk13
+	frame	data/chars/nicole/elephant/3atk14
+	frame	data/chars/nicole/elephant/3atk15
+	frame	data/chars/nicole/elephant/3atk16
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/elephant/3atk17
+	frame	data/chars/nicole/elephant/3atk18
+	frame	data/chars/nicole/elephant/3atk19
+	frame	data/chars/nicole/elephant/3atk20
+	frame	data/chars/nicole/elephant/3atk21
+	frame	data/chars/nicole/elephant/3atk22
+	frame	data/chars/nicole/elephant/3atk23
+	frame	data/chars/nicole/elephant/3atk24
+
+
+anim fall
+	loop	0
+	offset  156 261
+	delay	20
+	frame	data/chars/nicole/elephant/pain1
+
+anim pain
+	loop	0
+	offset  156 261
+	bbox	68 116 220 131
+	delay	15
+	frame	data/chars/nicole/elephant/pain1
+
+

@@ -1,0 +1,26 @@
+name	cursebg
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/curseb1.gif
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 415
+	frame	data/chars/misc/curseb1.gif
+	frame	data/chars/misc/curseb2.gif
+	frame	data/chars/misc/curseb3.gif
+	frame	data/chars/misc/curseb4.gif
+	frame	data/chars/misc/curseb5.gif
+	frame	data/chars/misc/curseb6.gif
+	frame	data/chars/misc/curseb7.gif
+	frame	data/chars/misc/curseb8.gif
+
+
+
+
+
+

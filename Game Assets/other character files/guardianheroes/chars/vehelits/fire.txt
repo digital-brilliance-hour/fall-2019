@@ -1,0 +1,23 @@
+name	        Fire
+type	        none
+shadow	        0
+nolife          1
+aimove          star
+lifespan        1
+antigravity     1
+candamage       player obstacle
+
+anim idle
+	delay	5
+	offset	9 21
+	burn	3 18 13 9 12 1
+	frame	data/chars/vehelits/fire01.gif
+	frame	data/chars/vehelits/fire02.gif
+	burn	2 8 16 20 12 1
+	frame	data/chars/vehelits/fire03.gif
+	frame	data/chars/vehelits/fire04.gif
+	burn	3 8 14 15 12 1
+	frame	data/chars/vehelits/fire05.gif
+	attack	0
+	frame	data/chars/vehelits/fire06.gif
+	frame	data/chars/misc/empty.gif

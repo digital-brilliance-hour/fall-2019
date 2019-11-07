@@ -1,0 +1,366 @@
+name	Nero
+health	300
+speed	6
+type	enemy
+blockodds 1
+thold     80
+shadow	5
+falldie 1
+nodieblink 2
+nolife   1
+icon	data/chars/nero/icon.gif
+diesound	data/chars/nero/laf.wav
+palette	data/chars/nero/i0.gif
+#remap	data/chars/nero/at100.gif data/chars/nero/at1000.gif
+
+anim idle
+	loop	1
+	offset	50 160
+	bbox	50 50 50 110
+	delay	5
+	frame	data/chars/nero/i0.gif
+	frame	data/chars/nero/i1.gif
+	frame	data/chars/nero/i2.gif
+	frame	data/chars/nero/i3.gif
+	frame	data/chars/nero/i4.gif
+	frame	data/chars/nero/i5.gif
+	frame	data/chars/nero/i6.gif
+	frame	data/chars/nero/i7.gif
+	frame	data/chars/nero/i8.gif
+	frame	data/chars/nero/i9.gif
+
+anim spawn
+	loop	0
+	offset	75 200
+	delay	5
+	frame	data/chars/nero/sp00.gif
+	sound	data/chars/nero/huuaa.wav
+	frame	data/chars/nero/sp01.gif
+	frame	data/chars/nero/sp02.gif
+	frame	data/chars/nero/sp03.gif
+	frame	data/chars/nero/sp04.gif
+	frame	data/chars/nero/sp05.gif
+	frame	data/chars/nero/sp06.gif
+	frame	data/chars/nero/sp07.gif
+	frame	data/chars/nero/sp08.gif
+	frame	data/chars/nero/sp09.gif
+	frame	data/chars/nero/sp10.gif
+	frame	data/chars/nero/sp11.gif
+	frame	data/chars/nero/sp12.gif
+	frame	data/chars/nero/sp13.gif
+	delay	65
+	frame	data/chars/nero/sp14.gif
+	delay	5
+	frame	data/chars/nero/sp15.gif
+	frame	data/chars/nero/sp16.gif
+	frame	data/chars/nero/sp17.gif
+	frame	data/chars/nero/sp18.gif
+	frame	data/chars/nero/sp19.gif
+	frame	data/chars/nero/sp20.gif
+	frame	data/chars/nero/sp21.gif
+	frame	data/chars/nero/sp22.gif
+	frame	data/chars/nero/sp23.gif
+	frame	data/chars/nero/sp24.gif
+	frame	data/chars/nero/sp25.gif
+	frame	data/chars/nero/sp22.gif
+	frame	data/chars/nero/sp23.gif
+	frame	data/chars/nero/sp24.gif
+	frame	data/chars/nero/sp25.gif
+
+anim walk
+	loop	1
+	offset	64 156
+	bbox	30 30 50 120
+	delay	9
+	frame	data/chars/nero/w0.gif
+	offset	65 156
+	frame	data/chars/nero/w1.gif
+	offset	71 156
+	frame	data/chars/nero/w2.gif
+	offset	72 156
+	frame	data/chars/nero/w3.gif
+	offset	60 156
+	frame	data/chars/nero/w4.gif
+	frame	data/chars/nero/w5.gif
+	offset	61 156
+	frame	data/chars/nero/w6.gif
+	offset	69 156
+	frame	data/chars/nero/w7.gif
+
+anim pain
+	loop	0
+	offset	50 125
+	bbox	30 30 50 90
+	delay	12
+	frame	data/chars/nero/p00.gif
+	frame	data/chars/nero/p10.gif
+	frame	data/chars/nero/p20.gif
+	frame	data/chars/nero/p30.gif
+
+anim block
+	loop	0
+	offset	75 156
+	bbox	0 0 0 0
+	move	-7
+	delay	4
+	frame	data/chars/nero/bl0.gif
+	frame	data/chars/nero/bl1.gif
+	frame	data/chars/nero/bl2.gif
+	delay	30
+	frame	data/chars/nero/bl3.gif
+
+
+anim death
+	loop	0
+	offset	75 200
+	delay	5
+	bbox	0 0 0 0
+	frame	data/chars/nero/sp18.gif
+	sound	data/chars/nero/batshuh.wav
+	frame	data/chars/nero/sp17.gif
+	frame	data/chars/nero/sp16.gif
+	frame	data/chars/nero/sp15.gif
+	frame	data/chars/nero/sp14.gif
+	frame	data/chars/nero/sp13.gif
+	frame	data/chars/nero/sp12.gif
+	frame	data/chars/nero/sp11.gif
+	frame	data/chars/nero/sp10.gif
+	frame	data/chars/nero/sp09.gif
+	frame	data/chars/nero/sp08.gif
+	frame	data/chars/nero/sp07.gif
+	frame	data/chars/nero/sp06.gif
+	frame	data/chars/nero/sp05.gif
+	frame	data/chars/nero/sp04.gif
+	frame	data/chars/nero/sp03.gif
+	frame	data/chars/nero/sp02.gif
+	frame	data/chars/nero/sp01.gif
+	frame	data/chars/nero/sp00.gif
+
+anim fall
+	loop	0
+	delay	60
+	offset	71 46
+	sound	data/chars/nero/fall.wav
+	frame	data/chars/nero/f20.gif
+	offset	68 38
+	frame	data/chars/nero/f10.gif
+
+anim rise
+	loop	0
+	offset	50 125
+	delay	12
+	frame	data/chars/nero/p30.gif
+	frame	data/chars/nero/p20.gif
+
+
+anim attack1
+	range	110 180
+	followanim 1
+	followcond 1
+	loop	0
+	delay	5
+	offset	113 149
+	bbox	104 19 45 130
+	frame	data/chars/nero/at100.gif
+	move	2
+	frame	data/chars/nero/at101.gif
+	attack	107 19 42 130 1
+	move	5
+	frame	data/chars/nero/at102.gif
+	move	7
+	frame	data/chars/nero/at103.gif
+	move	10
+	frame	data/chars/nero/at104.gif
+	move	12
+	frame	data/chars/nero/at105.gif
+	move	15
+	frame	data/chars/nero/at103.gif
+	move	17
+	frame	data/chars/nero/at104.gif
+	move	20
+	frame	data/chars/nero/at105.gif
+
+anim follow1
+	loop	0
+	fastattack 1
+	offset	43 153
+	bbox	14 33 63 120
+	delay	6
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr00.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr01.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr02.gif
+	frame	data/chars/nero/gr03.gif
+	frame	data/chars/nero/gr04.gif
+	frame	data/chars/nero/gr05.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr06.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr07.gif
+	frame	data/chars/nero/gr08.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr09.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr10.gif
+	attack	71 38 76 106 5 1 0 0 50
+	sound	data/chars/nero/hya.wav
+	frame	data/chars/nero/gr11.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr12.gif
+	frame	data/chars/nero/gr13.gif
+	frame	data/chars/nero/gr14.gif
+	frame	data/chars/nero/gr15.gif
+	frame	data/chars/nero/gr16.gif
+
+anim special
+	loop	0
+	fastattack 1
+	offset	43 153
+	bbox	14 33 63 120
+	delay	6
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr00.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr01.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr02.gif
+	frame	data/chars/nero/gr03.gif
+	frame	data/chars/nero/gr04.gif
+	frame	data/chars/nero/gr05.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr06.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr07.gif
+	frame	data/chars/nero/gr08.gif
+	attack	71 38 76 106 5
+	frame	data/chars/nero/gr09.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr10.gif
+	attack	71 38 76 106 5 1 0 0 50
+	sound	data/chars/nero/hya.wav
+	frame	data/chars/nero/gr11.gif
+	attack	0 0 0 0 0
+	frame	data/chars/nero/gr12.gif
+	frame	data/chars/nero/gr13.gif
+	frame	data/chars/nero/gr14.gif
+	frame	data/chars/nero/gr15.gif
+	frame	data/chars/nero/gr16.gif
+
+anim upper
+#	range	20 90
+	loop	0
+	jumpframe	1 4
+	move	2
+	delay	5
+	offset	35 141
+	blast	14 24 120 109 10
+	bbox	0 0 0 0
+	frame	data/chars/nero/up10.gif
+	sound	data/chars/nero/up.wav
+	frame	data/chars/nero/up11.gif
+	frame	data/chars/nero/up12.gif
+	frame	data/chars/nero/up13.gif
+	frame	data/chars/nero/up14.gif
+	frame	data/chars/nero/up15.gif
+	frame	data/chars/nero/up16.gif
+	move	0
+	bbox	0 0 0 0
+	blast	0 0 0 0
+	delay	10
+	frame	data/chars/nero/up17.gif
+	frame	data/chars/nero/up18.gif
+	frame	data/chars/nero/up19.gif
+	frame	data/chars/nero/up20.gif
+
+anim grab
+	range	1	20
+	hitfx	data/chars/k/slash2.wav
+	loop	1
+	fastattack	1
+	offset	43 153
+	bbox	14 33 63 120
+	delay	6
+	frame	data/chars/nero/gr17.gif
+	frame	data/chars/nero/gr18.gif
+	attack	71 38 46 96 5
+	frame	data/chars/nero/gr19.gif
+
+anim throw
+	loop	0
+	range	-20 0
+	delay	10
+	bbox	0	0	0	0
+	offset	34 154
+	sound	data/chars/nero/go2hel.wav
+	frame	data/chars/nero/th0.gif
+	frame	data/chars/nero/th1.gif
+	frame	data/chars/nero/th2.gif
+	frame	data/chars/nero/th3.gif
+	frame	data/chars/nero/th04.gif
+
+anim jumpattack
+	loop	0
+	range	20 100
+	delay	10
+	bbox	34 52	60	60
+	offset	56 174
+	sound	data/chars/nero/hya.wav
+	frame	data/chars/nero/jat20.gif
+	frame	data/chars/nero/jat21.gif
+	attack	0	0	212	163	13	1
+	frame	data/chars/nero/jat22.gif
+	frame	data/chars/nero/jat23.gif
+	frame	data/chars/nero/jat24.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nero/jat25.gif
+
+anim jumpattack2
+	loop	0
+	range	80 123
+	delay	20
+	bbox	0	0	60	60
+	offset	68 149
+	frame	data/chars/nero/jat3.gif
+	attack	69 9 115 92 12 #1
+	frame	data/chars/nero/jat1.gif
+	frame	data/chars/nero/jat2.gif

@@ -1,0 +1,224 @@
+name	godats
+health	125
+speed	11
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 45
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/godats/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/godats/idle1.gif
+
+
+#alternatepal	data/chars/godats/testpal.gif
+#alternatepal	data/chars/godats/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  56 120
+	bbox 	38 49 50 68
+	delay	16
+	frame	data/chars/godats/idle1.gif
+	frame	data/chars/godats/idle2.gif
+	frame	data/chars/godats/idle3.gif
+	frame	data/chars/godats/idle4.gif
+	frame	data/chars/godats/idle3.gif
+	frame	data/chars/godats/idle2.gif
+
+
+anim walk
+	loop	1
+	offset	63 120
+	bbox 	38 32 50 68
+	delay	13
+	frame	data/chars/godats/walk1.gif
+	frame	data/chars/godats/walk2.gif
+	frame	data/chars/godats/walk3.gif
+	frame	data/chars/godats/walk4.gif
+	frame	data/chars/godats/walk5.gif
+	frame	data/chars/godats/walk6.gif
+
+anim run
+	loop	1
+	offset	63 120
+	bbox 	38 32 50 68
+	delay	13
+	frame	data/chars/godats/run1.gif
+	frame	data/chars/godats/run2.gif
+	frame	data/chars/godats/run3.gif
+	frame	data/chars/godats/run4.gif
+	frame	data/chars/godats/run5.gif
+	frame	data/chars/godats/run6.gif
+
+
+anim runattack
+	range	0 68
+	loop	0
+	delay	4
+	move	15
+	offset	57 120
+	bbox	33 48 50 68
+	frame	data/chars/godats/2atk1.gif
+	frame	data/chars/godats/2atk2.gif
+	attack	58 3 66 105 20 1 0 0 20
+	frame	data/chars/godats/2atk3.gif
+	frame	data/chars/godats/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/godats/2atk3.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	64 120
+	bbox	41 36 50 68
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/godats/block1.gif
+	offset	66 120
+	frame	data/chars/godats/block2.gif
+	move    -8
+	offset	64 120
+	frame	data/chars/godats/block2.gif
+	offset	66 120
+	frame	data/chars/godats/block2.gif
+	move    -6
+	offset	64 120
+	frame	data/chars/godats/block2.gif
+	offset	66 120
+	frame	data/chars/godats/block2.gif
+	move    -4
+	offset	64 120
+	frame	data/chars/godats/block2.gif
+	offset	66 120
+	frame	data/chars/godats/block2.gif
+	offset	64 120
+	move    -2
+	frame	data/chars/godats/block2.gif
+	offset	66 120
+	frame	data/chars/godats/block2.gif
+	offset	64 120
+	delay   20
+	move    0
+	frame	data/chars/godats/block1.gif
+
+anim pain
+	loop	0
+	delay	8
+	offset	52 120
+	bbox	28 53 50 68
+	frame	data/chars/godats/pain1.gif
+	frame	data/chars/godats/pain2.gif
+	frame	data/chars/godats/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset	56 108
+	frame	data/chars/godats/fall1.gif
+	frame	data/chars/godats/fall2.gif
+	frame	data/chars/godats/fall3.gif
+
+
+anim death
+	loop	0
+	delay	13
+	offset	56 108
+	frame	data/chars/godats/fall1.gif
+	frame	data/chars/godats/fall2.gif
+	frame	data/chars/godats/fall3.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	70 119
+	frame	data/chars/godats/rise1.gif
+	frame	data/chars/godats/rise2.gif
+	frame	data/chars/godats/rise3.gif
+	frame	data/chars/godats/rise4.gif
+
+
+anim riseattack
+	range	0 68
+	loop	0
+	delay	4
+	offset	57 120
+	bbox	33 48 50 68
+	frame	data/chars/godats/2atk1.gif
+	frame	data/chars/godats/2atk2.gif
+	attack	58 3 66 105 20 1 0 0 20
+	frame	data/chars/godats/2atk3.gif
+	frame	data/chars/godats/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/godats/2atk3.gif
+
+anim attack1
+	range	0 64
+	loop	0
+	delay	7
+	offset	60 120
+	bbox	29 41 50 68
+	frame	data/chars/godats/atk1.gif
+	frame	data/chars/godats/atk2.gif
+	attack	67 50 60 63 25 1 0 0 20
+	frame	data/chars/godats/atk3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/godats/atk2.gif
+
+anim special
+	range	0 100
+	loop	0
+	delay	8
+	offset	63 120
+	frame	data/chars/godats/spec1.gif
+	frame	data/chars/godats/spec2.gif
+	attack	16 63 87 56 9 0 0 0 16
+	frame	data/chars/godats/spec3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/godats/spec2.gif
+	attack	16 63 87 56 8 0 0 0 16
+	frame	data/chars/godats/spec1.gif
+	attack	0 0 0 0 0
+	frame	data/chars/godats/spec2.gif
+	attack	16 63 87 56 7 0 0 0 16
+	frame	data/chars/godats/spec3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/godats/spec2.gif
+	frame	data/chars/godats/spec1.gif
+
+
+anim throw
+	range	0 68
+	loop	0
+	delay	4
+	offset	57 120
+	bbox	33 48 50 68
+	frame	data/chars/godats/2atk1.gif
+	frame	data/chars/godats/2atk2.gif
+	attack	58 3 66 105 20 1 0 0 20
+	frame	data/chars/godats/2atk3.gif
+	frame	data/chars/godats/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/godats/2atk3.gif
+
+
+

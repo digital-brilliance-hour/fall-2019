@@ -1,0 +1,45 @@
+name	earth
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/titan/earth1.gif
+
+anim idle
+	loop	0
+	delay	10
+	offset	49 10
+	attack	58 7 92 123 30 1
+	frame	data/chars/titan/earth1.gif
+	offset	48 41
+	frame	data/chars/titan/earth2.gif
+	offset	45 60
+	frame	data/chars/titan/earth3.gif
+	offset	58 76
+	frame	data/chars/titan/earth4.gif
+	offset	56 89
+	frame	data/chars/titan/earth5.gif
+	offset	58 90
+	frame	data/chars/titan/earth6.gif
+	offset	59 94
+	frame	data/chars/titan/earth7.gif
+	offset	58 100
+	frame	data/chars/titan/earth8.gif
+	offset	59 105
+	frame	data/chars/titan/earth9.gif
+	offset	59 108
+	frame	data/chars/titan/earth10.gif
+	offset	57 115
+	frame	data/chars/titan/earth11.gif
+	offset	54 116
+	frame	data/chars/titan/earth12.gif
+	
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

@@ -1,0 +1,25 @@
+name	Knifep
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/ninja/shot1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	50 4
+	attack	0 0 51 9 20 1
+	frame	data/chars/ninja/shot1.gif
+	offset	49 2
+	frame	data/chars/ninja/shot2.gif
+	frame	data/chars/ninja/shot3.gif
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

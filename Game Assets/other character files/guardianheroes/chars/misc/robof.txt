@@ -1,0 +1,18 @@
+# Hit flash
+
+name	robof
+type	none
+shadow	0
+#toflip 1
+palette	data/chars/misc/att1.gif
+
+anim idle
+	loop	0
+	delay	4
+	offset	40 40
+	frame	data/chars/misc/att1.gif
+	frame	data/chars/misc/att2.gif
+	frame	data/chars/misc/att3.gif
+	frame	data/chars/misc/att4.gif
+	frame	data/chars/misc/att5.gif
+	frame	data/chars/misc/att6.gif

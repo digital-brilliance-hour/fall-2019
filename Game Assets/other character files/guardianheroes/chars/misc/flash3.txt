@@ -1,0 +1,28 @@
+# Hit flash
+
+name	Flash3
+type	none
+shadow	0
+palette data/chars/misc/blood8.gif
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	33 59
+	frame	data/chars/misc/blood1.gif
+	offset	43 66
+	frame	data/chars/misc/blood2.gif
+	offset	65 104
+	frame	data/chars/misc/blood3.gif
+	offset	74 111
+	frame	data/chars/misc/blood4.gif
+	offset	89 109
+	frame	data/chars/misc/blood5.gif
+	offset	89 113
+	frame	data/chars/misc/blood6.gif
+	offset	93 114
+	frame	data/chars/misc/blood7.gif
+	offset	96 117
+	frame	data/chars/misc/blood8.gif
+

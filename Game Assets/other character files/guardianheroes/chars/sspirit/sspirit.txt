@@ -1,0 +1,293 @@
+name	sspirit
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 10
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/sspirit/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/sspirit/idle1.gif
+
+
+#alternatepal	data/chars/sspirit/testpal.gif
+#alternatepal	data/chars/sspirit/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  76 118
+	bbox 	41 21 75 100
+	delay	16
+	frame	data/chars/sspirit/idle1.gif
+	offset  74 121
+	frame	data/chars/sspirit/idle2.gif
+	offset  70 122
+	frame	data/chars/sspirit/idle3.gif
+	offset  70 126
+	frame	data/chars/sspirit/idle4.gif
+	offset  70 122
+	frame	data/chars/sspirit/idle3.gif
+	offset  74 121
+	frame	data/chars/sspirit/idle2.gif
+
+anim walk
+	loop	1
+	offset	80 124
+	bbox 	50 24 75 100
+	delay	13
+	frame	data/chars/sspirit/walk1.gif
+	offset	78 121
+	frame	data/chars/sspirit/walk2.gif
+	offset	75 118
+	frame	data/chars/sspirit/walk3.gif
+	offset	72 116
+	frame	data/chars/sspirit/walk4.gif
+	offset	76 117
+	frame	data/chars/sspirit/walk5.gif
+	offset	77 122
+	frame	data/chars/sspirit/walk6.gif
+
+anim run
+	loop	1
+	offset	79 133
+	bbox 	62 42 75 100
+	delay	13
+	frame	data/chars/sspirit/run1.gif
+	offset	74 132
+	frame	data/chars/sspirit/run2.gif
+	offset	74 93
+	frame	data/chars/sspirit/run3.gif
+	offset	81 60
+	frame	data/chars/sspirit/run4.gif
+	offset	85 65
+	frame	data/chars/sspirit/run5.gif
+	offset	86 88
+	frame	data/chars/sspirit/run6.gif
+
+
+anim runattack
+	range	0 150
+	loop	0
+	delay	4
+	move	15
+	offset	89 131
+#	bbox	100 100 63 50
+	attack	129 23 190 155 25 1 0 0 20
+	frame	data/chars/sspirit/ratk1.gif
+	offset	118 116
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	frame	data/chars/sspirit/ratk2.gif
+	offset	89 131
+	frame	data/chars/sspirit/ratk1.gif
+	attack	0 0 0 0 0
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	79 115
+	bbox	45 15 75 100
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/sspirit/block1.gif
+	offset	84 118
+	frame	data/chars/sspirit/block2.gif
+	move    -8
+	offset	82 118
+	frame	data/chars/sspirit/block2.gif
+	offset	84 118
+	frame	data/chars/sspirit/block2.gif
+	move    -6
+	offset	82 118
+	frame	data/chars/sspirit/block2.gif
+	offset	84 118
+	frame	data/chars/sspirit/block2.gif
+	move    -4
+	offset	82 118
+	frame	data/chars/sspirit/block2.gif
+	offset	166 235
+	frame	data/chars/sspirit/block2.gif
+	offset	84 118
+	move    -2
+	frame	data/chars/sspirit/block2.gif
+	offset	82 118
+	frame	data/chars/sspirit/block2.gif
+	offset	79 115
+	delay   20
+	move    0
+	frame	data/chars/sspirit/block1.gif
+
+anim pain
+	loop	0
+	delay	6
+	offset	92 105
+	bbox	36 2 75 100
+	frame	data/chars/sspirit/pain1.gif
+	offset	96 93
+	frame	data/chars/sspirit/pain2.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	89 100
+	frame	data/chars/sspirit/fall1.gif
+	offset	71 104
+	frame	data/chars/sspirit/fall2.gif
+	offset	67 66
+	delay	1000
+	frame	data/chars/sspirit/fall3.gif
+	offset	70 39
+	delay	20
+	frame	data/chars/sspirit/fall4.gif
+	frame	data/chars/sspirit/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset	89 100
+	frame	data/chars/sspirit/fall1.gif
+	offset	71 104
+	frame	data/chars/sspirit/fall2.gif
+	offset	67 66
+	delay	1000
+	frame	data/chars/sspirit/fall3.gif
+	offset	70 39
+	delay	20
+	frame	data/chars/sspirit/fall4.gif
+	frame	data/chars/sspirit/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	4
+	offset	92 105
+	bbox	36 2 75 100
+	frame	data/chars/sspirit/pain1.gif
+
+anim riseattack
+	range	0 75
+	loop	0
+	delay	7
+	offset	87 120
+	bbox	50 20 75 100
+	frame	data/chars/sspirit/atk1.gif
+	offset	79 124
+	frame	data/chars/sspirit/atk2.gif
+	offset	70 126
+	attack	82 60 75 54 10 0 0 0 14
+	frame	data/chars/sspirit/atk3.gif
+	offset	73 123
+	frame	data/chars/sspirit/atk4.gif
+	attack	0 0 0 0 0 0
+	offset	72 118
+	frame	data/chars/sspirit/atk5.gif
+	offset	75 121
+	attack	88 63 79 55 20 1 0 0 28
+	frame	data/chars/sspirit/atk6.gif
+	offset	73 117
+	frame	data/chars/sspirit/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim attack1
+	range	0 75
+	loop	0
+	delay	7
+	offset	87 120
+	bbox	50 20 75 100
+	frame	data/chars/sspirit/atk1.gif
+	offset	79 124
+	frame	data/chars/sspirit/atk2.gif
+	offset	70 126
+	attack	82 60 75 54 10 0 0 0 14
+	frame	data/chars/sspirit/atk3.gif
+	offset	73 123
+	frame	data/chars/sspirit/atk4.gif
+	attack	0 0 0 0 0 0
+	offset	72 118
+	frame	data/chars/sspirit/atk5.gif
+	offset	75 121
+	attack	88 63 79 55 20 1 0 0 28
+	frame	data/chars/sspirit/atk6.gif
+	offset	73 117
+	frame	data/chars/sspirit/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim special
+	range	215 400
+	loop	0
+	delay	15
+	throwframe	2
+	offset	75 105
+	bbox	42 14 75 100
+	frame	data/chars/sspirit/spec1.gif
+	offset	80 103
+	frame	data/chars/sspirit/spec2.gif
+	offset	92 117
+	frame	data/chars/sspirit/spec3.gif
+
+
+anim attack2
+	range	76 108
+	loop	0
+	delay	8
+	offset	76 112
+	bbox	48 10 75 100
+	frame	data/chars/sspirit/2atk1.gif
+	offset	75 117
+	frame	data/chars/sspirit/2atk2.gif
+	offset	107 119
+	frame	data/chars/sspirit/2atk3.gif
+	offset	96 116
+	frame	data/chars/sspirit/2atk4.gif
+	offset	73 115
+	frame	data/chars/sspirit/2atk5.gif
+	offset	76 116
+	frame	data/chars/sspirit/2atk6.gif
+	offset	78 118
+	attack	68 68 108 108 25 1 0 0 28
+	frame	data/chars/sspirit/2atk7.gif
+	offset	76 116
+	frame	data/chars/sspirit/2atk8.gif
+	attack	0 0 0 0 0 0
+	offset	76 112
+	frame	data/chars/sspirit/2atk9.gif
+
+

@@ -1,0 +1,498 @@
+name	nanaya
+health	200
+speed	10
+type	enemy
+shadow	  0
+gfxshadow 1
+aimove	chase
+aggression 50
+nodieblink 3
+falldie	1
+makeinv		3
+atchain     3 1 2 4 3 0
+diesound	data/chars/nanaya/death.wav
+icon	data/chars/nanaya/icon.gif
+palette	data/chars/nanaya/idle0.gif
+
+alternatepal	data/chars/nanaya/testpal.gif
+jumpheight	5
+#fierce attack
+com	u	f	A	freespecial
+#projectile
+com	f	f	A	freespecial2
+#auto combo
+com	d	f	A	freespecial3
+
+#remap data/chars/nanaya/at100.gif data/chars/nanaya/m2.gif
+
+anim idle
+	loop	1
+	delay	19
+	offset	82	126
+	bbox	42	24	72	102
+	frame   data/chars/nanaya/idle0.gif
+	frame   data/chars/nanaya/idle1.gif
+	frame   data/chars/nanaya/idle2.gif
+	frame   data/chars/nanaya/idle3.gif
+	frame   data/chars/nanaya/idle4.gif
+	frame   data/chars/nanaya/idle0.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	82	112
+	bbox	54	2	56	113
+	frame   data/chars/nanaya/w2.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w5.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w2.gif
+
+
+anim jump
+	loop	0
+	offset  92	185
+	delay	13
+	bbox	49	68	78	115
+	frame	data/chars/nanaya/j00.gif
+	frame	data/chars/nanaya/j01.gif
+	frame	data/chars/nanaya/j02.gif
+	frame	data/chars/nanaya/j01.gif
+	frame	data/chars/nanaya/j00.gif
+
+anim jumpattack2
+	loop	0
+	offset	67	111
+	dive	3	3
+	delay	8
+	bbox	33	24	66	86
+        frame   data/chars/nanaya/jat200.gif
+	blast	80	21	114	98	10
+        sound   data/chars/nanaya/hya.wav
+        frame   data/chars/nanaya/jat201.gif
+
+anim jumpattack
+	loop	0
+	offset	77	135
+	delay	4
+	bbox	46	67	59	60
+        frame   data/chars/nanaya/jat400.gif
+        frame   data/chars/nanaya/jat401.gif
+        frame   data/chars/nanaya/jat402.gif
+        sound   data/chars/nanaya/hyaa.wav
+        frame   data/chars/nanaya/jat403.gif
+	attack	32	91	141	52	10	1
+        frame   data/chars/nanaya/jat404.gif
+
+anim jumpattack3
+	loop	1
+	dive	2	1
+	fastattack	1
+	offset	115	139
+	delay	4
+	bbox	87	47	64	77
+	attack	9	0	177	103	2	0
+        frame   data/chars/nanaya/jat01.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/jat02.gif
+	attack	9	0	177	103	2	0
+        frame   data/chars/nanaya/jat03.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/jat04.gif
+
+anim attack1
+	loop	0
+	hitfx	data/chars/nanaya/hitfx.wav
+	fastattack	1
+	delay	6
+	offset	95	144
+	bbox	76	49	55	94
+	attack	42	89	113	45	9	0	0	0	10
+	frame   data/chars/nanaya/at202.gif
+	attack	103	69	141	59	10	0	0	0	15
+	frame   data/chars/nanaya/at203.gif
+	attack	130	21	107	68	11	0	0	0	16
+	frame   data/chars/nanaya/at204.gif
+	attack	0	0	0	0	0
+	frame   data/chars/nanaya/at205.gif
+	frame   data/chars/nanaya/at206.gif
+	frame   data/chars/nanaya/at207.gif
+
+anim attack2
+	loop	0
+	fastattack	1
+	hitfx	data/chars/nanaya/hitfx.wav
+	delay	5
+	move	1
+	offset	95	195
+	bbox	74	104	57	70
+	attack	2	73	140	47	4	0	0	0	10
+	frame   data/chars/nanaya/at300.gif
+	attack	0	0	0	0	0	0
+	frame   data/chars/nanaya/at301.gif
+	attack	82	82	164	94	4	0	0	0	10
+	frame   data/chars/nanaya/at302.gif
+	frame   data/chars/nanaya/at303.gif
+	attack	0	0	0	0	0	0
+	frame   data/chars/nanaya/at304.gif
+	offset	95	144
+	bbox	0	0	0	0
+	frame   data/chars/nanaya/at001.gif
+	attack	71	71	162	24	5	0	0	0	10
+	frame   data/chars/nanaya/at002.gif
+	frame   data/chars/nanaya/at001.gif
+
+anim attack3
+ 	loop	0
+	hitfx	data/chars/nanaya/hitfx.wav
+	fastattack	1
+	delay   6
+        offset  114	170
+	bbox	90	90	45	73
+        frame   data/chars/nanaya/at100.gif
+	attack	21	106	154	44	7	0	0	0	10
+        frame   data/chars/nanaya/at101.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/at102.gif
+	attack	101	48	147	96	7	0	0	0	10
+        frame   data/chars/nanaya/at103.gif
+        frame   data/chars/nanaya/at104.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/at105.gif
+        frame   data/chars/nanaya/at106.gif
+
+anim attack4
+	loop	0
+	hitfx	data/chars/nanaya/hitfx.wav
+	fastattack	1
+	delay	10
+	offset	103	95
+	bbox	79	21	64	59
+	frame	data/chars/nanaya/at500.gif
+        sound   data/chars/nanaya/hya.wav
+	frame	data/chars/nanaya/at501.gif
+	blast	76	29	151	43	12	0	0	20
+	frame	data/chars/nanaya/at503.gif
+	frame	data/chars/nanaya/at502.gif
+	blast	0	0	0	0	0
+	frame	data/chars/nanaya/at500.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	119	168
+	bbox	90	74	74	94
+	frame	data/chars/nanaya/fs06.gif
+
+anim throw
+	loop	0
+	delay	9
+	offset	97	192
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/at400.gif
+	attack	59	79	125	67	10	1
+        sound   data/chars/nanaya/hyaa.wav
+	frame	data/chars/nanaya/at401.gif
+	attack	147	137	150	56	11	1
+	frame	data/chars/nanaya/at402.gif
+	attack	101	129	151	17	12	1
+	frame	data/chars/nanaya/at403.gif
+	attack	14	40	124	89	13	1
+	frame	data/chars/nanaya/at404.gif
+	attack	1	92	141	51	9	1
+	frame	data/chars/nanaya/at405.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/nanaya/at406.gif
+
+anim pain
+	loop	0
+	offset	122	122
+	bbox	97	21	54	76
+	delay	8
+	frame	data/chars/nanaya/p0.gif
+	frame	data/chars/nanaya/p1.gif
+	delay	20
+	frame	data/chars/nanaya/p2.gif
+
+
+anim fall
+	loop	0
+	offset	78 83
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/nanaya/fall1.gif
+        sound   data/chars/nanaya/fall.wav
+	frame	data/chars/nanaya/fall1.gif
+	offset	93	30
+	frame	data/chars/nanaya/fall3.gif
+	frame	data/chars/nanaya/fall4.gif
+
+anim rise
+	loop	0
+	delay	10
+	offset	84	89
+	frame   data/chars/nanaya/rise2.gif
+	offset	84	91
+	frame   data/chars/nanaya/rise0.gif
+
+
+anim special
+	loop	0
+	delay	13
+	hitfx	data/chars/nanaya/hitfx.wav
+	offset	97	192
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/at400.gif
+	attack	59	79	125	67	20	1
+	frame	data/chars/nanaya/at401.gif
+	attack	147	137	150	56	21	1
+	frame	data/chars/nanaya/at402.gif
+	attack	101	129	151	17	22	1
+	frame	data/chars/nanaya/at403.gif
+	attack	14	40	124	89	23	1
+	frame	data/chars/nanaya/at404.gif
+	attack	1	92	141	51	29	1
+	frame	data/chars/nanaya/at405.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/nanaya/at406.gif
+	frame	data/chars/nanaya/at400.gif
+	attack	59	79	125	67	20	1
+	frame	data/chars/nanaya/at401.gif
+	attack	147	137	150	56	21	1
+	frame	data/chars/nanaya/at402.gif
+	attack	101	129	151	17	22	1
+	frame	data/chars/nanaya/at403.gif
+	attack	14	40	124	89	23	1
+	frame	data/chars/nanaya/at404.gif
+	attack	1	92	141	51	29	1
+	frame	data/chars/nanaya/at405.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/nanaya/at406.gif
+
+anim freespecial
+        delay   3
+        offset  121	167
+	hitfx	data/chars/nanaya/hitfx.wav
+	fastattack	1
+	move	2
+	bbox	0	0	0	0
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs300.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs301.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs302.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs303.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs300.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs301.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs302.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs303.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs300.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs301.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs302.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs303.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs300.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs301.gif
+	attack	103	28	126	99	2
+        frame	data/chars/nanaya/fs302.gif
+	attack	0	0	0	0	0
+        frame	data/chars/nanaya/fs303.gif
+
+anim freespecial2
+	loop	0
+	delay	10
+	offset	119	168
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/fs04.gif
+	frame	data/chars/nanaya/fs05.gif
+        sound   data/chars/nanaya/hyaa.wav
+	frame	data/chars/nanaya/fs06.gif
+	blast	110	56	116	67	25
+	frame	data/chars/nanaya/fs07.gif
+	frame	data/chars/nanaya/fs08.gif
+	frame	data/chars/nanaya/fs07.gif
+	frame	data/chars/nanaya/fs08.gif
+	blast	0	0	0	0	0
+	frame	data/chars/nanaya/fs06.gif
+
+
+anim freespecial3
+        loop	0
+	followanim 1
+	followcond 1
+	delay	10
+	offset	119	168
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/fs04.gif
+	sound	data/chars/k/sc.wav
+	frame	data/chars/nanaya/fs05.gif
+	delay	5
+	move	8
+	offset	82	112
+	attack	54	2	56	113	1
+	frame   data/chars/nanaya/w2.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w5.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w2.gif
+	frame   data/chars/nanaya/w2.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w5.gif
+	frame   data/chars/nanaya/w0.gif
+	frame   data/chars/nanaya/w1.gif
+	frame   data/chars/nanaya/w2.gif
+
+
+anim follow1
+	loop	0
+	jumpframe	22	1
+	hitfx	data/chars/nanaya/hitfx.wav
+	fastattack	1
+	delay   3
+	move	2
+        offset  114	170
+	bbox	90	90	45	73
+        frame   data/chars/nanaya/at100.gif
+	attack	21	106	154	44	4	0	0	0	10
+        frame   data/chars/nanaya/at101.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/at102.gif
+	attack	101	48	147	96	4	0	0	0	10
+        frame   data/chars/nanaya/at103.gif
+        frame   data/chars/nanaya/at104.gif
+	attack	0	0	0	0	0	0
+        frame   data/chars/nanaya/at105.gif
+        frame   data/chars/nanaya/at106.gif
+	offset	95	144
+	bbox	76	49	55	94
+	attack	42	89	113	45	5	0	0	0	10
+	frame   data/chars/nanaya/at202.gif
+	attack	103	69	141	59	5	0	0	0	15
+	frame   data/chars/nanaya/at203.gif
+	attack	130	21	107	68	6	0	0	0	16
+	frame   data/chars/nanaya/at204.gif
+	attack	0	0	0	0	0
+	frame   data/chars/nanaya/at205.gif
+	frame   data/chars/nanaya/at206.gif
+	frame   data/chars/nanaya/at207.gif
+	delay	5
+	offset	143	198
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/at900.gif
+	frame	data/chars/nanaya/at901.gif
+	frame	data/chars/nanaya/at902.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at903.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at904.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at905.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at906.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at907.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at908.gif
+	frame	data/chars/nanaya/at909.gif
+	frame	data/chars/nanaya/at910.gif
+	frame	data/chars/nanaya/at911.gif
+	sound	data/chars/nanaya/death.wav
+	blast	87	95	213	105	8
+	frame	data/chars/nanaya/at912.gif
+	frame	data/chars/nanaya/at913.gif
+	frame	data/chars/nanaya/at914.gif
+	frame	data/chars/nanaya/at915.gif
+	frame	data/chars/nanaya/at916.gif
+
+
+anim grabattack
+	loop	0
+	hitfx	data/chars/nanaya/hitfx.wav
+	delay	10
+	offset	103	95
+	bbox	79	21	64	59
+	frame	data/chars/nanaya/at500.gif
+	frame	data/chars/nanaya/at501.gif
+	attack	76	29	151	43	12	0	0	0	12
+	frame	data/chars/nanaya/at503.gif
+	frame	data/chars/nanaya/at502.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at500.gif
+
+anim grabattack2
+	loop	0
+	delay	10
+	hitfx	data/chars/nanaya/hitfx.wav
+	jumpframe	9	1
+	offset	143	198
+	bbox	0	0	0	0
+	frame	data/chars/nanaya/at900.gif
+        sound   data/chars/nanaya/chain.wav
+	frame	data/chars/nanaya/at901.gif
+	frame	data/chars/nanaya/at902.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at903.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at904.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at905.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at906.gif
+	attack	87	95	213	105	1
+	frame	data/chars/nanaya/at907.gif
+	attack	0	0	0	0	0
+	frame	data/chars/nanaya/at908.gif
+	frame	data/chars/nanaya/at909.gif
+	frame	data/chars/nanaya/at910.gif
+	frame	data/chars/nanaya/at911.gif
+	blast	87	95	213	105	15
+	frame	data/chars/nanaya/at912.gif
+	frame	data/chars/nanaya/at913.gif
+	frame	data/chars/nanaya/at914.gif
+	frame	data/chars/nanaya/at915.gif
+	frame	data/chars/nanaya/at916.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	84	89
+	frame   data/chars/nanaya/rise2.gif
+        sound   data/chars/nanaya/hya.wav
+	offset	84	91
+	frame   data/chars/nanaya/rise0.gif
+
+anim death
+	loop	0
+	offset	78 83
+	delay	17
+	move	-10
+	frame	data/chars/nanaya/d1
+	offset	87 76
+	frame	data/chars/nanaya/d2
+	offset	93	30
+	frame	data/chars/nanaya/d3
+	move	0
+	offset	93	135
+	frame	data/chars/nanaya/d4
+	frame	data/chars/nanaya/d5
+	frame	data/chars/nanaya/d6
+
+
+
+

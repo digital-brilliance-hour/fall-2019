@@ -1,0 +1,17 @@
+name	spotion
+health	100
+type	item
+subtype touch
+nolife  1
+shadow	1
+
+anim idle
+	loop	1
+	offset	52 84
+	bbox	13 18 18 10
+	delay   50
+	frame	data/chars/misc/spotion.gif
+	delay   3
+	frame	data/chars/misc/spotion.gif
+
+

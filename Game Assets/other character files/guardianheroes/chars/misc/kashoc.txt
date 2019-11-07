@@ -1,0 +1,63 @@
+name	kashoc
+health	10000
+type	npc
+shadow	0
+speed   0
+remove  0
+nomove  1 1
+lifespan 1
+palette	data/chars/misc/shoc6.gif
+subject_to_gravity 0
+
+anim idle
+	loop	0
+	delay	5
+
+
+        subentity kabolt
+        spawnframe 16 1 1 1 0
+
+	offset	30 100
+
+      
+	frame	data/chars/misc/shoc1.gif
+	frame	data/chars/misc/shoc2.gif
+	frame	data/chars/misc/shoc3.gif
+	frame	data/chars/misc/shoc4.gif
+	frame	data/chars/misc/shoc5.gif
+	frame	data/chars/misc/shoc6.gif
+	frame	data/chars/misc/shoc7.gif
+	frame	data/chars/misc/shoc8.gif
+	frame	data/chars/misc/shoc9.gif
+
+
+	offset	5 60
+
+      
+	frame	data/chars/misc/shoc1.gif
+	frame	data/chars/misc/shoc2.gif
+	frame	data/chars/misc/shoc3.gif
+	frame	data/chars/misc/shoc4.gif
+	frame	data/chars/misc/shoc5.gif
+	frame	data/chars/misc/shoc6.gif
+	frame	data/chars/misc/shoc7.gif
+	frame	data/chars/misc/shoc8.gif
+	frame	data/chars/misc/shoc9.gif
+
+
+	offset	60 80
+
+      
+	frame	data/chars/misc/shoc1.gif
+	frame	data/chars/misc/shoc2.gif
+	frame	data/chars/misc/shoc3.gif
+	frame	data/chars/misc/shoc4.gif
+	frame	data/chars/misc/shoc5.gif
+	frame	data/chars/misc/shoc6.gif
+	frame	data/chars/misc/shoc7.gif
+	frame	data/chars/misc/shoc8.gif
+	frame	data/chars/misc/shoc9.gif
+
+	frame	data/chars/misc/end.gif
+
+

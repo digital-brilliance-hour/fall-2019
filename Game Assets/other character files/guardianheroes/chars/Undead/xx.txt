@@ -1,0 +1,524 @@
+name	xx
+health	10000
+type	npc
+shadow	0
+speed   0
+remove  0
+nomove  1 1
+alpha 1
+lifespan 7
+palette	data/chars/undead/xx.gif
+candamage enemy
+hostile enemy
+subject_to_gravity 0
+setlayer -1
+
+anim idle
+
+        sound   data/sounds/explosion.wav
+
+	loop	0
+	delay	6
+        hitflash redflash
+        hitfx   data/sounds/burn.wav
+	offset	330 354
+
+
+        quakeframe 0 40 5
+
+
+        subentity white
+        spawnframe 31 1 1 1 0
+
+	offset	330 354
+        burn  221 221 215 150 50 0 1 0 0 500
+        drawmethod 175 175 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 180 180 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  0 0 0 0
+        drawmethod 185 185 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 190 190 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  207 213 241 170 50 0 1 0 0 500
+        drawmethod 195 195 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  0 0 0 0
+        drawmethod 200 200 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  195 198 262 181 50 0 1 0 0 500
+        drawmethod 205 205 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  0 0 0 0
+        drawmethod 210 210 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+
+
+        burn  183 182 291 203 50 0 1 0 0 500
+        drawmethod 215 215 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  0 0 0 0
+        drawmethod 220 220 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 225 225 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 230 230 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 235 235 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  171 175 312 216 30 0 1 0 0 500
+        drawmethod 240 240 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 245 245 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        drawmethod 250 250 0 0 0 1 -1
+        frame	data/chars/undead/xx.gif
+        burn  0 0 0 0
+
+
+
+
+
+	frame	data/chars/undead/xx.gif
+
+        drawmethod 260 260 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 265 265 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 270 270 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 275 275 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  150 151 348 234 30 0 1 0 0 500  
+
+        drawmethod 280 280 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 285 285 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 290 290 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 295 295 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 300 300 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 305 305 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 310 310 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 315 315 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 320 320 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 0 0
+
+        drawmethod 325 325 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn 129 113 397 280 30 0 1 0 0 500  
+
+        drawmethod 330 330 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 335 335 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 340 340 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 345 345 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 350 350 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 355 355 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+ 
+        drawmethod 360 360 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 365 365 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 370 370 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 375 375 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 0 0
+
+        drawmethod 380 380 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  98 84 459 307 30 0 1 0 0 500  
+        drawmethod 385 385 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 390 390 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 395 395 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 400 400 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 405 405 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+ 
+        drawmethod 410 410 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 415 415 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 420 420 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 425 425 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 0 0
+
+        drawmethod 430 430 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  62 70 530 332 30 1 1 0 0 500  
+
+        drawmethod 435 435 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 440 440 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 445 445 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 450 450 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 455 455 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+  
+
+        drawmethod 460 460 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 465 465 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 470 470 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 475 475 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 0 0
+
+        drawmethod 480 480 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 650 415 150 1 1 0 0 500  
+
+        drawmethod 485 485 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 490 490 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 495 495 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 500 500 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 505 505 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+ 
+
+        drawmethod 510 510 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 515 515 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 520 520 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 525 525 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 530 530 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 535 535 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 540 540 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 545 545 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 550 550 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        burn  0 0 0 0
+
+
+
+        delay 1
+        drawmethod 545 545 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 540 540 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 535 535 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 530 530 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 525 525 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 520 520 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 515 515 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 510 510 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 505 505 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 500 500 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+
+        drawmethod 495 495 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 490 490 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 485 485 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 480 580 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 475 475 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 470 470 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 465 465 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 460 460 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 455 455 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 450 450 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 445 445 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 440 440 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 435 435 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 430 430 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 425 425 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 420 420 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 415 415 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 410 410 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 405 405 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 400 400 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 395 395 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 390 390 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 385 385 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 380 380 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 375 375 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 370 370 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 365 365 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 360 360 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 355 355 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 350 350 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+        drawmethod 345 345 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 340 340 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 335 335 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 330 330 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 325 325 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 320 320 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 315 315 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 310 310 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 305 305 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 300 300 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 295 295 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 290 290 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 285 285 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 280 280 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 275 275 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 270 270 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 265 265 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 260 260 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 255 255 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 250 250 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+
+        drawmethod 245 245 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 240 240 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 235 235 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 230 230 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 225 225 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 220 220 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 215 215 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 210 210 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 205 205 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+        drawmethod 200 200 0 0 0 1 -1
+	frame	data/chars/undead/Xx.gif
+
+
+	frame	data/chars/misc/end.gif
+

@@ -1,0 +1,181 @@
+name	Cave_troll
+health	200
+speed	12
+type	enemy
+shadow	6
+icon	data/chars/ctroll/icon.gif
+aggression 25
+#cantgrab 1
+nodieblink 3
+diesound data/sounds/die1.wav
+palette	data/chars/ctroll/idle1.gif
+falldie 1
+alternatepal	data/chars/ctroll/testpal.gif
+alternatepal	data/chars/ctroll/testpal2.gif
+alternatepal	data/chars/ctroll/testpal3.gif
+#alternatepal	data/chars/sold/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  58 108
+	bbox 	23 4 54 85
+	delay	20
+	frame	data/chars/ctroll/idle1.gif
+	offset  57 110
+	frame	data/chars/ctroll/idle2.gif
+
+
+
+
+	
+anim walk
+	loop	1
+	offset  72 119
+	bbox 	61 28 94 62
+	delay	16
+	frame	data/chars/ctroll/walk1.gif
+	offset  36 133
+	frame	data/chars/ctroll/walk2.gif
+	offset  70 120
+	frame	data/chars/ctroll/walk3.gif
+	offset  67 126
+	frame	data/chars/ctroll/walk4.gif
+	offset  38 126
+	frame	data/chars/ctroll/walk5.gif
+
+
+
+		
+anim pain
+	loop	0
+	offset	61 119
+	delay	5
+	bbox	12 10 58 90
+	frame	data/chars/ctroll/pain1.gif
+	offset  74 131
+	frame	data/chars/ctroll/pain2.gif
+
+	
+anim fall
+	loop	0
+	offset	51 110
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/ctroll/fall1.gif
+	offset	84 84
+	frame	data/chars/ctroll/fall2.gif
+	offset	63 101
+	frame	data/chars/ctroll/fall3.gif
+	offset	87 54
+	frame	data/chars/ctroll/fall4.gif
+
+
+
+anim rise
+	loop	0
+	offset	75 87
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/ctroll/rise1.gif
+
+
+
+
+anim attack1
+	range	0 200
+	loop	0
+	delay	8
+	offset	73 130
+	bbox	44 58 63 84
+	frame	data/chars/ctroll/atk1.gif
+	offset	85 126
+	frame	data/chars/ctroll/atk2.gif
+	offset	80 113
+	attack	58 3 142 122 20 1
+	frame	data/chars/ctroll/atk3.gif
+	offset	77 112
+	frame	data/chars/ctroll/atk4.gif
+	attack	0 0 0 0 0 0
+
+
+
+
+
+
+
+
+	
+anim special
+	range	0 200
+	loop	0
+	delay	6
+	offset	73 130
+	bbox	44 58 63 84
+	frame	data/chars/ctroll/atk1.gif
+	offset	85 126
+	frame	data/chars/ctroll/atk2.gif
+	offset	80 113
+	attack	58 3 142 122 20 1
+	frame	data/chars/ctroll/atk3.gif
+	offset	77 112
+	frame	data/chars/ctroll/atk4.gif
+	attack	0 0 0 0 0 0
+
+
+
+			
+anim throw
+	range	0 100
+	loop	0
+	delay	6
+	offset	81 143
+	bbox	44 58 63 84
+	frame	data/chars/ctroll/throw1.gif
+	offset	99 159
+	frame	data/chars/ctroll/throw2.gif
+	offset	69 195
+	frame	data/chars/ctroll/throw3.gif
+	offset	73 195
+	frame	data/chars/ctroll/throw4.gif
+	offset	96 171
+	frame	data/chars/ctroll/throw5.gif
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	8
+	offset	64 110
+	bbox	44 58 63 84
+	frame	data/chars/ctroll/ratk1.gif
+	offset	64 160
+	frame	data/chars/ctroll/ratk2.gif
+	offset	64 162
+	attack	58 3 142 122 20 1
+	frame	data/chars/ctroll/ratk3.gif
+	attack	0 0 0 0 0 0
+
+anim death
+	loop	0
+	offset	510 400
+	delay	25
+	frame	data/chars/ctroll/d1
+	frame	data/chars/ctroll/d2
+	frame	data/chars/ctroll/d3
+	frame	data/chars/ctroll/d4
+	offset	510 430
+	frame	data/chars/ctroll/d5
+	frame	data/chars/ctroll/d6
+
+
+
+
+
+
+	

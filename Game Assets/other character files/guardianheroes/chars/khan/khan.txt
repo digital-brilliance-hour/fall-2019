@@ -1,0 +1,152 @@
+name	khan
+health	400
+type	enemy
+speed	5
+gfxshadow 1
+icon	data/chars/khan/icon.gif
+diesound data/sounds/BigArg2.WAV
+cantgrab 1
+#falldie 1
+nolife 	1
+aimove chasez
+aggression 30
+nodieblink 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+#remap	data/chars/khan/stand1.gif data/chars/khan/alt1.gif
+#remap	data/chars/khan/stand1.gif data/chars/khan/alt2.gif
+#remap	data/chars/khan/stand1.gif data/chars/khan/alt3.gif
+#remap	data/chars/khan/stand1.gif data/chars/khan/alt4.gif
+#remap	data/chars/khan/stand1.gif data/chars/khan/alt5.gif
+
+
+anim idle
+	loop	1
+	offset	58 110
+	bbox	46 10 30 80
+	delay	400
+	frame	data/chars/khan/idle.gif
+	
+anim pain
+	#sound	data/sounds/oof.wav
+	loop	0
+	offset	68 110
+	bbox	28 36 56 60
+	delay	8
+	frame	data/chars/khan/pain2.gif
+	offset	76 110
+	bbox	58 30 44 68
+	delay	36
+	frame	data/chars/khan/pain1.gif
+	offset	68 110
+	bbox	28 36 56 60
+	delay	8
+	frame	data/chars/khan/pain2.gif
+
+
+anim fall
+    landframe 1
+	bbox	28 36 56 60
+	#sound	data/sounds/ooah.wav
+	loop	0
+	delay	40
+	#offset	74 80
+	#frame	data/chars/khan/fall1.gif	
+	offset	66 100
+	#delay	40
+	frame	data/chars/khan/fall2.gif
+	offset	66 110
+	delay	30
+	frame	data/chars/khan/fall3.gif
+	
+
+anim walk
+	loop	1
+	delay	20
+	offset	54 145
+	bbox	19 9 64 77
+	frame	data/chars/khan/walk1.gif
+	frame	data/chars/khan/walk2.gif
+	frame	data/chars/khan/walk3.gif
+	frame	data/chars/khan/walk4.gif
+	frame	data/chars/khan/walk5.gif
+	frame	data/chars/khan/walk6.gif
+
+
+anim rise
+	loop	0
+	offset	24 104
+	delay	10
+	frame	data/chars/khan/rise.gif
+	
+
+anim attack1
+	sound	data/sounds/swish2.wav
+	range	0 128
+	loop	0
+	delay	8
+	offset	78 142
+    bbox    47 50 43 91
+	frame	data/chars/khan/sword1.gif
+	offset	68 142
+    bbox    58 76 57 66
+	frame	data/chars/khan/sword2.gif
+	attack	58 76 140 68 30 1
+	delay 12
+	frame	data/chars/khan/sword3.gif
+		
+
+anim attack2
+	sound	data/sounds/swish.wav
+	range	0 192
+	loop	0
+	delay	10
+	offset 54 141
+    bbox    32 41 40 103
+	frame	data/chars/khan/whip1.gif
+	delay 8
+    bbox    50 55 38 91
+	frame	data/chars/khan/whip2.gif
+    bbox    73 74 62 69
+	frame	data/chars/khan/whip3.gif
+	attack 50 46 194 102 40 
+    bbox    55 66 46 76
+	frame	data/chars/khan/whip4.gif
+	frame	data/chars/khan/whip5.gif
+	attack 0
+
+anim attack3
+	sound	data/sounds/swish2.wav
+	range	0 90
+	loop	0
+	delay	6
+	offset 70 143
+    bbox    58 76 57 66
+	frame	data/chars/khan/sword21.gif
+	Blast 108 78 90 68 35 1
+	frame	data/chars/khan/sword22.gif
+	frame	data/chars/khan/sword23.gif
+
+
+anim throw
+	loop 0
+	offset 68 192
+	delay 6
+	frame	data/chars/khan/throw1.gif
+	frame	data/chars/khan/throw2.gif
+	frame	data/chars/khan/throw3.gif
+	frame	data/chars/khan/throw4.gif
+	
+
+anim jumpattack
+	loop 0
+	delay 8
+	offset 58 145
+	frame	data/chars/khan/jump1.gif
+	frame	data/chars/khan/jump2.gif
+	offset 70 130
+	attack 72 50 108 50 25 1
+	frame	data/chars/khan/jump3.gif

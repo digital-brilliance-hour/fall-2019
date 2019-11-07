@@ -1,0 +1,454 @@
+
+name	  kain
+health 	 150
+speed	 10
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/kain/icon.gif
+diesound    data/sounds/marvel/sysdown.wav
+#weapons	seni ironman
+
+remap	data/chars/kain/idle1.gif	data/chars/kain/alt1.gif
+remap	data/chars/kain/idle1.gif	data/chars/kain/alt2.gif
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        32 142
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/kain/idle1.gif
+	frame	data/chars/kain/idle2.gif
+	frame	data/chars/kain/idle3.gif
+	frame	data/chars/kain/idle4.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  32 127
+	bbox 	25 8 38 97
+	delay	9
+	frame	data/chars/kain/walk1.gif
+	frame	data/chars/kain/walk2.gif
+	frame	data/chars/kain/walk3.gif
+	frame	data/chars/kain/walk4.gif
+                  frame	data/chars/kain/walk5.gif
+                  frame	data/chars/kain/walk6.gif
+
+anim run
+	loop	1
+	delay	7
+	offset	71	95
+	bbox	65	30	33	65
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/kain/run1.gif
+	frame	data/chars/kain/run2.gif
+	frame	data/chars/kain/run3.gif
+	frame	data/chars/kain/run4.gif
+	frame	data/chars/kain/run5.gif
+	frame	data/chars/kain/run6.gif
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	6
+	move	10
+	offset	75 143
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/kain/3atk1.gif
+	frame	data/chars/kain/3atk2.gif
+	frame	data/chars/kain/3atk3.gif
+              attack	51 2 146 122 25 1
+	frame	data/chars/kain/3atk4.gif
+	frame	data/chars/kain/3atk5.gif
+	frame	data/chars/kain/3atk6.gif
+	frame	data/chars/kain/3atk7.gif
+	frame	data/chars/kain/3atk4.gif
+              attack	0 0 0 0 0
+
+#done
+anim get
+	loop	0
+	delay	10
+	offset	92 281
+	frame	data/chars/kain/get.gif
+	frame	data/chars/kain/get.gif
+
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	40 117
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/kain/atk1.gif
+	frame	data/chars/kain/atk2.gif
+                  attack	70 7 70 58 10 0 0 0 10
+	frame	data/chars/kain/atk3.gif
+        attack         0 0 0 0 0
+	offset	40 117
+	frame	data/chars/kain/atk2.gif
+
+
+#done//
+#Kick
+anim attack2
+	range	5 40
+	loop	0
+	delay	5
+	offset	61 113
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/kain/2atk1.gif
+	frame	data/chars/kain/2atk2.gif
+                  bbox          57 10 37 95
+                  attack	71 3 64 67 15 0 0 0 10
+	    frame	data/chars/kain/2atk3.gif
+                  frame	data/chars/kain/2atk4.gif
+	    frame	data/chars/kain/2atk5.gif
+	    frame	data/chars/kain/2atk6.gif
+                  attack	0 0 0 0 0
+            frame	data/chars/kain/2atk5.gif
+
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	range	5 90
+	loop	0
+	delay	5
+	offset	75 143
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/kain/3atk1.gif
+	frame	data/chars/kain/3atk2.gif
+	frame	data/chars/kain/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 25
+	frame	data/chars/kain/3atk4.gif
+	frame	data/chars/kain/3atk5.gif
+	frame	data/chars/kain/3atk6.gif
+	frame	data/chars/kain/3atk7.gif
+	frame	data/chars/kain/3atk4.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	7
+	offset	92 281
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/kain/upper1.gif
+	frame	data/chars/kain/upper2.gif
+	attack	0 5 164 235 10
+	frame	data/chars/kain/upper3.gif
+	attack	0 0 0 0 0 0
+	      bbox       53 23 45 100
+	attack	0 5 164 135 10
+	frame	data/chars/kain/upper4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kain/2spec1.gif
+	attack	0 5 164 235 10
+	frame	data/chars/kain/2spec2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kain/2spec3.gif
+	attack	0 5 164 235 10
+	frame	data/chars/kain/2spec4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kain/2spec5.gif
+	attack	0 5 164 235 20 1
+	frame	data/chars/kain/2spec6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kain/2spec7.gif
+	attack	0 5 164 235 20 1
+	frame	data/chars/kain/2spec8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kain/2spec9.gif
+	attack	0 5 164 235 20 1
+	frame	data/chars/kain/2spec10.gif
+	attack	0 0 0 0 0 0
+
+ 
+
+#done
+anim freespecial
+		loop	0
+	offset	126 84
+	delay	5
+	sound	data/sounds/jump2.wav
+	move	20
+	attack	19 7 123 87 15 	
+	frame	data/chars/ironman/3spec1.gif
+	offset	159 84
+	frame	data/chars/ironman/3spec2.gif
+	offset	113 83
+	frame	data/chars/ironman/3spec3.gif
+	offset	162 83
+	frame	data/chars/ironman/3spec4.gif
+	frame	data/chars/ironman/3spec4.gif
+	offset	55 79
+	delay	10
+	frame	data/chars/ironman/3spec5.gif
+
+
+anim freespecial2
+	loop	0
+	delay	4
+	offset	50 106
+	bbox	57 50 53 104
+	sound	data/sounds/marvel/gfire.wav
+	frame	data/chars/kain/spec1.gif
+	frame	data/chars/kain/spec2.gif
+	frame	data/chars/kain/spec3.gif
+	attack	53 17 250 100 10 0 0 10
+	frame	data/chars/kain/spec4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/kain/spec5.gif
+	attack	53 17 250 100 10 0 0 10
+	frame	data/chars/kain/spec6.gif
+	attack	0 0 0 0 0
+	attack	53 17 250 100 10 1 0 0 10
+	frame	data/chars/kain/spec7.gif
+	attack	0 0 0 0 0
+	frame	data/chars/kain/spec8.gif
+	attack	53 17 250 100 10 1 0 0 10
+	frame	data/chars/kain/spec9.gif
+	attack	0 0 0 0 0
+	attack	53 17 250 100 10 1 0 0 10
+	frame	data/chars/kain/spec10.gif
+	attack	0 0 0 0 0
+	
+
+anim freespecial3
+	loop	0
+	delay	4
+	offset	22 118
+	bbox	57 50 53 104
+	sound	data/sounds/marvel/repulsor.wav
+	frame	data/chars/ironman/fspec1.gif
+	offset	87 136
+	frame	data/chars/ironman/fspec2.gif
+	offset	115 137
+	frame	data/chars/ironman/fspec3.gif
+	offset	115 139
+	frame	data/chars/ironman/fspec4.gif
+	offset	115 140
+	attack	0 5 165 135 10
+	frame	data/chars/ironman/fspec5.gif
+	offset	143 144
+	frame	data/chars/ironman/fspec6.gif
+	offset	143 144
+	attack	0 0 0 0 0
+	frame	data/chars/ironman/fspec7.gif
+	offset	177 111
+	frame	data/chars/ironman/fspec8.gif
+	offset	177 112
+	attack	120 5 235 125 10
+	frame	data/chars/ironman/fspec9.gif
+	offset	177 111
+	frame	data/chars/ironman/fspec10.gif
+	offset	177 119
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec11.gif
+	offset	177 120
+	attack	120 5 260 149 10
+	frame	data/chars/ironman/fspec12.gif
+	offset	177 120
+	frame	data/chars/ironman/fspec13.gif
+	offset	140 119
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec14.gif
+	offset	62 130
+	frame	data/chars/ironman/fspec15.gif
+	offset	62 131
+	frame	data/chars/ironman/fspec16.gif
+	offset	62 131
+	attack	0 0 320 135 15
+	frame	data/chars/ironman/fspec17.gif
+	offset	62 130
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec18.gif
+	offset	69 132
+	attack	0 0 320 135 15
+	frame	data/chars/ironman/fspec19.gif
+	offset	70 134
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec20.gif
+	offset	71 135
+	attack	0 0 320 135 15 1
+	frame	data/chars/ironman/fspec21.gif
+	offset	73 135
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec22.gif
+	offset	76 138
+	attack	0 0 320 135 20 1
+	frame	data/chars/ironman/fspec23.gif
+	offset	76 139
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec24.gif
+	offset	76 139
+	attack	0 0 320 135 15 1
+	frame	data/chars/ironman/fspec25.gif
+	offset	76 139
+	frame	data/chars/ironman/fspec26.gif
+	attack	0 0 0 0 0 
+
+
+#done
+anim jump
+	loop	0
+	offset	32 141
+	delay	15
+	bbox	47 37 33 79
+	sound	data/chars/kain/sounds/jump.wav
+	frame	data/chars/kain/jump1.gif
+	frame	data/chars/kain/jump2.gif
+	frame	data/chars/kain/jump1.gif
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	37 136
+	delay	6
+	bbox	47 19 34 64
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/kain/jatk1.gif
+	attack	41 14 60 71 7 1
+	frame	data/chars/kain/jatk2.gif
+	frame	data/chars/kain/jatk3.gif
+	frame	data/chars/kain/jatk4.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	36 101
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/kain/grab.gif
+
+
+#done//
+anim grabattack2
+	loop	0
+	delay	7
+	offset	92 281
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/kain/upper1.gif
+	frame	data/chars/kain/upper2.gif
+	frame	data/chars/kain/upper3.gif
+	      bbox       53 23 45 100
+	attack	0 5 164 235 20 1
+	frame	data/chars/kain/upper4.gif
+        frame	data/chars/kain/upper5.gif
+	frame	data/chars/kain/upper6.gif
+	frame	data/chars/kain/upper7.gif
+	frame	data/chars/kain/upper8.gif
+	frame	data/chars/kain/upper9.gif
+              attack	0 0 0 0 0
+
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	7
+	offset	79 160
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/kain/kick1.gif
+	attack	84 100 100 120 10
+	frame	data/chars/kain/kick2.gif
+	frame	data/chars/kain/kick3.gif
+	frame	data/chars/kain/kick4.gif
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	92 281
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/kain/upper1.gif
+	frame	data/chars/kain/upper2.gif
+	frame	data/chars/kain/upper3.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/kain/upper4.gif
+        frame	data/chars/kain/upper5.gif
+	frame	data/chars/kain/upper6.gif
+	frame	data/chars/kain/upper7.gif
+	frame	data/chars/kain/upper8.gif
+	frame	data/chars/kain/upper9.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  	57 131
+	bbox 	31 14 35 83
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/kain/pain.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  119 89
+	delay	20
+	frame	data/chars/kain/fall1.gif
+	frame	data/chars/kain/fall1.gif
+	frame	data/chars/kain/fall2.gif
+	frame	data/chars/kain/fall3.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	offset  92 281
+	delay	5
+	frame	data/chars/kain/rise.gif
+	frame	data/chars/kain/rise.gif
+
+
+
+#done//
+anim land
+	loop	0
+	offset  92 281
+	delay	5
+	frame	data/chars/kain/rise.gif
+	frame	data/chars/kain/rise.gif
+
+

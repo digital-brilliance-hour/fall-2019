@@ -1,0 +1,517 @@
+
+name	  axe
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/axe/icon.gif
+diesound  Data/sounds/die1.wav
+COM A2 freespecial4
+weapons	abear abull ajag aele ahor axe
+
+palette	data/chars/axe/idle1.gif
+
+
+alternatepal	data/chars/axe/testpal.gif
+
+load	knifep
+knife	knifep
+
+
+#done//
+anim idle
+	loop	1
+	offset        275 237
+	bbox 	256 167 38 49
+	delay	18
+	frame	data/chars/axe/idle1.gif
+	frame	data/chars/axe/idle2.gif
+	frame	data/chars/axe/idle3.gif
+	frame	data/chars/axe/idle4.gif
+	frame	data/chars/axe/idle5.gif
+	frame	data/chars/axe/idle6.gif
+	frame	data/chars/axe/idle7.gif
+	frame	data/chars/axe/idle8.gif
+	frame	data/chars/axe/idle9.gif
+	
+
+#done//
+anim walk
+	loop	1
+	offset  231 249
+	bbox 	211 176 39 56
+	delay	9
+	frame	data/chars/axe/walk1.gif
+	frame	data/chars/axe/walk2.gif
+	frame	data/chars/axe/walk3.gif
+	frame	data/chars/axe/walk4.gif
+	frame	data/chars/axe/walk5.gif
+	frame	data/chars/axe/walk6.gif
+	frame	data/chars/axe/walk7.gif
+	frame	data/chars/axe/walk8.gif
+
+
+
+anim run
+	loop	1
+	delay	12
+	offset	415 281
+	bbox	407 215 30 45
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/axe/run1.gif
+	frame	data/chars/axe/run2.gif
+	frame	data/chars/axe/run3.gif
+	frame	data/chars/axe/run4.gif
+	frame	data/chars/axe/run5.gif
+	frame	data/chars/axe/run6.gif
+	frame	data/chars/axe/run7.gif
+	frame	data/chars/axe/run8.gif
+	frame	data/chars/axe/run9.gif
+	frame	data/chars/axe/run10.gif
+	frame	data/chars/axe/run11.gif
+	frame	data/chars/axe/run12.gif
+	frame	data/chars/axe/run13.gif
+	frame	data/chars/axe/run14.gif
+	frame	data/chars/axe/run15.gif
+	frame	data/chars/axe/run16.gif
+
+
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	247 269
+              bbox       248 206 42 45
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/hatk1.gif
+	frame	data/chars/axe/hatk2.gif
+	frame	data/chars/axe/hatk3.gif
+              attack	282 128 200 178 25 1 0 0 25
+	frame	data/chars/axe/hatk4.gif
+	frame	data/chars/axe/hatk5.gif
+	frame	data/chars/axe/hatk6.gif
+	frame	data/chars/axe/hatk7.gif
+	frame	data/chars/axe/hatk8.gif
+	frame	data/chars/axe/hatk9.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	10
+	offset	307 277
+	frame	data/chars/axe/rise1.gif
+	frame	data/chars/axe/rise1.gif
+
+
+
+#done//
+#Punch
+anim attack1
+	cancel 5 6 0 a2 freespecial5
+	range	5 50
+	loop	0
+	delay	5
+	offset	292 224
+	bbox	290 158 30 48
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/axe/atk1.gif
+	frame	data/chars/axe/atk2.gif
+	frame	data/chars/axe/atk3.gif
+        attack	257 125 195 133 10 0 0 0 10
+	frame	data/chars/axe/atk4.gif
+	frame	data/chars/axe/atk5.gif
+	frame	data/chars/axe/atk6.gif
+        attack         0 0 0 0 0
+
+
+
+#done//
+#Kick
+anim attack2
+	cancel 4 5 0 a2 freespecial6
+	range	5 40
+	loop	0
+	delay	6
+	offset	292 224
+	bbox	290 158 30 48
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/axe/2atk1.gif
+                  attack	263 133 197 97 15 0 0 0 10
+	frame	data/chars/axe/2atk2.gif
+	frame	data/chars/axe/2atk3.gif
+	frame	data/chars/axe/2atk4.gif
+                  attack	0 0 0 0 0
+	    frame	data/chars/axe/2atk5.gif
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 4 5 0 a2 freespecial2
+	range	5 90
+	loop	0
+	delay	8
+	offset	247 247
+              bbox      244 183 30 41
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/3atk1.gif
+	frame	data/chars/axe/3atk2.gif
+              attack	214 76 180 166 25 1 0 0 25
+	frame	data/chars/axe/3atk3.gif
+	frame	data/chars/axe/3atk4.gif
+	frame	data/chars/axe/3atk5.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	10
+	offset	219 268
+	sound	data/chars/axe/saya.wav
+	frame	data/chars/axe/spec1.gif
+	attack	30 224 264 10 10
+	frame	data/chars/axe/spec2.gif
+	attack	0 0 0 0 0 0
+	attack	30 224 264 10 10
+	frame	data/chars/axe/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec4.gif
+	attack	30 224 264 10 10
+	frame	data/chars/axe/spec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec6.gif
+	attack	30 224 264 10 20 1
+	frame	data/chars/axe/spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec2.gif
+	attack	30 224 264 10 20 1
+	frame	data/chars/axe/spec3.gif
+	attack	0 0 0 0 0 0
+	attack	30 224 264 10 20 1
+	frame	data/chars/axe/spec4.gif
+	frame	data/chars/axe/spec5.gif
+	frame	data/chars/axe/spec6.gif
+	frame	data/chars/axe/spec7.gif
+	attack	0 0 0 0 0 0
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	247 269
+              bbox       248 206 42 45
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/hatk1.gif
+	frame	data/chars/axe/hatk2.gif
+	frame	data/chars/axe/hatk3.gif
+              attack	282 128 200 178 25 1 0 0 25
+	frame	data/chars/axe/hatk4.gif
+	frame	data/chars/axe/hatk5.gif
+	frame	data/chars/axe/hatk6.gif
+	frame	data/chars/axe/hatk7.gif
+	frame	data/chars/axe/hatk8.gif
+	frame	data/chars/axe/hatk9.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+	loop	0
+	delay	8
+	move	10
+	offset	162 285
+	bbox	57 50 53 104
+	sound	data/chars/axe/hyah.wav
+	sound	data/sounds/marvel/gfire.wav
+	frame	data/chars/axe/2spec1.gif
+	frame	data/chars/axe/2spec2.gif
+	frame	data/chars/axe/2spec3.gif
+	offset	180 285
+	frame	data/chars/axe/2spec4.gif
+	offset	202 285
+	frame	data/chars/axe/2spec5.gif
+	offset	236 285
+	frame	data/chars/axe/2spec6.gif
+	offset	256 285
+	attack	287 113 170 200 10
+	move	0
+	frame	data/chars/axe/2spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec8.gif
+	attack	287 113 170 200 10
+	frame	data/chars/axe/2spec9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec10.gif
+	attack	287 113 170 200 10
+	frame	data/chars/axe/2spec11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec12.gif
+	attack	287 113 170 200 10
+	frame	data/chars/axe/2spec13.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec14.gif
+	attack	287 113 170 200 10
+	frame	data/chars/axe/2spec15.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec16.gif
+	attack	287 113 170 200 20 1
+	frame	data/chars/axe/2spec17.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/2spec18.gif
+	attack	287 113 170 200 20 1
+	frame	data/chars/axe/2spec19.gif
+	frame	data/chars/axe/2spec20.gif
+	attack	0 0 0 0 0 0
+
+
+anim freespecial3
+	range	5 90
+	loop	0
+	throwframe	2
+	offset	275 237
+	bbox	256 167 38 49
+	delay	9
+	sound	data/chars/axe/huh.wav
+	frame	data/chars/axe/grab.gif
+	frame	data/chars/axe/grab.gif
+	frame	data/chars/axe/grab.gif
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	8
+	offset	247 269
+              bbox       248 206 42 45
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/hatk1.gif
+	frame	data/chars/axe/hatk2.gif
+	frame	data/chars/axe/hatk3.gif
+              attack	282 128 200 178 25 1 0 0 25
+	frame	data/chars/axe/hatk4.gif
+	frame	data/chars/axe/hatk5.gif
+	frame	data/chars/axe/hatk6.gif
+	frame	data/chars/axe/hatk7.gif
+	frame	data/chars/axe/hatk8.gif
+	frame	data/chars/axe/hatk9.gif
+              attack	0 0 0 0 0
+
+anim freespecial5
+	range	5 90
+	loop	0
+	delay	8
+	offset	247 247
+              bbox      244 183 30 41
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/3atk1.gif
+	frame	data/chars/axe/3atk2.gif
+              attack	214 76 180 166 25 1 0 0 25
+	dropv	3 0 0
+	frame	data/chars/axe/3atk3.gif
+	frame	data/chars/axe/3atk4.gif
+	frame	data/chars/axe/3atk5.gif
+              attack	0 0 0 0 0
+
+anim freespecial6
+	loop	0
+	delay	8
+	move	12
+	offset	219 268
+	sound	data/chars/axe/saya.wav
+	frame	data/chars/axe/spec1.gif
+	attack	30 224 264 10 10 0 0 0 10
+	frame	data/chars/axe/spec2.gif
+	attack	0 0 0 0 0 0
+	attack	30 224 264 10 5 0 0 0 10
+	frame	data/chars/axe/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec4.gif
+	attack	30 224 264 10 8 0 0 0 10
+	frame	data/chars/axe/spec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec6.gif
+	attack	30 224 264 10 20 1 0 0 15
+	frame	data/chars/axe/spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/axe/spec2.gif
+	attack	30 224 264 10 10 1 0 0 14
+	frame	data/chars/axe/spec3.gif
+	attack	0 0 0 0 0 0
+	attack	30 224 264 10 15 1 0 0 14
+	frame	data/chars/axe/spec4.gif
+	frame	data/chars/axe/spec5.gif
+	frame	data/chars/axe/spec6.gif
+	frame	data/chars/axe/spec7.gif
+	attack	0 0 0 0 0 0
+
+	
+
+#done
+anim jump
+	loop	0
+	offset	304 288
+	delay	15
+	bbox	280 228 46 44
+	sound	data/chars/axe/sounds/jump.wav
+	frame	data/chars/axe/jump1.gif
+	frame	data/chars/axe/jump2.gif
+	frame	data/chars/axe/jump3.gif
+	frame	data/chars/axe/jump4.gif
+	frame	data/chars/axe/jump5.gif
+
+
+#done
+anim jumpattack
+	loop	0
+	delay	6
+	offset	247 269
+              bbox       248 206 42 45
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/axe/hatk1.gif
+	frame	data/chars/axe/hatk2.gif
+	frame	data/chars/axe/hatk3.gif
+              attack	282 128 200 178 25 1
+	frame	data/chars/axe/hatk4.gif
+	frame	data/chars/axe/hatk5.gif
+	frame	data/chars/axe/hatk6.gif
+	frame	data/chars/axe/hatk7.gif
+	frame	data/chars/axe/hatk8.gif
+	frame	data/chars/axe/hatk9.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	275 237
+	bbox	256 167 38 49
+	delay	1000
+	frame	data/chars/axe/grab.gif
+
+
+#done//
+anim grabattack2
+	range	5 90
+	loop	0
+	delay	8
+	offset	247 269
+              bbox       248 206 42 45
+	sound	data/chars/axe/uria.wav
+	frame	data/chars/axe/hatk1.gif
+	frame	data/chars/axe/hatk2.gif
+	frame	data/chars/axe/hatk3.gif
+              attack	282 128 200 178 25 1 0 0 25
+	frame	data/chars/axe/hatk4.gif
+	frame	data/chars/axe/hatk5.gif
+	frame	data/chars/axe/hatk6.gif
+	frame	data/chars/axe/hatk7.gif
+	frame	data/chars/axe/hatk8.gif
+	frame	data/chars/axe/hatk9.gif
+              attack	0 0 0 0 0
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	7
+	offset	230 269
+	bbox	206 206 34 44
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/axe/gatk1.gif
+	frame	data/chars/axe/gatk2.gif
+        attack	233 163 120 97 15 0
+	frame	data/chars/axe/gatk3.gif
+	frame	data/chars/axe/gatk4.gif
+	frame	data/chars/axe/gatk5.gif
+        attack	0 0 0 0 0
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	6
+	offset	247 247
+	sound	data/chars/axe/saya.wav
+	frame	data/chars/axe/3atk1.gif
+	frame	data/chars/axe/3atk1.gif
+	frame	data/chars/axe/3atk2.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/axe/3atk2.gif
+        frame	data/chars/axe/3atk3.gif
+	frame	data/chars/axe/3atk3.gif
+	frame	data/chars/axe/3atk4.gif
+	frame	data/chars/axe/3atk4.gif
+	frame	data/chars/axe/3atk5.gif
+	frame	data/chars/axe/3atk5.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  307 277
+	bbox 	280 228 46 44
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/axe/pain1.gif
+	frame	data/chars/axe/pain1.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  131 246
+	delay	20
+	frame	data/chars/axe/fall1.gif
+	frame	data/chars/axe/fall1.gif
+	frame	data/chars/axe/fall2.gif
+	frame	data/chars/axe/fall2.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	9
+	offset	307 277
+	frame	data/chars/axe/rise1.gif
+	frame	data/chars/axe/rise1.gif
+
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	10
+	offset	307 277
+	frame	data/chars/axe/rise1.gif
+
+
+
+

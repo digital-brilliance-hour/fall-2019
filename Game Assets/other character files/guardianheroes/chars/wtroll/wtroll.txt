@@ -1,0 +1,261 @@
+name	water_troll
+health	150
+speed	13
+running	22	4	2	1	1
+aimove chase
+type	enemy
+shadow	6
+icon	data/chars/wtroll/icon.gif
+aggression 25
+#cantgrab 1
+nodieblink 3
+falldie	1
+diesound data/sounds/die1.wav
+palette	data/chars/wtroll/idle1.gif
+
+alternatepal	data/chars/wtroll/testpal.gif
+alternatepal	data/chars/wtroll/testpal2.gif
+alternatepal	data/chars/wtroll/testpal3.gif
+#alternatepal	data/chars/sold/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  53 123
+	bbox 	26 24 77 105
+	delay	15
+	frame	data/chars/wtroll/idle1.gif
+	offset  52 112
+	frame	data/chars/wtroll/idle2.gif
+	offset  52 112
+	frame	data/chars/wtroll/idle3.gif
+	offset  52 112
+	frame	data/chars/wtroll/idle4.gif
+
+
+
+	
+anim walk
+	loop	1
+	offset  54 144
+	bbox 	50 36 77 105
+	delay	13
+	frame	data/chars/wtroll/walk1.gif
+	offset  54 144
+	frame	data/chars/wtroll/walk2.gif
+	offset  62 144
+	frame	data/chars/wtroll/walk3.gif
+	offset  57 144
+	frame	data/chars/wtroll/walk4.gif
+	offset  49 144
+	frame	data/chars/wtroll/walk5.gif
+	offset  50 127
+	frame	data/chars/wtroll/walk6.gif
+	offset  66 141
+	frame	data/chars/wtroll/walk7.gif
+	offset  58 139
+	frame	data/chars/wtroll/walk8.gif
+	offset  61 139
+	frame	data/chars/wtroll/walk9.gif
+	offset  63 138
+	frame	data/chars/wtroll/walk10.gif
+	offset  58 139
+	frame	data/chars/wtroll/walk11.gif
+	offset  48 142
+	frame	data/chars/wtroll/walk12.gif
+
+anim run
+	loop	1
+	offset  54 144
+	bbox 	50 36 77 105
+	delay	10
+	frame	data/chars/wtroll/walk1.gif
+	offset  54 144
+	frame	data/chars/wtroll/walk2.gif
+	offset  62 144
+	frame	data/chars/wtroll/walk3.gif
+	offset  57 144
+	frame	data/chars/wtroll/walk4.gif
+	offset  49 144
+	frame	data/chars/wtroll/walk5.gif
+	offset  50 127
+	frame	data/chars/wtroll/walk6.gif
+	offset  66 141
+	frame	data/chars/wtroll/walk7.gif
+	offset  58 139
+	frame	data/chars/wtroll/walk8.gif
+	offset  61 139
+	frame	data/chars/wtroll/walk9.gif
+	offset  63 138
+	frame	data/chars/wtroll/walk10.gif
+	offset  58 139
+	frame	data/chars/wtroll/walk11.gif
+	offset  48 142
+	frame	data/chars/wtroll/walk12.gif
+
+anim runattack
+	range	0 126
+	loop	0
+	delay	5
+	offset	70 129
+	bbox	38 19 77 105
+	frame	data/chars/wtroll/atk1.gif
+	offset	86 122
+	frame	data/chars/wtroll/atk2.gif
+	offset	82 116
+	attack	94 6 126 104 20 1 0 0 24
+	frame	data/chars/wtroll/atk3.gif
+	offset	87 132
+	frame	data/chars/wtroll/atk4.gif
+	offset	84 134
+	frame	data/chars/wtroll/atk5.gif
+	attack	0 0 0 0 0 0
+	offset	82 117
+	frame	data/chars/wtroll/atk6.gif
+	offset	85 117
+	frame	data/chars/wtroll/atk7.gif
+	offset	79 118
+	frame	data/chars/wtroll/atk8.gif
+
+		
+anim pain
+	loop	0
+	offset	53 128
+	delay	4
+	bbox	26 24 77 105
+	frame	data/chars/wtroll/idle1.gif
+	offset  52 117
+	frame	data/chars/wtroll/idle2.gif
+
+	
+anim fall
+	landframe	3
+	loop	0
+	offset	66 128
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/wtroll/fall1.gif
+	offset	66 128
+	delay	1000
+	frame	data/chars/wtroll/fall2.gif
+	offset	84 65
+	delay	20
+	frame	data/chars/wtroll/fall3.gif
+	frame	data/chars/wtroll/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	73 106
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/wtroll/rise1.gif
+
+
+
+
+anim attack1
+	range	0 120
+	loop	0
+	delay	3
+	offset	70 129
+	bbox	38 19 77 105
+	frame	data/chars/wtroll/atk1.gif
+	offset	86 122
+	frame	data/chars/wtroll/atk2.gif
+	offset	82 116
+	attack	94 6 126 104 10 0 0 0 14 
+	frame	data/chars/wtroll/atk3.gif
+	offset	87 132
+	frame	data/chars/wtroll/atk4.gif
+	offset	84 134
+	frame	data/chars/wtroll/atk5.gif
+	attack	0 0 0 0 0 0
+	offset	82 117
+	frame	data/chars/wtroll/atk6.gif
+	offset	85 117
+	frame	data/chars/wtroll/atk7.gif
+	offset	79 118
+	frame	data/chars/wtroll/atk8.gif
+	offset	79 145
+	frame	data/chars/wtroll/atk9.gif
+	offset	76 158
+	frame	data/chars/wtroll/atk10.gif
+	offset	81 148
+	attack	54 5 110 140 20 1 0 0 28
+	frame	data/chars/wtroll/atk11.gif
+	offset	58 136
+	frame	data/chars/wtroll/atk12.gif
+	offset	66 113
+	frame	data/chars/wtroll/atk13.gif
+	attack	0 0 0 0 0
+	frame	data/chars/wtroll/atk14.gif
+	frame	data/chars/wtroll/atk15.gif
+	frame	data/chars/wtroll/atk16.gif
+
+
+
+
+
+
+
+
+
+	
+anim special
+	range	0 126
+	loop	0
+	delay	5
+	offset	70 129
+	bbox	38 19 77 105
+	frame	data/chars/wtroll/atk1.gif
+	offset	86 122
+	frame	data/chars/wtroll/atk2.gif
+	offset	82 116
+	attack	94 6 126 104 15 1 0 0 14 
+	frame	data/chars/wtroll/atk3.gif
+	offset	87 132
+	frame	data/chars/wtroll/atk4.gif
+	offset	84 134
+	frame	data/chars/wtroll/atk5.gif
+	attack	0 0 0 0 0 0
+	offset	82 117
+	frame	data/chars/wtroll/atk6.gif
+	offset	85 117
+	frame	data/chars/wtroll/atk7.gif
+	offset	79 118
+	frame	data/chars/wtroll/atk8.gif
+
+
+
+			
+anim death
+	loop	0
+	offset	66 128
+	delay	19
+	move	-15
+	frame	data/chars/wtroll/d1
+	offset	66 128
+	frame	data/chars/wtroll/d2
+	offset	84 65
+	delay	20
+	move	0
+	frame	data/chars/wtroll/d3
+
+
+
+
+
+
+
+
+
+
+	

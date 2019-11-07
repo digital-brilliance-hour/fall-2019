@@ -1,0 +1,41 @@
+name	dshot
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/blade/dshot1.gif
+
+anim idle
+	loop	0
+	delay	10
+	offset	181 31
+	attack	0 0 222 70 30 1 0 0 25
+	frame	data/chars/blade/dshot1.gif
+	offset	183 33
+	frame	data/chars/blade/dshot2.gif
+	offset	163 31
+	frame	data/chars/blade/dshot3.gif
+	offset	170 30
+	frame	data/chars/blade/dshot4.gif
+	offset	139 43
+	frame	data/chars/blade/dshot5.gif
+	offset	147 49
+	frame	data/chars/blade/dshot6.gif
+	offset	58 34
+	frame	data/chars/blade/dshot7.gif
+	offset	18 25
+	frame	data/chars/blade/dshot8.gif
+	offset	0 31
+	frame	data/chars/blade/dshot9.gif
+	offset	0 34
+	frame	data/chars/blade/dshot10.gif
+	
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

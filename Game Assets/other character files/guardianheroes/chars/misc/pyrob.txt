@@ -1,0 +1,18 @@
+name	pyrob
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 289
+	frame	data/chars/misc/pyro1.gif
+	frame	data/chars/misc/pyro2.gif
+	frame	data/chars/misc/pyro3.gif
+	frame	data/chars/misc/pyro4.gif
+	frame	data/chars/misc/pyro5.gif
+	frame	data/chars/misc/pyro6.gif
+	frame	data/chars/misc/pyro7.gif
+	frame	data/chars/misc/pyro8.gif

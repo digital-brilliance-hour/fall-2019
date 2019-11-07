@@ -1,0 +1,204 @@
+name	skel
+health	100
+speed	9
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 45
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+#aimove chase
+icon	data/chars/skel/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/skel/idle1.gif
+
+
+alternatepal	data/chars/skel/testpal.gif
+alternatepal	data/chars/skel/testpal2.gif
+alternatepal	data/chars/skel/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  86 173
+	bbox 	64 118 44 56
+	delay	22
+	frame	data/chars/skel/idle1.gif
+	frame	data/chars/skel/idle2.gif
+	frame	data/chars/skel/idle3.gif
+	frame	data/chars/skel/idle4.gif
+
+
+
+anim walk
+	loop	1
+	offset  86 173
+	bbox 	64 118 44 56
+	delay	16
+	frame	data/chars/skel/walk1.gif
+	frame	data/chars/skel/walk2.gif
+	frame	data/chars/skel/walk3.gif
+	frame	data/chars/skel/walk4.gif
+	frame	data/chars/skel/walk5.gif
+	frame	data/chars/skel/walk6.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  86 173
+	bbox 	64 118 44 56
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/skel/block1.gif
+	offset	88 173
+	frame	data/chars/skel/block2.gif
+	move    -8
+	offset	86 173
+	frame	data/chars/skel/block2.gif
+	offset	88 173
+	frame	data/chars/skel/block2.gif
+	move    -6
+	offset	86 173
+	frame	data/chars/skel/block2.gif
+	offset	88 173
+	frame	data/chars/skel/block2.gif
+	move    -4
+	offset	86 173
+	frame	data/chars/skel/block2.gif
+	offset	88 173
+	frame	data/chars/skel/block2.gif
+	offset	86 173
+	move    -2
+	frame	data/chars/skel/block2.gif
+	offset	88 173
+	frame	data/chars/skel/block2.gif
+	offset	86 173
+	delay   20
+	move    0
+	frame	data/chars/skel/block1.gif
+
+anim pain
+	loop	0
+	delay	8
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/pain1.gif
+	frame	data/chars/skel/pain2.gif
+	frame	data/chars/skel/pain1.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/fall1.gif
+	delay	1000
+	frame	data/chars/skel/fall2.gif
+	delay	20
+	frame	data/chars/skel/fall3.gif
+	frame	data/chars/skel/fall3.gif
+
+
+anim death
+	landframe	3
+	loop	0
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/fall1.gif
+	delay	1000
+	frame	data/chars/skel/fall2.gif
+	delay	20
+	frame	data/chars/skel/fall3.gif
+	frame	data/chars/skel/fall3.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  86 173
+	frame	data/chars/skel/rise1.gif
+
+
+anim riseattack
+	range	0 75
+	loop	0
+	delay	7
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/2atk1.gif
+	frame	data/chars/skel/2atk2.gif
+	frame	data/chars/skel/2atk3.gif
+	attack	69 47 75 125 20 1 0 0 26
+	frame	data/chars/skel/2atk4.gif
+	frame	data/chars/skel/2atk5.gif
+	frame	data/chars/skel/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skel/2atk7.gif
+
+anim attack1
+	range	0 87
+	loop	0
+	delay	7
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/atk1.gif
+	frame	data/chars/skel/atk2.gif
+	frame	data/chars/skel/atk3.gif
+	attack	98 107 86 59 20 1 0 0 24
+	frame	data/chars/skel/atk4.gif
+	frame	data/chars/skel/atk5.gif
+	frame	data/chars/skel/atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skel/atk7.gif
+	frame	data/chars/skel/atk8.gif
+
+
+anim attack2
+	range	0 75
+	loop	0
+	delay	7
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/2atk1.gif
+	frame	data/chars/skel/2atk2.gif
+	frame	data/chars/skel/2atk3.gif
+	attack	69 47 75 125 20 1 0 0 26
+	frame	data/chars/skel/2atk4.gif
+	frame	data/chars/skel/2atk5.gif
+	frame	data/chars/skel/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skel/2atk7.gif
+
+anim upper
+	range	0 75
+	loop	0
+	delay	7
+	offset  86 173
+	bbox 	64 118 44 56
+	frame	data/chars/skel/2atk1.gif
+	frame	data/chars/skel/2atk2.gif
+	frame	data/chars/skel/2atk3.gif
+	attack	69 47 75 125 20 1 0 0 26
+	frame	data/chars/skel/2atk4.gif
+	frame	data/chars/skel/2atk5.gif
+	frame	data/chars/skel/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skel/2atk7.gif
+
+
+

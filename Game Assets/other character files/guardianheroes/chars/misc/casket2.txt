@@ -1,0 +1,35 @@
+
+
+name	casket2
+health  5
+type    obstacle
+shadow	0
+nolife  1
+falldie 1
+diesound  data/sounds/guard.wav
+palette	data/chars/misc/cask201.gif
+
+anim idle
+	loop	0
+	delay	5
+	offset	55 90
+	bbox    35 10 65 90
+	frame	data/chars/misc/cask201.gif
+	
+anim fall
+	loop	0
+	delay	5
+	offset	55 90
+	frame	data/chars/misc/cask202.gif
+	frame	data/chars/misc/cask203.gif
+	frame	data/chars/misc/cask204.gif
+	
+anim death
+	loop	0
+	delay	5
+	offset	55 90
+	frame	data/chars/misc/cask202.gif
+	frame	data/chars/misc/cask203.gif
+	delay	60
+	frame	data/chars/misc/cask204.gif
+	

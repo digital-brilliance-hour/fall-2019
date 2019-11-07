@@ -1,0 +1,128 @@
+name	Kobold
+health	150
+speed	10
+type	enemy
+shadow	5
+aggression 25
+cantgrab 1
+nodieblink 3
+gfxshadow	1
+icon	data/chars/owlbear/icona.gif
+diesound data/sounds/die1.wav
+palette	data/chars/owlbear/idle1a.gif
+
+load	Knife
+
+alternatepal	data/chars/owlbear/testpala.gif
+#alternatepal	data/chars/green/testpal2.gif
+#alternatepal	data/chars/green/testpal3.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  119 174
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/owlbear/idle1a.gif
+	frame	data/chars/owlbear/idle2a.gif
+	frame	data/chars/owlbear/idle3a.gif
+	frame	data/chars/owlbear/idle4a.gif
+	frame	data/chars/owlbear/idle5a.gif
+
+	
+anim walk
+	loop	1
+	offset  119 174
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/owlbear/walk1a.gif
+	frame	data/chars/owlbear/walk2a.gif
+	frame	data/chars/owlbear/walk3a.gif
+	frame	data/chars/owlbear/walk4a.gif
+	frame	data/chars/owlbear/walk5a.gif
+	frame	data/chars/owlbear/walk6a.gif
+	frame	data/chars/owlbear/walk7a.gif
+	frame	data/chars/owlbear/walk8a.gif
+	frame	data/chars/owlbear/walk9a.gif
+	frame	data/chars/owlbear/walk10a.gif
+
+		
+anim pain
+	loop	0
+	offset	126 168
+	delay	6
+	bbox	12 10 58 90
+	frame	data/chars/owlbear/pain1a.gif
+	frame	data/chars/owlbear/pain1a.gif
+
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	126 168
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	20
+	frame	data/chars/owlbear/fall1a.gif
+	frame	data/chars/owlbear/fall2a.gif
+	delay	100
+	frame	data/chars/owlbear/fall3a.gif
+	offset	128 165
+	delay	20
+	frame	data/chars/owlbear/fall4a.gif
+	frame	data/chars/owlbear/fall4a.gif
+
+
+anim rise
+	loop	0
+	offset	128 169
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/owlbear/rise1a.gif
+	frame	data/chars/owlbear/rise2a.gif
+	frame	data/chars/owlbear/rise3a.gif
+
+
+
+
+anim attack1
+	range	0 110
+	loop	0
+	delay	12
+	offset	114 168
+	bbox	44 58 63 84
+	frame	data/chars/owlbear/atk1a.gif
+	frame	data/chars/owlbear/atk2a.gif
+	attack	136 50 104 128 20 1
+	frame	data/chars/owlbear/atk3a.gif
+	attack	0 0 0 0 0
+	frame	data/chars/owlbear/atk4a.gif
+	frame	data/chars/owlbear/atk5a.gif
+
+
+
+
+	
+anim attack2
+	throwframe	4
+	range	150 300
+	loop	0
+	delay	14
+	offset	119 174
+	bbox	44 58 63 84
+	frame	data/chars/owlbear/2atk1.gif
+	frame	data/chars/owlbear/2atk2.gif
+	frame	data/chars/owlbear/2atk3.gif
+	frame	data/chars/owlbear/2atk4.gif
+	frame	data/chars/owlbear/2atk5.gif
+			
+#anim throw
+
+#anim special
+

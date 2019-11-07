@@ -1,0 +1,192 @@
+name	Skeleton
+health	250
+speed	8
+type	enemy
+shadow	  0
+gfxshadow 1
+icon	data/chars/skeleton/icon.gif
+aggression 30
+cantgrab 1
+aimove	chase
+#nopain	1
+nodrop	1
+noatflash 1
+flash	robof
+#falldie	1
+nodieblink 3
+diesound data/sounds/die1.wav
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/skeleton/idle1.gif
+
+alternatepal	data/chars/skeleton/testpal.gif
+alternatepal	data/chars/sdragon/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  106 141
+	bbox 	23 4 54 85
+	delay	11
+	frame	data/chars/skeleton/idle1.gif
+	offset  108 142
+	frame	data/chars/skeleton/idle2.gif
+	offset  108 147
+	frame	data/chars/skeleton/idle3.gif
+	offset  109 150
+	frame	data/chars/skeleton/idle4.gif
+	offset  111 151
+	frame	data/chars/skeleton/idle5.gif
+	offset  111 153
+	frame	data/chars/skeleton/idle6.gif
+	offset  111 153
+	frame	data/chars/skeleton/idle7.gif
+	offset  116 153
+	frame	data/chars/skeleton/idle8.gif
+	offset  109 161
+	frame	data/chars/skeleton/idle9.gif
+	offset  101 164
+	frame	data/chars/skeleton/idle10.gif
+	offset  102 156
+	frame	data/chars/skeleton/idle11.gif
+	offset  103 149
+	frame	data/chars/skeleton/idle12.gif
+
+
+	
+anim walk
+	loop	1
+	offset  109 176
+	bbox 	61 28 94 62
+	delay	11
+	quakeframe	2 6 9
+	frame	data/chars/skeleton/walk1.gif
+	offset  111 172
+	frame	data/chars/skeleton/walk2.gif
+	offset  108 175
+	frame	data/chars/skeleton/walk3.gif
+	offset  107 177
+	frame	data/chars/skeleton/walk4.gif
+	offset  108 181
+	frame	data/chars/skeleton/walk5.gif
+	offset  104 182
+	frame	data/chars/skeleton/walk6.gif
+	offset  104 179
+	frame	data/chars/skeleton/walk7.gif
+	offset  103 172
+	frame	data/chars/skeleton/walk8.gif
+	offset  102 166
+	frame	data/chars/skeleton/walk9.gif
+	offset  104 173
+	frame	data/chars/skeleton/walk10.gif
+	offset  106 178
+	frame	data/chars/skeleton/walk11.gif
+	offset  106 179
+	frame	data/chars/skeleton/walk12.gif
+
+		
+anim pain
+	loop	0
+	offset  106 143
+	move	-10
+	bbox 	23 4 54 85
+	delay	8
+	frame	data/chars/skeleton/pain1.gif
+	offset  101 146
+	frame	data/chars/skeleton/pain2.gif
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	108 162
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	16
+	frame	data/chars/skeleton/fall1.gif
+	offset	130 133
+	frame	data/chars/skeleton/fall2.gif
+	offset	119 188
+	delay	110
+	frame	data/chars/skeleton/fall3.gif
+	offset	134 66
+	delay	20
+	frame	data/chars/skeleton/fall4.gif
+	frame	data/chars/skeleton/fall4.gif
+
+
+
+
+#anim rise
+
+
+
+
+
+anim attack1
+	range	0 250
+	loop	0
+	delay	9
+	offset	85 153
+	bbox	44 58 63 84
+	frame	data/chars/skeleton/atk1.gif
+	offset	74 140
+	frame	data/chars/skeleton/atk2.gif
+	offset	76 150
+	attack	95 1 230 144 12 0 0 0 14
+ 	frame	data/chars/skeleton/atk3.gif
+	offset	73 151
+	frame	data/chars/skeleton/atk4.gif
+	offset	64 154
+	frame	data/chars/skeleton/atk5.gif
+	attack	0 0 0 0 0 0
+	offset	127 159
+	frame	data/chars/skeleton/atk6.gif
+	offset	53 190
+	frame	data/chars/skeleton/atk7.gif
+	offset	76 158
+	attack	95 1 230 144 12 0 0 0 14
+	frame	data/chars/skeleton/atk8.gif
+	offset	70 150
+	frame	data/chars/skeleton/atk9.gif
+	offset	62 154
+	frame	data/chars/skeleton/atk10.gif
+	attack	0 0 0 0 0 0
+	offset	126 140
+	frame	data/chars/skeleton/atk11.gif
+	offset	68 146
+	frame	data/chars/skeleton/atk12.gif
+	offset	69 146
+	attack	95 1 230 144 12 0 0 0 14
+	frame	data/chars/skeleton/atk13.gif
+	attack	0 0 0 0 0 0
+	offset	58 142
+	frame	data/chars/skeleton/atk14.gif
+	offset	82 131
+	attack	95 1 230 144 25 1 0 0 26
+	frame	data/chars/skeleton/atk15.gif
+	offset	77 132
+	frame	data/chars/skeleton/atk16.gif
+	offset	78 133
+	frame	data/chars/skeleton/atk17.gif
+	attack	0 0 0 0 0 0
+
+
+
+	
+#anim attack2
+			
+#anim throw
+
+#anim death
+
+
+
+	

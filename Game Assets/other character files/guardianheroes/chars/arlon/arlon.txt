@@ -1,0 +1,542 @@
+name	arlon
+health	250
+speed	11
+type	enemy
+shadow	3
+dust    dust
+cantgrab 1
+aggression 10
+bflash bflash
+blockodds 1
+thold     49
+nopain 1
+falldie 2
+nodieblink 3
+icon	data/chars/arlon/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/ogdie.wav
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+fmap 3
+
+palette	data/chars/arlon/idle.gif
+
+alternatepal	data/chars/arlon/testpal.gif
+
+#anim spawn
+
+anim idle
+	loop	1
+	offset	114 143
+	bbox	100 60 40 85
+	delay	6
+	frame	data/chars/arlon/idle.gif
+
+anim walk
+	loop	1
+	offset	114 143
+	bbox	100 60 40 85
+	delay   12
+	frame	data/chars/arlon/walk1.gif
+	frame	data/chars/arlon/walk2.gif
+	frame	data/chars/arlon/walk3.gif
+	frame	data/chars/arlon/walk4.gif
+	frame	data/chars/arlon/walk5.gif
+	frame	data/chars/arlon/walk6.gif
+
+anim block
+	loop	0
+	delay	3
+	offset	114 143
+	bbox	100 60 40 85
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/arlon/a302.gif
+	offset	112 143
+	frame	data/chars/arlon/a302.gif
+	offset	114 143
+	move    -8
+	frame	data/chars/arlon/a302.gif
+	offset	112 143
+	frame	data/chars/arlon/a302.gif
+	offset	114 143
+	move    -6
+	frame	data/chars/arlon/a302.gif
+	offset	112 143
+	frame	data/chars/arlon/a302.gif
+	move    -4
+	offset	114 143
+	frame	data/chars/arlon/a302.gif
+	offset	112 143
+	frame	data/chars/arlon/a302.gif
+	offset	114 143
+	move    -2
+	frame	data/chars/arlon/a302.gif
+	offset	112 143
+	frame	data/chars/arlon/a302.gif
+	offset	114 143
+	delay   20
+	move    0
+	frame	data/chars/arlon/a302.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	114 143
+	bbox	100 60 40 85
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	delay   23
+	frame	data/chars/arlon/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	114 143
+	bbox	100 60 40 85
+	move    -10
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	move    -8
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	move    -6
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	move    -4
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	move    -2
+	frame	data/chars/arlon/pain1.gif
+	offset	111 143
+	frame	data/chars/arlon/pain1.gif
+	offset	114 143
+	delay   20
+	move    0
+	frame	data/chars/arlon/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	100 60 40 85
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	114 143
+	bbox	100 60 40 85
+	frame	data/chars/arlon/pain1.gif
+
+anim burn
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	114 143
+	delay   20
+	frame	data/chars/arlon/fall1.gif
+	frame	data/chars/arlon/fall2.gif
+
+anim bpain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	114 143
+	delay   20
+	frame	data/chars/arlon/pain1.gif
+
+anim shock
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	114 143
+	delay   20
+	frame	data/chars/arlon/fall1.gif
+	frame	data/chars/arlon/fall2.gif
+
+anim spain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	114 143
+	delay   20
+	frame	data/chars/arlon/pain1.gif
+
+anim fall
+	landframe 3
+	loop	0
+	delay	40
+	offset	114 143
+	frame	data/chars/arlon/pain1.gif
+	delay	2000
+	frame	data/chars/arlon/fall1.gif
+        delay   20
+	frame	data/chars/arlon/fall2.gif
+	frame	data/chars/arlon/fall2.gif
+
+#anim death
+
+anim rise
+	loop	0
+	offset	114 143
+	delay	12
+	frame	data/chars/arlon/fall2.gif
+	frame	data/chars/arlon/rise1.gif
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/arlon/fall2.gif
+	frame	data/chars/arlon/fall1.gif
+	frame	data/chars/arlon/pain1.gif
+	delay	35
+	frame	data/chars/arlon/idle.gif
+
+anim attack1
+	range	0 90
+	loop	0
+	offset	114 143
+	bbox	100 60 40 85
+	delay	24
+	frame	data/chars/arlon/idle.gif
+	delay	8
+	sound   data/sounds/punch1.wav
+	frame	data/chars/arlon/a101.gif
+	attack  89 52 156 95 25 0 0 0 15
+	frame	data/chars/arlon/a102.gif
+	frame	data/chars/arlon/a103.gif
+	frame	data/chars/arlon/a104.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a105.gif
+	sound   data/sounds/punch1.wav
+	attack  89 52 156 95 25 0 0 0 15
+	frame	data/chars/arlon/a106.gif
+	delay	15
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a107.gif
+
+anim attack2
+	range	91 120
+	loop	0
+	offset	114 143
+	bbox	100 60 40 85
+	delay	8
+	frame	data/chars/arlon/a201.gif
+	frame	data/chars/arlon/a202.gif
+	move    5
+	delay   2
+	sound   data/sounds/punch1.wav
+	attack   90 48 106 101 35 1 0 0 15
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    4
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    3
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    2
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    1
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    0
+	delay   15
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a202.gif
+
+anim jumpattack
+	range	121 160
+	loop	0
+	delay	5
+	offset	114 143
+	bbox	100 60 40 85
+	jumpframe 2 4
+	frame	data/chars/arlon/a301.gif
+	frame	data/chars/arlon/a302.gif
+	delay   9
+	sound   data/sounds/stand.wav
+	frame	data/chars/arlon/a303.gif
+	delay   6
+	frame	data/chars/arlon/a303.gif
+	frame	data/chars/arlon/a303.gif
+	frame	data/chars/arlon/a303.gif
+	attack  101 39 51 91 30 1 0 0 25
+	frame	data/chars/arlon/a304.gif
+	frame	data/chars/arlon/a304.gif
+	frame	data/chars/arlon/a304.gif
+	frame	data/chars/arlon/a304.gif
+	delay   35
+	frame	data/chars/arlon/a304.gif
+
+anim jumpland
+	delay	6
+	offset	114 143
+	bbox	100 60 40 85
+	sound   data/sounds/bigfall.wav
+	quakeframe 0 10 5
+	frame	data/chars/arlon/a305.gif
+	frame	data/chars/arlon/a306.gif
+	frame	data/chars/arlon/a307.gif
+	shock  3 7 218 164 35 1 0 0 25 50
+	frame	data/chars/arlon/a308.gif
+	frame	data/chars/arlon/a309.gif
+	frame	data/chars/arlon/a310.gif
+	frame	data/chars/arlon/a311.gif
+	frame	data/chars/arlon/a312.gif
+	frame	data/chars/arlon/a313.gif
+	frame	data/chars/arlon/a314.gif
+	frame	data/chars/arlon/a315.gif
+	frame	data/chars/arlon/a316.gif
+	shock  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a301.gif
+
+anim riseattack
+	range	0 90
+	loop	0
+	offset	114 143
+	bbox	0 0 0 0
+	delay	8
+	sound   data/sounds/punch1.wav
+	frame	data/chars/arlon/a101.gif
+	attack  89 52 156 95 25 0 0 0 15
+	frame	data/chars/arlon/a102.gif
+	frame	data/chars/arlon/a103.gif
+	delay	8
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a201.gif
+	frame	data/chars/arlon/a202.gif
+	move    5
+	delay   2
+	bbox	0 0 0 0
+	attack   90 48 106 101 35 1 0 0 15
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    4
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    3
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    2
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    1
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a203.gif
+	move    0
+	delay   15
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arlon/a203.gif
+	frame	data/chars/arlon/a202.gif

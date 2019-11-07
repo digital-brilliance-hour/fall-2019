@@ -1,0 +1,260 @@
+#Edited by Vision For Hatchet Ninja mod
+name	igniz
+health	500
+speed	10
+type	enemy
+shadow	6
+icon	data/chars/igniz/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/igniz/stand.gif data/chars/igniz/alt1.gif
+remap	data/chars/igniz/stand.gif data/chars/igniz/alt2.gif
+remap	data/chars/igniz/stand.gif data/chars/igniz/alt3.gif
+remap	data/chars/igniz/stand.gif data/chars/igniz/alt4.gif
+
+#Important addition
+load	shot
+
+anim idle
+	loop	1
+	offset	62 114
+	bbox	56 4 25 110
+	delay	12
+	frame	data/chars/igniz/idle1.gif
+	frame	data/chars/igniz/idle2.gif
+	frame	data/chars/igniz/idle3.gif
+	frame	data/chars/igniz/idle4.gif
+	frame	data/chars/igniz/idle5.gif
+	frame	data/chars/igniz/idle6.gif
+	frame	data/chars/igniz/idle7.gif
+	frame	data/chars/igniz/idle8.gif
+	frame	data/chars/igniz/idle9.gif
+	frame	data/chars/igniz/idle10.gif
+
+anim walk
+	loop	1
+	offset	72 118
+	bbox	56 9 28 108
+	delay	8
+	frame	data/chars/igniz/walk1.gif
+	frame	data/chars/igniz/walk2.gif
+	frame	data/chars/igniz/walk3.gif
+	frame	data/chars/igniz/walk4.gif
+	frame	data/chars/igniz/walk5.gif
+	frame	data/chars/igniz/walk6.gif
+	frame	data/chars/igniz/walk7.gif
+	frame	data/chars/igniz/walk8.gif
+
+anim pain
+	loop	0
+	offset	58 102
+	bbox	26 6 39 95
+	delay	5
+	frame	data/chars/igniz/pain1.gif
+	delay	10
+	frame	data/chars/igniz/pain2.gif
+	frame	data/chars/igniz/pain1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	63 111
+	attack	32 14 86 91 15 1
+	frame	data/chars/igniz/fall1.gif
+	attack	0 0 0 0 0
+	attack	1 27 113 51 15 1
+	frame	data/chars/igniz/fall2.gif
+	frame	data/chars/igniz/fall3.gif
+	attack	0 0 0 0 0
+	
+anim rise
+	loop	0
+	offset	60 97
+	delay	10
+	sound	data/chars/igniz/impresiv.wav
+	frame	data/chars/igniz/rise1.gif
+	frame	data/chars/igniz/rise2.gif
+	frame	data/chars/igniz/rise3.gif
+	frame	data/chars/igniz/rise4.gif
+	frame	data/chars/igniz/rise5.gif
+	
+anim attack1
+	range	1 100
+	loop	0
+	delay	5
+	offset	56 114
+	bbox	43 7 32 108
+	attack	78 13 80 29 10 0
+	frame	data/chars/igniz/atk101.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/igniz/atk102.gif
+	bbox	31 9 29 106
+	frame	data/chars/igniz/atk103.gif
+	attack	66 44 149 52 0
+	frame	data/chars/igniz/atk104.gif
+	frame	data/chars/igniz/atk105.gif
+	frame	data/chars/igniz/atk106.gif
+	frame	data/chars/igniz/atk107.gif
+	attack	0 0 0 0 0 0
+
+anim attack2
+	range	1 200
+	loop	0
+	delay	7
+	sound	data/chars/igniz/haveu.wav
+	offset	69 147
+	bbox	57 43 39 104
+	frame	data/chars/igniz/atk201.gif
+	frame	data/chars/igniz/atk202.gif
+	frame	data/chars/igniz/atk203.gif
+	frame	data/chars/igniz/atk204.gif
+	bbox	79 57 42 81
+	frame	data/chars/igniz/atk205.gif
+	frame	data/chars/igniz/atk206.gif
+	attack	135 43 60 65 10 0
+	frame	data/chars/igniz/atk207.gif
+	attack	0 0 0 0 0
+	attack	86 21 117 92 5 0
+	frame	data/chars/igniz/atk208.gif
+	attack	0 0 0 0 0
+	bbox	57 43 39 104
+	attack	34 8 185 106 5 0
+	frame	data/chars/igniz/atk209.gif
+	attack	0 0 0 0 0
+	attack	117 4 108 112 5 0 
+	frame	data/chars/igniz/atk210.gif
+	frame	data/chars/igniz/atk211.gif
+	frame	data/chars/igniz/atk212.gif
+	frame	data/chars/igniz/atk213.gif
+	frame	data/chars/igniz/atk214.gif
+	frame	data/chars/igniz/atk215.gif
+	frame	data/chars/igniz/atk216.gif
+	frame	data/chars/igniz/atk217.gif
+	frame	data/chars/igniz/atk218.gif
+	frame	data/chars/igniz/atk219.gif
+	attack	0 0 0 0 0
+
+anim attack3
+	range	110 300
+	shootframe	15
+	loop	0
+	delay	3
+	sound	data/chars/igniz/easy.wav
+	offset	78 194
+	bbox	60 83 34 112
+	frame	data/chars/igniz/shoot1.gif
+	frame	data/chars/igniz/shoot2.gif
+	frame	data/chars/igniz/shoot3.gif
+	frame	data/chars/igniz/shoot4.gif
+	frame	data/chars/igniz/shoot5.gif
+	frame	data/chars/igniz/shoot6.gif
+	frame	data/chars/igniz/shoot7.gif
+	frame	data/chars/igniz/shoot8.gif
+	frame	data/chars/igniz/shoot9.gif
+	frame	data/chars/igniz/shoot10.gif
+	frame	data/chars/igniz/shoot11.gif
+	frame	data/chars/igniz/shoot12.gif
+	frame	data/chars/igniz/shoot13.gif
+	frame	data/chars/igniz/shoot14.gif
+	frame	data/chars/igniz/shoot15.gif
+	bbox	73 85 39 111
+	frame	data/chars/igniz/shoot16.gif
+	bbox	91 84 39 111
+	frame	data/chars/igniz/shoot17.gif
+	frame	data/chars/igniz/shoot18.gif
+	frame	data/chars/igniz/shoot19.gif
+	frame	data/chars/igniz/shoot20.gif
+
+anim jumpattack
+	loop	0
+	offset	86 147
+	delay	15
+	bbox	70 24 53 48
+	frame	data/chars/igniz/jatk1.gif
+	frame	data/chars/igniz/jatk2.gif
+	delay	5
+	attack	108 88 40 55 15 1
+	frame	data/chars/igniz/jatk3.gif
+	frame	data/chars/igniz/jatk4.gif
+	frame	data/chars/igniz/jatk3.gif
+	frame	data/chars/igniz/jatk4.gif
+	frame	data/chars/igniz/jatk3.gif
+	frame	data/chars/igniz/jatk4.gif
+	frame	data/chars/igniz/jatk3.gif
+	frame	data/chars/igniz/jatk4.gif
+	attack	0 0 0 0 0 0
+
+anim special
+	range	10 80
+	loop	0
+	delay	6
+	offset	73 171
+	sound	data/chars/igniz/dontmake.wav
+	frame	data/chars/igniz/spec1.gif
+	frame	data/chars/igniz/spec2.gif
+	frame	data/chars/igniz/spec3.gif
+	frame	data/chars/igniz/spec4.gif
+	frame	data/chars/igniz/spec5.gif
+	frame	data/chars/igniz/spec6.gif
+	frame	data/chars/igniz/spec7.gif
+	frame	data/chars/igniz/spec8.gif
+	frame	data/chars/igniz/spec9.gif
+	attack	4 6 208 173 30 1
+	frame	data/chars/igniz/spec10.gif
+	frame	data/chars/igniz/spec11.gif
+	frame	data/chars/igniz/spec12.gif
+	frame	data/chars/igniz/spec14.gif
+	frame	data/chars/igniz/spec13.gif
+	frame	data/chars/igniz/spec15.gif
+	frame	data/chars/igniz/spec16.gif
+	frame	data/chars/igniz/spec17.gif
+	frame	data/chars/igniz/spec18.gif
+	frame	data/chars/igniz/spec19.gif
+	frame	data/chars/igniz/spec20.gif
+	frame	data/chars/igniz/spec21.gif
+	frame	data/chars/igniz/spec22.gif
+	frame	data/chars/igniz/spec23.gif
+	frame	data/chars/igniz/spec24.gif
+	frame	data/chars/igniz/spec25.gif
+	frame	data/chars/igniz/spec26.gif
+	frame	data/chars/igniz/spec27.gif
+	frame	data/chars/igniz/spec28.gif
+	frame	data/chars/igniz/spec29.gif
+	frame	data/chars/igniz/spec30.gif
+	frame	data/chars/igniz/spec31.gif
+	attack	0 0 0 0 0
+
+anim upper
+	loop	0
+	delay	3
+	offset	71 195
+	bbox	62 86 29 108
+	sound	data/chars/igniz/pointles.wav
+	frame	data/chars/igniz/upper1.gif
+	frame	data/chars/igniz/upper2.gif
+	frame	data/chars/igniz/upper3.gif
+	frame	data/chars/igniz/upper4.gif
+	frame	data/chars/igniz/upper5.gif
+	frame	data/chars/igniz/upper6.gif
+	frame	data/chars/igniz/upper7.gif
+	frame	data/chars/igniz/upper8.gif
+	frame	data/chars/igniz/upper9.gif
+	frame	data/chars/igniz/upper10.gif
+	frame	data/chars/igniz/upper11.gif
+	attack	96 5 59 159 15 1
+	frame	data/chars/igniz/upper12.gif
+	frame	data/chars/igniz/upper13.gif
+	frame	data/chars/igniz/upper14.gif
+	frame	data/chars/igniz/upper15.gif
+	frame	data/chars/igniz/upper16.gif
+	frame	data/chars/igniz/upper17.gif
+	frame	data/chars/igniz/upper18.gif
+	frame	data/chars/igniz/upper19.gif
+	frame	data/chars/igniz/upper20.gif
+	frame	data/chars/igniz/upper21.gif
+	frame	data/chars/igniz/upper22.gif
+	frame	data/chars/igniz/upper23.gif
+	
+
+

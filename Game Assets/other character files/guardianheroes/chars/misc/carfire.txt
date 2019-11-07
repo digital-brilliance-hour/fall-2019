@@ -1,0 +1,15 @@
+name	carfire
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	102 82
+	frame	data/chars/misc/carfire1.gif
+	frame	data/chars/misc/carfire2.gif
+	frame	data/chars/misc/carfire3.gif
+	frame	data/chars/misc/carfire4.gif
+

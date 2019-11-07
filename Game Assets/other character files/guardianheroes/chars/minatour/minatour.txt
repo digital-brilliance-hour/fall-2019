@@ -1,0 +1,146 @@
+name	Minatour
+health	300
+type	enemy
+speed	4
+gfxshadow 1
+icon	data/chars/Minatour/icon.gif
+diesound data/sounds/mindie.WAV
+falldie 1
+cantgrab 1
+#nolife 	1
+aimove chasez
+aimove chase
+aggression 30
+nodieblink 3
+palette	data/chars/minatour/walk3
+#remap	data/chars/Minatour/stand1.gif data/chars/Minatour/alt2.gif
+#remap	data/chars/Minatour/stand1.gif data/chars/Minatour/alt3.gif
+#remap	data/chars/Minatour/stand1.gif data/chars/Minatour/alt4.gif
+#remap	data/chars/Minatour/stand1.gif data/chars/Minatour/alt5.gif
+
+
+anim idle
+	loop	1
+	offset	44 116
+	bbox	34 34 26 73
+	delay	50
+	frame	data/chars/Minatour/walk3.gif
+	offset 	88 124
+	delay 100
+	sound	data/sounds/new/min.wav
+	frame	data/chars/Minatour/rise6.gif
+
+
+anim pain
+	sound	data/sounds/minhit.wav
+	loop	0
+	offset	84 124
+	bbox	33 7 57 84
+	delay	8
+	frame	data/chars/Minatour/rise3.gif
+	offset	84 124
+	bbox	33 7 57 84
+	delay	36
+	frame	data/chars/Minatour/rise5.gif
+	offset	84 124
+	bbox	33 7 57 84
+	delay	6
+	frame	data/chars/Minatour/rise3.gif
+
+
+anim fall
+    landframe 2
+	sound	data/sounds/minfal.wav
+	loop	0
+	delay	24
+	offset	50 120
+	frame	data/chars/Minatour/fall1.gif	
+	offset	100 126
+	frame	data/chars/Minatour/fall2.gif
+	offset	104 132
+	delay	140
+	frame	data/chars/Minatour/fall3.gif
+	
+
+anim walk
+	loop	1
+	delay	24
+	offset	44 116
+	bbox	34 34 26 73
+	frame	data/chars/Minatour/walk1.gif
+	frame	data/chars/Minatour/walk2.gif
+	frame	data/chars/Minatour/walk3.gif
+	frame	data/chars/Minatour/walk4.gif
+	frame	data/chars/Minatour/walk5.gif
+
+anim rise
+	loop	0
+	offset	84 124
+	delay	20
+	frame	data/chars/Minatour/rise2.gif
+	frame	data/chars/Minatour/rise3.gif
+	frame	data/chars/Minatour/rise2.gif
+	frame	data/chars/Minatour/rise3.gif
+	delay 30	
+	frame	data/chars/Minatour/rise4.gif
+	delay 15
+	sound	data/sounds/new/min2.wav
+	frame	data/chars/Minatour/rise5.gif
+	offset 	88 124
+	delay 30
+	frame	data/chars/Minatour/rise6.gif
+
+anim attack1
+	sound	data/sounds/swish2.wav
+	range	0 80
+	loop	0
+	delay	8
+	offset	90 120
+	bbox	84 40 42 56
+	frame	data/chars/Minatour/swipe1.gif
+	attack	90 20 80 104 25 1
+	frame	data/chars/Minatour/swipe2.gif
+	frame	data/chars/Minatour/swipe3.gif
+	frame	data/chars/Minatour/swipe4.gif
+	attack 0
+	
+
+anim upper 
+	sound	data/sounds/swish.wav
+	range	0 80
+	loop	0
+	delay	15
+	offset	90 120
+	bbox	84 40 42 56
+	frame	data/chars/Minatour/swipe1.gif
+	attack	90 20 80 104 25 1
+	frame	data/chars/Minatour/swipe2.gif
+
+
+anim throw
+	range	0 72
+	loop	0
+	delay	10
+	offset	112 128
+	frame	data/chars/Minatour/throw1.gif
+	frame	data/chars/Minatour/throw2.gif
+
+
+anim death
+	sound	data/sounds/minfal.wav
+	loop	0
+	delay	20
+	offset	50 120
+	frame	data/chars/Minatour/d1
+	frame	data/chars/Minatour/d2
+	offset	100 126
+	frame	data/chars/Minatour/d3
+	offset	104 132
+	delay	140
+	frame	data/chars/Minatour/d4
+
+
+
+
+
+

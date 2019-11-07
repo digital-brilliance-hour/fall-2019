@@ -1,0 +1,22 @@
+name	battle
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/battle/battle1.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 120
+	frame	data/bgs/dragons/battle/battle1.gif
+	frame	data/bgs/dragons/battle/battle2.gif
+	frame	data/bgs/dragons/battle/battle3.gif
+	frame	data/bgs/dragons/battle/battle4.gif
+	frame	data/bgs/dragons/battle/battle5.gif
+	frame	data/bgs/dragons/battle/battle6.gif
+	frame	data/bgs/dragons/battle/battle7.gif
+	frame	data/bgs/dragons/battle/battle8.gif
+	frame	data/bgs/dragons/battle/battle9.gif
+	frame	data/bgs/dragons/battle/battle10.gif
+	

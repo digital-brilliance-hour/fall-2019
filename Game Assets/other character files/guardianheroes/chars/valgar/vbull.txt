@@ -1,0 +1,168 @@
+
+name	  vbull
+health 	 150
+speed	 12
+running	23	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/valgar/icon.gif
+diesound    	sound	Data/sounds/bull.wav
+animal	1
+modelflag 1
+atchain 1 1 2 3
+
+alternatepal	data/chars/valgar/bull/testpal.gif
+alternatepal	data/chars/valgar/bull/testpal2.gif
+
+load	x
+knife	x
+
+#done//
+
+anim get
+	loop	0
+	offset  88 123
+	delay	20
+	sound	Data/sounds/bull.wav
+	frame	data/chars/valgar/bull/pain1.gif
+	frame	data/chars/valgar/bull/pain2.gif
+
+anim idle
+	loop	1
+	offset        129 227
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/valgar/bull/idle1.gif
+	frame	data/chars/valgar/bull/idle2.gif
+	frame	data/chars/valgar/bull/idle3.gif
+	frame	data/chars/valgar/bull/idle4.gif
+	frame	data/chars/valgar/bull/idle5.gif
+	frame	data/chars/valgar/bull/idle6.gif
+	frame	data/chars/valgar/bull/idle7.gif
+	frame	data/chars/valgar/bull/idle8.gif
+	frame	data/chars/valgar/bull/idle9.gif
+	frame	data/chars/valgar/bull/idle10.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  141 175
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/valgar/bull/walk1.gif
+	frame	data/chars/valgar/bull/walk2.gif
+	frame	data/chars/valgar/bull/walk3.gif
+	frame	data/chars/valgar/bull/walk4.gif
+        frame	data/chars/valgar/bull/walk5.gif
+        frame	data/chars/valgar/bull/walk6.gif
+        frame	data/chars/valgar/bull/walk7.gif
+	frame	data/chars/valgar/bull/walk8.gif
+
+anim run
+	loop	1
+	offset  147 181
+	bbox 	25 8 38 97
+	delay	7
+	attack	185 95 100 80 10 1 0 0 20
+	frame	data/chars/valgar/bull/run1.gif
+	frame	data/chars/valgar/bull/run2.gif
+	frame	data/chars/valgar/bull/run3.gif
+	frame	data/chars/valgar/bull/run4.gif
+	frame	data/chars/valgar/bull/run5.gif
+	frame	data/chars/valgar/bull/run6.gif
+	attack	0 0 0 0 0 0
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	5
+	move	7
+	offset	126 226
+	bbox	34 18 37 94
+	sound	Data/sounds/bull.wav
+	frame	data/chars/valgar/bull/2atk1.gif
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/valgar/bull/2atk2.gif
+	frame	data/chars/valgar/bull/2atk3.gif
+	frame	data/chars/valgar/bull/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/bull/2atk5.gif
+	frame	data/chars/valgar/bull/2atk6.gif
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	123 196
+	bbox	34 18 37 94
+	frame	data/chars/valgar/bull/atk1.gif
+	attack	169 115 150 85 15 0 0 0 14
+	frame	data/chars/valgar/bull/atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/bull/atk3.gif
+      
+anim attack2
+	range	5 150
+	loop	0
+	delay	5
+	offset	126 226
+	bbox	34 18 37 94
+	sound	Data/sounds/bull.wav
+	frame	data/chars/valgar/bull/2atk1.gif
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/valgar/bull/2atk2.gif
+	frame	data/chars/valgar/bull/2atk3.gif
+	frame	data/chars/valgar/bull/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/bull/2atk5.gif
+	frame	data/chars/valgar/bull/2atk6.gif
+
+anim attack3
+	range	5 150
+	loop	0
+	delay	5
+	offset	126 226
+	bbox	34 18 37 94
+	frame	data/chars/valgar/bull/2atk1.gif
+	attack	157 103 133 127 25 1 0 0 25
+	frame	data/chars/valgar/bull/2atk2.gif
+	frame	data/chars/valgar/bull/2atk3.gif
+	frame	data/chars/valgar/bull/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/bull/2atk5.gif
+	frame	data/chars/valgar/bull/2atk6.gif
+
+anim special
+	loop	0
+	delay	10
+	throwframe	4
+	offset	129 227
+	frame	data/chars/valgar/bull/spec1.gif
+	frame	data/chars/valgar/bull/spec2.gif
+	frame	data/chars/valgar/bull/spec3.gif
+	frame	data/chars/valgar/bull/spec4.gif
+	frame	data/chars/valgar/bull/spec5.gif
+
+
+anim fall
+	loop	0
+	offset  88 123
+	delay	20
+	frame	data/chars/valgar/bull/pain1.gif
+	frame	data/chars/valgar/bull/pain2.gif
+
+anim pain
+	loop	0
+	offset  88 123
+	delay	20
+	frame	data/chars/valgar/bull/pain1.gif
+	frame	data/chars/valgar/bull/pain2.gif
+
+

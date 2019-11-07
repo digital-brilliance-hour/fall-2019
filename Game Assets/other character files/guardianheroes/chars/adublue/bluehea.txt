@@ -1,0 +1,810 @@
+name	bluehea
+health	600
+speed	16
+type	enemy
+shadow	3
+noquake 1
+dust    dust
+cantgrab 1
+aggression -3
+nodrop 1
+bflash bflash
+falldie 1
+nodieblink 3
+facing 2
+subject_to_screen 1
+blockodds 1
+thold     49
+nopain 1
+defense attack2 85%
+defense burn 85%
+defense blast 85%
+defense shock 85%
+defense freeze 85%
+icon	data/chars/adublue/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/bluroar.wav
+fmap 1
+
+palette	data/chars/adublue/heidle1.gif
+
+alternatepal	data/chars/adublue/testpal.gif
+
+
+anim spawn
+	loop	0
+	offset	115 183
+	bbox	0 0 0 0
+	quakeframe 30 120 5
+	delay	150
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/adublue/heint01.gif
+	frame	data/chars/adublue/heint02.gif
+	frame	data/chars/adublue/heint03.gif
+	frame	data/chars/adublue/heint04.gif
+	frame	data/chars/adublue/heint05.gif
+	frame	data/chars/adublue/heint06.gif
+	frame	data/chars/adublue/heint07.gif
+	frame	data/chars/adublue/heint08.gif
+	frame	data/chars/adublue/heint09.gif
+	frame	data/chars/adublue/heint10.gif
+	frame	data/chars/adublue/heint11.gif
+	frame	data/chars/adublue/heint12.gif
+	frame	data/chars/adublue/heint13.gif
+	frame	data/chars/adublue/heint14.gif
+	frame	data/chars/adublue/heint15.gif
+	frame	data/chars/adublue/heint16.gif
+	frame	data/chars/adublue/heint17.gif
+	frame	data/chars/adublue/heint18.gif
+	frame	data/chars/adublue/heint19.gif
+	frame	data/chars/adublue/heint20.gif
+	frame	data/chars/adublue/heint21.gif
+	frame	data/chars/adublue/heint22.gif
+	frame	data/chars/adublue/heint23.gif
+	frame	data/chars/adublue/heint24.gif
+	frame	data/chars/adublue/heint25.gif
+	frame	data/chars/adublue/heint26.gif
+	frame	data/chars/adublue/heint27.gif
+	frame	data/chars/adublue/heint28.gif
+	frame	data/chars/adublue/heint29.gif
+	frame	data/chars/adublue/heint30.gif
+
+	delay	6
+	sound   data/sounds/bluroar.wav
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea102.gif
+	delay	3
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	offset	113 183
+	frame	data/chars/adublue/hea103.gif
+	offset	115 183
+	frame	data/chars/adublue/hea103.gif
+	delay	6
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea101.gif
+
+
+anim idle
+	loop	1
+	offset	115 183
+	bbox	60 65 113 118
+	delay	1
+	frame	data/chars/adublue/heidle1.gif
+
+anim walk
+	loop	1
+	offset	115 183
+	bbox	60 65 113 118
+	delay   12
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+
+anim backwalk
+	loop	1
+	offset	115 183
+	bbox	60 65 113 118
+	delay   12
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+	frame	data/chars/adublue/heidle1.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset	115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset	115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset	115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   23
+	frame	data/chars/adublue/heapa01.gif
+
+anim pain2
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim pain3
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	115 183
+	bbox	60 65 113 118
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+
+anim burn
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim bpain
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim shock
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim spain
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim fall
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	move    -10
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -8
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -6
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	move    -4
+	offset 115 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	move    -2
+	frame	data/chars/adublue/heapa01.gif
+	offset 113 183
+	frame	data/chars/adublue/heapa01.gif
+	offset 115 183
+	delay   20
+	move    0
+	frame	data/chars/adublue/heapa01.gif
+
+anim rise
+	loop	0
+	offset	115 183
+	delay	35
+	frame	data/chars/adublue/heapa01.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	frame	data/chars/adublue/heapa01.gif
+	frame	data/chars/adublue/heapa02.gif
+	frame	data/chars/adublue/heapa03.gif
+	frame	data/chars/adublue/heapa04.gif
+	frame	data/chars/adublue/heapa05.gif
+	frame	data/chars/adublue/heapa06.gif
+	frame	data/chars/adublue/heapa07.gif
+	frame	data/chars/adublue/heapa08.gif
+	frame	data/chars/adublue/heapa09.gif
+	frame	data/chars/adublue/heapa10.gif
+	frame	data/chars/adublue/heapa11.gif
+	frame	data/chars/adublue/heapa12.gif
+	frame	data/chars/adublue/heapa13.gif
+	frame	data/chars/adublue/heapa14.gif
+	frame	data/chars/adublue/heapa15.gif
+	frame	data/chars/adublue/heapa16.gif
+	frame	data/chars/adublue/heapa17.gif
+	frame	data/chars/adublue/heapa18.gif
+	frame	data/chars/adublue/heapa19.gif
+	frame	data/chars/adublue/heapa20.gif
+	frame	data/chars/adublue/heapa21.gif
+	frame	data/chars/adublue/heapa22.gif
+	frame	data/chars/adublue/heapa23.gif
+	frame	data/chars/adublue/heapa24.gif
+	frame	data/chars/adublue/heapa25.gif
+	frame	data/chars/adublue/heapa26.gif
+	frame	data/chars/adublue/heapa27.gif
+	frame	data/chars/adublue/heapa28.gif
+	frame	data/chars/adublue/heapa29.gif
+	frame	data/chars/adublue/heapa30.gif
+	frame	data/chars/adublue/heapa31.gif
+	frame	data/chars/adublue/heapa32.gif
+	frame	data/chars/adublue/heapa33.gif
+	frame	data/chars/adublue/heapa34.gif
+	frame	data/chars/adublue/heapa35.gif
+	frame	data/chars/adublue/heapa36.gif
+
+	delay	105
+	move 1000
+	frame	data/chars/adublue/heapa37.gif
+
+anim attack1
+	range	0 50
+	delay	18
+	offset	115 183
+	bbox	60 65 113 118
+	frame	data/chars/adublue/hea101.gif
+	delay	6
+	frame	data/chars/adublue/hea102.gif
+	attack2  100 95 80 75 15 1 0 0 12
+	frame	data/chars/adublue/hea103.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea102.gif
+	delay	35
+	frame	data/chars/adublue/hea101.gif
+
+anim attack2
+	range	51 100
+	delay	8
+	offset	115 183
+	bbox	60 65 113 118
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea103.gif
+	delay   1
+	blast   100 95 80 75 20 0 0 0 15
+	move    5
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	move    4
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    3
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	move    2
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    1
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	blast   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea101.gif
+
+	blast   100 95 80 75 20 0 0 0 15
+	move    5
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	move    4
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    3
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	move    2
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    1
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	blast   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea101.gif
+
+	blast   100 95 80 75 20 0 0 0 15
+	move    5
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	move    4
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    3
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	frame	data/chars/adublue/hea103.gif
+	move    2
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	frame	data/chars/adublue/hea102.gif
+	move    1
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	frame	data/chars/adublue/hea101.gif
+	blast   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea101.gif
+
+anim attack3
+	range	101 200
+	loop	0
+	delay	3
+	offset	115 183
+	bbox	60 65 113 118
+	sound   data/sounds/bluatt.wav
+
+	frame	data/chars/adublue/hea101.gif
+	offset 113 183
+	frame	data/chars/adublue/hea101.gif
+	offset 115 183
+	frame	data/chars/adublue/hea102.gif
+	offset 113 183
+	frame	data/chars/adublue/hea102.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+	frame	data/chars/adublue/hea103.gif
+	offset 113 183
+	frame	data/chars/adublue/hea103.gif
+	offset 115 183
+
+	delay	4
+	sound   data/sounds/bluligh.wav
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea201.gif
+	frame	data/chars/adublue/hea202.gif
+	frame	data/chars/adublue/hea203.gif
+	frame	data/chars/adublue/hea204.gif
+	frame	data/chars/adublue/hea205.gif
+	frame	data/chars/adublue/hea206.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea207.gif
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea208.gif
+	frame	data/chars/adublue/hea209.gif
+	frame	data/chars/adublue/hea210.gif
+	frame	data/chars/adublue/hea211.gif
+	frame	data/chars/adublue/hea212.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea213.gif
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea208.gif
+	frame	data/chars/adublue/hea209.gif
+	frame	data/chars/adublue/hea210.gif
+	frame	data/chars/adublue/hea211.gif
+	frame	data/chars/adublue/hea212.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea213.gif
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea208.gif
+	frame	data/chars/adublue/hea209.gif
+	frame	data/chars/adublue/hea210.gif
+	frame	data/chars/adublue/hea211.gif
+	frame	data/chars/adublue/hea212.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea213.gif
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea208.gif
+	frame	data/chars/adublue/hea209.gif
+	frame	data/chars/adublue/hea210.gif
+	frame	data/chars/adublue/hea211.gif
+	frame	data/chars/adublue/hea212.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea213.gif
+	shock   110 110 340 78 20 0 0 0 15
+	frame	data/chars/adublue/hea208.gif
+	frame	data/chars/adublue/hea209.gif
+	frame	data/chars/adublue/hea210.gif
+	frame	data/chars/adublue/hea211.gif
+	frame	data/chars/adublue/hea212.gif
+	shock   0 0 0 0 0 0 0 0 0
+	frame	data/chars/adublue/hea213.gif
+

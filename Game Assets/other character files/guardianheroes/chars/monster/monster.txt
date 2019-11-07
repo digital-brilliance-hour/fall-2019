@@ -1,0 +1,85 @@
+name	monster
+health	100
+speed	7
+type	enemy
+shadow	5
+icon	data/chars/monster/icon.gif
+falldie 1
+nodieblink 3
+palette	data/chars/monster/wlk1
+
+
+
+anim idle
+	loop	1
+	delay	18
+	offset	45 99
+	bbox	27 9 54 94
+	frame	data/chars/monster/wlk4.gif
+
+anim walk
+	loop	1
+	delay	17
+	offset	45 99
+	bbox	27 9 54 94
+	frame	data/chars/monster/wlk1.gif
+	frame	data/chars/monster/wlk2.gif
+	frame	data/chars/monster/wlk3.gif
+	frame	data/chars/monster/wlk4.gif
+	frame	data/chars/monster/wlk5.gif
+	frame	data/chars/monster/wlk6.gif
+
+anim attack1 
+	loop	0     
+	delay	13
+	offset	48 115
+        range   0 110
+         bbox	25 20 51 97
+	frame	data/chars/monster/atk1.gif
+        attack	74 44 90 36 18 1
+	frame	data/chars/monster/atk2.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/monster/atk3.gif
+
+
+
+anim pain
+	loop	0
+	offset	60 105
+	bbox	15 19 68 89
+	delay	15
+        frame	data/chars/monster/dmg.gif
+
+
+anim fall
+	loop	0
+	offset	62 51
+	delay	28
+	attack	36 13 64 43 10 1
+	frame	data/chars/monster/fall1.gif
+	frame	data/chars/monster/fall2.gif
+
+
+
+anim rise
+	loop	0
+	offset	66 53
+	delay	20
+	frame	data/chars/monster/rise.gif
+
+anim death
+	loop	0
+	offset	60 105
+	delay	28
+	frame	data/chars/monster/d1
+	frame	data/chars/monster/d2
+	offset	62 51
+	frame	data/chars/monster/d3
+	frame	data/chars/monster/d4
+
+
+
+
+
+
+

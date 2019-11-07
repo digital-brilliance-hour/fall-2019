@@ -1,0 +1,143 @@
+name    	 Vehelits
+health  	 100
+speed   	 9
+type    	 enemy
+aimove    	 chase
+nodrop  	 1
+noquake   	 1
+cantgrab  	 1
+death   	 1
+score   	 5000 5
+setlayer   	 100
+hostile  	 player
+candamage  	 player
+icon    	 data/chars/vehelits/vicon.gif
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load	         Origin
+load	         Neck
+
+palette	         data/chars/vehelits/vehelits.gif
+alternatepal	 data/chars/vehelits/gargoyle.gif
+alternatepal	 data/chars/vehelits/belial.gif
+alternatepal	 data/chars/vehelits/vbright.gif
+
+
+anim spawn
+	delay	1
+	offset	49 24
+	seta	95
+	frame	data/chars/vehelits/vehelits.gif
+        @cmd    spawnChainPoint "Origin" 0 0 0
+	frame	data/chars/vehelits/vehelits.gif
+        @cmd    spawnChainLink "Neck" 0.875 0 0 0
+        @cmd    spawnChainLink "Neck" 0.75 0 0 0
+        @cmd    spawnChainLink "Neck" 0.625 0 0 0
+        @cmd    spawnChainLink "Neck" 0.5 0 0 0
+        @cmd    spawnChainLink "Neck" 0.375 0 0 0
+        @cmd    spawnChainLink "Neck" 0.25 0 0 0
+        @cmd    spawnChainLink "Neck" 0.125 0 0 0
+	frame	data/chars/vehelits/vehelits.gif
+        @cmd    anichange "ANI_FOLLOW1"
+	frame	data/chars/vehelits/vehelits.gif
+
+anim follow1
+	loop	1
+	delay	240
+	seta	95
+	offset	49 24
+        sound	data/chars/vehelits/cry.wav
+	frame	data/chars/vehelits/vehelits.gif
+	delay	2
+        @cmd    attack1 -160 0 0 70 "ANI_FOLLOW2"
+	frame	data/chars/vehelits/vehelits.gif
+
+anim follow2
+	delay	2
+	seta	95
+	offset	49 24
+	frame	data/chars/vehelits/vehelits.gif
+
+anim idle
+	loop	1
+	delay	12
+	seta	95
+	offset	49 24
+	bbox	21 4 58 45
+	attack	21 4 58 45 12 1
+	frame	data/chars/vehelits/vehelits.gif
+	attack	0
+	frame	data/chars/vehelits/vehelits.gif
+
+anim walk
+	loop	1
+	delay	40
+	seta	95
+	offset	49 24
+	bbox	21 4 58 45
+	attack	21 4 58 45 12 1
+        sound	data/chars/vehelits/cry.wav
+	frame	data/chars/vehelits/vehelits.gif
+	attack	0
+	frame	data/chars/vehelits/vehelits.gif
+	attack	21 4 58 45 12 1
+	frame	data/chars/vehelits/vehelits.gif
+	attack	0
+	frame	data/chars/vehelits/vehelits.gif
+	attack	21 4 58 45 12 1
+	frame	data/chars/vehelits/vehelits.gif
+	attack	0
+	frame	data/chars/vehelits/vehelits.gif
+
+
+anim death
+	delay	150
+#	seta	95
+	offset	49 24
+        bouncefactor 3
+	frame	data/chars/vehelits/vehelits.gif
+	delay	10
+	frame	data/chars/misc/empty.gif
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif
+
+anim pain
+	delay	15
+	seta	95
+	offset	49 24
+	attack	21 4 58 45 12 1
+        sound	data/chars/vehelits/pain.wav
+	frame	data/chars/vehelits/vehelits.gif
+	attack	0
+	frame	data/chars/vehelits/vehelits.gif
+
+anim pain2
+	delay	25
+	seta	95
+	offset	49 24
+	attack	21 4 58 45 12 1
+        @cmd    dasher -4 0 0
+        sound	data/chars/vehelits/pain.wav
+	frame	data/chars/vehelits/vehelits.gif
+	delay	10
+	attack	0
+        @cmd    stop
+	frame	data/chars/vehelits/vehelits.gif
+
+anim fall
+	offset	49 24
+	delay	30
+	seta	95
+        @cmd    dasher -4 0 0
+	frame	data/chars/vehelits/vehelits.gif
+	delay	10
+        @cmd    stop
+	frame	data/chars/vehelits/vehelits.gif
+        @cmd    beidle
+	frame	data/chars/vehelits/vehelits.gif
+
+anim rise
+	delay	5
+	seta	95
+	offset	49 24
+	frame	data/chars/vehelits/vehelits.gif

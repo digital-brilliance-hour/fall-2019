@@ -1,0 +1,18 @@
+name	wod
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+anim idle
+	loop	1
+	delay	400
+	offset	941 210
+	frame	data/chars/misc/wod0.gif
+	frame	data/chars/misc/wod1.gif
+	delay 	10
+	frame	data/chars/misc/wod2.gif
+	frame	data/chars/misc/wod3.gif
+	delay	400
+	frame	data/chars/misc/wod4.gif
+	frame	data/chars/misc/wod5.gif

@@ -1,0 +1,23 @@
+name	fall2
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/falls1.gif
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 290
+	frame	data/chars/misc/falls1.gif
+	frame	data/chars/misc/falls2.gif
+	frame	data/chars/misc/falls3.gif
+	frame	data/chars/misc/falls4.gif
+	frame	data/chars/misc/falls5.gif
+	frame	data/chars/misc/falls6.gif
+	frame	data/chars/misc/falls7.gif
+	frame	data/chars/misc/falls8.gif
+
+
+

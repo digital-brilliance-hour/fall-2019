@@ -1,0 +1,59 @@
+name	rock
+health	1
+nolife  1
+type	enemy
+noquake 1
+falldie 1
+subtype flydie
+shadow	0
+speed 25
+
+anim idle
+	loop	1
+	delay	1
+	offset	-25 45
+	bbox    3 7 32 4
+	attack2  33 47 57 31 25 1
+	hitfx   data/sounds/hit.wav
+	hitflash Flash5
+	frame	data/chars/cyclops/rock01.gif
+	attack2  0 0 0 0 0 0
+	frame	data/chars/cyclops/rock01.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	-25 45
+	frame	data/chars/cyclops/rock02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock07.gif
+	move	500
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	-25 45
+	frame	data/chars/cyclops/rock02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/cyclops/rock07.gif
+	move	500
+	frame	data/chars/misc/empty.gif
+
+

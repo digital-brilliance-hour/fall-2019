@@ -1,0 +1,17 @@
+name	canon
+health	1
+type	enemy
+speed 40
+shadow	0
+candamage enemy obstacle
+#icon	data/chars/misc/meaticon.gif
+
+anim idle
+	loop	1
+	delay 7
+	frame	data/chars/tank/can1.gif
+	frame	data/chars/tank/can2.gif
+
+
+
+

@@ -1,0 +1,196 @@
+name	banisher
+health	120
+speed	9
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 20
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie 1
+aimove chase
+icon	data/chars/banisher/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/banisher/idle1.gif
+
+
+alternatepal	data/chars/banisher/testpal.gif
+alternatepal	data/chars/banisher/testpal2.gif
+
+#alternatepal	data/chars/banisher/testpal2.gif
+#alternatepal	data/chars/banisher/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  72 172
+	bbox 	43 88 67 82
+	delay	22
+	frame	data/chars/banisher/idle1.gif
+	frame	data/chars/banisher/idle2.gif
+	frame	data/chars/banisher/idle3.gif
+	frame	data/chars/banisher/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset  72 172
+	bbox 	43 88 67 82
+	delay	16
+	frame	data/chars/banisher/walk1.gif
+	frame	data/chars/banisher/walk2.gif
+	frame	data/chars/banisher/walk3.gif
+	frame	data/chars/banisher/walk4.gif
+	frame	data/chars/banisher/walk5.gif
+	frame	data/chars/banisher/walk6.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  72 172
+	bbox 	43 88 67 82
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/banisher/block1.gif
+	offset	74 172
+	frame	data/chars/banisher/block2.gif
+	move    -8
+	offset  72 172
+	frame	data/chars/banisher/block2.gif
+	offset	74 172
+	frame	data/chars/banisher/block2.gif
+	move    -6
+	offset  72 172
+	frame	data/chars/banisher/block2.gif
+	offset	74 172
+	frame	data/chars/banisher/block2.gif
+	move    -4
+	offset  72 172
+	frame	data/chars/banisher/block2.gif
+	offset	74 172
+	frame	data/chars/banisher/block2.gif
+	offset  72 172
+	move    -2
+	frame	data/chars/banisher/block2.gif
+	offset	74 172
+	frame	data/chars/banisher/block2.gif
+	offset  72 172
+	delay   20
+	move    0
+	frame	data/chars/banisher/block1.gif
+
+anim pain
+	loop	0
+	delay	8
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/pain1.gif
+	frame	data/chars/banisher/pain2.gif
+	frame	data/chars/banisher/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/fall1.gif
+	frame	data/chars/banisher/fall2.gif
+	delay	1000
+	frame	data/chars/banisher/fall3.gif
+	delay	20
+	frame	data/chars/banisher/fall4.gif
+	frame	data/chars/banisher/fall4.gif
+
+
+anim death
+	landframe	4
+	loop	0
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/fall1.gif
+	frame	data/chars/banisher/fall2.gif
+	delay	1000
+	frame	data/chars/banisher/fall3.gif
+	delay	20
+	frame	data/chars/banisher/fall4.gif
+	frame	data/chars/banisher/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  72 172
+	frame	data/chars/banisher/rise1.gif
+
+
+anim riseattack
+	range	0 65
+	loop	0
+	delay	8
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/atk1.gif
+	frame	data/chars/banisher/atk2.gif
+	attack	83 93 68 79 20 1 0 0 24
+	frame	data/chars/banisher/atk3.gif
+	frame	data/chars/banisher/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/banisher/atk5.gif
+
+anim attack1
+	range	0 65
+	loop	0
+	delay	10
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/atk1.gif
+	frame	data/chars/banisher/atk2.gif
+	attack	83 93 68 79 20 1 0 0 24
+	frame	data/chars/banisher/atk3.gif
+	frame	data/chars/banisher/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/banisher/atk5.gif
+
+
+
+anim attack2
+	range	65 105
+	loop	0
+	delay	10
+	offset  72 172
+	bbox 	43 88 67 82
+	frame	data/chars/banisher/2atk1.gif
+	frame	data/chars/banisher/2atk2.gif
+	frame	data/chars/banisher/2atk3.gif
+	attack	108 90 104 82 20 1 0 0 35
+	frame	data/chars/banisher/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/banisher/2atk3.gif
+
+anim death
+	loop	0
+	offset  72 172
+	delay	25
+	frame	data/chars/banisher/d1
+	frame	data/chars/banisher/d2
+	frame	data/chars/banisher/d3
+	frame	data/chars/banisher/d4
+	
+
+
+
+

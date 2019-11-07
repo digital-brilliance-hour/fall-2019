@@ -1,0 +1,240 @@
+name	skywar
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/skywar/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/skywar/idle1.gif
+
+
+#alternatepal	data/chars/skywar/testpal.gif
+#alternatepal	data/chars/skywar/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  83 157
+	bbox 	57 71 55 87
+	delay	16
+	frame	data/chars/skywar/idle1.gif
+	frame	data/chars/skywar/idle2.gif
+	frame	data/chars/skywar/idle3.gif
+	frame	data/chars/skywar/idle4.gif
+	frame	data/chars/skywar/idle3.gif
+	frame	data/chars/skywar/idle2.gif
+
+anim walk
+	loop	1
+	offset  83 157
+	bbox 	57 71 55 87
+	delay	13
+	frame	data/chars/skywar/walk1.gif
+	frame	data/chars/skywar/walk2.gif
+	frame	data/chars/skywar/walk3.gif
+	frame	data/chars/skywar/walk4.gif
+	frame	data/chars/skywar/walk5.gif
+	frame	data/chars/skywar/walk6.gif
+
+anim run
+	loop	1
+	offset  83 157
+	bbox 	57 71 55 87
+	delay	13
+	frame	data/chars/skywar/run1.gif
+	frame	data/chars/skywar/run2.gif
+	frame	data/chars/skywar/run3.gif
+	frame	data/chars/skywar/run4.gif
+
+anim runattack
+	range	0 66
+	loop	0
+	delay	4
+	move	15
+	offset  83 157
+#	bbox 	57 71 55 87
+	sound	data/chars/skywar/hard.wav
+	frame	data/chars/skywar/ratk1.gif
+	attack	21 80 137 60 25 1 0 0 20
+	frame	data/chars/skywar/ratk2.gif
+	frame	data/chars/skywar/ratk3.gif
+	frame	data/chars/skywar/ratk4.gif
+	frame	data/chars/skywar/ratk5.gif
+	frame	data/chars/skywar/ratk2.gif
+	frame	data/chars/skywar/ratk3.gif
+	frame	data/chars/skywar/ratk4.gif
+	frame	data/chars/skywar/ratk5.gif
+	attack	0 0 0 0 0
+	frame	data/chars/skywar/ratk1.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  83 157
+	bbox 	57 71 55 87
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/skywar/block1.gif
+	offset	85 157
+	frame	data/chars/skywar/block2.gif
+	move    -8
+	offset	83 157
+	frame	data/chars/skywar/block2.gif
+	offset	85 157
+	frame	data/chars/skywar/block2.gif
+	move    -6
+	offset	83 157
+	frame	data/chars/skywar/block2.gif
+	offset	85 157
+	frame	data/chars/skywar/block2.gif
+	move    -4
+	offset	83 157
+	frame	data/chars/skywar/block2.gif
+	offset	85 157
+	frame	data/chars/skywar/block2.gif
+	offset	83 157
+	move    -2
+	frame	data/chars/skywar/block2.gif
+	offset	85 157
+	frame	data/chars/skywar/block2.gif
+	offset	83 157
+	delay   20
+	move    0
+	frame	data/chars/skywar/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset  83 157
+	bbox 	57 71 55 87
+	frame	data/chars/skywar/pain1.gif
+	frame	data/chars/skywar/pain2.gif
+	frame	data/chars/skywar/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset  83 157
+	frame	data/chars/skywar/fall1.gif
+	frame	data/chars/skywar/fall2.gif
+	delay	1000
+	frame	data/chars/skywar/fall3.gif
+	delay	20
+	frame	data/chars/skywar/fall4.gif
+	frame	data/chars/skywar/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset  83 157
+	frame	data/chars/skywar/fall1.gif
+	frame	data/chars/skywar/fall2.gif
+	delay	1000
+	frame	data/chars/skywar/fall3.gif
+	delay	20
+	frame	data/chars/skywar/fall4.gif
+	frame	data/chars/skywar/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  83 157
+	frame	data/chars/skywar/rise1.gif
+
+anim riseattack
+	range	0 65
+	loop	0
+	delay	7
+	offset  83 157
+#	bbox 	57 71 55 87
+	sound	data/chars/skywar/light.wav
+	frame	data/chars/skywar/atk1.gif
+	frame	data/chars/skywar/atk2.gif
+	attack	100 62 66 96 10 0 0 0 14
+	frame	data/chars/skywar/atk3.gif
+	frame	data/chars/skywar/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk5.gif
+	frame	data/chars/skywar/atk6.gif
+	frame	data/chars/skywar/atk7.gif
+	attack	107 96 65 57 20 1 0 0 25
+	frame	data/chars/skywar/atk8.gif
+	frame	data/chars/skywar/atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk10.gif
+	frame	data/chars/skywar/atk11.gif
+
+anim attack1
+	range	0 65
+	loop	0
+	delay	7
+	offset  83 157
+	bbox 	57 71 55 87
+	sound	data/chars/skywar/light.wav
+	frame	data/chars/skywar/atk1.gif
+	frame	data/chars/skywar/atk2.gif
+	attack	100 62 66 96 10 0 0 0 14
+	frame	data/chars/skywar/atk3.gif
+	frame	data/chars/skywar/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk5.gif
+	frame	data/chars/skywar/atk6.gif
+	frame	data/chars/skywar/atk7.gif
+	attack	107 96 65 57 20 1 0 0 25
+	frame	data/chars/skywar/atk8.gif
+	frame	data/chars/skywar/atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk10.gif
+	frame	data/chars/skywar/atk11.gif
+
+anim special
+	range	0 65
+	loop	0
+	delay	7
+	offset  83 157
+#	bbox 	57 71 55 87
+	sound	data/chars/skywar/light.wav
+	frame	data/chars/skywar/atk1.gif
+	frame	data/chars/skywar/atk2.gif
+	attack	100 62 66 96 10 0 0 0 14
+	frame	data/chars/skywar/atk3.gif
+	frame	data/chars/skywar/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk5.gif
+	frame	data/chars/skywar/atk6.gif
+	frame	data/chars/skywar/atk7.gif
+	attack	107 96 65 57 20 1 0 0 25
+	frame	data/chars/skywar/atk8.gif
+	frame	data/chars/skywar/atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/skywar/atk10.gif
+	frame	data/chars/skywar/atk11.gif
+
+
+

@@ -1,0 +1,136 @@
+
+name	  rhorse
+health 	 150
+speed	 14
+#running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/randy/icon
+diesound    data/chars/burnking/sounds/die.wav
+animal	1
+modelflag 1
+atchain 1 1 1 1
+weaploss	2
+facing 1
+nodrop	1
+falldie	2
+load	gshot
+knife	gshot
+
+alternatepal	data/chars/randy/horse/testpal
+
+
+#done//
+
+anim get
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+	frame	data/chars/randy/horse/run1
+	frame	data/chars/randy/horse/run2
+	frame	data/chars/randy/horse/run3
+	frame	data/chars/randy/horse/run4
+        frame	data/chars/randy/horse/run5
+        frame	data/chars/randy/horse/run6
+
+
+
+anim idle
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/randy/horse/run1
+	frame	data/chars/randy/horse/run2
+	frame	data/chars/randy/horse/run3
+	frame	data/chars/randy/horse/run4
+        frame	data/chars/randy/horse/run5
+        frame	data/chars/randy/horse/run6
+
+	
+
+#done//
+anim run
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/randy/horse/run1
+	frame	data/chars/randy/horse/run2
+	frame	data/chars/randy/horse/run3
+	frame	data/chars/randy/horse/run4
+        frame	data/chars/randy/horse/run5
+        frame	data/chars/randy/horse/run6
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	3
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/randy/horse/atk1
+	frame	data/chars/randy/horse/atk2
+	frame	data/chars/randy/horse/atk3
+	frame	data/chars/randy/horse/atk4
+	frame	data/chars/randy/horse/atk5
+	frame	data/chars/randy/horse/atk6
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	3
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/randy/horse/atk1
+	frame	data/chars/randy/horse/atk2
+	frame	data/chars/randy/horse/atk3
+	frame	data/chars/randy/horse/atk4
+	frame	data/chars/randy/horse/atk5
+	frame	data/chars/randy/horse/atk6
+
+
+anim fall
+	loop	0
+	bbox 	147 100 100 100
+	delay	7
+	offset	38 25
+	frame	data/chars/randy/horse/die1
+
+anim death
+	loop	0
+	bbox 	147 100 100 100
+	delay	7
+	offset	38 25
+	frame	data/chars/randy/horse/die1
+
+anim pain
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/randy/horse/pain1
+	frame	data/chars/randy/horse/pain2
+	frame	data/chars/randy/horse/pain3
+	frame	data/chars/randy/horse/pain4
+	frame	data/chars/randy/horse/pain5
+	frame	data/chars/randy/horse/pain6
+
+
+
+
+

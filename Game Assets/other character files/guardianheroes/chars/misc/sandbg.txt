@@ -1,0 +1,20 @@
+name	sandbg
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/chars/misc/ss1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 175
+	frame	data/chars/misc/ss1.gif
+	frame	data/chars/misc/ss2.gif
+	frame	data/chars/misc/ss3.gif
+	frame	data/chars/misc/ss4.gif
+	frame	data/chars/misc/ss5.gif
+	frame	data/chars/misc/ss6.gif
+	frame	data/chars/misc/ss7.gif
+	frame	data/chars/misc/ss8.gif
+	frame	data/chars/misc/ss9.gif

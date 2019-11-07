@@ -1,0 +1,225 @@
+name	macho
+health	500
+speed	12
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/macho/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+atchain	1 1 2 3
+palette	data/chars/macho/idle1.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+
+
+#alternatepal	data/chars/macho/testpal.gif
+#alternatepal	data/chars/macho/testpal2.gif
+#alternatepal	data/chars/macho/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  66 158
+	bbox 	36 72 61 86
+	delay	22
+	frame	data/chars/macho/idle1.gif
+	frame	data/chars/macho/idle2.gif
+	frame	data/chars/macho/idle3.gif
+	frame	data/chars/macho/idle4.gif
+	frame	data/chars/macho/idle3.gif
+	frame	data/chars/macho/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset  67 153
+	bbox 	36 72 61 86
+	delay	16
+	frame	data/chars/macho/walk1.gif
+	frame	data/chars/macho/walk2.gif
+	frame	data/chars/macho/walk3.gif
+	frame	data/chars/macho/walk4.gif
+	frame	data/chars/macho/walk5.gif
+	frame	data/chars/macho/walk6.gif
+
+anim run
+	loop	1
+	offset  67 153
+	bbox 	36 72 61 86
+	delay	11
+	frame	data/chars/macho/walk1.gif
+	frame	data/chars/macho/walk2.gif
+	frame	data/chars/macho/walk3.gif
+	frame	data/chars/macho/walk4.gif
+	frame	data/chars/macho/walk5.gif
+	frame	data/chars/macho/walk6.gif
+
+anim runattack
+	range	0 90
+	loop	0
+	delay	9
+	offset  69 153
+	move	8
+	bbox 	36 72 61 86
+	frame	data/chars/macho/3atk1.gif
+	frame	data/chars/macho/3atk2.gif
+	attack	62 85 72 65 20 1 0 0 28
+	frame	data/chars/macho/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/macho/3atk4.gif
+	frame	data/chars/macho/3atk5.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  66 153
+	bbox 	36 72 61 86
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/macho/block1.gif
+	offset	68 153
+	frame	data/chars/macho/block2.gif
+	move    -8
+	offset  66 153
+	frame	data/chars/macho/block2.gif
+	offset	68 153
+	frame	data/chars/macho/block2.gif
+	move    -6
+	offset  66 153
+	frame	data/chars/macho/block2.gif
+	offset	68 153
+	frame	data/chars/macho/block2.gif
+	move    -4
+	offset  66 153
+	frame	data/chars/macho/block2.gif
+	offset	68 153
+	frame	data/chars/macho/block2.gif
+	offset  66 153
+	move    -2
+	frame	data/chars/macho/block2.gif
+	offset	68 153
+	frame	data/chars/macho/block2.gif
+	offset  66 153
+	delay   20
+	move    0
+	frame	data/chars/macho/block1.gif
+
+anim pain
+	loop	0
+	delay	12
+	offset  64 152
+	bbox 	36 72 61 86
+	frame	data/chars/macho/pain1.gif
+	frame	data/chars/macho/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	offset  62 149
+	frame	data/chars/macho/fall1.gif
+	frame	data/chars/macho/fall2.gif
+	delay	1000
+	frame	data/chars/macho/fall3.gif
+	delay	20
+	frame	data/chars/macho/fall4.gif
+	frame	data/chars/macho/fall4.gif
+
+
+
+anim death
+	loop	0
+	delay	15
+	offset  62 149
+	move	-10
+	frame	data/chars/macho/d1
+	frame	data/chars/macho/d2
+	frame	data/chars/macho/d3
+	frame	data/chars/macho/d4
+	move	0
+	frame	data/chars/macho/d5
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  65 153
+	frame	data/chars/macho/rise1.gif
+
+
+anim riseattack
+	range	0 70
+	loop	0
+	delay	11
+	offset  69 152
+	bbox 	44 95 73 86
+	frame	data/chars/macho/2atk1.gif
+	attack	92 94 70 52 20 1 0 0 29
+	frame	data/chars/macho/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/macho/2atk1.gif
+
+anim attack1
+	range	0 70
+	loop	0
+	delay	7
+	offset  65 152
+	bbox 	36 72 61 86
+	frame	data/chars/macho/atk1.gif
+	attack	64 60 60 63 10 0 0 0 14
+	frame	data/chars/macho/atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/macho/atk1.gif
+
+
+
+anim attack2
+	range	0 70
+	loop	0
+	delay	8
+	offset  69 152
+	bbox 	36 72 61 86
+	frame	data/chars/macho/2atk1.gif
+	attack	58 68 66 66 10 0 0 0 13
+	frame	data/chars/macho/2atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/macho/2atk1.gif
+
+anim attack3
+	range	0 70
+	loop	0
+	delay	9
+	offset  69 153
+	bbox 	36 72 61 86
+	frame	data/chars/macho/3atk1.gif
+	frame	data/chars/macho/3atk2.gif
+	attack	62 85 72 65 20 1 0 0 28
+	frame	data/chars/macho/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/macho/3atk4.gif
+	frame	data/chars/macho/3atk5.gif
+
+
+
+

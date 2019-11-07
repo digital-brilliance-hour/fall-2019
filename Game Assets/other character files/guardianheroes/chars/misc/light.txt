@@ -1,0 +1,116 @@
+name	light
+health	1
+type	pshot
+speed	20
+jumpheight	2
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/ginjirou/spell/ball1.gif
+
+anim idle
+	loop	0
+	delay	10
+	offset	20 36
+	attack	4 5 74 64 20 1 0 0 20
+	frame	data/chars/ginjirou/spell/ball1.gif
+	offset	21 39
+	frame	data/chars/ginjirou/spell/ball2.gif
+	offset	21 36
+	frame	data/chars/ginjirou/spell/ball3.gif
+	offset	20 36
+	frame	data/chars/ginjirou/spell/ball4.gif
+	offset	19 37
+	frame	data/chars/ginjirou/spell/ball5.gif
+	offset	19 34
+	frame	data/chars/ginjirou/spell/ball6.gif
+	offset	18 37
+	frame	data/chars/ginjirou/spell/ball7.gif
+	offset	19 35
+	frame	data/chars/ginjirou/spell/ball8.gif
+	offset	20 37
+	frame	data/chars/ginjirou/spell/ball9.gif
+	offset	21 39
+	frame	data/chars/ginjirou/spell/ball10.gif
+	offset	21 37
+	frame	data/chars/ginjirou/spell/ball11.gif
+	offset	20 38
+	frame	data/chars/ginjirou/spell/ball12.gif
+	offset	19 36
+	frame	data/chars/ginjirou/spell/ball13.gif
+	offset	19 38
+	frame	data/chars/ginjirou/spell/ball14.gif
+	offset	18 39
+	frame	data/chars/ginjirou/spell/ball15.gif
+	offset	19 36
+	frame	data/chars/ginjirou/spell/ball16.gif
+	
+	
+
+anim attack1
+	loop	0
+	delay	11
+	attack	0 0 260 470 25 1 0 0 20
+	offset	64 472
+	frame	data/chars/ginjirou/spell/super1.gif
+	offset	49 472
+	frame	data/chars/ginjirou/spell/super2.gif
+	offset	80 454
+	frame	data/chars/ginjirou/spell/super3.gif
+	offset	105 454
+	frame	data/chars/ginjirou/spell/super4.gif
+	offset	111 453
+	frame	data/chars/ginjirou/spell/super5.gif
+	offset	113 454
+	frame	data/chars/ginjirou/spell/super6.gif
+	offset	119 456
+	frame	data/chars/ginjirou/spell/super7.gif
+	offset	126 458
+	frame	data/chars/ginjirou/spell/super8.gif
+	offset	126 459
+	frame	data/chars/ginjirou/spell/super9.gif
+	offset	133 454
+	frame	data/chars/ginjirou/spell/super10.gif
+	offset	141 454
+	frame	data/chars/ginjirou/spell/super11.gif
+	offset	136 448
+	frame	data/chars/ginjirou/spell/super12.gif
+	offset	136 448
+	frame	data/chars/ginjirou/spell/super13.gif
+	offset	137 451
+	frame	data/chars/ginjirou/spell/super14.gif
+	offset	137 448
+	frame	data/chars/ginjirou/spell/super15.gif
+	offset	128 451
+	frame	data/chars/ginjirou/spell/super16.gif
+	offset	134 427
+	frame	data/chars/ginjirou/spell/super17.gif
+	offset	158 427
+	frame	data/chars/ginjirou/spell/super18.gif
+	offset	158 315
+	frame	data/chars/ginjirou/spell/super19.gif
+	offset	139 317
+	frame	data/chars/ginjirou/spell/super20.gif
+	offset	143 32
+	frame	data/chars/ginjirou/spell/super21.gif
+	attack	0 0 0 0 0 0
+
+anim attack2
+	loop	0
+	delay	12
+	offset	57 84
+	attack	0 0 227 209 30 1 0 0 25
+	frame	data/chars/ginjirou/spell/flash1.gif
+	offset	60 74
+	frame	data/chars/ginjirou/spell/flash2.gif
+	offset	60 65
+	frame	data/chars/ginjirou/spell/flash3.gif
+	offset	58 67
+	frame	data/chars/ginjirou/spell/flash4.gif
+	offset	52 64
+	frame	data/chars/ginjirou/spell/flash5.gif
+	offset	53 59
+	frame	data/chars/ginjirou/spell/flash6.gif
+	attack	0 0 0 0 0
+
+

@@ -1,0 +1,44 @@
+name	kabolt
+health	10000
+type	npc
+hostile enemy
+candamage enemy 
+shadow	0
+speed   50
+alpha 1
+lifespan 3
+subtype chase
+aimove  chase
+palette	data/chars/misc/12.gif
+aggression 1000
+remove 0
+
+nolife 1
+
+anim spawn
+	loop	0
+	delay	10
+        offset  0 50
+	frame	data/chars/misc/end.gif
+
+anim idle
+	loop	1
+	delay	10
+        offset  0 50
+	frame	data/chars/misc/end.gif
+
+anim walk
+	loop	1
+	delay	10
+        offset  0 50
+	frame	data/chars/misc/end.gif
+
+anim attack1
+        range   0 30
+        custentity gbolt
+        spawnframe 0 1 1 1 0
+	delay	60
+        offset  0 50
+	frame	data/chars/misc/end.gif
+	frame	data/chars/misc/end.gif
+

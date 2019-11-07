@@ -1,0 +1,166 @@
+name	ghsol
+health	100
+speed	10
+type	enemy
+shadow	0
+aggression 25
+gfxshadow	1
+aimove chase
+nodieblink 3
+falldie 1
+hostile Player npc
+candamage npc Player
+icon	data/chars/ghsol/icon.gif
+diesound data/sounds/die1.wav
+palette	data/chars/ghsol/idle1.gif
+
+alternatepal	data/chars/ghsol/testpal.gif
+alternatepal	data/chars/ghsol/testpal2.gif
+alternatepal	data/chars/ghsol/testpal3.gif
+alternatepal	data/chars/ghsol/testpal4.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  77 149
+	bbox 	61 95 40 54
+	delay	15
+	frame	data/chars/ghsol/idle1.gif
+	frame	data/chars/ghsol/idle2.gif
+	frame	data/chars/ghsol/idle3.gif
+	frame	data/chars/ghsol/idle4.gif
+	frame	data/chars/ghsol/idle3.gif
+	frame	data/chars/ghsol/idle2.gif
+
+	
+anim walk
+	loop	1
+	offset	92 145
+	bbox 	67 75 40 54
+	delay	13
+	frame	data/chars/ghsol/walk1.gif
+	frame	data/chars/ghsol/walk2.gif
+	frame	data/chars/ghsol/walk3.gif
+	frame	data/chars/ghsol/walk4.gif
+	frame	data/chars/ghsol/walk5.gif
+	frame	data/chars/ghsol/walk6.gif
+
+
+
+
+		
+anim pain
+	loop	0
+	offset	81 150
+	delay	4
+	bbox	64 93 40 54
+	frame	data/chars/ghsol/pain1.gif
+	frame	data/chars/ghsol/pain2.gif
+	frame	data/chars/ghsol/pain1.gif
+
+	
+anim fall
+	landframe	3
+	loop	0
+	offset	81 150
+	bbox	64 93 40 54
+	delay	11
+	frame	data/chars/ghsol/fall1.gif
+	delay	1000
+	frame	data/chars/ghsol/fall1.gif
+	offset	76 145
+	delay	20
+	frame	data/chars/ghsol/fall2.gif
+	frame	data/chars/ghsol/fall2.gif
+
+
+anim rise
+	loop	0
+	offset	78 150
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/ghsol/rise1.gif
+
+
+
+
+anim attack1
+	range	0 64
+	loop	0
+	delay	6
+	offset	89 152
+	bbox	65 83 40 54
+	frame	data/chars/ghsol/atk1.gif
+	frame	data/chars/ghsol/atk2.gif
+	frame	data/chars/ghsol/atk3.gif
+	attack	87 83 63 64 20 1 0 0 28
+	frame	data/chars/ghsol/atk4.gif
+	frame	data/chars/ghsol/atk5.gif
+	attack	0 0 0 0 0 0
+	attack	56 26 89 69 20 1 0 0 28
+	frame	data/chars/ghsol/atk6.gif
+	frame	data/chars/ghsol/atk7.gif
+	attack	0 0 0 0 0 0	
+
+anim attack2
+	range	65 85
+	loop	0
+	delay	6
+	offset	89 152
+	bbox	65 83 40 54
+	frame	data/chars/ghsol/2atk1.gif
+	frame	data/chars/ghsol/2atk2.gif
+	frame	data/chars/ghsol/2atk3.gif
+	frame	data/chars/ghsol/2atk4.gif
+	attack	93 84 83 50 20 1 0 0 28
+	frame	data/chars/ghsol/2atk5.gif
+	frame	data/chars/ghsol/2atk6.gif
+	frame	data/chars/ghsol/2atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ghsol/2atk8.gif
+	frame	data/chars/ghsol/2atk9.gif
+	frame	data/chars/ghsol/2atk10.gif
+
+
+
+			
+anim upper
+	range	0 70
+	loop	0
+	delay	7
+	offset	89 152
+	bbox	65 83 40 54
+	frame	data/chars/ghsol/atk1.gif
+	frame	data/chars/ghsol/atk2.gif
+	frame	data/chars/ghsol/atk3.gif
+	attack	87 83 63 64 20 1 0 0 28
+	frame	data/chars/ghsol/atk4.gif
+	frame	data/chars/ghsol/atk5.gif
+	attack	0 0 0 0 0 0
+	attack	56 26 89 69 20 1 0 0 28
+	frame	data/chars/ghsol/atk6.gif
+	frame	data/chars/ghsol/atk7.gif
+	attack	0 0 0 0 0 0
+
+anim death
+	loop	0
+	offset	81 150
+	delay	15
+	move	-15
+	frame	data/chars/ghsol/d1
+	frame	data/chars/ghsol/d2
+	frame	data/chars/ghsol/d3
+	move	0
+	frame	data/chars/ghsol/d4
+
+
+
+
+
+
+	

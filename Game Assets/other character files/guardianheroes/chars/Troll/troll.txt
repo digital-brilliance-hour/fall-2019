@@ -1,0 +1,254 @@
+name	troll
+health	400
+speed	9
+type	enemy
+shadow	  0
+gfxshadow 1
+icon	data/chars/troll/icon.gif
+aggression 40
+cantgrab 1
+nodieblink 3
+falldie	1
+diesound data/sounds/die1.wav
+palette	data/chars/troll/pal2.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+alternatepal	data/chars/troll/testpal.gif
+alternatepal	data/chars/troll/testpal2.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  93 169
+	bbox 	37 14 123 165
+	delay	17
+	frame	data/chars/troll/idle1.gif
+	offset  95 173
+	frame	data/chars/troll/idle2.gif
+	offset  108 177
+	frame	data/chars/troll/idle3.gif
+	offset  99 179
+	frame	data/chars/troll/idle4.gif
+	offset  96 180
+	frame	data/chars/troll/idle5.gif
+	offset  85 177
+	frame	data/chars/troll/idle6.gif
+	offset  87 173
+	frame	data/chars/troll/idle7.gif
+	offset  93 163
+	frame	data/chars/troll/idle8.gif
+
+	
+anim walk
+	loop	1
+	offset  93 168
+	bbox 	37 14 123 165
+	delay	15
+	frame	data/chars/troll/walk1.gif
+	offset  91 164
+	frame	data/chars/troll/walk2.gif
+	offset  83 159
+	frame	data/chars/troll/walk3.gif
+	offset  75 159
+	frame	data/chars/troll/walk4.gif
+	offset  77 143
+	frame	data/chars/troll/walk5.gif
+	offset  73 142
+	frame	data/chars/troll/walk6.gif
+	offset  66 144
+	frame	data/chars/troll/walk7.gif
+	offset  86 168
+	frame	data/chars/troll/walk8.gif
+	offset  90 171
+	frame	data/chars/troll/walk9.gif
+
+		
+anim pain
+	loop	0
+	offset	115 171
+	delay	4
+	bbox 	37 14 123 165
+	frame	data/chars/troll/pain1.gif
+	offset  133 166
+	frame	data/chars/troll/pain2.gif
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	123 147
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/troll/fall1.gif
+	offset	131 144
+	frame	data/chars/troll/fall2.gif
+	offset	123 103
+	delay	100
+	frame	data/chars/troll/fall3.gif
+	offset	138 57
+	delay	20
+	frame	data/chars/troll/fall4.gif
+	frame	data/chars/troll/fall4.gif
+
+
+anim rise
+	loop	0
+	offset	144 104
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/troll/rise1.gif
+	offset	93 135
+	frame	data/chars/troll/rise2.gif
+	offset	101 135
+	frame	data/chars/troll/rise3.gif
+	offset	101 135
+	frame	data/chars/troll/rise4.gif
+	offset	88 135
+	frame	data/chars/troll/rise5.gif
+
+anim riseattack
+	range	0 150
+	loop	0
+	delay	8
+	offset	177 184
+#	bbox 	37 14 123 165
+	frame	data/chars/troll/2atk1.gif
+	offset	83 158
+	frame	data/chars/troll/2atk2.gif
+	offset	57 164
+	attack	66 5 200 150 25 1 0 0 30
+	dropv	2 4 0
+	frame	data/chars/troll/2atk3.gif
+	offset	55 163
+	frame	data/chars/troll/2atk4.gif
+	attack	0 0 0 0 0
+	offset	55 169
+	frame	data/chars/troll/2atk5.gif
+	offset	57 165
+	frame	data/chars/troll/2atk6.gif
+	offset	60 165
+	frame	data/chars/troll/2atk7.gif
+
+
+
+anim attack1
+	range	100 250
+	loop	0
+	delay	8
+	offset	64 172
+	bbox 	37 14 123 165
+	frame	data/chars/troll/atk1.gif
+	offset	211 151
+	frame	data/chars/troll/atk2.gif
+	offset	159 201
+	frame	data/chars/troll/atk3.gif
+	offset	55 243
+	frame	data/chars/troll/atk4.gif
+	attack	82 4 280 150 30 1 0 0 30
+	dropv	2 4 0
+	offset	55 137
+	frame	data/chars/troll/atk5.gif
+	offset	52 148
+	frame	data/chars/troll/atk6.gif
+	offset	52 148
+	frame	data/chars/troll/atk7.gif
+	attack	0 0 0 0 0 0
+	offset	70 138
+	frame	data/chars/troll/atk8.gif
+	offset	70 138
+	frame	data/chars/troll/atk9.gif
+	offset	77 166
+	frame	data/chars/troll/atk10.gif
+	offset	77 166
+	frame	data/chars/troll/atk11.gif
+
+	
+anim attack2
+	range	0 100
+	loop	0
+	delay	9
+	offset	177 184
+	bbox 	37 14 123 165
+	frame	data/chars/troll/2atk1.gif
+	offset	83 158
+	frame	data/chars/troll/2atk2.gif
+	offset	57 164
+	attack	66 5 200 150 25 1 0 0 30
+	dropv	2 4 0
+	frame	data/chars/troll/2atk3.gif
+	offset	55 163
+	frame	data/chars/troll/2atk4.gif
+	attack	0 0 0 0 0
+	offset	55 169
+	frame	data/chars/troll/2atk5.gif
+	offset	57 165
+	frame	data/chars/troll/2atk6.gif
+	offset	60 165
+	frame	data/chars/troll/2atk7.gif
+
+			
+anim special
+	range	0 150
+	loop	0
+	delay	8
+	offset	177 184
+#	bbox 	37 14 123 165
+	frame	data/chars/troll/2atk1.gif
+	offset	83 158
+	frame	data/chars/troll/2atk2.gif
+	offset	57 164
+	attack	66 5 200 150 25 1 0 0 30
+	dropv	2 4 0
+	frame	data/chars/troll/2atk3.gif
+	offset	55 163
+	frame	data/chars/troll/2atk4.gif
+	attack	0 0 0 0 0
+	offset	55 169
+	frame	data/chars/troll/2atk5.gif
+	offset	57 165
+	frame	data/chars/troll/2atk6.gif
+	offset	60 165
+	frame	data/chars/troll/2atk7.gif
+
+anim death
+	loop	0
+	delay	18
+	offset	88 135
+	frame	data/chars/troll/d1
+	offset	101 135
+	frame	data/chars/troll/d2
+	offset	101 135
+	frame	data/chars/troll/d3
+	offset	93 135
+	frame	data/chars/troll/d4
+	offset	144 104
+	frame	data/chars/troll/d5
+	offset	138 57
+	delay	20
+	frame	data/chars/troll/d6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,110 @@
+name	res
+health	250
+speed	11
+type	npc
+subtype	chase
+shadow	0
+aggression 10
+gfxshadow	1
+nodieblink 3
+icon	data/chars/ghknight/icon.gif
+diesound data/sounds/die1.wav
+palette	data/chars/ghknight/idle1.gif
+
+alternatepal	data/chars/ghknight/testpal.gif
+alternatepal	data/chars/ghknight/testpal2.gif
+alternatepal	data/chars/ghknight/testpal3.gif
+alternatepal	data/chars/ghknight/testpal4.gif
+alternatepal	data/chars/ghknight/testpal5.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  88 184
+	bbox 	77 123 39 57
+	delay	15
+	frame	data/chars/ghknight/idle1.gif
+	frame	data/chars/ghknight/idle2.gif
+	frame	data/chars/ghknight/idle3.gif
+	frame	data/chars/ghknight/idle4.gif
+	frame	data/chars/ghknight/idle3.gif
+	frame	data/chars/ghknight/idle2.gif
+
+	
+anim walk
+	loop	1
+	offset	88 184
+	bbox 	76 119 48 63
+	delay	13
+	frame	data/chars/ghknight/walk1.gif
+	frame	data/chars/ghknight/walk2.gif
+	frame	data/chars/ghknight/walk3.gif
+	frame	data/chars/ghknight/walk4.gif
+	frame	data/chars/ghknight/walk5.gif
+	frame	data/chars/ghknight/walk6.gif
+
+
+		
+anim pain
+	loop	0
+	offset	100 184
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/ghknight/pain1.gif
+	frame	data/chars/ghknight/pain2.gif
+	frame	data/chars/ghknight/pain3.gif
+
+	
+anim fall
+	loop	0
+	offset	100 184
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/ghknight/fall1.gif
+	frame	data/chars/ghknight/fall2.gif
+	offset	96 183
+	frame	data/chars/ghknight/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	96 183
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/ghknight/rise1.gif
+	frame	data/chars/ghknight/rise2.gif
+	frame	data/chars/ghknight/rise3.gif
+
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	7
+	offset	100 184
+	bbox	44 58 63 84
+	frame	data/chars/ghknight/atk1.gif
+	frame	data/chars/ghknight/atk2.gif
+	attack	132 126 90 54 25 1 0 0 20
+	frame	data/chars/ghknight/atk3.gif
+	frame	data/chars/ghknight/atk4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/ghknight/atk5.gif
+	
+
+
+			
+#anim special
+#	range	0 150
+#	offset	107 143
+#	delay	3
+#	bbox	40 85 76 82
+#	frame	data/chars/android/special/000.gif
+
+	

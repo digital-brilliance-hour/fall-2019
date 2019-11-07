@@ -1,0 +1,294 @@
+name	mino
+health	500
+speed	12
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/mino/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+palette	data/chars/mino/idle1.gif
+
+
+alternatepal	data/chars/mino/testpal.gif
+alternatepal	data/chars/mino/testpal2.gif
+
+load	earth
+knife	earth
+
+anim idle
+	loop	1
+	offset  85 232
+	bbox 	51 104 90 116
+	delay	16
+	frame	data/chars/mino/idle1.gif
+	offset  83 231
+	frame	data/chars/mino/idle2.gif
+	frame	data/chars/mino/idle3.gif
+	offset  84 231
+	frame	data/chars/mino/idle4.gif
+	offset  83 231
+	frame	data/chars/mino/idle3.gif
+	frame	data/chars/mino/idle2.gif
+
+anim walk
+	loop	1
+	offset	86 214
+	bbox 	40 110 85 100
+	delay	13
+	frame	data/chars/mino/walk1.gif
+	offset	82 211
+	frame	data/chars/mino/walk2.gif
+	offset	84 217
+	frame	data/chars/mino/walk3.gif
+	offset	65 221
+	frame	data/chars/mino/walk4.gif
+	offset	64 216
+	frame	data/chars/mino/walk5.gif
+	offset	83 210
+	frame	data/chars/mino/walk6.gif
+	offset	75 215
+	frame	data/chars/mino/walk7.gif
+	offset	68 222
+	frame	data/chars/mino/walk8.gif
+	offset	69 217
+	frame	data/chars/mino/walk9.gif
+
+anim run
+	loop	1
+	offset	90 230
+	bbox	30 115 81 110
+	delay	13
+	frame	data/chars/mino/run1.gif
+	offset	82 230
+	frame	data/chars/mino/run2.gif
+	offset	71 229
+	frame	data/chars/mino/run3.gif
+	offset	76 229
+	frame	data/chars/mino/run4.gif
+	offset	83 229
+	frame	data/chars/mino/run5.gif
+	offset	89 229
+	frame	data/chars/mino/run6.gif
+	offset	91 229
+	frame	data/chars/mino/run7.gif
+	offset	88 229
+	frame	data/chars/mino/run8.gif
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	9
+	move	15
+	offset	72 230
+#	bbox	30 115 81 110
+	frame	data/chars/mino/ratk1.gif
+	attack	111 155 115 79 25 1 0 0 20
+	offset	135 236
+	frame	data/chars/mino/ratk2.gif
+	offset	138 237
+	frame	data/chars/mino/ratk3.gif
+	offset	116 234
+	frame	data/chars/mino/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 237
+	frame	data/chars/mino/ratk5.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	67 202
+	bbox	101 175 38 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/mino/block.gif
+	offset	69 202
+	frame	data/chars/mino/block.gif
+	move    -8
+	offset	67 202
+	frame	data/chars/mino/block.gif
+	offset	69 202
+	frame	data/chars/mino/block.gif
+	move    -6
+	offset	67 202
+	frame	data/chars/mino/block.gif
+	offset	69 202
+	frame	data/chars/mino/block.gif
+	move    -4
+	offset	67 202
+	frame	data/chars/mino/block.gif
+	offset	69 202
+	frame	data/chars/mino/block.gif
+	offset	67 202
+	move    -2
+	frame	data/chars/mino/block.gif
+	offset	69 202
+	frame	data/chars/mino/block.gif
+	offset	67 202
+	delay   20
+	move    0
+	frame	data/chars/mino/block.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	68 214
+	bbox	51 4 90 116
+	frame	data/chars/mino/pain1.gif
+	offset	72 209
+	frame	data/chars/mino/pain2.gif
+	offset	88 218
+	frame	data/chars/mino/pain3.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	128 179
+	frame	data/chars/mino/fall1.gif
+	offset	135 158
+	frame	data/chars/mino/fall2.gif
+	offset	147 181
+	delay	1000
+	frame	data/chars/mino/fall3.gif
+	offset	146 153
+	delay	20
+	frame	data/chars/mino/fall4.gif
+	frame	data/chars/mino/fall4.gif
+
+anim death
+	loop	0
+	delay	16
+	offset	88 218
+	frame	data/chars/mino/d1
+	frame	data/chars/mino/d2
+	delay	26
+	offset	70 180
+	frame	data/chars/mino/d3
+	frame	data/chars/mino/d4
+	offset	146 153
+	frame	data/chars/mino/d5
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	70 180
+	frame	data/chars/mino/rise1.gif
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	9
+	offset	72 230
+#	bbox	30 115 81 110
+	frame	data/chars/mino/ratk1.gif
+	attack	111 155 115 79 25 1 0 0 20
+	offset	135 236
+	frame	data/chars/mino/ratk2.gif
+	offset	138 237
+	frame	data/chars/mino/ratk3.gif
+	offset	116 234
+	frame	data/chars/mino/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 237
+	frame	data/chars/mino/ratk5.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	7
+	offset	104 259
+	bbox	53 150 92 95
+	frame	data/chars/mino/atk1.gif
+	offset	85 259
+	frame	data/chars/mino/atk2.gif
+	frame	data/chars/mino/atk3.gif
+	attack	100 110 175 145 25 1 0 0 20
+	offset	42 255
+	frame	data/chars/mino/atk4.gif
+	offset	51 200
+	frame	data/chars/mino/atk5.gif
+	frame	data/chars/mino/atk6.gif
+	attack	0 0 0 0 0
+	offset	44 192
+	frame	data/chars/mino/atk7.gif
+	offset	64 213
+	frame	data/chars/mino/atk8.gif
+
+anim special
+	range	0 100
+	loop	0
+	delay	9
+	offset	72 230
+#	bbox	30 115 81 110
+	frame	data/chars/mino/ratk1.gif
+	attack	111 155 115 79 25 1 0 0 20
+	offset	135 236
+	frame	data/chars/mino/ratk2.gif
+	offset	138 237
+	frame	data/chars/mino/ratk3.gif
+	offset	116 234
+	frame	data/chars/mino/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 237
+	frame	data/chars/mino/ratk5.gif
+
+anim throw
+	range	0 100
+	loop	0
+	delay	14
+	offset	44 192
+	frame	data/chars/mino/atk7.gif
+	offset	51 200
+	frame	data/chars/mino/atk6.gif
+	offset	85 259
+	frame	data/chars/mino/atk3.gif
+	frame	data/chars/mino/atk2.gif
+
+
+anim attack2
+	range	275 800
+	loop	0
+	delay	12
+	throwframe	5
+	offset	84 239
+	bbox	44 158 63 84
+	frame	data/chars/mino/2atk1.gif
+	offset	88 242
+	frame	data/chars/mino/2atk2.gif
+	offset	108 224
+	frame	data/chars/mino/2atk3.gif
+	offset	116 224
+	frame	data/chars/mino/2atk4.gif
+	frame	data/chars/mino/2atk5.gif
+	offset	118 215
+	frame	data/chars/mino/2atk6.gif
+	offset	38 212
+	frame	data/chars/mino/2atk7.gif
+	offset	46 200
+	frame	data/chars/mino/2atk8.gif
+

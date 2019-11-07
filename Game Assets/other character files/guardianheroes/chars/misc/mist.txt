@@ -1,0 +1,20 @@
+name	mist
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/mist/mist1.gif
+
+anim idle
+	loop	1
+	delay	13
+	offset	0 260
+	frame	data/bgs/dragons/mist/mist1.gif
+	frame	data/bgs/dragons/mist/mist2.gif
+	frame	data/bgs/dragons/mist/mist3.gif
+	frame	data/bgs/dragons/mist/mist4.gif
+	frame	data/bgs/dragons/mist/mist5.gif
+	frame	data/bgs/dragons/mist/mist6.gif
+	frame	data/bgs/dragons/mist/mist7.gif
+	frame	data/bgs/dragons/mist/mist8.gif
+

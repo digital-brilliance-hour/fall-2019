@@ -1,0 +1,201 @@
+name	ginjirou
+health	500
+speed	15
+running	31	4	2	1	1
+type	npc
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+candamage enemy
+aggression 30
+bflash bflash
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+subtype	chase
+icon	data/chars/ginjirou/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+atchain	1 1 2 3
+
+palette	data/chars/ginjirou/idle1.gif
+
+
+#alternatepal	data/chars/ginjirou/testpal.gif
+#alternatepal	data/chars/ginjirou/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  87 151
+	bbox 	66 78 43 66
+	delay	14
+	frame	data/chars/ginjirou/idle1.gif
+	frame	data/chars/ginjirou/idle2.gif
+	frame	data/chars/ginjirou/idle3.gif
+	frame	data/chars/ginjirou/idle4.gif
+	frame	data/chars/ginjirou/idle3.gif
+	frame	data/chars/ginjirou/idle2.gif
+
+
+anim walk
+	loop	1
+	offset	86 151
+	bbox 	65 70 43 66
+	delay	13
+	frame	data/chars/ginjirou/walk1.gif
+	frame	data/chars/ginjirou/walk2.gif
+	frame	data/chars/ginjirou/walk3.gif
+	frame	data/chars/ginjirou/walk4.gif
+	frame	data/chars/ginjirou/walk5.gif
+	frame	data/chars/ginjirou/walk6.gif
+
+
+anim run
+	loop	1
+	offset	87 151
+	bbox 	71 91 43 66
+	delay	13
+	frame	data/chars/ginjirou/run1.gif
+	frame	data/chars/ginjirou/run2.gif
+	frame	data/chars/ginjirou/run3.gif
+	frame	data/chars/ginjirou/run4.gif
+	frame	data/chars/ginjirou/run5.gif
+
+
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	7
+	move	2
+	offset	87 146
+	bbox	55 81 43 66
+	frame	data/chars/ginjirou/ratk1.gif
+	frame	data/chars/ginjirou/ratk2.gif
+	frame	data/chars/ginjirou/ratk3.gif
+	frame	data/chars/ginjirou/ratk4.gif
+	attack	68 77 61 47 20 1 0 0 25
+	frame	data/chars/ginjirou/ratk5.gif
+	frame	data/chars/ginjirou/ratk6.gif
+	frame	data/chars/ginjirou/ratk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/ratk8.gif
+	frame	data/chars/ginjirou/ratk9.gif
+
+	
+
+
+anim pain
+	loop	0
+	delay	4
+	offset	84 151
+	bbox	64 78 43 66
+	frame	data/chars/ginjirou/pain1.gif
+	frame	data/chars/ginjirou/pain2.gif
+	frame	data/chars/ginjirou/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset	82 137
+	frame	data/chars/ginjirou/fall1.gif
+	frame	data/chars/ginjirou/fall2.gif
+	frame	data/chars/ginjirou/fall3.gif
+
+
+anim death
+	loop	0
+	delay	13
+	offset	82 137
+	frame	data/chars/ginjirou/fall1.gif
+	frame	data/chars/ginjirou/fall2.gif
+	frame	data/chars/ginjirou/fall3.gif
+
+anim rise
+	loop	0
+	delay	11
+	offset	87 151
+	frame	data/chars/ginjirou/rise1.gif
+
+
+anim riseattack
+	range	0 60
+	loop	0
+	delay	7
+	move	2
+	offset	87 151
+	bbox	66 78 43 66
+	frame	data/chars/ginjirou/3atk1.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk3.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk5.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk7.gif
+	frame	data/chars/ginjirou/3atk8.gif
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	7
+	offset	87 151
+	bbox	66 78 43 66
+	frame	data/chars/ginjirou/atk1.gif
+	frame	data/chars/ginjirou/atk2.gif
+	attack	105 79 52 40 10 0 0 0 16
+	frame	data/chars/ginjirou/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/atk2.gif
+
+
+
+anim attack2
+	range	0 60
+	loop	0
+	delay	7
+	offset	87 151
+	bbox	66 78 43 66
+	frame	data/chars/ginjirou/2atk1.gif
+	frame	data/chars/ginjirou/2atk2.gif
+	attack	86 82 60 40 10 0 0 0 16
+	frame	data/chars/ginjirou/2atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/2atk2.gif
+
+anim attack3
+	range	0 60
+	loop	0
+	delay	7
+	move	2
+	offset	87 151
+	bbox	66 78 43 66
+	frame	data/chars/ginjirou/3atk1.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk3.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk5.gif
+	attack	98 63 52 85 20 1 0 0 26
+	frame	data/chars/ginjirou/3atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ginjirou/3atk7.gif
+	frame	data/chars/ginjirou/3atk8.gif
+
+
+
+

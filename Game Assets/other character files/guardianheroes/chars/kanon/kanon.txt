@@ -1,0 +1,217 @@
+name	kanon
+health	300
+speed	13
+running	22	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 20
+bflash bflash
+blockodds 1
+thold     49
+nodrop	2
+nopain 1
+#falldie 
+aimove chase
+icon	data/chars/kanon/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+palette	data/chars/kanon/idle1.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+load	light
+knife	light
+
+#alternatepal	data/chars/kanon/testpal.gif
+#alternatepal	data/chars/kanon/testpal2.gif
+#alternatepal	data/chars/kanon/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  91 143
+	bbox 	65 71 44 74
+	delay	22
+	frame	data/chars/kanon/idle1.gif
+	frame	data/chars/kanon/idle2.gif
+	frame	data/chars/kanon/idle3.gif
+	frame	data/chars/kanon/idle4.gif
+	frame	data/chars/kanon/idle3.gif
+	frame	data/chars/kanon/idle2.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  91 143
+	bbox 	65 71 44 74
+	delay	16
+	frame	data/chars/kanon/walk1.gif
+	frame	data/chars/kanon/walk2.gif
+	frame	data/chars/kanon/walk3.gif
+	frame	data/chars/kanon/walk4.gif
+	frame	data/chars/kanon/walk5.gif
+	frame	data/chars/kanon/walk6.gif
+
+anim run
+	loop	1
+	offset  91 143
+	bbox 	65 71 44 74
+	delay	16
+	frame	data/chars/kanon/run1.gif
+	frame	data/chars/kanon/run2.gif
+	frame	data/chars/kanon/run3.gif
+	frame	data/chars/kanon/run4.gif
+
+anim runattack
+	range	0 150
+	loop	0
+	delay	8
+	offset  91 143
+	move	15
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/2atk1.gif
+	frame	data/chars/kanon/2atk2.gif
+	attack	91 73 95 74 20 1 0 0 22
+	frame	data/chars/kanon/2atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kanon/2atk2.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  91 143
+	bbox 	65 71 44 74
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/kanon/block1.gif
+	offset	93 143
+	frame	data/chars/kanon/block2.gif
+	move    -8
+	offset  91 143
+	frame	data/chars/kanon/block2.gif
+	offset	93 143
+	frame	data/chars/kanon/block2.gif
+	move    -6
+	offset  91 143
+	frame	data/chars/kanon/block2.gif
+	offset	93 143
+	frame	data/chars/kanon/block2.gif
+	move    -4
+	offset  91 143
+	frame	data/chars/kanon/block2.gif
+	offset	93 143
+	frame	data/chars/kanon/block2.gif
+	offset  91 143
+	move    -2
+	frame	data/chars/kanon/block2.gif
+	offset	93 143
+	frame	data/chars/kanon/block2.gif
+	offset  91 143
+	delay   20
+	move    0
+	frame	data/chars/kanon/block1.gif
+
+anim pain
+	loop	0
+	move	-14
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/pain1.gif
+	frame	data/chars/kanon/pain2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/fall1.gif
+	delay	1000
+	frame	data/chars/kanon/fall2.gif
+	delay	20
+	frame	data/chars/kanon/fall3.gif
+	frame	data/chars/kanon/fall3.gif
+
+
+
+anim death
+	landframe	3
+	loop	0
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/fall1.gif
+	delay	1000
+	frame	data/chars/kanon/fall2.gif
+	delay	20
+	frame	data/chars/kanon/fall3.gif
+	frame	data/chars/kanon/fall3.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/rise1.gif
+
+
+anim attack1
+	throwframe	3
+	range	90 150
+	loop	0
+	delay	15
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/atk1.gif
+	frame	data/chars/kanon/atk2.gif
+	frame	data/chars/kanon/atk3.gif
+	frame	data/chars/kanon/atk2.gif
+
+
+
+
+anim attack2
+	range	0 80
+	loop	0
+	delay	8
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/2atk1.gif
+	frame	data/chars/kanon/2atk2.gif
+	attack	91 73 81 74 20 1 0 0 22
+	frame	data/chars/kanon/2atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kanon/2atk2.gif
+
+anim special
+	range	0 100
+	loop	0
+	delay	8
+	offset  91 143
+	bbox 	65 71 44 74
+	frame	data/chars/kanon/spec1.gif
+	frame	data/chars/kanon/spec2.gif
+	attack	22 39 150 110 25 1 0 0 24
+	dropv	2 4 0
+	frame	data/chars/kanon/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kanon/spec4.gif
+
+
+
+
+

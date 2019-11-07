@@ -1,0 +1,175 @@
+name	soldier1
+health	100
+speed	12
+type	enemy
+shadow	5
+icon	data/chars/sold1/icon.gif
+aggression 20
+#cantgrab 1
+nodieblink 3
+falldie	1
+diesound data/sounds/die1.wav
+palette	data/chars/sold1/pal.gif
+
+load	heads1
+
+anim idle
+	loop	1
+	offset  54 72
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/sold1/idle1.gif
+	offset  54 72
+	frame	data/chars/sold1/idle2.gif
+	offset  54 72
+	frame	data/chars/sold1/idle3.gif
+	offset	54 72
+	frame	data/chars/sold1/idle4.gif
+	offset  55 73
+	frame	data/chars/sold1/idle5.gif
+	offset  55 73
+	frame	data/chars/sold1/idle6.gif
+	offset  55 73
+	frame	data/chars/sold1/idle7.gif
+	offset  54 72
+	frame	data/chars/sold1/idle8.gif
+	offset  54 72
+	frame	data/chars/sold1/idle9.gif
+	offset  54 72
+	frame	data/chars/sold1/idle10.gif
+	offset  54 72
+	frame	data/chars/sold1/idle11.gif
+
+
+
+
+
+	
+anim walk
+	loop	1
+	offset  61 86
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/sold1/walk1.gif
+	offset  60 86
+	frame	data/chars/sold1/walk2.gif
+	offset  60 87
+	frame	data/chars/sold1/walk3.gif
+	offset  61 88
+	frame	data/chars/sold1/walk4.gif
+	offset  61 89
+	frame	data/chars/sold1/walk5.gif
+	offset  61 87
+	frame	data/chars/sold1/walk6.gif
+	offset  61 86
+	frame	data/chars/sold1/walk7.gif
+	offset  60 86
+	frame	data/chars/sold1/walk8.gif
+	offset  60 87
+	frame	data/chars/sold1/walk9.gif
+	offset  61 88
+	frame	data/chars/sold1/walk10.gif
+	offset  61 89
+	frame	data/chars/sold1/walk11.gif
+	offset  61 87
+	frame	data/chars/sold1/walk12.gif
+	offset  62 86
+	frame	data/chars/sold1/walk13.gif
+
+		
+anim pain
+	loop	0
+	offset	65 78
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/sold1/pain1.gif
+	offset  90 71
+	frame	data/chars/sold1/pain2.gif
+	
+anim fall
+	landframe	3
+	loop	0
+	offset	48 48
+	ATTACK	27 32 82 87 15 1
+	bbox	12 10 58 90
+	delay	11
+	frame	data/chars/sold1/fall1.gif
+	offset	50 34
+	delay	100
+	frame	data/chars/sold1/fall2.gif
+	offset	52 20
+	delay	20
+	frame	data/chars/sold1/fall3.gif
+	frame	data/chars/sold1/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	56 64
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/sold1/rise1.gif
+	offset	24 79
+	frame	data/chars/sold1/rise2.gif
+	offset	57 62
+	frame	data/chars/sold1/rise3.gif
+	offset	72 72
+	frame	data/chars/sold1/rise4.gif
+
+
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	8
+	offset	50 94
+	bbox	44 58 63 84
+	frame	data/chars/sold1/atk1.gif
+	offset	24 79
+	frame	data/chars/sold1/atk2.gif
+	attack	80 0 100 61 10
+	offset	25 81
+	frame	data/chars/sold1/atk3.gif
+	offset	25 81
+	frame	data/chars/sold1/atk4.gif
+	attack	0 0 0 0 0
+	offset	24 75
+	frame	data/chars/sold1/atk5.gif
+	offset	39 76
+	frame	data/chars/sold1/atk6.gif
+	offset	51 73
+	frame	data/chars/sold1/atk7.gif
+	offset	70 96
+	frame	data/chars/sold1/atk8.gif
+	offset	51 88
+	frame	data/chars/sold1/atk9.gif
+	attack	70 0 85 94 20 1
+	offset	45 90
+	frame	data/chars/sold1/atk10.gif
+	offset	64 92
+	frame	data/chars/sold1/atk11.gif
+	attack	0 0 0 0 0 0
+	offset	63 89
+	frame	data/chars/sold1/atk12.gif
+	offset	48 92
+	frame	data/chars/sold1/atk13.gif
+
+
+anim death
+	loop	0
+	offset	65 78
+	delay	18
+	tossframe 1 85
+	custbomb heads1
+	frame	data/chars/sold1/d1
+	frame	data/chars/sold1/d2
+	offset	57 62
+	frame	data/chars/sold1/d3
+	offset	24 79
+	frame	data/chars/sold1/d4
+	offset	52 20
+	frame	data/chars/sold1/d5
+
+
+	

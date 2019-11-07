@@ -1,0 +1,181 @@
+name	dead
+health	100
+speed	10
+type	enemy
+#aggression 90
+aimove	chase
+noatflash 1
+flash	robof
+shadow	0
+gfxshadow	1
+nodieblink 3
+icon	data/chars/dead/icon.gif
+diesound data/sounds/die1.wav
+palette	data/chars/dead/idle1.gif
+
+alternatepal	data/chars/dead/testpal.gif
+alternatepal	data/chars/dead/testpal2.gif
+alternatepal	data/chars/dead/testpal3.gif
+#alternatepal	data/chars/dead/testpal4.gif
+#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
+#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
+#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
+
+anim idle
+	loop	1
+	offset  39 96
+	bbox 	77 123 39 57
+	delay	15
+	frame	data/chars/dead/idle1.gif
+
+
+	
+anim walk
+	loop	1
+	offset	32 89
+	bbox 	76 119 48 63
+	delay	13
+	frame	data/chars/dead/walk1.gif
+	offset	26 93
+	frame	data/chars/dead/walk2.gif
+	offset	26 90
+	frame	data/chars/dead/walk3.gif
+	offset	36 89
+	frame	data/chars/dead/walk4.gif
+	offset	27 89
+	frame	data/chars/dead/walk5.gif
+	offset	23 94
+	frame	data/chars/dead/walk6.gif
+
+
+		
+anim pain
+	loop	0
+	offset	39 102
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/dead/pain1.gif
+	offset	39 104
+	frame	data/chars/dead/pain2.gif
+	offset	58 110
+	frame	data/chars/dead/pain3.gif
+
+	
+anim fall
+	landframe	4
+	loop	0
+	offset	48 91
+	ATTACK	27 32 82 87 15 1
+	bbox	12 10 58 90
+	delay	11
+	frame	data/chars/dead/fall1.gif
+	offset	44 99
+	frame	data/chars/dead/fall2.gif
+	offset	42 68
+	delay	1000
+	bbox	12 10 50 60
+	frame	data/chars/dead/fall3.gif
+	offset	52 35
+	delay	20
+	frame	data/chars/dead/fall4.gif
+	frame	data/chars/dead/fall4.gif
+
+
+anim rise
+	loop	0
+	offset	57 38
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/dead/rise1.gif
+	offset	45 72
+	frame	data/chars/dead/rise2.gif
+	offset	44 73
+	frame	data/chars/dead/rise3.gif
+
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	6
+	offset	58 120
+	bbox	44 58 63 84
+	frame	data/chars/dead/atk1.gif
+	offset	52 113
+	frame	data/chars/dead/atk2.gif
+	offset	39 116
+	frame	data/chars/dead/atk3.gif
+	offset	39 112
+	attack	55 20 75 68 10 0 0 0 16
+	frame	data/chars/dead/atk4.gif
+	offset	39 104
+	frame	data/chars/dead/atk5.gif
+	offset	32 93
+	frame	data/chars/dead/atk6.gif
+	attack	0 0 0 0 0 0
+	offset	32 84
+	frame	data/chars/dead/atk7.gif
+	frame	data/chars/dead/atk8.gif
+	offset	81 90
+	frame	data/chars/dead/atk9.gif
+	offset	74 124
+	frame	data/chars/dead/atk10.gif
+	offset	49 124
+	frame	data/chars/dead/atk11.gif
+	offset	62 105
+	frame	data/chars/dead/atk12.gif
+	offset	45 84
+	frame	data/chars/dead/atk13.gif
+	offset	39 84
+	frame	data/chars/dead/atk14.gif
+	frame	data/chars/dead/atk15.gif
+	offset	38 90
+	attack	55 20 75 68 20 1 0 0 22
+	frame	data/chars/dead/atk16.gif
+	frame	data/chars/dead/atk17.gif
+	frame	data/chars/dead/atk18.gif
+	offset	58 120
+	frame	data/chars/dead/atk19.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/dead/atk20.gif
+
+anim attack2
+	range	100 150
+	loop	0
+	delay	8
+	offset	67 118
+	bbox	44 58 63 84
+	frame	data/chars/dead/2atk1.gif
+	offset	63 114
+	frame	data/chars/dead/2atk2.gif
+	offset	37 114
+	frame	data/chars/dead/2atk3.gif
+	offset	34 118
+	attack	85 33 91 79 20 1 0 0 25
+	frame	data/chars/dead/2atk4.gif
+	offset	34 100
+	frame	data/chars/dead/2atk5.gif
+	offset	35 55
+	frame	data/chars/dead/2atk6.gif
+	frame	data/chars/dead/2atk7.gif
+	offset	36 68
+	attack	0 0 0 0 0 0
+	frame	data/chars/dead/2atk8.gif
+	offset	33 89
+	frame	data/chars/dead/2atk9.gif
+
+	
+
+
+			
+#anim special
+#	range	0 150
+#	offset	107 143
+#	delay	3
+#	bbox	40 85 76 82
+#	frame	data/chars/android/special/000.gif
+
+	

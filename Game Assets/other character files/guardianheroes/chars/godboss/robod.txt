@@ -1,0 +1,849 @@
+name	robod
+health	100
+speed	16
+type	enemy
+#shadow	3
+noquake 1
+dust    dust
+cantgrab 1
+noatflash 1
+flash	robof
+aggression -3
+nodrop 1
+bflash bflash
+falldie 1
+nodieblink 3
+facing 2
+nomove 1
+icon	data/chars/godboss/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/orcdie.wav
+setlayer -1000
+
+palette data/chars/godboss/robod01.gif #1
+
+#alternatepal	data/chars/godboss/testpal.gif
+
+#fmap 1
+
+#remap	data/chars/godboss/boidle1.gif   data/chars/godboss/bofrez.gif
+
+
+
+anim idle
+	loop	1
+	offset	225 481
+	bbox	370 20 20 20
+	delay	1
+	frame	data/chars/godboss/robod02.gif
+
+anim death
+	loop	0
+	delay	2
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+	offset	225 481
+	frame	data/chars/godboss/robod02.gif
+	offset	222 481
+	frame	data/chars/godboss/robod02.gif
+
+
+
+
+	delay 2
+	offset	225 483
+	frame	data/chars/godboss/robod02.gif
+	offset	222 485
+	frame	data/chars/godboss/robod02.gif
+	offset	225 487
+	frame	data/chars/godboss/robod02.gif
+	offset	222 489
+	frame	data/chars/godboss/robod02.gif
+	offset	225 491
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 493
+	frame	data/chars/godboss/robod02.gif
+	offset	222 495
+	frame	data/chars/godboss/robod02.gif
+	offset	225 497
+	frame	data/chars/godboss/robod02.gif
+	offset	222 499
+	frame	data/chars/godboss/robod02.gif
+	offset	225 501
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 503
+	frame	data/chars/godboss/robod02.gif
+	offset	222 505
+	frame	data/chars/godboss/robod02.gif
+	offset	225 507
+	frame	data/chars/godboss/robod02.gif
+	offset	222 509
+	frame	data/chars/godboss/robod02.gif
+	offset	225 511
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 513
+	frame	data/chars/godboss/robod02.gif
+	offset	222 515
+	frame	data/chars/godboss/robod02.gif
+	offset	225 517
+	frame	data/chars/godboss/robod02.gif
+	offset	222 519
+	frame	data/chars/godboss/robod02.gif
+	offset	225 521
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 523
+	frame	data/chars/godboss/robod02.gif
+	offset	222 525
+	frame	data/chars/godboss/robod02.gif
+	offset	225 527
+	frame	data/chars/godboss/robod02.gif
+	offset	222 529
+	frame	data/chars/godboss/robod02.gif
+	offset	225 531
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 533
+	frame	data/chars/godboss/robod02.gif
+	offset	222 535
+	frame	data/chars/godboss/robod02.gif
+	offset	225 537
+	frame	data/chars/godboss/robod02.gif
+	offset	222 539
+	frame	data/chars/godboss/robod02.gif
+	offset	225 541
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 543
+	frame	data/chars/godboss/robod02.gif
+	offset	222 545
+	frame	data/chars/godboss/robod02.gif
+	offset	225 547
+	frame	data/chars/godboss/robod02.gif
+	offset	222 549
+	frame	data/chars/godboss/robod02.gif
+	offset	225 551
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 553
+	frame	data/chars/godboss/robod02.gif
+	offset	222 555
+	frame	data/chars/godboss/robod02.gif
+	offset	225 557
+	frame	data/chars/godboss/robod02.gif
+	offset	222 559
+	frame	data/chars/godboss/robod02.gif
+	offset	225 561
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 563
+	frame	data/chars/godboss/robod02.gif
+	offset	222 565
+	frame	data/chars/godboss/robod02.gif
+	offset	225 567
+	frame	data/chars/godboss/robod02.gif
+	offset	222 569
+	frame	data/chars/godboss/robod02.gif
+	offset	225 571
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 573
+	frame	data/chars/godboss/robod02.gif
+	offset	222 575
+	frame	data/chars/godboss/robod02.gif
+	offset	225 577
+	frame	data/chars/godboss/robod02.gif
+	offset	222 579
+	frame	data/chars/godboss/robod02.gif
+	offset	225 581
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 583
+	frame	data/chars/godboss/robod02.gif
+	offset	222 585
+	frame	data/chars/godboss/robod02.gif
+	offset	225 587
+	frame	data/chars/godboss/robod02.gif
+	offset	222 589
+	frame	data/chars/godboss/robod02.gif
+	offset	225 591
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 593
+	frame	data/chars/godboss/robod02.gif
+	offset	222 595
+	frame	data/chars/godboss/robod02.gif
+	offset	225 597
+	frame	data/chars/godboss/robod02.gif
+	offset	222 599
+	frame	data/chars/godboss/robod02.gif
+	offset	225 601
+	frame	data/chars/godboss/robod02.gif
+
+
+
+
+
+
+	offset	225 605
+	frame	data/chars/godboss/robod02.gif
+	offset	222 610
+	frame	data/chars/godboss/robod02.gif
+	offset	225 615
+	frame	data/chars/godboss/robod02.gif
+	offset	222 620
+	frame	data/chars/godboss/robod02.gif
+	offset	225 625
+	frame	data/chars/godboss/robod02.gif
+	offset	225 650
+	frame	data/chars/godboss/robod02.gif
+	offset	225 655
+	frame	data/chars/godboss/robod02.gif
+	offset	222 660
+	frame	data/chars/godboss/robod02.gif
+	offset	225 665
+	frame	data/chars/godboss/robod02.gif
+	offset	222 670
+	frame	data/chars/godboss/robod02.gif
+	offset	225 675
+	frame	data/chars/godboss/robod02.gif
+	offset	225 680
+	frame	data/chars/godboss/robod02.gif
+	offset	225 685
+	frame	data/chars/godboss/robod02.gif
+	offset	225 690
+	frame	data/chars/godboss/robod02.gif
+	offset	225 695
+	frame	data/chars/godboss/robod02.gif
+	offset	225 700
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 705
+	frame	data/chars/godboss/robod02.gif
+	offset	222 710
+	frame	data/chars/godboss/robod02.gif
+	offset	225 715
+	frame	data/chars/godboss/robod02.gif
+	offset	222 720
+	frame	data/chars/godboss/robod02.gif
+	offset	225 725
+	frame	data/chars/godboss/robod02.gif
+	offset	225 750
+	frame	data/chars/godboss/robod02.gif
+	offset	225 755
+	frame	data/chars/godboss/robod02.gif
+	offset	222 760
+	frame	data/chars/godboss/robod02.gif
+	offset	225 765
+	frame	data/chars/godboss/robod02.gif
+	offset	222 770
+	frame	data/chars/godboss/robod02.gif
+	offset	225 775
+	frame	data/chars/godboss/robod02.gif
+	offset	225 780
+	frame	data/chars/godboss/robod02.gif
+	offset	225 785
+	frame	data/chars/godboss/robod02.gif
+	offset	225 790
+	frame	data/chars/godboss/robod02.gif
+	offset	225 795
+	frame	data/chars/godboss/robod02.gif
+	offset	225 800
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 805
+	frame	data/chars/godboss/robod02.gif
+	offset	222 810
+	frame	data/chars/godboss/robod02.gif
+	offset	225 815
+	frame	data/chars/godboss/robod02.gif
+	offset	222 820
+	frame	data/chars/godboss/robod02.gif
+	offset	225 825
+	frame	data/chars/godboss/robod02.gif
+	offset	225 850
+	frame	data/chars/godboss/robod02.gif
+	offset	225 855
+	frame	data/chars/godboss/robod02.gif
+	offset	222 860
+	frame	data/chars/godboss/robod02.gif
+	offset	225 865
+	frame	data/chars/godboss/robod02.gif
+	offset	222 870
+	frame	data/chars/godboss/robod02.gif
+	offset	225 875
+	frame	data/chars/godboss/robod02.gif
+	offset	225 880
+	frame	data/chars/godboss/robod02.gif
+	offset	225 885
+	frame	data/chars/godboss/robod02.gif
+	offset	225 890
+	frame	data/chars/godboss/robod02.gif
+	offset	225 895
+	frame	data/chars/godboss/robod02.gif
+	offset	225 900
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 905
+	frame	data/chars/godboss/robod02.gif
+	offset	222 910
+	frame	data/chars/godboss/robod02.gif
+	offset	225 915
+	frame	data/chars/godboss/robod02.gif
+	offset	222 920
+	frame	data/chars/godboss/robod02.gif
+	offset	225 925
+	frame	data/chars/godboss/robod02.gif
+	offset	225 950
+	frame	data/chars/godboss/robod02.gif
+	offset	225 955
+	frame	data/chars/godboss/robod02.gif
+	offset	222 960
+	frame	data/chars/godboss/robod02.gif
+	offset	225 965
+	frame	data/chars/godboss/robod02.gif
+	offset	222 970
+	frame	data/chars/godboss/robod02.gif
+	offset	225 975
+	frame	data/chars/godboss/robod02.gif
+	offset	225 980
+	frame	data/chars/godboss/robod02.gif
+	offset	225 985
+	frame	data/chars/godboss/robod02.gif
+	offset	225 990
+	frame	data/chars/godboss/robod02.gif
+	offset	225 995
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1000
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 1005
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1010
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1015
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1020
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1025
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1050
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1055
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1060
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1065
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1070
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1075
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1080
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1085
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1090
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1095
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1100
+	frame	data/chars/godboss/robod02.gif
+
+	offset	225 1105
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1110
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1115
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1120
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1125
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1150
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1155
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1160
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1165
+	frame	data/chars/godboss/robod02.gif
+	offset	222 1170
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1175
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1180
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1185
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1190
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1195
+	frame	data/chars/godboss/robod02.gif
+	offset	225 1200
+	frame	data/chars/godboss/robod02.gif
+
+	delay 50
+	offset	255 601
+	frame	data/chars/misc/empty.gif
+
+	delay 5
+	sound   data/sounds/bluroar.wav
+	offset	225 595
+	frame	data/chars/godboss/robod03.gif
+	sound   data/sounds/bluroar.wav
+	offset	223 590
+	frame	data/chars/godboss/robod03.gif
+	sound   data/sounds/bluroar.wav
+	offset	225 585
+	frame	data/chars/godboss/robod03.gif
+	sound   data/sounds/bluroar.wav
+	offset	223 580
+	frame	data/chars/godboss/robod03.gif
+	sound   data/sounds/bluroar.wav
+	offset	225 575
+	frame	data/chars/godboss/robod03.gif
+	offset	223 570
+	frame	data/chars/godboss/robod03.gif
+	offset	225 565
+	frame	data/chars/godboss/robod03.gif
+	offset	223 560
+	frame	data/chars/godboss/robod03.gif
+	offset	225 555
+	frame	data/chars/godboss/robod03.gif
+	offset	223 550
+	frame	data/chars/godboss/robod03.gif
+	offset	225 545
+	frame	data/chars/godboss/robod03.gif
+	offset	223 540
+	frame	data/chars/godboss/robod03.gif
+	offset	225 535
+	frame	data/chars/godboss/robod03.gif
+	offset	223 530
+	frame	data/chars/godboss/robod03.gif
+	offset	223 525
+	frame	data/chars/godboss/robod03.gif
+	offset	225 520
+	frame	data/chars/godboss/robod03.gif
+	offset	223 515
+	frame	data/chars/godboss/robod03.gif
+	offset	225 510
+	frame	data/chars/godboss/robod03.gif
+	offset	223 505
+	frame	data/chars/godboss/robod03.gif
+	offset	225 500
+	frame	data/chars/godboss/robod03.gif
+
+	offset	225 495
+	frame	data/chars/godboss/robod03.gif
+	offset	223 490
+	frame	data/chars/godboss/robod03.gif
+	offset	225 485
+	frame	data/chars/godboss/robod03.gif
+	offset	223 480
+	frame	data/chars/godboss/robod03.gif
+	offset	225 475
+	frame	data/chars/godboss/robod03.gif
+	offset	223 470
+	frame	data/chars/godboss/robod03.gif
+	offset	225 465
+	frame	data/chars/godboss/robod03.gif
+	offset	223 460
+	frame	data/chars/godboss/robod03.gif
+	offset	225 455
+	frame	data/chars/godboss/robod03.gif
+	offset	223 450
+	frame	data/chars/godboss/robod03.gif
+	offset	225 445
+	frame	data/chars/godboss/robod03.gif
+	offset	223 440
+	frame	data/chars/godboss/robod03.gif
+	offset	225 435
+	frame	data/chars/godboss/robod03.gif
+	offset	223 430
+	frame	data/chars/godboss/robod03.gif
+	offset	223 425
+	frame	data/chars/godboss/robod03.gif
+	offset	225 420
+	frame	data/chars/godboss/robod03.gif
+	offset	223 415
+	frame	data/chars/godboss/robod03.gif
+	offset	225 410
+	frame	data/chars/godboss/robod03.gif
+	offset	223 405
+	frame	data/chars/godboss/robod03.gif
+	offset	225 400
+	frame	data/chars/godboss/robod03.gif
+
+	offset	225 395
+	frame	data/chars/godboss/robod03.gif
+	offset	223 390
+	frame	data/chars/godboss/robod03.gif
+	offset	225 385
+	frame	data/chars/godboss/robod03.gif
+	offset	223 380
+	frame	data/chars/godboss/robod03.gif
+	offset	225 375
+	frame	data/chars/godboss/robod03.gif
+	offset	223 370
+	frame	data/chars/godboss/robod03.gif
+	offset	225 365
+	frame	data/chars/godboss/robod03.gif
+	offset	223 360
+	frame	data/chars/godboss/robod03.gif
+	offset	225 355
+	frame	data/chars/godboss/robod03.gif
+	offset	223 350
+	frame	data/chars/godboss/robod03.gif
+	offset	225 345
+	frame	data/chars/godboss/robod03.gif
+	offset	223 340
+	frame	data/chars/godboss/robod03.gif
+	offset	225 335
+	frame	data/chars/godboss/robod03.gif
+	offset	223 330
+	frame	data/chars/godboss/robod03.gif
+	offset	223 325
+	frame	data/chars/godboss/robod03.gif
+	offset	225 320
+	frame	data/chars/godboss/robod03.gif
+	offset	223 315
+	frame	data/chars/godboss/robod03.gif
+	offset	225 310
+	frame	data/chars/godboss/robod03.gif
+	offset	223 305
+	frame	data/chars/godboss/robod03.gif
+	offset	225 300
+	frame	data/chars/godboss/robod03.gif
+
+	offset	225 295
+	frame	data/chars/godboss/robod03.gif
+	offset	223 290
+	frame	data/chars/godboss/robod03.gif
+	offset	225 285
+	frame	data/chars/godboss/robod03.gif
+	offset	223 280
+	frame	data/chars/godboss/robod03.gif
+	offset	225 275
+	frame	data/chars/godboss/robod03.gif
+	offset	223 270
+	frame	data/chars/godboss/robod03.gif
+	offset	225 265
+	frame	data/chars/godboss/robod03.gif
+	offset	223 260
+	frame	data/chars/godboss/robod03.gif
+	offset	225 255
+	frame	data/chars/godboss/robod03.gif
+	offset	223 250
+	frame	data/chars/godboss/robod03.gif
+	offset	225 245
+	frame	data/chars/godboss/robod03.gif
+	offset	223 240
+	frame	data/chars/godboss/robod03.gif
+	offset	225 235
+	frame	data/chars/godboss/robod03.gif
+	offset	223 230
+	frame	data/chars/godboss/robod03.gif
+	offset	223 225
+	frame	data/chars/godboss/robod03.gif
+	offset	225 220
+	frame	data/chars/godboss/robod03.gif
+	offset	223 215
+	frame	data/chars/godboss/robod03.gif
+	offset	225 210
+	frame	data/chars/godboss/robod03.gif
+	offset	223 205
+	frame	data/chars/godboss/robod03.gif
+	offset	225 200
+	frame	data/chars/godboss/robod03.gif
+
+	offset	225 195
+	frame	data/chars/godboss/robod03.gif
+	offset	223 190
+	frame	data/chars/godboss/robod03.gif
+	offset	225 185
+	frame	data/chars/godboss/robod03.gif
+	offset	223 180
+	frame	data/chars/godboss/robod03.gif
+	offset	225 175
+	frame	data/chars/godboss/robod03.gif
+	offset	223 170
+	frame	data/chars/godboss/robod03.gif
+	offset	225 165
+	frame	data/chars/godboss/robod03.gif
+	offset	223 160
+	frame	data/chars/godboss/robod03.gif
+	offset	225 155
+	frame	data/chars/godboss/robod03.gif
+	offset	223 150
+	frame	data/chars/godboss/robod03.gif
+	offset	225 145
+	frame	data/chars/godboss/robod03.gif
+	offset	223 140
+	frame	data/chars/godboss/robod03.gif
+	offset	225 135
+	frame	data/chars/godboss/robod03.gif
+	offset	223 130
+	frame	data/chars/godboss/robod03.gif
+	offset	223 125
+	frame	data/chars/godboss/robod03.gif
+	offset	225 120
+	frame	data/chars/godboss/robod03.gif
+	offset	223 115
+	frame	data/chars/godboss/robod03.gif
+	offset	225 110
+	frame	data/chars/godboss/robod03.gif
+	offset	223 105
+	frame	data/chars/godboss/robod03.gif
+	offset	225 100
+	frame	data/chars/godboss/robod03.gif
+
+	offset	225 95
+	frame	data/chars/godboss/robod03.gif
+	offset	223 90
+	frame	data/chars/godboss/robod03.gif
+	offset	225 85
+	frame	data/chars/godboss/robod03.gif
+	offset	223 80
+	frame	data/chars/godboss/robod03.gif
+	offset	225 75
+	frame	data/chars/godboss/robod03.gif
+	offset	223 70
+	frame	data/chars/godboss/robod03.gif
+	offset	225 65
+	frame	data/chars/godboss/robod03.gif
+	offset	223 60
+	frame	data/chars/godboss/robod03.gif
+	offset	225 55
+	frame	data/chars/godboss/robod03.gif
+	offset	223 50
+	frame	data/chars/godboss/robod03.gif
+	offset	225 45
+	frame	data/chars/godboss/robod03.gif
+	offset	223 40
+	frame	data/chars/godboss/robod03.gif
+	offset	225 35
+	frame	data/chars/godboss/robod03.gif
+	offset	223 30
+	frame	data/chars/godboss/robod03.gif
+	offset	223 25
+	frame	data/chars/godboss/robod03.gif
+	offset	225 20
+	frame	data/chars/godboss/robod03.gif
+	offset	223 15
+	frame	data/chars/godboss/robod03.gif
+	offset	225 10
+	frame	data/chars/godboss/robod03.gif
+	offset	223 5
+	frame	data/chars/godboss/robod03.gif
+	offset	225 0
+	frame	data/chars/godboss/robod03.gif
+
+

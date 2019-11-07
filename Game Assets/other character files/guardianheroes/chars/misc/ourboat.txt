@@ -1,0 +1,16 @@
+name	ourboat
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/ourboat/pal.gif
+
+anim idle
+	loop	1
+	delay	16
+	offset	0 140
+	frame	data/bgs/dragons/ourboat/ourboat0.gif
+	frame	data/bgs/dragons/ourboat/ourboat1.gif
+	frame	data/bgs/dragons/ourboat/ourboat2.gif
+	frame	data/bgs/dragons/ourboat/ourboat3.gif
+

@@ -1,0 +1,14 @@
+name	mall
+health	0
+type	none
+speed	3
+shadow	0
+icon	data/chars/misc/1upi.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	380 438
+	frame	data/chars/misc/mall1.gif
+	frame	data/chars/misc/mall2.gif
+	frame	data/chars/misc/mall3.gif

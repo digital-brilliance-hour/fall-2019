@@ -1,0 +1,46 @@
+name	gshot
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+candamage enemy npc
+palette	data/chars/misc/gshot1.gif
+
+anim idle
+	loop	0
+	delay	15
+	offset	35 50
+	attack	6 8 134 40 30 1
+	frame	data/chars/misc/gshot1.gif
+	attack	0 0 0 0 0 0
+	offset	35 50
+	attack	5 3 195 119 30 1
+	frame	data/chars/misc/gshot2.gif
+	attack	0 0 0 0 0 0
+	offset	35 170
+	attack	0 0 173 170 25 1
+	frame	data/chars/misc/gshot3.gif
+	offset	30 170
+	frame	data/chars/misc/gshot4.gif
+	offset	22 170
+	frame	data/chars/misc/gshot5.gif
+	offset	12 170
+	frame	data/chars/misc/gshot6.gif
+	offset	7 170
+	frame	data/chars/misc/gshot7.gif
+	offset	0 170
+	frame	data/chars/misc/gshot8.gif
+	frame	data/chars/misc/gshot9.gif
+	frame	data/chars/misc/gshot10.gif
+	offset	0 170
+	frame	data/chars/misc/gshot11.gif
+	attack	0 0 0 0 0 0
+	
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

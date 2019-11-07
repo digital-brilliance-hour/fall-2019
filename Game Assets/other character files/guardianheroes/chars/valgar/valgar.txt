@@ -1,0 +1,547 @@
+
+name	  valgar
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/valgar/icon.gif
+diesound    Data/sounds/die1.wav
+#weapons	seni ironman
+palette	data/chars/valgar/pal.gif
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+weapons	vbear vbull vjag vele vhor valgar
+
+alternatepal	data/chars/valgar/testpal.gif
+alternatepal	data/chars/valgar/testpal2.gif
+
+load	x
+knife	x
+
+
+#done//
+anim idle
+	loop	1
+	offset        26 74
+	bbox 	23 11 41 91
+	delay	18
+	frame	data/chars/valgar/idle1.gif
+	offset        28 74
+	frame	data/chars/valgar/idle2.gif
+	offset        30 74
+	frame	data/chars/valgar/idle3.gif
+	offset        33 74
+	frame	data/chars/valgar/idle4.gif
+	offset        30 74
+	frame	data/chars/valgar/idle3.gif
+	offset        28 74
+	frame	data/chars/valgar/idle2.gif
+	
+	
+
+#done//
+anim walk
+	loop	1
+	offset  31 77
+	bbox 	25 8 38 97
+	delay	9
+	frame	data/chars/valgar/walk1.gif
+	offset  25 78
+	frame	data/chars/valgar/walk2.gif
+	offset  25 80
+	frame	data/chars/valgar/walk3.gif
+	offset  27 77
+	frame	data/chars/valgar/walk4.gif
+	offset  28 79
+	frame	data/chars/valgar/walk5.gif
+	offset  28 80
+	frame	data/chars/valgar/walk6.gif
+
+
+anim run
+	loop	1
+	delay	12
+	offset	22 76
+	bbox	65	30	33	65
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/valgar/run1.gif
+	offset	35 73
+	frame	data/chars/valgar/run2.gif
+	offset	20 78
+	frame	data/chars/valgar/run3.gif
+	offset	22 76
+	frame	data/chars/valgar/run4.gif
+	offset	36 73
+	frame	data/chars/valgar/run5.gif
+	offset	20 78
+	frame	data/chars/valgar/run6.gif
+
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	7
+	move	10
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	8
+	offset	21 65
+	frame	data/chars/valgar/get1.gif
+	offset	22 58
+	frame	data/chars/valgar/get2.gif
+	offset	21 65
+	frame	data/chars/valgar/get1.gif
+
+
+
+#done//
+#Punch
+anim attack1
+	cancel 2 3 0 a2 freespecial3
+	range	5 50
+	loop	0
+	delay	6
+	offset	22 72
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/valgar/atk1.gif
+	offset	21 78
+	frame	data/chars/valgar/atk2.gif
+                  attack	70 7 70 58 10 0 0 0 10
+	frame	data/chars/valgar/atk3.gif
+        attack         0 0 0 0 0
+
+
+
+#done//
+#Kick
+anim attack2
+	cancel 7 9 0 a2 freespecial2
+	range	5 40
+	loop	0
+	delay	4
+	offset	21 58
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/valgar/2atk1.gif
+	offset	21 53
+	frame	data/chars/valgar/2atk2.gif
+	frame	data/chars/valgar/2atk3.gif
+	offset	21 93
+                  attack	71 3 64 67 15 0 0 0 10
+	frame	data/chars/valgar/2atk4.gif
+                  bbox          57 10 37 95
+	    frame	data/chars/valgar/2atk5.gif
+	frame	data/chars/valgar/2atk6.gif
+	offset	21 92
+	frame	data/chars/valgar/2atk7.gif
+	frame	data/chars/valgar/2atk8.gif
+	offset	21 56
+	frame	data/chars/valgar/2atk9.gif
+                  attack	0 0 0 0 0
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 7 9 0 a2 freespecial5
+	range	5 90
+	loop	0
+	delay	6
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+     	sound	Data/sounds/swing.wav
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+
+
+	
+
+
+#done//
+anim special
+	range	5 90
+	loop	0
+	delay	7
+	offset	43 77
+	sound	data/chars/valgar/ping.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+	delay	9
+	offset	100 198
+	attack	65 75 235 140 30 1 0 0 25
+	frame	data/chars/valgar/3spec1.gif
+	frame	data/chars/valgar/3spec2.gif
+	frame	data/chars/valgar/3spec3.gif
+	frame	data/chars/valgar/3spec2.gif
+	attack	0 0 0 0 0 0
+	delay	7
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	7
+	move	10
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+	loop	0
+	delay	8
+	move	15
+	offset	79 140
+	sound	data/chars/valgar/light.wav
+	frame	data/chars/valgar/2spec1.gif
+	frame	data/chars/valgar/2spec2.gif
+	attack	65 65 85 75 20 0 0 10
+	frame	data/chars/valgar/2spec3.gif
+	frame	data/chars/valgar/2spec4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/2spec5.gif
+	frame	data/chars/valgar/2spec6.gif
+	attack	65 65 85 75 20 1 0 20
+	frame	data/chars/valgar/2spec3.gif
+	frame	data/chars/valgar/2spec4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/valgar/2spec5.gif
+	frame	data/chars/valgar/2spec6.gif
+	
+
+anim freespecial3
+	range	5 90
+	loop	0
+	delay	5
+	throwframe	4
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	21 102
+	sound	data/chars/valgar/ping.wav
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	6
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+anim freespecial5
+	range	5 90
+	loop	0
+	delay	7
+	offset	43 77
+	sound	data/chars/valgar/ping.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+	delay	9
+	offset	100 198
+	attack	65 75 235 140 30 1 0 0 25
+	frame	data/chars/valgar/3spec1.gif
+	frame	data/chars/valgar/3spec2.gif
+	frame	data/chars/valgar/3spec3.gif
+	frame	data/chars/valgar/3spec2.gif
+	attack	0 0 0 0 0 0
+	delay	7
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+
+
+	
+
+#done
+anim jump
+	loop	0
+	offset	43 90
+	delay	15
+	bbox	47 37 33 79
+	sound	data/chars/valgar/sounds/jump.wav
+	frame	data/chars/valgar/jump1.gif
+	frame	data/chars/valgar/jump2.gif
+	offset	37 98
+	frame	data/chars/valgar/jump3.gif
+	offset	36 96
+	frame	data/chars/valgar/jump4.gif
+
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	38 57
+	delay	6
+	bbox	47 19 34 64
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/valgar/spec1.gif
+	attack	41 14 60 71 10 1
+	frame	data/chars/valgar/spec1.gif
+	offset	51 55
+	frame	data/chars/valgar/spec2.gif
+	frame	data/chars/valgar/spec2.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	21 78
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/valgar/grab.gif
+
+
+#done//
+anim grabattack2
+	range	5 90
+	loop	0
+	delay	7
+	offset	43 77
+              bbox       37 35 35 88
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk1.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+              attack	51 2 146 122 25 1
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk7.gif
+	frame	data/chars/valgar/3atk8.gif
+	offset	21 63
+	frame	data/chars/valgar/3atk9.gif
+              attack	0 0 0 0 0
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	4
+	offset	21 58
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/valgar/2atk1.gif
+	offset	21 53
+	frame	data/chars/valgar/2atk2.gif
+	frame	data/chars/valgar/2atk3.gif
+	offset	21 93
+                  attack	71 3 64 67 15 0
+	frame	data/chars/valgar/2atk4.gif
+                  bbox          57 10 37 95
+	    frame	data/chars/valgar/2atk5.gif
+	frame	data/chars/valgar/2atk6.gif
+	offset	21 92
+	frame	data/chars/valgar/2atk7.gif
+	frame	data/chars/valgar/2atk8.gif
+	offset	21 56
+	frame	data/chars/valgar/2atk9.gif
+                  attack	0 0 0 0 0
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	21 63
+	sound	data/chars/valgar/hard.wav
+	frame	data/chars/valgar/3atk9.gif
+	offset	21 65
+	frame	data/chars/valgar/3atk8.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/valgar/3atk7.gif
+	offset	21 77
+	frame	data/chars/valgar/3atk6.gif
+	offset	21 93
+	frame	data/chars/valgar/3atk5.gif
+	offset	21 102
+	frame	data/chars/valgar/3atk4.gif
+	offset	26 103
+	frame	data/chars/valgar/3atk3.gif
+	offset	40 93
+	frame	data/chars/valgar/3atk2.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  25 62
+	bbox 	31 14 35 83
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/valgar/pain1.gif
+	offset  26 56
+	frame	data/chars/valgar/pain2.gif
+	offset  25 62
+	frame	data/chars/valgar/pain1.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  29 68
+	delay	20
+	frame	data/chars/valgar/fall1.gif
+	offset  49 87
+	frame	data/chars/valgar/fall2.gif
+	offset  46 37
+	frame	data/chars/valgar/fall3.gif
+	offset  53 29
+	frame	data/chars/valgar/fall4.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	8
+	offset	18 46
+	frame	data/chars/valgar/rise1.gif
+	offset	26 56
+	frame	data/chars/valgar/rise2.gif
+	offset	25 62
+	frame	data/chars/valgar/rise3.gif
+
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	10
+	offset	26 56
+	frame	data/chars/valgar/rise2.gif
+	offset	25 62
+	frame	data/chars/valgar/rise3.gif
+
+

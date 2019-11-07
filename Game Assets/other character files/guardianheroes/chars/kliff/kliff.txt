@@ -1,0 +1,244 @@
+name	Kliff
+health	120
+speed	7
+aggression 20
+type	enemy
+shadow	5
+secret	1
+diesound data/chars/Kliff/kliff1.wav
+icon	 data/chars/kliff/icon.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+anim idle
+	loop	1
+	delay	16
+	offset	51 178
+	bbox	29 92 46 88
+	frame   data/chars/kliff/std1.gif
+	frame   data/chars/kliff/std2.gif
+	frame   data/chars/kliff/std3.gif
+	frame   data/chars/kliff/std2.gif
+
+anim walk
+	loop	1
+	delay	14
+	offset	57 130
+	bbox	42 50 56 79
+	frame   data/chars/kliff/wlk1.gif
+	frame   data/chars/kliff/wlk2.gif
+	frame   data/chars/kliff/wlk3.gif
+	frame   data/chars/kliff/wlk4.gif
+	frame   data/chars/kliff/wlk5.gif
+
+
+
+#anim get
+#	loop	0
+#	delay	20
+#	offset	93 125
+#	frame   data/chars/kliff/get.gif
+
+#anim jump
+#	loop	0
+#	offset  49 186
+#	delay	18
+#	bbox	39 62 42 90
+#	frame   data/chars/kliff/jmp1.gif
+#	frame   data/chars/kliff/jmp2.gif
+#	frame   data/chars/kliff/jmp3.gif
+
+#anim jumpattack
+#	loop	0
+#	delay	7
+#	bbox	29 124 60 97
+#	offset	55 220
+#	frame   data/chars/kliff/jmp4.gif
+#       attack  68 139 74 124 18 1
+#	frame   data/chars/kliff/jmp5.gif
+#	delay	23
+#	frame   data/chars/kliff/jmp5.gif
+
+
+#anim attack1
+#	loop	0
+#	delay	9
+#	offset	81 176
+#	bbox	55 89 51 90
+#	frame   data/chars/kliff/atk1.gif
+#	attack  92 114 55 61 9 0
+#	frame   data/chars/kliff/atk2.gif
+#	frame   data/chars/kliff/atk3.gif
+
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	12
+	offset	115 130
+	bbox	84 147 54 87
+	frame   data/chars/kliff/atk4.gif
+	offset	40 92
+	bbox	22 18 45 76
+	attack  50 6 166 85 16 0
+	frame   data/chars/kliff/atk5.gif
+	attack  0
+	frame   data/chars/kliff/atk6.gif
+	offset	40 109
+	bbox	22 30 40 81
+	frame   data/chars/kliff/atk7.gif
+	delay   13
+        offset  40 144
+	bbox	23 67 38 82
+	frame   data/chars/kliff/atk8.gif
+	sound	data/chars/kliff/kliff2.wav
+        offset  80 80
+	bbox	60 4 45 76
+	attack  100 5 104 76 24 1
+	frame   data/chars/kliff/atk9.gif
+	attack  0 0 0 0 0 0
+	frame   data/chars/kliff/atk10.gif
+        offset  117 82
+	bbox	113 9 30 74
+	delay   20
+	frame   data/chars/kliff/atk11.gif
+
+#anim grab
+#	loop	0
+#	delay	90
+#	offset	65 86 
+#	bbox	46 12 39 75
+#   	frame	data/chars/kliff/grab.gif
+
+
+anim throw
+	loop	0
+	delay	11
+	offset	115 72
+    	frame	data/chars/kliff/atk12.gif
+	offset	50 99
+	attack	61 17 113 84 20 1
+	sound	data/chars/kliff/kliff2.wav
+        frame	data/chars/kliff/atk13.gif
+	attack	0 0 0 0 0 0
+	delay	35
+    	frame	data/chars/kliff/atk14.gif
+
+
+        	
+anim pain
+	loop	0
+	offset	96 166
+	bbox	64 86 58 84
+	delay	18
+	frame	data/chars/Kliff/dmg1.gif
+	frame	data/chars/Kliff/dmg2.gif
+
+
+anim fall
+	landframe	3
+	bbox	64 86 58 84
+	loop	0
+	offset	86 89
+	delay	23
+	attack	55 49 76 40 17 1
+	frame	data/chars/Kliff/dmg3.gif
+	delay	110
+	frame	data/chars/Kliff/dmg4.gif
+	delay	20
+	frame	data/chars/Kliff/dmg5.gif
+	frame	data/chars/Kliff/dmg5.gif
+
+
+anim rise
+	loop	0
+	offset	41 167
+	delay	9
+	frame	data/chars/Kliff/dmg7.gif
+	frame	data/chars/Kliff/dmg6.gif
+	frame	data/chars/Kliff/dmg8.gif
+
+
+
+anim special
+        delay   8
+        offset  85 107
+	frame   data/chars/kliff/atk21.gif
+	frame   data/chars/kliff/atk22.gif
+	blast	79 17 115 85 35
+	frame   data/chars/kliff/atk23.gif
+	frame   data/chars/kliff/atk24.gif
+	blast	0 17 85 72 35
+	frame   data/chars/kliff/atk25.gif
+
+
+
+anim freespecial
+	range	100 150
+        delay   8
+        offset  30 166
+	frame   data/chars/kliff/atk26.gif
+        offset  52 97
+	attack	67 6 116 86 23 1
+        delay   4
+        move    5
+	sound	data/sounds/drill.wav
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	frame   data/chars/kliff/atk27.gif
+	frame   data/chars/kliff/atk28.gif
+	frame   data/chars/kliff/atk29.gif
+	frame   data/chars/kliff/atk30.gif
+	attack	0 0 0 0 0 0
+        move    0
+        offset  30 166
+	delay	25
+	frame   data/chars/kliff/atk26.gif
+
+
+
+
+#anim grabattack2
+#	loop	0
+#	offset	108 179 
+#	bbox	80 81 54 102
+#	delay	8
+#	frame   data/chars/kliff/atk15.gif
+#	frame   data/chars/kliff/atk16.gif
+#       attack	115 60 149 133 28 1
+#	frame   data/chars/kliff/atk17.gif
+#	frame   data/chars/kliff/atk18.gif
+#	frame   data/chars/kliff/atk19.gif
+#       attack	0
+#	delay	25
+#	sound	data/chars/kliff/kliff2.wav
+#	frame   data/chars/kliff/atk20.gif
+
+
+
+#anim land
+#	loop	0
+#	delay	27
+#	offset	93 125
+#	frame   data/chars/kliff/get.gif

@@ -1,0 +1,296 @@
+name	sky
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 10
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/sky/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/sky/idle1.gif
+
+
+#alternatepal	data/chars/sky/testpal.gif
+#alternatepal	data/chars/sky/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  155 237
+	bbox 	81 41 150 200
+	delay	16
+	frame	data/chars/sky/idle1.gif
+	offset  148 245
+	frame	data/chars/sky/idle2.gif
+	offset  138 251
+	frame	data/chars/sky/idle3.gif
+	offset  140 257
+	frame	data/chars/sky/idle4.gif
+	offset  138 251
+	frame	data/chars/sky/idle3.gif
+	offset  148 245
+	frame	data/chars/sky/idle2.gif
+
+anim walk
+	loop	1
+	offset	159 248
+	bbox 	100 47 146 200
+	delay	13
+	frame	data/chars/sky/walk1.gif
+	offset	155 242
+	frame	data/chars/sky/walk2.gif
+	offset	150 236
+	frame	data/chars/sky/walk3.gif
+	offset	143 232
+	frame	data/chars/sky/walk4.gif
+	offset	151 234
+	frame	data/chars/sky/walk5.gif
+	offset	157 241
+	frame	data/chars/sky/walk6.gif
+
+anim run
+	loop	1
+	offset	158 265
+	bbox 	124 84 146 200
+	delay	13
+	frame	data/chars/sky/run1.gif
+	offset	155 242
+	frame	data/chars/sky/run2.gif
+	offset	149 193
+	frame	data/chars/sky/run3.gif
+	offset	162 117
+	frame	data/chars/sky/run4.gif
+	offset	169 123
+	frame	data/chars/sky/run5.gif
+	offset	171 183
+	frame	data/chars/sky/run6.gif
+
+
+anim runattack
+	range	0 150
+	loop	0
+	delay	4
+	move	15
+	offset	177 270
+#	bbox	100 100 63 50
+	attack	129 23 190 155 25 1 0 0 20
+	frame	data/chars/sky/ratk1.gif
+	offset	236 239
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	frame	data/chars/sky/ratk2.gif
+	offset	177 270
+	frame	data/chars/sky/ratk1.gif
+	attack	0 0 0 0 0
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	158 229
+	bbox	89 30 146 200
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/sky/block1.gif
+	offset	166 235
+	frame	data/chars/sky/block2.gif
+	move    -8
+	offset	166 235
+	frame	data/chars/sky/block2.gif
+	offset	168 235
+	frame	data/chars/sky/block2.gif
+	move    -6
+	offset	166 235
+	frame	data/chars/sky/block2.gif
+	offset	168 235
+	frame	data/chars/sky/block2.gif
+	move    -4
+	offset	166 235
+	frame	data/chars/sky/block2.gif
+	offset	168 235
+	frame	data/chars/sky/block2.gif
+	offset	166 235
+	move    -2
+	frame	data/chars/sky/block2.gif
+	offset	168 235
+	frame	data/chars/sky/block2.gif
+	offset	158 229
+	delay   20
+	move    0
+	frame	data/chars/sky/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	191 210
+	bbox	71 3 146 200
+	frame	data/chars/sky/pain1.gif
+	offset	197 186
+	frame	data/chars/sky/pain2.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	142 207
+	frame	data/chars/sky/fall1.gif
+	offset	140 235
+	frame	data/chars/sky/fall2.gif
+	offset	133 131
+	delay	1000
+	frame	data/chars/sky/fall3.gif
+	offset	154 93
+	delay	20
+	frame	data/chars/sky/fall4.gif
+	frame	data/chars/sky/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset	142 207
+	frame	data/chars/sky/fall1.gif
+	offset	140 235
+	frame	data/chars/sky/fall2.gif
+	offset	133 131
+	delay	1000
+	frame	data/chars/sky/fall3.gif
+	offset	154 93
+	delay	20
+	frame	data/chars/sky/fall4.gif
+	frame	data/chars/sky/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	4
+	offset	191 210
+	bbox	71 3 146 200
+	frame	data/chars/sky/pain1.gif
+
+anim riseattack
+	range	0 140
+	loop	0
+	delay	9
+	offset	177 246
+#	bbox	100 40 146 200
+	frame	data/chars/sky/atk1.gif
+	offset	158 262
+	frame	data/chars/sky/atk2.gif
+	offset	137 270
+	attack	161 120 150 107 10 0 0 0 14
+	frame	data/chars/sky/atk3.gif
+	offset	142 262
+	frame	data/chars/sky/atk4.gif
+	attack	0 0 0 0 0 0
+	offset	144 250
+	frame	data/chars/sky/atk5.gif
+	offset	152 254
+	attack	176 125 157 110 20 1 0 0 28
+	frame	data/chars/sky/atk6.gif
+	offset	144 250
+	frame	data/chars/sky/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim attack1
+	range	0 140
+	loop	0
+	delay	9
+	offset	177 246
+	bbox	100 40 146 200
+	frame	data/chars/sky/atk1.gif
+	offset	158 262
+	frame	data/chars/sky/atk2.gif
+	offset	137 270
+	attack	161 120 150 107 10 0 0 0 14
+	frame	data/chars/sky/atk3.gif
+	offset	142 262
+	frame	data/chars/sky/atk4.gif
+	attack	0 0 0 0 0 0
+	offset	144 250
+	frame	data/chars/sky/atk5.gif
+	offset	152 254
+	attack	176 125 157 110 20 1 0 0 28
+	frame	data/chars/sky/atk6.gif
+	offset	144 250
+	frame	data/chars/sky/atk7.gif
+	attack	0 0 0 0 0 0
+
+
+anim special
+	range	215 400
+	loop	0
+	delay	15
+	throwframe	2
+#	offset	152 208
+	bbox	84 28 146 200
+	frame	data/chars/sky/spec1.gif
+	offset	179 214
+	frame	data/chars/sky/spec2.gif
+	offset	187 216
+	frame	data/chars/sky/spec3.gif
+
+
+anim attack2
+	range	140 215
+	loop	0
+	delay	8
+	offset	151 240
+	bbox	96 20 150 200
+	frame	data/chars/sky/2atk1.gif
+	offset	152 239
+	frame	data/chars/sky/2atk2.gif
+	offset	209 243
+	frame	data/chars/sky/2atk3.gif
+	offset	187 242
+	frame	data/chars/sky/2atk4.gif
+	offset	150 245
+	frame	data/chars/sky/2atk5.gif
+	offset	153 246
+	frame	data/chars/sky/2atk6.gif
+	offset	156 243
+	attack	135 135 215 215 25 1 0 0 28
+	frame	data/chars/sky/2atk7.gif
+	offset	155 242
+	frame	data/chars/sky/2atk8.gif
+	attack	0 0 0 0 0 0
+	offset	151 240
+	frame	data/chars/sky/2atk9.gif
+
+

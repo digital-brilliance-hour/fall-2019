@@ -1,0 +1,388 @@
+name	hawk
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/hawk/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+palette	data/chars/hawk/idle1.gif
+
+
+#alternatepal	data/chars/hawk/testpal.gif
+#alternatepal	data/chars/hawk/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  146 211
+	bbox 	101 75 38 84
+	delay	16
+	frame	data/chars/hawk/idle1.gif
+	offset  37 82
+	frame	data/chars/hawk/idle2.gif
+	offset  37 83
+	frame	data/chars/hawk/idle3.gif
+	offset  38 84
+	frame	data/chars/hawk/idle4.gif
+	frame	data/chars/hawk/idle5.gif
+	frame	data/chars/hawk/idle6.gif
+	offset  38 85
+	frame	data/chars/hawk/idle7.gif
+	offset  38 84
+	frame	data/chars/hawk/idle6.gif
+	frame	data/chars/hawk/idle5.gif
+	frame	data/chars/hawk/idle4.gif
+	offset  37 83
+	frame	data/chars/hawk/idle3.gif
+	offset  37 82
+	frame	data/chars/hawk/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset	37 101
+	bbox 	102 80 40 80
+	delay	7
+	frame	data/chars/hawk/walk1.gif
+	offset	39 102
+	frame	data/chars/hawk/walk2.gif
+	offset	33 103
+	frame	data/chars/hawk/walk3.gif
+	offset	25 103
+	frame	data/chars/hawk/walk4.gif
+	offset	17 103
+	frame	data/chars/hawk/walk5.gif
+	offset	18 103
+	frame	data/chars/hawk/walk6.gif
+	offset	22 103
+	frame	data/chars/hawk/walk7.gif
+	offset	32 104
+	frame	data/chars/hawk/walk8.gif
+	offset	34 104
+	frame	data/chars/hawk/walk9.gif
+	offset	33 104
+	frame	data/chars/hawk/walk10.gif
+	offset	32 104
+	frame	data/chars/hawk/walk11.gif
+	offset	27 104
+	frame	data/chars/hawk/walk12.gif
+	offset	18 105
+	frame	data/chars/hawk/walk13.gif
+	offset	19 106
+	frame	data/chars/hawk/walk14.gif
+	offset	24 106
+	frame	data/chars/hawk/walk15.gif
+	offset	32 106
+	frame	data/chars/hawk/walk16.gif
+	offset	37 104
+	frame	data/chars/hawk/walk17.gif
+	offset	36 102
+	frame	data/chars/hawk/walk18.gif
+
+
+
+anim run
+	loop	1
+	offset	47 81
+	bbox 	100 100 63 50
+	delay	10
+	frame	data/chars/hawk/run1.gif
+	offset	48 82
+	frame	data/chars/hawk/run2.gif
+	offset	67 80
+	frame	data/chars/hawk/run3.gif
+	offset	49 81
+	frame	data/chars/hawk/run4.gif
+	offset	47 81
+	frame	data/chars/hawk/run5.gif
+	offset	69 80
+	frame	data/chars/hawk/run6.gif
+	offset	52 82
+	frame	data/chars/hawk/run7.gif
+
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	6
+	move	5
+	offset	46 106
+#	bbox	100 100 63 50
+	frame	data/chars/hawk/ratk1.gif
+	offset	28 67
+	frame	data/chars/hawk/ratk2.gif
+	attack	40 3 140 60 25 1 0 0 20
+	offset	27 51
+	frame	data/chars/hawk/ratk3.gif
+	frame	data/chars/hawk/ratk4.gif
+	offset	58 60
+	frame	data/chars/hawk/ratk5.gif
+	offset	54 60
+	frame	data/chars/hawk/ratk6.gif
+	frame	data/chars/hawk/ratk7.gif
+	frame	data/chars/hawk/ratk8.gif
+	offset	34 67
+	frame	data/chars/hawk/ratk9.gif
+	offset	69 63
+	frame	data/chars/hawk/ratk10.gif
+	attack	0 0 0 0 0
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	42 95
+	bbox	101 75 38 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/hawk/block1.gif
+	offset	43 94
+	frame	data/chars/hawk/block2.gif
+	move    -8
+	offset	45 94
+	frame	data/chars/hawk/block2.gif
+	offset	43 94
+	frame	data/chars/hawk/block2.gif
+	move    -6
+	offset	45 94
+	frame	data/chars/hawk/block2.gif
+	offset	43 94
+	frame	data/chars/hawk/block2.gif
+	move    -4
+	offset	45 94
+	frame	data/chars/hawk/block2.gif
+	offset	43 94
+	frame	data/chars/hawk/block2.gif
+	offset	45 94
+	move    -2
+	frame	data/chars/hawk/block2.gif
+	offset	43 94
+	frame	data/chars/hawk/block2.gif
+	offset	42 95
+	delay   20
+	move    0
+	frame	data/chars/hawk/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	43 90
+	bbox	14 8 63 87
+	frame	data/chars/hawk/pain1.gif
+	offset	44 90
+	frame	data/chars/hawk/pain2.gif
+	offset	52 79
+	frame	data/chars/hawk/pain3.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	31 115
+	frame	data/chars/hawk/fall1.gif
+	offset	31 117
+	frame	data/chars/hawk/fall2.gif
+	offset	40 62
+	delay	1000
+	frame	data/chars/hawk/fall3.gif
+	offset	54 22
+	delay	20
+	frame	data/chars/hawk/fall4.gif
+	frame	data/chars/hawk/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset	31 115
+	frame	data/chars/hawk/fall1.gif
+	offset	31 117
+	frame	data/chars/hawk/fall2.gif
+	offset	40 62
+	delay	1000
+	frame	data/chars/hawk/fall3.gif
+	offset	54 22
+	delay	20
+	frame	data/chars/hawk/fall4.gif
+	frame	data/chars/hawk/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	53 45
+	frame	data/chars/hawk/rise1.gif
+	offset	45 51
+	frame	data/chars/hawk/rise2.gif
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	6
+	move	5
+	offset	46 106
+#	bbox	100 100 63 50
+	frame	data/chars/hawk/ratk1.gif
+	offset	28 67
+	frame	data/chars/hawk/ratk2.gif
+	attack	40 3 140 60 25 1 0 0 20
+	offset	27 51
+	frame	data/chars/hawk/ratk3.gif
+	frame	data/chars/hawk/ratk4.gif
+	offset	58 60
+	frame	data/chars/hawk/ratk5.gif
+	offset	54 60
+	frame	data/chars/hawk/ratk6.gif
+	frame	data/chars/hawk/ratk7.gif
+	frame	data/chars/hawk/ratk8.gif
+	offset	34 67
+	frame	data/chars/hawk/ratk9.gif
+	offset	69 63
+	frame	data/chars/hawk/ratk10.gif
+	attack	0 0 0 0 0
+
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	7
+	offset	100 85
+	bbox	53 74 53 66
+	frame	data/chars/hawk/atk1.gif
+	offset	105 102
+	frame	data/chars/hawk/atk2.gif
+	attack	77 17 126 129 25 1 0 0 20
+	offset	92 123
+	frame	data/chars/hawk/atk3.gif
+	offset	67 141
+	frame	data/chars/hawk/atk4.gif
+	offset	54 141
+	frame	data/chars/hawk/atk5.gif
+	offset	36 143
+	frame	data/chars/hawk/atk6.gif
+	offset	36 62
+	frame	data/chars/hawk/atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/hawk/atk8.gif
+
+
+anim special
+	range	0 100
+	loop	0
+	delay	7
+	offset	100 85
+	bbox	53 74 53 66
+	frame	data/chars/hawk/atk1.gif
+	offset	105 102
+	frame	data/chars/hawk/atk2.gif
+	attack	77 17 126 129 25 1 0 0 20
+	offset	92 123
+	frame	data/chars/hawk/atk3.gif
+	offset	67 141
+	frame	data/chars/hawk/atk4.gif
+	offset	54 141
+	frame	data/chars/hawk/atk5.gif
+	offset	36 143
+	frame	data/chars/hawk/atk6.gif
+	offset	36 62
+	frame	data/chars/hawk/atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/hawk/atk8.gif
+
+anim throw
+	range	0 100
+	loop	0
+	delay	10
+	offset	22 72
+	frame	data/chars/hawk/throw1.gif
+	offset	28 99
+	frame	data/chars/hawk/throw2.gif
+	offset	30 101
+	frame	data/chars/hawk/throw3.gif
+	offset	35 109
+	frame	data/chars/hawk/throw4.gif
+	offset	39 119
+	frame	data/chars/hawk/throw5.gif
+
+
+anim attack2
+	range	175 250
+	loop	0
+	delay	16
+	offset	43 57
+	bbox	44 58 63 84
+	frame	data/chars/hawk/2atk1.gif
+	frame	data/chars/hawk/2atk2.gif
+	frame	data/chars/hawk/2atk3.gif
+	attack	53 2 250 63 25 1 0 0 24
+	frame	data/chars/hawk/2atk4.gif
+	frame	data/chars/hawk/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/hawk/2atk6.gif
+	frame	data/chars/hawk/2atk7.gif
+
+anim upper
+	range	0 250
+	loop	0
+	delay	10
+	offset	37 68
+	bbox	44 58 63 84
+	frame	data/chars/hawk/upper1.gif
+	offset	37 70
+	frame	data/chars/hawk/upper2.gif
+	offset	39 125
+	attack	0 0 167 140 20 1 0 0 20
+	frame	data/chars/hawk/upper3.gif
+	offset	38 125
+	frame	data/chars/hawk/upper4.gif
+	offset	39 125
+	frame	data/chars/hawk/upper5.gif
+	frame	data/chars/hawk/upper6.gif
+	frame	data/chars/hawk/upper7.gif
+	offset	43 95
+	attack	0 0 0 0 0 0
+	frame	data/chars/hawk/upper8.gif
+
+anim death
+	loop	0
+	delay	18
+	offset	130 130
+	frame	data/chars/hawk/d1
+	frame	data/chars/hawk/d2
+	delay	30
+	frame	data/chars/hawk/d3
+	frame	data/chars/hawk/d4
+
+
+
+
+
+
+
+
+
+
+

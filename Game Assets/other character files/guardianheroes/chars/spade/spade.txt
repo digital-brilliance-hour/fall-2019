@@ -1,0 +1,354 @@
+name	spade
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/spade/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+#fmap 3
+
+palette	data/chars/spade/idle1.gif
+
+
+alternatepal	data/chars/spade/testpal.gif
+alternatepal	data/chars/spade/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  52 70
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/spade/idle1.gif
+	offset  51 68
+	frame	data/chars/spade/idle2.gif
+	offset  52 68
+	frame	data/chars/spade/idle3.gif
+	frame	data/chars/spade/idle4.gif
+	offset  52 71
+	frame	data/chars/spade/idle5.gif
+	offset  52 72
+	frame	data/chars/spade/idle6.gif
+	frame	data/chars/spade/idle7.gif
+	offset  53 71
+	frame	data/chars/spade/idle8.gif
+	frame	data/chars/spade/idle9.gif
+	offset  53 70
+	frame	data/chars/spade/idle10.gif
+	frame	data/chars/spade/idle11.gif
+
+
+
+anim walk
+	loop	1
+	offset	35 84
+	bbox 	25 14 35 54
+	delay	7
+	frame	data/chars/spade/walk1.gif
+	offset	29 87
+	frame	data/chars/spade/walk2.gif
+	frame	data/chars/spade/walk3.gif
+	offset	34 86
+	frame	data/chars/spade/walk4.gif
+	offset	35 85
+	frame	data/chars/spade/walk5.gif
+	offset	29 87
+	frame	data/chars/spade/walk6.gif
+	frame	data/chars/spade/walk7.gif
+	offset	33 86
+	frame	data/chars/spade/walk8.gif
+
+
+
+
+anim run
+	loop	1
+	offset	51 72
+	bbox 	25 14 35 54
+	delay	10
+	frame	data/chars/spade/run1.gif
+	offset	47 71
+	frame	data/chars/spade/run2.gif
+	offset	38 76
+	frame	data/chars/spade/run3.gif
+	offset	54 73
+	frame	data/chars/spade/run4.gif
+	offset	47 76
+	frame	data/chars/spade/run5.gif
+
+
+
+anim runattack
+	range	0 110
+	loop	0
+	delay	7
+	move	5
+	offset	73 115
+	bbox 	25 14 35 54
+	frame	data/chars/spade/atk1.gif
+	offset	53 119
+	frame	data/chars/spade/atk2.gif
+	offset	50 59
+	frame	data/chars/spade/atk3.gif
+	attack	0 0 153 119 25 1 0 0 20
+	offset	42 124
+	frame	data/chars/spade/atk4.gif
+	offset	66 105
+	frame	data/chars/spade/atk5.gif
+	frame	data/chars/spade/atk6.gif
+	offset	66 106
+	frame	data/chars/spade/atk7.gif
+	attack	0 0 0 0 0 0
+	offset	65 104
+	frame	data/chars/spade/atk8.gif
+	frame	data/chars/spade/atk9.gif
+	frame	data/chars/spade/atk10.gif
+	offset	62 104
+	frame	data/chars/spade/atk11.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	43 62
+	bbox 	25 14 35 54
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/spade/block1.gif
+	offset	43 67
+	frame	data/chars/spade/block2.gif
+	move    -8
+	offset	45 67
+	frame	data/chars/spade/block2.gif
+	offset	43 67
+	frame	data/chars/spade/block2.gif
+	move    -6
+	offset	45 67
+	frame	data/chars/spade/block2.gif
+	offset	43 67
+	frame	data/chars/spade/block2.gif
+	move    -4
+	offset	45 67
+	frame	data/chars/spade/block2.gif
+	offset	43 67
+	frame	data/chars/spade/block2.gif
+	offset	45 67
+	move    -2
+	frame	data/chars/spade/block2.gif
+	offset	43 67
+	frame	data/chars/spade/block2.gif
+	offset	43 62
+	delay   20
+	move    0
+	frame	data/chars/spade/block1.gif
+
+anim pain
+	loop	0
+	delay	7
+	offset	52 73
+	bbox 	25 14 35 54
+	frame	data/chars/spade/pain1.gif
+	offset	133 61
+	frame	data/chars/spade/pain2.gif
+	offset	52 73
+	frame	data/chars/spade/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	43 58
+	frame	data/chars/spade/fall1.gif
+	offset	45 36
+	frame	data/chars/spade/fall2.gif
+	offset	50 55
+	delay	1000
+	frame	data/chars/spade/fall3.gif
+	offset	53 16
+	delay	20
+	frame	data/chars/spade/fall4.gif
+	frame	data/chars/spade/fall4.gif
+
+anim death
+	loop	0
+	delay	16
+	offset	113 200
+	move	-10
+	frame	data/chars/spade/d1
+	frame	data/chars/spade/d2
+	frame	data/chars/spade/d3
+	frame	data/chars/spade/d4
+	move	0
+	frame	data/chars/spade/d5
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	53 57
+	frame	data/chars/spade/rise1.gif
+
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	10
+	offset	45 65
+	bbox 	25 14 35 54
+	frame	data/chars/spade/2atk1.gif
+	offset	45 56
+	frame	data/chars/spade/2atk2.gif
+	attack	37 0 83 100 25 1 0 0 24
+	offset	42 98
+	frame	data/chars/spade/2atk3.gif
+	offset	42 96
+	frame	data/chars/spade/2atk4.gif
+	offset	42 96
+	frame	data/chars/spade/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/spade/2atk6.gif
+
+
+anim attack1
+	range	70 110
+	loop	0
+	delay	7
+	offset	73 115
+	bbox 	25 14 45 64
+	frame	data/chars/spade/atk1.gif
+	offset	53 119
+	frame	data/chars/spade/atk2.gif
+	offset	50 59
+	frame	data/chars/spade/atk3.gif
+	attack	0 0 153 119 25 1 0 0 20
+	offset	42 124
+	frame	data/chars/spade/atk4.gif
+	offset	66 105
+	frame	data/chars/spade/atk5.gif
+	frame	data/chars/spade/atk6.gif
+	offset	66 106
+	frame	data/chars/spade/atk7.gif
+	attack	0 0 0 0 0 0
+	offset	65 104
+	frame	data/chars/spade/atk8.gif
+	frame	data/chars/spade/atk9.gif
+	frame	data/chars/spade/atk10.gif
+	offset	62 104
+	frame	data/chars/spade/atk11.gif
+
+
+
+anim special
+	range	0 100
+	loop	0
+	delay	7
+	offset	73 115
+	bbox 	25 14 35 54
+	frame	data/chars/spade/atk1.gif
+	offset	53 119
+	frame	data/chars/spade/atk2.gif
+	offset	50 59
+	frame	data/chars/spade/atk3.gif
+	attack	0 0 153 119 25 1 0 0 20
+	offset	42 124
+	frame	data/chars/spade/atk4.gif
+	offset	66 105
+	frame	data/chars/spade/atk5.gif
+	frame	data/chars/spade/atk6.gif
+	offset	66 106
+	frame	data/chars/spade/atk7.gif
+	attack	0 0 0 0 0 0
+	offset	65 104
+	frame	data/chars/spade/atk8.gif
+	frame	data/chars/spade/atk9.gif
+	frame	data/chars/spade/atk10.gif
+	offset	62 104
+	frame	data/chars/spade/atk11.gif
+
+
+
+anim attack2
+	range	0 70
+	loop	0
+	delay	10
+	offset	45 65
+	bbox 	25 14 45 54
+	frame	data/chars/spade/2atk1.gif
+	offset	45 56
+	frame	data/chars/spade/2atk2.gif
+	attack	37 0 83 100 25 1 0 0 24
+	offset	42 98
+	frame	data/chars/spade/2atk3.gif
+	offset	42 96
+	frame	data/chars/spade/2atk4.gif
+	offset	42 96
+	frame	data/chars/spade/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/spade/2atk6.gif
+
+anim attack3
+	range	110 200
+	loop	0
+	delay	11
+	offset	57 110
+	bbox 	25 14 35 54
+	frame	data/chars/spade/3atk1.gif
+	offset	72 130
+	frame	data/chars/spade/3atk2.gif
+	offset	67 128
+	frame	data/chars/spade/3atk3.gif
+	offset	64 117
+	frame	data/chars/spade/3atk4.gif
+	offset	46 116
+	attack	56 2 244 90 25 1 0 0 26
+	frame	data/chars/spade/3atk5.gif
+	offset	53 132
+	frame	data/chars/spade/3atk6.gif
+	offset	53 67
+	frame	data/chars/spade/3atk7.gif
+	frame	data/chars/spade/3atk8.gif
+	frame	data/chars/spade/3atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/spade/3atk10.gif
+
+
+anim upper
+	range	0 100
+	loop	0
+	delay	10
+	offset	45 65
+	bbox 	25 14 35 54
+	frame	data/chars/spade/2atk1.gif
+	offset	45 56
+	frame	data/chars/spade/2atk2.gif
+	attack	37 0 83 100 25 1 0 0 24
+	offset	42 98
+	frame	data/chars/spade/2atk3.gif
+	offset	42 96
+	frame	data/chars/spade/2atk4.gif
+	offset	42 96
+	frame	data/chars/spade/2atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/spade/2atk6.gif
+

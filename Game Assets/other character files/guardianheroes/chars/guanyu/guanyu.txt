@@ -1,0 +1,365 @@
+name	GuanYu
+health	500
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/guanyu/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+#fmap 3
+
+palette	data/chars/guanyu/idle1.gif
+
+
+#alternatepal	data/chars/guanyu/testpal.gif
+#alternatepal	data/chars/guanyu/testpal2.gif
+#alternatepal	data/chars/guanyu/testpal3.gif
+#alternatepal	data/chars/guanyu/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  112 89
+	bbox 	83 22 60 60
+	delay	11
+	frame	data/chars/guanyu/idle1.gif
+	frame	data/chars/guanyu/idle2.gif
+	frame	data/chars/guanyu/idle3.gif
+	frame	data/chars/guanyu/idle4.gif
+	frame	data/chars/guanyu/idle5.gif
+	frame	data/chars/guanyu/idle6.gif
+	frame	data/chars/guanyu/idle7.gif
+	frame	data/chars/guanyu/idle8.gif
+	frame	data/chars/guanyu/idle9.gif
+	frame	data/chars/guanyu/idle10.gif
+	frame	data/chars/guanyu/idle11.gif
+	frame	data/chars/guanyu/idle12.gif
+
+
+
+
+
+anim walk
+	loop	1
+	offset	112 84
+	bbox 	90 15 50 60
+	delay	8
+	frame	data/chars/guanyu/walk1.gif
+	frame	data/chars/guanyu/walk2.gif
+	frame	data/chars/guanyu/walk3.gif
+	frame	data/chars/guanyu/walk4.gif
+	frame	data/chars/guanyu/walk5.gif
+	frame	data/chars/guanyu/walk6.gif
+	frame	data/chars/guanyu/walk7.gif
+	frame	data/chars/guanyu/walk8.gif
+
+
+
+
+
+anim run
+	loop	1
+	offset	110 82
+	bbox 	90 15 50 60
+	delay	8
+	frame	data/chars/guanyu/run1.gif
+	frame	data/chars/guanyu/run2.gif
+	frame	data/chars/guanyu/run3.gif
+	frame	data/chars/guanyu/run4.gif
+	frame	data/chars/guanyu/run5.gif
+	frame	data/chars/guanyu/run6.gif
+
+
+
+anim runattack
+	range	0 170
+	loop	0
+	delay	16
+	move	7
+	offset	159 143
+	bbox 	182 831 38 90
+	frame	data/chars/guanyu/atk16.gif
+	frame	data/chars/guanyu/atk17.gif
+	attack	179 13 131 128 25 1 0 0 26
+	frame	data/chars/guanyu/atk18.gif
+	frame	data/chars/guanyu/atk19.gif
+	frame	data/chars/guanyu/atk20.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk21.gif
+	frame	data/chars/guanyu/atk22.gif
+	frame	data/chars/guanyu/atk23.gif
+
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	120 106
+	bbox 	182 831 38 90
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/guanyu/block2.gif
+	offset	120 106
+	frame	data/chars/guanyu/block3.gif
+	move    -8
+	offset	122 106
+	frame	data/chars/guanyu/block3.gif
+	offset	120 106
+	frame	data/chars/guanyu/block3.gif
+	move    -6
+	offset	122 106
+	frame	data/chars/guanyu/block3.gif
+	offset	120 106
+	frame	data/chars/guanyu/block3.gif
+	move    -4
+	offset	122 106
+	frame	data/chars/guanyu/block3.gif
+	offset	120 106
+	frame	data/chars/guanyu/block3.gif
+	offset	122 106
+	move    -2
+	frame	data/chars/guanyu/block3.gif
+	offset	122 106
+	frame	data/chars/guanyu/block3.gif
+	offset	120 106
+	delay   20
+	move    0
+	frame	data/chars/guanyu/block2.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	194 201
+	bbox 	151 148 60 60
+	frame	data/chars/guanyu/pain1.gif
+
+
+
+anim fall
+	landframe	3
+	loop	0
+	delay	13
+	offset	194 201
+	bbox 	151 148 60 60
+	frame	data/chars/guanyu/fall1.gif
+	delay	1000
+	frame	data/chars/guanyu/fall1.gif
+	offset	165 181
+	delay	20
+	frame	data/chars/guanyu/fall2.gif
+	frame	data/chars/guanyu/fall2.gif
+
+anim death
+	landframe	3
+	loop	0
+	delay	13
+	offset	194 201
+	bbox 	151 148 60 60
+	frame	data/chars/guanyu/fall1.gif
+	delay	1000
+	frame	data/chars/guanyu/fall1.gif
+	offset	165 181
+	delay	20
+	frame	data/chars/guanyu/fall2.gif
+	frame	data/chars/guanyu/fall2.gif
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	112 89
+	bbox 	182 831 38 90
+	frame	data/chars/guanyu/idle1.gif
+
+
+anim riseattack
+	range	0 131
+	loop	0
+	delay	16
+	move	7
+	offset	159 143
+	bbox 	182 831 38 90
+	frame	data/chars/guanyu/atk16.gif
+	frame	data/chars/guanyu/atk17.gif
+	attack	179 13 131 128 25 1 0 0 26
+	frame	data/chars/guanyu/atk18.gif
+	frame	data/chars/guanyu/atk19.gif
+	frame	data/chars/guanyu/atk20.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk21.gif
+	frame	data/chars/guanyu/atk22.gif
+	frame	data/chars/guanyu/atk23.gif
+
+
+anim attack1
+	range	0 130
+	loop	0
+	delay	9
+	offset	159 143
+	bbox 	127 71 60 65
+	frame	data/chars/guanyu/atk1.gif
+	frame	data/chars/guanyu/atk2.gif
+	attack	210 75 100 35 10 0 0 0 14
+	frame	data/chars/guanyu/atk3.gif
+	frame	data/chars/guanyu/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk5.gif
+	frame	data/chars/guanyu/atk6.gif
+	attack	216 71 130 42 10 0 0 0 14
+	frame	data/chars/guanyu/atk7.gif
+	frame	data/chars/guanyu/atk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk9.gif
+	frame	data/chars/guanyu/atk10.gif
+	attack	227 63 145 72 10 0 0 0 14
+	frame	data/chars/guanyu/atk11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk12.gif
+	frame	data/chars/guanyu/atk13.gif
+	frame	data/chars/guanyu/atk14.gif
+	frame	data/chars/guanyu/atk15.gif
+	frame	data/chars/guanyu/atk16.gif
+	frame	data/chars/guanyu/atk17.gif
+	attack	179 13 131 128 10 1 0 0 28
+	frame	data/chars/guanyu/atk18.gif
+	frame	data/chars/guanyu/atk19.gif
+	frame	data/chars/guanyu/atk20.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/atk21.gif
+	frame	data/chars/guanyu/atk22.gif
+	frame	data/chars/guanyu/atk23.gif
+
+
+
+anim special
+	range	0 160
+	loop	0
+	delay	8
+	offset	194 201
+	frame	data/chars/guanyu/spec1.gif
+	frame	data/chars/guanyu/spec2.gif
+	frame	data/chars/guanyu/spec3.gif
+	frame	data/chars/guanyu/spec4.gif
+	frame	data/chars/guanyu/spec5.gif
+	frame	data/chars/guanyu/spec6.gif
+	frame	data/chars/guanyu/spec7.gif
+	frame	data/chars/guanyu/spec8.gif
+	frame	data/chars/guanyu/spec9.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec11.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec12.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec13.gif
+	frame	data/chars/guanyu/spec14.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec15.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec16.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec17.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec18.gif
+	frame	data/chars/guanyu/spec19.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec20.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec21.gif
+	attack	51 53 280 150 20 1 0 0 28
+	frame	data/chars/guanyu/spec22.gif
+	frame	data/chars/guanyu/spec23.gif
+	frame	data/chars/guanyu/spec24.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec25.gif
+	frame	data/chars/guanyu/spec26.gif
+	frame	data/chars/guanyu/spec27.gif
+	frame	data/chars/guanyu/spec28.gif
+	frame	data/chars/guanyu/spec29.gif
+	frame	data/chars/guanyu/spec30.gif
+	frame	data/chars/guanyu/spec31.gif
+	frame	data/chars/guanyu/spec32.gif
+	frame	data/chars/guanyu/spec33.gif
+	frame	data/chars/guanyu/spec34.gif
+	frame	data/chars/guanyu/spec35.gif
+	frame	data/chars/guanyu/spec36.gif
+	frame	data/chars/guanyu/spec37.gif
+
+
+
+
+anim attack2
+	range	0 160
+	loop	0
+	delay	8
+	offset	194 201
+	bbox 	151 148 60 60
+	frame	data/chars/guanyu/spec1.gif
+	frame	data/chars/guanyu/spec2.gif
+	frame	data/chars/guanyu/spec3.gif
+	frame	data/chars/guanyu/spec4.gif
+	frame	data/chars/guanyu/spec5.gif
+	frame	data/chars/guanyu/spec6.gif
+	frame	data/chars/guanyu/spec7.gif
+	frame	data/chars/guanyu/spec8.gif
+	frame	data/chars/guanyu/spec9.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec11.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec12.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec13.gif
+	frame	data/chars/guanyu/spec14.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec15.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec16.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec17.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec18.gif
+	frame	data/chars/guanyu/spec19.gif
+	attack	51 53 280 150 5 0 0 0 14
+	frame	data/chars/guanyu/spec20.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec21.gif
+	attack	51 53 280 150 20 1 0 0 28
+	frame	data/chars/guanyu/spec22.gif
+	frame	data/chars/guanyu/spec23.gif
+	frame	data/chars/guanyu/spec24.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guanyu/spec25.gif
+	frame	data/chars/guanyu/spec26.gif
+	frame	data/chars/guanyu/spec27.gif
+	frame	data/chars/guanyu/spec28.gif
+	frame	data/chars/guanyu/spec29.gif
+	frame	data/chars/guanyu/spec30.gif
+	frame	data/chars/guanyu/spec31.gif
+	frame	data/chars/guanyu/spec32.gif
+	frame	data/chars/guanyu/spec33.gif
+	frame	data/chars/guanyu/spec34.gif
+	frame	data/chars/guanyu/spec35.gif
+	frame	data/chars/guanyu/spec36.gif
+	frame	data/chars/guanyu/spec37.gif

@@ -1,0 +1,75 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	jaguar
+type    item
+subtype	weapon
+weapnum 3
+counter 3
+typeshot 0
+shadow	3
+speed  15
+jumpheight 2
+icon	data/chars/misc/jagico.gif
+
+palette	data/chars/misc/idle4.gif
+
+
+anim idle
+	loop	1
+	delay	90
+	offset	133 50
+	bbox	99 156 70 97
+	frame	data/chars/misc/idle4.gif
+	frame	data/chars/misc/idle5.gif
+	frame	data/chars/misc/idle6.gif
+	frame	data/chars/misc/idle7.gif
+	frame	data/chars/misc/idle8.gif
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	130 264
+	bbox	0 -30 42 106
+	frame	data/chars/misc/jrun1.gif
+	frame	data/chars/misc/jrun2.gif
+	frame	data/chars/misc/jrun3.gif
+	frame	data/chars/misc/jrun4.gif
+	frame	data/chars/misc/jrun5.gif
+
+
+anim run
+	loop	1
+	delay	7
+	offset	130 264
+	bbox	0 -30 42 106
+	frame	data/chars/misc/jrun1.gif
+	frame	data/chars/misc/jrun2.gif
+	frame	data/chars/misc/jrun3.gif
+	frame	data/chars/misc/jrun4.gif
+	frame	data/chars/misc/jrun5.gif
+
+
+anim attack1
+	loop	0
+	delay	100
+	offset	133 50
+	bbox	0 -30 42 106
+	frame	data/chars/misc/idle4.gif
+
+
+anim attack2
+	loop	0
+	delay	100
+	offset	133 50
+	bbox	0 -30 42 106
+	frame	data/chars/misc/idle4.gif
+
+
+anim fall
+	loop	0
+	delay	100
+	offset	133 50
+	bbox	0 -30 42 106
+	frame	data/chars/misc/idle4.gif

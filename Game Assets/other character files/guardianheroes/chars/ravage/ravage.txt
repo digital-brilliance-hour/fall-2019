@@ -1,0 +1,309 @@
+name	ravage
+health	400
+speed	11
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/ravage/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/ravage/idle1.gif
+
+#alternatepal	data/chars/ravage/testpal.gif
+
+anim idle
+	loop	1
+	offset	86 127
+	bbox	34 18 170 120
+	delay	9
+	frame	data/chars/ravage/idle1.gif
+	offset	85 128
+	frame	data/chars/ravage/idle2.gif
+	offset	83 128
+	frame	data/chars/ravage/idle3.gif
+	offset	82 126
+	frame	data/chars/ravage/idle4.gif
+	offset	82 121
+	frame	data/chars/ravage/idle5.gif
+	frame	data/chars/ravage/idle6.gif
+	frame	data/chars/ravage/idle7.gif
+	offset	82 126
+	frame	data/chars/ravage/idle8.gif
+	offset	83 128
+	frame	data/chars/ravage/idle9.gif
+	offset	85 126
+	frame	data/chars/ravage/idle10.gif
+
+anim walk
+	loop	1
+	offset	56 136
+	bbox	15 28 150 120
+	delay   13
+	frame	data/chars/ravage/walk1.gif
+	offset	57 136
+	frame	data/chars/ravage/walk2.gif
+	offset	57 137
+	frame	data/chars/ravage/walk3.gif
+	offset	60 138
+	frame	data/chars/ravage/walk4.gif
+	offset	61 140
+	frame	data/chars/ravage/walk5.gif
+	offset	66 140
+	frame	data/chars/ravage/walk6.gif
+	offset	76 140
+	frame	data/chars/ravage/walk7.gif
+	offset	64 139
+	frame	data/chars/ravage/walk8.gif
+	offset	52 137
+	frame	data/chars/ravage/walk9.gif
+	offset	56 136
+	frame	data/chars/ravage/walk10.gif
+	offset	60 137
+	frame	data/chars/ravage/walk11.gif
+	offset	59 136
+	frame	data/chars/ravage/walk12.gif
+	offset	60 139
+	frame	data/chars/ravage/walk13.gif
+	offset	58 139
+	frame	data/chars/ravage/walk14.gif
+	offset	57 139
+	frame	data/chars/ravage/walk15.gif
+	offset	57 137
+	frame	data/chars/ravage/walk16.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	90 170
+	bbox	150 105 135 70
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/ravage/2atk2.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	offset	92 170
+	move    -8
+	frame	data/chars/ravage/2atk2.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	offset	92 170
+	move    -6
+	frame	data/chars/ravage/2atk2.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	move    -4
+	offset	92 170
+	frame	data/chars/ravage/2atk2.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	offset	92 170
+	move    -2
+	frame	data/chars/ravage/2atk2.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	offset	92 170
+	delay   20
+	move    0
+	frame	data/chars/ravage/2atk2.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	114 139
+	bbox	150 105 135 70
+	frame	data/chars/ravage/pain1.gif
+	frame	data/chars/ravage/pain2.gif
+	frame	data/chars/ravage/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	40
+	offset	97 135
+	frame	data/chars/ravage/fall1.gif
+	delay	20
+	offset	141 147
+	frame	data/chars/ravage/fall2.gif
+	offset	100 176
+	delay	100
+	frame	data/chars/ravage/fall3.gif
+	offset	167 49
+	delay	20
+	frame	data/chars/ravage/fall4.gif
+	frame	data/chars/ravage/fall4.gif
+
+anim death
+	loop	0
+	delay	40
+	offset	97 135
+	frame	data/chars/ravage/fall1.gif
+	delay	20
+	offset	141 147
+	frame	data/chars/ravage/fall2.gif
+	offset	100 176
+	frame	data/chars/ravage/fall3.gif
+	offset	167 49
+	frame	data/chars/ravage/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	6
+	offset	85 129
+	frame	data/chars/ravage/atk2.gif
+
+anim riseattack
+	range	0 275
+	loop	0
+	bbox	15 28 170 120
+	quakeframe 12 10 3
+	delay	6
+	offset	83 129
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/ravage/atk1.gif
+	offset	85 129
+	frame	data/chars/ravage/atk2.gif
+	move    11
+	delay   2
+#	sound   data/sounds/run.wav
+	bbox	0 0 0 0
+	offset	111 123
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	offset	91 136
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	move    3
+	delay   18
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	offset	64 190
+	frame	data/chars/ravage/atk5.gif
+	offset	83 129
+	frame	data/chars/ravage/atk6.gif
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	6
+	offset	82 179
+	bbox	15 28 170 120
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/ravage/2atk1.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	delay	6
+	sound   data/sounds/punch1.wav
+	offset	82 179
+	frame	data/chars/ravage/2atk3.gif
+	offset	71 111
+	frame	data/chars/ravage/2atk4.gif
+	offset	68 115
+	attack  129 35 170 85 25 1 0 0 15
+	frame	data/chars/ravage/2atk5.gif
+	offset	68 107
+	frame	data/chars/ravage/2atk6.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	offset	68 102
+	frame	data/chars/ravage/2atk7.gif
+	offset	72 97
+	frame	data/chars/ravage/2atk8.gif
+	offset	87 98
+	frame	data/chars/ravage/2atk9.gif
+
+anim attack2
+	range	201 275
+	loop	0
+	bbox	15 28 170 120
+	quakeframe 12 10 3
+	delay	6
+	offset	83 129
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/ravage/atk1.gif
+	offset	85 129
+	frame	data/chars/ravage/atk2.gif
+	move    11
+	delay   2
+#	sound   data/sounds/run.wav
+	bbox	0 0 0 0
+	offset	111 123
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	frame	data/chars/ravage/atk3.gif
+	offset	91 136
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	frame	data/chars/ravage/atk4.gif
+	move    3
+	delay   18
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	offset	64 190
+	frame	data/chars/ravage/atk5.gif
+	offset	83 129
+	frame	data/chars/ravage/atk6.gif
+
+anim riseattack
+	range	0 150
+	loop	0
+	delay	6
+	offset	82 179
+	bbox	15 28 170 120
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/ravage/2atk1.gif
+	offset	90 170
+	frame	data/chars/ravage/2atk2.gif
+	delay	6
+	sound   data/sounds/punch1.wav
+	offset	111 123
+	frame	data/chars/ravage/2atk3.gif
+	offset	91 136
+	frame	data/chars/ravage/2atk4.gif
+	offset	68 115
+	attack  200 112 135 57 25 1 0 0 15
+	frame	data/chars/ravage/2atk5.gif
+	offset	68 107
+	frame	data/chars/ravage/2atk6.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	offset	68 102
+	frame	data/chars/ravage/2atk7.gif
+	offset	72 97
+	frame	data/chars/ravage/2atk8.gif
+	offset	87 98
+	frame	data/chars/ravage/2atk9.gif

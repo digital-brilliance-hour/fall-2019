@@ -1,0 +1,50 @@
+name	winds1
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+candamage player
+palette	data/chars/misc/wind1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	37 0
+	attack	0 0 97 50 25 1 0 0 28
+	frame	data/chars/misc/wind1.gif
+	offset	38 10
+	frame	data/chars/misc/wind2.gif
+	offset	67 30
+	frame	data/chars/misc/wind3.gif
+	offset	53 33
+	frame	data/chars/misc/wind4.gif
+	offset	54 39
+	frame	data/chars/misc/wind5.gif
+	offset	49 44
+	frame	data/chars/misc/wind6.gif
+	offset	33 61
+	frame	data/chars/misc/wind7.gif
+	offset	59 68
+	frame	data/chars/misc/wind8.gif
+	offset	54 67
+	frame	data/chars/misc/wind9.gif
+	offset	49 52
+	frame	data/chars/misc/wind10.gif
+	offset	53 69
+	frame	data/chars/misc/wind11.gif
+	offset	59 68
+	frame	data/chars/misc/wind12.gif
+	offset	46 67
+	frame	data/chars/misc/wind13.gif
+	attack	0 0 0 0 0 0
+
+
+
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

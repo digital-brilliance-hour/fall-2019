@@ -1,0 +1,26 @@
+name	v
+health	1
+type	pshot
+shadow	0
+speed   22
+remove  0
+alpha 1
+palette	data/chars/misc/v1.gif
+candamage enemy npc
+
+anim idle
+	loop	1
+	delay	5
+	offset	-30 5
+        hitfx   data/sounds/burn.wav
+        noreflect 1
+	attack	0 0 74 71 25 1 1 0 0
+	frame	data/chars/misc/v1.gif
+	frame	data/chars/misc/v2.gif
+	frame	data/chars/misc/v3.gif
+	frame	data/chars/misc/v4.gif
+	frame	data/chars/misc/v5.gif
+	frame	data/chars/misc/v6.gif
+        attack  0 0 0 0
+
+

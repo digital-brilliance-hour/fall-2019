@@ -1,0 +1,18 @@
+name	sandfg
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/chars/misc/fs1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 46
+	frame	data/chars/misc/fs1.gif
+	frame	data/chars/misc/fs2.gif
+	frame	data/chars/misc/fs3.gif
+	frame	data/chars/misc/fs4.gif
+	frame	data/chars/misc/fs5.gif
+	frame	data/chars/misc/fs6.gif
+

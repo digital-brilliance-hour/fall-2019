@@ -1,0 +1,68 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	bear
+type    item
+subtype	weapon
+weapnum 1
+counter 3
+typeshot 0
+shadow	3
+speed  15
+jumpheight 2
+icon	data/chars/gash/bear/bicon.gif
+
+palette	data/chars/gash/bear/bear.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	81 61
+	bbox	0 -30 42 106
+	frame	data/chars/gash/bear/bear.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	113 74
+	bbox	0 -30 42 106
+	frame	data/chars/misc/bear1.gif
+	frame	data/chars/misc/bear2.gif
+	frame	data/chars/misc/bear3.gif
+	frame	data/chars/misc/bear4.gif
+	frame	data/chars/misc/bear5.gif
+	frame	data/chars/misc/bear6.gif
+
+anim run
+	loop	1
+	delay	7
+	offset	113 74
+	bbox	0 -30 42 106
+	frame	data/chars/misc/bear1.gif
+	frame	data/chars/misc/bear2.gif
+	frame	data/chars/misc/bear3.gif
+	frame	data/chars/misc/bear4.gif
+	frame	data/chars/misc/bear5.gif
+	frame	data/chars/misc/bear6.gif
+
+
+anim attack1
+	loop	1
+	delay	1000
+	offset	81 61
+	frame	data/chars/gash/bear/bear.gif
+
+
+anim attack2
+	loop	1
+	delay	1000
+	offset	81 61
+	frame	data/chars/gash/bear/bear.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	81 61
+	frame	data/chars/gash/bear/bear.gif

@@ -1,0 +1,176 @@
+name	Ork_Captain
+health	250
+speed	11
+type	enemy
+shadow	5
+icon	data/chars/adder/icon.gif
+aggression 40
+#cantgrab 1
+nodieblink 3
+diesound data/sounds/die1.wav
+palette	data/chars/adder/pal.gif
+falldie 1
+alternatepal	data/chars/adder/testpal.gif
+alternatepal	data/chars/adder/testpal2.gif
+
+anim idle
+	loop	1
+	offset  87 139
+	bbox 	23 4 54 85
+	delay	15
+	frame	data/chars/adder/idle1.gif
+	offset  87 139
+	frame	data/chars/adder/idle2.gif
+	offset  87 139
+	frame	data/chars/adder/idle3.gif
+	offset  86 138
+	frame	data/chars/adder/idle4.gif
+	offset  87 138
+	frame	data/chars/adder/idle5.gif
+	offset  87 138
+	frame	data/chars/adder/idle6.gif
+
+
+	
+anim walk
+	loop	1
+	offset  87 139
+	bbox 	61 28 94 62
+	delay	13
+	frame	data/chars/adder/walk1.gif
+	offset  87 139
+	frame	data/chars/adder/walk2.gif
+	offset  87 139
+	frame	data/chars/adder/walk3.gif
+	offset  84 139
+	frame	data/chars/adder/walk4.gif
+	offset  87 139
+	frame	data/chars/adder/walk5.gif
+	offset  87 139
+	frame	data/chars/adder/walk6.gif
+	offset  87 139
+	frame	data/chars/adder/walk7.gif
+	offset  84 139
+	frame	data/chars/adder/walk8.gif
+
+
+		
+anim pain
+	loop	0
+	offset	85 136
+	delay	4
+	bbox	12 10 58 90
+	frame	data/chars/adder/pain1.gif
+	offset  111 147
+	frame	data/chars/adder/pain2.gif
+	
+anim fall
+	landframe 4
+	loop	0
+	offset	107 146
+	ATTACK	27 32 82 87 15 1
+#	bbox	37 64 72 65
+	delay	11
+	frame	data/chars/adder/fall1.gif
+	offset	90 103
+	frame	data/chars/adder/fall2.gif
+	offset	86 118
+	delay	1000
+	frame	data/chars/adder/fall3.gif
+	offset	119 50
+	delay	10
+	frame	data/chars/adder/fall4.gif
+	frame	data/chars/adder/fall4.gif
+
+
+
+anim rise
+	loop	0
+	offset	112 75
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/adder/rise1.gif
+	offset	100 90
+	frame	data/chars/adder/rise2.gif
+	offset	92 86
+	frame	data/chars/adder/rise3.gif
+	offset	57 89
+	frame	data/chars/adder/rise4.gif
+	offset	45 114
+	frame	data/chars/adder/rise5.gif
+
+
+
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	8
+	offset	80 135
+	bbox	44 58 63 84
+	frame	data/chars/adder/atk1.gif
+	offset	69 133
+	frame	data/chars/adder/atk2.gif
+	offset	19 134
+	frame	data/chars/adder/atk3.gif
+	attack	100 16 95 84 25 1
+	offset	29 133
+	frame	data/chars/adder/atk4.gif
+	attack	0 0 0 0 0
+	offset	42 138
+	frame	data/chars/adder/atk5.gif
+	offset	20 136
+	frame	data/chars/adder/atk6.gif
+	offset	37 136
+	frame	data/chars/adder/atk7.gif
+	offset	80 135
+	frame	data/chars/adder/atk8.gif
+
+
+
+	
+anim attack2
+	range	150 250
+	loop	0
+	delay	8
+	offset	55 136
+	bbox	78 48 68 72
+	frame	data/chars/adder/2atk1.gif
+	offset	54 136
+	frame	data/chars/adder/2atk2.gif
+	offset	54 136
+	frame	data/chars/adder/2atk3.gif
+	offset	60 136
+	frame	data/chars/adder/2atk4.gif
+	offset	60 136
+	frame	data/chars/adder/2atk5.gif
+	attack	61 4 179 93 25 1
+	frame	data/chars/adder/2atk6.gif
+	frame	data/chars/adder/2atk7.gif
+	frame	data/chars/adder/2atk8.gif
+	frame	data/chars/adder/2atk9.gif
+	frame	data/chars/adder/2atk10.gif
+	frame	data/chars/adder/2atk11.gif
+	frame	data/chars/adder/2atk12.gif
+	frame	data/chars/adder/2atk13.gif
+	frame	data/chars/adder/2atk14.gif
+	frame	data/chars/adder/2atk15.gif
+	frame	data/chars/adder/2atk16.gif
+	attack	0 0 0 0 0
+
+
+			
+anim death
+	offset  145 220
+	bbox    0 0 0 0
+	delay 30
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/adder/d1
+	frame	data/chars/adder/d2
+	frame	data/chars/adder/d5
+	frame	data/chars/adder/d3
+	offset	228 220
+	frame	data/chars/adder/d4
+
+
+	

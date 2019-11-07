@@ -1,0 +1,42 @@
+name	thorn
+health	1
+nolife  1
+type	enemy
+noquake 1
+falldie 1
+subtype flydie
+shadow	0
+speed 25
+
+anim idle
+	loop	1
+	delay	6
+	offset	25 60
+	bbox    	83 101 47 21
+	attack2  1 1 38 60 20 0
+	frame	data/chars/mantico/thorn.gif
+	frame	data/chars/mantico/thorn.gif
+	frame	data/chars/mantico/thorn.gif
+	frame	data/chars/mantico/thorn.gif
+	frame	data/chars/mantico/thorn.gif
+	attack2  0 0 0 0 0 0
+	frame	data/chars/mantico/thorn.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

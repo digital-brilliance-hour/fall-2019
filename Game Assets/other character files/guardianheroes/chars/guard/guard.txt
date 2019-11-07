@@ -1,0 +1,208 @@
+name	guard
+health	100
+speed	13
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/guard/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/guard/idle1.gif
+
+
+alternatepal	data/chars/guard/testpal.gif
+#alternatepal	data/chars/guard/testpal2.gif
+#alternatepal	data/chars/guard/testpal3.gif
+#alternatepal	data/chars/guard/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  51 93
+	bbox 	30 25 60 60
+	delay	11
+	frame	data/chars/guard/idle1.gif
+	frame	data/chars/guard/idle2.gif
+	frame	data/chars/guard/idle3.gif
+	frame	data/chars/guard/idle4.gif
+	frame	data/chars/guard/idle5.gif
+	frame	data/chars/guard/idle6.gif
+	frame	data/chars/guard/idle7.gif
+	frame	data/chars/guard/idle8.gif
+	frame	data/chars/guard/idle9.gif
+	frame	data/chars/guard/idle10.gif
+	frame	data/chars/guard/idle11.gif
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	63 97
+	bbox 	37 21 60 60
+	delay	8
+	frame	data/chars/guard/walk1.gif
+	frame	data/chars/guard/walk2.gif
+	frame	data/chars/guard/walk3.gif
+	frame	data/chars/guard/walk4.gif
+	frame	data/chars/guard/walk5.gif
+	frame	data/chars/guard/walk6.gif
+	frame	data/chars/guard/walk7.gif
+	frame	data/chars/guard/walk8.gif
+
+
+
+
+
+#anim run
+#	loop	1
+#	offset	80 112
+#	bbox 	52 24 60 60
+#	delay	8
+#	frame	data/chars/guard/run1.gif
+#	frame	data/chars/guard/run2.gif
+#	frame	data/chars/guard/run3.gif
+#	frame	data/chars/guard/run4.gif
+#	frame	data/chars/guard/run5.gif
+#	frame	data/chars/guard/run6.gif
+#	frame	data/chars/guard/run7.gif
+#	frame	data/chars/guard/run8.gif
+
+
+
+#anim runattack
+#	range	0 158
+#	loop	0
+#	delay	9
+#	offset	111 155
+#	bbox 	79 82 60 60
+#	frame	data/chars/guard/2atk1.gif
+#	frame	data/chars/guard/2atk2.gif
+#	frame	data/chars/guard/2atk3.gif
+#	frame	data/chars/guard/2atk4.gif
+#	attack	122 17 158 134 20 1 0 0 28
+#	frame	data/chars/guard/2atk5.gif
+#	frame	data/chars/guard/2atk6.gif
+#	attack	0 0 0 0 0 0
+#	frame	data/chars/guard/2atk7.gif
+#	frame	data/chars/guard/2atk8.gif
+
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	51 93
+	bbox 	10 23 60 60
+	frame	data/chars/guard/pain2.gif
+	frame	data/chars/guard/pain1.gif
+	frame	data/chars/guard/pain2.gif
+
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	140 126
+	bbox 	151 148 60 60
+	frame	data/chars/guard/fall1.gif
+	frame	data/chars/guard/fall2.gif
+	delay	1000
+	frame	data/chars/guard/fall3.gif
+	offset	72 140
+	delay	20
+	frame	data/chars/guard/fall4.gif
+	frame	data/chars/guard/fall4.gif
+
+anim death
+	loop	0
+	delay	17
+	offset	140 126
+	frame	data/chars/guard/d1
+	move	-10
+	frame	data/chars/guard/d2
+	frame	data/chars/guard/d3
+	frame	data/chars/guard/d4
+	move	0
+	frame	data/chars/guard/d5
+
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	121 118
+	bbox 	79 82 60 60
+	frame	data/chars/guard/rise1.gif
+
+
+anim riseattack
+	range	0 158
+	loop	0
+	delay	9
+	offset	111 155
+	bbox 	79 82 60 60
+	frame	data/chars/guard/2atk1.gif
+	frame	data/chars/guard/2atk2.gif
+	frame	data/chars/guard/2atk3.gif
+	frame	data/chars/guard/2atk4.gif
+	attack	122 17 158 134 20 1 0 0 28
+	frame	data/chars/guard/2atk5.gif
+	frame	data/chars/guard/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guard/2atk7.gif
+	frame	data/chars/guard/2atk8.gif
+
+
+
+anim attack1
+	range	0 138
+	loop	0
+	delay	9
+	offset	57 95
+	bbox 	24 22 60 60
+	frame	data/chars/guard/atk1.gif
+	frame	data/chars/guard/atk2.gif
+	attack	82 29 138 58 15 1 0 0 26
+	frame	data/chars/guard/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guard/atk4.gif
+
+
+
+
+anim special
+	range	0 158
+	loop	0
+	delay	9
+	offset	111 155
+	bbox 	79 82 60 60
+	frame	data/chars/guard/2atk1.gif
+	frame	data/chars/guard/2atk2.gif
+	frame	data/chars/guard/2atk3.gif
+	frame	data/chars/guard/2atk4.gif
+	attack	122 17 158 134 20 1 0 0 28
+	frame	data/chars/guard/2atk5.gif
+	frame	data/chars/guard/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/guard/2atk7.gif
+	frame	data/chars/guard/2atk8.gif

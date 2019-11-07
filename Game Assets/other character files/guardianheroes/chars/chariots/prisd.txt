@@ -1,0 +1,71 @@
+name	prisd
+health	60
+type	enemy
+shadow	3
+#nodieblink 3
+icon	data/chars/chariots/icon.gif
+diesound data/sounds/die2.wav
+palette	data/chars/chariots/death1.gif
+noatflash 1
+flash	robof
+
+#alternatepal	data/chars/spade/testpal.gif
+#alternatepal	data/chars/spade/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/die1.gif
+
+
+
+
+anim walk
+	loop	1
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/death1.gif
+
+
+
+
+anim pain
+	loop	1
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/death1.gif
+	frame	data/chars/chariots/death1.gif
+
+
+anim fall
+	loop	0
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/die1.gif
+	frame	data/chars/chariots/die1.gif
+	frame	data/chars/chariots/die1.gif
+
+
+
+anim rise
+	loop	1
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/death1.gif
+
+
+
+anim attack1
+	loop	1
+	offset	155 183
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/chariots/death1.gif
+

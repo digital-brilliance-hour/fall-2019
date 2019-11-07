@@ -1,0 +1,225 @@
+name	robot
+health	150
+speed	12
+running	22	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 40
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/robot/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound	data/sounds/senti.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+palette	data/chars/robot/idle1.gif
+
+alternatepal	data/chars/robot/testpal.gif
+alternatepal	data/chars/robot/testpal2.gif
+#alternatepal	data/chars/robot/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  116 164
+	bbox 	102 86 38 78
+	delay	22
+	frame	data/chars/robot/idle1.gif
+	frame	data/chars/robot/idle2.gif
+	frame	data/chars/robot/idle3.gif
+	frame	data/chars/robot/idle4.gif
+	frame	data/chars/robot/idle5.gif
+	frame	data/chars/robot/idle6.gif
+	frame	data/chars/robot/idle7.gif
+
+
+anim walk
+	loop	1
+	offset  116 164
+	bbox 	102 86 38 78
+	delay	16
+	frame	data/chars/robot/walk1.gif
+	frame	data/chars/robot/walk2.gif
+	frame	data/chars/robot/walk3.gif
+	frame	data/chars/robot/walk4.gif
+	frame	data/chars/robot/walk5.gif
+	frame	data/chars/robot/walk6.gif
+	frame	data/chars/robot/walk7.gif
+	frame	data/chars/robot/walk8.gif
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  116 164
+	bbox 	102 86 38 78
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/robot/block1.gif
+	offset  118 164
+	frame	data/chars/robot/block2.gif
+	move    -8
+	offset  116 164
+	frame	data/chars/robot/block2.gif
+	offset  118 164
+	frame	data/chars/robot/block2.gif
+	move    -6
+	offset  116 164
+	frame	data/chars/robot/block2.gif
+	offset  118 164
+	frame	data/chars/robot/block2.gif
+	move    -4
+	offset  116 164
+	frame	data/chars/robot/block2.gif
+	offset  118 164
+	frame	data/chars/robot/block2.gif
+	offset  116 164
+	move    -2
+	frame	data/chars/robot/block2.gif
+	offset  118 164
+	frame	data/chars/robot/block2.gif
+	offset  116 164
+	delay   20
+	move    0
+	frame	data/chars/robot/block1.gif
+
+anim pain
+	loop	0
+	offset  116 164
+	bbox 	102 86 38 78
+	frame	data/chars/robot/pain1.gif
+	frame	data/chars/robot/pain2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  116 164
+	bbox 	102 86 38 78
+	frame	data/chars/robot/fall1.gif
+	delay	1000
+	frame	data/chars/robot/fall2.gif
+	delay	20
+	frame	data/chars/robot/fall3.gif
+	frame	data/chars/robot/fall3.gif
+
+
+
+anim death
+	landframe	3
+	loop	0
+	offset  116 164
+	bbox 	102 86 38 78
+	frame	data/chars/robot/fall1.gif
+	delay	1000
+	frame	data/chars/robot/fall2.gif
+	delay	20
+	frame	data/chars/robot/fall3.gif
+	frame	data/chars/robot/fall3.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  116 164
+	bbox 	102 86 38 78
+	frame	data/chars/robot/2atk3.gif
+
+
+anim attack1
+	range	90 110
+	loop	0
+	delay	15
+	offset  116 164
+	bbox 	102 86 38 78
+	frame	data/chars/robot/atk1.gif
+	frame	data/chars/robot/atk2.gif
+	attack	115 85 100 45 25 1 0 0 28
+	frame	data/chars/robot/atk3.gif
+	frame	data/chars/robot/atk4.gif
+	attack	0 0 0 0 0 0
+
+
+
+
+anim attack2
+	range	0 80
+	loop	0
+	delay	8
+	offset  116 164
+	bbox 	102 86 38 78
+	sound	data/sounds/senti.wav
+	frame	data/chars/robot/2atk1.gif
+	frame	data/chars/robot/2atk2.gif
+	frame	data/chars/robot/2atk3.gif
+	frame	data/chars/robot/2atk4.gif
+	attack	125 100 80 65 25 1 0 0 28
+	frame	data/chars/robot/2atk5.gif
+	frame	data/chars/robot/2atk6.gif
+	attack	0 0 0 0 0 0
+
+
+anim special
+	range	0 100
+	loop	0
+	delay	8
+	offset  116 164
+#	bbox 	102 86 38 78
+	sound	data/sounds/senti.wav
+	frame	data/chars/robot/throw1.gif
+	frame	data/chars/robot/throw2.gif
+	attack	98 15 85 135 25 1 0 0 28
+	frame	data/chars/robot/throw3.gif
+	frame	data/chars/robot/throw4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/robot/throw5.gif
+
+anim upper
+	range	0 100
+	loop	0
+	delay	8
+	offset  116 164
+#	bbox 	102 86 38 78
+	sound	data/sounds/senti.wav
+	frame	data/chars/robot/throw1.gif
+	frame	data/chars/robot/throw2.gif
+	attack	98 15 85 135 25 1 0 0 28
+	frame	data/chars/robot/throw3.gif
+	frame	data/chars/robot/throw4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/robot/throw5.gif
+
+anim throw
+	range	0 100
+	loop	0
+	delay	8
+	offset  116 164
+#	bbox 	102 86 38 78
+	sound	data/sounds/senti.wav
+	frame	data/chars/robot/throw1.gif
+	frame	data/chars/robot/throw2.gif
+	attack	98 15 85 135 25 1 0 0 28
+	frame	data/chars/robot/throw3.gif
+	frame	data/chars/robot/throw4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/robot/throw5.gif
+
+
+
+
+
+
+
+

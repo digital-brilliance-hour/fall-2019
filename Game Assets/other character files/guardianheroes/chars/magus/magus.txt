@@ -1,0 +1,276 @@
+name	magus
+health	300
+speed	12
+running	25	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 40
+bflash bflash
+blockodds 1
+falldie	1
+thold     49
+nodrop	2
+nopain 1
+aimove chasez
+icon	data/chars/magus/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+#fmap 3
+
+palette	data/chars/magus/idle1.gif
+
+load	winds1
+
+alternatepal	data/chars/magus/testpal.gif
+#alternatepal	data/chars/magus/testpal2.gif
+#alternatepal	data/chars/magus/testpal3.gif
+#alternatepal	data/chars/magus/testpal4.gif
+
+
+anim idle
+	loop	1
+	offset  61 100
+	bbox 	29 16 87 75
+	delay	11
+	frame	data/chars/magus/idle1.gif
+	frame	data/chars/magus/idle2.gif
+	frame	data/chars/magus/idle3.gif
+	frame	data/chars/magus/idle4.gif
+	frame	data/chars/magus/idle5.gif
+	frame	data/chars/magus/idle6.gif
+	frame	data/chars/magus/idle7.gif
+	frame	data/chars/magus/idle8.gif
+	frame	data/chars/magus/idle9.gif
+	frame	data/chars/magus/idle10.gif
+	frame	data/chars/magus/idle11.gif
+	frame	data/chars/magus/idle12.gif
+
+
+
+
+
+
+anim walk
+	loop	1
+	offset	95 100
+	bbox 	80 22 78 70
+	delay	8
+	frame	data/chars/magus/walk1.gif
+	frame	data/chars/magus/walk2.gif
+	frame	data/chars/magus/walk3.gif
+	frame	data/chars/magus/walk4.gif
+	frame	data/chars/magus/walk5.gif
+
+
+
+
+
+anim run
+	loop	1
+	offset	95 100
+	bbox 	80 22 78 70
+	delay	6
+	frame	data/chars/magus/walk1.gif
+	frame	data/chars/magus/walk2.gif
+	frame	data/chars/magus/walk3.gif
+	frame	data/chars/magus/walk4.gif
+	frame	data/chars/magus/walk5.gif
+
+
+
+anim runattack
+	range	0 85
+	loop	0
+	delay	7
+	move	4
+	offset	90 114
+	bbox 	58 27 78 70
+	frame	data/chars/magus/atk1.gif
+	frame	data/chars/magus/atk2.gif
+	attack	116 22 83 78 10 0 0 0 14
+	frame	data/chars/magus/atk3.gif
+	frame	data/chars/magus/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk5.gif
+	frame	data/chars/magus/atk6.gif
+	frame	data/chars/magus/atk7.gif
+	frame	data/chars/magus/atk8.gif
+	attack	115 18 70 75 17 1 0 0 28
+	frame	data/chars/magus/atk9.gif
+	frame	data/chars/magus/atk10.gif
+	frame	data/chars/magus/atk11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk12.gif
+
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	64 100
+	bbox 	25 15 78 70
+	frame	data/chars/magus/pain1.gif
+	frame	data/chars/magus/pain2.gif
+	frame	data/chars/magus/pain1.gif
+
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	160 140
+	bbox 	151 148 60 60
+	frame	data/chars/magus/fall1.gif
+	frame	data/chars/magus/fall2.gif
+	delay	1000
+	frame	data/chars/magus/fall3.gif
+	offset	69 140
+	delay	20
+	frame	data/chars/magus/fall4.gif
+	frame	data/chars/magus/fall4.gif
+
+anim death
+	loop	0
+	delay	13
+	offset	103 166
+	frame	data/chars/magus/death1.gif
+	frame	data/chars/magus/death2.gif
+	frame	data/chars/magus/death3.gif
+	frame	data/chars/magus/death4.gif
+	frame	data/chars/magus/death5.gif
+	frame	data/chars/magus/death6.gif
+	frame	data/chars/magus/death7.gif
+	frame	data/chars/magus/death8.gif
+	frame	data/chars/magus/death9.gif
+	frame	data/chars/magus/death10.gif
+	frame	data/chars/magus/death11.gif
+	frame	data/chars/magus/death12.gif
+	frame	data/chars/magus/death13.gif
+	frame	data/chars/magus/death14.gif
+	frame	data/chars/magus/death15.gif
+	frame	data/chars/magus/death16.gif
+	frame	data/chars/magus/death17.gif
+	frame	data/chars/magus/death18.gif
+	frame	data/chars/magus/death19.gif
+	frame	data/chars/magus/death20.gif
+	frame	data/chars/magus/death21.gif
+	frame	data/chars/magus/death22.gif
+	frame	data/chars/magus/death23.gif
+	frame	data/chars/magus/death24.gif
+	frame	data/chars/magus/death25.gif
+
+
+
+
+anim rise
+	loop	0
+	delay	13
+	offset	71 168
+	bbox 	79 82 60 60
+	frame	data/chars/magus/rise1.gif
+
+
+anim riseattack
+	range	0 85
+	loop	0
+	delay	7
+	offset	90 114
+	bbox 	58 27 78 70
+	frame	data/chars/magus/atk1.gif
+	frame	data/chars/magus/atk2.gif
+	attack	116 22 83 78 10 0 0 0 14
+	frame	data/chars/magus/atk3.gif
+	frame	data/chars/magus/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk5.gif
+	frame	data/chars/magus/atk6.gif
+	frame	data/chars/magus/atk7.gif
+	frame	data/chars/magus/atk8.gif
+	attack	115 18 70 75 17 1 0 0 28
+	frame	data/chars/magus/atk9.gif
+	frame	data/chars/magus/atk10.gif
+	frame	data/chars/magus/atk11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk12.gif
+
+
+
+anim attack1
+	range	0 85
+	loop	0
+	delay	6
+	offset	90 114
+	bbox 	58 27 78 70
+	frame	data/chars/magus/atk1.gif
+	frame	data/chars/magus/atk2.gif
+	attack	116 22 83 78 10 0 0 0 14
+	frame	data/chars/magus/atk3.gif
+	frame	data/chars/magus/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk5.gif
+	frame	data/chars/magus/atk6.gif
+	frame	data/chars/magus/atk7.gif
+	frame	data/chars/magus/atk8.gif
+	attack	115 18 70 75 17 1 0 0 28
+	frame	data/chars/magus/atk9.gif
+	frame	data/chars/magus/atk10.gif
+	frame	data/chars/magus/atk11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk12.gif
+
+
+anim attack2
+	range	150 300
+	loop	0
+	throwframe 9
+	delay	8
+	offset	99 198
+	bbox 	63 116 78 70
+	frame	data/chars/magus/2atk1.gif
+	frame	data/chars/magus/2atk2.gif
+	frame	data/chars/magus/2atk3.gif
+	frame	data/chars/magus/2atk4.gif
+	frame	data/chars/magus/2atk5.gif
+	frame	data/chars/magus/2atk6.gif
+	frame	data/chars/magus/2atk7.gif
+	frame	data/chars/magus/2atk8.gif
+	frame	data/chars/magus/2atk9.gif
+	frame	data/chars/magus/2atk10.gif
+
+
+
+
+
+anim special
+	range	0 85
+	loop	0
+	delay	7
+	offset	90 114
+	bbox 	58 27 78 70
+	frame	data/chars/magus/atk1.gif
+	frame	data/chars/magus/atk2.gif
+	attack	116 22 83 78 10 0 0 0 14
+	frame	data/chars/magus/atk3.gif
+	frame	data/chars/magus/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk5.gif
+	frame	data/chars/magus/atk6.gif
+	frame	data/chars/magus/atk7.gif
+	frame	data/chars/magus/atk8.gif
+	attack	115 18 70 75 17 1 0 0 28
+	frame	data/chars/magus/atk9.gif
+	frame	data/chars/magus/atk10.gif
+	frame	data/chars/magus/atk11.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/magus/atk12.gif

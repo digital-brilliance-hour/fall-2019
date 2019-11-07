@@ -1,0 +1,201 @@
+name	clay
+health	300
+speed	10
+#running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+#aggression 20
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+nodrop	2
+nopain 1
+#falldie 
+aimove chase
+icon	data/chars/clay/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+#atchain	1 1 2
+palette	data/chars/clay/idle1.gif
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+load	earth
+knife	earth
+
+alternatepal	data/chars/clay/testpal.gif
+#alternatepal	data/chars/clay/testpal2.gif
+#alternatepal	data/chars/clay/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  150 206
+	bbox 	100 88 106 136
+	delay	22
+	frame	data/chars/clay/idle1.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  150 206
+	bbox 	100 88 106 136
+	delay	16
+	frame	data/chars/clay/walk1.gif
+	frame	data/chars/clay/walk2.gif
+	frame	data/chars/clay/walk3.gif
+	frame	data/chars/clay/walk4.gif
+	frame	data/chars/clay/walk5.gif
+	frame	data/chars/clay/walk6.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  150 206
+	bbox 	100 88 106 136
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/clay/block1.gif
+	offset	152 206
+	frame	data/chars/clay/block2.gif
+	move    -8
+	offset  150 206
+	frame	data/chars/clay/block2.gif
+	offset	152 206
+	frame	data/chars/clay/block2.gif
+	move    -6
+	offset  150 206
+	frame	data/chars/clay/block2.gif
+	offset	152 206
+	frame	data/chars/clay/block2.gif
+	move    -4
+	offset  150 206
+	frame	data/chars/clay/block2.gif
+	offset	152 206
+	frame	data/chars/clay/block2.gif
+	offset  150 206
+	move    -2
+	frame	data/chars/clay/block2.gif
+	offset	152 206
+	frame	data/chars/clay/block2.gif
+	offset  150 206
+	delay   20
+	move    0
+	frame	data/chars/clay/block1.gif
+
+anim pain
+	loop	0
+	move	-14
+	offset  150 206
+	bbox 	100 88 106 136
+	frame	data/chars/clay/pain1.gif
+	frame	data/chars/clay/pain2.gif
+
+
+anim fall
+	landframe	3
+	loop	0
+	offset  150 206
+#	bbox 	100 88 106 136
+	frame	data/chars/clay/fall1.gif
+	delay	1000
+	frame	data/chars/clay/fall2.gif
+	delay	20
+	offset	74 214
+	frame	data/chars/clay/fall3.gif
+	frame	data/chars/clay/fall3.gif
+
+
+
+anim death
+	landframe	3
+	loop	0
+	offset  150 206
+	bbox 	100 88 106 136
+	frame	data/chars/clay/fall1.gif
+	delay	1000
+	frame	data/chars/clay/fall2.gif
+	delay	20
+	offset	74 206
+	frame	data/chars/clay/fall3.gif
+	frame	data/chars/clay/fall3.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  150 206
+	bbox 	100 88 106 136
+	frame	data/chars/clay/fall3.gif
+
+
+anim attack1
+	range	0 145
+	loop	0
+	delay	8
+	offset  150 206
+	bbox 	100 88 106 136
+	frame	data/chars/clay/atk1.gif
+	frame	data/chars/clay/atk2.gif
+	frame	data/chars/clay/atk3.gif
+	attack	134 55 131 165 25 1 0 0 26
+	dropv	2 4 0
+	frame	data/chars/clay/atk4.gif
+	frame	data/chars/clay/atk5.gif
+	frame	data/chars/clay/atk6.gif
+	frame	data/chars/clay/atk7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/clay/atk8.gif
+	frame	data/chars/clay/atk9.gif
+
+
+
+anim attack2
+	range	250 350
+	loop	0
+	delay	8
+	offset  150 206
+	bbox 	100 88 106 136
+	throwframe	7
+	frame	data/chars/clay/2atk1.gif
+	frame	data/chars/clay/2atk2.gif
+	frame	data/chars/clay/2atk3.gif
+	frame	data/chars/clay/2atk4.gif
+	frame	data/chars/clay/2atk5.gif
+	frame	data/chars/clay/2atk6.gif
+	attack	161 90 90 130 25 1 0 0 26
+	frame	data/chars/clay/2atk7.gif
+	frame	data/chars/clay/2atk8.gif
+	frame	data/chars/clay/2atk9.gif
+	frame	data/chars/clay/2atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/clay/2atk11.gif
+	frame	data/chars/clay/2atk12.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

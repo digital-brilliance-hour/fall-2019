@@ -1,0 +1,478 @@
+
+name	  gash
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/gash/icon.gif
+diesound	Data/sounds/die1.wav
+#weapons	seni ironman
+palette	data/chars/gash/pal.gif
+weapons	gbear gbull gjag gele ghor gash
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+alternatepal	data/chars/gash/testpal.gif
+alternatepal	data/chars/gash/testpal2.gif
+alternatepal	data/chars/gash/testpal3.gif
+
+load	gashot
+knife	gashot
+
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        87 151
+	bbox 	68 78 52 73
+	delay	18
+	frame	data/chars/gash/idle1.gif
+	frame	data/chars/gash/idle2.gif
+	frame	data/chars/gash/idle3.gif
+	frame	data/chars/gash/idle4.gif
+	frame	data/chars/gash/idle3.gif
+	frame	data/chars/gash/idle2.gif
+	
+	
+
+#done//
+anim walk
+	loop	1
+	offset  92 152
+	bbox 	68 68 52 73
+	delay	11
+	frame	data/chars/gash/walk1.gif
+	frame	data/chars/gash/walk2.gif
+	frame	data/chars/gash/walk3.gif
+	frame	data/chars/gash/walk4.gif
+	frame	data/chars/gash/walk5.gif
+	frame	data/chars/gash/walk6.gif
+
+
+anim run
+	loop	1
+	delay	12
+	offset	78 150
+	bbox	68 80 52 73
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/gash/run1.gif
+	frame	data/chars/gash/run2.gif
+	frame	data/chars/gash/run3.gif
+	frame	data/chars/gash/run4.gif
+	frame	data/chars/gash/run5.gif
+	frame	data/chars/gash/run6.gif
+
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	12
+	offset	119 169
+	frame	data/chars/gash/rise1.gif
+	frame	data/chars/gash/rise2.gif
+
+
+#done//
+#Punch
+anim attack1
+	cancel 4 5 0 a2 freespecial5
+	range	5 50
+	loop	0
+	delay	5
+	offset	62 150
+	bbox	68 80 52 73
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/gash/atk1.gif
+	frame	data/chars/gash/atk2.gif
+	frame	data/chars/gash/atk3.gif
+                  attack	78 30 80 110 10 0 0 0 10
+	frame	data/chars/gash/atk4.gif
+	frame	data/chars/gash/atk5.gif
+        attack         0 0 0 0 0
+
+
+
+#done//
+#Kick
+anim attack2
+	cancel 4 5 0 a2 freespecial6
+	range	5 40
+	loop	0
+	delay	7
+	offset	91 183
+	bbox	68 80 52 73
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/gash/2atk1.gif
+	frame	data/chars/gash/2atk2.gif
+	frame	data/chars/gash/2atk3.gif
+                  attack	138 103 115 63 15 0 0 0 7
+	frame	data/chars/gash/2atk4.gif
+                  bbox          57 10 37 95
+	    frame	data/chars/gash/2atk5.gif
+                  attack	0 0 0 0 0
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 6 8 0 a2 freespecial2
+	range	5 90
+	loop	0
+	delay	8
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	10
+	offset	85 161
+	sound	data/chars/han/dora.wav
+	frame	data/chars/gash/sspec1.gif
+	attack	0 0 95 122 10
+	frame	data/chars/gash/sspec2.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 95 122 10
+	frame	data/chars/gash/sspec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gash/sspec4.gif
+	attack	0 0 95 122 10
+	frame	data/chars/gash/sspec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gash/sspec2.gif
+	attack	0 0 95 122 20 1
+	frame	data/chars/gash/sspec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gash/sspec4.gif
+	attack	0 0 95 122 20 1
+	frame	data/chars/gash/sspec5.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 95 122 20 1
+	frame	data/chars/gash/sspec2.gif
+	frame	data/chars/gash/sspec3.gif
+	frame	data/chars/gash/sspec4.gif
+	frame	data/chars/gash/sspec5.gif
+	attack	0 0 0 0 0 0
+	delay	8
+	offset	98 187
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	dropv	2 4 0
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+	range	5 90
+	loop	0
+	delay	7
+	throwframe	5
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/burnking/sounds/kick1.wav
+	sound	data/chars/han/saya.wav
+	frame	data/chars/gash/3atk1.gif
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+	
+
+anim freespecial3
+        subentity flame
+        spawnframe 6 1 1 1 0
+	sound	data/chars/han/naaa.wav
+	loop	0
+	delay	8
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	8
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+anim freespecial5
+	cancel 3 4 0 a2 freespecial4
+	loop	0
+	offset        87 151
+	bbox 	68 78 52 73
+	delay	8
+	frame	data/chars/gash/4atk1.gif
+	frame	data/chars/gash/4atk2.gif
+	attack	85 46 85 108 20 0 0 0 14
+	frame	data/chars/gash/4atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gash/4atk2.gif
+
+anim freespecial6
+	sound	data/chars/han/naaa.wav
+	loop	0
+	offset        87 151
+	bbox 	68 78 52 73
+	delay	8
+	frame	data/chars/gash/5atk1.gif
+	frame	data/chars/gash/5atk2.gif
+	attack	130 86 135 110 25 1 0 0 20
+	dropv	4 0 0
+	frame	data/chars/gash/5atk3.gif
+	frame	data/chars/gash/5atk2.gif
+	frame	data/chars/gash/5atk3.gif
+	frame	data/chars/gash/5atk2.gif
+	frame	data/chars/gash/5atk3.gif
+	frame	data/chars/gash/5atk2.gif
+	attack	0 0 0 0 0 0
+
+
+	
+	
+
+#done
+anim jump
+	loop	0
+	offset	101 185
+	delay	17
+	bbox	68 80 52 73
+	sound	data/chars/han/sounds/jump.wav
+	frame	data/chars/gash/jump1.gif
+	frame	data/chars/gash/jump2.gif
+	frame	data/chars/gash/jump3.gif
+
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	101 185
+	delay	10
+	bbox	68 80 52 73
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/gash/jatk1.gif
+	attack	89 108 105 65 10 1
+	frame	data/chars/gash/jatk2.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	60 147
+	bbox	68 80 52 73
+	delay	1000
+	frame	data/chars/gash/gatk4.gif
+
+
+#done//
+anim grabattack2
+	range	5 90
+	loop	0
+	delay	8
+	offset	98 187
+	bbox	68 80 52 73
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/gash/3atk1.gif
+	frame	data/chars/gash/3atk2.gif
+	frame	data/chars/gash/3atk3.gif
+              attack	130 86 135 110 25 1 0 0 20
+	frame	data/chars/gash/3atk4.gif
+	frame	data/chars/gash/3atk5.gif
+	frame	data/chars/gash/3atk6.gif
+	frame	data/chars/gash/3atk7.gif
+	frame	data/chars/gash/3atk8.gif
+              attack	0 0 0 0 0
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	7
+	offset	60 147
+	bbox	68 80 52 73
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/gash/gatk1.gif
+	frame	data/chars/gash/gatk2.gif
+        attack	75 75 65 39 15 0
+	frame	data/chars/gash/gatk3.gif
+	frame	data/chars/gash/gatk4.gif
+        attack	0 0 0 0 0
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	60 147
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/gash/gatk4.gif
+	frame	data/chars/gash/gatk4.gif
+	frame	data/chars/gash/throw2.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/gash/throw2.gif
+        frame	data/chars/gash/throw3.gif
+	frame	data/chars/gash/throw3.gif
+	frame	data/chars/gash/throw2.gif
+	frame	data/chars/gash/throw2.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  134 186
+	bbox 	110 110 52 73
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/gash/pain1.gif
+	frame	data/chars/gash/pain2.gif
+	frame	data/chars/gash/pain1.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  134 186
+	delay	20
+	frame	data/chars/gash/fall1.gif
+	frame	data/chars/gash/fall2.gif
+	frame	data/chars/gash/fall3.gif
+	offset  136 178
+	frame	data/chars/gash/fall4.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	12
+	offset	119 169
+	frame	data/chars/gash/rise1.gif
+	frame	data/chars/gash/rise2.gif
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	12
+	offset	119 169
+	frame	data/chars/gash/rise1.gif
+	frame	data/chars/gash/rise2.gif
+
+
+
+

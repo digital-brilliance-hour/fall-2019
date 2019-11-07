@@ -1,0 +1,134 @@
+
+name	  rbear
+health 	 150
+speed	 12
+running	23	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/randy/icon
+diesound       	sound	Data/sounds/bear.wav
+animal	1
+modelflag 1
+
+alternatepal	data/chars/randy/bear/testpal
+
+#done//
+
+anim get
+	loop	0
+	offset  83 164
+	delay	20
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/randy/bear/fall3
+	frame	data/chars/randy/bear/fall2
+
+anim idle
+	loop	1
+	offset        78 164
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/randy/bear/idle1
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  90 164
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/randy/bear/walk1
+	frame	data/chars/randy/bear/walk2
+	frame	data/chars/randy/bear/walk3
+	frame	data/chars/randy/bear/walk4
+        frame	data/chars/randy/bear/walk5
+        frame	data/chars/randy/bear/walk6
+        frame	data/chars/randy/bear/walk7
+	frame	data/chars/randy/bear/walk8
+
+anim run
+	loop	1
+	offset  113 174
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/randy/bear/run1
+	frame	data/chars/randy/bear/run2
+	frame	data/chars/randy/bear/run3
+	frame	data/chars/randy/bear/run4
+	frame	data/chars/randy/bear/run5
+	frame	data/chars/randy/bear/run6
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	9
+	move	15
+	offset	80 186
+              bbox       37 35 35 88
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/randy/bear/atk7
+        attack  124 124 130 66 25 1 0 0 22
+	frame	data/chars/randy/bear/atk8
+        attack  0 0 0 0 0 0
+	frame	data/chars/randy/bear/atk9
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	80 186
+	bbox	34 18 37 94
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/randy/bear/atk1
+	frame	data/chars/randy/bear/atk2
+	frame	data/chars/randy/bear/atk3
+        attack  124 124 130 66 20 0 0 0 22
+	frame	data/chars/randy/bear/atk4
+        attack  0 0 0 0 0 0
+	frame	data/chars/randy/bear/atk5
+	frame	data/chars/randy/bear/atk6
+	frame	data/chars/randy/bear/atk7
+        attack  124 124 130 66 25 1 0 0 22
+	frame	data/chars/randy/bear/atk8
+        attack  0 0 0 0 0 0
+	frame	data/chars/randy/bear/atk9
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset	80 186
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/randy/bear/atk1
+	frame	data/chars/randy/bear/atk2
+	frame	data/chars/randy/bear/atk3
+        attack  124 124 130 66 20 0 0 0 22
+	frame	data/chars/randy/bear/atk4
+        attack  0 0 0 0 0 0
+	frame	data/chars/randy/bear/atk5
+	frame	data/chars/randy/bear/atk6
+	frame	data/chars/randy/bear/atk7
+        attack  124 124 130 66 25 1 0 0 22
+	frame	data/chars/randy/bear/atk8
+        attack  0 0 0 0 0 0
+	frame	data/chars/randy/bear/atk9
+
+anim fall
+	loop	0
+	offset  83 164
+	delay	20
+	frame	data/chars/randy/bear/fall2
+	frame	data/chars/randy/bear/fall3
+
+anim pain
+	loop	0
+	offset  90 134
+	delay	24
+	frame	data/chars/randy/bear/pain1
+
+

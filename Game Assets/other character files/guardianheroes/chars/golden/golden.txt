@@ -1,0 +1,248 @@
+name	golden
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+noatflash 1
+flash	robof
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/golden/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/gsilver.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/golden/idle1.gif
+
+
+alternatepal	data/chars/golden/testpal.gif
+alternatepal	data/chars/golden/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  115 160
+	bbox 	101 75 38 84
+	delay	16
+	frame	data/chars/golden/idle1.gif
+	offset  116 160
+	frame	data/chars/golden/idle2.gif
+	offset  115 160
+	frame	data/chars/golden/idle3.gif
+	offset  116 160
+	frame	data/chars/golden/idle4.gif
+	offset  115 160
+	frame	data/chars/golden/idle3.gif
+	offset  116 160
+	frame	data/chars/golden/idle2.gif
+
+anim walk
+	loop	1
+	offset	115 160
+	bbox 	102 80 40 80
+	delay	13
+	frame	data/chars/golden/walk1.gif
+	frame	data/chars/golden/walk2.gif
+	frame	data/chars/golden/walk3.gif
+	frame	data/chars/golden/walk4.gif
+	frame	data/chars/golden/walk5.gif
+	frame	data/chars/golden/walk6.gif
+
+anim run
+	loop	1
+	offset	128 157
+	bbox 	100 100 63 50
+	delay	13
+	frame	data/chars/golden/run1.gif
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	4
+	move	15
+	offset	128 157
+#	bbox	100 100 63 50
+	sound	data/sounds/gsilver.wav
+	attack	107 104 77 44 25 1 0 0 20
+	frame	data/chars/golden/ratk1.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk2.gif
+	frame	data/chars/golden/ratk1.gif
+	attack	0 0 0 0 0
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	104 163
+	bbox	101 75 38 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/golden/block1.gif
+	offset	106 163
+	frame	data/chars/golden/block2.gif
+	move    -8
+	offset	104 163
+	frame	data/chars/golden/block2.gif
+	offset	106 163
+	frame	data/chars/golden/block2.gif
+	move    -6
+	offset	104 163
+	frame	data/chars/golden/block2.gif
+	offset	106 163
+	frame	data/chars/golden/block2.gif
+	move    -4
+	offset	104 163
+	frame	data/chars/golden/block2.gif
+	offset	106 163
+	frame	data/chars/golden/block2.gif
+	offset	104 163
+	move    -2
+	frame	data/chars/golden/block2.gif
+	offset	106 163
+	frame	data/chars/golden/block2.gif
+	offset	104 163
+	delay   20
+	move    0
+	frame	data/chars/golden/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	115 160
+	bbox	101 75 38 84
+	frame	data/chars/golden/pain1.gif
+	frame	data/chars/golden/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset	115 160
+	frame	data/chars/golden/pain1.gif
+	frame	data/chars/golden/fall1.gif
+	delay	1000
+	frame	data/chars/golden/fall2.gif
+	delay	20
+	frame	data/chars/golden/fall3.gif
+	frame	data/chars/golden/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset	115 160
+	frame	data/chars/golden/pain1.gif
+	frame	data/chars/golden/fall1.gif
+	delay	1000
+	frame	data/chars/golden/fall2.gif
+	delay	20
+	frame	data/chars/golden/fall3.gif
+	frame	data/chars/golden/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	115 160
+	frame	data/chars/golden/rise1.gif
+
+anim riseattack
+	range	0 106
+	loop	0
+	delay	7
+	offset	115 160
+#	bbox	44 58 63 84
+	sound	data/sounds/gsilver.wav
+	frame	data/chars/golden/atk1.gif
+	frame	data/chars/golden/atk2.gif
+	attack	103 66 140 64 25 1 0 0 20
+	frame	data/chars/golden/atk3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/golden/atk2.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	7
+	offset	115 160
+	bbox	44 58 63 84
+	frame	data/chars/golden/atk1.gif
+	frame	data/chars/golden/atk2.gif
+	attack	103 66 140 64 25 1 0 0 20
+	frame	data/chars/golden/atk3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/golden/atk2.gif
+
+anim special
+	range	0 100
+	loop	0
+	delay	7
+	offset	115 160
+#	bbox	44 58 63 84
+	sound	data/sounds/gsilver.wav
+	frame	data/chars/golden/atk1.gif
+	frame	data/chars/golden/atk2.gif
+	attack	103 66 140 64 25 1 0 0 20
+	frame	data/chars/golden/atk3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/golden/atk2.gif
+
+anim throw
+	range	0 100
+	loop	0
+	delay	10
+	offset	104 163
+	sound	data/sounds/gsilver.wav
+	frame	data/chars/golden/2atk3.gif
+	frame	data/chars/golden/2atk2.gif
+	frame	data/chars/golden/2atk1.gif
+	frame	data/chars/golden/2atk2.gif
+	frame	data/chars/golden/2atk3.gif
+
+anim attack2
+	range	275 800
+	loop	0
+	delay	16
+	throwframe	4
+	offset	104 163
+	bbox	44 58 63 84
+	frame	data/chars/golden/2atk1.gif
+	frame	data/chars/golden/2atk2.gif
+	frame	data/chars/golden/2atk3.gif
+	frame	data/chars/golden/2atk4.gif
+	frame	data/chars/golden/2atk3.gif
+

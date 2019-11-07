@@ -1,0 +1,143 @@
+name	3ork
+health	100
+speed	10
+type	enemy
+shadow	5
+gfxshadow	1
+weapons	head	ork
+nodieblink 3
+falldie	1
+icon	data/chars/ork/icon.gif
+diesound data/sounds/die1.wav
+palette	data/chars/ork/pal.gif
+alternatepal	data/chars/ork/testpal.gif
+alternatepal	data/chars/ork/testpal2.gif
+alternatepal	data/chars/ork/testpal3.gif
+alternatepal	data/chars/ork/testpal4.gif
+load head
+
+anim spawn
+	loop	0
+	offset  74 136
+	bbox 	45 33 70 100
+	delay	15
+	frame	data/chars/ork/idle1.gif
+
+anim idle
+	loop	1
+	offset  74 136
+	bbox 	45 33 70 100
+	delay	15
+	frame	data/chars/ork/idle1.gif
+	frame	data/chars/ork/idle2.gif
+	frame	data/chars/ork/idle3.gif
+	frame	data/chars/ork/idle4.gif
+
+	
+anim walk
+	loop	1
+	offset  66 136
+	bbox 	43 40 70 100
+	delay	13
+	frame	data/chars/ork/walk1.gif
+	frame	data/chars/ork/walk2.gif
+	frame	data/chars/ork/walk3.gif
+	frame	data/chars/ork/walk4.gif
+	frame	data/chars/ork/walk5.gif
+	frame	data/chars/ork/walk6.gif
+	frame	data/chars/ork/walk7.gif
+	frame	data/chars/ork/walk8.gif
+
+		
+anim pain
+	loop	0
+	offset	61 127
+	delay	4
+	bbox	29 41 70 100
+	frame	data/chars/ork/pain1.gif
+	frame	data/chars/ork/pain2.gif
+
+	
+anim fall
+	landframe 3
+	loop	0
+	offset	88 136
+	ATTACK	27 32 82 87 15 1
+	bbox	37 64 72 65
+	delay	20
+	frame	data/chars/ork/fall1.gif
+	delay	1000
+	frame	data/chars/ork/fall2.gif
+	delay	20
+	frame	data/chars/ork/fall3.gif
+	frame	data/chars/ork/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	88 138
+	delay	16
+#	bbox	37 64 72 65
+	frame	data/chars/ork/rise1.gif
+	frame	data/chars/ork/rise2.gif
+
+
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	8
+	offset	157 171
+	bbox	133 71 70 100
+	frame	data/chars/ork/atk1.gif
+	frame	data/chars/ork/atk2.gif
+	frame	data/chars/ork/atk3.gif
+	attack	98 67 117 110 25 1
+	frame	data/chars/ork/atk4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/ork/atk5.gif
+	frame	data/chars/ork/atk6.gif
+
+	
+anim attack2
+	range	100 150
+	loop	0
+	delay	8
+	offset	80 173
+	bbox	51 89 70 100
+	frame	data/chars/ork/2atk1.gif
+	frame	data/chars/ork/2atk2.gif
+	frame	data/chars/ork/2atk3.gif
+	frame	data/chars/ork/2atk4.gif
+	attack	98 67 117 110 25 1
+	offset	75 173
+	frame	data/chars/ork/2atk5.gif
+	attack	0 0 0 0 0
+	frame	data/chars/ork/2atk6.gif
+	frame	data/chars/ork/2atk7.gif
+
+			
+anim death
+	loop	0
+	delay	20
+	offset	61 127
+	tossframe 0 85
+	custbomb head
+	frame	data/chars/ork/3d1
+	frame	data/chars/ork/3d2
+	offset	88 138
+	frame	data/chars/ork/3d3
+	frame	data/chars/ork/3d4
+	offset	88 136
+	frame	data/chars/ork/3d5
+
+
+
+
+
+
+
+
+
+
+	

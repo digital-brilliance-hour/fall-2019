@@ -1,0 +1,215 @@
+name	harpy
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 40
+bflash bflash
+blockodds 1
+thold     49
+nodrop	2
+#nopain 1
+falldie	1 
+aimove chase
+icon	data/chars/harpy/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound	data/sounds/harpy2.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette	data/chars/harpy/idle1.gif
+
+
+#alternatepal	data/chars/harpy/testpal.gif
+#alternatepal	data/chars/harpy/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  261 310
+	bbox 	200 179 94 126
+	delay	16
+	frame	data/chars/harpy/idle1.gif
+	frame	data/chars/harpy/idle2.gif
+	frame	data/chars/harpy/idle3.gif
+	frame	data/chars/harpy/idle4.gif
+	frame	data/chars/harpy/idle5.gif
+	frame	data/chars/harpy/idle6.gif
+	frame	data/chars/harpy/idle7.gif
+	frame	data/chars/harpy/idle8.gif
+	frame	data/chars/harpy/idle9.gif
+	frame	data/chars/harpy/idle10.gif
+	frame	data/chars/harpy/idle11.gif
+	frame	data/chars/harpy/idle12.gif
+	frame	data/chars/harpy/idle13.gif
+	frame	data/chars/harpy/idle14.gif
+	frame	data/chars/harpy/idle15.gif
+	frame	data/chars/harpy/idle16.gif
+	frame	data/chars/harpy/idle17.gif
+	frame	data/chars/harpy/idle18.gif
+
+
+
+anim walk
+	loop	1
+	offset  261 310
+	bbox 	200 179 94 126
+	delay	14
+	frame	data/chars/harpy/idle1.gif
+	frame	data/chars/harpy/idle2.gif
+	frame	data/chars/harpy/idle3.gif
+	frame	data/chars/harpy/idle4.gif
+	frame	data/chars/harpy/idle5.gif
+	frame	data/chars/harpy/idle6.gif
+	frame	data/chars/harpy/idle7.gif
+	frame	data/chars/harpy/idle8.gif
+	frame	data/chars/harpy/idle9.gif
+	frame	data/chars/harpy/idle10.gif
+	frame	data/chars/harpy/idle11.gif
+	frame	data/chars/harpy/idle12.gif
+	frame	data/chars/harpy/idle13.gif
+	frame	data/chars/harpy/idle14.gif
+	frame	data/chars/harpy/idle15.gif
+	frame	data/chars/harpy/idle16.gif
+	frame	data/chars/harpy/idle17.gif
+	frame	data/chars/harpy/idle18.gif
+
+anim run
+	loop	1
+	offset  261 310
+	bbox 	200 179 94 126
+	delay	10
+	sound	data/sounds/harpy.wav
+	frame	data/chars/harpy/idle1.gif
+	frame	data/chars/harpy/idle2.gif
+	frame	data/chars/harpy/idle3.gif
+	frame	data/chars/harpy/idle4.gif
+	frame	data/chars/harpy/idle5.gif
+	frame	data/chars/harpy/idle6.gif
+	frame	data/chars/harpy/idle7.gif
+	frame	data/chars/harpy/idle8.gif
+	frame	data/chars/harpy/idle9.gif
+	frame	data/chars/harpy/idle10.gif
+	frame	data/chars/harpy/idle11.gif
+	frame	data/chars/harpy/idle12.gif
+	frame	data/chars/harpy/idle13.gif
+	frame	data/chars/harpy/idle14.gif
+	frame	data/chars/harpy/idle15.gif
+	frame	data/chars/harpy/idle16.gif
+	frame	data/chars/harpy/idle17.gif
+	frame	data/chars/harpy/idle18.gif
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	4
+	move	15
+	offset  261 310
+#	bbox 	200 179 94 126
+	sound	data/chars/harpy/hard.wav
+	frame	data/chars/harpy/2atk1.gif
+	frame	data/chars/harpy/2atk2.gif
+	attack	221 193 160 127 20 1 0 0 26
+	frame	data/chars/harpy/2atk3.gif
+	frame	data/chars/harpy/2atk3.gif
+	frame	data/chars/harpy/2atk3.gif
+	frame	data/chars/harpy/2atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/harpy/2atk2.gif
+
+
+anim pain
+	loop	0
+	delay	4
+	offset  261 310
+	bbox 	200 179 94 126
+	move	-7
+	frame	data/chars/harpy/pain1.gif
+	frame	data/chars/harpy/pain2.gif
+	frame	data/chars/harpy/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset  261 310
+	bbox 	200 179 94 126
+	frame	data/chars/harpy/fall1.gif
+	frame	data/chars/harpy/fall2.gif
+	frame	data/chars/harpy/fall3.gif
+	frame	data/chars/harpy/fall4.gif
+
+anim death
+	loop	0
+	delay	13
+	offset  261 310
+	bbox 	200 179 94 126
+	frame	data/chars/harpy/fall1.gif
+	frame	data/chars/harpy/fall2.gif
+	frame	data/chars/harpy/fall3.gif
+	frame	data/chars/harpy/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  261 310
+	bbox 	200 179 94 126
+	frame	data/chars/harpy/fall4.gif
+
+anim attack1
+	range	0 90
+	loop	0
+	delay	10
+	offset  261 310
+	bbox 	200 179 94 126
+	sound	data/chars/harpy/light.wav
+	frame	data/chars/harpy/atk1.gif
+	frame	data/chars/harpy/atk2.gif
+	attack	267 224 90 77 10 0 0 0 14
+	frame	data/chars/harpy/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/harpy/atk4.gif
+	frame	data/chars/harpy/atk5.gif
+	attack	270 187 123 93 10 0 0 0 14
+	frame	data/chars/harpy/atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/harpy/atk7.gif
+	frame	data/chars/harpy/atk8.gif
+	frame	data/chars/harpy/atk9.gif
+	attack	260 204 184 98 20 1 0 0 26
+	frame	data/chars/harpy/atk10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/harpy/atk11.gif
+
+anim death
+	loop	0
+	delay	18
+	offset  261 310
+	move	-10
+	frame	data/chars/harpy/d1
+	frame	data/chars/harpy/d2
+	frame	data/chars/harpy/d3
+	frame	data/chars/harpy/d4
+	move	0
+	frame	data/chars/harpy/d5
+
+
+
+
+
+
+
+
+
+
+
+
+

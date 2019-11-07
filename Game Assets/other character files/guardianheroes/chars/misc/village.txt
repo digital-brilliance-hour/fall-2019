@@ -1,0 +1,16 @@
+name	village
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/village/panel2.gif
+
+anim idle
+	loop	1
+	delay	13
+	offset	0 210
+	frame	data/bgs/dragons/village/panel2.gif
+	frame	data/bgs/dragons/village/panel3.gif
+	frame	data/bgs/dragons/village/panel4.gif
+	frame	data/bgs/dragons/village/panel5.gif
+

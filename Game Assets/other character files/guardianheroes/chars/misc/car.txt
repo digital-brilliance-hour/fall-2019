@@ -1,0 +1,40 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	car
+type    item
+subtype	weapon
+weapnum 2
+counter 3
+typeshot 0
+shadow	3
+speed  15
+jumpheight 2
+icon	data/chars/misc/charicon.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	138 102
+	bbox	0 -30 42 106
+	frame	data/chars/weaps/popo.gif
+
+
+anim attack1
+	loop	1
+	delay	1000
+	offset	138 102
+	frame	data/chars/weaps/popo.gif
+
+anim attack2
+	loop	1
+	delay	1000
+	offset	138 102
+	frame	data/chars/weaps/popo.gif
+
+anim fall
+	loop	1
+	delay	1000
+	offset	138 102
+	frame	data/chars/weaps/popo.gif

@@ -1,0 +1,17 @@
+name	lairb
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/lair1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 150
+	frame	data/chars/misc/lair1.gif
+	frame	data/chars/misc/lair2.gif
+	frame	data/chars/misc/lair3.gif
+	frame	data/chars/misc/lair4.gif
+

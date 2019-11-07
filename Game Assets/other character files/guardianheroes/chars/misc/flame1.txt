@@ -1,0 +1,67 @@
+name	flame1
+health	10000
+type	none
+shadow	0
+speed   0
+remove  0
+nomove  1
+lifespan 2
+palette	data/chars/hero/8.gif
+candamage player
+alpha 1
+
+anim idle
+	loop	0
+	delay	2
+	offset	-50 197
+        sound   data/sounds/burn.wav   
+        hitflash redflash
+        hitfx   data/sounds/lol.wav
+
+        subentity flame2
+        spawnframe 12 40 1 1 0     
+
+	frame	data/chars/hero/1.gif
+	frame	data/chars/hero/2.gif
+	frame	data/chars/hero/3.gif
+	frame	data/chars/hero/4.gif
+
+        burn  53 30 84 170 50 0 1 0 0 0 30
+
+	frame	data/chars/hero/5.gif
+	frame	data/chars/hero/6.gif
+	frame	data/chars/hero/7.gif
+	frame	data/chars/hero/8.gif
+	frame	data/chars/hero/9.gif
+	frame	data/chars/hero/10.gif
+
+	frame	data/chars/hero/11.gif
+	frame	data/chars/hero/12.gif
+	frame	data/chars/hero/13.gif
+	frame	data/chars/hero/14.gif
+	frame	data/chars/hero/15.gif
+	frame	data/chars/hero/16.gif
+	frame	data/chars/hero/17.gif
+	frame	data/chars/hero/19.gif
+	frame	data/chars/hero/20.gif
+
+	frame	data/chars/hero/21.gif
+	frame	data/chars/hero/22.gif
+	frame	data/chars/hero/23.gif
+	frame	data/chars/hero/24.gif
+	frame	data/chars/hero/25.gif
+	frame	data/chars/hero/26.gif
+	frame	data/chars/hero/27.gif
+	frame	data/chars/hero/28.gif
+
+        burn  0 0 0 0
+
+	frame	data/chars/hero/29.gif
+	frame	data/chars/hero/30.gif
+	frame	data/chars/hero/31.gif
+  
+
+
+	frame	data/chars/misc/end.gif
+
+

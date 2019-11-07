@@ -1,0 +1,285 @@
+name	titan
+health	500
+speed	12
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/titan/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/titan/idle1.gif
+
+
+alternatepal	data/chars/titan/testpal.gif
+alternatepal	data/chars/titan/testpal2.gif
+
+load	earth
+knife	earth
+
+anim idle
+	loop	1
+	offset  85 132
+	bbox 	51 4 90 116
+	delay	16
+	frame	data/chars/titan/idle1.gif
+	offset  83 131
+	frame	data/chars/titan/idle2.gif
+	frame	data/chars/titan/idle3.gif
+	offset  84 131
+	frame	data/chars/titan/idle4.gif
+	offset  83 131
+	frame	data/chars/titan/idle3.gif
+	frame	data/chars/titan/idle2.gif
+
+anim walk
+	loop	1
+	offset	86 114
+	bbox 	40 10 85 100
+	delay	13
+	frame	data/chars/titan/walk1.gif
+	offset	82 111
+	frame	data/chars/titan/walk2.gif
+	offset	84 117
+	frame	data/chars/titan/walk3.gif
+	offset	65 121
+	frame	data/chars/titan/walk4.gif
+	offset	64 116
+	frame	data/chars/titan/walk5.gif
+	offset	83 110
+	frame	data/chars/titan/walk6.gif
+	offset	75 115
+	frame	data/chars/titan/walk7.gif
+	offset	68 122
+	frame	data/chars/titan/walk8.gif
+	offset	69 117
+	frame	data/chars/titan/walk9.gif
+
+anim run
+	loop	1
+	offset	90 130
+	bbox	30 15 81 110
+	delay	13
+	frame	data/chars/titan/run1.gif
+	offset	82 130
+	frame	data/chars/titan/run2.gif
+	offset	71 129
+	frame	data/chars/titan/run3.gif
+	offset	76 129
+	frame	data/chars/titan/run4.gif
+	offset	83 129
+	frame	data/chars/titan/run5.gif
+	offset	89 129
+	frame	data/chars/titan/run6.gif
+	offset	91 129
+	frame	data/chars/titan/run7.gif
+	offset	88 129
+	frame	data/chars/titan/run8.gif
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	9
+	move	15
+	offset	72 130
+#	bbox	30 15 81 110
+	frame	data/chars/titan/ratk1.gif
+	attack	111 55 115 79 25 1 0 0 20
+	offset	135 136
+	frame	data/chars/titan/ratk2.gif
+	offset	138 137
+	frame	data/chars/titan/ratk3.gif
+	offset	116 134
+	frame	data/chars/titan/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 137
+	frame	data/chars/titan/ratk5.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	67 102
+	bbox	101 75 38 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/titan/block.gif
+	offset	69 102
+	frame	data/chars/titan/block.gif
+	move    -8
+	offset	67 102
+	frame	data/chars/titan/block.gif
+	offset	69 102
+	frame	data/chars/titan/block.gif
+	move    -6
+	offset	67 102
+	frame	data/chars/titan/block.gif
+	offset	69 102
+	frame	data/chars/titan/block.gif
+	move    -4
+	offset	67 102
+	frame	data/chars/titan/block.gif
+	offset	69 102
+	frame	data/chars/titan/block.gif
+	offset	67 102
+	move    -2
+	frame	data/chars/titan/block.gif
+	offset	69 102
+	frame	data/chars/titan/block.gif
+	offset	67 102
+	delay   20
+	move    0
+	frame	data/chars/titan/block.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	68 114
+	bbox	51 4 90 116
+	frame	data/chars/titan/pain1.gif
+	offset	72 109
+	frame	data/chars/titan/pain2.gif
+	offset	88 118
+	frame	data/chars/titan/pain3.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset	78 79
+	frame	data/chars/titan/fall1.gif
+	offset	85 58
+	frame	data/chars/titan/fall2.gif
+	offset	97 81
+	frame	data/chars/titan/fall3.gif
+	offset	96 53
+	frame	data/chars/titan/fall4.gif
+
+anim death
+	loop	0
+	delay	13
+	offset	78 79
+	frame	data/chars/titan/fall1.gif
+	offset	85 58
+	frame	data/chars/titan/fall2.gif
+	offset	97 81
+	frame	data/chars/titan/fall3.gif
+	offset	96 53
+	frame	data/chars/titan/fall4.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	70 180
+	frame	data/chars/titan/rise1.gif
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	9
+	offset	72 130
+#	bbox	30 15 81 110
+	frame	data/chars/titan/ratk1.gif
+	attack	111 55 115 79 25 1 0 0 20
+	offset	135 136
+	frame	data/chars/titan/ratk2.gif
+	offset	138 137
+	frame	data/chars/titan/ratk3.gif
+	offset	116 134
+	frame	data/chars/titan/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 137
+	frame	data/chars/titan/ratk5.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	7
+	offset	104 159
+	bbox	53 50 92 95
+	frame	data/chars/titan/atk1.gif
+	offset	85 159
+	frame	data/chars/titan/atk2.gif
+	frame	data/chars/titan/atk3.gif
+	attack	100 10 175 145 25 1 0 0 20
+	offset	42 155
+	frame	data/chars/titan/atk4.gif
+	offset	51 100
+	frame	data/chars/titan/atk5.gif
+	frame	data/chars/titan/atk6.gif
+	attack	0 0 0 0 0
+	offset	44 92
+	frame	data/chars/titan/atk7.gif
+	offset	64 113
+	frame	data/chars/titan/atk8.gif
+
+anim special
+	range	0 100
+	loop	0
+	delay	9
+	offset	72 130
+#	bbox	30 15 81 110
+	frame	data/chars/titan/ratk1.gif
+	attack	111 55 115 79 25 1 0 0 20
+	offset	135 136
+	frame	data/chars/titan/ratk2.gif
+	offset	138 137
+	frame	data/chars/titan/ratk3.gif
+	offset	116 134
+	frame	data/chars/titan/ratk4.gif
+	attack	0 0 0 0 0 0
+	offset	77 137
+	frame	data/chars/titan/ratk5.gif
+
+anim throw
+	range	0 100
+	loop	0
+	delay	14
+	offset	44 92
+	frame	data/chars/titan/atk7.gif
+	offset	51 100
+	frame	data/chars/titan/atk6.gif
+	offset	85 159
+	frame	data/chars/titan/atk3.gif
+	frame	data/chars/titan/atk2.gif
+
+
+anim attack2
+	range	275 800
+	loop	0
+	delay	16
+	throwframe	5
+	offset	84 139
+	bbox	44 58 63 84
+	frame	data/chars/titan/2atk1.gif
+	offset	88 142
+	frame	data/chars/titan/2atk2.gif
+	offset	108 124
+	frame	data/chars/titan/2atk3.gif
+	offset	116 124
+	frame	data/chars/titan/2atk4.gif
+	frame	data/chars/titan/2atk5.gif
+	offset	118 115
+	frame	data/chars/titan/2atk6.gif
+	offset	38 112
+	frame	data/chars/titan/2atk7.gif
+	offset	46 100
+	frame	data/chars/titan/2atk8.gif
+

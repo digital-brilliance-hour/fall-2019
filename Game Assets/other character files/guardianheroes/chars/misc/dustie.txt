@@ -1,0 +1,26 @@
+name	dustie
+health	1
+type	none
+shadow	0
+speed   0
+remove  0
+nomove 1 1
+subject_to_gravity 0
+lifespan 1
+palette	data/chars/misc/dust6.gif
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	82 48
+	frame	data/chars/misc/dust1.gif
+	frame	data/chars/misc/dust2.gif
+	frame	data/chars/misc/dust3.gif
+	frame	data/chars/misc/dust4.gif
+	frame	data/chars/misc/dust5.gif
+	frame	data/chars/misc/dust6.gif
+	frame	data/chars/misc/dust7.gif
+	frame	data/chars/misc/dust8.gif
+	frame	data/chars/misc/dust9.gif
+	frame	data/chars/misc/end.gif

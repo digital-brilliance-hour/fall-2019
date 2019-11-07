@@ -1,0 +1,148 @@
+name	astal
+health	500
+speed	13
+#running	25	4	2	1	1
+type	npc
+shadow	0
+gfxshadow	1
+dust    dust
+aimove	wander
+subject_to_screen 1
+#cantgrab 1
+candamage enemy
+aggression 40
+bflash bflash
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+subtype	chase
+icon	data/chars/astal/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+candamage enemy
+
+palette	data/chars/astal/idle1.gif
+
+
+#alternatepal	data/chars/astal/testpal.gif
+#alternatepal	data/chars/astal/testpal2.gif
+
+load	astalr
+bomb	astalr
+
+anim idle
+	loop	1
+	offset  75 129
+	bbox 	54 88 40 39
+	delay	14
+	frame	data/chars/astal/idle1.gif
+	frame	data/chars/astal/idle2.gif
+	frame	data/chars/astal/idle3.gif
+	frame	data/chars/astal/idle2.gif
+
+
+
+anim walk
+	loop	1
+	offset  75 129
+	bbox 	54 88 40 39
+	delay	13
+	frame	data/chars/astal/walk1.gif
+	frame	data/chars/astal/walk2.gif
+	frame	data/chars/astal/walk3.gif
+	frame	data/chars/astal/walk4.gif
+	frame	data/chars/astal/walk5.gif
+	frame	data/chars/astal/walk6.gif
+	frame	data/chars/astal/walk7.gif
+	frame	data/chars/astal/walk8.gif
+
+
+anim pain
+	loop	0
+	delay	4
+	offset  75 129
+	bbox 	54 88 40 39
+	offset	
+	frame	data/chars/astal/pain1.gif
+	frame	data/chars/astal/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset  75 129
+	bbox 	54 88 40 39
+	frame	data/chars/astal/fall1.gif
+	frame	data/chars/astal/fall2.gif
+	frame	data/chars/astal/fall3.gif
+	frame	data/chars/astal/fall4.gif
+
+
+
+anim rise
+	loop	0
+	offset  75 129
+	bbox 	54 88 40 39
+	delay	14
+	frame	data/chars/astal/idle1.gif
+
+
+
+anim attack1
+	range	90 200
+	loop	0
+	delay	7
+	offset  140 274
+	tossframe	15
+	bbox 	54 88 40 39
+	sound	data/chars/astal/throw.wav
+	frame	data/chars/astal/atk1.gif
+	frame	data/chars/astal/atk2.gif
+	frame	data/chars/astal/atk3.gif
+	frame	data/chars/astal/atk4.gif
+	frame	data/chars/astal/atk5.gif
+	frame	data/chars/astal/atk6.gif
+	frame	data/chars/astal/atk7.gif
+	frame	data/chars/astal/atk8.gif
+	frame	data/chars/astal/atk9.gif
+	frame	data/chars/astal/atk10.gif
+	frame	data/chars/astal/atk11.gif
+	frame	data/chars/astal/atk12.gif
+	frame	data/chars/astal/atk13.gif
+	frame	data/chars/astal/atk14.gif
+	frame	data/chars/astal/atk15.gif
+	frame	data/chars/astal/atk16.gif
+
+
+
+
+
+
+
+anim attack2
+	range	0 66
+	loop	0
+	delay	7
+	offset  75 129
+	bbox 	54 88 40 39
+	quakeframe	6 6 9
+	sound	data/chars/astal/atk.wav
+	frame	data/chars/astal/2atk1.gif
+	frame	data/chars/astal/2atk2.gif
+	frame	data/chars/astal/2atk3.gif
+	frame	data/chars/astal/2atk4.gif
+	frame	data/chars/astal/2atk5.gif
+	attack	84 42 66 100 20 1 0 0 26
+	frame	data/chars/astal/2atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/astal/2atk5.gif
+	frame	data/chars/astal/2atk4.gif
+	frame	data/chars/astal/2atk3.gif
+
+
+
+
+

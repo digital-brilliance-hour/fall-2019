@@ -1,0 +1,15 @@
+name	cave
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/chars/misc/cave1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 165
+	frame	data/chars/misc/cave1.gif
+	frame	data/chars/misc/cave2.gif
+	frame	data/chars/misc/cave3.gif
+	frame	data/chars/misc/cave4.gif

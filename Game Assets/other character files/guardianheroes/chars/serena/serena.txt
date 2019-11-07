@@ -1,0 +1,386 @@
+name	serena
+health	200
+speed	15
+running	31	4	2	1	1
+type	player
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+candamage enemy
+aggression 30
+bflash bflash
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+subtype	chase
+icon	data/chars/serena/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/chars/serena/die.wav
+#nodieblink 3
+#fmap 3
+atchain	1 1 2 3
+weapons	sbear sbull sjag sele shor serena
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+palette	data/chars/serena/idle1.gif
+
+load	winds
+knife	winds
+
+alternatepal	data/chars/serena/testpal.gif
+#alternatepal	data/chars/serena/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	14
+	frame	data/chars/serena/idle1.gif
+	frame	data/chars/serena/idle2.gif
+	frame	data/chars/serena/idle3.gif
+	frame	data/chars/serena/idle4.gif
+	frame	data/chars/serena/idle3.gif
+	frame	data/chars/serena/idle2.gif
+
+anim get
+	loop	0
+	delay	11
+	offset  87 175
+	bbox 	63 92 53 83
+	frame	data/chars/serena/rise1.gif
+
+
+anim walk
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	13
+	frame	data/chars/serena/walk1.gif
+	offset  87 173
+	frame	data/chars/serena/walk2.gif
+	frame	data/chars/serena/walk3.gif
+	frame	data/chars/serena/walk4.gif
+	frame	data/chars/serena/walk5.gif
+	frame	data/chars/serena/walk6.gif
+
+
+anim run
+	loop	1
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	13
+	frame	data/chars/serena/run1.gif
+	frame	data/chars/serena/run2.gif
+	frame	data/chars/serena/run3.gif
+	frame	data/chars/serena/run4.gif
+	frame	data/chars/serena/run5.gif
+	frame	data/chars/serena/run6.gif
+
+
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	7
+	move	12
+	offset  87 175
+	sound	data/chars/serena/hyah.wav
+	frame	data/chars/serena/ratk1.gif
+	frame	data/chars/serena/ratk2.gif
+	frame	data/chars/serena/ratk3.gif
+	frame	data/chars/serena/ratk4.gif
+	attack	84 57 86 120 20 1 0 0 25
+	frame	data/chars/serena/ratk5.gif
+	frame	data/chars/serena/ratk6.gif
+	frame	data/chars/serena/ratk7.gif
+	frame	data/chars/serena/ratk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/ratk9.gif
+	frame	data/chars/serena/ratk10.gif
+
+	
+
+
+anim pain
+	loop	0
+	delay	4
+	offset  87 175
+	bbox 	63 92 53 83
+	frame	data/chars/serena/pain1.gif
+	frame	data/chars/serena/pain2.gif
+	frame	data/chars/serena/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset  87 175
+	frame	data/chars/serena/fall1.gif
+	frame	data/chars/serena/fall2.gif
+	frame	data/chars/serena/fall3.gif
+	frame	data/chars/serena/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	87 175
+	frame	data/chars/serena/rise1.gif
+
+
+
+anim attack1
+	cancel 3 4 0 a2 freespecial5
+	range	0 60
+	loop	0
+	delay	5
+	offset  87 175
+	bbox 	63 92 53 83
+	frame	data/chars/serena/atk1.gif
+	frame	data/chars/serena/atk2.gif
+	attack	111 90 59 57 10 0 0 0 16
+	frame	data/chars/serena/atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/atk4.gif
+
+
+
+anim attack2
+	cancel 3 4 0 a2 freespecial
+	range	0 60
+	loop	0
+	delay	5
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/ya.wav
+	frame	data/chars/serena/2atk1.gif
+	frame	data/chars/serena/2atk2.gif
+	attack	111 90 70 57 10 0 0 0 16
+	frame	data/chars/serena/2atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/2atk4.gif
+
+anim attack3
+	cancel 4 5 0 a2 freespecial3
+	range	0 60
+	loop	0
+	delay	6
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/dora.wav
+	frame	data/chars/serena/3atk1.gif
+	frame	data/chars/serena/3atk2.gif
+	attack	100 95 118 53 20 1 0 0 26
+	frame	data/chars/serena/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/3atk4.gif
+	frame	data/chars/serena/3atk5.gif
+
+
+anim jump
+	loop	0
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	17
+	sound	data/chars/han/sounds/jump.wav
+	frame	data/chars/serena/jump1.gif
+	frame	data/chars/serena/jump2.gif
+	frame	data/chars/serena/jump3.gif
+	frame	data/chars/serena/jump4.gif
+
+anim jumpattack
+	loop	0
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	10
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/serena/jatk1.gif
+	frame	data/chars/serena/jatk2.gif
+	attack	96 91 64 82 20 1 0 0 24
+	frame	data/chars/serena/jatk3.gif
+	frame	data/chars/serena/jatk4.gif
+	attack	0 0 0 0 0 0
+
+anim grab
+	loop	0
+	offset  87 175
+	bbox 	63 92 53 83
+	delay	1000
+	frame	data/chars/serena/grab1.gif
+
+anim grabattack
+	range	0 60
+	loop	0
+	delay	5
+	offset  87 175
+	bbox 	63 92 53 83
+	frame	data/chars/serena/gatk1.gif
+	frame	data/chars/serena/gatk2.gif
+	attack	96 117 44 60 10 0 0 0 16
+	frame	data/chars/serena/gatk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/gatk4.gif
+
+anim grabattack2
+	range	0 60
+	loop	0
+	delay	6
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/hyah.wav
+	frame	data/chars/serena/3atk1.gif
+	frame	data/chars/serena/3atk2.gif
+	attack	100 95 118 53 20 1 0 0 26
+	frame	data/chars/serena/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/3atk4.gif
+	frame	data/chars/serena/3atk5.gif
+
+anim throw
+	range	0 60
+	loop	0
+	delay	10
+	offset  87 175
+#	bbox 	63 92 53 83
+	sound	data/chars/serena/dora.wav
+	frame	data/chars/serena/throw1.gif
+	frame	data/chars/serena/throw2.gif
+	frame	data/chars/serena/throw3.gif
+	frame	data/chars/serena/throw4.gif
+	frame	data/chars/serena/throw5.gif
+
+
+anim special
+	loop	0
+	delay	6
+	offset  87 175
+#	bbox 	63 92 53 83
+	sound	data/chars/serena/dora2.wav
+	frame	data/chars/serena/2spec1.gif
+	attack	18 47 175 130 25 1 0 0 26
+	frame	data/chars/serena/2spec2.gif
+	frame	data/chars/serena/2spec3.gif
+	frame	data/chars/serena/2spec4.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/serena/2spec5.gif
+	attack	18 47 175 130 25 1 0 0 26
+	frame	data/chars/serena/2spec6.gif
+	frame	data/chars/serena/2spec7.gif
+	frame	data/chars/serena/2spec8.gif
+	frame	data/chars/serena/2spec9.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/serena/2spec10.gif
+
+
+
+anim freespecial
+	range	0 100
+	loop	0
+	delay	7
+	move	12
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/hyah.wav
+	frame	data/chars/serena/ratk1.gif
+	frame	data/chars/serena/ratk2.gif
+	frame	data/chars/serena/ratk3.gif
+	frame	data/chars/serena/ratk4.gif
+	attack	84 57 86 120 20 1 0 0 25
+	frame	data/chars/serena/ratk5.gif
+	frame	data/chars/serena/ratk6.gif
+	frame	data/chars/serena/ratk7.gif
+	frame	data/chars/serena/ratk8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/ratk9.gif
+	frame	data/chars/serena/ratk10.gif
+
+anim freespecial2
+	throwframe	3
+	range	0 60
+	loop	0
+	delay	6
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/dora2.wav
+	frame	data/chars/serena/3atk1.gif
+	frame	data/chars/serena/3atk2.gif
+	attack	100 95 118 53 20 1 0 0 26
+	frame	data/chars/serena/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/3atk4.gif
+	frame	data/chars/serena/3atk5.gif
+
+anim freespecial3
+	loop	0
+	delay	6
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/dora.wav
+	sound	data/chars/serena/freeze.wav
+	frame	data/chars/serena/spec1.gif
+	frame	data/chars/serena/spec2.gif
+	attack	140 72 360 38 10 0 0 0 16
+	frame	data/chars/serena/spec3.gif
+	frame	data/chars/serena/spec4.gif
+	frame	data/chars/serena/spec5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/spec6.gif
+	attack	140 72 360 38 10 0 0 0 16
+	frame	data/chars/serena/spec7.gif
+	frame	data/chars/serena/spec8.gif
+	frame	data/chars/serena/spec9.gif
+	frame	data/chars/serena/spec10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/spec11.gif
+	attack	140 72 360 38 20 1 0 0 16
+	frame	data/chars/serena/spec12.gif
+	frame	data/chars/serena/spec13.gif
+	frame	data/chars/serena/spec14.gif
+	frame	data/chars/serena/spec15.gif
+	frame	data/chars/serena/spec16.gif
+	attack	0 0 0 0 0 0
+
+anim freespecial4
+	range	0 60
+	loop	0
+	delay	6
+	offset  87 175
+	bbox 	63 92 53 83
+	sound	data/chars/serena/dora.wav
+	frame	data/chars/serena/3atk1.gif
+	frame	data/chars/serena/3atk2.gif
+	attack	100 95 118 53 20 1 0 0 26
+	frame	data/chars/serena/3atk3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/3atk4.gif
+	frame	data/chars/serena/3atk5.gif
+
+anim freespecial5
+	range	0 60
+	loop	0
+	delay	10
+	offset  87 175
+#	bbox 	63 92 53 83
+	sound	data/chars/serena/dora.wav
+	frame	data/chars/serena/throw1.gif
+	attack	87 98 100 94 20 1 0 0 20
+	dropv	3 0 0
+	frame	data/chars/serena/throw2.gif
+	frame	data/chars/serena/throw3.gif
+	frame	data/chars/serena/throw4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/serena/throw5.gif
+
+
+
+
+
+
+
+
+
+

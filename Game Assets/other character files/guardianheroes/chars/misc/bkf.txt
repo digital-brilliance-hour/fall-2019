@@ -1,0 +1,28 @@
+name	bkf
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+
+palette	data/chars/misc/bkf1.gif
+
+anim idle
+	loop	1
+	delay	18
+	offset	0 248
+	frame	data/chars/misc/bkf1.gif
+	frame	data/chars/misc/bkf2.gif
+	frame	data/chars/misc/bkf3.gif
+	frame	data/chars/misc/bkf4.gif
+	frame	data/chars/misc/bkf5.gif
+	frame	data/chars/misc/bkf6.gif
+	frame	data/chars/misc/bkf7.gif
+	frame	data/chars/misc/bkf8.gif
+	frame	data/chars/misc/bkf9.gif
+	frame	data/chars/misc/bkf10.gif
+	frame	data/chars/misc/bkf11.gif
+	frame	data/chars/misc/bkf12.gif
+
+
+
+

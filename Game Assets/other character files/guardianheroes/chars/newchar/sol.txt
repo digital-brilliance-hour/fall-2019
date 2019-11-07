@@ -1,0 +1,1722 @@
+name	Sol_Badguy
+health	100
+speed	10
+running	30	4	2	1	1
+type	player
+shadow	3
+#fmap	#
+showlife	0
+noquake		0
+makeinv		3
+thold	0
+icon		data/chars/Sol/SBIco_01.gif
+iconpain	data/chars/Sol/SBIco_02.gif
+icondie		data/chars/Sol/SBIco_03.gif
+#diesound	data/sounds/Sol/Sol02.wav
+jumpheight	4
+parrow	data/chars/Sol/SBNam_P1.gif	-48	-130
+parrow2	data/chars/Sol/SBNam_P2.gif	-48	-130
+#grabdistance	36
+
+#Gun Flame
+com	D	F	A	freespecial
+#Grand Viper
+com	D	D	A	freespecial2
+#Volcanic Viper (S Version, no followup)
+com	U	U	A	freespecial3
+#Bandit Revolver
+com	F	D	A	freespecial4
+#Bandit Bringer
+com	F	D	S	freespecial5
+#Backdash
+com	D	D	J	freespecial6
+#Fafnir
+com	B	B	A	freespecial7
+#Riot Stamp
+com	D	F	J	freespecial8
+#Tyrant Rave V. Beta
+#com	F	A	grabforward2
+#Tyrant Rave V. Alpha
+#com	F	S	special2
+
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_K.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_S.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_HS.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_D.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_P2.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPA_ST2.gif
+remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPA_SD2.gif
+#Originally,this was a comic-book style pallete. But as you'd see if you
+# tried it, it's too ugly to use. Oh well.
+#remap	data/chars/Sol/SBPAL_P.gif data/chars/Sol/SBPAL_N1.gif
+
+playshot	SBFiA
+bflash		BFlash
+
+#GFX:	Instant Kill Ready
+#SFX:	Sol's Name, announced
+anim respawn
+	loop	0
+	delay	13
+	offset	32	156
+	sound	data/sounds/Sol/Sol15.wav
+	frame	data/chars/Sol/SBMnu_01.gif
+	frame	data/chars/Sol/SBMnu_02.gif
+	frame	data/chars/Sol/SBMnu_03.gif
+	frame	data/chars/Sol/SBMnu_04.gif
+	delay	100
+	frame	data/chars/Sol/SBMnu_05.gif
+	delay	6
+	frame	data/chars/Sol/SBMnu_06.gif
+	frame	data/chars/Sol/SBMnu_07.gif
+	frame	data/chars/Sol/SBMnu_08.gif
+	frame	data/chars/Sol/SBMnu_09.gif
+	frame	data/chars/Sol/SBMnu_10.gif
+	frame	data/chars/Sol/SBMnu_11.gif
+	frame	data/chars/Sol/SBMnu_12.gif
+	frame	data/chars/Sol/SBMnu_13.gif
+	frame	data/chars/Sol/SBMnu_14.gif
+	frame	data/chars/Sol/SBMnu_15.gif
+	frame	data/chars/Sol/SBMnu_05.gif
+
+#GFX:	Sword-stab Win Pose
+#SFX:	Taikutsu Saseyagaru... (Bore me...)
+anim select
+	loop	0
+	delay	5
+	offset	32	156
+	frame	data/chars/Sol/SBMnu_05.gif
+	frame	data/chars/Sol/SBMnu_04.gif
+	frame	data/chars/Sol/SBMnu_03.gif
+	frame	data/chars/Sol/SBMnu_02.gif
+	frame	data/chars/Sol/SBMnu_01.gif
+	offset	10	133
+	frame	data/chars/Sol/SBWin_01.gif
+	frame	data/chars/Sol/SBWin_02.gif
+	delay	12
+	frame	data/chars/Sol/SBWin_03.gif
+	delay	3
+	frame	data/chars/Sol/SBWin_04.gif
+	frame	data/chars/Sol/SBWin_05.gif
+	frame	data/chars/Sol/SBWin_06.gif
+	delay	15
+	frame	data/chars/Sol/SBWin_07.gif
+	delay	10
+	frame	data/chars/Sol/SBWin_08.gif
+	sound	data/sounds/Sol/Sol13.wav
+	frame	data/chars/Sol/SBWin_09.gif
+	frame	data/chars/Sol/SBWin_10.gif
+	frame	data/chars/Sol/SBWin_11.gif
+	frame	data/chars/Sol/SBWin_12.gif
+	frame	data/chars/Sol/SBWin_11.gif
+	frame	data/chars/Sol/SBWin_10.gif
+	frame	data/chars/Sol/SBWin_10.gif
+	frame	data/chars/Sol/SBWin_11.gif
+	frame	data/chars/Sol/SBWin_12.gif
+	frame	data/chars/Sol/SBWin_11.gif
+	frame	data/chars/Sol/SBWin_10.gif
+
+#GFX:	Stand, Idle
+#SFX:	None
+anim idle
+	loop	1
+	delay	16
+	offset	32	124
+	bbox	18	14	19	111
+	frame	data/chars/Sol/SBStn_01.gif
+	frame	data/chars/Sol/SBStn_02.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_05.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_02.gif
+	frame	data/chars/Sol/SBStn_01.gif
+	frame	data/chars/Sol/SBStn_02.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_05.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_02.gif
+	delay	13
+	offset	32	126
+	frame	data/chars/Sol/SBIdl_01.gif
+	frame	data/chars/Sol/SBIdl_02.gif
+	frame	data/chars/Sol/SBIdl_03.gif
+	frame	data/chars/Sol/SBIdl_04.gif
+	frame	data/chars/Sol/SBIdl_05.gif
+	delay	17
+	sound	data/sounds/Sol/Sol18.wav
+	frame	data/chars/Sol/SBIdl_06.gif
+	delay	13
+	frame	data/chars/Sol/SBIdl_05.gif
+	frame	data/chars/Sol/SBIdl_04.gif
+	frame	data/chars/Sol/SBIdl_03.gif
+	frame	data/chars/Sol/SBIdl_02.gif
+	frame	data/chars/Sol/SBIdl_01.gif
+	delay	16
+	offset	32	124
+	frame	data/chars/Sol/SBStn_01.gif
+	frame	data/chars/Sol/SBStn_02.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_05.gif
+	frame	data/chars/Sol/SBStn_04.gif
+	frame	data/chars/Sol/SBStn_03.gif
+	frame	data/chars/Sol/SBStn_02.gif
+
+#GFX:	Walk forwards
+#SFX:	Footsteps
+anim walk
+	loop	1
+	delay	12
+	offset	54	130
+	bbox	48	17	23	107
+#	sound	data/sounds/Step2.wav
+	sound	data/sounds/Step1.wav
+	frame	data/chars/Sol/SBWlk_01.gif
+	frame	data/chars/Sol/SBWlk_02.gif
+	frame	data/chars/Sol/SBWlk_03.gif
+	frame	data/chars/Sol/SBWlk_04.gif
+	frame	data/chars/Sol/SBWlk_05.gif
+	frame	data/chars/Sol/SBWlk_06.gif
+	frame	data/chars/Sol/SBWlk_07.gif
+	frame	data/chars/Sol/SBWlk_08.gif
+	frame	data/chars/Sol/SBWlk_09.gif
+	frame	data/chars/Sol/SBWlk_10.gif
+
+#GFX:	Block
+#SFX:	None
+#CMD:	S
+anim block
+	loop	0
+	delay	3
+	offset	25	123
+	bbox	13	14	26	114
+	frame	data/chars/Sol/SBBlk_01.gif
+	delay	22
+	frame	data/chars/Sol/SBBlk_02.gif
+	delay	6
+	frame	data/chars/Sol/SBBlk_01.gif
+
+#GFX:	Run forward
+#SFX:	Running
+#CMD:	Dash (F, F)
+anim run
+	loop	1
+	delay	7
+	offset	71	95
+	bbox	65	30	33	65
+	sound	data/sounds/Run2.wav
+	frame	data/chars/Sol/SBRun_01.gif
+	frame	data/chars/Sol/SBRun_02.gif
+	frame	data/chars/Sol/SBRun_03.gif
+	frame	data/chars/Sol/SBRun_04.gif
+	frame	data/chars/Sol/SBRun_05.gif
+	frame	data/chars/Sol/SBRun_06.gif
+	frame	data/chars/Sol/SBRun_07.gif
+	frame	data/chars/Sol/SBRun_08.gif
+	frame	data/chars/Sol/SBRun_09.gif
+	frame	data/chars/Sol/SBRun_10.gif
+
+#GFX:	Standing Slash
+#SFX:	Hup!
+anim runattack
+	loop	0
+	delay	5
+	offset	66 121
+	sound	data/sounds/Sol/Sol08.wav
+	move	14
+	bbox	59	22	16	100
+	frame	data/chars/Sol/SBRnA_01.gif
+	move	8
+	bbox	66	35	23	86
+	frame	data/chars/Sol/SBRnA_02.gif
+	move	8
+	freeze	86	46	79	27	11	2	0	0	10
+	bbox	89	41	21	78
+	frame	data/chars/Sol/SBRnA_03.gif
+	move	4
+	freeze	88	53	108	30	11	2	0	0	15
+	bbox	84	51	24	74
+	frame	data/chars/Sol/SBRnA_04.gif
+	move	4
+	freeze	101	58	98	52	11	2	0	0	15
+	bbox	94	57	21	66
+	frame	data/chars/Sol/SBRnA_05.gif
+	move	2
+	freeze	85	69	120	54	11	2	0	0	15
+	bbox	91	55	20	70
+	frame	data/chars/Sol/SBRnA_06.gif
+	move	2
+	freeze	69	84	72	45	11	2	0	0	15
+	bbox	91	60	21	66
+	frame	data/chars/Sol/SBRnA_07.gif
+	move	1
+	freeze	71	88	39	39	11	2	0	0	15
+	bbox	92	60	21	66
+	frame	data/chars/Sol/SBRnA_08.gif
+	move	1
+	freeze	0	0	0	0	0	0	0	0	0
+	bbox	81	45	28	78
+	frame	data/chars/Sol/SBRnA_09.gif
+	bbox	78	36	28	86
+	frame	data/chars/Sol/SBRnA_10.gif
+	bbox	65	26	23	96
+	frame	data/chars/Sol/SBRnA_11.gif
+	bbox	59	22	22	100
+	frame	data/chars/Sol/SBRnA_12.gif
+
+#GFX:	Bandit Revolver
+#SFX:	Bandit... Revolva!
+anim runjumpattack
+	loop	0
+	delay	6
+	offset	84	122
+	sound	data/sounds/Sol/Sol16.wav
+	bbox	78	35	24	65
+	frame	data/chars/Sol/SBBan_01.gif
+	bbox	78	33	24	65
+	frame	data/chars/Sol/SBBan_02.gif
+	frame	data/chars/Sol/SBBan_03.gif
+	frame	data/chars/Sol/SBBan_04.gif
+	frame	data/chars/Sol/SBBan_05.gif
+	bbox	83	29	23	70
+	frame	data/chars/Sol/SBBan_06.gif
+	bbox	73	31	24	63
+	attack	103	6	29	52	20	1	0	0	15
+	frame	data/chars/Sol/SBRev_01.gif
+	bbox	77	32	27	56
+	attack	107	39	55	36	20	1	0	0	15
+	frame	data/chars/Sol/SBRev_02.gif
+	bbox	74	27	31	68
+	attack	91	59	56	60	20	1	0	0	15
+	frame	data/chars/Sol/SBRev_03.gif
+	bbox	73	30	29	82
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBRev_04.gif
+
+#GFX:	Start Crouch
+#SFX:	None
+anim get
+	loop	0
+	delay	5
+	offset	35	99
+	frame	data/chars/Sol/SBGet_01.gif
+	frame	data/chars/Sol/SBGet_02.gif
+	frame	data/chars/Sol/SBGet_01.gif
+
+#GFX:	Jump up
+#SFX:	None
+anim jump
+	loop	0
+	delay	7
+	offset	38	158
+	bbox	25	50	19	111
+	frame	data/chars/Sol/SBJmp_01.gif
+	bbox	31	54	17	92
+	frame	data/chars/Sol/SBJmp_02.gif
+	bbox	30	59	27	86
+	frame	data/chars/Sol/SBJmp_03.gif
+	bbox	35	66	30	60
+	frame	data/chars/Sol/SBJmp_04.gif
+	bbox	35	74	33	45
+	frame	data/chars/Sol/SBJmp_05.gif
+	frame	data/chars/Sol/SBJmp_06.gif
+	frame	data/chars/Sol/SBJmp_07.gif
+	delay	5
+	frame	data/chars/Sol/SBJmp_06.gif
+	frame	data/chars/Sol/SBJmp_05.gif
+	bbox	35	74	33	45
+	frame	data/chars/Sol/SBJmp_04.gif
+	bbox	35	66	30	60
+	frame	data/chars/Sol/SBJmp_03.gif
+	bbox	30	59	27	86
+	frame	data/chars/Sol/SBJmp_02.gif
+	bbox	25	50	19	111
+	frame	data/chars/Sol/SBJmp_08.gif
+	bbox	24	60	25	99
+	frame	data/chars/Sol/SBJmp_09.gif
+
+#GFX:	Jumping Slash
+#SFX:	Hup!
+anim jumpattack
+	loop	0
+	delay	10
+	offset	74	141
+	sound	data/sounds/Sol/Sol08.wav
+	bbox	68	44	24	44
+	frame	data/chars/Sol/SBJPn_01.gif
+	frame	data/chars/Sol/SBJPn_02.gif
+	delay	4
+	bbox	61	52	27	34
+	attack	58	0	62	39	7	1	0	0	15
+	frame	data/chars/Sol/SBJPn_03.gif
+	bbox	58	45	24	48
+	attack	51	34	105	111	7	1	0	0	15
+	frame	data/chars/Sol/SBJPn_04.gif
+	bbox	63	42	22	48
+	attack	22	78	20	59	7	1	0	0	15
+	frame	data/chars/Sol/SBJPn_05.gif
+	attack	0	0	0	0	0	0	0	0	0
+	delay	12
+	frame	data/chars/Sol/SBJPn_06.gif
+	frame	data/chars/Sol/SBJPn_07.gif
+	frame	data/chars/Sol/SBJPn_08.gif
+	bbox	70	49	20	43
+	frame	data/chars/Sol/SBJPn_09.gif
+
+#GFX:	Jumping Heavy Slash
+#SFX:	None
+anim jumpattack2
+	loop	0
+	delay	4
+	offset	36	129
+	bbox	30	36	30	44
+	frame	data/chars/Sol/SBJHS_01.gif
+	bbox	23	28	32	61
+	frame	data/chars/Sol/SBJHS_02.gif
+	bbox	23	23	24	70
+	frame	data/chars/Sol/SBJHS_03.gif
+	bbox	22	23	24	70
+	frame	data/chars/Sol/SBJHS_04.gif
+	bbox	21	23	24	70
+	frame	data/chars/Sol/SBJHS_05.gif
+	bbox	16	23	38	60
+	frame	data/chars/Sol/SBJHS_06.gif
+	bbox	15	25	41	50
+	attack	49	24	37	65	7	0	0	0	15
+	frame	data/chars/Sol/SBJHS_07.gif
+	delay	15
+	bbox	15	26	41	48
+	attack	45	13	23	84	7	0	0	0	15
+	frame	data/chars/Sol/SBJHS_08.gif
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBJHS_08.gif
+	attack	45	13	23	84	7	0	0	0	15
+	frame	data/chars/Sol/SBJHS_08.gif
+	delay	3
+	bbox	15	25	41	50
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBJHS_07.gif
+	bbox	16	23	38	60
+	frame	data/chars/Sol/SBJHS_06.gif
+	bbox	21	23	24	70
+	frame	data/chars/Sol/SBJHS_05.gif
+	bbox	22	23	24	70
+	frame	data/chars/Sol/SBJHS_04.gif
+	bbox	23	23	24	70
+	frame	data/chars/Sol/SBJHS_03.gif
+	bbox	23	28	32	61
+	frame	data/chars/Sol/SBJHS_02.gif
+	bbox	30	36	30	44
+	frame	data/chars/Sol/SBJHS_01.gif
+
+#GFX:	Knockdown
+#SFX:	Hah!
+anim jumpattack3
+	loop	0
+	delay	8
+	offset	62	126
+	bbox	57	34	27	44
+	frame	data/chars/Sol/SBJDs_01.gif
+	bbox	56	30	23	52
+	frame	data/chars/Sol/SBJDs_02.gif
+	delay	13
+	frame	data/chars/Sol/SBJDs_03.gif
+	delay	5
+	bbox	36	24	18	62
+	sound	data/sounds/Sol/Sol09.wav
+	blast	73	53	27	17	5	1	0	0	15
+	frame	data/chars/Sol/SBJDs_04.gif
+	blast	100	25	41	31	5	1	0	0	15
+	frame	data/chars/Sol/SBJDs_05.gif
+	blast	99	30	34	30	5	1	0	0	15
+	delay	11
+	frame	data/chars/Sol/SBJDs_06.gif
+	blast	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBJDs_07.gif
+	bbox	58	27	22	54
+	frame	data/chars/Sol/SBJDs_08.gif
+
+#GFX:	Standing Punch
+#SFX:	Schu.
+anim attack1
+	loop	0
+	delay	4
+	offset	39	124
+	bbox	30	10	16	112
+	sound	data/sounds/Sol/Sol07.wav
+	frame	data/chars/Sol/SBPun_01.gif
+	bbox	33	11	16	112
+	frame	data/chars/Sol/SBPun_02.gif
+	attack	55	40	52	30	6	0	0	0	15
+	frame	data/chars/Sol/SBPun_03.gif
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBPun_04.gif
+	bbox	30	9	16	112
+
+
+#GFX:	Close Slash
+#SFX:	Hup!
+anim attack2
+	loop	0
+	delay	4
+	offset	28	120
+	bbox	35	32	20	89
+	frame	data/chars/Sol/SBKck_01.gif
+	bbox	42	38	21	81
+	frame	data/chars/Sol/SBKck_02.gif
+	bbox	34	48	29	73
+	sound	data/sounds/Sol/Sol08.wav
+	frame	data/chars/Sol/SBKck_03.gif
+	attack	5 	64	113	46	12	0	0	0	15
+	frame	data/chars/Sol/SBKck_04.gif
+#	attack	8 	68	101	41	12	0	0	0	15
+	frame	data/chars/Sol/SBKck_05.gif
+	attack	0	0	0	0	0	0	0	0	0
+	delay	10
+	frame	data/chars/Sol/SBKck_06.gif
+	bbox	35	36	23	82
+	delay	5
+	frame	data/chars/Sol/SBKck_07.gif
+	bbox	40	24	23	95
+	frame	data/chars/Sol/SBKck_08.gif
+	bbox	32	24	19	113
+
+#GFX:	Heavy Slash
+#SFX:	Hah!
+anim attack3
+	loop	0
+	delay	4
+	offset	44	120
+	bbox	52	17	23	105
+	frame	data/chars/Sol/SBSla_01.gif
+	bbox	40	13	27	107
+	frame	data/chars/Sol/SBSla_02.gif
+	bbox	45	18	25	105
+	frame	data/chars/Sol/SBSla_03.gif
+	bbox	45	20	25	103
+	frame	data/chars/Sol/SBSla_04.gif
+	bbox	50	24	21	96
+	sound	data/sounds/Sol/Sol09.wav
+	attack	0	62	70	45	18	1	0	0	15
+	delay	5
+	frame	data/chars/Sol/SBSla_05.gif
+	bbox	54	26	34	96
+	attack	1	49	113	60	18	1	0	0	15
+	frame	data/chars/Sol/SBSla_06.gif
+	bbox	57	40	46	79
+	attack	84	16	98	81	18	1	0	0	15
+	frame	data/chars/Sol/SBSla_07.gif
+	bbox	72	41	40	82
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBSla_08.gif
+	frame	data/chars/Sol/SBSla_09.gif
+	bbox	68	36	32	86
+	frame	data/chars/Sol/SBSla_10.gif
+	bbox	59	24	29	99
+	frame	data/chars/Sol/SBSla_11.gif
+	bbox	44	15	31	106
+	frame	data/chars/Sol/SBSla_12.gif
+
+#GFX:	First frame of normal throw
+#SFX:	Nguh!
+anim grab
+	loop	0
+	delay	5
+	offset	46	126
+	bbox	40	20	17	105
+	sound	data/sounds/Sol/Sol11.wav
+	frame	data/chars/Sol/SBGrb_01.gif
+
+#GFX:	Throw
+#SFX:	None
+anim grabattack
+	loop	0
+	delay	5
+	offset	40 129
+	bbox	31	26	20	104
+	frame	data/chars/Sol/SBGrP_01.gif
+	frame	data/chars/Sol/SBGrP_02.gif
+	frame	data/chars/Sol/SBGrP_03.gif
+	delay	6
+	frame	data/chars/Sol/SBGrP_04.gif
+	delay	1
+	frame	data/chars/Sol/SBGrP_05.gif
+	attack	54	17	25	26	6	0	1	0	0
+	delay	5
+	frame	data/chars/Sol/SBGrP_06.gif
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBGrP_07.gif
+
+#GFX:	Throw
+#SFX:	Taikutsu Saseyagaru... (Bore me...)
+anim grabattack2
+	loop	0
+	delay	5
+	sound	data/sounds/Sol/Sol13.wav
+	offset	40 129
+	bbox	31	26	20	104
+	frame	data/chars/Sol/SBGrP_01.gif
+	frame	data/chars/Sol/SBGrP_02.gif
+	frame	data/chars/Sol/SBGrP_03.gif
+	delay	20
+	frame	data/chars/Sol/SBGrP_04.gif
+	delay	1
+	frame	data/chars/Sol/SBGrP_05.gif
+	attack	54	17	25	26	16	1	1	0	0
+	delay	7
+	frame	data/chars/Sol/SBGrP_06.gif
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBGrP_07.gif
+
+#GFX:	Throw
+#SFX:	None
+anim grabforward
+	loop	0
+	delay	5
+	offset	40 129
+	bbox	31	26	20	104
+	frame	data/chars/Sol/SBGrP_01.gif
+	frame	data/chars/Sol/SBGrP_02.gif
+	frame	data/chars/Sol/SBGrP_03.gif
+	delay	6
+	frame	data/chars/Sol/SBGrP_04.gif
+	delay	1
+	frame	data/chars/Sol/SBGrP_05.gif
+	attack	54	17	25	26	6	0	1	0	0
+	delay	5
+	frame	data/chars/Sol/SBGrP_06.gif
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBGrP_07.gif
+
+#GFX:	Tyrant Rave v. Beta
+#SFX:	Tyrant... Rave!
+anim grabforward2
+	loop	0
+	delay	7
+	offset	35 132
+	sound	data/sounds/Sol/Sol12.wav
+	bbox	0	0	0	0
+	frame	data/chars/Sol/SBGrS_01.gif
+	frame	data/chars/Sol/SBGrS_02.gif
+	frame	data/chars/Sol/SBGrS_03.gif
+	frame	data/chars/Sol/SBGrS_04.gif
+	frame	data/chars/Sol/SBGrS_05.gif
+	delay	2
+	frame	data/chars/Sol/SBGrS_06.gif
+	blast	84	40	24	42	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_01.gif
+	frame	data/chars/Sol/SB_F_02.gif
+	frame	data/chars/Sol/SBGrS_07.gif
+	blast	115	14	54	104	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_03.gif
+	frame	data/chars/Sol/SB_F_04.gif
+	frame	data/chars/Sol/SBGrS_08.gif
+	blast	115	12	52	100	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_05.gif
+	frame	data/chars/Sol/SB_F_06.gif
+	frame	data/chars/Sol/SBGrS_09.gif
+	blast	115	10	52	96	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_07.gif
+	frame	data/chars/Sol/SB_F_08.gif
+	frame	data/chars/Sol/SBGrS_10.gif
+	blast	114	12	48	98	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_09.gif
+	frame	data/chars/Sol/SB_F_10.gif
+	frame	data/chars/Sol/SBGrS_11.gif
+	blast	110	24	58	79	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_11.gif
+	frame	data/chars/Sol/SB_F_12.gif
+	frame	data/chars/Sol/SBGrS_11.gif
+	blast	110	23	56	77	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_13.gif
+	frame	data/chars/Sol/SB_F_14.gif
+	frame	data/chars/Sol/SBGrS_11.gif
+	blast	136	40	26	46	24	1	1	0	15
+	frame	data/chars/Sol/SB_F_15.gif
+	frame	data/chars/Sol/SB_F_16.gif
+	frame	data/chars/Sol/SBGrS_12.gif
+	frame	data/chars/Sol/SB_F_17.gif
+	frame	data/chars/Sol/SB_F_18.gif
+	frame	data/chars/Sol/SBGrS_13.gif
+	blast	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SB_F_19.gif
+	frame	data/chars/Sol/SB_F_20.gif
+	frame	data/chars/Sol/SBGrS_14.gif
+	frame	data/chars/Sol/SB_F_21.gif
+	frame	data/chars/Sol/SBGrS_14.gif
+	frame	data/chars/Sol/SBGrS_14.gif
+	frame	data/chars/Sol/SB_F_22.gif
+	frame	data/chars/Sol/SBGrS_14.gif
+	frame	data/chars/Sol/SBGrS_14.gif
+	frame	data/chars/Sol/SB_F_23.gif
+	frame	data/chars/Sol/SBGrS_15.gif
+	frame	data/chars/Sol/SBGrS_15.gif
+	frame	data/chars/Sol/SB_F_24.gif
+	frame	data/chars/Sol/SBGrS_15.gif
+	frame	data/chars/Sol/SBGrS_15.gif
+	frame	data/chars/Sol/SB_F_25.gif
+	frame	data/chars/Sol/SBGrS_15.gif
+
+#GFX:	Bukkirabou ni Nageru (Rough Throw)
+#SFX:	Hah!
+anim throw
+	loop	0
+	delay	5
+	offset	141 138
+	sound	data/sounds/Sol/Sol09.wav
+	frame	data/chars/Sol/SBThr_01.gif
+	offset	137 138
+	move	-4
+	frame	data/chars/Sol/SBThr_02.gif
+	offset	133 138
+	frame	data/chars/Sol/SBThr_03.gif
+	offset	135 138
+	move	-8
+	frame	data/chars/Sol/SBThr_04.gif
+	offset	129 138
+	move	-6
+	frame	data/chars/Sol/SBThr_05.gif
+	offset	125 138
+	move	-4
+	frame	data/chars/Sol/SBThr_06.gif
+	offset	117 138
+	move	-8
+	frame	data/chars/Sol/SBThr_07.gif
+	offset	97 138
+	move	-20
+	frame	data/chars/Sol/SBThr_08.gif
+	move	-0
+	frame	data/chars/Sol/SBThr_09.gif
+	frame	data/chars/Sol/SBThr_10.gif
+	frame	data/chars/Sol/SBThr_11.gif
+	frame	data/chars/Sol/SBThr_12.gif
+	frame	data/chars/Sol/SBThr_13.gif
+	offset	73 138
+	frame	data/chars/Sol/SBThr_14.gif
+
+#GFX:	First frame of mid-level injury
+#SFX:	Nguh!
+anim grabbed
+	loop	0
+	delay	6
+	offset	37	115
+	bbox	26	19	24	96
+	sound	data/sounds/Sol/Sol11.wav
+	frame	data/chars/Sol/SBHld_01.gif
+
+#GFX:	First frame of mid-level injury
+#SFX:	Nguh!
+#anim hitwall
+#	loop	0
+#	delay	6
+#	offset	37	115
+#	sound	data/sounds/Sol/Sol11.wav
+#	frame	data/chars/Sol/SBHld_01.gif
+
+#GFX:	First few frames of a high-level injury
+#SFX:	Nguh!
+anim pain
+	loop	0
+	delay	6
+	offset	112	136
+	bbox	105	28	23	112
+	sound	data/sounds/Sol/Sol11.wav
+	frame	data/chars/Sol/SBPai_01.gif
+	bbox	74	30	36	106
+	frame	data/chars/Sol/SBPai_02.gif
+	move	-1
+#	bbox	49	42	61	95
+#	frame	data/chars/Sol/SBPain03.gif
+#	bbox	28	64	66	74
+#	frame	data/chars/Sol/SBPain04.gif
+#	bbox	24	71	67	68
+#	frame	data/chars/Sol/SBPain05.gif
+#	bbox	21	74	64	62
+#	frame	data/chars/Sol/SBPain06.gif
+#	bbox	21	78	52	58
+#	frame	data/chars/Sol/SBPain07.gif
+#	bbox	21	74	64	62
+#	frame	data/chars/Sol/SBPain06.gif
+#	bbox	24	71	67	68
+#	frame	data/chars/Sol/SBPain05.gif
+#	bbox	28	64	66	74
+#	frame	data/chars/Sol/SBPain04.gif
+#	bbox	49	42	61	95
+#	frame	data/chars/Sol/SBPain03.gif
+	bbox	74	30	36	106
+	frame	data/chars/Sol/SBPai_02.gif
+	bbox	105	28	23	112
+	frame	data/chars/Sol/SBPai_01.gif
+
+#GFX:	High-level injury
+#SFX:	Nguh!
+anim bpain
+	loop	0
+	delay	6
+	offset	112	136
+	bbox	105	28	23	112
+	frame	data/chars/Sol/SBPai_01.gif
+	bbox	74	30	36	106
+	frame	data/chars/Sol/SBPai_02.gif
+	move	-1
+	bbox	49	42	61	95
+	frame	data/chars/Sol/SBPai_03.gif
+	bbox	28	64	66	74
+	frame	data/chars/Sol/SBPai_04.gif
+	bbox	24	71	67	68
+	frame	data/chars/Sol/SBPai_05.gif
+	bbox	21	74	64	62
+	frame	data/chars/Sol/SBPai_06.gif
+	bbox	21	78	52	58
+	frame	data/chars/Sol/SBPai_07.gif
+	bbox	21	74	64	62
+	frame	data/chars/Sol/SBPai_06.gif
+	bbox	24	71	67	68
+	frame	data/chars/Sol/SBPai_05.gif
+	bbox	28	64	66	74
+	frame	data/chars/Sol/SBPai_04.gif
+	bbox	49	42	61	95
+	frame	data/chars/Sol/SBPai_03.gif
+	bbox	74	30	36	106
+	frame	data/chars/Sol/SBPai_02.gif
+	bbox	105	28	23	112
+	frame	data/chars/Sol/SBPai_01.gif
+
+#GFX:	Stagger
+#SFX:	Nnk-! Kusou... (Nnk!- Damnit...)
+anim spain
+	loop	0
+	delay	9
+	offset	50	116
+	bbox	40	19	21	94
+	sound	data/sounds/Sol/Sol10.wav
+	move	-8
+	frame	data/chars/Sol/SBStg_09.gif
+	move	-7
+	bbox	44	27	19	79
+	move	-6
+	frame	data/chars/Sol/SBStg_01.gif
+	move	-5
+	frame	data/chars/Sol/SBStg_02.gif
+	move	-4
+	frame	data/chars/Sol/SBStg_03.gif
+	move	-3
+	frame	data/chars/Sol/SBStg_04.gif
+	move	-2
+	frame	data/chars/Sol/SBStg_05.gif
+	move	-1
+	frame	data/chars/Sol/SBStg_06.gif
+	frame	data/chars/Sol/SBStg_07.gif
+	frame	data/chars/Sol/SBStg_08.gif
+	bbox	40	19	21	94
+	frame	data/chars/Sol/SBStg_09.gif
+
+#GFX:	Knockdown on back
+#SFX:	Uueyauargh!
+anim fall
+	loop	0
+	delay	5
+	offset	75 131
+	sound	data/sounds/Sol/Sol04.wav
+	frame	data/chars/Sol/SBFal_01.gif
+	frame	data/chars/Sol/SBFal_02.gif
+	frame	data/chars/Sol/SBFal_03.gif
+	frame	data/chars/Sol/SBFal_04.gif
+	frame	data/chars/Sol/SBFal_05.gif
+	frame	data/chars/Sol/SBFal_06.gif
+	frame	data/chars/Sol/SBFal_07.gif
+	frame	data/chars/Sol/SBFal_08.gif
+	frame	data/chars/Sol/SBFal_09.gif
+	frame	data/chars/Sol/SBFal_10.gif
+	frame	data/chars/Sol/SBFal_09.gif
+	frame	data/chars/Sol/SBFal_08.gif
+	frame	data/chars/Sol/SBFal_07.gif
+	frame	data/chars/Sol/SBFal_11.gif
+#	frame	data/chars/Sol/SBFal_15.gif
+#	frame	data/chars/Sol/SBFal_16.gif
+#	frame	data/chars/Sol/SBFal_17.gif
+#	frame	data/chars/Sol/SBFal_14.gif
+#	frame	data/chars/Sol/SBFal_16.gif
+#	frame	data/chars/Sol/SBFal_15.gif
+
+#GFX:	Same as fall
+#SFX:	None
+anim burn
+	loop	0
+	delay	5
+	offset	75 131
+	sound	data/sounds/Sol/Sol04.wav
+	frame	data/chars/Sol/SBFal_01.gif
+	frame	data/chars/Sol/SBFal_02.gif
+	frame	data/chars/Sol/SBFal_03.gif
+	frame	data/chars/Sol/SBFal_04.gif
+	frame	data/chars/Sol/SBFal_05.gif
+	frame	data/chars/Sol/SBFal_06.gif
+	frame	data/chars/Sol/SBFal_07.gif
+	frame	data/chars/Sol/SBFal_08.gif
+	frame	data/chars/Sol/SBFal_09.gif
+	frame	data/chars/Sol/SBFal_10.gif
+	frame	data/chars/Sol/SBFal_09.gif
+	frame	data/chars/Sol/SBFal_08.gif
+	frame	data/chars/Sol/SBFal_07.gif
+	frame	data/chars/Sol/SBFal_11.gif
+	frame	data/chars/Sol/SBFal_15.gif
+	frame	data/chars/Sol/SBFal_16.gif
+	frame	data/chars/Sol/SBFal_17.gif
+	frame	data/chars/Sol/SBFal_14.gif
+	frame	data/chars/Sol/SBFal_16.gif
+	frame	data/chars/Sol/SBFal_15.gif
+
+
+#GFX:	Knockdown on back
+#SFX:	Oohwhuht!
+anim shock
+	loop	0
+	delay	5
+	offset	75 131
+	sound	data/sounds/Sol/Sol03.wav
+	move	-20
+	frame	data/chars/Sol/SBFal_01.gif
+	move	-19
+	frame	data/chars/Sol/SBFal_02.gif
+	move	-18
+	frame	data/chars/Sol/SBFal_03.gif
+	move	-17
+	frame	data/chars/Sol/SBFal_04.gif
+	move	-16
+	frame	data/chars/Sol/SBFal_05.gif
+	move	-15
+	frame	data/chars/Sol/SBFal_06.gif
+	move	-14
+	frame	data/chars/Sol/SBFal_07.gif
+	move	-13
+	frame	data/chars/Sol/SBFal_08.gif
+	move	-12
+	frame	data/chars/Sol/SBFal_09.gif
+	move	-11
+	frame	data/chars/Sol/SBFal_10.gif
+	move	-10
+	frame	data/chars/Sol/SBFal_09.gif
+	move	-9
+	frame	data/chars/Sol/SBFal_08.gif
+	move	-8
+	frame	data/chars/Sol/SBFal_07.gif
+	move	-7
+	frame	data/chars/Sol/SBFal_11.gif
+	move	-6
+	frame	data/chars/Sol/SBFal_15.gif
+	move	-5
+	frame	data/chars/Sol/SBFal_16.gif
+	move	-4
+	frame	data/chars/Sol/SBFal_17.gif
+	move	-3
+	frame	data/chars/Sol/SBFal_14.gif
+	move	-2
+	frame	data/chars/Sol/SBFal_16.gif
+	move	-1
+	frame	data/chars/Sol/SBFal_15.gif
+	frame	data/chars/Sol/SBFal_15.gif
+
+#GFX:	Knockdown on face
+#SFX:	Oohwhuht!
+anim death
+	loop	0
+	delay	5
+	offset	69	120
+	sound	data/sounds/Sol/Sol03.wav
+	frame	data/chars/Sol/SBDie_01.gif
+	move	4
+	frame	data/chars/Sol/SBDie_02.gif
+	move	3
+	frame	data/chars/Sol/SBDie_03.gif
+	move	2
+	frame	data/chars/Sol/SBDie_04.gif
+	move	2
+	frame	data/chars/Sol/SBDie_05.gif
+	move	2
+	frame	data/chars/Sol/SBDie_06.gif
+	move	2
+	frame	data/chars/Sol/SBDie_07.gif
+	move	2
+	frame	data/chars/Sol/SBDie_08.gif
+	move	2
+	frame	data/chars/Sol/SBDie_09.gif
+	move	2
+	frame	data/chars/Sol/SBDie_10.gif
+
+#GFX:	Recovery from Knockdown on back
+#SFX:	Nnk!- Kusuo... (Nnk!- Damnit...)
+anim rise
+	loop	0
+	delay	5
+	offset	75 131
+	sound	data/sounds/Sol/Sol10.wav
+	frame	data/chars/Sol/SBFal_15.gif
+	frame	data/chars/Sol/SBFal_18.gif
+	frame	data/chars/Sol/SBFal_19.gif
+	frame	data/chars/Sol/SBFal_20.gif
+	frame	data/chars/Sol/SBFal_21.gif
+	frame	data/chars/Sol/SBFal_22.gif
+	frame	data/chars/Sol/SBFal_23.gif
+	frame	data/chars/Sol/SBFal_24.gif
+	frame	data/chars/Sol/SBFal_25.gif
+	frame	data/chars/Sol/SBFal_01.gif
+
+#GFX:	Landing from jump
+#SFX:	Nnk!- Kusuo... (Nnk!- Damnit...)
+anim land
+	loop	0
+	delay	5
+	offset	35	99
+	frame	data/chars/Sol/SBGet_01.gif
+	frame	data/chars/Sol/SBGet_02.gif
+	frame	data/chars/Sol/SBGet_01.gif
+
+#GFX:	Dragon Install Activation
+#SFX:	Doragon Installu! (Dragon Install!)
+#CMD:	Double Attack (A_J)
+anim special
+	energycost	11
+	loop	0
+	delay	4
+	offset	73	121
+	sound	data/sounds/Sol/Sol01.wav
+	frame	data/chars/Sol/SBBst_01.gif
+	frame	data/chars/Sol/SBBst_02.gif
+	delay	9
+	frame	data/chars/Sol/SBBst_03.gif
+	delay	4
+	frame	data/chars/Sol/SBBst_04.gif
+	frame	data/chars/Sol/SBBst_05.gif
+	frame	data/chars/Sol/SBBst_06.gif
+	delay	2
+	burn	59	121	27	5	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_07.gif
+	frame	data/chars/Sol/SBBst_08.gif
+	frame	data/chars/Sol/SBBst_09.gif
+	burn	56	117	30	12	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_10.gif
+	frame	data/chars/Sol/SBBst_11.gif
+	frame	data/chars/Sol/SBBst_12.gif
+	burn	49	113	47	17	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_13.gif
+	frame	data/chars/Sol/SBBst_14.gif
+	frame	data/chars/Sol/SBBst_15.gif
+	burn	35	101	73	29	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_16.gif
+	frame	data/chars/Sol/SBBst_17.gif
+	frame	data/chars/Sol/SBBst_18.gif
+	burn	26	95	93	33	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_19.gif
+	frame	data/chars/Sol/SBBst_20.gif
+	frame	data/chars/Sol/SBBst_21.gif
+	burn	13	87	119	37	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_22.gif
+	frame	data/chars/Sol/SBBst_23.gif
+	frame	data/chars/Sol/SBBst_24.gif
+	burn	10	87	125	36	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_25.gif
+	frame	data/chars/Sol/SBBst_26.gif
+	frame	data/chars/Sol/SBBst_27.gif
+	burn	2	85	139	25	20	1	1	0	0
+	frame	data/chars/Sol/SBBst_28.gif
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBBst_29.gif
+	delay	7
+	frame	data/chars/Sol/SBBst_30.gif
+	frame	data/chars/Sol/SBBst_31.gif
+	frame	data/chars/Sol/SBBst_32.gif
+
+#GFX:	Tyrant Rave V. Alpha
+#SFX:	Tyrant Rave!
+#CMD:	Forward S (F+S)
+anim special2
+	energycost	11
+	loop	0
+	delay	4
+	sound	data/sounds/Sol/Sol12.wav
+	move	-19
+	offset	75	108
+	frame	data/chars/Sol/SBGVi_01.gif
+	move	-18
+	frame	data/chars/Sol/SBGVi_01.gif
+	move	-16
+	seta	6
+#	offset	75	114
+	frame	data/chars/Sol/SBGVi_02.gif
+	move	-12
+	frame	data/chars/Sol/SBGVi_02.gif
+	move	-8
+	seta	10
+#	offset	75	118
+	frame	data/chars/Sol/SBGVi_03.gif
+	move	-4
+	frame	data/chars/Sol/SBGVi_03.gif
+	move	-2
+	seta	20
+#	offset	75	128
+	frame	data/chars/Sol/SBGVi_04.gif
+	delay	1
+	move	6
+	frame	data/chars/Sol/SBGVi_04.gif
+	burn	132	51	37	48	9	18	0	0	15
+	frame	data/chars/Sol/SB_E_01.gif
+	frame	data/chars/Sol/SB_E_02.gif
+	burn	106	20	66	110	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_05.gif
+	frame	data/chars/Sol/SB_E_03.gif
+	frame	data/chars/Sol/SB_E_04.gif
+	burn	105	19	66	110	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_04.gif
+	frame	data/chars/Sol/SB_E_05.gif
+	frame	data/chars/Sol/SB_E_06.gif
+	burn	103	17	66	110	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_05.gif
+	frame	data/chars/Sol/SB_E_07.gif
+	frame	data/chars/Sol/SB_E_08.gif
+	burn	117	15	53	111	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_04.gif
+	frame	data/chars/Sol/SB_E_09.gif
+	frame	data/chars/Sol/SB_E_10.gif
+	frame	data/chars/Sol/SBGVi_05.gif
+	frame	data/chars/Sol/SB_E_11.gif
+	frame	data/chars/Sol/SB_E_12.gif
+	burn	117	17	53	109	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_04.gif
+	frame	data/chars/Sol/SB_E_13.gif
+	frame	data/chars/Sol/SB_E_14.gif
+	burn	119	38	48	74	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_05.gif
+	frame	data/chars/Sol/SB_E_15.gif
+	frame	data/chars/Sol/SB_E_16.gif
+	burn	121	40	47	70	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_04.gif
+	frame	data/chars/Sol/SB_E_17.gif
+	frame	data/chars/Sol/SB_E_18.gif
+	burn	126	42	42	88	9	18	0	0	15
+	frame	data/chars/Sol/SBGVi_05.gif
+	frame	data/chars/Sol/SB_E_19.gif
+	frame	data/chars/Sol/SB_E_20.gif
+	burn	120	43	40	57	9	18	0	0	15
+	frame	data/chars/Sol/SB_E_21.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SB_E_22.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SB_E_23.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SB_E_24.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SB_E_25.gif
+	burn	0	0	0	0	0	0	0	0	0
+	move	6
+	seta	10
+#	offset	60	118
+	frame	data/chars/Sol/SBGVi_06.gif
+	move	4
+	seta	6
+#	offset	60	114
+	frame	data/chars/Sol/SBGVi_06.gif
+	move	2
+	seta	0
+#	offset	60	108
+	frame	data/chars/Sol/SBGVi_06.gif
+
+#GFX:	Gun Flame
+#SFX:	Gung Kraim! (Gun Flame!)
+#PRJ:	Gun Flame Burnt
+#CMD:	QCF A (D, F, A)
+anim freespecial
+	loop	0
+	delay	7
+	offset	64 129
+	pshotframe	5	-1
+	sound	data/sounds/Sol/Sol06.wav
+	bbox	61	30	19	100
+	frame	data/chars/Sol/SBSpF_01.gif
+	frame	data/chars/Sol/SBSpF_02.gif
+	bbox	70	37	16	92
+	frame	data/chars/Sol/SBSpF_03.gif
+	delay	5
+	bbox	78	41	18	89
+	frame	data/chars/Sol/SBSpF_04.gif
+	bbox	84	34	26	86
+	frame	data/chars/Sol/SBSpF_05.gif
+	frame	data/chars/Sol/SBSpF_06.gif
+	frame	data/chars/Sol/SBSpF_07.gif
+	frame	data/chars/Sol/SBSpF_08.gif
+	frame	data/chars/Sol/SBSpF_09.gif
+	frame	data/chars/Sol/SBSpF_10.gif
+	delay	11
+	frame	data/chars/Sol/SBSpF_11.gif
+	delay	7
+	bbox	77	41	22	92
+	frame	data/chars/Sol/SBSpF_12.gif
+	bbox	66	37	22	94
+	frame	data/chars/Sol/SBSpF_13.gif
+	delay	9
+	bbox	59	36	22	93
+	frame	data/chars/Sol/SBSpF_14.gif
+
+#GFX:	Gun Flame Feint
+#SFX:	GAAAN-Kagataka. (I don't know what the second half is.)
+#PRJ:	None
+#CMD:	Not used
+#anim ?
+#	loop	0
+#	delay	7
+#	offset	64 129
+#	sound	data/sounds/Sol/Sol19.wav
+#	bbox	61	30	19	100
+#	frame	data/chars/Sol/SBSpF_01.gif
+#	frame	data/chars/Sol/SBSpF_02.gif
+#	bbox	70	37	16	92
+#	frame	data/chars/Sol/SBSpF_03.gif
+#	delay	5
+#	bbox	78	41	18	89
+##	attack	100	43	131	87	0	0	0	
+#	frame	data/chars/Sol/SBSpF_04.gif
+#	bbox	84	34	26	86
+##	attack	0	0	0	0	0	0	0
+#	frame	data/chars/Sol/SBSpF_05.gif
+#	frame	data/chars/Sol/SBSpF_06.gif
+#	frame	data/chars/Sol/SBSpF_07.gif
+#	delay	4
+#	bbox	59	36	22	93
+#	frame	data/chars/Sol/SBSpF_14.gif
+#	offset	66 121
+#	bbox	59	22	22	100
+#	frame	data/chars/Sol/SBRnA_12.gif
+
+#GFX:	Grand Viper
+#SFX:	Gurand Vipa! (Grand Viper!)
+#CMD:	QCB A (D, D, A)
+anim freespecial2
+	loop	0
+#	jumpframe	20
+	delay	10
+	offset	60	108
+	sound	data/sounds/Sol/Sol05.wav
+	move	1
+	bbox	65	11	22	93
+	frame	data/chars/Sol/SBGVi_01.gif
+	delay	5
+	move	2
+	bbox	62	50	34	57
+	frame	data/chars/Sol/SBGVi_02.gif
+	move	3
+	frame	data/chars/Sol/SBGVi_03.gif
+	delay	1
+	move	4
+	bbox	74	55	54	49
+	frame	data/chars/Sol/SBGVi_04.gif
+	burn	120	43	40	57	11	0	0	0	15
+	frame	data/chars/Sol/SBGVi_07.gif
+	frame	data/chars/Sol/SBGVi_08.gif
+	bbox	89	62	59	42
+	frame	data/chars/Sol/SBGVi_09.gif
+	frame	data/chars/Sol/SBGVi_10.gif
+	frame	data/chars/Sol/SBGVi_11.gif
+	frame	data/chars/Sol/SBGVi_12.gif
+	frame	data/chars/Sol/SBGVi_13.gif
+	frame	data/chars/Sol/SBGVi_14.gif
+	frame	data/chars/Sol/SBGVi_15.gif
+	frame	data/chars/Sol/SBGVi_16.gif
+	frame	data/chars/Sol/SBGVi_17.gif
+	frame	data/chars/Sol/SBGVi_18.gif
+	bbox	71	45	32	60
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBGVi_06.gif
+	frame	data/chars/Sol/SBGVi_19.gif
+	move	0
+	frame	data/chars/Sol/SBGVi_20.gif
+	delay	7
+	offset	56	166
+	seta	1
+	bbox	66	71	22	91
+	frame	data/chars/Sol/SBSpU_03.gif
+	bbox	77	66	13	104
+	delay	3
+	seta	4
+	frame	data/chars/Sol/SBSpU_04.gif
+	move	1
+	seta	8
+	bbox	71	59	16	97
+	burn	91	22	52	132	5	0	0	0	15
+	frame	data/chars/Sol/SBSpU_05.gif
+	seta	16
+	frame	data/chars/Sol/SB_B_01.gif
+	seta	24
+	frame	data/chars/Sol/SB_B_02.gif
+	seta	30
+	frame	data/chars/Sol/SB_B_03.gif
+	seta	36
+	frame	data/chars/Sol/SBSpU_05.gif
+	seta	42
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SB_B_04.gif
+	burn	91	22	52	132	7	1	0	0	15
+	seta	46
+	frame	data/chars/Sol/SB_B_05.gif
+	seta	50
+	frame	data/chars/Sol/SB_B_06.gif
+	seta	54
+	frame	data/chars/Sol/SBSpU_05.gif
+	seta	56
+	frame	data/chars/Sol/SB_B_07.gif
+	seta	58
+	frame	data/chars/Sol/SB_B_08.gif
+	seta	60
+	burn	0	0	0	0	0	0	0	0	0
+	bbox	53	60	41	61
+	frame	data/chars/Sol/SBSpU_06.gif
+	seta	61
+	bbox	64	72	35	40
+	frame	data/chars/Sol/SBSpU_07.gif
+	seta	62
+	frame	data/chars/Sol/SBSpU_08.gif
+	seta	63
+	frame	data/chars/Sol/SBSpU_09.gif
+	frame	data/chars/Sol/SBSpU_10.gif
+	seta	64
+	frame	data/chars/Sol/SBSpU_11.gif
+	frame	data/chars/Sol/SBSpU_12.gif
+	seta	65
+	bbox	73	65	22	53
+	frame	data/chars/Sol/SBSpU_13.gif
+	move	0
+	offset	38	158
+	bbox	35	74	33	45
+	frame	data/chars/Sol/SBJmp_07.gif
+	seta	64
+	frame	data/chars/Sol/SBJmp_06.gif
+	seta	63
+	frame	data/chars/Sol/SBJmp_05.gif
+	seta	62
+	bbox	35	74	33	45
+	frame	data/chars/Sol/SBJmp_04.gif
+	seta	60
+	bbox	35	66	30	60
+	frame	data/chars/Sol/SBJmp_03.gif
+	seta	58
+	bbox	30	59	27	86
+	frame	data/chars/Sol/SBJmp_02.gif
+	seta	54
+	bbox	25	50	19	111
+	frame	data/chars/Sol/SBJmp_08.gif
+	seta	50
+	bbox	24	60	25	99
+	frame	data/chars/Sol/SBJmp_09.gif
+	seta	44
+	frame	data/chars/Sol/SBJmp_08.gif
+	seta	38
+	frame	data/chars/Sol/SBJmp_09.gif
+	seta	30
+	frame	data/chars/Sol/SBJmp_08.gif
+	seta	22
+	frame	data/chars/Sol/SBJmp_09.gif
+	seta	12
+	frame	data/chars/Sol/SBJmp_08.gif
+	seta	2
+	frame	data/chars/Sol/SBJmp_09.gif
+
+#GFX:	Volcanic Viper
+#SFX:	Volcanic Vipar! (Volcanic Viper!)
+#CMD:	DP A (U, U, A)
+anim freespecial3
+	loop	0
+	jumpframe	6	4
+	delay	2
+	offset	64 129
+	sound	data/sounds/Sol/Sol14.wav
+	bbox	61	30	19	100
+	frame	data/chars/Sol/SBSpF_01.gif
+	frame	data/chars/Sol/SBSpF_02.gif
+	bbox	70	37	16	92
+	frame	data/chars/Sol/SBSpF_03.gif
+	offset	56	166
+	bbox	52	74	24	91
+	frame	data/chars/Sol/SBSpU_01.gif
+	bbox	59	110	25	55
+	frame	data/chars/Sol/SBSpU_02.gif
+	bbox	66	71	22	91
+	delay	3
+	move	1
+	frame	data/chars/Sol/SBSpU_03.gif
+	bbox	77	66	13	104
+	frame	data/chars/Sol/SBSpU_04.gif
+	bbox	71	59	16	97
+	delay	2
+	burn	91	22	52	132	11	0	0	0	15
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_01.gif
+	frame	data/chars/Sol/SB_B_02.gif
+	frame	data/chars/Sol/SB_B_03.gif
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_04.gif
+	frame	data/chars/Sol/SB_B_05.gif
+	frame	data/chars/Sol/SB_B_06.gif
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_07.gif
+	frame	data/chars/Sol/SB_B_08.gif
+	frame	data/chars/Sol/SB_B_01.gif
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_02.gif
+	frame	data/chars/Sol/SB_B_03.gif
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SB_B_04.gif
+	burn	91	22	52	132	11	1	0	0	15
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_05.gif
+	frame	data/chars/Sol/SB_B_06.gif
+	frame	data/chars/Sol/SB_B_07.gif
+	frame	data/chars/Sol/SBSpU_05.gif
+	frame	data/chars/Sol/SB_B_08.gif
+	frame	data/chars/Sol/SBSpU_05.gif
+	delay	4
+	move	0
+	bbox	53	60	41	61
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBSpU_06.gif
+	bbox	64	72	35	40
+	frame	data/chars/Sol/SBSpU_07.gif
+	frame	data/chars/Sol/SBSpU_08.gif
+	frame	data/chars/Sol/SBSpU_09.gif
+	frame	data/chars/Sol/SBSpU_10.gif
+	frame	data/chars/Sol/SBSpU_11.gif
+	frame	data/chars/Sol/SBSpU_12.gif
+	bbox	73	65	22	53
+	frame	data/chars/Sol/SBSpU_13.gif
+
+#GFX:	Bandit Revolver
+#SFX:	Bandit... Revolva!
+#CMD:	RDP A (F, D, A)
+anim freespecial4
+	loop	0
+	delay	2
+	offset	84	122
+	move	5
+	sound	data/sounds/Sol/Sol16.wav
+	bbox	78	35	24	65
+	attack	93	40	36	52	11	0	0	0	15
+	frame	data/chars/Sol/SBBan_01.gif
+	seta	20
+	frame	data/chars/Sol/SBBan_01.gif
+	seta	35
+	bbox	78	33	24	65
+	attack	93	12	37	70	11	0	0	0	15
+	frame	data/chars/Sol/SBBan_02.gif
+	seta	45
+	frame	data/chars/Sol/SBBan_02.gif
+	seta	50
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBBan_03.gif
+	seta	53
+	frame	data/chars/Sol/SBBan_03.gif
+	seta	54
+	frame	data/chars/Sol/SBBan_04.gif
+	seta	55
+	frame	data/chars/Sol/SBBan_04.gif
+	frame	data/chars/Sol/SBBan_05.gif
+	frame	data/chars/Sol/SBBan_05.gif
+	bbox	83	29	23	70
+	frame	data/chars/Sol/SBBan_06.gif
+	frame	data/chars/Sol/SBBan_06.gif
+	bbox	73	31	24	63
+	attack	103	6	29	52	13	1	0	0	15
+	frame	data/chars/Sol/SBRev_01.gif
+	seta	55
+	frame	data/chars/Sol/SBRev_01.gif
+	seta	54
+	bbox	77	32	27	56
+	attack	107	39	55	36	13	1	0	0	15
+	frame	data/chars/Sol/SBRev_02.gif
+	seta	53
+	frame	data/chars/Sol/SBRev_02.gif
+	seta	50
+	bbox	74	27	31	68
+	attack	91	59	56	60	13	1	0	0	15
+	frame	data/chars/Sol/SBRev_03.gif
+	seta	45
+	frame	data/chars/Sol/SBRev_03.gif
+	seta	35
+	bbox	73	30	29	82
+	attack	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBRev_04.gif
+	seta	20
+	frame	data/chars/Sol/SBRev_04.gif
+	seta	0
+	offset	38	158
+	bbox	24	60	25	99
+	frame	data/chars/Sol/SBJmp_08.gif
+
+#GFX:	Bandit Bringer
+#SFX:	Bandit Bringaer!
+#CMD:	RDP S (F, D, S)
+anim freespecial5
+	loop	0
+	delay	3
+	offset	84	122
+	move	10
+	sound	data/sounds/Sol/Sol17.wav
+	bbox	80	27	24	81
+	frame	data/chars/Sol/SBBri_01.gif
+	seta	20
+	frame	data/chars/Sol/SBBri_01.gif
+	seta	35
+	bbox	78	35	24	65
+	attack	93	40	36	52	11	0	0	0	15
+	frame	data/chars/Sol/SBBan_01.gif
+	seta	45
+	frame	data/chars/Sol/SBBan_01.gif
+	seta	50
+	bbox	78	33	24	65
+	attack	93	12	37	70	11	0	0	0	15
+	frame	data/chars/Sol/SBBan_02.gif
+	seta	53
+	frame	data/chars/Sol/SBBan_02.gif
+	seta	54
+	attack	0	0	0	0	0	0	0	0	0
+	bbox	79	30	29	63
+	frame	data/chars/Sol/SBBri_02.gif
+	seta	55
+	frame	data/chars/Sol/SBBri_02.gif
+	delay	2
+	move	1
+	offset	47	120
+	bbox	37	26	35	70
+	frame	data/chars/Sol/SB_C_01.gif
+	move	0
+	frame	data/chars/Sol/SBBri_03.gif
+	frame	data/chars/Sol/SB_C_02.gif
+	move	1
+	bbox	43	35	35	52
+	burn	36	35	35	32	14	1	0	0	15
+	frame	data/chars/Sol/SB_C_03.gif
+	move	0
+	frame	data/chars/Sol/SBBri_04.gif
+	frame	data/chars/Sol/SB_C_04.gif
+	move	1
+	bbox	31	48	58	41
+	burn	29	21	81	102	14	1	0	0	15
+	frame	data/chars/Sol/SB_C_05.gif
+	move	0
+	frame	data/chars/Sol/SBBri_05.gif
+	frame	data/chars/Sol/SB_C_06.gif
+	move	1
+	burn	30	22	86	107	14	1	0	0	15
+	frame	data/chars/Sol/SB_C_07.gif
+	move	0
+	frame	data/chars/Sol/SBBri_05.gif
+	frame	data/chars/Sol/SB_C_08.gif
+	move	1
+	burn	31	22	88	112	14	1	0	0	15
+	frame	data/chars/Sol/SB_C_09.gif
+	move	0
+	frame	data/chars/Sol/SBBri_05.gif
+	frame	data/chars/Sol/SB_C_10.gif
+	move	1
+	bbox	25	61	79	24
+	burn	37	28	90	115	14	1	0	0	15
+	frame	data/chars/Sol/SB_C_11.gif
+	move	0
+	frame	data/chars/Sol/SBBri_06.gif
+	frame	data/chars/Sol/SB_C_12.gif
+	move	2
+	seta	54
+	bbox	33	41	70	50
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SB_C_13.gif
+	seta	53
+	frame	data/chars/Sol/SBBri_07.gif
+	seta	50
+	frame	data/chars/Sol/SB_C_14.gif
+	seta	45
+	bbox	43	33	40	67
+	frame	data/chars/Sol/SB_C_15.gif
+	seta	35
+	frame	data/chars/Sol/SBBri_08.gif
+	seta	20
+	frame	data/chars/Sol/SB_C_16.gif
+	seta	0
+	offset	38	158
+	bbox	24	60	25	99
+	frame	data/chars/Sol/SBJmp_09.gif
+
+#GFX:	Backdash, air backdash
+#SFX:	Jump
+#CMD:	Teleport J (D, D, J)
+anim freespecial6
+	loop	0
+	delay	2
+	offset	43	114
+	move	-9
+	sound	data/sounds/Jump.wav
+	bbox	0	0	0	0
+	frame	data/chars/Sol/SBBDa_01.gif
+	seta	2
+#	offset	43	116
+	frame	data/chars/Sol/SBBDa_02.gif
+	seta	4
+#	offset	43	118
+	frame	data/chars/Sol/SBBDa_03.gif
+	seta	6
+#	offset	43	120
+	frame	data/chars/Sol/SBBDa_04.gif
+	frame	data/chars/Sol/SBBDa_03.gif
+	frame	data/chars/Sol/SBBDa_04.gif
+	frame	data/chars/Sol/SBBDa_03.gif
+	seta	6
+#	offset	43	118
+	frame	data/chars/Sol/SBBDa_04.gif
+	seta	4
+#	offset	43	116
+	bbox	20	16	44	103
+	frame	data/chars/Sol/SBBDa_02.gif
+	seta	0
+	bbox	24	12	28	103
+	frame	data/chars/Sol/SBBDa_01.gif
+
+#GFX:	Fafnir
+#SFX:	Fire 1
+#CMD:	Sonic Boom Attack (B, F, A)
+anim	freespecial7
+	loop	0
+	delay	3
+	move	4
+	offset	68	119
+	bbox	63	32	24	87
+	sound	data/sounds/Fire1.wav
+	frame	data/chars/Sol/SBFaf_01.gif
+	delay	6
+	bbox	70	42	27	75
+	frame	data/chars/Sol/SBFaf_02.gif
+	delay	2
+	move	3
+	bbox	71	43	26	74
+	frame	data/chars/Sol/SBFaf_03.gif
+	frame	data/chars/Sol/SB_D_01.gif
+	frame	data/chars/Sol/SB_D_02.gif
+	move	2
+	bbox	72	44	25	73
+	frame	data/chars/Sol/SBFaf_04.gif
+	move	1
+	frame	data/chars/Sol/SB_D_03.gif
+	move	3
+	frame	data/chars/Sol/SB_D_04.gif
+	move	7
+	bbox	77	34	36	84
+	burn	58	53	106	31	23	1	0	0	15
+	frame	data/chars/Sol/SBFaf_05.gif
+	move	10
+	frame	data/chars/Sol/SB_D_05.gif
+	frame	data/chars/Sol/SB_D_06.gif
+	move	9
+	burn	76	45	88	47	24	1	0	0	15
+	frame	data/chars/Sol/SBFaf_05.gif
+	move	8
+	frame	data/chars/Sol/SB_D_07.gif
+	move	7
+	frame	data/chars/Sol/SB_D_08.gif
+	move	6
+	bbox	74	36	33	82
+	burn	100	54	68	29	23	1	0	0	15
+	frame	data/chars/Sol/SBFaf_06.gif
+	move	5
+	frame	data/chars/Sol/SB_D_09.gif
+	move	4
+	frame	data/chars/Sol/SB_D_10.gif
+	move	3
+	bbox	77	83	28	85
+	burn	121	61	46	15	23	1	0	0	15
+	frame	data/chars/Sol/SBFaf_07.gif
+	move	2
+	frame	data/chars/Sol/SB_D_11.gif
+	move	1
+	frame	data/chars/Sol/SB_D_12.gif
+	move	0
+	bbox	69	23	24	96
+	burn	157	66	8	5	17	1	0	0	15
+	frame	data/chars/Sol/SBFaf_08.gif
+	frame	data/chars/Sol/SB_D_13.gif
+	frame	data/chars/Sol/SB_D_14.gif
+	bbox	51	17	28	102
+	burn	0	0	0	0	0	0	0	0	0
+	frame	data/chars/Sol/SBFaf_09.gif
+
+#GFX:	Riot Stamp
+#SFX:	Fire 1
+#CMD:	QCF J (D, F, J)
+anim	freespecial8
+	loop	0
+	delay	3
+	jumpframe	13
+	offset	46	100
+	move	-9
+	sound	data/sounds/Fire1.wav
+	offset	38	160
+	bbox	25	50	19	111
+	frame	data/chars/Sol/SBJmp_01.gif
+	seta	5
+#	offset	38	165
+	bbox	31	54	17	92
+	frame	data/chars/Sol/SBJmp_02.gif
+	seta	10
+#	offset	38	170
+	bbox	30	59	27	86
+	frame	data/chars/Sol/SBJmp_03.gif
+	seta	15
+#	offset	38	175
+	bbox	35	66	30	60
+	frame	data/chars/Sol/SBJmp_04.gif
+	seta	20
+#	offset	38	180
+	bbox	35	74	33	45
+	frame	data/chars/Sol/SBJmp_05.gif
+	seta	25
+#	offset	38	185
+	frame	data/chars/Sol/SBJmp_06.gif
+	frame	data/chars/Sol/SBJmp_07.gif
+	frame	data/chars/Sol/SBJmp_07.gif
+	seta	20
+#	offset	38	180
+	frame	data/chars/Sol/SBJmp_07.gif
+	seta	15
+#	offset	38	175
+	frame	data/chars/Sol/SBJmp_06.gif
+	seta	10
+#	offset	38	170
+	frame	data/chars/Sol/SBJmp_05.gif
+	seta	5
+#	offset	38	165
+	frame	data/chars/Sol/SBJmp_04.gif
+	bbox	33	17	30	68
+	seta	0
+	delay	5
+	offset	46	115
+	frame	data/chars/Sol/SBRio_01.gif
+	delay	3
+	move	2
+	bbox	26	7	42	61
+	blast	51	18	62	34	17	0	0	0	15
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif
+	frame	data/chars/Sol/SBRio_02.gif

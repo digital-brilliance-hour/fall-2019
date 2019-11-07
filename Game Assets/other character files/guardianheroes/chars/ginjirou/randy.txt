@@ -1,0 +1,280 @@
+name	randy
+health	500
+speed	15
+running	31	4	2	1	1
+type	npc
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+candamage enemy
+aggression 30
+bflash bflash
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+subtype	chase
+icon	data/chars/randy/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/randy/idle1.gif
+
+
+#alternatepal	data/chars/randy/testpal.gif
+#alternatepal	data/chars/randy/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  24 62
+	bbox 	8 6 38 56
+	delay	14
+	frame	data/chars/randy/idle1.gif
+	offset  22 60
+	frame	data/chars/randy/idle2.gif
+	offset  21 60
+	frame	data/chars/randy/idle3.gif
+	offset  27 61
+	frame	data/chars/randy/idle4.gif
+	offset  31 61
+	frame	data/chars/randy/idle5.gif
+	offset  28 62
+	frame	data/chars/randy/idle6.gif
+	offset  31 62
+	frame	data/chars/randy/idle7.gif
+
+anim walk
+	loop	1
+	offset	27 67
+	bbox 	8 6 38 56
+	delay	13
+	frame	data/chars/randy/walk1.gif
+	offset	29 66
+	frame	data/chars/randy/walk2.gif
+	offset	27 67
+	frame	data/chars/randy/walk3.gif
+	offset	30 66
+	frame	data/chars/randy/walk4.gif
+	offset	35 67
+	frame	data/chars/randy/walk5.gif
+	offset	30 66
+	frame	data/chars/randy/walk6.gif
+
+anim run
+	loop	1
+	offset	29 57
+	bbox 	10 3 38 56
+	delay	13
+	frame	data/chars/randy/run1.gif
+	offset	34 64
+	frame	data/chars/randy/run2.gif
+	offset	31 61
+	frame	data/chars/randy/run3.gif
+	offset	34 60
+	frame	data/chars/randy/run4.gif
+	offset	31 59
+	frame	data/chars/randy/run5.gif
+	offset	33 60
+	frame	data/chars/randy/run6.gif
+
+
+anim runattack
+	range	0 100
+	loop	0
+	delay	7
+	move	2
+	offset	42 82
+	bbox	44 58 63 84
+	frame	data/chars/randy/ratk1.gif
+	offset	32 70
+	frame	data/chars/randy/ratk2.gif
+	offset	32 61
+	attack	26 0 82 52 20 1 0 0 28
+	frame	data/chars/randy/ratk3.gif
+	offset	22 52
+	frame	data/chars/randy/ratk4.gif
+	offset	24 48
+	frame	data/chars/randy/ratk5.gif
+	offset	27 40
+	attack	0 0 0 0 0 0
+	frame	data/chars/randy/ratk6.gif
+	
+
+
+anim pain
+	loop	0
+	delay	4
+	offset	28 61
+	bbox	8 6 38 56
+	frame	data/chars/randy/pain1.gif
+	offset	48 59
+	frame	data/chars/randy/pain2.gif
+	offset	28 61
+	frame	data/chars/randy/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset	35 69
+	frame	data/chars/randy/fall1.gif
+	offset	43 59
+	frame	data/chars/randy/fall2.gif
+	offset	32 30
+	frame	data/chars/randy/fall3.gif
+	offset	38 25
+	frame	data/chars/randy/fall4.gif
+
+anim death
+	loop	0
+	delay	13
+	offset	35 69
+	frame	data/chars/randy/fall1.gif
+	offset	43 59
+	frame	data/chars/randy/fall2.gif
+	offset	32 30
+	frame	data/chars/randy/fall3.gif
+	offset	38 25
+	frame	data/chars/randy/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset	28 23
+	frame	data/chars/randy/rise1.gif
+	offset	23 43
+	frame	data/chars/randy/rise2.gif
+	offset	25 49
+	frame	data/chars/randy/rise3.gif
+	offset	24 50
+	frame	data/chars/randy/rise4.gif
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	7
+	offset	29 42
+	bbox	44 58 63 84
+	frame	data/chars/randy/atk1.gif
+	offset	32 58
+	frame	data/chars/randy/atk2.gif
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	7
+	offset	29 42
+	bbox	44 58 63 84
+	frame	data/chars/randy/atk1.gif
+	offset	32 58
+	frame	data/chars/randy/atk2.gif
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+
+
+anim special
+	range	0 100
+	loop	0
+	delay	7
+	offset	29 42
+	bbox	44 58 63 84
+	frame	data/chars/randy/atk1.gif
+	offset	32 58
+	frame	data/chars/randy/atk2.gif
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 79
+	frame	data/chars/randy/atk3.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	33 80
+	frame	data/chars/randy/atk4.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 88 31 20 1 0 0 28
+	offset	34 80
+	frame	data/chars/randy/atk5.gif
+	attack	0 0 0 0 0 0
+
+
+
+anim attack2
+	range	180 200
+	loop	0
+	delay	16
+	throwframe	4
+	offset	29 48
+	bbox	8 6 38 56
+	frame	data/chars/randy/spec1.gif
+	offset	30 71
+	frame	data/chars/randy/spec2.gif
+	offset	35 62
+	frame	data/chars/randy/spec3.gif
+	offset	20 44
+	frame	data/chars/randy/spec4.gif
+	offset	29 48
+	frame	data/chars/randy/spec5.gif
+

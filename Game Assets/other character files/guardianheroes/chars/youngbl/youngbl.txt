@@ -1,0 +1,536 @@
+name	youngbl
+health	500
+speed	20
+type	enemy
+shadow	6
+noquake 1
+dust    dust
+cantgrab 1
+aggression 20
+aimove chase
+nodrop 1
+bflash bflash
+falldie 1
+blockodds 1
+thold     49
+escapehits 1
+defense burn 75%
+defense shock 75%
+defense blast 75%
+defense freeze 75%
+nodieblink 3
+icon	data/chars/youngbl/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/wyvroar.wav
+fmap 1
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+palette	data/chars/youngbl/death50.gif
+
+alternatepal	data/chars/youngbl/testpal.gif
+alternatepal	data/chars/youngbl/testpal2.gif
+
+anim spawn
+	loop	0
+	offset	215 245
+	bbox	170 100 145 85
+	delay	12
+	sound   data/sounds/drspawn.wav
+	frame	data/chars/youngbl/idle1.gif
+	frame	data/chars/youngbl/idle2.gif
+	frame	data/chars/youngbl/idle3.gif
+	frame	data/chars/youngbl/idle4.gif
+
+anim idle
+	loop	1
+	offset	215 245
+	bbox	170 100 145 85
+	delay	12
+	sound   data/sounds/wing.wav
+	frame	data/chars/youngbl/idle1.gif
+	frame	data/chars/youngbl/idle2.gif
+	frame	data/chars/youngbl/idle3.gif
+	frame	data/chars/youngbl/idle4.gif
+
+anim walk
+	loop	1
+	offset	215 245
+	bbox	170 100 145 75
+	delay	10
+	frame	data/chars/youngbl/walk1.gif
+	frame	data/chars/youngbl/walk2.gif
+	frame	data/chars/youngbl/walk3.gif
+	frame	data/chars/youngbl/walk4.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	215 245
+	bbox	170 100 145 75
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/youngbl/pain1.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain1.gif
+	offset	215 245
+	move    -8
+	frame	data/chars/youngbl/pain1.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain2.gif
+	offset	215 245
+	move    -6
+	frame	data/chars/youngbl/pain2.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain2.gif
+	move    -4
+	offset	215 245
+	frame	data/chars/youngbl/pain3.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain3.gif
+	offset	215 245
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain4.gif
+	offset	215 245
+	move    0
+	frame	data/chars/youngbl/pain4.gif
+	frame	data/chars/youngbl/pain4.gif
+
+
+anim pain
+	loop	0
+	delay	2
+	offset	215 245
+	bbox	60 30 35 55
+	frame	data/chars/youngbl/pain1.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain1.gif
+	offset	215 245
+	frame	data/chars/youngbl/pain1.gif
+	offset	210 245
+	frame	data/chars/youngbl/pain1.gif
+	offset	215 245
+	frame	data/chars/youngbl/pain1.gif
+
+anim bpain
+	loop	0
+	delay	4
+#	jumpframe  0 -2
+	offset	215 245
+	bbox	0 0 0 0
+	move    -8
+	sound   data/sounds/drhit.wav
+	frame	data/chars/youngbl/pain1.gif
+	move    -8
+	frame	data/chars/youngbl/pain1.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+
+anim pain2
+	loop	0
+	delay	4
+#	jumpframe  0 -2
+	offset	215 245
+	bbox	0 0 0 0
+	move    -8
+	sound   data/sounds/drhit.wav
+	frame	data/chars/youngbl/pain1.gif
+	move    -8
+	frame	data/chars/youngbl/pain1.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+
+anim burn
+	loop	0
+	delay	4
+#	jumpframe  0 -2
+	offset	215 245
+	bbox	0 0 0 0
+	move    -8
+	sound   data/sounds/drhit.wav
+	frame	data/chars/youngbl/pain1.gif
+	move    -8
+	frame	data/chars/youngbl/pain1.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+
+anim shock
+	loop	0
+	delay	4
+#	jumpframe  0 -2
+	offset	215 245
+	bbox	0 0 0 0
+	move    -8
+	sound   data/sounds/drhit.wav
+	frame	data/chars/youngbl/pain1.gif
+	move    -8
+	frame	data/chars/youngbl/pain1.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -7
+	frame	data/chars/youngbl/pain2.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -6
+	frame	data/chars/youngbl/pain3.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -5
+	frame	data/chars/youngbl/pain4.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -4
+	frame	data/chars/youngbl/pain1.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -3
+	frame	data/chars/youngbl/pain2.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -2
+	frame	data/chars/youngbl/pain3.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+	move    -1
+	frame	data/chars/youngbl/pain4.gif
+
+anim fall
+	loop	0
+	delay	12
+	offset	215 245
+	bbox	0 0 0 0
+	frame	data/chars/youngbl/pain1.gif
+	frame	data/chars/youngbl/pain2.gif
+	frame	data/chars/youngbl/pain3.gif
+	frame	data/chars/youngbl/pain4.gif
+
+anim rise
+	loop	0
+	delay	12
+	offset	215 245
+	bbox	0 0 0 0
+	sound   data/sounds/drspawn.wav
+	frame	data/chars/youngbl/idle1.gif
+	frame	data/chars/youngbl/idle2.gif
+	frame	data/chars/youngbl/idle3.gif
+	frame	data/chars/youngbl/idle4.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	215 245
+	bbox	0 0 0 0
+	sound   data/sounds/drhit.wav
+	quakeframe 83 100 10
+	frame	data/chars/youngbl/up01.gif
+	frame	data/chars/youngbl/up02.gif
+	frame	data/chars/youngbl/up03.gif
+	frame	data/chars/youngbl/up04.gif
+	frame	data/chars/youngbl/up05.gif
+	frame	data/chars/youngbl/up06.gif
+	frame	data/chars/youngbl/up07.gif
+	frame	data/chars/youngbl/up08.gif
+	frame	data/chars/youngbl/up09.gif
+	frame	data/chars/youngbl/up10.gif
+	frame	data/chars/youngbl/up11.gif
+	frame	data/chars/youngbl/up12.gif
+	frame	data/chars/youngbl/up13.gif
+	frame	data/chars/youngbl/up14.gif
+	frame	data/chars/youngbl/up15.gif
+	frame	data/chars/youngbl/up16.gif
+	frame	data/chars/youngbl/up17.gif
+	frame	data/chars/youngbl/up18.gif
+	frame	data/chars/youngbl/up19.gif
+	frame	data/chars/youngbl/up20.gif
+	frame	data/chars/youngbl/up21.gif
+	frame	data/chars/youngbl/up22.gif
+	frame	data/chars/youngbl/up23.gif
+	frame	data/chars/youngbl/up24.gif
+	frame	data/chars/youngbl/up25.gif
+	frame	data/chars/youngbl/up26.gif
+	frame	data/chars/youngbl/up27.gif
+	frame	data/chars/youngbl/up28.gif
+	frame	data/chars/youngbl/up29.gif
+	frame	data/chars/youngbl/up30.gif
+	frame	data/chars/youngbl/up31.gif
+	frame	data/chars/youngbl/up32.gif
+	frame	data/chars/youngbl/up33.gif
+	frame	data/chars/youngbl/up34.gif
+	delay	50
+	frame	data/chars/youngbl/up35.gif
+	delay	3
+	sound   data/sounds/drdie.wav
+	frame	data/chars/youngbl/death01.gif
+	frame	data/chars/youngbl/death02.gif
+	frame	data/chars/youngbl/death03.gif
+	frame	data/chars/youngbl/death04.gif
+	frame	data/chars/youngbl/death05.gif
+	frame	data/chars/youngbl/death06.gif
+	frame	data/chars/youngbl/death07.gif
+	frame	data/chars/youngbl/death08.gif
+	frame	data/chars/youngbl/death09.gif
+	frame	data/chars/youngbl/death10.gif
+	frame	data/chars/youngbl/death11.gif
+	frame	data/chars/youngbl/death12.gif
+	frame	data/chars/youngbl/death13.gif
+	frame	data/chars/youngbl/death14.gif
+	frame	data/chars/youngbl/death15.gif
+	frame	data/chars/youngbl/death16.gif
+	frame	data/chars/youngbl/death17.gif
+	frame	data/chars/youngbl/death18.gif
+	frame	data/chars/youngbl/death19.gif
+	frame	data/chars/youngbl/death20.gif
+	frame	data/chars/youngbl/death21.gif
+	frame	data/chars/youngbl/death22.gif
+	frame	data/chars/youngbl/death23.gif
+	frame	data/chars/youngbl/death24.gif
+	frame	data/chars/youngbl/death25.gif
+	frame	data/chars/youngbl/death26.gif
+	frame	data/chars/youngbl/death27.gif
+	frame	data/chars/youngbl/death28.gif
+	frame	data/chars/youngbl/death29.gif
+	frame	data/chars/youngbl/death30.gif
+	frame	data/chars/youngbl/death31.gif
+	frame	data/chars/youngbl/death32.gif
+	frame	data/chars/youngbl/death33.gif
+	frame	data/chars/youngbl/death34.gif
+	frame	data/chars/youngbl/death35.gif
+	frame	data/chars/youngbl/death36.gif
+	frame	data/chars/youngbl/death37.gif
+	frame	data/chars/youngbl/death38.gif
+	frame	data/chars/youngbl/death39.gif
+	frame	data/chars/youngbl/death40.gif
+	frame	data/chars/youngbl/death41.gif
+	frame	data/chars/youngbl/death42.gif
+	frame	data/chars/youngbl/death43.gif
+	frame	data/chars/youngbl/death44.gif
+	frame	data/chars/youngbl/death45.gif
+	frame	data/chars/youngbl/death46.gif
+	frame	data/chars/youngbl/death47.gif
+	frame	data/chars/youngbl/death48.gif
+	frame	data/chars/youngbl/death50.gif
+	delay	10
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+	frame	data/chars/youngbl/death50.gif
+
+anim attack1
+	range	0 150
+	loop	0
+	delay	7
+	offset	215 245
+	bbox	170 100 145 85
+	sound   data/sounds/punch1.wav
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   230 100 110 145 10 0 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   230 100 110 145 10 0 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   205 200 95 100 20 1 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+
+anim attack2
+	range	151 250
+	loop	0
+	delay	4
+	offset	215 245
+	bbox	170 100 145 85
+	quakeframe 1 40 3
+	sound   data/sounds/acidbr.wav
+	move    3
+	delay   2
+	blast   330 120 180 125 30 0 0 0 15
+	frame	data/chars/youngbl/a201.gif
+	frame	data/chars/youngbl/a202.gif
+	frame	data/chars/youngbl/a203.gif
+	frame	data/chars/youngbl/a204.gif
+	frame	data/chars/youngbl/a205.gif
+	frame	data/chars/youngbl/a206.gif
+	frame	data/chars/youngbl/a207.gif
+	frame	data/chars/youngbl/a208.gif
+	frame	data/chars/youngbl/a209.gif
+	frame	data/chars/youngbl/a210.gif
+	frame	data/chars/youngbl/a211.gif
+	frame	data/chars/youngbl/a212.gif
+	frame	data/chars/youngbl/a201.gif
+	frame	data/chars/youngbl/a202.gif
+	frame	data/chars/youngbl/a203.gif
+	frame	data/chars/youngbl/a204.gif
+	frame	data/chars/youngbl/a205.gif
+	frame	data/chars/youngbl/a206.gif
+	frame	data/chars/youngbl/a207.gif
+	frame	data/chars/youngbl/a208.gif
+	frame	data/chars/youngbl/a209.gif
+	frame	data/chars/youngbl/a210.gif
+	frame	data/chars/youngbl/a211.gif
+	frame	data/chars/youngbl/a212.gif
+	frame	data/chars/youngbl/a201.gif
+	frame	data/chars/youngbl/a202.gif
+	frame	data/chars/youngbl/a203.gif
+	frame	data/chars/youngbl/a204.gif
+	frame	data/chars/youngbl/a205.gif
+	frame	data/chars/youngbl/a206.gif
+	frame	data/chars/youngbl/a207.gif
+	frame	data/chars/youngbl/a208.gif
+	frame	data/chars/youngbl/a209.gif
+	frame	data/chars/youngbl/a210.gif
+	frame	data/chars/youngbl/a211.gif
+	frame	data/chars/youngbl/a212.gif
+	frame	data/chars/youngbl/a201.gif
+	frame	data/chars/youngbl/a202.gif
+	frame	data/chars/youngbl/a203.gif
+	frame	data/chars/youngbl/a204.gif
+	frame	data/chars/youngbl/a205.gif
+	frame	data/chars/youngbl/a206.gif
+	frame	data/chars/youngbl/a207.gif
+	frame	data/chars/youngbl/a208.gif
+	frame	data/chars/youngbl/a209.gif
+	frame	data/chars/youngbl/a210.gif
+	frame	data/chars/youngbl/a211.gif
+	frame	data/chars/youngbl/a212.gif
+	move    4
+	delay	4
+	blast   0 0 0 0 0 0 0 0 0
+	frame	data/chars/youngbl/idle1.gif
+	frame	data/chars/youngbl/idle1.gif
+	frame	data/chars/youngbl/idle1.gif
+	move    3
+	frame	data/chars/youngbl/idle2.gif
+	frame	data/chars/youngbl/idle2.gif
+	frame	data/chars/youngbl/idle2.gif
+	move    2
+	frame	data/chars/youngbl/idle3.gif
+	frame	data/chars/youngbl/idle3.gif
+	frame	data/chars/youngbl/idle3.gif
+	move    1
+	frame	data/chars/youngbl/idle4.gif
+	frame	data/chars/youngbl/idle4.gif
+	frame	data/chars/youngbl/idle4.gif
+
+anim special2
+	range	0 100
+	loop	0
+	delay	8
+	offset	215 245
+	bbox	170 100 145 85
+	sound   data/sounds/punch1.wav
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   250 100 90 145 20 0 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   250 100 90 145 20 0 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/youngbl/a101.gif
+	frame	data/chars/youngbl/a102.gif
+	frame	data/chars/youngbl/a103.gif
+	attack   205 200 95 100 15 0 0 0 15
+	frame	data/chars/youngbl/a104.gif
+	attack   0 0 0 0 0 0 0 0 0 0

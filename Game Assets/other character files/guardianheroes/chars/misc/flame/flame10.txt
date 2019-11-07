@@ -1,0 +1,64 @@
+name	flame10
+health	10000
+type	none
+shadow	0
+speed   0
+remove  0
+nomove  1
+lifespan 2
+palette	data/chars/misc/flame/8.gif
+candamage enemy
+alpha 1
+
+anim idle
+	loop	0
+	delay	2
+	offset	-50 197
+        sound   data/sounds/burn.wav   
+        hitfx   data/sounds/lol.wav
+  
+
+	frame	data/chars/misc/flame/1.gif
+	frame	data/chars/misc/flame/2.gif
+	frame	data/chars/misc/flame/3.gif
+	frame	data/chars/misc/flame/4.gif
+
+        burn  53 30 84 170 50 0 1 0 0 30
+
+	frame	data/chars/misc/flame/5.gif
+	frame	data/chars/misc/flame/6.gif
+	frame	data/chars/misc/flame/7.gif
+	frame	data/chars/misc/flame/8.gif
+	frame	data/chars/misc/flame/9.gif
+	frame	data/chars/misc/flame/10.gif
+
+	frame	data/chars/misc/flame/11.gif
+	frame	data/chars/misc/flame/12.gif
+	frame	data/chars/misc/flame/13.gif
+	frame	data/chars/misc/flame/14.gif
+	frame	data/chars/misc/flame/15.gif
+	frame	data/chars/misc/flame/16.gif
+	frame	data/chars/misc/flame/17.gif
+	frame	data/chars/misc/flame/19.gif
+	frame	data/chars/misc/flame/20.gif
+
+	frame	data/chars/misc/flame/21.gif
+	frame	data/chars/misc/flame/22.gif
+	frame	data/chars/misc/flame/23.gif
+	frame	data/chars/misc/flame/24.gif
+	frame	data/chars/misc/flame/25.gif
+	frame	data/chars/misc/flame/26.gif
+	frame	data/chars/misc/flame/27.gif
+	frame	data/chars/misc/flame/28.gif
+
+        burn  0 0 0 0
+
+	frame	data/chars/misc/flame/29.gif
+	frame	data/chars/misc/flame/30.gif
+	frame	data/chars/misc/flame/31.gif
+  
+
+
+	frame	data/chars/misc/end.gif
+
+

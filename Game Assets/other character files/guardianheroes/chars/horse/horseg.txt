@@ -1,0 +1,131 @@
+name	horseg
+health	20
+speed	16
+running	20	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+#aggression 25
+facing	2
+bflash bflash
+blockodds 1
+thold     49
+nodrop	1
+nopain 1
+#falldie 
+aimove chasex
+icon	data/chars/horse/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+#nodieblink 3
+#fmap 3
+atchain	1 1 1
+palette	data/chars/horse/atk1.gif
+load	arrow
+knife	arrow
+
+alternatepal	data/chars/horse/testpal.gif
+#alternatepal	data/chars/horse/testpal2.gif
+#alternatepal	data/chars/horse/testpal3.gif
+
+
+anim idle
+	loop	1
+	offset  97 207
+	range	100 200
+	bbox 	37 104 120 102
+	delay	9
+	frame	data/chars/horse/run1.gif
+	frame	data/chars/horse/run2.gif
+	frame	data/chars/horse/run3.gif
+	frame	data/chars/horse/run4.gif
+	frame	data/chars/horse/run5.gif
+	frame	data/chars/horse/run6.gif
+
+
+
+
+
+anim walk
+	loop	1
+	offset  97 207
+	range	100 200
+	bbox 	37 104 120 102
+	delay	9
+	frame	data/chars/horse/run1.gif
+	frame	data/chars/horse/run2.gif
+	frame	data/chars/horse/run3.gif
+	frame	data/chars/horse/run4.gif
+	frame	data/chars/horse/run5.gif
+	frame	data/chars/horse/run6.gif
+
+
+anim pain
+	loop	1
+	offset  97 207
+	bbox 	37 104 120 102
+	delay	9
+	frame	data/chars/horse/run1.gif
+
+
+
+
+anim fall
+	loop	0
+	offset  97 207
+	bbox 	37 104 120 102
+	delay	9
+	landframe	3
+	frame	data/chars/horse/fall1.gif
+	frame	data/chars/horse/fall2.gif
+	offset	108 183
+	frame	data/chars/horse/fall3.gif
+	frame	data/chars/horse/fall3.gif
+
+
+
+
+anim death
+	loop	0
+	offset  97 207
+	bbox 	37 104 120 102
+	delay	9
+	landframe	3
+	frame	data/chars/horse/fall1.gif
+	frame	data/chars/horse/fall2.gif
+	offset	108 183
+	frame	data/chars/horse/fall3.gif
+	frame	data/chars/horse/fall3.gif
+
+
+
+anim rise
+	loop	1
+	offset  97 207
+	bbox 	37 104 120 102
+	delay	9
+	frame	data/chars/horse/run1.gif
+
+anim attack1
+	range	0 200
+	loop	0
+	offset  97 207
+	throwframe	5
+	bbox 	37 104 120 102
+	delay	9
+	frame	data/chars/horse/atk1.gif
+	frame	data/chars/horse/atk2.gif
+	frame	data/chars/horse/atk3.gif
+	frame	data/chars/horse/atk4.gif
+	frame	data/chars/horse/atk5.gif
+	frame	data/chars/horse/atk6.gif
+
+
+
+
+
+
+
+

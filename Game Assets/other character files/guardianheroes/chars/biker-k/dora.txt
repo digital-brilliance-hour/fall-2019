@@ -1,0 +1,68 @@
+name	dora
+health	10
+type	enemy
+shadow	3
+#nodieblink 3
+icon	data/chars/biker-k/icon.gif
+diesound data/sounds/die2.wav
+palette	data/chars/biker-k/dora1.gif
+
+
+#alternatepal	data/chars/spade/testpal.gif
+#alternatepal	data/chars/spade/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+
+
+
+
+anim walk
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+
+
+
+
+anim pain
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+	frame	data/chars/biker-k/death1.gif
+
+
+anim fall
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+	frame	data/chars/biker-k/death1.gif
+	frame	data/chars/biker-k/death1.gif
+
+anim rise
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+
+
+
+anim attack1
+	loop	1
+	offset  52 64
+	bbox 	25 14 35 54
+	delay	16
+	frame	data/chars/biker-k/death1.gif
+

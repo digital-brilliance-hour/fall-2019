@@ -1,0 +1,38 @@
+name	pris
+type	enemy
+subtype	biker
+speed	15
+health	3
+shadow	6
+icon	data/chars/chariots/icon.gif
+palette	data/chars/chariots/pris1.gif
+#Important addition
+noatflash 1
+flash	robof
+load	prisd
+rider	prisd
+
+#remap	data/chars/chariots/motor.gif	data/chars/chariots/alt1.gif
+
+
+# Not really idle, but what the heck
+anim idle
+	loop	1
+	delay	9
+	offset	155 183
+	bbox	103 112 147 68
+	attack	103 112 147 68
+	frame	data/chars/chariots/pris1.gif
+	frame	data/chars/chariots/pris2.gif
+	frame	data/chars/chariots/pris3.gif
+	frame	data/chars/chariots/pris4.gif
+
+
+anim pain
+	loop	1
+	delay	11
+	offset	67 85
+	frame	data/chars/chariots/death1.gif
+
+
+

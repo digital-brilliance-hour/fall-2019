@@ -1,0 +1,218 @@
+name	villgod
+health	200
+speed	9
+running	15	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 45
+noatflash 1
+flash	robof
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/villgod/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/senti.wav
+falldie 2
+nodieblink 1
+
+palette	data/chars/villgod/idle1.gif
+
+
+alternatepal	data/chars/villgod/testpal.gif
+alternatepal	data/chars/villgod/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  158 200
+	bbox 	99 93 130 109
+	delay	20
+	frame	data/chars/villgod/idle1.gif
+	frame	data/chars/villgod/idle2.gif
+	frame	data/chars/villgod/idle3.gif
+	frame	data/chars/villgod/idle2.gif
+
+
+anim walk
+	loop	1
+	offset  158 200
+	bbox 	99 93 130 109
+	delay	16
+	frame	data/chars/villgod/idle1.gif
+	frame	data/chars/villgod/idle2.gif
+	frame	data/chars/villgod/idle3.gif
+	frame	data/chars/villgod/idle2.gif
+
+anim run
+	loop	1
+	offset	158 200
+	bbox 	103 101 130 110
+	delay	13
+	frame	data/chars/villgod/run1.gif
+
+
+
+anim runattack
+	range	0 140
+	loop	0
+	delay	6
+	move	15
+	offset	158 200
+	bbox	108 99 130 110
+	sound	data/sounds/senti.wav
+	frame	data/chars/villgod/2atk1.gif
+	frame	data/chars/villgod/2atk2.gif
+	attack	177 71 100 135 20 1 0 0 26
+	frame	data/chars/villgod/2atk3.gif
+	frame	data/chars/villgod/2atk4.gif
+	attack	0 0 0 0 0 0
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	158 200
+	bbox	41 36 50 68
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/villgod/block1.gif
+	offset	160 200
+	frame	data/chars/villgod/block2.gif
+	move    -8
+	offset	158 200
+	frame	data/chars/villgod/block2.gif
+	offset	160 200
+	frame	data/chars/villgod/block2.gif
+	move    -6
+	offset	158 200
+	frame	data/chars/villgod/block2.gif
+	offset	160 200
+	frame	data/chars/villgod/block2.gif
+	move    -4
+	offset	158 200
+	frame	data/chars/villgod/block2.gif
+	offset	160 200
+	frame	data/chars/villgod/block2.gif
+	offset	158 200
+	move    -2
+	frame	data/chars/villgod/block2.gif
+	offset	160 200
+	frame	data/chars/villgod/block2.gif
+	offset	158 200
+	delay   20
+	move    0
+	frame	data/chars/villgod/block1.gif
+
+anim pain
+	loop	0
+	delay	16
+	offset	158 200
+	bbox	111 103 130 110
+	frame	data/chars/villgod/pain1.gif
+
+
+
+anim fall
+	landframe	3
+	loop	0
+	delay	13
+	offset	158 200
+	frame	data/chars/villgod/fall1.gif
+	delay	1000
+	frame	data/chars/villgod/fall2.gif
+	offset	158 193
+	delay	20
+	frame	data/chars/villgod/fall3.gif
+	frame	data/chars/villgod/fall3.gif
+
+
+anim death
+	landframe	3
+        custknife xx
+        throwframe 0 1
+	loop	0
+	offset	158 193
+        delay   40
+	frame	data/chars/villgod/fall3.gif
+        delay   350
+	frame	data/chars/villgod/fall3.gif
+        delay   200
+	frame	data/chars/misc/end.gif
+
+anim rise
+	loop	0
+	delay	16
+	offset	158 200
+	bbox	111 103 130 110
+	frame	data/chars/villgod/pain1.gif
+
+
+anim riseattack
+	range	0 100
+	loop	0
+	delay	7
+	offset	158 200
+	bbox	108 99 130 110
+	frame	data/chars/villgod/2atk1.gif
+	frame	data/chars/villgod/2atk2.gif
+	attack	177 71 100 135 20 1 0 0 26
+	frame	data/chars/villgod/2atk3.gif
+	frame	data/chars/villgod/2atk4.gif
+	attack	0 0 0 0 0 0
+
+anim attack1
+	range	0 104
+	loop	0
+	delay	9
+	offset	158 200
+	bbox	94 99 130 110
+	frame	data/chars/villgod/atk1.gif
+	frame	data/chars/villgod/atk2.gif
+	attack	193 84 104 116 20 1 0 0 26
+	frame	data/chars/villgod/atk3.gif
+	frame	data/chars/villgod/atk4.gif
+	attack	0 0 0 0 0 0
+
+anim attack2
+	range	0 80
+	loop	0
+	delay	9
+	offset	158 200
+	bbox	108 99 130 110
+	frame	data/chars/villgod/2atk1.gif
+	frame	data/chars/villgod/2atk2.gif
+	attack	177 71 100 135 20 1 0 0 26
+	frame	data/chars/villgod/2atk3.gif
+	frame	data/chars/villgod/2atk4.gif
+	attack	0 0 0 0 0 0
+
+anim special
+	range	0 110
+	loop	0
+	delay	14
+	offset	158 200
+	sound	data/sounds/villgod.wav
+	frame	data/chars/villgod/spec1.gif
+	frame	data/chars/villgod/spec2.gif
+	frame	data/chars/villgod/spec3.gif
+	frame	data/chars/villgod/spec4.gif
+	attack	177 71 100 135 20 1 0 0 26
+	frame	data/chars/villgod/spec5.gif
+	frame	data/chars/villgod/spec6.gif
+	frame	data/chars/villgod/spec7.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/villgod/spec8.gif
+
+
+
+
+

@@ -1,0 +1,33 @@
+name	gashot
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+candamage enemy npc
+palette	data/chars/misc/gashot1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	28 89
+	attack	18 4 97 160 25 1
+	frame	data/chars/misc/gashot1.gif
+	offset	3 95
+	frame	data/chars/misc/gashot2.gif
+	offset	11 91
+	frame	data/chars/misc/gashot3.gif
+	offset	27 91
+	frame	data/chars/misc/gashot4.gif
+	offset	31 95
+	frame	data/chars/misc/gashot5.gif
+	offset	34 93
+	frame	data/chars/misc/gashot6.gif
+
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

@@ -1,0 +1,47 @@
+name	centaur
+type	enemy
+subtype	biker
+speed	15
+health	3
+shadow	6
+icon	data/chars/biker-k/icon.gif
+palette	data/chars/biker-k/dora1.gif
+#Important addition
+
+load	dora
+rider	dora
+
+#remap	data/chars/biker-k/motor.gif	data/chars/biker-k/alt1.gif
+
+
+# Not really idle, but what the heck
+anim idle
+	loop	1
+	delay	12
+	offset	67 85
+	bbox	44 3 36 48
+	attack	101 61 37 40 10 1
+	frame	data/chars/biker-k/dora1.gif
+	frame	data/chars/biker-k/dora2.gif
+	frame	data/chars/biker-k/dora3.gif
+	frame	data/chars/biker-k/dora4.gif
+	frame	data/chars/biker-k/dora5.gif
+	frame	data/chars/biker-k/dora6.gif
+	frame	data/chars/biker-k/dora7.gif
+	frame	data/chars/biker-k/dora8.gif
+
+anim pain
+	loop	1
+	delay	11
+	offset	67 85
+	attack	101 61 37 40 10 1
+	frame	data/chars/biker-k/dead1.gif
+	frame	data/chars/biker-k/dead2.gif
+	frame	data/chars/biker-k/dead3.gif
+	frame	data/chars/biker-k/dead4.gif
+	frame	data/chars/biker-k/dead5.gif
+	frame	data/chars/biker-k/dead6.gif
+	frame	data/chars/biker-k/dead7.gif
+	frame	data/chars/biker-k/dead8.gif
+
+

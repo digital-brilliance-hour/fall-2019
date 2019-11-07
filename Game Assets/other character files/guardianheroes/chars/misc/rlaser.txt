@@ -1,0 +1,198 @@
+name	rlaser
+health	1
+type	enemy
+shadow	0
+remove  0
+alpha 1
+palette	data/chars/misc/laser12.gif
+candamage enemy
+nomove 1 1
+lifespan 10
+subject_to_gravity 0
+setlayer -1
+nolife 1
+
+anim idle
+
+	loop	0
+	delay	8
+
+        hitflash redflash
+        hitfx   data/sounds/attack.wav
+
+
+
+
+        sound   data/sounds/dattebayo.wav
+	delay	8
+	offset  147 192
+        drawmethod 146 146 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 190
+        drawmethod 156 156 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+
+	offset  147 188
+        drawmethod 166 166 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 186
+        drawmethod 176 176 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 184
+        drawmethod 186 186 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 182
+        drawmethod 196 196 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 180
+        drawmethod 206 206 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 178
+        drawmethod 216 216 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 176
+        drawmethod 226 226 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 174
+        drawmethod 236 236 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 172
+        drawmethod 246 246 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+	offset  147 170
+        drawmethod 256 256 0 0 0 1 -1
+        frame	data/chars/misc/ball.gif
+
+
+
+
+
+
+
+
+
+
+        offset  78 170
+        sound   data/sounds/explosion.wav
+        delay   4
+
+        attack  108 94 513 122 10
+	frame	data/chars/misc/laser1.gif
+	frame	data/chars/misc/laser2.gif
+	frame	data/chars/misc/laser3.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser4.gif
+        attack  108 94 513 122 10
+        sound   data/sounds/explosion.wav
+	frame	data/chars/misc/laser5.gif
+	frame	data/chars/misc/laser6.gif
+	frame	data/chars/misc/laser7.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser8.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser9.gif
+	frame	data/chars/misc/laser10.gif
+	frame	data/chars/misc/laser11.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser12.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser6.gif
+	frame	data/chars/misc/laser7.gif
+	frame	data/chars/misc/laser8.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser9.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser10.gif
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser6.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser7.gif
+	frame	data/chars/misc/laser8.gif
+	frame	data/chars/misc/laser9.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser10.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif
+
+
+
+
+        attack  0 0 0 0
+	frame	data/chars/misc/laser6.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser7.gif
+	frame	data/chars/misc/laser8.gif
+	frame	data/chars/misc/laser9.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser10.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif
+
+
+
+        attack  0 0 0 0
+	frame	data/chars/misc/laser6.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser7.gif
+	frame	data/chars/misc/laser8.gif
+	frame	data/chars/misc/laser9.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser10.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif
+
+
+        attack  0 0 0 0
+	frame	data/chars/misc/laser6.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser7.gif
+	frame	data/chars/misc/laser8.gif
+	frame	data/chars/misc/laser9.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser10.gif
+        attack  108 94 550 122 10
+	frame	data/chars/misc/laser11.gif
+	frame	data/chars/misc/laser12.gif
+
+
+	frame	data/chars/misc/laser5.gif
+        attack  0 0 0 0
+	frame	data/chars/misc/laser4.gif
+	frame	data/chars/misc/laser3.gif
+	frame	data/chars/misc/laser2.gif
+        attack  108 94 513 122 10 1
+	frame	data/chars/misc/laser1.gif
+        attack  0 0 0 0
+
+
+        attack  0 0 0 0
+
+        frame   data/chars/misc/end.gif
+

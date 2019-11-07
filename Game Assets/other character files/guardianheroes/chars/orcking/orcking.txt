@@ -1,0 +1,460 @@
+name	orcking
+health	100
+speed	12
+type	enemy
+dust    dust
+cantgrab 1
+gfxshadow	1
+aggression 6
+icon	data/chars/orcking/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/orcdie.wav
+nodieblink 1
+fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+palette data/chars/orcking/idle1.gif
+alternatepal	data/chars/orcking/testpal.gif
+#remap	data/chars/orcking/idle1.gif   data/chars/orcking/alter1.gif
+#remap	data/chars/orcking/idle1.gif   data/chars/orcking/alter2.gif
+#remap	data/chars/orcking/idle1.gif   data/chars/orcking/freeze.gif
+
+anim idle
+	loop	1
+	offset	135 190
+	bbox	110 125 40 70
+	delay	6
+	frame	data/chars/orcking/idle1.gif
+	frame	data/chars/orcking/idle2.gif
+	frame	data/chars/orcking/idle3.gif
+	frame	data/chars/orcking/idle4.gif
+	frame	data/chars/orcking/idle5.gif
+	frame	data/chars/orcking/idle6.gif
+	frame	data/chars/orcking/idle7.gif
+	frame	data/chars/orcking/idle8.gif
+
+anim walk
+	loop	1
+	offset	135 190
+	bbox	110 125 40 70
+	delay   6
+	frame	data/chars/orcking/walk1.gif
+	frame	data/chars/orcking/walk2.gif
+	frame	data/chars/orcking/walk3.gif
+	frame	data/chars/orcking/walk4.gif
+	frame	data/chars/orcking/walk5.gif
+	frame	data/chars/orcking/walk6.gif
+	frame	data/chars/orcking/walk7.gif
+	frame	data/chars/orcking/walk8.gif
+	frame	data/chars/orcking/walk9.gif
+	frame	data/chars/orcking/walk10.gif
+
+anim backwalk
+	loop	1
+	offset	135 190
+	bbox	110 125 40 70
+	delay   6
+	frame	data/chars/orcking/walk1.gif
+	frame	data/chars/orcking/walk2.gif
+	frame	data/chars/orcking/walk3.gif
+	frame	data/chars/orcking/walk4.gif
+	frame	data/chars/orcking/walk5.gif
+	frame	data/chars/orcking/walk6.gif
+	frame	data/chars/orcking/walk7.gif
+	frame	data/chars/orcking/walk8.gif
+	frame	data/chars/orcking/walk9.gif
+	frame	data/chars/orcking/walk10.gif
+
+
+anim pain
+	loop	0
+	delay	3
+	offset	135 190
+	bbox	110 125 40 70
+	frame	data/chars/orcking/pain1.gif
+	offset	130 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	130 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	delay   23
+	frame	data/chars/orcking/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	135 190
+	bbox	110 125 40 70
+	move    -10
+	frame	data/chars/orcking/pain1.gif
+	offset	133 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	move    -8
+	frame	data/chars/orcking/pain1.gif
+	offset	133 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	move    -6
+	frame	data/chars/orcking/pain1.gif
+	offset	133 190
+	frame	data/chars/orcking/pain1.gif
+	move    -4
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	133 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	move    -2
+	frame	data/chars/orcking/pain1.gif
+	offset	133 190
+	frame	data/chars/orcking/pain1.gif
+	offset	135 190
+	delay   20
+	move    0
+	frame	data/chars/orcking/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	135 190
+	bbox	110 125 40 70
+	frame	data/chars/orcking/pain1.gif
+
+anim burn
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	135 190
+	delay   20
+	frame	data/chars/orcking/fall2.gif
+
+anim bpain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	135 190
+	delay   20
+	frame	data/chars/orcking/pain1.gif
+
+anim shock
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	135 190
+	delay   20
+	frame	data/chars/orcking/fall2.gif
+
+anim spain
+	loop	0
+	offset	55 100
+	delay   4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	135 190
+	delay   20
+	frame	data/chars/orcking/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	135 190
+	frame	data/chars/orcking/pain1.gif
+	delay	20
+	frame	data/chars/orcking/fall1.gif
+        delay   20
+	frame	data/chars/orcking/fall2.gif
+
+anim rise
+	loop	0
+	offset	135 190
+	delay	35
+	frame	data/chars/orcking/rise.gif
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	3
+	offset	135 190
+	bbox	110 125 40 70
+	sound   data/sounds/punch1.wav
+	attack  140 125 100 30 10 0 0 0 15
+	frame	data/chars/orcking/a201.gif
+	attack  0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a201.gif
+	attack  140 125 115 30 10 0 0 0 15
+	frame	data/chars/orcking/a202.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a202.gif
+	attack  140 125 125 30 10 0 0 0 15
+	frame	data/chars/orcking/a203.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a203.gif
+	delay	6
+	frame	data/chars/orcking/a203.gif
+	frame	data/chars/orcking/a202.gif
+	frame	data/chars/orcking/a201.gif
+	frame	data/chars/orcking/idle1.gif
+	frame	data/chars/orcking/idle2.gif
+	frame	data/chars/orcking/idle3.gif
+	frame	data/chars/orcking/idle4.gif
+	frame	data/chars/orcking/idle5.gif
+	frame	data/chars/orcking/idle6.gif
+	frame	data/chars/orcking/idle7.gif
+	frame	data/chars/orcking/idle8.gif
+
+anim attack2
+	range	61 230
+	loop	0
+	delay	6
+	offset	135 190
+	bbox	110 125 40 70
+	sound   data/sounds/punch1.wav
+	frame	data/chars/orcking/a101.gif
+	frame	data/chars/orcking/a102.gif
+	frame	data/chars/orcking/a103.gif
+	frame	data/chars/orcking/a104.gif
+	frame	data/chars/orcking/a105.gif
+	frame	data/chars/orcking/a106.gif
+
+	delay	2
+	attack  125 130 120 55 10 0 0 0 15
+	frame	data/chars/orcking/a107.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a107.gif
+
+	attack  125 130 140 55 10 0 0 0 15
+	frame	data/chars/orcking/a108.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a108.gif
+
+	attack  125 130 155 55 10 0 0 0 15
+	frame	data/chars/orcking/a109.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a109.gif
+
+	attack  125 130 170 55 10 0 0 0 15
+	frame	data/chars/orcking/a110.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a110.gif
+
+	attack  125 130 185 55 10 0 0 0 15
+	frame	data/chars/orcking/a111.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a111.gif
+
+	attack  125 130 200 55 10 0 0 0 15
+	frame	data/chars/orcking/a112.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a112.gif
+
+	attack  125 130 215 55 10 0 0 0 15
+	frame	data/chars/orcking/a113.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a113.gif
+
+	attack  125 130 230 55 10 0 0 0 15
+	frame	data/chars/orcking/a114.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/orcking/a114.gif
+
+	delay	6
+	frame	data/chars/orcking/a113.gif
+	frame	data/chars/orcking/a112.gif
+	frame	data/chars/orcking/a111.gif
+	frame	data/chars/orcking/a110.gif
+	frame	data/chars/orcking/a109.gif
+	frame	data/chars/orcking/a108.gif
+	frame	data/chars/orcking/a107.gif
+	frame	data/chars/orcking/idle1.gif
+	frame	data/chars/orcking/idle2.gif
+	frame	data/chars/orcking/idle3.gif
+	frame	data/chars/orcking/idle4.gif
+	frame	data/chars/orcking/idle5.gif
+	frame	data/chars/orcking/idle6.gif
+	frame	data/chars/orcking/idle7.gif
+	frame	data/chars/orcking/idle8.gif

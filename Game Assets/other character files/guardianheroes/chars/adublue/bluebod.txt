@@ -1,0 +1,183 @@
+name	bluebod
+health	100
+speed	16
+type	enemy
+#shadow	3
+noquake 1
+dust    dust
+cantgrab 1
+aggression -3
+nodrop 1
+bflash bflash
+falldie 1
+nodieblink 3
+facing 2
+nomove 1
+icon	data/chars/adublue/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/orcdie.wav
+#fmap 1
+
+palette	data/chars/adublue/boidle1.gif
+
+alternatepal	data/chars/adublue/testpal2.gif
+
+anim spawn
+	loop	0
+	offset	115 105
+	bbox	370 20 20 20
+	delay	150
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/adublue/boapa25.gif
+	frame	data/chars/adublue/boapa24.gif
+	frame	data/chars/adublue/boapa23.gif
+	frame	data/chars/adublue/boapa22.gif
+	frame	data/chars/adublue/boapa21.gif
+	frame	data/chars/adublue/boapa20.gif
+	frame	data/chars/adublue/boapa19.gif
+	frame	data/chars/adublue/boapa18.gif
+	frame	data/chars/adublue/boapa17.gif
+	frame	data/chars/adublue/boapa16.gif
+	frame	data/chars/adublue/boapa15.gif
+	frame	data/chars/adublue/boapa14.gif
+	frame	data/chars/adublue/boapa13.gif
+	frame	data/chars/adublue/boapa12.gif
+	frame	data/chars/adublue/boapa11.gif
+	frame	data/chars/adublue/boapa10.gif
+	frame	data/chars/adublue/boapa09.gif
+	frame	data/chars/adublue/boapa08.gif
+	frame	data/chars/adublue/boapa07.gif
+	frame	data/chars/adublue/boapa06.gif
+	frame	data/chars/adublue/boapa05.gif
+	frame	data/chars/adublue/boapa04.gif
+	frame	data/chars/adublue/boapa03.gif
+	frame	data/chars/adublue/boapa02.gif
+	frame	data/chars/adublue/boapa01.gif
+	delay	10
+	sound   data/sounds/blufall.wav
+	frame	data/chars/adublue/boidle1.gif
+	frame	data/chars/adublue/boidle2.gif
+	frame	data/chars/adublue/boidle3.gif
+	delay	90
+	frame	data/chars/adublue/boidle4.gif
+
+
+anim idle
+	loop	1
+	offset	115 105
+	bbox	370 20 20 20
+	delay	300
+	frame	data/chars/adublue/boidle1.gif
+	delay	10
+	frame	data/chars/adublue/boidle2.gif
+	frame	data/chars/adublue/boidle3.gif
+	frame	data/chars/adublue/boidle4.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	115 105
+	bbox	370 20 20 20
+	quakeframe 60 120 5
+	sound   data/sounds/bluroar.wav
+	frame	data/chars/adublue/boapa01.gif
+	frame	data/chars/adublue/boapa02.gif
+	frame	data/chars/adublue/boapa03.gif
+	frame	data/chars/adublue/boapa04.gif
+	frame	data/chars/adublue/boapa05.gif
+	frame	data/chars/adublue/boapa06.gif
+	frame	data/chars/adublue/boapa07.gif
+	frame	data/chars/adublue/boapa08.gif
+	frame	data/chars/adublue/boapa09.gif
+	frame	data/chars/adublue/boapa10.gif
+	frame	data/chars/adublue/boapa11.gif
+	frame	data/chars/adublue/boapa12.gif
+	frame	data/chars/adublue/boapa13.gif
+	frame	data/chars/adublue/boapa14.gif
+	frame	data/chars/adublue/boapa15.gif
+	frame	data/chars/adublue/boapa16.gif
+	frame	data/chars/adublue/boapa17.gif
+	frame	data/chars/adublue/boapa18.gif
+	frame	data/chars/adublue/boapa19.gif
+	frame	data/chars/adublue/boapa20.gif
+	frame	data/chars/adublue/boapa21.gif
+	frame	data/chars/adublue/boapa22.gif
+	frame	data/chars/adublue/boapa23.gif
+	frame	data/chars/adublue/boapa24.gif
+	frame	data/chars/adublue/boapa25.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+	frame	data/chars/adublue/boapa26.gif
+
+	delay	150
+	frame	data/chars/adublue/heapa37.gif
+
+	offset	115 105
+	delay	3
+	frame	data/chars/adublue/boapa27.gif
+	frame	data/chars/adublue/boapa28.gif
+	frame	data/chars/adublue/boapa29.gif
+	frame	data/chars/adublue/boapa30.gif
+	frame	data/chars/adublue/boapa31.gif
+	frame	data/chars/adublue/boapa32.gif
+	frame	data/chars/adublue/boapa33.gif
+	frame	data/chars/adublue/boapa34.gif
+	frame	data/chars/adublue/boapa35.gif
+	frame	data/chars/adublue/boapa36.gif
+	frame	data/chars/adublue/boapa37.gif
+	frame	data/chars/adublue/boapa38.gif
+	frame	data/chars/adublue/boapa39.gif
+	frame	data/chars/adublue/boapa40.gif
+	frame	data/chars/adublue/boapa41.gif
+	frame	data/chars/adublue/boapa42.gif
+	frame	data/chars/adublue/boapa43.gif
+	frame	data/chars/adublue/boapa44.gif
+	frame	data/chars/adublue/boapa45.gif
+	frame	data/chars/adublue/boapa46.gif
+	frame	data/chars/adublue/boapa47.gif
+	frame	data/chars/adublue/boapa48.gif
+	frame	data/chars/adublue/boapa49.gif
+
+	delay	5
+	sound   data/sounds/blufall.wav
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	frame	data/chars/adublue/boapa50.gif
+	delay	300
+	frame	data/chars/adublue/boapa50.gif

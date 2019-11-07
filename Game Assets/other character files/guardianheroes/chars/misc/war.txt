@@ -1,0 +1,18 @@
+name	war
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/apple.gif
+palette	data/bgs/dragons/war/war1.gif
+
+anim idle
+	loop	1
+	delay	12
+	offset	0 118
+	frame	data/bgs/dragons/war/war1.gif
+	frame	data/bgs/dragons/war/war2.gif
+	frame	data/bgs/dragons/war/war3.gif
+	frame	data/bgs/dragons/war/war4.gif
+	frame	data/bgs/dragons/war/war5.gif
+	frame	data/bgs/dragons/war/war6.gif
+	

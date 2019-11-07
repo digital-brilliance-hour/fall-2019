@@ -1,0 +1,319 @@
+name	nicole
+health	150
+speed	13
+running	25	4	2	1	1
+type	player
+shadow	0
+gfxshadow	1
+dust    dust
+aimove	wander
+subject_to_screen 1
+#cantgrab 1
+candamage enemy
+aggression 40
+bflash bflash
+thold     49
+weapons	nbear nbull njag nele nhorse nicole
+#nodrop	2
+#nopain 1
+#falldie 
+subtype	chase
+icon	data/chars/nicole/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+COM A2 freespecial4
+COM u u a freespecial3
+COM d d a freespecial2
+atchain 1 2 3
+palette	data/chars/nicole/idle1.gif
+
+load	v
+alternatepal	data/chars/nicole/testpal.gif
+#alternatepal	data/chars/nicole/testpal2.gif
+
+
+anim idle
+	loop	1
+	offset  85 161
+	bbox 	61 85 50 75
+	delay	14
+	frame	data/chars/nicole/idle1.gif
+	frame	data/chars/nicole/idle2.gif
+	frame	data/chars/nicole/idle3.gif
+	frame	data/chars/nicole/idle4.gif
+
+
+
+anim walk
+	loop	1
+	offset  85 161
+	bbox 	61 85 50 75
+	delay	13
+	frame	data/chars/nicole/walk1.gif
+	frame	data/chars/nicole/walk2.gif
+	frame	data/chars/nicole/walk3.gif
+	frame	data/chars/nicole/walk4.gif
+	frame	data/chars/nicole/walk5.gif
+	frame	data/chars/nicole/walk6.gif
+
+anim run
+	loop	1
+	offset  85 161
+	bbox 	61 85 50 75
+	delay	13
+	frame	data/chars/nicole/run1.gif
+	frame	data/chars/nicole/run2.gif
+	frame	data/chars/nicole/run3.gif
+	frame	data/chars/nicole/run4.gif
+	frame	data/chars/nicole/run5.gif
+	frame	data/chars/nicole/run6.gif
+
+
+anim runattack
+	loop	0
+	delay	12
+	offset  85 161
+	bbox 	61 85 50 75
+	move	20
+	sound	data/chars/nicole/atk.wav
+	frame	data/chars/nicole/ratk1.gif
+	frame	data/chars/nicole/ratk2.gif
+	attack	85 95 45 45 25 1 0 0 24
+	frame	data/chars/nicole/ratk3.gif
+	move	0
+	frame	data/chars/nicole/ratk4.gif
+	
+
+
+	
+
+
+anim pain
+	loop	0
+	delay	4
+	offset  85 161
+	bbox 	61 85 50 75
+	offset	
+	frame	data/chars/nicole/pain1.gif
+	frame	data/chars/nicole/pain2.gif
+	frame	data/chars/nicole/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	13
+	offset  85 161
+	frame	data/chars/nicole/fall1.gif
+	frame	data/chars/nicole/fall2.gif
+	frame	data/chars/nicole/fall3.gif
+
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  85 161
+	frame	data/chars/nicole/rise1.gif
+
+anim get
+	loop	0
+	delay	11
+	offset  85 161
+	bbox 	61 85 50 75
+	frame	data/chars/nicole/rise1.gif
+
+
+anim attack1
+	range	0 155
+	loop	0
+	delay	7
+	offset  85 161
+	bbox 	61 85 50 75
+	quakeframe	9 6 9
+	frame	data/chars/nicole/3atk1.gif
+	attack	85 95 45 45 10 0 0 0 16
+	frame	data/chars/nicole/3atk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/nicole/3atk1.gif
+
+
+
+
+
+
+
+anim attack2
+	range	155 300
+	loop	0
+	delay	9
+	offset  85 161
+	bbox 	61 85 50 75
+	move	8
+	frame	data/chars/nicole/2atk1.gif
+	frame	data/chars/nicole/2atk2.gif
+	attack	85 95 45 45 10 0 0 0 16
+	frame	data/chars/nicole/2atk3.gif
+	attack	0 0 0 0 0 0
+	move	0
+	frame	data/chars/nicole/2atk4.gif
+
+
+anim attack3
+	cancel 3 4 0 a2 freespecial2
+	loop	0
+	delay	10
+	offset  85 161
+	bbox 	61 85 50 75
+	move	8
+	sound	data/chars/nicole/atk.wav
+	frame	data/chars/nicole/4atk1.gif
+	attack	85 95 45 45 25 1 0 0 24
+	frame	data/chars/nicole/4atk2.gif
+	frame	data/chars/nicole/4atk3.gif
+	attack	0 0 0 0 0 0 0
+	move	0
+	frame	data/chars/nicole/4atk4.gif
+
+anim jump
+	delay	5
+	offset  85 161
+	bbox 	61 85 50 75
+	frame	data/chars/nicole/jump1.gif
+	frame	data/chars/nicole/jump2.gif
+	frame	data/chars/nicole/jump1.gif
+
+anim jumpattack
+	delay	5
+	offset  85 161
+	bbox 	61 85 50 75
+	frame	data/chars/nicole/jatk1.gif
+	attack	85 95 45 45 20 1 0 0 10
+	frame	data/chars/nicole/jatk2.gif
+	attack	0 0 0 0 0 0
+
+anim special
+	loop	0
+	delay	4
+	offset  85 161
+	quakeframe	9 6 9
+	sound	data/chars/nicole/2atk.wav
+	frame	data/chars/nicole/atk1.gif
+	frame	data/chars/nicole/atk2.gif
+	frame	data/chars/nicole/atk3.gif
+	offset	190 562
+	frame	data/chars/nicole/spec4.gif
+	frame	data/chars/nicole/spec5.gif
+	frame	data/chars/nicole/spec6.gif
+	frame	data/chars/nicole/spec7.gif
+	frame	data/chars/nicole/spec8.gif
+	frame	data/chars/nicole/spec9.gif
+	delay	16
+	attack	125 416 155 150 30 1 0 0 39
+	sound	data/chars/nicole/smiley.wav
+	frame	data/chars/nicole/spec10.gif
+	frame	data/chars/nicole/spec10.gif
+	frame	data/chars/nicole/spec10.gif
+	frame	data/chars/nicole/spec10.gif
+	frame	data/chars/nicole/spec10.gif
+	frame	data/chars/nicole/spec10.gif
+	attack	0 0 0 0 0 0
+	delay	5
+	frame	data/chars/nicole/spec9.gif
+	frame	data/chars/nicole/spec8.gif
+	frame	data/chars/nicole/spec7.gif
+	frame	data/chars/nicole/spec6.gif
+	frame	data/chars/nicole/spec5.gif
+	frame	data/chars/nicole/spec4.gif
+
+anim freespecial
+	loop	0
+	delay	10
+	offset  85 161
+	bbox 	61 85 50 75
+	move	8
+	sound	data/chars/nicole/atk.wav
+	frame	data/chars/nicole/ratk1.gif
+	frame	data/chars/nicole/ratk2.gif
+	attack	85 95 45 45 25 1 0 0 18
+	frame	data/chars/nicole/ratk3.gif
+	move	0
+	frame	data/chars/nicole/ratk4.gif
+
+anim freespecial2
+	range	0 155
+	loop	0
+	delay	4
+	offset  85 161
+	bbox 	61 85 50 75
+	quakeframe	9 6 9
+	sound	data/chars/nicole/2atk.wav
+	frame	data/chars/nicole/atk1.gif
+	frame	data/chars/nicole/atk2.gif
+	frame	data/chars/nicole/atk3.gif
+	offset	85 562
+	frame	data/chars/nicole/atk4.gif
+	frame	data/chars/nicole/atk5.gif
+	frame	data/chars/nicole/atk6.gif
+	frame	data/chars/nicole/atk7.gif
+	frame	data/chars/nicole/atk8.gif
+	frame	data/chars/nicole/atk9.gif
+	delay	16
+	attack	125 416 155 150 30 1 0 0 39
+	sound	data/chars/nicole/smiley.wav
+	frame	data/chars/nicole/atk10.gif
+	frame	data/chars/nicole/atk10.gif
+	frame	data/chars/nicole/atk10.gif
+	frame	data/chars/nicole/atk10.gif
+	frame	data/chars/nicole/atk10.gif
+	frame	data/chars/nicole/atk10.gif
+	attack	0 0 0 0 0 0
+	delay	5
+	frame	data/chars/nicole/atk9.gif
+	frame	data/chars/nicole/atk8.gif
+	frame	data/chars/nicole/atk7.gif
+	frame	data/chars/nicole/atk6.gif
+	frame	data/chars/nicole/atk5.gif
+	frame	data/chars/nicole/atk4.gif
+
+anim freespecial3
+	sound	data/sounds/dora.wav
+        
+        custknife kashoc
+        throwframe 0 6 18
+
+        subentity kathunder
+        spawnframe 0 -20 18 5 0
+
+	offset  85 161
+        delay   100
+	frame	data/chars/nicole/2atk2.gif
+
+
+	delay	6
+	frame	data/chars/nicole/2atk3.gif
+        delay   200
+	sound	data/sounds/hyah.wav
+	frame	data/chars/nicole/2atk4.gif
+        delay   6
+	frame	data/chars/nicole/2atk2.gif
+
+anim freespecial4
+	loop	0
+	delay	9
+	offset  85 161
+	bbox 	61 85 50 75
+	custknife	v
+	throwframe	3
+	frame	data/chars/nicole/2atk1.gif
+	frame	data/chars/nicole/2atk2.gif
+	attack	85 95 45 45 10 0 0 0 16
+	frame	data/chars/nicole/2atk3.gif
+	attack	0 0 0 0 0 0
+	move	0
+	frame	data/chars/nicole/2atk4.gif
+
+
+
+
+
+

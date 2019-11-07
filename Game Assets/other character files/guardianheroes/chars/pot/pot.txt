@@ -1,0 +1,162 @@
+name	pot
+health	300
+speed	12
+type	enemy
+shadow	4
+icon	data/chars/pot/icon.gif
+diesound data/chars/pot/sound/die.wav
+
+remap	data/chars/pot/stand.gif data/chars/pot/alt1.gif
+remap	data/chars/pot/stand.gif data/chars/pot/alt2.gif
+remap	data/chars/pot/stand.gif data/chars/pot/alt3.gif
+remap	data/chars/pot/stand.gif data/chars/pot/alt4.gif
+remap	data/chars/pot/stand.gif data/chars/pot/alt5.gif
+
+anim idle
+	loop	1
+	offset  53 123
+	bbox 	10 3 76 124
+	delay	15
+	frame	data/chars/pot/idle/1.gif
+	frame	data/chars/pot/idle/2.gif
+	frame	data/chars/pot/idle/3.gif
+	frame	data/chars/pot/idle/2.gif
+	frame	data/chars/pot/idle/1.gif
+	
+anim walk
+	loop	1
+	offset  66 128
+	bbox 	22 15 79 113
+	delay	15
+	frame	data/chars/pot/walk/1.gif
+	frame	data/chars/pot/walk/2.gif
+	frame	data/chars/pot/walk/3.gif
+	frame	data/chars/pot/walk/4.gif
+	frame	data/chars/pot/walk/5.gif
+	frame	data/chars/pot/walk/6.gif
+	frame	data/chars/pot/walk/7.gif
+	frame	data/chars/pot/walk/8.gif
+	frame	data/chars/pot/walk/9.gif
+	frame	data/chars/pot/walk/10.gif
+	
+anim pain
+	loop	0
+	offset	73 125
+	delay	4
+	bbox	19 24 86 96
+	frame	data/chars/pot/pain/1.gif
+	frame	data/chars/pot/pain/2.gif
+	
+anim fall
+	loop	0
+	delay	35
+	offset	68 68
+	bbox	20 2 138 77 30
+#	sound	data/chars/pot/sound/fall.wav
+	attack	20 2 138 77 30 1
+	frame	data/chars/pot/fall/1.gif
+	attack	0 0 0 0 0
+	frame	data/chars/pot/fall/2.gif
+
+anim rise
+	loop	0
+	offset	104 106
+	delay	15
+	frame	data/chars/pot/rise/1.gif
+	frame	data/chars/pot/rise/2.gif
+	frame	data/chars/pot/rise/3.gif
+		
+anim attack1
+	loop	0
+	delay	10
+	range	0 100
+	offset	78 155
+	bbox	45 45 65 104
+	move	10
+	frame	data/chars/pot/atk1/1.gif
+	sound	data/chars/pot/sound/punch1.wav
+	frame	data/chars/pot/atk1/2.gif
+	attack	108 19 69 138 20 1 
+	frame	data/chars/pot/atk1/3.gif
+	delay	15
+	frame	data/chars/pot/atk1/4.gif
+	attack	0 0 0 0 0
+	move	0
+	frame	data/chars/pot/atk1/5.gif
+	frame	data/chars/pot/atk1/4.gif
+	
+anim attack2
+	loop	0
+	delay	7
+	range	100 150
+	offset	73 152
+	bbox	49 44 51 104
+	move	25
+	attack	53 7 114 153 30 1
+	sound	data/chars/pot/sound/punch2.wav
+	frame	data/chars/pot/atk2/1.gif
+	frame	data/chars/pot/atk2/2.gif
+	delay	20
+	frame	data/chars/pot/atk2/3.gif
+	move	0
+	frame	data/chars/pot/atk2/4.gif
+	attack	0 0 0 0 0
+	delay	2
+	frame	data/chars/pot/atk2/5.gif
+	frame	data/chars/pot/atk2/6.gif
+	frame	data/chars/pot/atk2/7.gif
+	frame	data/chars/pot/atk2/8.gif
+
+anim upper
+	loop	0
+	delay	7
+	offset	53 153
+	bbox	31 3 46 118
+	sound	data/chars/pot/sound/roar.wav
+	frame	data/chars/pot/upper/1.gif
+	frame	data/chars/pot/upper/2.gif
+	frame	data/chars/pot/upper/3.gif
+	attack	49 2 70 129 20 1
+	delay	30
+	frame	data/chars/pot/upper/4.gif
+	attack	0 0 0 0 0
+	delay	7
+	frame	data/chars/pot/upper/3.gif
+	frame	data/chars/pot/upper/2.gif
+
+anim throw
+	loop	0
+	offset	116 155
+	delay	10
+	bbox	31 3 46 118
+	sound	data/chars/pot/sound/nomore.wav
+	frame	data/chars/pot/throw/1.GIF
+	frame	data/chars/pot/throw/2.GIF
+	bbox	0 0 0 0 0
+	frame	data/chars/pot/throw/3.GIF
+	frame	data/chars/pot/throw/4.GIF
+	frame	data/chars/pot/throw/5.GIF
+	frame	data/chars/pot/throw/6.GIF
+
+anim special
+	loop	0
+	delay	7
+	range	100 150
+	offset	73 152
+	bbox	49 44 51 104
+	move	25
+	attack	53 7 114 153 30 1
+	sound	data/chars/pot/sound/punch2.wav
+	frame	data/chars/pot/atk2/1.gif
+	frame	data/chars/pot/atk2/2.gif
+	delay	20
+	frame	data/chars/pot/atk2/3.gif
+	move	0
+	frame	data/chars/pot/atk2/4.gif
+	attack	0 0 0 0 0
+	delay	2
+	frame	data/chars/pot/atk2/5.gif
+	frame	data/chars/pot/atk2/6.gif
+	frame	data/chars/pot/atk2/7.gif
+	frame	data/chars/pot/atk2/8.gif
+

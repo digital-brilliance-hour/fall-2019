@@ -1,0 +1,611 @@
+name	chimera
+health	200
+speed	11
+type	enemy
+gfxshadow	1
+dust    dust
+cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nopain 1
+falldie 2
+aimove chase
+icon	data/chars/chimera/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+lifebarstatus 100 5 0 1 0 0 0 0 0 
+lifeposition 120 200
+nameposition 130 190 
+iconposition 100 200
+
+palette	data/chars/chimera/idle.gif
+
+alternatepal	data/chars/chimera/testpal.gif
+alternatepal	data/chars/chimera/testpal2.gif
+
+anim spawn
+	loop	0
+	offset	178 170
+	bbox	0 0 0 0
+	delay	4
+	quakeframe 27 10 3
+	frame	data/chars/chimera/intro01.gif
+	frame	data/chars/chimera/intro02.gif
+	frame	data/chars/chimera/intro03.gif
+	frame	data/chars/chimera/intro04.gif
+	frame	data/chars/chimera/intro05.gif
+	frame	data/chars/chimera/intro06.gif
+	frame	data/chars/chimera/intro07.gif
+	frame	data/chars/chimera/intro08.gif
+	frame	data/chars/chimera/intro09.gif
+	frame	data/chars/chimera/intro10.gif
+	frame	data/chars/chimera/intro11.gif
+	frame	data/chars/chimera/intro12.gif
+	frame	data/chars/chimera/intro13.gif
+	frame	data/chars/chimera/intro14.gif
+	frame	data/chars/chimera/intro15.gif
+	frame	data/chars/chimera/intro16.gif
+	frame	data/chars/chimera/intro17.gif
+	frame	data/chars/chimera/intro18.gif
+	frame	data/chars/chimera/intro19.gif
+	frame	data/chars/chimera/intro20.gif
+	frame	data/chars/chimera/intro21.gif
+	frame	data/chars/chimera/intro22.gif
+	frame	data/chars/chimera/intro23.gif
+	frame	data/chars/chimera/intro24.gif
+	frame	data/chars/chimera/intro25.gif
+	frame	data/chars/chimera/intro26.gif
+	frame	data/chars/chimera/intro27.gif
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/idle.gif
+	frame	data/chars/chimera/idle.gif
+	frame	data/chars/chimera/idle.gif
+	frame	data/chars/chimera/idle.gif
+	frame	data/chars/chimera/idle.gif
+	frame	data/chars/chimera/idle.gif
+
+anim idle
+	loop	1
+	offset	178 170
+	bbox	150 105 135 70
+	delay	6
+	frame	data/chars/chimera/idle.gif
+
+anim walk
+	loop	1
+	offset	178 170
+	bbox	150 105 135 70
+	delay   12
+	frame	data/chars/chimera/walk1.gif
+	frame	data/chars/chimera/walk2.gif
+	frame	data/chars/chimera/walk3.gif
+	frame	data/chars/chimera/walk4.gif
+	frame	data/chars/chimera/walk5.gif
+	frame	data/chars/chimera/walk6.gif
+	frame	data/chars/chimera/walk7.gif
+	frame	data/chars/chimera/walk8.gif
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/chimera/guard.gif
+	offset	176 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/chimera/guard.gif
+	offset	176 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/chimera/guard.gif
+	offset	176 170
+	frame	data/chars/chimera/guard.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	176 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/chimera/guard.gif
+	offset	176 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/chimera/guard.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	178 170
+	bbox	150 105 135 70
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	delay   23
+	frame	data/chars/chimera/pain1.gif
+
+anim pain2
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/chimera/pain1.gif
+
+anim pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig01.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+
+	offset	35 53
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/pig01.gif
+	frame	data/chars/misc/pig02.gif
+	frame	data/chars/misc/pig03.gif
+	frame	data/chars/misc/pig04.gif
+	frame	data/chars/misc/pig05.gif
+	frame	data/chars/misc/pig06.gif
+	frame	data/chars/misc/pig07.gif
+	delay	200
+	frame	data/chars/misc/pig08.gif
+
+	delay	4
+	bbox	0 0 0 0
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	35 53
+	frame	data/chars/misc/pig08.gif
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+
+anim pain4
+	loop	0
+	delay	240
+	offset	178 170
+	bbox	150 105 135 70
+	frame	data/chars/chimera/pain1.gif
+
+anim burn
+	loop	0
+	offset	178 170
+	delay   4
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	frame	data/chars/chimera/fall1.gif
+	delay   20
+	frame	data/chars/chimera/fall3.gif
+	frame	data/chars/chimera/fall2.gif
+
+anim bpain
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset	178 170
+	bbox	150 105 135 70
+	move    -10
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -8
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -6
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	move    -4
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	move    -2
+	frame	data/chars/chimera/pain1.gif
+	offset	175 170
+	frame	data/chars/chimera/pain1.gif
+	offset	178 170
+	delay   20
+	move    0
+	frame	data/chars/chimera/pain1.gif
+
+anim fall
+	loop	0
+	delay	40
+	offset	178 170
+	frame	data/chars/chimera/pain1.gif
+	delay	20
+	frame	data/chars/chimera/fall1.gif
+        delay   20
+	frame	data/chars/chimera/fall3.gif
+	frame	data/chars/chimera/fall2.gif
+
+anim death
+	loop	0
+	offset	178 170
+	quakeframe 26 10 5
+	delay	12
+	frame	data/chars/chimera/fall2.gif
+	frame	data/chars/chimera/rise1.gif
+	delay	4
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+	offset	178 170
+	frame	data/chars/chimera/rise2.gif
+	offset	175 170
+	frame	data/chars/chimera/rise2.gif
+      delay   12
+	offset	178 170
+	sound   data/sounds/bigfall.wav
+	frame	data/chars/chimera/fall3.gif
+	frame	data/chars/chimera/fall2.gif
+	frame	data/chars/chimera/fall3.gif
+      delay   150
+	frame	data/chars/chimera/fall2.gif
+
+anim rise
+	loop	0
+	offset	178 170
+	delay	12
+	frame	data/chars/chimera/fall2.gif
+	frame	data/chars/chimera/rise1.gif
+	frame	data/chars/chimera/rise2.gif
+	delay	35
+	frame	data/chars/chimera/idle.gif
+
+anim attack1
+	range	0 100
+	loop	0
+	delay	6
+	offset	178 170
+	bbox	150 105 135 70
+	sound   data/sounds/chiroar.wav
+	frame	data/chars/chimera/a101.gif
+	frame	data/chars/chimera/a102.gif
+	delay	6
+	sound   data/sounds/punch1.wav
+	attack  200 112 135 57 25 1 0 0 15
+	frame	data/chars/chimera/a103.gif
+	frame	data/chars/chimera/a104.gif
+	frame	data/chars/chimera/a103.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/chimera/a102.gif
+	frame	data/chars/chimera/a101.gif
+
+anim attack2
+	range	101 200
+	loop	0
+	delay	9
+	offset	178 170
+	bbox	150 105 135 70
+	sound   data/sounds/punch1.wav
+	frame	data/chars/chimera/a301.gif
+	frame	data/chars/chimera/a302.gif
+	frame	data/chars/chimera/a303.gif
+	burn   186 110 212 66 25 1 0 0 15
+	frame	data/chars/chimera/a304.gif
+	frame	data/chars/chimera/a305.gif
+	frame	data/chars/chimera/a306.gif
+	frame	data/chars/chimera/a307.gif
+	frame	data/chars/chimera/a304.gif
+	frame	data/chars/chimera/a305.gif
+	frame	data/chars/chimera/a306.gif
+	frame	data/chars/chimera/a307.gif
+	frame	data/chars/chimera/a304.gif
+	frame	data/chars/chimera/a305.gif
+	frame	data/chars/chimera/a306.gif
+	frame	data/chars/chimera/a307.gif
+	burn   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/chimera/a308.gif
+	frame	data/chars/chimera/a309.gif
+	frame	data/chars/chimera/a310.gif
+	frame	data/chars/chimera/a311.gif
+	frame	data/chars/chimera/a301.gif
+
+anim attack3
+	range	201 275
+	loop	0
+	bbox	150 105 135 70
+	quakeframe 12 10 3
+	delay	4
+	sound   data/sounds/chiroar.wav
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	frame	data/chars/chimera/guard.gif
+	offset	175 170
+	frame	data/chars/chimera/guard.gif
+	offset	178 170
+	delay   2
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	move    11
+	delay   2
+#	sound   data/sounds/run.wav
+	bbox	0 0 0 0
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	move    3
+	delay   18
+	bbox	150 105 135 70
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/idle.gif
+
+anim riseattack
+	range	0 200
+	loop	0
+	offset	178 170
+	bbox	0 0 0 0
+	quakeframe 12 10 3
+	sound   data/sounds/chiroar.wav
+	delay   2
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	frame	data/chars/chimera/a201.gif
+	move    7
+	delay   2
+	sound   data/sounds/stand.wav
+	bbox	0 0 0 0
+
+	blast   79 29 213 140 35 1 0 0 15
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a202.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	frame	data/chars/chimera/a203.gif
+	move    3
+	delay   18
+	blast   0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/chimera/guard.gif
+	frame	data/chars/chimera/idle.gif

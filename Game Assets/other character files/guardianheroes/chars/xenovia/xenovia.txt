@@ -1,0 +1,250 @@
+name	xenovia
+health	500
+speed	15
+running	31	4	2	1	1
+type	enemy
+shadow	0
+gfxshadow	1
+dust    dust
+#cantgrab 1
+aggression 30
+bflash bflash
+blockodds 1
+thold     49
+#nodrop	2
+#nopain 1
+#falldie 
+aimove chase
+icon	data/chars/xenovia/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/chidie.wav
+nodieblink 3
+#fmap 3
+
+palette	data/chars/xenovia/idle1.gif
+
+
+#alternatepal	data/chars/xenovia/testpal.gif
+#alternatepal	data/chars/xenovia/testpal2.gif
+
+load	gshot
+knife	gshot
+
+anim idle
+	loop	1
+	offset  85 182
+	bbox 	60 98 51 84
+	delay	16
+	frame	data/chars/xenovia/idle1.gif
+	frame	data/chars/xenovia/idle2.gif
+	frame	data/chars/xenovia/idle3.gif
+	frame	data/chars/xenovia/idle4.gif
+	frame	data/chars/xenovia/idle3.gif
+	frame	data/chars/xenovia/idle2.gif
+
+anim walk
+	loop	1
+	offset  85 182
+	bbox 	60 98 51 84
+	delay	13
+	frame	data/chars/xenovia/walk1.gif
+	frame	data/chars/xenovia/walk2.gif
+	frame	data/chars/xenovia/walk3.gif
+	frame	data/chars/xenovia/walk4.gif
+	frame	data/chars/xenovia/walk5.gif
+	frame	data/chars/xenovia/walk6.gif
+
+anim run
+	loop	1
+	offset  85 182
+	bbox 	60 98 51 84
+	delay	13
+	frame	data/chars/xenovia/run1.gif
+	frame	data/chars/xenovia/run2.gif
+	frame	data/chars/xenovia/run3.gif
+	frame	data/chars/xenovia/run4.gif
+
+anim runattack
+	range	0 66
+	loop	0
+	delay	4
+	move	15
+	offset  85 182
+#	bbox 	60 98 51 84
+	sound	data/chars/xenovia/ratk.wav
+	frame	data/chars/xenovia/ratk1.gif
+	attack	32 110 112 45 25 1 0 0 20
+	frame	data/chars/xenovia/ratk2.gif
+	frame	data/chars/xenovia/ratk3.gif
+	frame	data/chars/xenovia/ratk4.gif
+	frame	data/chars/xenovia/ratk5.gif
+	frame	data/chars/xenovia/ratk2.gif
+	frame	data/chars/xenovia/ratk3.gif
+	frame	data/chars/xenovia/ratk4.gif
+	frame	data/chars/xenovia/ratk5.gif
+	attack	0 0 0 0 0
+	frame	data/chars/xenovia/ratk1.gif
+
+
+
+anim block
+	loop	0
+	delay	3
+#	jumpframe  0 -2
+	offset  85 182
+	bbox 	60 98 51 84
+	move    -10
+	sound   data/sounds/guard.wav
+	frame	data/chars/xenovia/block1.gif
+	offset	87 182
+	frame	data/chars/xenovia/block2.gif
+	move    -8
+	offset	85 182
+	frame	data/chars/xenovia/block2.gif
+	offset	87 182
+	frame	data/chars/xenovia/block2.gif
+	move    -6
+	offset	85 182
+	frame	data/chars/xenovia/block2.gif
+	offset	87 182
+	frame	data/chars/xenovia/block2.gif
+	move    -4
+	offset	85 182
+	frame	data/chars/xenovia/block2.gif
+	offset	87 182
+	frame	data/chars/xenovia/block2.gif
+	offset	85 182
+	move    -2
+	frame	data/chars/xenovia/block2.gif
+	offset	87 182
+	frame	data/chars/xenovia/block2.gif
+	offset	85 182
+	delay   20
+	move    0
+	frame	data/chars/xenovia/block1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset  85 182
+	bbox 	60 98 51 84
+	frame	data/chars/xenovia/pain1.gif
+	frame	data/chars/xenovia/pain2.gif
+	frame	data/chars/xenovia/pain1.gif
+
+
+anim fall
+	landframe	4
+	loop	0
+	delay	13
+	offset  85 182
+	frame	data/chars/xenovia/fall1.gif
+	frame	data/chars/xenovia/fall2.gif
+	delay	1000
+	frame	data/chars/xenovia/fall3.gif
+	delay	20
+	frame	data/chars/xenovia/fall4.gif
+	frame	data/chars/xenovia/fall4.gif
+
+anim death
+	landframe	4
+	loop	0
+	delay	13
+	offset  85 182
+	frame	data/chars/xenovia/fall1.gif
+	frame	data/chars/xenovia/fall2.gif
+	delay	1000
+	frame	data/chars/xenovia/fall3.gif
+	delay	20
+	frame	data/chars/xenovia/fall4.gif
+	frame	data/chars/xenovia/fall4.gif
+
+
+anim rise
+	loop	0
+	delay	11
+	offset  85 182
+	bbox 	60 98 51 84
+	frame	data/chars/xenovia/rise1.gif
+
+anim riseattack
+	range	0 60
+	loop	0
+	move	10
+	delay	7
+	offset  85 182
+	bbox 	60 98 51 84
+	sound	data/chars/xenovia/atk.wav
+	frame	data/chars/xenovia/atk1.gif
+	frame	data/chars/xenovia/atk2.gif
+	frame	data/chars/xenovia/atk3.gif
+	frame	data/chars/xenovia/atk4.gif
+	attack	85 58 52 124 20 1 0 0 26
+	frame	data/chars/xenovia/atk5.gif
+	frame	data/chars/xenovia/atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/xenovia/atk7.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	move	10
+	delay	7
+	offset  85 182
+	bbox 	60 98 51 84
+	sound	data/chars/xenovia/atk.wav
+	frame	data/chars/xenovia/atk1.gif
+	frame	data/chars/xenovia/atk2.gif
+	frame	data/chars/xenovia/atk3.gif
+	frame	data/chars/xenovia/atk4.gif
+	attack	85 58 52 124 20 1 0 0 26
+	frame	data/chars/xenovia/atk5.gif
+	frame	data/chars/xenovia/atk6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/xenovia/atk7.gif
+
+anim attack2
+	range	200 250
+	loop	0
+	delay	7
+	offset  85 182
+	throwframe	7
+	bbox 	60 98 51 84
+	sound	data/chars/xenovia/atk.wav
+	frame	data/chars/xenovia/2atk1.gif
+	frame	data/chars/xenovia/2atk2.gif
+	frame	data/chars/xenovia/2atk3.gif
+	frame	data/chars/xenovia/2atk4.gif
+	frame	data/chars/xenovia/2atk5.gif
+	frame	data/chars/xenovia/2atk6.gif
+	frame	data/chars/xenovia/2atk7.gif
+	frame	data/chars/xenovia/2atk8.gif
+
+
+
+anim special
+	range	0 65
+	loop	0
+	delay	7
+	offset  85 182
+	bbox 	60 98 51 84
+	sound	data/chars/xenovia/ratk.wav
+	frame	data/chars/xenovia/spec1.gif
+	frame	data/chars/xenovia/spec2.gif
+	attack	97 91 35 47 10 0 0 0 14
+	frame	data/chars/xenovia/spec3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/xenovia/spec4.gif
+	frame	data/chars/xenovia/spec5.gif
+	attack	93 94 35 47 20 1 0 0 26
+	frame	data/chars/xenovia/spec6.gif
+	attack	0 0 0 0 0 0
+
+
+
+
+
+
+
+
