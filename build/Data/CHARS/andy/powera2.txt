@@ -1,0 +1,47 @@
+name					PowerA2
+health					1
+#setlayer    -1
+nolife					1
+type					npc
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall 0
+
+anim idle
+
+	loop	0
+	delay	3
+	offset	25 87
+		Attack1  0
+	frame	data/chars/Andy/p101.gif
+		attack4  66  44  65  39  15
+	frame	data/chars/Andy/p102.gif
+		Attack1  0
+	frame	data/chars/Andy/p103.gif
+	frame	data/chars/Andy/p104.gif
+	frame	data/chars/Andy/p105.gif
+	frame	data/chars/Andy/p106.gif
+	frame	data/chars/Andy/p107.gif
+		blast  65  31  125  58  20
+	frame	data/chars/Andy/p108.gif
+	frame	data/chars/Andy/p109.gif
+	frame	data/chars/Andy/p110.gif
+	frame	data/chars/Andy/p111.gif
+	frame	data/chars/Andy/p112.gif
+		Attack1  0
+	frame	data/chars/Andy/p113.gif
+	frame	data/chars/Andy/p114.gif
+	frame	data/chars/Andy/p115.gif
+	frame	data/chars/Andy/p116.gif
+

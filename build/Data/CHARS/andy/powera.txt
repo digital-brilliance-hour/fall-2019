@@ -1,0 +1,35 @@
+name	PowerA
+health	1
+type	pshot
+hostile					enemy  npc obstacle
+candamage				enemy  npc obstacle
+shadow	0
+
+
+anim idle
+
+	loop	1
+	delay	2
+	offset	99 132
+		blast  123  89  56  44  10  2
+	frame	data/chars/Andy/P01.gif
+	frame	data/chars/Andy/P02.gif
+	frame	data/chars/Andy/P03.gif
+	frame	data/chars/Andy/P04.gif
+	frame	data/chars/Andy/P05.gif
+	frame	data/chars/Andy/P06.gif
+
+anim fall
+		offset  150  147
+		delay  1
+	frame	data/chars/Andy/PF01.gif
+	frame	data/chars/Andy/PF02.gif
+	frame	data/chars/Andy/PF03.gif
+	frame	data/chars/Andy/PF04.gif
+	frame	data/chars/Andy/PF05.gif
+	frame	data/chars/Andy/PF06.gif
+	frame	data/chars/Andy/PF07.gif
+	frame	data/chars/Andy/PF08.gif
+	frame	data/chars/Andy/PF09.gif
+	frame	data/chars/Andy/PF10.gif
+

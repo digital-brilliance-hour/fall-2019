@@ -42,6 +42,7 @@ palette     data/chars/ryan/ryan.act
 
 
 
+
 anim	attack1
 	drawmethod	scale 1.25 1.25
 	delay	1
@@ -212,7 +213,6 @@ anim	fall
 	drawmethod	scale 1.25 1.25
 	delay	7
 	offset	20 75
-	bbox	42 14 24 85
 	frame	data/chars/ryan/fall-1.png
 	offset	20 75
 	frame	data/chars/ryan/fall-2.png

@@ -11,9 +11,25 @@ order	a
 
 #---------------------
 
+spawn   ripper
+health  10
+coords  330 180
+at      20
+
+spawn   king
+health  30
+coords  330 180
+at      20
+
+spawn   playa
+health  10
+coords  330 180
+at      20
+
 spawn	Angel
+health  10
 coords	380 160
-at	800
+at      450
 
 
 wait

@@ -1,0 +1,889 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Andy
+health	136 0 100 1
+mpset 	70 0 50 0
+speed	12
+mp          		70
+mprate				3
+nolife				1
+falldie		1
+type	player
+#Jmove 0 2
+#shadow	3
+#colourselect 1
+#energycoast 6
+gfxshadow	1
+subject_to_screen 1
+makeinv		3
+dust dusts2 dusts3 dusts
+riseinv		1
+#Wning	30 5 3 1 0
+icon	data/chars/Andy/icon.gif
+diesound  data/sounds/Die5.wav
+
+parrow	data/chars/misc/1p.gif -30 -125
+parrow2	data/chars/misc/2p.gif -30 -125
+parrow3	data/chars/misc/3p.gif -30 -125
+
+remap	data/chars/Andy/Idle01.gif data/chars/Andy/map01.gif
+remap	data/chars/Andy/Idle01.gif data/chars/Andy/map02.gif
+remap	data/chars/Andy/Idle01.gif data/chars/Andy/map03.gif
+
+#load Super
+Load powerA
+Load powerA2
+
+com d f a  freespecial2
+com d f d f a  freespecial3
+com a2 freespecial4
+com d f a2  freespecial7
+com d f d f a2  freespecial8
+com u u freespecial6
+com d d freespecial5
+
+
+
+
+
+
+
+
+anim waiting
+      loop	1
+	delay	10
+	offset	0 0
+	fshadow	0
+      frame	data/chars/Andy/andy00.gif
+
+
+
+
+
+anim SELECT
+	loop	0
+      delay	10
+	offset	0 0
+	fshadow	0
+	sound	data/chars/Andy/Select.wav
+      frame	data/chars/Andy/andy01.gif
+      frame	data/chars/Andy/andy00.gif
+      frame	data/chars/Andy/andy01.gif
+      frame	data/chars/Andy/andy00.gif
+      frame	data/chars/Andy/andy01.gif
+      frame	data/chars/Andy/andy00.gif
+      frame	data/chars/Andy/andy01.gif
+      frame	data/chars/Andy/andy00.gif
+
+
+anim idle
+	loop	1
+	delay	50
+	offset	20 93
+	bbox	-1 -2 44 95
+	frame	data/chars/Andy/idle01.gif
+		delay  10
+	frame	data/chars/Andy/idle02.gif
+	frame	data/chars/Andy/idle03.gif
+	frame	data/chars/Andy/idle04.gif
+	frame	data/chars/Andy/idle05.gif
+	frame	data/chars/Andy/idle06.gif
+		delay  50
+	frame	data/chars/Andy/idle07.gif
+		delay  10
+	frame	data/chars/Andy/idle06.gif
+	frame	data/chars/Andy/idle05.gif
+	frame	data/chars/Andy/idle04.gif
+	frame	data/chars/Andy/idle03.gif
+	frame	data/chars/Andy/idle02.gif
+	frame	data/chars/Andy/idle01.gif
+
+
+anim walk
+	loop	1
+		offset  26  103
+		delay  10
+		bbox  10  4  29  100
+	frame	data/chars/Andy/W01.gif
+	frame	data/chars/Andy/W02.gif
+	frame	data/chars/Andy/W03.gif
+	frame	data/chars/Andy/W04.gif
+	frame	data/chars/Andy/W05.gif
+
+anim run
+	loop	1
+		move  8
+		bbox  18  -1  86  80
+		delay  3
+
+		offset  49  88
+	frame  data/chars/Andy/r01.gif
+	frame  data/chars/Andy/r01.gif
+	frame  data/chars/Andy/r02.gif
+	frame  data/chars/Andy/r02.gif
+
+	frame  data/chars/Andy/r03.gif
+	frame  data/chars/Andy/r03.gif
+	frame	data/chars/Andy/r04.gif
+	frame  data/chars/Andy/r04.gif
+	frame	data/chars/Andy/r05.gif
+	frame  data/chars/Andy/r05.gif
+	frame	data/chars/Andy/r06.gif
+	frame  data/chars/Andy/r06.gif
+
+anim Jump
+	loop	0
+		offset  22  124
+		bbox  3  1  39  123
+		delay  3
+	frame	data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+		offset  22  124
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+		bbox  10  9  36  95
+		offset  27  107
+	frame	data/chars/Andy/J02.gif
+	frame  data/chars/Andy/J02.gif
+	frame  data/chars/Andy/J02.gif
+		bbox  9  -7  35  129
+		offset  17  124
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+
+
+anim land
+	loop	0
+	offset	48 89
+	delay	25
+	bbox	14 1 78 84
+	frame	data/chars/Andy/r01.gif
+
+anim grab
+	loop	0
+	offset	14 95
+	bbox	4 -3 32 96
+	delay	1000
+	cancel 	0 			1 		0 		a2 			freespecial4
+cancel 	0 	1	0 	d f a  freespecial2
+        cancel 	0 	1	0 	d f d f a  freespecial3
+	cancel 	0 	1	0 	d f d f a2  freespecial8
+        cancel 	0 	1	0 	d f a2  freespecial7
+        cancel 	0 	1	0 	d d  freespecial5
+        cancel 	0 	1	0 	u u  freespecial6
+	sound	data/sounds/grab.wav
+	frame	data/chars/Andy/a209.gif
+
+anim freespecial5
+		offset  42  85
+		delay  5
+		movez  5
+		bbox  14  0  55  85
+	frame  data/chars/andy/roll01.gif
+		bbox  0
+	frame  data/chars/andy/roll02.gif
+	frame  data/chars/andy/roll03.gif
+	frame  data/chars/andy/roll04.gif
+	frame  data/chars/andy/roll05.gif
+	frame  data/chars/andy/roll06.gif
+		bbox  16  -2  54  89
+		movez  0
+	frame  data/chars/andy/roll07.gif
+	frame  data/chars/andy/roll08.gif
+
+
+anim freespecial6
+		offset  42  85
+		delay  5
+		movez  -5
+		bbox  23  7  42  79
+	frame  data/chars/andy/roll01.gif
+		bbox  0
+	frame  data/chars/andy/roll02.gif
+	frame  data/chars/andy/roll03.gif
+	frame  data/chars/andy/roll04.gif
+	frame  data/chars/andy/roll05.gif
+	frame  data/chars/andy/roll06.gif
+		bbox  18  -1  45  85
+		movez  0
+	frame  data/chars/andy/roll07.gif
+	frame  data/chars/andy/roll08.gif
+
+anim throw
+	loop	0
+	offset	66 100
+	delay	15
+		bbox  36  2  56  100
+	frame	data/chars/Andy/T01.gif
+		delay  5
+	frame	data/chars/Andy/T02.gif
+	frame	data/chars/Andy/T03.gif
+	frame	data/chars/Andy/T04.gif
+		delay  15
+	frame	data/chars/Andy/T05.gif
+	frame	data/chars/Andy/T06.gif
+	frame	data/chars/Andy/T07.gif
+		delay  3
+	frame	data/chars/Andy/T08.gif
+	frame	data/chars/Andy/T09.gif
+	frame	data/chars/Andy/T10.gif
+	frame	data/chars/Andy/T11.gif
+
+anim grabattack
+	loop	0
+	delay	6
+	bbox	14 -1 35 100
+		offset  23  97
+	hitflash flash02
+	sound	data/chars/Andy/a2.wav
+	frame	data/chars/Andy/a101.gif
+		attack1  41  2  41  27  10
+	frame	data/chars/Andy/a102.gif
+		Attack1  0
+	frame	data/chars/Andy/a103.gif
+		attack1  14  16  44  27  10
+	frame	data/chars/Andy/a104.gif
+		Attack1  0
+	frame	data/chars/Andy/a105.gif
+	frame	data/chars/Andy/a106.gif
+		Attack1  0
+	frame	data/chars/Andy/a107.gif
+
+anim grabattack2
+		loop	0
+	delay	4
+	offset	50 121
+	bbox	21 14 48 107 15
+	hitflash flash03
+	sound	data/chars/Andy/a3.wav
+		move  0
+		attack1  24  18  40  102
+	frame	data/chars/Andy/a301.gif
+		Attack1  0
+	frame	data/chars/Andy/a302.gif
+		delay  4
+	frame	data/chars/Andy/a303.gif
+		blast  52  0  38  121  10
+	frame	data/chars/Andy/a304.gif
+		delay  10
+		move  0
+		Attack1  0
+	frame	data/chars/Andy/a305.gif
+		blast  49  0  41  71  15
+		delay  20
+	frame	data/chars/Andy/a306.gif
+		delay  10
+		move  0
+		Attack1  0
+	frame	data/chars/Andy/a307.gif
+	frame	data/chars/Andy/a308.gif
+
+anim attack1
+	loop	0
+	delay	5
+	bbox	9 7 44 94
+	offset	22 98
+	hitflash flash02
+	sound	data/chars/Andy/a1.wav
+	frame	data/chars/Andy/a101.gif
+		delay  3
+		Attack1  52  4  29  27  10
+	frame	data/chars/Andy/a102.gif
+		Attack1  0
+	frame  data/chars/Andy/a102.gif
+		attack1  39  12  34  28  10
+		delay  3
+	frame	data/chars/Andy/a103.gif
+		Attack1  0
+	frame	data/chars/Andy/a104.gif
+	frame	data/chars/Andy/a105.gif
+	frame	data/chars/Andy/a106.gif
+	frame	data/chars/Andy/a107.gif
+
+anim attack2
+	loop	0
+	delay	3
+	offset	12 95
+	bbox	12 2 49 92 15
+	sound	data/chars/Andy/a2.wav
+	frame	data/chars/Andy/a201.gif
+	frame	data/chars/Andy/a202.gif
+		attack1  49  20  37  31  10
+	frame	data/chars/Andy/a203.gif
+		Attack1  0
+	frame	data/chars/Andy/a204.gif
+		attack1  59  20  38  26  10
+	frame	data/chars/Andy/a205.gif
+		Attack1  0
+	frame	data/chars/Andy/a206.gif
+	frame	data/chars/Andy/a207.gif
+	frame	data/chars/Andy/a208.gif
+	frame	data/chars/Andy/a209.gif
+
+
+anim attack3
+	loop	0
+	delay	4
+	offset	46 119
+	hitflash flash03
+	bbox	13 24 53 81 15
+	sound	data/chars/Andy/a3.wav
+	frame	data/chars/Andy/a301.gif
+	frame	data/chars/Andy/a302.gif
+		Attack1  0
+	frame	data/chars/Andy/a303.gif
+		blast  51  -1  53  92  10
+	frame	data/chars/Andy/a304.gif
+		delay  15
+	frame	data/chars/Andy/a305.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Andy/a306.gif
+		bbox  31  6  49  98
+	frame	data/chars/Andy/a307.gif
+	frame	data/chars/Andy/a308.gif
+        frame	data/chars/Andy/a309.gif
+        frame	data/chars/Andy/a310.gif
+
+
+
+anim freespecial4
+	loop	0
+	delay	4
+	offset	46 119
+	bbox	13 24 53 81 15
+	hitflash flash03
+	sound	data/chars/Andy/a3.wav
+	frame	data/chars/Andy/a301.gif
+	frame	data/chars/Andy/a302.gif
+		Attack1  0
+	frame	data/chars/Andy/a303.gif
+		blast  51  -1  53  92  10
+	frame	data/chars/Andy/a304.gif
+		delay  15
+	frame	data/chars/Andy/a305.gif
+		delay  8
+		Attack1  0
+	frame	data/chars/Andy/a306.gif
+		bbox  31  6  49  98
+	frame	data/chars/Andy/a307.gif
+	frame	data/chars/Andy/a308.gif
+        frame	data/chars/Andy/a309.gif
+        frame	data/chars/Andy/a310.gif
+
+anim pain
+	loop	0
+	offset	42 93
+	bbox	12 3 51 90
+	delay	8
+	frame	data/chars/Andy/pain01.gif
+	frame	data/chars/Andy/pain02.gif
+	frame	data/chars/Andy/pain01.gif
+
+
+anim pain2
+	loop	0
+	offset	41 94
+	bbox	14 0 41 96
+	delay	8
+	frame	data/chars/Andy/painR01.gif
+	frame	data/chars/Andy/painR02.gif
+	frame	data/chars/Andy/painR01.gif
+
+anim pain3
+	loop	0
+	offset	39 94
+	bbox	10 2 49 93
+	delay	8
+	frame	data/chars/Andy/painB01.gif
+	frame	data/chars/Andy/painB02.gif
+	frame	data/chars/Andy/painB01.gif
+
+
+
+anim fall
+	loop	0
+	offset	68 96
+	attack
+	delay	7
+	landframe 2
+	delay	70
+	frame	data/chars/Andy/fall01.gif
+		offset  49  82
+		Attack1  0
+	frame	data/chars/Andy/fall02.gif
+		offset  48  77
+	frame	data/chars/Andy/fall02.gif
+		offset  43  79
+	frame  data/chars/Andy/fall02.gif
+		blast  0  19  110  78  5  1
+	frame  data/chars/Andy/fall02.gif
+	frame  data/chars/Andy/fall02.gif
+	frame  data/chars/Andy/fall02.gif
+		offset  53  31
+		Attack1  0
+	frame	data/chars/Andy/fall03.gif
+
+anim rise
+		offset  60  134
+		delay  5
+        frame	data/chars/Andy/rise01.gif
+        frame	data/chars/Andy/rise02.gif
+		move  10
+        frame	data/chars/Andy/rise03.gif
+        frame	data/chars/Andy/rise04.gif
+        frame	data/chars/Andy/rise05.gif
+		move  0
+        frame	data/chars/Andy/rise06.gif
+        frame	data/chars/Andy/rise07.gif
+        frame	data/chars/Andy/rise08.gif
+
+
+anim Jumpattack
+	loop	0
+		offset  50  107
+		bbox  10  35  45  58
+		delay  4
+	sound	data/chars/Andy/a2.wav
+        frame	data/chars/Andy/ja101.gif
+		Attack1  57  55  44  50  10
+		delay  10
+        frame	data/chars/Andy/ja102.gif
+	frame  data/chars/Andy/ja102.gif
+		Attack1  0
+        frame	data/chars/Andy/ja103.gif
+
+
+anim Jumpattack2
+	sound	data/chars/Andy/a3.wav
+		offset  49  98
+		bbox  10  8  66  90
+		delay  10
+        frame	data/chars/Andy/ja201.gif
+		bbox  16  10  55  68
+		Attack1  0
+       frame	data/chars/Andy/ja202.gif
+		delay  10
+		blast  50  42  65  50  15
+        frame	data/chars/Andy/ja203.gif
+
+
+anim freespecial3
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+delay	8
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  82  137
+	frame  data/chars/Andy/SP01.gif
+	frame  data/chars/Andy/SP02.gif
+	sound	data/chars/Andy/SP.wav
+	frame  data/chars/Andy/SP03.gif
+		delay  7
+	frame  data/chars/Andy/SP04.gif
+		delay  8
+		move  10
+		movea  20
+	frame  data/chars/Andy/SP05.gif
+		movea  0
+		attack2  3  38  156  65  10  0  0  0  0  65
+		delay  3
+		move  5
+	frame  data/chars/Andy/SP07.gif
+		Attack1  0
+	frame  data/chars/Andy/SP08.gif
+		attack2  6  26  152  87  10  0  0  0  0  65
+	frame  data/chars/Andy/SP09.gif
+		Attack1  0
+	frame  data/chars/Andy/SP10.gif
+		attack2  2  38  156  68  10  0  0  0  0  65
+	frame  data/chars/Andy/SP11.gif
+		Attack1  0
+	frame  data/chars/Andy/SP12.gif
+		attack2  1  31  160  75 10  0  0  0  0  65
+	frame  data/chars/Andy/SP13.gif
+		Attack1  0
+	frame  data/chars/Andy/SP14.gif
+		attack2  8  37  152  71 10  0  0  0  0  65
+	frame  data/chars/Andy/SP15.gif
+		Attack1  0
+	frame  data/chars/Andy/SP16.gif
+		attack2  6  18  157  96 10  0  0  0  0  65
+	frame  data/chars/Andy/SP17.gif
+		Attack1  0
+	frame  data/chars/Andy/SP18.gif
+		movea  -2
+		attack2  22  29  137  95 10  0  0  0  0  65
+	frame  data/chars/Andy/SP19.gif
+		Attack1  0
+	frame  data/chars/Andy/SP20.gif
+		attack2  21  23  142  100 10  0  0  0  0  65
+	frame  data/chars/Andy/SP21.gif
+		Attack1  0
+	frame  data/chars/Andy/SP22.gif
+		attack2  23  20  137  108 10  0  0  0  0  65
+	frame  data/chars/Andy/SP23.gif
+		Attack1  0
+	frame  data/chars/Andy/SP24.gif
+		attack2  18  28  141  96 10  0  0  0  0  65
+	frame  data/chars/Andy/SP25.gif
+		Attack1  0
+	frame  data/chars/Andy/SP26.gif
+		attack2  10  20  150  106 10  0  0  0  0  65
+	frame  data/chars/Andy/SP27.gif
+		Attack1  0
+	frame  data/chars/Andy/SP28.gif
+		burn  16  22  140  101  10    11  0  0  20  65
+	frame  data/chars/Andy/SP29.gif
+	frame  data/chars/Andy/SP30.gif
+		Attack1  0
+		delay  7
+	frame  data/chars/Andy/SP31.gif
+		movea  0
+		move  0
+	frame  data/chars/Andy/SP32.gif
+	frame  data/chars/Andy/SP33.gif
+	frame  data/chars/Andy/SP34.gif
+	frame  data/chars/Andy/SP35.gif
+
+Anim  follow1
+
+
+		offset  63  121
+        custknife powerA2
+	throwframe  24 38
+		delay  5
+	frame  data/chars/Andy/sp201.gif
+	frame  data/chars/Andy/sp201.gif
+		attack1  87  49  29  23  10
+	frame  data/chars/Andy/sp202.gif
+	frame  data/chars/Andy/sp203.gif
+		Attack1  0
+	frame  data/chars/Andy/sp204.gif
+		attack1  82  45  48  32  10
+	frame  data/chars/Andy/sp205.gif
+		Attack1  0
+	frame  data/chars/Andy/sp206.gif
+	frame  data/chars/Andy/sp207.gif
+		attack1  83  24  39  26  10
+	frame  data/chars/Andy/sp208.gif
+		Attack1  0
+	frame  data/chars/Andy/sp209.gif
+		attack4  65  31  55  66
+	frame  data/chars/Andy/sp210.gif
+		Attack1  0
+	frame  data/chars/Andy/sp211.gif
+	frame  data/chars/Andy/sp212.gif
+	frame  data/chars/Andy/sp213.gif
+		delay  10
+		attack4  77  48  53  29  15  0  0  0  0  100
+	frame  data/chars/Andy/sp214.gif
+	frame  data/chars/Andy/sp215.gif
+		Attack1  0
+	frame  data/chars/Andy/sp216.gif
+		attack4  96  28  30  39
+	frame  data/chars/Andy/sp217.gif
+		Attack1  0
+	frame  data/chars/Andy/sp218.gif
+	frame  data/chars/Andy/sp219.gif
+	frame  data/chars/Andy/sp220.gif
+	frame  data/chars/Andy/sp221.gif
+	frame  data/chars/Andy/sp222.gif
+	sound	data/chars/Andy/sp02.wav
+	frame  data/chars/Andy/sp223.gif
+		blast  41  46  89  34
+	frame  data/chars/Andy/sp224.gif
+	frame  data/chars/Andy/sp225.gif
+	frame  data/chars/Andy/sp226.gif
+
+anim freespecial8
+
+	  summonframe 1 -10 -70 0 0
+	 subentity	super
+	 unsummonframe 2
+
+	 followanim	1
+	 followcond	1
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		0 0 0 0
+         delay	8
+		hitfx  data/sounds/beat3.wav
+	mponly 1
+		energycost  65
+		loop  0
+		mponly  1
+		delay  4
+		offset  45  96
+	sound	data/chars/Andy/a2.wav
+	frame  data/chars/Andy/fs201.gif
+	frame  data/chars/Andy/fs202.gif
+		move  10
+		delay  3
+	frame  data/chars/Andy/fs203.gif
+		attack1  35  4  43  91
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+		move  0
+		delay  5
+		Attack1  0
+	frame  data/chars/Andy/fs205.gif
+	frame  data/chars/Andy/fs206.gif
+	frame  data/chars/Andy/fs207.gif
+
+anim runattack
+		offset  72  136
+		bbox  45  54  52  85
+                energycost	10
+	        mponly 1
+		delay  7
+	frame  data/chars/Andy/ra01.gif
+		bbox  39  7  38  125
+		blast  22  4  91  120  10
+		movea  0
+		offset  55  134
+		move  0
+	sound	data/chars/Andy/Ra.wav
+	frame  data/chars/Andy/ra02.gif
+		Attack1  0
+		delay  5
+	frame  data/chars/Andy/ra03.gif
+		attack1  22  4  91  120  10  2
+	frame  data/chars/Andy/ra04.gif
+		Attack1  0
+		offset  48  146
+		move  5
+		movea  5
+	frame  data/chars/Andy/ra05.gif
+		blast  242  192  83  91  10  2
+		offset  228  331
+		bbox  200  214  93  122
+		delay  2
+	frame  data/chars/Andy/ra06.gif
+		Attack1  0
+	frame  data/chars/Andy/ra06.gif
+		Attack1  243  214  86  78  10
+	frame  data/chars/Andy/ra07.gif
+		Attack1  0
+	frame  data/chars/Andy/ra07.gif
+		attack1  203  200  129  89  10
+	frame  data/chars/Andy/ra08.gif
+		Attack1  0
+	frame  data/chars/Andy/ra08.gif
+		Attack1  213  175  127  118  10
+	frame  data/chars/Andy/ra09.gif
+		Attack1  0
+	frame  data/chars/Andy/ra09.gif
+		move  0
+		attack1  194  210  128  79  10  1
+	frame  data/chars/Andy/ra10.gif
+		Attack1  0
+	frame  data/chars/Andy/ra10.gif
+		offset  264  296
+		blast  193  179  156  112  10
+		delay  7
+	frame  data/chars/Andy/ra11.gif
+		Attack1  0
+	frame  data/chars/Andy/ra11.gif
+		offset  70  106
+		bbox  29  -1  74  105
+		movea  -5
+		delay  7
+	frame  data/chars/Andy/ra12.gif
+	frame  data/chars/Andy/ra13.gif
+		movea  -10
+		offset  26  118
+		bbox  4  -9  55  123
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+	frame  data/chars/Andy/J01.gif
+		movea  -5
+	frame  data/chars/Andy/J01.gif
+
+anim freespecial2
+	loop	0
+	delay	5
+        energycost	10
+	offset	59 97
+        custknife powerA
+	mponly 1
+	throwframe  6 38
+	bbox	14 0 76 97 15
+
+	sound	data/chars/Andy/fs.wav
+	frame  data/chars/Andy/fs01.gif
+	frame  data/chars/Andy/fs02.gif
+	frame  data/chars/Andy/fs03.gif
+	frame  data/chars/Andy/fs04.gif
+	frame  data/chars/Andy/fs05.gif
+	frame  data/chars/Andy/fs06.gif
+	frame  data/chars/Andy/fs07.gif
+	frame  data/chars/Andy/fs08.gif
+	frame  data/chars/Andy/fs09.gif
+	frame  data/chars/Andy/fs10.gif
+
+anim freespecial7
+	loop	0
+	delay	5
+        energycost	10
+	offset	59 97
+	mponly 1
+	 followanim	2
+	 followcond	1
+	bbox	14 0 76 97 15
+
+	sound	data/chars/Andy/fs02.wav
+	frame  data/chars/Andy/fs201.gif
+	frame  data/chars/Andy/fs202.gif
+		move  10
+		delay  3
+	frame  data/chars/Andy/fs203.gif
+		attack1  35  4  43  91
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+	frame  data/chars/Andy/fs204.gif
+		move  0
+		delay  5
+		Attack1  0
+	frame  data/chars/Andy/fs205.gif
+	frame  data/chars/Andy/fs206.gif
+	frame  data/chars/Andy/fs207.gif
+
+
+
+
+anim follow2
+		offset  56  97
+		attack1  66  19  37  29  10
+		move  5
+		bbox  16  8  72  89
+		delay  4
+	frame  data/chars/Andy/fs301.gif
+	frame  data/chars/Andy/fs302.gif
+	frame  data/chars/Andy/fs303.gif
+		move  0
+		Attack1  0
+	frame  data/chars/Andy/fs304.gif
+	frame  data/chars/Andy/fs305.gif
+	sound	data/chars/Andy/a3.wav
+	frame  data/chars/Andy/fs401.gif
+	frame  data/chars/Andy/fs402.gif
+		blast  51  0  40  73  10
+		delay  9
+	frame  data/chars/Andy/fs403.gif
+	frame  data/chars/Andy/fs404.gif
+	frame  data/chars/Andy/fs405.gif
+	frame  data/chars/Andy/fs406.gif
+	frame  data/chars/Andy/fs407.gif
+
+anim death
+
+		offset  191  182
+	sound	data/chars/Andy/Death.wav
+	frame	data/chars/Andy/D01.gif
+	frame	data/chars/Andy/D02.gif
+	frame	data/chars/Andy/D03.gif
+	frame	data/chars/Andy/D04.gif
+	frame	data/chars/Andy/D05.gif
+	frame	data/chars/Andy/D06.gif
+	frame	data/chars/Andy/D07.gif
+	frame	data/chars/Andy/D08.gif
+	frame	data/chars/Andy/D09.gif
+	frame	data/chars/Andy/D10.gif
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  83  235  131  52
+	frame	data/chars/Andy/burn1.gif
+	frame	data/chars/Andy/burn2.gif
+	frame	data/chars/Andy/burn1.gif
+	frame	data/chars/Andy/burn2.gif
+	offset	54 29
+		bbox  12  2  108  37
+	frame	data/chars/Andy/fall03.gif
+
+anim Fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  95  227  107  64
+	frame	data/chars/Andy/bburn.gif
+	frame	data/chars/Andy/burn2.gif
+	frame	data/chars/Andy/bburn.gif
+	frame	data/chars/Andy/burn2.gif
+	offset	58 30
+	frame	data/chars/Andy/fall03.gif
+
+anim shock
+	loop	0
+		offset  48  100
+	frame  data/chars/Andy/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Andy/Shok1.gif
+	frame	data/chars/Andy/Shok2.gif
+		delay  10
+	frame  data/chars/Andy/Shok1.gif
+	frame  data/chars/Andy/Shok2.gif
+	offset	75 76
+		bbox  0
+	frame	data/chars/Andy/fall02.gif
+		offset  62  30
+	frame	data/chars/Andy/fall03.gif
+
+anim pain4
+	loop	0
+	offset	39 94
+	delay	30
+	bbox  15  4  46  92
+	frame	data/chars/Andy/pain01.gif
+	frame	data/chars/Andy/pain02.gif
+	frame	data/chars/Andy/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Andy/burn1.gif
+	frame	data/chars/Andy/burn2.gif
+	frame	data/chars/Andy/burn1.gif
+	frame	data/chars/Andy/burn2.gif
+	offset	53 32
+	frame	data/chars/Andy/fall03.gif
+
