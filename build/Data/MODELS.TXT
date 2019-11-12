@@ -70,6 +70,11 @@ know    Rick        data/chars/rick/rick.txt
 know    Quincy      data/chars/q/q.txt
 know    hanzo       data/chars/hanzo/hanzo.txt
 know	Freak		data/chars/freak/freak.txt
+know    testa       data/chars/testa/testa.txt
+know    sspirit     data/chars/sspirit/sspirit.txt
+know    dwarrior    data/chars/dwarrior/dwarrior.txt
+know    disbeast    data/chars/disbeast/disbeast.txt
+know    black       data/chars/black/black.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt

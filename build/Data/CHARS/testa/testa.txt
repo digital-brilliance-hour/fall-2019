@@ -1,0 +1,133 @@
+name	Testa
+health	180
+speed	6
+type	enemy
+shadow	5
+icon	data/chars/testa/icon.gif
+diesound data/chars/testa/testd.WAV
+
+anim idle
+	loop	1
+	delay	15
+	offset	63 166
+	bbox	45 42 27 126 
+	frame	data/chars/testa/std1.gif
+	frame	data/chars/testa/std2.gif
+	frame	data/chars/testa/std3.gif
+	frame	data/chars/testa/std2.gif
+
+anim walk
+	loop	1
+	delay	15
+	offset	58 120
+	bbox	48 31 36 89
+	frame	data/chars/testa/wlk1.gif
+	frame	data/chars/testa/wlk2.gif
+	frame	data/chars/testa/wlk3.gif
+	frame	data/chars/testa/wlk4.gif
+	frame	data/chars/testa/wlk5.gif
+	frame	data/chars/testa/wlk6.gif
+	frame	data/chars/testa/wlk7.gif
+
+anim pain
+	loop	0
+	delay	20
+	offset	71 169
+	bbox	25 52 64 122
+	frame	data/chars/testa/dmg1.gif
+        frame	data/chars/testa/dmg2.gif
+
+anim fall
+	loop	0
+	offset	101 142
+	delay	23
+	attack	68 69 83 69 15 1
+	frame	data/chars/testa/fall1.gif
+	frame	data/chars/testa/fall2.gif
+	frame	data/chars/testa/fall3.gif
+
+anim rise
+	loop	0
+	offset  101 142
+	delay	12
+	frame	data/chars/testa/rise1.gif
+	frame	data/chars/testa/rise2.gif
+
+anim attack2
+	loop	0
+	delay	8
+	offset	90 125
+         bbox	29 51 61 76 
+         range	152 300
+	sound	data/chars/testa/beast.wav
+	frame	data/chars/testa/exa1.gif
+	frame	data/chars/testa/exa2.gif
+	frame	data/chars/testa/exa3.gif
+        attack	224 68 88 57 20 1
+	frame	data/chars/testa/exa4.gif
+        attack	238 66 81 59 20 1
+	frame	data/chars/testa/exa5.gif
+        attack	223 56 60 68 20 1
+	frame	data/chars/testa/exa6.gif
+        attack	195 54 69 71 20 1
+	frame	data/chars/testa/exa7.gif
+        attack	183 56 65 70 20 1
+	frame	data/chars/testa/exa8.gif
+        attack	158 67 70 60 20 1
+	frame	data/chars/testa/exa9.gif
+        attack	128 74 88 53 20 1
+	frame	data/chars/testa/exa10.gif
+
+anim special
+	loop	0
+	delay	3
+	offset	42 303
+	sound	data/chars/testa/haha.wav
+	frame	data/chars/testa/sp1.gif
+	delay	7
+	frame	data/chars/testa/sp2.gif
+	frame	data/chars/testa/sp3.gif
+	frame	data/chars/testa/sp4.gif
+	frame	data/chars/testa/sp5.gif
+	frame	data/chars/testa/sp6.gif
+	frame	data/chars/testa/sp7.gif
+	blast	34 177 88 125 30
+	delay	23
+	frame	data/chars/testa/sp8.gif
+
+anim upper
+	loop	0
+	delay	6
+	offset	49 186
+         bbox	44 81 29 111
+        attack	65 39 98 148 25 1
+	frame	data/chars/testa/up1.gif
+        attack	65 39 98 148 25 1
+	frame	data/chars/testa/up2.gif
+        attack	65 39 98 148 25 1
+	frame	data/chars/testa/up3.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/testa/up4.gif
+	frame	data/chars/testa/up5.gif
+
+
+anim attack1 
+	loop	0
+	delay	5
+	offset	59 138
+         bbox	30 45 34 98 
+         range	0 90
+	frame	data/chars/testa/atk1.gif
+        attack	67 66 149 61 20 1
+	frame	data/chars/testa/atk2.gif
+	frame	data/chars/testa/atk3.gif
+	frame	data/chars/testa/atk4.gif
+	frame	data/chars/testa/atk5.gif
+        attack	67 66 149 61 20 1
+	frame	data/chars/testa/atk2.gif
+	frame	data/chars/testa/atk3.gif
+	frame	data/chars/testa/atk4.gif
+	frame	data/chars/testa/atk5.gif
+
+
+
