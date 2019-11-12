@@ -1,0 +1,968 @@
+name	TERRY
+health	100
+speed	13
+type	player
+shadow	6
+dust    dust
+mp      100
+running	20 3.5 2 1 0
+noquake 1
+makeinv 4
+holdblock 1
+diesound data/sounds/terrydie.wav
+gfxshadow 1
+
+icon	data/chars/terry/1.gif
+iconpain     data/chars/terry/2.gif
+iconmphigh  data/sprites/h1.gif
+
+com      a2 freespecial
+com     d f a freespecial2
+com     f d a freespecial3
+com     u f a freespecial4 
+
+iconmphigh  data/sprites/h1.gif loop	1
+
+
+iconmphalf  data/sprites/m1.gif loop	1
+
+
+iconmplow  data/sprites/l1.gif loop	1
+
+         
+
+remap	data/chars/terry/idle01.gif data/chars/terry/alt1.gif
+remap	data/chars/terry/idle01.gif data/chars/terry/alt2.gif
+remap	data/chars/terry/idle01.gif data/chars/terry/alt3.gif
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	37 100
+	bbox	22 9 33 90
+	frame	data/chars/terry/idle00.gif
+offset	37 99
+               frame	data/chars/terry/idle01.gif
+offset	38 96
+              frame	data/chars/terry/idle02.gif
+offset	38 95
+              frame	data/chars/terry/idle03.gif
+offset	38 96
+              frame	data/chars/terry/idle04.gif
+offset	37 99
+              frame	data/chars/terry/idle05.gif
+offset	37 100
+              frame	data/chars/terry/idle06.gif
+offset	37 99 
+              frame	data/chars/terry/idle07.gif
+offset	37 98
+              frame	data/chars/terry/idle08.gif
+offset	37 97 
+              frame	data/chars/terry/idle09.gif
+offset	37 98
+              frame	data/chars/terry/idle10.gif
+offset	37 99
+              frame	data/chars/terry/idle11.gif
+
+
+anim faint
+	loop	1
+	delay	15
+	offset	34 84
+	bbox	24 4 38 72
+	      frame	data/chars/terry/faint1.gif
+offset	34 82
+              frame	data/chars/terry/faint2.gif
+offset	34 81
+              frame	data/chars/terry/faint3.gif
+offset	34 80
+              frame	data/chars/terry/faint4.gif
+offset	34 81
+              frame	data/chars/terry/faint3.gif
+offset	34 82
+              frame	data/chars/terry/faint2.gif
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	42 103
+	bbox	30 9 32 95
+	frame	data/chars/terry/wk00.gif
+offset	45 104
+                  bbox	32 10 33 92
+              frame	data/chars/terry/wk01.gif
+offset	37 109
+                  bbox	25 10 32 94
+              frame	data/chars/terry/wk02.gif
+offset	18 110
+                  bbox	3 10 35 95
+              frame	data/chars/terry/wk03.gif
+offset	17 109
+                  bbox	4 9 35 96
+              frame	data/chars/terry/wk04.gif
+offset	17 108
+                  bbox	6 10 31 95
+              frame	data/chars/terry/wk05.gif
+offset	27 106
+                  bbox	17 10 31 94
+              frame	data/chars/terry/wk06.gif
+
+anim run
+	loop	1
+	delay	8
+	offset	55 82
+	bbox	50 7 40 68
+	frame	data/chars/terry/run1.gif
+offset	55 80
+	frame	data/chars/terry/run2.gif
+offset	38 77	
+              frame	data/chars/terry/run3.gif
+offset	51 81
+              frame	data/chars/terry/run4.gif
+offset	49 79
+              frame	data/chars/terry/run5.gif
+offset	38 76
+              frame	data/chars/terry/run6.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	31 75
+                  bbox          0 0 0 0 
+	frame	data/chars/terry/get00.gif
+offset	35 62
+                  frame	data/chars/terry/get01.gif
+offset	33 63
+                  frame	data/chars/terry/get02.gif
+offset	37 93
+                  frame	data/chars/terry/get03.gif
+
+anim block
+	loop	0
+	delay	5
+	offset	42 99
+	frame	data/chars/terry/block1.gif
+offset	45 97
+        bbox    17 10 37 62
+        frame	data/chars/terry/block2.gif
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	35 105
+	bbox	13 10 32 91
+	frame	data/chars/terry/1atk00.gif
+                  offset        12 106
+	frame	data/chars/terry/1atk01.gif
+offset       14 105
+                 attack    50 23 67 20 10 
+ 	frame	data/chars/terry/1atk02.gif
+offset        7 105
+ 	frame	data/chars/terry/1atk03.gif
+offset        2 104
+                  frame	data/chars/terry/1atk04.gif
+offset        36 102
+               attack    0 0 0 0 0
+ 	frame	data/chars/terry/1atk05.gif
+
+
+
+anim attack2
+	loop	0
+	delay	5
+	offset	14 104
+	bbox	13 15 32 91
+	frame	data/chars/terry/2atk00.gif
+                  offset	 14 105
+                  attack       30 0 62 107 10    
+                  frame	data/chars/terry/2atk01.gif    
+offset	6 104
+                  frame	data/chars/terry/2atk02.gif
+offset	36 99
+                  frame	data/chars/terry/3atk00.gif
+offset	18 102
+                  frame	data/chars/terry/3atk01.gif
+offset	22 102
+                  frame	data/chars/terry/3atk02.gif
+offset	21 93
+                  frame	data/chars/terry/3atk03.gif
+offset	20 91
+                   frame	data/chars/terry/3atk04.gif
+offset	40 89
+                  attack        0 0 0 0 0 
+                  frame	data/chars/terry/3atk05.gif
+offset	38 92
+                  attack       60 6 69 25 10
+                  frame	data/chars/terry/3atk06.gif
+offset	36 94
+                  frame	data/chars/terry/3atk07.gif
+offset	31 99
+                   frame	data/chars/terry/3atk08.gif
+offset	23 102
+                   frame	data/chars/terry/3atk09.gif
+offset	38 103
+                  attack       0 0 0 0 0 
+                  frame	data/chars/terry/3atk10.gif
+
+anim attack3
+	loop	0
+              	offset	22 108
+	bbox	13 15 32 91
+                  delay          5
+	sound        data/sounds/fast.wav
+
+	frame	data/chars/terry/4atk00.gif
+offset	41 113
+ 	frame	data/chars/terry/4atk01.gif
+offset	42 118
+	frame	data/chars/terry/4atk02.gif
+offset	18 123
+	frame	data/chars/terry/4atk03.gif
+offset	41 128
+                   attack      69 39 62 27 10 1
+	frame	data/chars/terry/4atk04.gif
+offset	42 115
+                	frame	data/chars/terry/4atk05.gif
+offset	34 92
+ 	frame	data/chars/terry/4atk06.gif
+offset	 36 95
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/4atk07.gif
+
+anim freespecial3
+jumpframe 2
+	loop	0
+	delay	5
+	offset	44 85
+        energycost 20
+        bbox         0 0 0 0 
+MOVE 10
+	fastattack 1
+	sound       data/sounds/TERCRACK.wav
+	frame	data/chars/terry/ratk00.gif
+offset	52 84
+	frame	data/chars/terry/ratk01.gif
+offset	49 114
+ATTACK           0 0 58 92 15     
+	frame	data/chars/terry/ratk02.gif
+offset	34 134
+ATTACK            0 0 0 0 0     
+              	frame	data/chars/terry/ratk03.gif
+offset	35 121
+ATTACK           11 0 86 91 15
+	frame	data/chars/terry/ratk04.gif
+offset	27 115
+ATTACK            0 0 0 0 0  
+	frame	data/chars/terry/ratk05.gif
+offset	30 112
+ATTACK            7 12 94 73 20 1
+	frame	data/chars/terry/ratk06.gif
+offset	30 96
+	frame	data/chars/terry/ratk07.gif
+offset	42 88
+                  attack       0 0 0 0 0 0
+	frame	data/chars/terry/ratk08.gif
+
+anim runjumpattack
+	loop	0
+	offset	34 104
+                delay        3
+	sound   data/sounds/terpdunk.wav
+
+	frame	data/chars/terry/rjatk00.gif
+offset  34 118
+        ATTACK  0 0 64 70 10
+        frame	data/chars/terry/rjatk01.gif 
+offset  32 118
+        ATTACK  0 0 0 0 0
+        frame	data/chars/terry/rjatk02.gif 
+offset  30 120
+        frame	data/chars/terry/rjatk03.gif 
+offset  25 121
+        frame	data/chars/terry/rjatk04.gif 
+offset  25 121
+        frame	data/chars/terry/rjatk05.gif 
+offset  25 120
+        frame	data/chars/terry/rjatk06.gif 
+offset  22 114
+        frame	data/chars/terry/rjatk07.gif 
+offset  48 121
+	delay   30
+        attack  1 12 115 85 25 1
+        frame	data/chars/terry/rjatk08.gif 
+offset  48 113
+	delay   3
+        attack  0 0 0 0 0 0
+        frame	data/chars/terry/rjatk09.gif
+
+anim freespecial
+	loop	0
+	delay        7
+	offset	83 249
+        fastattack 1
+        energycost 50
+        bbox          0 0 0 0   
+	sound       data/sounds/terspec.wav
+
+	frame	data/chars/terry/spec00.gif
+offset        83 249
+                  attack       1 31 186 260 3
+	frame	data/chars/terry/spec01.gif
+offset	83 249
+                 	frame	data/chars/terry/spec02.gif
+offset	93 249
+              	frame	data/chars/terry/spec03.gif
+offset         83 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec04.gif
+offset        93 249
+                  attack       1 31 186 260 3
+            	frame	data/chars/terry/spec05.gif
+offset	94 249
+             	frame	data/chars/terry/spec06.gif
+offset	94 249
+                	frame	data/chars/terry/spec07.gif
+offset	93 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec08.gif
+offset        83 249
+                  attack       1 31 186 260 3
+	frame	data/chars/terry/spec01.gif
+offset	83 249
+                 	frame	data/chars/terry/spec02.gif
+offset	93 249
+              	frame	data/chars/terry/spec03.gif
+offset         83 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec04.gif
+offset        93 249
+                  attack       1 31 186 260 3
+            	frame	data/chars/terry/spec05.gif
+offset	94 249
+             	frame	data/chars/terry/spec06.gif
+offset	94 249
+                	frame	data/chars/terry/spec07.gif
+offset	93 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec08.gif
+offset        83 249
+                  attack       1 31 186 260 3
+	frame	data/chars/terry/spec01.gif
+offset	83 249
+                 	frame	data/chars/terry/spec02.gif
+offset	93 249
+              	frame	data/chars/terry/spec03.gif
+offset         83 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec04.gif
+offset        93 249
+                  attack       1 31 186 260 3
+            	frame	data/chars/terry/spec05.gif
+offset	94 249
+             	frame	data/chars/terry/spec06.gif
+offset	94 249
+                	frame	data/chars/terry/spec07.gif
+offset	93 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec08.gif
+offset        83 249
+                  attack       1 31 186 260 3
+        	frame	data/chars/terry/spec01.gif
+offset	83 249
+            	frame	data/chars/terry/spec02.gif
+offset	93 249
+	frame	data/chars/terry/spec03.gif
+offset         83 249
+                  attack        0 0 0 0 0 0 
+             	frame	data/chars/terry/spec04.gif
+offset        93 249
+                  attack       1 31 186 260 3
+                	frame	data/chars/terry/spec05.gif
+offset	94 249
+           	frame	data/chars/terry/spec06.gif
+offset	94 249
+            	frame	data/chars/terry/spec07.gif
+offset	93 249
+                  attack        0 0 0 0 0 0 
+               	frame	data/chars/terry/spec08.gif
+offset	94 249
+                  attack       1 31 186 260 3
+              	frame	data/chars/terry/spec09.gif
+offset	93 249
+                 	frame	data/chars/terry/spec10.gif
+offset	93 249
+                  attack        0 0 0 0 0 0 
+             	frame	data/chars/terry/spec11.gif
+offset         83 249
+                  attack       1 31 186 260 5 1
+              	frame	data/chars/terry/spec12.gif
+offset         83 249
+                  attack        0 0 0 0 0 0 
+	frame	data/chars/terry/spec13.gif
+                
+
+anim freespecial2
+	loop	 0
+	delay	 5
+	offset	 37 101
+	move         1
+        bbox          0 0 0 0
+	fastattack 1
+        followanim 1
+	followcond 1
+	sound        data/sounds/terthw.wav
+	frame	data/chars/terry/frsp00.gif
+offset	37 101
+                  attack        61 7 50 21 5
+	frame	data/chars/terry/frsp01.gif
+offset	37 101
+	frame	data/chars/terry/frsp02.gif
+offset	37 101
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/frsp03.gif
+
+anim follow1
+	loop	 0
+	delay	 5
+	offset	 37 101
+        energycost 20
+	move         1
+        bbox          0 0 0 0
+	sound        data/sounds/terfree.wav
+offset	38 98
+	frame	data/chars/terry/frsp04.gif
+offset	38 100
+	attack       57 7 35 25 5
+	frame	data/chars/terry/frsp05.gif
+offset	38 99
+	frame	data/chars/terry/frsp06.gif
+offset	37 101
+	frame	data/chars/terry/frsp07.gif
+offset	38 97
+	frame	data/chars/terry/frsp08.gif
+offset	39 96
+	delay         7
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/frsp09.gif
+offset	40 93
+	move         0
+                  attack        57 5 67 24 5 
+	frame	data/chars/terry/frsp10.gif
+offset	40 93
+	frame	data/chars/terry/frsp11.gif
+offset	37 98
+	frame	data/chars/terry/frsp12.gif
+offset	37 98
+	frame	data/chars/terry/frsp13.gif
+offset	37 101
+	frame	data/chars/terry/frsp14.gif
+offset	8 95
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/frsp15.gif
+offset	8 90
+	attack        43 0 55 26 5
+	frame	data/chars/terry/frsp16.gif
+offset	10 104
+	frame	data/chars/terry/frsp17.gif
+offset	11 102
+	frame	data/chars/terry/frsp18.gif
+offset	12 98
+	frame	data/chars/terry/frsp19.gif
+offset	10 99
+	frame	data/chars/terry/frsp20.gif
+offset	21 77
+	delay         7
+	frame	data/chars/terry/frsp21.gif
+offset	17 69	
+	move         0
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/frsp22.gif
+offset	30 63
+                  attack        48 0 90 40 5 
+	frame	data/chars/terry/frsp23.gif
+offset	24 63
+	frame	data/chars/terry/frsp24.gif
+offset	21 63
+	frame	data/chars/terry/frsp25.gif
+offset	34 77
+	frame	data/chars/terry/frsp26.gif
+offset	34 83
+	frame	data/chars/terry/frsp27.gif
+offset	38 93
+	frame	data/chars/terry/frsp28.gif
+offset	31 87
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/frsp29.gif
+offset	35 128
+                  blast        50 0 65 130 15 1
+	frame	data/chars/terry/frsp30.gif
+offset	37 126
+	frame	data/chars/terry/frsp31.gif
+offset	31 124
+	frame	data/chars/terry/frsp32.gif
+
+anim runattack
+	loop	 0
+	delay	 6
+	offset	51 95 
+	move         1
+        bbox          36 4 43 71
+	fastattack 1
+        followanim 2
+	followcond 1
+        move        7
+	sound        data/sounds/terthw.wav
+	frame	data/chars/terry/free1.gif
+offset	51 95
+        delay        1  
+        attack         35 8 15 74 5
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+	frame	data/chars/terry/free2.gif
+offset	51 99
+        bbox    37 8 36 75
+        attack       0 0 0 0 0
+        delay         5   
+	frame	data/chars/terry/free3.gif
+	frame	data/chars/terry/free3.gif
+        move        3  
+	frame	data/chars/terry/free3.gif
+	frame	data/chars/terry/free3.gif
+offset	36 83
+        bbox    24 8 35 55
+        delay         9 
+        move         0
+ 	frame	data/chars/terry/free4.gif
+
+anim follow2
+jumpframe 11 3
+	loop	0
+	delay	4
+        energycost 10
+        bbox          0 0 0 0 
+	fastattack 1
+        sound       data/sounds/terryra.wav
+offset	29 73
+	frame	data/chars/terry/free5.gif
+offset	21 72
+	frame	data/chars/terry/free6.gif
+offset	51 54
+	frame	data/chars/terry/free7.gif
+offset	54 56
+                  attack        57 22 82 37 4
+	frame	data/chars/terry/free8.gif
+offset	39 56
+	frame	data/chars/terry/free9.gif
+offset	27 67
+                  attack        0 0 0 0 0
+	frame	data/chars/terry/free10.gif
+offset	29 74
+	frame	data/chars/terry/free11.gif
+offset	29 72
+	frame	data/chars/terry/free12.gif
+offset	39 91
+	frame	data/chars/terry/free13.gif
+offset	26 67
+	frame	data/chars/terry/free14.gif
+offset	26 99
+	frame	data/chars/terry/free15.gif
+offset	28 128
+                  attack        0 26 84 81 1 
+	frame	data/chars/terry/free16.gif
+offset	32 153
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free17.gif
+offset	27 163
+                  attack         0 27 86 89 1
+	frame	data/chars/terry/free18.gif
+offset	35 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free19.gif
+
+offset	46 163
+                  attack         0 30 95 86 1
+	frame	data/chars/terry/free20.gif
+offset	32 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free17.gif
+offset	27 163
+                  attack         0 27 86 89 1
+	frame	data/chars/terry/free18.gif
+offset	35 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free19.gif
+offset	46 163
+                  attack         0 30 95 86 1
+	frame	data/chars/terry/free20.gif
+offset	32 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free17.gif
+offset	27 163
+                  attack         0 27 86 89 1
+	frame	data/chars/terry/free18.gif
+offset	35 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free19.gif
+offset	46 163
+                  attack         0 30 95 86 1
+	frame	data/chars/terry/free20.gif
+offset	32 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free17.gif
+offset	27 163
+                  attack         0 27 86 89 1
+	frame	data/chars/terry/free18.gif
+offset	35 163
+                  attack        0 0 0 0 0 0
+	frame	data/chars/terry/free19.gif
+offset	46 153
+                  attack         0 30 95 86 1
+	frame	data/chars/terry/free20.gif
+offset	26 120
+	frame	data/chars/terry/free15.gif
+offset	26 67
+                  attack       0 0 0 0 0 0
+	frame	data/chars/terry/free14.gif
+offset	39 91
+                  move         -5    
+	frame	data/chars/terry/free13.gif
+offset	6 104
+                  delay        7
+	frame	data/chars/terry/free21.gif
+offset	14 122
+	frame	data/chars/terry/free22.gif
+offset	13 120
+	frame	data/chars/terry/free23.gif
+offset	13 120
+                  blast          30 6 47 101 20 1
+	frame	data/chars/terry/free24.gif
+offset	-1 112
+	frame	data/chars/terry/free25.gif
+
+
+
+anim freespecial4
+jumpframe 1 
+	loop	0
+        offset	22 108
+	bbox	13 15 32 91
+        delay          7
+        energycost 15
+	sound        data/sounds/terryf4.wav
+
+	frame	data/chars/terry/4atk00.gif
+offset	41 104
+ 	frame	data/chars/terry/edit2.gif
+                  attack      33 3 91 78 10 
+ 	frame	data/chars/terry/edit1.gif
+offset	42 118
+                  attack        0 0 0 0 0 
+	frame	data/chars/terry/4atk02.gif
+offset	18 123
+	frame	data/chars/terry/4atk03.gif
+offset	41 128
+                  attack        69 39 62 27 10 1
+	frame	data/chars/terry/4atk04.gif
+offset	42 115
+                  attack        0 0 0 0 0 0
+                	frame	data/chars/terry/4atk05.gif
+offset	34 92
+ 	frame	data/chars/terry/4atk06.gif
+offset	 36 95
+	frame	data/chars/terry/4atk07.gif
+
+
+
+
+
+anim jump
+	loop 	0
+	delay        10
+	offset	18 130
+                  bbox          5 10 30 112
+	frame	data/chars/terry/jump00.gif
+offset	15 124	
+                   frame	data/chars/terry/jump01.gif
+offset	19 104
+                   frame	data/chars/terry/jump02.gif
+offset	20 102
+                  frame	data/chars/terry/jump03.gif
+offset	24 113
+                  frame	data/chars/terry/jump04.gif
+offset	26 122
+                  frame	data/chars/terry/jump05.gif
+offset	27 129
+                  frame	data/chars/terry/jump06.gif
+offset	28 139
+                  frame	data/chars/terry/jump07.gif
+offset	28 138
+                  frame	data/chars/terry/jump08.gif
+
+anim jumpforward
+	loop	0
+	offset	38 109
+	delay         7
+	sound       data/sounds/terairk.wav
+
+	frame	data/chars/terry/ak00.gif
+offset	42 106
+	delay         1
+	frame	data/chars/terry/ak01.gif
+offset	33 107
+	delay         5
+	frame	data/chars/terry/ak02.gif
+offset	42 108
+                  attack        35 28 90 38 15 1
+	frame	data/chars/terry/ak03.gif
+                 delay          20
+offset	41 108
+	frame	data/chars/terry/ak04.gif
+offset	32 109
+                  delay         7
+                 attack         0 0 0 0 0 0
+                  frame	data/chars/terry/ak05.gif
+
+anim jumpattack
+	loop	0
+	offset	30 108
+	delay         4
+	sound       data/sounds/terairk.wav
+
+	frame	data/chars/terry/ver00.gif
+offset	32 108
+	delay        3
+	frame	data/chars/terry/ver01.gif
+offset	32 122
+	delay        3
+	attack       25 0 26 94 5 1
+	frame	data/chars/terry/ver02.gif
+offset	39 122
+	delay         20
+                   frame	data/chars/terry/ver03.gif
+offset	23 109
+	delay         2
+                   attack       0 0 0 0 0 0
+                   frame	data/chars/terry/ver04.gif
+
+
+anim jumpattack2
+dive 3 3
+	loop	0
+	offset	26 105
+                  delay        2
+	sound       data/sounds/terairk.wav
+
+	frame	data/chars/terry/dive1.gif
+offset        24 120
+                  frame	data/chars/terry/dive3.gif 
+offset        39 121
+                  delay        25
+                  attack        28 47 92 51 15 1     
+                  frame	data/chars/terry/dive5.gif 
+                  attack        0 0 0 0 0 0 
+
+
+anim grab
+	loop	0
+                  delay        3000				
+	bbox	31  10 51 78
+	offset	37 98
+	frame	data/chars/terry/frsp12.gif
+
+anim grabattack
+	loop	0
+	offset	14 104
+	bbox	0 0 0 0
+	delay	5
+               	hitfx           data/sounds/GRABATCK.wav
+	frame	data/chars/terry/2atk00.gif
+offset	14 105
+                  delay         6
+                  attack       30 0 62 107 10   
+                  frame	data/chars/terry/2atk01.gif
+offset	6 104
+                  frame	data/chars/terry/2atk02.gif
+          
+anim grabattack2
+	loop	0
+	bbox	0 0 0 0
+	delay	5
+        hitfx   data/sounds/GRABATCK.wav
+	offset	6 104
+	frame	data/chars/terry/free21.gif
+offset	14 122
+	frame	data/chars/terry/free22.gif
+offset	13 120
+	frame	data/chars/terry/free23.gif
+offset	13 120
+        attack  30 6 47 101 8 1
+	frame	data/chars/terry/free24.gif
+offset	-1 112
+	frame	data/chars/terry/free25.gif
+
+          
+anim throw
+	loop	0
+	offset	42 99
+	delay	9
+                  bbox         0 0 0 0
+	sound        data/sounds/terthw.wav
+	frame	data/chars/terry/tr00.gif
+offset	40 101
+	frame	data/chars/terry/tr01.gif
+offset	59 88
+	frame	data/chars/terry/tr02.gif
+offset	50 82
+	delay         23
+	frame	data/chars/terry/tr03.gif
+offset	51 84
+	delay         8
+	frame	data/chars/terry/tr04.gif
+offset	50 83
+	frame	data/chars/terry/tr05.gif
+offset	51 95
+	frame	data/chars/terry/tr06.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	41 101
+	bbox	8 0 77 100
+	frame	data/chars/terry/pain00.gif
+offset	46 93
+	frame	data/chars/terry/pain01.gif
+offset	58 86
+                  delay        18
+	frame	data/chars/terry/pain02.gif
+offset	46 93
+	frame	data/chars/terry/pain01.gif
+offset	41 101
+	frame	data/chars/terry/pain00.gif
+
+anim fall
+	loop	0
+	delay         5
+                  offset	40 104 
+	frame	data/chars/terry/fall00.gif
+offset	56 91
+                  delay        65
+        ATTACK  12 12 42 29 10 1 
+                  frame	data/chars/terry/fall01.gif
+offset	38 108
+                  delay         15
+                  frame	data/chars/terry/fall02.gif
+offset        35 65
+        ATTACK   0 0 0 0 0 0
+                 delay          5
+                  frame	data/chars/terry/fall03.gif
+offset	49 26
+                  delay         35
+                   frame	data/chars/terry/fall04.gif
+
+anim rise
+	loop	0
+	offset	37 44
+	delay         7
+                  bbox          0 0 0 0
+	frame	data/chars/terry/rise00.gif
+offset	34 60
+	frame	data/chars/terry/rise01.gif
+offset	42 97
+	frame	data/chars/terry/rise02.gif
+
+
+
+anim waiting
+                  loop	0
+	delay         13
+
+offset	26 112
+              frame	data/chars/terry/wait00.gif
+offset	36 104
+              frame	data/chars/terry/wait01.gif
+offset	16 104
+              frame	data/chars/terry/wait02.gif
+offset	10 104
+              frame	data/chars/terry/wait03.gif
+offset	10 104
+              frame	data/chars/terry/wait04.gif
+offset	21 104
+              frame	data/chars/terry/wait05.gif
+offset	3 109
+              frame	data/chars/terry/wait06.gif
+offset	-2 110
+              frame	data/chars/terry/wait07.gif
+offset	-2 110
+	frame	data/chars/terry/wait08.gif
+
+
+
+
+
+
+
+anim special
+	loop	0
+	delay	5
+        bbox    0 0 0 0
+	fastattack 1
+        energycost 10
+	sound   data/sounds/terthw.wav
+offset	6 104
+	frame	data/chars/terry/free21.gif
+offset	14 122
+	frame	data/chars/terry/free22.gif
+offset	13 120
+	frame	data/chars/terry/free23.gif
+offset	13 120
+blast   30 6 47 101 10 1
+	frame	data/chars/terry/free24.gif
+offset	-1 112
+	frame	data/chars/terry/free25.gif
+offset	25 102
+        frame	data/chars/terry/11.gif
+offset	30 93
+        frame	data/chars/terry/22.gif
+offset	27 91
+        frame	data/chars/terry/33.gif
+offset	90 89
+        frame	data/chars/terry/44.gif
+offset	80 92
+        blast   2 12 95 39 10 2
+        frame	data/chars/terry/55.gif
+offset	73 94
+        frame	data/chars/terry/66.gif
+offset	60 99
+        frame	data/chars/terry/77.gif
+offset	27 102
+        frame	data/chars/terry/88.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+name	SODOM
+health	300
+speed	4
+type	enemy
+shadow	6
+dust    dust
+icon	data/chars/sodom/1.gif
+iconpain	data/chars/sodom/2.gif
+aggression 1
+diesound data/sounds/sododead.wav
+gfxshadow 1
+
+remap	data/chars/sodom/grap4.gif data/chars/sodom/map1.gif
+
+anim idle
+	loop	1
+	offset	105 160
+	bbox	55 45 66 109
+	delay	10
+	frame	data/chars/sodom/stand1.gif
+	frame	data/chars/sodom/stand2.gif
+	frame	data/chars/sodom/stand3.gif	
+	frame	data/chars/sodom/stand4.gif
+	frame	data/chars/sodom/stand5.gif
+
+anim walk
+	loop	1
+	offset	105 160
+	bbox	55 45 66 109
+	delay	10
+	frame	data/chars/sodom/walk1.gif
+	frame	data/chars/sodom/walk2.gif
+	frame	data/chars/sodom/walk3.gif
+	frame	data/chars/sodom/walk4.gif
+	frame	data/chars/sodom/walk5.gif
+	frame	data/chars/sodom/walk6.gif
+	
+anim pain
+	loop	0
+	offset	105 160
+	bbox	55 45 66 109
+	delay	6
+        sound   data/sounds/geespain.wav
+	frame	data/chars/sodom/hit1.gif
+	frame	data/chars/sodom/hit2.gif
+	frame	data/chars/sodom/hit2.gif
+	delay	46
+	frame	data/chars/sodom/hit1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	105 160
+	attack	47 16 50 85 12 1
+	frame	data/chars/sodom/down1.gif
+	attack	33 20 62 74 12 1
+	frame	data/chars/sodom/down2.gif
+	attack	18 63 54 33 12 1
+	frame	data/chars/sodom/down3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/sodom/down4.gif
+
+anim rise
+	loop	0
+	offset	105 160
+	delay	15
+	frame	data/chars/sodom/risea1.gif
+	frame	data/chars/sodom/risea2.gif
+	frame	data/chars/sodom/risea1.gif
+	frame	data/chars/sodom/risea2.gif
+	
+anim grab
+	loop	0
+	delay	6
+	offset	105 160
+	frame	data/chars/sodom/grap1.gif
+	frame	data/chars/sodom/grap2.gif
+	frame	data/chars/sodom/grap3.gif
+	attack	20 35 140 144 20 1
+	frame	data/chars/sodom/grap4.gif
+	frame	data/chars/sodom/grap5.gif
+	attack	0 0 0 0
+	frame	data/chars/sodom/grap6.gif
+
+anim attack1
+	range	80 130
+	loop	0
+	delay	8
+	offset	105 160
+	bbox	55 45 76 109
+	move 30
+        sound   data/sounds/sodoatk.wav
+	frame	data/chars/sodom/satack1.gif
+	bbox	55 45 76 109
+	attack	16 48 121 42 35 1
+	offset	110 160
+	frame	data/chars/sodom/satack2.gif
+	bbox	55 45 76 109
+	attack	16 48 121 42 35 1
+	offset	110 160
+	frame	data/chars/sodom/satack3.gif
+	bbox	55 45 76 109
+	attack	95 41 111 71 35 1
+	frame	data/chars/sodom/satack4.gif
+	attack	0 0 0 0 
+
+anim attack2	
+	range	0 80
+	loop	0
+	delay	13
+	offset	105 160
+	bbox	55 45 76 109
+        sound   data/sounds/sodoatk.wav
+	frame	data/chars/sodom/kick1.gif
+	attack	95 63 115 42 35 1
+	frame	data/chars/sodom/kick2.gif
+	attack	95 63 115 42 35 1
+	frame	data/chars/sodom/kick3.gif
+	attack	0 0 0 0
+	frame	data/chars/sodom/kick4.gif
+	frame	data/chars/sodom/kick5.gif	
+
+
+
+

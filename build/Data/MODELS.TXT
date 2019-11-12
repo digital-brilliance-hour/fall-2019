@@ -75,6 +75,8 @@ know    sspirit     data/chars/sspirit/sspirit.txt
 know    dwarrior    data/chars/dwarrior/dwarrior.txt
 know    disbeast    data/chars/disbeast/disbeast.txt
 know    black       data/chars/black/black.txt
+know    terry		data/chars/terry/terry.txt
+know	sodom       data/chars/sodom/sodom.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
