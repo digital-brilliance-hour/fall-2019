@@ -1,0 +1,18 @@
+name	 rain1
+health	 10
+type	 panel
+speed	 10
+setlayer 200
+alpha    2
+
+anim idle 
+
+	loop	1
+	delay	8
+	offset	480 275
+	bbox	0
+	frame data/chars/misc/rain/rain0001.gif
+	frame data/chars/misc/rain/rain0002.gif
+	frame data/chars/misc/rain/rain0003.gif
+	frame data/chars/misc/rain/rain0004.gif
+

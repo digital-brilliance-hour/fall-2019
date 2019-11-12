@@ -14,11 +14,57 @@ wall    119 187 -65 -118 99 54 75 105
 
 
 #---------------------
+spawn Yashiro
+coords 380 180
+health 40
+at 180
 
-spawn	Angel
-coords	380 160
-at	800
-
+spawn Hugo
+health 60
+aggression 2
+coords 380 230
+at 180
 
 wait
-at	900
+at 307
+
+spawn Playa
+alias Mike
+health 10
+coords 380 180
+at 670
+
+spawn Playa
+alias Mick
+health 10
+coords 380 220
+at 670
+
+spawn King
+alias Laura
+health 30
+coords 380 180
+at 670
+
+wait
+at 830
+
+spawn Rick
+alias Ricky
+coords	380 200
+at 1100
+
+spawn Playa
+alias Mick
+health 10
+coords -30 220
+at 1100
+
+spawn King
+alias Laura
+health 10
+coords -30 180
+at 1100
+
+wait
+at	1200

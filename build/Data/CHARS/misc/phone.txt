@@ -1,0 +1,18 @@
+name	 PHONE
+health	 20
+type	 obstacle
+icon	 data/chars/misc/pbicon.gif
+diesound data/sounds/glass.wav
+gfxshadow 1
+
+anim idle
+	delay	10
+	offset	40 142
+	bbox	0 0 75 150
+        platform  -25 -25 100 100 20 140
+        frame	data/chars/misc/pbooth.gif
+
+anim fall
+	delay	10
+	offset	40 142
+	frame	data/chars/misc/pbroke.gif

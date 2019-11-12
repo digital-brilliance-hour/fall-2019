@@ -1,0 +1,32 @@
+name	TELEPHONE
+health	30
+type	obstacle
+shadow	0
+icon	data/chars/misc/pbicon.gif
+diesound data/sounds/wood.wav
+gfxshadow 1
+
+anim idle
+	loop	0
+	delay	100
+	offset	54 124
+	bbox	15 0 80 128
+        platform -15 -15 125 125 20 128
+	frame	data/chars/misc/cabina1.gif
+
+
+anim fall
+	loop	0
+	delay	100
+	offset	54 124
+	frame	data/chars/misc/cabina2.gif
+
+
+
+
+
+
+
+
+
+

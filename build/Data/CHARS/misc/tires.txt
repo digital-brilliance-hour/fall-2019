@@ -1,0 +1,24 @@
+name	 TIRES
+health	 10
+type	 obstacle
+shadow	 0
+icon	 data/chars/misc/tireicon.gif
+diesound data/sounds/wood.wav
+gfxshadow 1
+
+anim idle
+	delay	10
+	offset	24 57
+	bbox	2 -25 48 73
+        platform  -30 -30 83 83 10 200
+	frame	data/chars/misc/tires.gif
+
+
+anim fall
+	delay	13
+	offset	100 92
+	frame	data/chars/misc/tirex1.gif
+        frame	data/chars/misc/tirex2.gif
+        frame	data/chars/misc/tirex3.gif
+        frame	data/chars/misc/tirex4.gif
+        frame	data/chars/misc/tirex5.gif

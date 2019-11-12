@@ -1,15 +1,16 @@
-name	Drum
-health	1
+name	DRUM
+health	15
 type	obstacle
 shadow	0
 icon	data/chars/misc/drumicon.gif
 diesound data/sounds/klunk.wav
-
+gfxshadow 1
 
 anim idle
 	delay	100
 	offset	22 63
 	bbox	0 -25 43 92
+        PLATFORM  -30 -30 75 75 13 200
 	frame	data/chars/misc/drum.gif
 
 

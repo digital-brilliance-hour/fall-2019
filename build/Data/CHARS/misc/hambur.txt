@@ -1,0 +1,15 @@
+name	BURGER
+health	60
+type	item
+shadow	0
+icon	data/chars/misc/bicon.gif
+gfxshadow 1
+
+anim idle
+	loop	1
+	delay	100
+	offset	16 16
+	bbox	8 3 17 17
+	frame	data/chars/misc/hambur.gif
+	delay	20
+	frame	data/chars/misc/hambur2.gif

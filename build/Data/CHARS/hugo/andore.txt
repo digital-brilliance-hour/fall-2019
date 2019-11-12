@@ -1,0 +1,300 @@
+name	ANDORE
+health	200
+speed	9
+type	enemy
+shadow	6
+dust    dust
+icon	data/chars/hugo/3.gif
+iconpain     data/chars/hugo/4.gif
+diesound data/sounds/hugodie.wav
+aggression 5
+escapehits 3
+defense special 50
+gfxshadow 1
+
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map1.gif
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map2.gif
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map3.gif
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map4.gif
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map5.gif
+remap data/chars/HUGO/run2.gif data/chars/HUGO/map6.gif
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	37 136
+	bbox	4 6 70 138
+                  delay	7
+	frame	data/chars/HUGO/idle01.gif
+offset	36 138
+	frame	data/chars/HUGO/idle02.gif
+offset	36 139
+	frame	data/chars/HUGO/idle03.gif
+offset	36 137
+	frame	data/chars/HUGO/idle04.gif
+offset	36 137
+	frame	data/chars/HUGO/idle05.gif
+offset	36 137
+	frame	data/chars/HUGO/idle06.gif
+offset	36 138
+	frame	data/chars/HUGO/idle07.gif
+offset	36 137
+	frame	data/chars/HUGO/idle08.gif
+offset	36 136
+	frame	data/chars/HUGO/idle09.gif
+offset	36 136
+	frame	data/chars/HUGO/idle10.gif
+offset	36 137
+	frame	data/chars/HUGO/idle11.gif
+offset	36 136
+	frame	data/chars/HUGO/idle12.gif
+offset	36 137
+	frame	data/chars/HUGO/idle13.gif
+offset	36 137
+	frame	data/chars/HUGO/idle14.gif
+offset	36 137
+                  frame	data/chars/HUGO/idle15.gif
+offset	36 137
+	frame	data/chars/HUGO/idle16.gif
+offset	36 137
+	frame	data/chars/HUGO/idle17.gif
+offset	36 137
+	frame	data/chars/HUGO/idle18.gif
+
+
+anim walk
+	loop	1
+	offset	35 142
+	bbox	7 8 69 140
+	delay	7
+	frame	data/chars/HUGO/walk01.gif
+offset	36 144
+	frame	data/chars/HUGO/walk02.gif
+offset	35 144
+	frame	data/chars/HUGO/walk03.gif
+offset	35 144
+	frame	data/chars/HUGO/walk04.gif
+offset	33 144
+	frame	data/chars/HUGO/walk05.gif
+offset	38 144
+	frame	data/chars/HUGO/walk06.gif
+offset	43 143
+	frame	data/chars/HUGO/walk07.gif
+offset	48 141
+	frame	data/chars/HUGO/walk08.gif
+offset	50 140
+	frame	data/chars/HUGO/walk09.gif
+offset	43 140
+	frame	data/chars/HUGO/walk010.gif
+offset	39 142
+	frame	data/chars/HUGO/walk011.gif
+offset	35 143
+	frame	data/chars/HUGO/walk012.gif
+offset	37 142
+	frame	data/chars/HUGO/walk013.gif
+offset	40 141
+	frame	data/chars/HUGO/walk014.gif
+
+anim pain
+	loop	0
+	offset	48 104                      
+	bbox	8 0 136 114
+	delay	8
+                  sound      data/sounds/hugpain1.wav 
+	frame	data/chars/HUGO/pain01.gif
+offset	50 131
+	delay	8
+	frame	data/chars/HUGO/pain02.gif
+offset	59 118
+	delay	40
+	frame	data/chars/HUGO/pain03.gif
+offset	50 131
+	delay	8
+	frame	data/chars/HUGO/pain02.gif
+offset	48 104	
+                  delay	8
+                  frame	data/chars/HUGO/pain01.gif
+
+anim fall
+	loop	0
+	delay	5
+	offset	70 110
+	frame	data/chars/HUGO/fall01.gif
+offset	86 111
+DELAY           65
+                 ATTACK         16 9 73 51 10 1
+	frame	data/chars/HUGO/fall02.gif
+offset	87 112
+DELAY             15
+                 ATTACK        0 0 0 0 0 0
+	frame	data/chars/HUGO/fall03.gif
+offset	82 91
+delay       5
+                  frame	data/chars/HUGO/fall05.gif
+offset	98 40
+DELAY         35
+                  frame	data/chars/HUGO/fall06.gif
+
+anim rise
+	loop	0                 
+	offset	90 43
+	delay	10
+        sound        data/sounds/hugorise.wav 
+	frame	data/chars/HUGO/rise01.gif
+offset	81 53
+	frame	data/chars/HUGO/rise02.gif
+offset	76 60
+	frame	data/chars/HUGO/rise03.gif
+offset	68 79
+	frame	data/chars/HUGO/rise04.gif
+offset	67 84
+	frame	data/chars/HUGO/rise05.gif
+offset	66 96
+	frame	data/chars/HUGO/rise06.gif
+
+  
+
+anim attack1                                   
+	loop	0
+	delay	7
+	offset	57 140
+	bbox	32 32 86 107
+        move    10
+        sound   data/sounds/megaton.wav
+	frame	data/chars/HUGO/atk1.gif
+offset	68 136
+        frame	data/chars/HUGO/atk2.gif
+offset	68 142
+        frame	data/chars/HUGO/atk3.gif
+offset	71 129
+        frame	data/chars/HUGO/atk4.gif
+offset	38 119
+        move    0
+        bbox    0 0 0 0
+        blast   25 30 114 91 15 0
+        frame	data/chars/HUGO/atk5.gif
+offset	38 115
+        frame	data/chars/HUGO/atk6.gif
+offset	18 112
+        frame	data/chars/HUGO/atk7.gif
+
+
+
+
+
+
+
+
+anim attack2
+jumpframe 1 4
+        range	0 100
+	loop	0                       
+	delay	8
+	offset	53 154
+        fastattack 1 
+	bbox	0 0 0 0
+        hitfx   data/sounds/hp.wav
+        sound   data/sounds/andospec.wav
+	frame	data/chars/HUGO/jump1.gif
+offset	71 157
+        frame	data/chars/HUGO/jump2.gif
+offset	98 159
+        frame	data/chars/HUGO/jump3.gif
+offset	88 147
+        attack  11 6 170 81 20 1
+        delay   35        
+        frame	data/chars/HUGO/jump4.gif
+        attack  0 0 0 0 0 0  
+offset	85 145
+        attack  11 6 170 81 20 1
+        delay   7
+        frame	data/chars/HUGO/jump5.gif
+        attack  0 0 0 0 0 0
+offset	85 138
+        attack  11 6 170 81 20 1
+        frame	data/chars/HUGO/jump6.gif
+        attack  0 0 0 0 0 0
+offset	71 141
+        attack  13 21 145 99 20 1
+        frame	data/chars/HUGO/jump7.gif
+offset	49 146
+        attack  0 0 0 0 0 0
+        frame	data/chars/HUGO/jump8.gif
+
+
+
+anim special                                   
+	loop	0
+	delay	5
+	offset	39 128
+	bbox	0 0 0 0 
+        sound   data/sounds/andospec.wav
+	frame	data/chars/HUGO/spec1.gif
+offset	39 129
+        frame	data/chars/HUGO/spec2.gif
+offset	38 120
+        frame	data/chars/HUGO/spec3.gif
+offset	38 136
+        frame	data/chars/HUGO/spec4.gif
+offset	81 137 
+        blast   11 3 126 126 15 0
+        frame	data/chars/HUGO/spec5.gif
+offset	68 137
+        frame	data/chars/HUGO/spec6.gif
+offset	69 136
+        frame	data/chars/HUGO/spec7.gif
+offset	69 135
+        frame	data/chars/HUGO/spec8.gif
+
+
+
+
+anim special2                                 
+	range	0 110
+	loop	0
+	delay	5
+        sound      data/sounds/hugorise.wav
+offset	41 142
+        frame	data/chars/HUGO/hit15.gif
+	bbox	47 15 64 125
+offset	40 153
+	frame	data/chars/HUGO/hit16.gif
+offset	35 157
+	frame	data/chars/HUGO/hit17.gif
+offset	34 158
+        frame	data/chars/HUGO/hit18.gif
+offset	34 150
+               	frame	data/chars/HUGO/hit19.gif
+offset	36 146
+               	frame	data/chars/HUGO/hit20.gif
+offset	40 132
+                  attack	90 16 60 65 15 1
+	frame	data/chars/HUGO/hit21.gif
+offset	38 126
+                   frame	data/chars/HUGO/hit22.gif
+offset	37 125
+                  attack	0 0 0 0 0 0 
+	frame	data/chars/HUGO/hit23.gif
+offset	38 126
+	frame	data/chars/HUGO/hit24.gif
+offset	38 124
+                  frame	data/chars/HUGO/hit25.gif
+offset	38 124
+                 	frame	data/chars/HUGO/hit26.gif
+offset	39 125
+                  frame	data/chars/HUGO/hit27.gif
+offset	41 138
+                  frame	data/chars/HUGO/hit28.gif
+
+
+
+
+
+
+
+
+

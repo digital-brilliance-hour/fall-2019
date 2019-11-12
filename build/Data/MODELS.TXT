@@ -9,21 +9,28 @@
 load	Flash		data/chars/misc/flash.txt
 
 # Players must also be loaded.
-load	Kula		data/chars/kula/kula.txt
-load	Max		data/chars/maxima/maxima.txt
-load	Mandy		data/chars/mary/mary.txt
-load	Mighty		data/chars/mighty/mighty.txt
+Load Ryan Data/Chars/ryan/ryan.txt
+Load Lazuli Data/Chars/lazuli/lazuli.txt
+Load Maki Data/Chars/maki/maki.txt
+Load Kim Data/Chars/kim/kim.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
 know	Meat		data/chars/misc/meat.txt
-know	1up		data/chars/misc/1up.txt
+know	Burger      data/chars/misc/hambur.txt
+know	mpack       data/chars/misc/mpack.txt
+know	1up		    data/chars/misc/1up.txt
 know	Money		data/chars/misc/money.txt
 know	Gold		data/chars/misc/gold.txt
 know	Time		data/chars/misc/time.txt
+know	rain1       data/chars/misc/rain/rain1.txt
+know	lightnin    data/chars/misc/rain/lightnin.txt
+know	rain2       data/chars/misc/rain/rain2.txt
+know	lightni2    data/chars/misc/rain/lightni2.txt
 
 # Obstacles (item containers)
 know	Box		data/chars/misc/box.txt
+know	Story_Box	data/chars/misc/box_entity.txt
 know	Crate		data/chars/misc/crate.txt
 know	Trash		data/chars/misc/trash.txt
 know	Table		data/chars/misc/table.txt
@@ -31,6 +38,9 @@ know	Chair		data/chars/misc/chair.txt
 know	Fence		data/chars/misc/fence.txt
 know	Drum		data/chars/misc/drum.txt
 know	Trolly		data/chars/misc/trolly.txt
+know	Tires	    data/chars/misc/tires.txt
+know	Phone       data/chars/misc/phone.txt
+know	Telephone   data/chars/misc/telephon.txt
 
 # Enemies
 know	K'		data/chars/k/k.txt
@@ -49,6 +59,17 @@ know	Robert		data/chars/robert/robert.txt
 know	Heavy		data/chars/heavy/heavy.txt
 know	K9999		data/chars/K9999/K9999.txt
 know	Rugal		data/chars/Rugal/Rugal.txt
+know    hibiki      data/chars/hibiki/hibiki.txt
+know    KING        data/chars/king/king.txt
+know    Hugo        data/chars/HUGO/hugo.txt
+know    juni        data/chars/juni/juni.txt
+know    juri        data/chars/juri/juri.txt
+know    Playa       data/chars/playa/playa.txt
+know    Carman      data/chars/carman/carman.txt
+know    Rick        data/chars/rick/rick.txt
+know    Quincy      data/chars/q/q.txt
+know    hanzo       data/chars/hanzo/hanzo.txt
+know	Freak		data/chars/freak/freak.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
@@ -62,10 +83,8 @@ know	Steamer		data/chars/misc/steamer.txt
 know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
-Load ryan Data/Chars/ryan/ryan.txt
-<<<<<<< HEAD
-Load Kaguya Data/Chars/Kaguya/Kaguya.txt
-=======
->>>>>>> lazuli
-Load lazuli Data/Chars/lazuli/lazuli.txt
-Load hibiki Data/Chars/hibiki/hibiki.txt
+know	dust	    data/chars/misc/dust.txt
+
+# Story entities
+load	Story	data/chars/misc/story/story.txt	
+know	Stop	data/chars/misc/story/stop.txt

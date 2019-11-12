@@ -1,0 +1,154 @@
+name	JUNI
+health	60
+speed	8
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/juni/1.gif
+iconpain     data/chars/juni/2.gif
+diesound data/sounds/fnjadie.wav
+gfxshadow 1
+
+remap	data/chars/juni/idle00.gif  data/chars/juni/map1.gif
+remap	data/chars/juni/idle00.gif  data/chars/juni/map2.gif
+remap	data/chars/juni/idle00.gif  data/chars/juni/map3.gif
+remap	data/chars/juni/idle00.gif  data/chars/juni/map4.gif
+remap	data/chars/juni/idle00.gif  data/chars/juni/map5.gif
+remap	data/chars/juni/idle00.gif  data/chars/juni/map6.gif
+
+
+
+
+
+anim idle
+	loop	1
+	offset	42 102
+	bbox	17 14 56 88
+	delay	10
+	frame         data/chars/juni/idle00.gif
+	frame         data/chars/juni/idle01.gif
+	frame         data/chars/juni/idle02.gif
+	frame         data/chars/juni/idle01.gif
+                  frame         data/chars/juni/idle00.gif
+
+anim walk
+	loop	1
+	offset	30 102
+	bbox	12 6 41 98 
+	delay	10
+	frame         data/chars/juni/wk00.gif
+                  frame         data/chars/juni/wk01.gif
+                  frame         data/chars/juni/wk02.gif
+                  frame         data/chars/juni/wk03.gif
+                  frame         data/chars/juni/wk04.gif
+             
+anim pain
+	loop	0
+	offset	46 97
+	bbox	14 10 61 84
+	sound       data/sounds/FEMALE.wav
+	delay	5
+	frame         data/chars/juni/pain1.gif
+offset	53 92
+                  bbox          6 7 77 82
+	delay	10
+	frame         data/chars/juni/pain2.gif
+offset	54 89
+DELAY     5
+	bbox          0 4 85 81	
+	frame         data/chars/juni/pain3.gif
+
+
+
+anim fall
+	loop	0
+	offset	59 90
+	delay	5
+	frame         data/chars/juni/fall1.gif
+offset	67 79
+DELAY           70
+                 ATTACK         10 8 60 29 10 1
+	frame         data/chars/juni/fall2.gif
+offset	68 89
+DELAY        15
+         ATTACK         0 0 0 0 0 0
+	frame         data/chars/juni/fall3.gif
+offset	70 30
+DELAY     35
+	frame         data/chars/juni/fall4.gif
+
+anim rise
+	loop	0
+	offset	70 30
+	delay	10
+BBOX  0 0 0 0 
+	frame         data/chars/juni/rise1.gif
+	frame         data/chars/juni/rise2.gif
+offset	70 54
+	frame         data/chars/juni/rise3.gif
+offset	70 78
+	frame         data/chars/juni/rise4.gif
+offset	46 78
+	frame         data/chars/juni/rise5.gif
+offset	22 126
+                  frame         data/chars/juni/rise6.gif
+offset	22 78
+	frame         data/chars/juni/rise7.gif
+	frame         data/chars/juni/rise8.gif
+	frame         data/chars/juni/rise9.gif
+
+
+
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	46 102
+	delay	5
+	bbox	33 11 52 97
+	frame         data/chars/juni/kick01.gif
+offset	22 102
+	frame         data/chars/juni/kick02.gif
+	attack          39 14 78 32 8
+                  bbox           19 16 38 82	
+	frame         data/chars/juni/kick03.gif
+offset	60 102
+                 bbox            35 15 47 86
+	frame         data/chars/juni/kick04.gif
+                  attack	0 0 0 0 0
+	frame         data/chars/juni/kick05.gif                    
+                  attack        70 22 65 30 8
+                  bbox           52 24 27 62
+	frame         data/chars/juni/kick06.gif
+	frame         data/chars/juni/kick07.gif
+                  attack         0 0 0 0 0
+	frame         data/chars/juni/kick08.gif
+	frame         data/chars/juni/kick09.gif
+offset	46 102
+	bbox	33 11 52 97
+	frame         data/chars/juni/kick01.gif
+offset	46 102
+	bbox	 6 12 46 89 
+                  frame         data/chars/juni/kick10.gif
+                  frame         data/chars/juni/kick11.gif
+offset	71 102
+	sound       data/sounds/femairk.wav
+                  attack	 58 15 90 73 10 1
+	bbox	25 13 40 62
+                  frame         data/chars/juni/kick12.gif
+offset	46 102
+	bbox	 6 12 46 89 
+                  frame         data/chars/juni/kick11.gif
+                  attack	 0 0 0 0 0 0
+                  frame         data/chars/juni/kick10.gif
+
+
+
+
+
+

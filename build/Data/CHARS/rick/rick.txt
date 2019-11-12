@@ -1,0 +1,292 @@
+name	rick
+health	103
+speed	16
+defence 10
+type	enemy
+dust	dust
+gfxshadow  1
+aggression 70
+#nodieblink    3
+#noname	1
+#nolife	1
+falldie	2
+diesound data/sounds/die3.wav
+projectilehit   enemy npc obstacle
+Icon	data/chars/rick/Icon.gif
+
+
+remap	data/chars/rick/idle01.gif data/chars/rick/map01.gif
+remap	data/chars/rick/idle01.gif data/chars/rick/map02.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	27 118
+	bbox	11 8 41 114
+	frame	data/chars/rick/idle01.gif
+	frame	data/chars/rick/idle02.gif
+	frame	data/chars/rick/idle03.gif
+	frame	data/chars/rick/idle04.gif
+	frame	data/chars/rick/idle05.gif
+	frame	data/chars/rick/idle06.gif
+	frame	data/chars/rick/idle07.gif
+	frame	data/chars/rick/idle08.gif
+	frame	data/chars/rick/idle09.gif
+	frame	data/chars/rick/idle10.gif
+	frame	data/chars/rick/idle11.gif
+		offset  27  129
+	frame	data/chars/rick/idle12.gif
+		offset  27  125
+	frame	data/chars/rick/idle13.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	36 116
+	bbox	13 1 53 124
+	frame	data/chars/rick/W01.gif
+	frame	data/chars/rick/W02.gif
+	frame	data/chars/rick/W03.gif
+	frame	data/chars/rick/W04.gif
+	frame	data/chars/rick/W05.gif
+	frame	data/chars/rick/W06.gif
+
+anim attack1
+	loop	0
+	delay	7
+	bbox	10 1 53 99
+	offset	38 102
+	frame	data/chars/rick/a101.gif
+	frame	data/chars/rick/a102.gif
+        frame	data/chars/rick/a103.gif
+		blast  65  17  66  46  10
+	frame	data/chars/rick/a104.gif
+        frame	data/chars/rick/a105.gif
+	frame	data/chars/rick/a106.gif
+        frame	data/chars/rick/a107.gif
+	frame	data/chars/rick/a108.gif
+		Attack1  0
+        frame	data/chars/rick/a109.gif
+	frame	data/chars/rick/a110.gif
+
+anim attack2
+	loop	0
+	delay	7
+	bbox	24 4 43 80
+	offset	38 83
+	frame	data/chars/rick/a201.gif
+	frame	data/chars/rick/a202.gif
+	frame	data/chars/rick/a203.gif
+		blast  69  21  55  53  15
+	frame	data/chars/rick/a204.gif
+	frame	data/chars/rick/a205.gif
+		Attack1  0
+	frame	data/chars/rick/a206.gif
+	frame	data/chars/rick/a207.gif
+	frame	data/chars/rick/a208.gif
+
+anim attack3
+	loop	0
+	delay	7
+	bbox	33 10 55 99
+	offset	62 109
+	frame	data/chars/rick/a301.gif
+	frame	data/chars/rick/a302.gif
+	frame	data/chars/rick/a303.gif
+		attack1  67  13  44  58  10
+	frame	data/chars/rick/a304.gif
+	frame	data/chars/rick/a305.gif
+	frame	data/chars/rick/a306.gif
+	frame	data/chars/rick/a307.gif
+		Attack1  0
+	frame	data/chars/rick/a308.gif
+	frame	data/chars/rick/a309.gif
+	frame	data/chars/rick/a310.gif
+		blast  33  17  94  32  10
+	frame	data/chars/rick/a311.gif
+	frame	data/chars/rick/a312.gif
+	frame	data/chars/rick/a313.gif
+	frame	data/chars/rick/a314.gif
+		Attack1  0
+	frame	data/chars/rick/a315.gif
+	frame	data/chars/rick/a316.gif
+		delay  7
+	frame	data/chars/rick/a317.gif
+
+
+anim pain
+	loop	0
+	offset	26 108
+	delay	10
+	bbox  9  3  46  109
+	frame	data/chars/rick/pain01.gif
+		offset  26  101
+	frame	data/chars/rick/pain02.gif
+		offset  26  108
+	frame	data/chars/rick/pain01.gif
+
+anim fall
+	loop	0
+	offset	56 107
+	delay	19
+	bbox	7 2 78 95
+	throwframe 3
+		Attack1  0
+	frame	data/chars/rick/fall01.gif
+	frame	data/chars/rick/fall01.gif
+	bbox	0 1 132 39
+		attack  0  0  0  0
+		offset  57  36
+	frame	data/chars/rick/fall02.gif
+
+
+anim fall9
+	loop	0
+	offset	54 30
+	delay	19
+	bbox	0 0 0 0 0
+	frame	data/chars/rick/fall02.gif
+
+anim rise
+	loop	0
+	offset	87 112
+	delay	10
+	frame	data/chars/rick/rise01.gif
+	frame	data/chars/rick/rise02.gif
+	frame	data/chars/rick/rise03.gif
+	frame	data/chars/rick/rise04.gif
+	frame	data/chars/rick/rise05.gif
+	frame	data/chars/rick/rise06.gif
+		offset  87  112
+	frame	data/chars/rick/rise07.gif
+
+
+
+anim burn
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/rick/burn1.gif
+	frame	data/chars/rick/burn2.gif
+	frame	data/chars/rick/burn1.gif
+	frame	data/chars/rick/burn2.gif
+	offset	55 29
+	frame	data/chars/rick/fall02.gif
+
+anim pain2
+	loop	0
+	offset	27 104
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Rick/painR01.gif
+		offset  38  100
+	frame	data/chars/Rick/painR02.gif
+
+anim pain3
+	loop	0
+	offset	27 104
+	delay	30
+	bbox  12  0  53  104
+	frame	data/chars/Rick/painB01.gif
+		offset  38  100
+	frame	data/chars/Rick/painB02.gif
+
+anim fall3
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  85  241  113  44
+	frame	data/chars/Rick/bburn.gif
+	frame	data/chars/Rick/burn2.gif
+	frame	data/chars/Rick/bburn.gif
+	frame	data/chars/Rick/burn2.gif
+	offset	56 28
+	frame	data/chars/Rick/fall02.gif
+
+
+anim shock
+	loop	0
+		offset  39  102
+		bbox  10  0  51  101
+	frame  data/chars/Rick/Pain02.gif
+	offset	82 120
+	delay	10
+		bbox  20  13  86  107
+	frame	data/chars/Rick/Shok1.gif
+	frame	data/chars/Rick/Shok2.gif
+		delay  10
+	frame  data/chars/Rick/Shok1.gif
+	frame  data/chars/Rick/Shok2.gif
+	offset	53 65
+		bbox  0
+	frame	data/chars/Rick/fall01.gif
+		offset  49  29
+	frame	data/chars/Rick/fall02.gif
+
+anim pain4
+	loop	0
+	offset	28 104
+	delay	30
+	bbox  8  5  52  101
+	frame	data/chars/Rick/pain01.gif
+		offset  28  100
+	frame	data/chars/Rick/pain02.gif
+		offset  28  104
+	frame	data/chars/Rick/pain01.gif
+
+anim fall2
+	loop	0
+	offset	130 280
+	delay	17
+		bbox  92  230  105  59
+	frame	data/chars/Rick/burn1.gif
+	frame	data/chars/Rick/burn2.gif
+	frame	data/chars/Rick/burn1.gif
+	frame	data/chars/Rick/burn2.gif
+	offset	58 29
+	frame	data/chars/Rick/fall02.gif
+
+anim  pain5
+	loop  0
+		offset  34  99
+		delay  8
+		move  10
+		movea  30
+	frame  data/chars/Rick/pain01.gif
+	frame  data/chars/Rick/pain02.gif
+	frame  data/chars/Rick/pain01.gif
+		offset  52  102
+		move  0
+	frame  data/chars/Rick/fall01.gif
+		movea  30
+		offset  68  33
+		bbox  6  2  130  42
+	frame  data/chars/Rick/fall02.gif
+		delay  4
+	frame  data/chars/Rick/fall02.gif
+		movea  -30
+	frame  data/chars/Rick/fall02.gif
+		delay  2
+	frame  data/chars/Rick/fall02.gif
+	frame  data/chars/Rick/fall02.gif
+	frame  data/chars/Rick/fall02.gif
+		movea  -20
+	frame  data/chars/Rick/fall02.gif
+	frame  data/chars/Rick/fall02.gif
+	frame  data/chars/Rick/fall02.gif
+	frame  data/chars/Rick/fall02.gif
+		movea  0
+		offset  55  29
+		bbox  6  6  135  34
+	frame  data/chars/Rick/fall02.gif
+
+
+anim fall5
+	loop	0
+	offset	53 29
+	delay	19
+	bbox	14 1 120 43
+		Attack1  0
+	frame	data/chars/Rick/fall02.gif
+

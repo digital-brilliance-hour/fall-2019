@@ -1,5 +1,10 @@
 #	music		[path] [loop]		# BOR file to play
-#	animation	[path] [x] [y]		# GIF animation to play
+#	animation	[path] [x] [y] [skip]		# GIF animation to play
 #	silence					# Stop music
 
-animation	data/scenes/howto.gif 0 0
+animation	data/scenes/howto/howto0.gif 0 0 1 0
+animation	data/scenes/howto/howto1.gif 0 0 1 0
+animation	data/scenes/howto/howto2.gif 0 0 1 0
+animation	data/scenes/howto/howto3.gif 0 0 1 0
+animation	data/scenes/howto/howto4.gif 0 0 1 0
+animation	data/scenes/howto/howto5.gif 0 0 1 0

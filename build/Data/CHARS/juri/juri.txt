@@ -1,0 +1,120 @@
+name	JURI
+health	70
+speed	8
+type	enemy
+shadow	4
+dust    dust
+icon	data/chars/juri/1.gif
+iconpain     data/chars/juri/2.gif
+diesound data/sounds/fnjadie.wav
+gfxshadow 1
+
+remap	data/chars/juri/idle00.gif  data/chars/juri/map1.gif
+remap	data/chars/juri/idle00.gif  data/chars/juri/map2.gif
+remap	data/chars/juri/idle00.gif  data/chars/juri/map3.gif
+remap	data/chars/juri/idle00.gif  data/chars/juri/map4.gif
+remap	data/chars/juri/idle00.gif  data/chars/juri/map5.gif
+remap	data/chars/juri/idle00.gif  data/chars/juri/map6.gif
+
+anim idle
+	loop	1
+	offset	33 103
+	bbox	5 8 49 101 
+	delay	10
+	frame         data/chars/juri/idle00.gif
+	frame         data/chars/juri/idle01.gif
+
+
+anim walk
+	loop	1
+	offset	28 107
+	bbox	13 11 50 98
+	delay	10
+	frame         data/chars/juri/wk00.gif
+                  frame         data/chars/juri/wk01.gif
+                  frame         data/chars/juri/wk02.gif
+                  frame         data/chars/juri/wk03.gif
+                  frame         data/chars/juri/wk04.gif
+                  frame         data/chars/juri/wk05.gif
+                  frame         data/chars/juri/wk06.gif
+
+anim pain
+	loop	0
+	offset	66 94
+	bbox	30 4 80 94
+	sound       data/sounds/FEMALE.wav
+	delay	5
+	frame         data/chars/juri/pain1.gif
+                  bbox          17 4 90 95
+                  frame         data/chars/juri/pain2.gif
+                  bbox          6 9 93 87
+	delay	10
+	frame         data/chars/juri/pain3.gif
+      
+
+anim fall
+	loop	0
+	offset	42 135
+	delay	5
+	frame         data/chars/juri/fall1.gif
+DELAY           70
+         ATTACK        9 65 48 29 10 1
+	frame         data/chars/juri/fall2.gif
+DELAY        15
+offset         76 113  
+         ATTACK        0 0 0 0 0 0
+	frame         data/chars/juri/fall3.gif
+DELAY     35
+	frame         data/chars/juri/fall4.gif
+
+anim rise
+	loop	0
+	offset	76 113
+	delay	10
+	frame         data/chars/juri/rise1.gif
+	frame         data/chars/juri/rise2.gif
+	frame         data/chars/juri/rise3.gif
+	frame         data/chars/juri/rise4.gif
+	frame         data/chars/juri/rise5.gif
+	frame         data/chars/juri/rise6.gif
+	frame         data/chars/juri/rise7.gif
+	frame         data/chars/juri/rise8.gif
+	frame         data/chars/juri/rise9.gif
+	
+
+
+
+
+
+anim attack1
+jumpframe 5 3
+	loop	0
+                  range        20 200   
+	offset	81 94
+	delay	5
+	bbox	58 7 62 93
+	frame         data/chars/juri/kick01.gif
+	frame         data/chars/juri/kick02.gif
+bbox         44 8 63 81 
+	frame         data/chars/juri/kick03.gif
+	bbox          52 15 67 82	
+	frame         data/chars/juri/kick04.gif
+                  bbox          65 12 55 78
+	frame         data/chars/juri/kick05.gif  
+                  bbox          0 0 0 0
+	sound       data/sounds/femairk.wav
+                  move        25  
+delay         20    
+                  attack        49 27 110 71 20 1             
+	frame         data/chars/juri/kick06.gif
+delay       5
+	frame         data/chars/juri/kick07.gif
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/juri/kick08.gif
+
+
+
+
+
+
+

@@ -1,12 +1,20 @@
-name	Meat
-health	100
+name	MEAT
+health	50
 type	item
 shadow	0
 icon	data/chars/misc/meaticon.gif
+gfxshadow 1
 
 anim idle
-	loop	0
-	delay	1000
-	offset	12 19
-	bbox	0 0 16 16
+	loop	1
+	delay	100
+	offset	23 23
+	bbox	0 0 46 25
 	frame	data/chars/misc/meat.gif
+        delay   20 
+	frame	data/chars/misc/meat2.gif
+
+
+
+
+

@@ -1,0 +1,395 @@
+name	Freak
+health	700
+speed	10
+type	enemy
+shadow	6
+running	20 3.5 2 1 0
+noquake 1
+dust    dust
+makeinv 4
+diesound data/sounds/alexdie.wav
+com     d f a freespecial
+icon	data/chars/freak/1.gif
+iconpain     data/chars/freak/2.gif
+aggression 1
+gfxshadow 1
+
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	54 104
+	bbox	24 11 63 97
+	frame	data/chars/freak/idle00.gif
+offset	54 105
+                  frame	data/chars/freak/idle01.gif
+offset	54 106
+                  frame	data/chars/freak/idle02.gif 
+offset	54 107
+                  frame	data/chars/freak/idle03.gif
+offset	54 107
+                  frame	data/chars/freak/idle04.gif
+offset	54 106
+                  frame	data/chars/freak/idle05.gif 
+offset	54 104
+                  frame	data/chars/freak/idle06.gif
+offset	54 103
+                  frame	data/chars/freak/idle07.gif
+offset	54 102
+                  frame	data/chars/freak/idle08.gif 
+offset	54 101
+                  frame	data/chars/freak/idle09.gif
+offset	54 102
+                  frame	data/chars/freak/idle10.gif
+offset	54 103
+                  frame	data/chars/freak/idle11.gif 
+
+anim walk
+	loop	1
+	delay	7
+	offset	51 110
+	bbox	24 12 59 105
+	frame	data/chars/freak/wk00.gif
+offset	55 106
+                  bbox	30 13 55 98
+                  frame	data/chars/freak/wk01.gif
+offset	61 105
+                  bbox          35 11 57 101     
+                 	frame	data/chars/freak/wk02.gif
+offset	60 105
+                  frame	data/chars/freak/wk03.gif
+offset         51 108
+                  bbox          24 10 55 104
+	frame	data/chars/freak/wk04.gif
+offset	40 111
+                  bbox	15 11 55 101
+                  frame	data/chars/freak/wk05.gif
+offset         34 112 
+                  bbox          9 13 54 97  
+	frame	data/chars/freak/wk06.gif
+offset	44 110
+                  bbox	11 12 63 98
+                  frame	data/chars/freak/wk07.gif
+offset	54 107
+                  bbox	21 9 64 97
+                  frame	data/chars/freak/wk08.gif
+offset	58 104      
+                 	frame	data/chars/freak/wk09.gif
+offset	49 105
+                  bbox	18 11 60 96
+                  frame	data/chars/freak/wk10.gif
+offset         37 108
+                  bbox          8 11 58 107
+	frame	data/chars/freak/wk11.gif
+offset	35 112
+                  frame	data/chars/freak/wk12.gif
+offset         42 112
+                  bbox	15 11 57 105
+	frame	data/chars/freak/wk13.gif
+
+anim attack1
+                  range	10 90
+	loop	0
+	delay	5
+	offset	56 110
+	bbox	41 14 55 99
+	frame	data/chars/freak/1atk00.gif
+offset         58 120
+                  attack        66 1 88 58 15    
+	frame	data/chars/freak/1atk01.gif
+offset        58 115
+                  attack         0 0 0 0 0    
+                  frame	data/chars/freak/1atk02.gif
+offset         57 116 
+                  frame	data/chars/freak/1atk03.gif
+                  delay	5
+offset	55 137
+	bbox	20 24 51 117 
+	frame	data/chars/freak/2atk00.gif
+offset	55 142  
+                  frame	data/chars/freak/2atk01.gif
+offset	55 135 
+                  bbox          60 28 36 104  
+                  frame	data/chars/freak/2atk02.gif
+offset	 54 131
+                  bbox          60 38 49 91
+                  frame	data/chars/freak/2atk03.gif
+offset	 54 104
+                  bbox          46 19 67 79
+                  attack        86 8 97 35 15
+                  frame	data/chars/freak/2atk04.gif
+offset	 54 96
+                  bbox         50 10 63 84
+                  frame	data/chars/freak/2atk05.gif
+offset	54 89
+                  bbox          52 3 73 79
+                  frame	data/chars/freak/2atk06.gif
+offset	 52 90
+                   frame	data/chars/freak/2atk07.gif
+offset	 51 96
+                   bbox         52 12 62 88
+                   frame	data/chars/freak/2atk08.gif
+offset	 51 102
+                   bbox         46 12 43 88 
+                   frame	data/chars/freak/2atk09.gif
+offset	 52 105
+                   frame	data/chars/freak/2atk10.gif
+offset	 54 106
+                   frame	data/chars/freak/2atk11.gif
+
+anim attack2
+                  range	10 90
+	loop	0
+              	offset	43 114
+	bbox	19 6 55 107
+                  delay          5
+	sound        data/sounds/fast.wav
+	hitfx           data/sounds/hk.wav
+	frame	data/chars/freak/3atk00.gif
+offset	21 119
+ 	frame	data/chars/freak/3atk01.gif
+offset	27 116
+                  bbox          0 0 0 0
+	frame	data/chars/freak/3atk02.gif
+offset	47 113
+	frame	data/chars/freak/3atk03.gif
+offset	44 114
+                  frame	data/chars/freak/3atk04.gif
+offset	58 105
+                	frame	data/chars/freak/3atk05.gif
+offset	79 95
+                  attack        87 13 134 24 15 1
+ 	frame	data/chars/freak/3atk06.gif
+offset	 78 97
+                  attack        0 0 0 0 0 0
+	frame	data/chars/freak/3atk07.gif
+offset	79 95
+                  delay         4
+                 	frame	data/chars/freak/3atk06.gif
+offset	58 105
+                	frame	data/chars/freak/3atk05.gif
+offset	44 114
+                  frame	data/chars/freak/3atk04.gif
+offset	47 113
+	frame	data/chars/freak/3atk03.gif
+offset	27 116
+	frame	data/chars/freak/3atk02.gif
+offset	21 119
+ 	frame	data/chars/freak/3atk01.gif
+offset	55 137
+	frame	data/chars/freak/3atk00.gif
+
+anim attack3
+jumpframe 3 1
+                  range	10 120
+	loop	0
+	delay	5
+	offset	43 71
+	fastattack 1
+                  bbox          45 6 71 61
+	sound       data/sounds/alexratk.wav
+	frame	data/chars/freak/ratk00.gif
+offset	44 80
+	bbox         60 6 53 73
+                  frame	data/chars/freak/ratk01.gif
+offset	38 98
+	bbox         81 12 50 90
+	frame	data/chars/freak/ratk02.gif
+offset	-11 139
+                  bbox          0 0 0 0
+	move        10
+                  attack        49 0 74 100 20 1
+              	frame	data/chars/freak/ratk03.gif
+offset	-29 143
+                  attack        0 0 0 0 0 0    
+	frame	data/chars/freak/ratk04.gif
+offset	-41 128
+	frame	data/chars/freak/ratk05.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim grab
+	loop	0
+                  delay        20			
+	offset	35 114
+	bbox	0 11 47 109
+                  frame	data/chars/freak/grab.gif
+                  range	10 90  
+	loop	0
+	delay         4
+offset	63 114
+	sound       data/sounds/alexspec.wav
+	hitfx           data/sounds/hpunch.wav
+	frame	data/chars/freak/spec00.gif
+offset        59 110      
+        
+                	frame	data/chars/freak/spec01.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset	40 102
+                  attack        50 10 61 40 10 
+                  frame	data/chars/freak/spec03.gif
+offset        40 94
+               	frame	data/chars/freak/spec04.gif
+offset        45 89
+                  attack        0 0 0 0 0 0 
+                  frame	data/chars/freak/spec05.gif
+offset        40 94
+                	frame	data/chars/freak/spec04.gif
+offset	40 102
+                  frame	data/chars/freak/spec03.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset        59 110      
+
+                	frame	data/chars/freak/spec01.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset	40 102
+                  attack        50 10 61 40 10 
+                  frame	data/chars/freak/spec03.gif
+offset        40 94
+               	frame	data/chars/freak/spec04.gif
+offset        45 89
+                  attack        0 0 0 0 0 0 
+                  frame	data/chars/freak/spec05.gif
+offset        40 94
+                	frame	data/chars/freak/spec04.gif
+offset	40 102
+                  frame	data/chars/freak/spec03.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset        59 110
+                	frame	data/chars/freak/spec01.gif
+offset	63 114
+                  frame	data/chars/freak/spec00.gif
+offset        59 110      
+
+                	frame	data/chars/freak/spec01.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset	40 102
+                  attack        50 10 61 40 10 
+                  frame	data/chars/freak/spec03.gif
+offset        40 94
+               	frame	data/chars/freak/spec04.gif
+offset        45 89
+                  attack        0 0 0 0 0 0 
+                  frame	data/chars/freak/spec05.gif
+offset        40 94
+                	frame	data/chars/freak/spec04.gif
+offset	40 102
+                  frame	data/chars/freak/spec03.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset        59 110
+                	frame	data/chars/freak/spec01.gif
+offset	63 114
+                  frame	data/chars/freak/spec00.gif
+offset        59 110      
+
+                	frame	data/chars/freak/spec01.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset	40 102
+                  attack        50 10 61 40 10 1
+                  frame	data/chars/freak/spec03.gif
+offset        40 94
+               	frame	data/chars/freak/spec04.gif
+offset        45 89
+                  attack        0 0 0 0 0 0 
+                  frame	data/chars/freak/spec05.gif
+offset        40 94
+                	frame	data/chars/freak/spec04.gif
+offset	40 102
+                  frame	data/chars/freak/spec03.gif
+offset	50 106
+                 	frame	data/chars/freak/spec02.gif
+offset        59 110
+                	frame	data/chars/freak/spec01.gif
+offset	63 114
+                  frame	data/chars/freak/spec00.gif
+
+
+
+
+
+anim pain
+	loop	0
+	sound       data/sounds/ALEXPAIN.wav
+	delay	10
+	offset	50 105
+	bbox	12 9 80 102
+	frame	data/chars/freak/pain00.gif
+offset	52 103
+                  bbox         10 8 87 98  
+	frame	data/chars/freak/pain01.gif
+offset	48 105
+                  delay        18
+                  bbox          2 13 90 92
+	frame	data/chars/freak/pain02.gif
+offset	52 103
+                  bbox         10 8 87 98   
+	frame	data/chars/freak/pain01.gif
+offset	50 105  
+                  bbox          12 9 80 102      
+	frame	data/chars/freak/pain00.gif
+
+anim fall
+	loop	0
+	delay        5
+                  bbox          0 0 0 0
+offset	51 110
+                  frame	data/chars/freak/fall01.gif
+offset	80 97
+DELAY        65
+                 ATTACK         4 17 69 41 10 1
+                  frame	data/chars/freak/fall02.gif
+offset        72 124
+DELAY    15
+                  frame	data/chars/freak/fall03.gif
+offset	67 124
+delay           5
+                 ATTACK         0 0 0 0 0 0
+                  frame	data/chars/freak/fall05.gif
+offset	96 33
+                  delay        35
+                  frame	data/chars/freak/fall07.gif
+
+anim rise
+	loop	0
+	offset	71 31
+	delay         7
+                  bbox         0 0 0 0  
+	frame	data/chars/freak/rise00.gif
+offset	68 60
+	frame	data/chars/freak/rise01.gif
+offset	54 73
+	frame	data/chars/freak/rise02.gif
+offset	45 94
+	frame	data/chars/freak/rise03.gif
+
+
+
+
+
+
+
+
+
+
+

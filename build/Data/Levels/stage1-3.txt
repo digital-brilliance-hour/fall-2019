@@ -6,15 +6,72 @@ panel		data/bgs/stage1-3/panel.png none none
 
 order	a
 
+spawn1 40 40 300
 
-wall    1259 237 -65 80 99 252 75 135
+wall    1259 237 -65 80 99 252 75 245
 
 #---------------------
+wait 0
 
-spawn	Angel
-coords	380 160
-at	800
+group 2 2
+at 0
 
+spawn Freak
+alias Rollo
+health 200
+boss 1
+coords	380 200
+at	750
+
+spawn Hanzo
+alias Jun
+health 15
+speed 4
+aggression 0
+coords	-30 230
+at	750
+
+spawn Juri
+alias Sheeba
+health 15
+agression 0
+speed 4
+map	1
+coords	-30 230
+at	750
+
+spawn Playa
+alias Thomas
+health 20
+agression 0
+speed 4
+coords	-30 230
+at	750
+
+spawn Hanzo
+alias Runtaro
+health 10
+agression 0
+speed 4
+coords	-30 230
+at	750
+
+spawn Juri
+alias Xeena
+health 20
+agression 0
+speed 4
+map	1
+coords	-30 230
+at	750
+
+spawn Playa
+alias Chozo
+health 10
+agression 0
+speed 4
+coords	-30 230
+at	750
 
 wait
 at	1360

@@ -1,12 +1,16 @@
-name	1up
+name	1UP
 health	0
 type	item
 shadow	0
-icon	data/chars/misc/cakeicon.gif
+secret rock
+icon	data/chars/misc/1upicon.gif
+gfxshadow 1
 
 anim idle
-	loop	0
-	delay	1000
-	offset	11 18
+	loop	1
+	delay	100
+	offset	8 10
 	bbox	0 0 22 18
-	frame	data/chars/misc/cake.gif
+	frame	data/chars/misc/1UP.gif
+	delay	20
+	frame	data/chars/misc/1UP2.gif

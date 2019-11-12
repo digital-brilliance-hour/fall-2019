@@ -8,7 +8,48 @@
 #	scene	[filename]	Show a cut-scene
 #
 
+#-----------Timer, Lifebar, MPbar.
 
+#timeloc	    147	4 16 15	1
+lbarsize 100 5 1 1
+mpbarsize   100	3 1
+rush 1 2 HITS 5 4 MAX 5 4   
+p1rush 7 216 37 208 75 216 101 208
+p2rush 186 216 216 208 254 216 280 208
+loadingbg2 0 
+hiscorebg 1
+completebg 1
+
+#-----------Player 1, Enemy 1.
+
+p1life	    22   15
+p1mp        31   228 
+p1icon	    3    1
+mp1icon     3    223   126   15
+p1lifex     0    500     
+p1lifen     129  11
+p1score     24   3 
+p1namej     24 3 54 3 54 3 54 3 54 3
+
+e1name      13   27
+e1life	    20   37 
+e1icon      3    26
+
+#-----------Player 2, Enemy 2.
+
+
+p2life	    191	 15
+p2mp        210  228
+p2icon	    172	 1
+mp2icon     182  223   126   15
+p2lifex     0    500   
+p2lifen     298  11
+p2score     193  3 
+p2namej     193 3 223 3 193 3 223 3 223 3   
+
+e2icon      172	 26
+e2name      182  27
+e2life      189  37
 
 set	Grouping
 

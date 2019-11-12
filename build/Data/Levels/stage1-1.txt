@@ -15,15 +15,78 @@ wall    23 237 5 -63 99 35 85 245
 #wall    5 212 5 -48 99 64 35 245
 
 #---------------------
+#spawn Story
+#alias sampledialog
+#at 0
+
+spawn	Hanzo
+coords	390 160
+health 20
+at	10
+
+spawn	Playa
+alias	Ricardo
+health	30
+coords	390 220
+at	15
+
+wait
+at 400
+
+spawn Robert
+coords	390 160
+health 60
+at	550
+
+spawn Playa
+coords	390 100
+health 20
+at	550
+
+spawn Playa
+coords	390 220
+health 30
+at	550
+
+wait
+at      950
 
 spawn	Angel
-coords	280 190
-at	800
+health 30
+coords	380 100
+at	1200
 
-spawn Mrbig
-coords	180 190
-at	2080
+spawn   Juri
+health 30
+agression 0
+speed 4
+coords	380 190
+at	1200
 
+spawn   Juni
+health 30
+agression 0
+speed 4
+coords	380 200
+at	1200
+
+spawn yamazaki
+health 60
+agression 0
+speed 6
+coords	380 160
+at	1200
+
+wait
+at      1600
+
+group   3 3
+at 1600
+
+spawn Carman
+alias Boris
+coords	380 190
+at	1980
 
 wait
 at	2460
