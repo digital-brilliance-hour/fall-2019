@@ -77,6 +77,8 @@ know    disbeast    data/chars/disbeast/disbeast.txt
 know    black       data/chars/black/black.txt
 know    terry		data/chars/terry/terry.txt
 know	sodom       data/chars/sodom/sodom.txt
+know	Ripper		data/chars/ripper/ripper.txt
+know    Andy        data/chars/Andy/Andy.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
