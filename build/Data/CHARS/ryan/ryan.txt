@@ -1,10 +1,16 @@
 name ryan
 type player
 health  100
-gfxshadow	1
+gfxshadow 1
 speed   12
 running 18 4 2 1 0
 atchain 1 1 2 3 4
+noquake 1
+makeinv 4
+holdblock 1
+icon	data/chars/ryan/ryan-lifebar.png
+diesound data/sounds/kimdies.wav
+gfxshadow 1
 
 palette     data/chars/ryan/ryan.act
 

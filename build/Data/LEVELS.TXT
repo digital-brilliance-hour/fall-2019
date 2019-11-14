@@ -51,30 +51,9 @@ e2icon      172	 26
 e2name      182  27
 e2life      189  37
 
-set	Grouping
-
-file	data/levels/example1.txt
-next
-file	data/levels/holes.txt
-next
-scene	data/scenes/ending.txt
-
-
-set	water_(3_levels)
-file	data/levels/water.txt
-file	data/levels/water2.txt
-file	data/levels/water3.txt
-
-set	modes_(2_levels)
-file	data/levels/neon.txt
-file	data/levels/screen.txt
-
-set	mirror_(1_level)
-file	data/levels/mirror.txt
-
 set	Easy_Mode
 z 170 232 170
-file 	data/levels/stage2-2.txt
+#file 	data/levels/stage2-2.txt
 file	data/levels/stage1-1.txt
 file	data/levels/stage1-2.txt
 file	data/levels/stage1-3.txt

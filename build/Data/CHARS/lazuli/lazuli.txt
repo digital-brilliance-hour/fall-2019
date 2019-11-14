@@ -5,13 +5,24 @@ gfxshadow	1
 speed   10
 running 18 4 1 1
 atchain 1 1 2 3 4
+noquake 1
+makeinv 4
+holdblock 1
+gfxshadow 1
+
+diesound data/sounds/makidies.wav
+
+icon	data/chars/lazuli/lazuli-lifebar.png
+iconpain     data/chars/lazuli/lazuli-hurtlifebar.png
+
+
 
 
 
 
 
 anim	attack1
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	2
 	offset	85 112
@@ -38,7 +49,7 @@ anim	attack2
 	bbox	81 19 43 79
 	offset	82 115
 	delay	7
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	frame	data/chars/lazuli/attack2-1.png
 	bbox	70 8 43 79
@@ -58,7 +69,7 @@ anim	attack2
 anim	attack3
 	bbox	63 32 52 73
 	offset	73 122
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	5
 	frame	data/chars/lazuli/attack3-1.png
@@ -78,7 +89,7 @@ anim	attack3
 anim	attack4
 	bbox	53 1 37 86
 	offset	107 111
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	7
 	frame	data/chars/lazuli/attack4-1.png
@@ -99,7 +110,7 @@ anim	attack4
 		
 anim	chargeattack
 	offset	68 134
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	6
 	frame	data/chars/lazuli/chargeattack-1.png
@@ -114,7 +125,7 @@ anim	chargeattack
 	frame	data/chars/lazuli/chargeattack-5.png
 		
 anim	fall
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	7
 	offset	46 101
@@ -138,8 +149,14 @@ anim	fall
 	offset	67 107
 	frame	data/chars/lazuli/fall-8.png
 		
+anim	get
+	drawmethod	scale 0.87 0.87
+	drawmethod	flipx 1
+	offset	51 106
+	frame	data/chars/lazuli/rise-3.png
+		
 anim	grab
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	bbox	29 38 35 83
 	offset	47 133
@@ -149,7 +166,7 @@ anim	grab
 	frame	data/chars/lazuli/grab-2.png
 		
 anim	idle
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	loop	1
 	delay	12
@@ -167,7 +184,7 @@ anim	idle
 	frame	data/chars/lazuli/idle-4.png
 		
 anim	jump
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	2
 	bbox	19 59 40 74
@@ -181,14 +198,8 @@ anim	jump
 	frame	data/chars/lazuli/jump-6.png
 	frame	data/chars/lazuli/jump-7.png
 		
-anim	get
-	drawmethod	scale 0.95 0.95
-	drawmethod	flipx 1
-	offset	51 106
-	frame	data/chars/lazuli/rise-3.png
-		
 anim	pain
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	18
 	offset	36 103
@@ -206,7 +217,7 @@ anim	pain
 	frame	data/chars/lazuli/faint-4.png
 		
 anim	rise
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	7
 	offset	52 98
@@ -227,7 +238,7 @@ anim	rise
 		
 anim	run
 	offset	46 103
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	frame	data/chars/lazuli/run-1.png
 	offset	46 98
@@ -235,7 +246,7 @@ anim	run
 		
 anim	runattack
 	offset	60 86
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	frame	data/chars/lazuli/runattack-1.png
 	frame	data/chars/lazuli/runattack-2.png
@@ -244,7 +255,7 @@ anim	runattack
 		
 anim	special
 	offset	37 117
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	frame	data/chars/lazuli/special-1.png
 	frame	data/chars/lazuli/special-2.png
@@ -271,7 +282,7 @@ anim	special
 	frame	data/chars/lazuli/special-5.png
 		
 anim	throw
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	bbox	20 18 55 97
 	offset	50 133
 	frame	data/chars/lazuli/throw-1.png
@@ -285,7 +296,7 @@ anim	throw
 	frame	data/chars/lazuli/throw-4.png
 		
 anim	walk
-	drawmethod	scale 0.95 0.95
+	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	delay	10
 	loop	1
