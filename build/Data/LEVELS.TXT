@@ -65,3 +65,7 @@ file data/levels/stage3-1.txt
 
 set Stage_3_final
 file data/levels/stage3-final.txt
+
+
+set Stage_2
+file data/levels/stage2-2.txt
