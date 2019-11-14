@@ -12,10 +12,20 @@ spawn1 104 24 300
 
 
 #---------------------
+spawn Rugal
+coords 160 170
+health 10
+at     17
 
-spawn	Angel
+spawn  Sodom
+coords 130 170
+health 20
+at     80
+
+spawn  Quincy
+alias  ???
 coords	380 160
-at	800
+at      170
 
 
 wait
