@@ -11,7 +11,7 @@ load	Flash		data/chars/misc/flash.txt
 # Players must also be loaded.
 Load Ryan Data/Chars/ryan/ryan.txt
 Load Lazuli Data/Chars/lazuli/lazuli.txt
-Load Maki Data/Chars/maki/maki.txt
+Load Sakura Data/Chars/maki/maki.txt
 Load Royce Data/Chars/kim/kim.txt
 
 # Items and other objects can be loaded when needed.

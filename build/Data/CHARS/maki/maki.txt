@@ -1,4 +1,4 @@
-name	MAKI
+name	Sakura
 health	100
 speed	13
 type	player

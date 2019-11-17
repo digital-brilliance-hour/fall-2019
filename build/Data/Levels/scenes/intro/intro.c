@@ -2,5 +2,5 @@
 
 void main()
 {
-		scrollPicture("back2",0.05,"intro_text.gif",266);
+		scrollPicture("back2",0.05,"intro-storytext.png",480);
 }

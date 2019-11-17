@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/memoryloss-story.bor
 
 background	data/bgs/intros/intro-background1.png
 bglayer		data/bgs/intros/intro-background1.png 0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0
