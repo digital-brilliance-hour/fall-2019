@@ -10,10 +10,11 @@ order	a
 
 
 #---------------------
-
-spawn	Angel
-coords	380 160
-at	800
+spawn   geese
+coords  350 160
+at      35
+health  400
+aggression 6
 
 
 wait
