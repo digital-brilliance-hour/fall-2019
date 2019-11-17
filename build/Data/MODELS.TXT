@@ -12,7 +12,7 @@ load	Flash		data/chars/misc/flash.txt
 Load Ryan Data/Chars/ryan/ryan.txt
 Load Lazuli Data/Chars/lazuli/lazuli.txt
 Load Maki Data/Chars/maki/maki.txt
-Load Kim Data/Chars/kim/kim.txt
+Load Royce Data/Chars/kim/kim.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
@@ -67,6 +67,7 @@ know    juri        data/chars/juri/juri.txt
 know    Playa       data/chars/playa/playa.txt
 know    Carman      data/chars/carman/carman.txt
 know    Rick        data/chars/rick/rick.txt
+know	Ryuji		data/chars/ryuji/ryuji.txt
 know    Quincy      data/chars/q/q.txt
 know    hanzo       data/chars/hanzo/hanzo.txt
 know	Freak		data/chars/freak/freak.txt

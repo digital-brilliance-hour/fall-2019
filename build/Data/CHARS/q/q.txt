@@ -1,4 +1,4 @@
-name	Q
+name	Quincy
 health	2500
 speed	12
 type	enemy

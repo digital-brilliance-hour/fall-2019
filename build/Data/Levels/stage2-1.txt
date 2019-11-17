@@ -6,6 +6,10 @@ panel		data/bgs/stage2-1/panel.png none none
 
 order	a
 
+#wall    23 237 5 -63 119 55 85 245
+
+wall    1129 247 -65 80 129 292 75 245
+
 spawn1 104 24 300
 
 
@@ -14,9 +18,9 @@ spawn1 104 24 300
 #---------------------
 
 spawn	Angel
-coords	380 160
-at	800
+coords	380 185
+at 240
 
 
 wait
-at	3060
+at 924

@@ -13,35 +13,35 @@ order	a
 
 #spawn   ripper
 #health  10
-#coords  330 180
+#coords  330 200
 #at      20
 
 spawn   king
 health  30
-coords  330 180
+coords  330 200
 at      20
 
 spawn   playa
 health  10
-coords  330 180
+coords  330 200
 at      20
 
-spawn Terry
+spawn Hibiki
 health 20
 coords 500 200
 at     30
 
 spawn	Angel
 health  10
-coords	380 160
+coords	380 200
 at      450
 
 
 wait
 at	900
 
-spawn Andy
-coords  390 100
+spawn K9999
+coords  390 200
 health  30
 at      550
 
@@ -54,7 +54,7 @@ wait
 at      950
 
 spawn Rugal
-coords  380 100
+coords  380 200
 health  30
 at      1200
 
@@ -63,7 +63,7 @@ coords  200 200
 health  50
 at      1200
 
-spawn terry
+spawn hibiki
 coords  380 230
 health  20
 at      1200

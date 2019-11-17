@@ -1,0 +1,446 @@
+name	RYUJI
+health	1200
+speed	15
+type	enemy
+shadow	5
+dust    dust
+diesound data/sounds/RYUJIDIE.wav
+icon	data/chars/ryuji/1.gif
+iconpain     data/chars/ryuji/2.gif
+aggression 2
+gfxshadow 1
+
+remap	data/chars/ryuji/idle00.gif data/chars/ryuji/map1.gif
+
+anim idle
+	loop	1
+	delay	7
+	offset	29 120
+	bbox	0 13 50 110
+	frame	data/chars/ryuji/idle00.gif
+offset	29 120
+                  frame	data/chars/ryuji/idle01.gif
+offset	29 120
+                  frame	data/chars/ryuji/idle02.gif
+offset	28 120
+                  frame	data/chars/ryuji/idle03.gif
+offset	28 121
+                  frame	data/chars/ryuji/idle04.gif
+offset	28 121
+                  frame	data/chars/ryuji/idle05.gif	
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	24 121
+	bbox	4 16 37 107
+	frame	data/chars/ryuji/wk01.gif
+offset	31 120
+	bbox	10 14 39 110
+	frame	data/chars/ryuji/wk02.gif
+offset	34 119
+	bbox	18 15 32 105
+	frame	data/chars/ryuji/wk03.gif
+offset	38 120
+	bbox	19 16 38 104
+	frame	data/chars/ryuji/wk04.gif
+offset	31 121
+	bbox	10 17 36 104
+	frame	data/chars/ryuji/wk05.gif
+offset	24 122
+	bbox	3 15 37 97
+	frame	data/chars/ryuji/wk06.gif
+offset	26 121
+	bbox	0 15 42 105
+	frame	data/chars/ryuji/wk07.gif
+offset	27 120
+	bbox	1 15 44 104
+	frame	data/chars/ryuji/wk08.gif
+offset	30 118
+	bbox	4 16 52 96
+                  frame 	data/chars/ryuji/wk09.gif
+offset	32 119
+	bbox	6 15 47 97
+                  frame	data/chars/ryuji/wk10.gif
+offset	28 120
+	bbox	2 15 44 101
+                  frame	data/chars/ryuji/wk11.gif
+offset	25 122
+	bbox	3 15 44 107
+                  frame	data/chars/ryuji/wk12.gif
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	bbox	9 14 45 103
+	offset	22 118
+	frame	data/chars/ryuji/1atk00.gif
+offset	23 120
+	bbox	16 14 32 106
+                  attack        28 16 74 20 15
+	frame	data/chars/ryuji/1atk01.gif
+offset	23 120
+	frame	data/chars/ryuji/1atk02.gif
+offset	22 118
+	frame	data/chars/ryuji/1atk03.gif
+offset	24 120
+	attack       0 0 0 0 0
+                  BBOX       4 14 47 108
+	frame	data/chars/ryuji/1atk04.gif
+offset	16 119
+	bbox	5 12 35 102
+	frame	data/chars/ryuji/2atk00.gif
+	bbox	2 11 51 99
+offset	-2 114
+	frame	data/chars/ryuji/2atk01.gif
+	bbox	17 12 41 97
+                  ATTACK     52 38 62 58 15     
+offset	21 117
+	frame	data/chars/ryuji/2atk02.gif
+offset	12 117
+                  bbox          6 13 44 88
+                  attack        0 0 0 0 0
+	frame	data/chars/ryuji/2atk03.gif
+offset	3 117
+                   bbox         1 14 36 101
+	frame	data/chars/ryuji/2atk04.gif
+offset	19 118
+	bbox	6 12 71 97
+	frame	data/chars/ryuji/3atk00.gif
+offset	22 113
+	bbox	7 11 46 51
+                  attack        45 0 82 102 15
+	frame	data/chars/ryuji/3atk01.gif
+offset	16 112
+	frame	data/chars/ryuji/3atk02.gif
+offset	13 116
+	attack        0 0 0 0 0	
+	frame	data/chars/ryuji/3atk03.gif
+
+
+
+anim attack2
+                  range	10 90
+	loop	0
+                  delay          5
+	sound        data/sounds/fast.wav
+Offset	45 107
+	bbox	27 8 44 100
+	frame	data/chars/ryuji/4atk00.gif
+offset	53 115
+                  bbox          13 13 56 96 
+	frame	data/chars/ryuji/4atk01.gif
+offset	104 110
+                  bbox         0 0 0 0
+                  attack        0 0 187 116 15 1
+                  frame	data/chars/ryuji/4atk02.gif
+offset	90 110
+	bbox        	41 13 57 101
+                  attack        0 0 0 0 0 0
+	frame	data/chars/ryuji/4atk03.gif
+offset	80 112
+                  bbox         28 12 66 106
+                	frame	data/chars/ryuji/4atk04.gif
+offset	48 117
+                  bbox          8 13 62 106 
+	frame	data/chars/ryuji/4atk05.gif
+offset	26 120
+	bbox	2 12 52 111
+	frame	data/chars/ryuji/4atk06.gif
+offset	25 120
+	frame	data/chars/ryuji/4atk07.gif
+
+
+
+
+
+
+
+anim grab
+                  range       0 50
+	loop	0
+	delay	6
+	bbox	36 2 71 55
+                  sound       data/sounds/RYUJIGRA.wav
+offset	24 85
+	bbox	0 0 0 0
+	frame	data/chars/ryuji/grab00.gif
+offset	49 97
+	frame	data/chars/ryuji/grab01.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15 1  
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	40 102
+                 	frame	data/chars/ryuji/grab05.gif
+offset	37 104
+                  frame	data/chars/ryuji/grab06.gif
+offset        34 117
+	attack       
+                  frame	data/chars/ryuji/grab07.gif
+offset	26 120
+	frame	data/chars/ryuji/grab08.gif
+offset	25 120
+	frame	data/chars/ryuji/grab09.gif
+
+
+
+
+
+
+
+anim attack3
+                  range       10 80
+	loop	0
+	delay        5
+                  bbox         4 11 54 103
+	sound       data/sounds/ryujispe.wav
+	hitfx           data/sounds/fast.wav
+offset       25 111
+                  bbox          0 0 0 0 
+	frame	data/chars/ryuji/cr00.gif
+offset        25 110
+                	frame	data/chars/ryuji/cr01.gif
+offset       25 108
+                	frame	data/chars/ryuji/cr02.gif
+offset        25 109
+                	frame	data/chars/ryuji/cr03.gif
+offset        33 107
+                  attack        0 0 83 113 10
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack        0 0 0 0 0 
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack        0 0 0 0 0
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack       0 0 0 0 0 
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10   
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack        0 0 0 0 0
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack        0 0 0 0 0
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack       0 0 0 0 0 
+                	frame	data/chars/ryuji/cr05.gif
+offset        33 107
+                  attack        0 0 83 113 10   
+                	frame	data/chars/ryuji/cr04.gif
+offset        34 108
+                  attack        0 0 0 0 0
+                	frame	data/chars/ryuji/cr05.gif
+MOVE   10
+offset        46 119
+	frame	data/chars/ryuji/spec00.gif
+offset        56 120
+                	frame	data/chars/ryuji/spec01.gif
+offset       45 109
+                	frame	data/chars/ryuji/spec02.gif
+offset        24 95
+                	frame	data/chars/ryuji/spec03.gif
+offset        28 102
+                  attack      38 0 108 79 30 1  
+                	frame	data/chars/ryuji/spec04.gif
+offset        27 97
+                	frame	data/chars/ryuji/spec05.gif
+offset	24 85
+	frame	data/chars/ryuji/grab00.gif
+offset        25 104
+                  attack        0 0 0 0 0 0
+                	frame	data/chars/ryuji/spec06.gif
+   
+
+
+     
+anim pain
+	loop	0
+	offset	36 120
+	bbox	1 6 63 117
+	delay	5
+                   sound       data/sounds/ryujipai.wav
+	frame	data/chars/ryuji/pain01.gif
+offset	39 119
+                  bbox          2 4 59 114
+                  frame	data/chars/ryuji/pain02.gif
+offset	50 114
+                  bbox          1 5 71 108
+	frame	data/chars/ryuji/pain03.gif
+offset	39 119
+                  bbox         2 4 59 114
+                  frame	data/chars/ryuji/pain02.gif
+offset	36 120
+                  bbox          1 6 63 117
+	frame	data/chars/ryuji/pain01.gif
+
+
+  
+anim fall
+	loop	0
+	offset	30 109
+	delay	5
+	frame	data/chars/ryuji/fall01.gif
+offset	47 82
+DELAY         65
+        ATTACK  7 5 41 27 10 1
+                  frame	data/chars/ryuji/fall02.gif
+DELAY              15
+offset	43 95
+                	frame	data/chars/ryuji/fall03.gif
+offset	30 63
+delay      5
+        ATTACK  0 0 0 0 0 0
+           	frame	data/chars/ryuji/fall04.gif
+offset	52 36
+DELAY                35
+	frame	data/chars/ryuji/fall05.gif
+
+anim rise
+	loop	0
+	offset	43 34
+	delay	20
+                  bbox          0 0 0 0 
+                  frame	data/chars/ryuji/rise01.gif
+offset	29 61
+	frame	data/chars/ryuji/rise02.gif
+offset	27 91
+	frame	data/chars/ryuji/rise03.gif
+
+
+
+
+
+
+anim special
+	loop	0
+	delay	6
+	bbox	36 2 71 55
+                  sound       data/sounds/RYUJIGRA.wav
+offset	24 85
+	bbox	0 0 0 0
+	frame	data/chars/ryuji/grab00.gif
+offset	49 97
+	frame	data/chars/ryuji/grab01.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15   
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	51 90
+	frame	data/chars/ryuji/grab02.gif
+offset	36 107
+                  attack       42 17 68 46 15 1  
+	frame	data/chars/ryuji/grab03.gif
+offset	39 102
+                  attack       0 0 0 0 0 0
+	frame	data/chars/ryuji/grab04.gif
+offset	40 102
+                 	frame	data/chars/ryuji/grab05.gif
+offset	37 104
+                  frame	data/chars/ryuji/grab06.gif
+offset        34 117
+	attack       
+                  frame	data/chars/ryuji/grab07.gif
+offset	26 120
+	frame	data/chars/ryuji/grab08.gif
+offset	25 120
+	frame	data/chars/ryuji/grab09.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,4 +3,4 @@
 #	silence					# Stop music
 
 
-animation	data/scenes/senile.gif 0 0
+animation	data/scenes/dbh.gif 0 0

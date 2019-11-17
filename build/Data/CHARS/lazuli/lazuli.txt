@@ -21,6 +21,7 @@ iconpain     data/chars/lazuli/lazuli-hurtlifebar.png
 
 
 
+
 anim	attack1
 	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
@@ -249,6 +250,7 @@ anim	runattack
 	drawmethod	scale 0.87 0.87
 	drawmethod	flipx 1
 	frame	data/chars/lazuli/runattack-1.png
+	delay	10
 	frame	data/chars/lazuli/runattack-2.png
 	frame	data/chars/lazuli/runattack-3.png
 	frame	data/chars/lazuli/runattack-4.png

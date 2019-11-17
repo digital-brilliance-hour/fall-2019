@@ -1,4 +1,4 @@
-name	KIM
+name	Royce
 health	100
 speed	16
 type	player

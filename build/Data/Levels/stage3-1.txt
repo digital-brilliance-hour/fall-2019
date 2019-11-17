@@ -5,6 +5,8 @@ background	data/bgs/stage3-1/background.png
 panel		data/bgs/stage3-1/panel.png none none
 
 order	a
+wall    722 202 -65 90 299 90 75 245
+wall    1622 202 -119 90 245 90 75 245
 
 spawn1 104 24 300
 

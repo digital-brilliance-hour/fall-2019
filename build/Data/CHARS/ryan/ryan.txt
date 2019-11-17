@@ -14,6 +14,9 @@ gfxshadow 1
 
 palette     data/chars/ryan/ryan.act
 
+com      a2 freespecial
+
+
 
 
 
@@ -230,6 +233,7 @@ anim	fall
 	frame	data/chars/ryan/fall-5.png
 		
 anim	freespecial
+	drawmethod	scale 1.25 1.25
 	delay	5
 	offset	27 79
 	frame	data/chars/ryan/sprites_190-6.png

@@ -6,6 +6,10 @@ panel		data/bgs/stage2-3/panel.png none none
 
 order	a
 
+wall    23 237 5 -63 119 55 85 245
+
+wall    869 237 -65 -120 99 62 75 245
+
 spawn1 104 24 300
 
 
@@ -23,6 +27,12 @@ health 20
 at     80
 
 spawn  Quincy
+@script
+void main()
+{
+    setglobalvar("Load", 39);
+}
+@end_script
 alias  ???
 coords	380 160
 at      170

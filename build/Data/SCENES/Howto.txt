@@ -8,3 +8,4 @@ animation	data/scenes/howto/howto2.gif 0 0 1 0
 animation	data/scenes/howto/howto3.gif 0 0 1 0
 animation	data/scenes/howto/howto4.gif 0 0 1 0
 animation	data/scenes/howto/howto5.gif 0 0 1 0
+animation	data/scenes/howto/howto6.gif 0 0 1 0
