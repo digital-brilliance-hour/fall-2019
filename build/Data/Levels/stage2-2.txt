@@ -68,7 +68,7 @@ coords  380 230
 health  20
 at      1200
 
-#spawn Sodom
+spawn Sodom
 coords  380 220
 health  40
 agression 0
@@ -83,6 +83,25 @@ spawn ryuji
 coords 380 200
 health 70
 at     1200
+
+spawn rugal
+health 40
+coords 300 200
+at 800
+
+spawn angel
+health 20
+coords 350 200
+at     900
+
+spawn apple
+itemhealth 50
+coords 400 200
+at     850
+
+spawn 1up
+coords 300 200
+at     1300
 
 
 
