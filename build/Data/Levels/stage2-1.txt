@@ -22,73 +22,82 @@ coords	380 185
 at 240
 
 
-wait
-at 924
-
-spawn  king
-coords 330 200
-at 20
-
-spawn  king
-coords 340 200
-health 30
-at     20
 
 spawn  playa
 health 20
-coords 135 200
-at 20
+coords 149 200
+at 3
 
 spawn angel
 health 10
-coords 227 204
-at     30
+coords 257 204
+at     3
 
 spawn gold
-coords 302 217
-at     20
+coords 257 217
+at     3
+
+wait
+at   3
+
+group 3 3
+at    3
+
+spawn burger
+coords  188 200
+at      600
+
+spawn 1up
+itemhealth 20
+coords 188 220
+at     600
+
+spawn Rugal
+health 50
+coords 380 200
+at     679
+
+spawn ryuji
+health 30
+agression 10
+coords 380 200
+at 679
+
+spawn  playa
+health 30
+coords 380 200
+at 679
+
+spawn  king
+coords -30 200
+at 679
+
+spawn  king
+coords -30 200
+health 30
+at     679
 
 spawn gold
 coords  227 204
 at      20
 
-spawn burger
-coords  457 200
-at      20
 
 spawn Hibiki
 health 20
-coords 400 200
-at     30
+coords -30 200
+at     679
 
-spawn Rugal
-health 50
-coords 700 200
-at     20
 
-#spawn  sodom
-#health 30
-#coords 552 197
-#at 40
+spawn  sodom
+health 30
+coords -30 197
+at 679
 
 spawn ryuji
 health 20
-coords 450 200
-at     30
+coords -30 200
+at     679
 
-spawn ryuji
-health 30
-coords 777 200
-at 20
-agression 10
 
-spawn  playa
-health 30
-coords 800 200
-at 150
 
-spawn 1up
-itemhealth 20
-coords 750 200
-at     120
 

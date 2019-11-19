@@ -94,14 +94,16 @@ health 20
 coords 350 200
 at     900
 
-spawn apple
-itemhealth 50
-coords 400 200
+
+spawn crate
+item  apple
+itemhealth 80
+coords 275 200
 at     850
 
 spawn 1up
 coords 300 200
-at     1300
+at     1200
 
 
 
