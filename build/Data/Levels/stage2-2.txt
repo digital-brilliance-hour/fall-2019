@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/stage2-subway.bor
 
 background	data/bgs/stage2-subway/subway.png
 
@@ -6,7 +6,7 @@ panel		data/bgs/stage2-subway/subway.png none none
 
 order	a
 
-
+spawn1 104 24 300
 
 
 #---------------------

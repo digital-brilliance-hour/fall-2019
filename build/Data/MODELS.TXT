@@ -82,6 +82,7 @@ know	Ripper		data/chars/ripper/ripper.txt
 know    Andy        data/chars/Andy/Andy.txt
 know	Bdragon		data/chars/bdragon/bdragon.txt
 know	Geese		data/chars/geese/geese.txt
+know	ESakura 	Data/Chars/maki/maki2.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
@@ -96,6 +97,7 @@ know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
 know	dust	    data/chars/misc/dust.txt
+load explosion Data/CHARS/misc/explosion/explosion.txt
 
 # Story entities
 load	Story	data/chars/misc/story/story.txt	

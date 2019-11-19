@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/stage3.bor
 
 background	data/bgs/stage3-final/background.png
 
@@ -6,16 +6,30 @@ panel		data/bgs/stage3-final/foreground-1.png none none
 
 order	a
 
+direction both
 
+wall    10 237 5 -63 119 155 85 245
+wall    120 170 5 -63 129 25 55 245
+wall    724 237 -15 -58 119 155 85 245
+wall    737 170 -175 -63 119 55 75 245
 
+spawn1 214 68 300
 
 #---------------------
+music data/music/stage3-boss.bor
+at 200
+
 spawn   geese
-coords  350 160
-at      35
+coords  360 160 0
+boss 1
 health  400
 aggression 6
+at      200
 
-
-wait
-at	900
+spawn   ESakura
+alias Sakura_Clone
+map 2
+coords  360 200 0
+health  200
+aggression 6
+at      220

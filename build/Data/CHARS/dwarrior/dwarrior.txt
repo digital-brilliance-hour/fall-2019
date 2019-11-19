@@ -5,8 +5,6 @@ speed	6
 type	enemy
 shadow	5
 icon	data/chars/dwarrior/icon.gif
-falldie 1
-nodieblink 3
 
 
 anim idle

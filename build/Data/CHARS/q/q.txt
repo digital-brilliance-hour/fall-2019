@@ -10,6 +10,10 @@ icon	data/chars/q/1.gif
 iconpain     data/chars/q/2.gif
 aggression 5
 gfxshadow 1
+lifebarstatus 220 5 0 1 0 0 0 0 0 
+lifeposition 50 200
+nameposition 60 190 
+iconposition 50 360
 
 remap	data/chars/q/wk05.gif  data/chars/q/map1.gif
 

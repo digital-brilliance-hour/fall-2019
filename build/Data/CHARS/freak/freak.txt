@@ -13,6 +13,10 @@ icon	data/chars/freak/1.gif
 iconpain     data/chars/freak/2.gif
 aggression 1
 gfxshadow 1
+lifebarstatus 220 5 0 1 0 0 0 0 0 
+lifeposition 50 200
+nameposition 60 190 
+iconposition 50 360
 
 
 

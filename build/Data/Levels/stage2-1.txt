@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/stage2-outside.bor
 
 background	data/bgs/stage2-1/background.png
 

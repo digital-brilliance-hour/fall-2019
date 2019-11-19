@@ -1,4 +1,4 @@
-name	Black_Dragon
+name	BDragon
 health	450
 speed	9
 type	enemy
@@ -11,11 +11,11 @@ cantgrab 1
 nodrop	1
 nodieblink 3
 diesound data/sounds/die1.wav
-palette	data/chars/bdragon/pal.gif
-lifebarstatus 100 5 0 1 0 0 0 0 0 
-lifeposition 120 200
-nameposition 130 190 
-iconposition 100 200
+palette	data/chars/bdragon/pal.
+lifebarstatus 220 5 0 1 0 0 0 0 0 
+lifeposition 50 200
+nameposition 60 190 
+iconposition 50 360
 alternatepal	data/chars/bdragon/testpal.gif
 alternatepal	data/chars/bdragon/testpal2.gif
 #remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif

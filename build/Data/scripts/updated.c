@@ -30,6 +30,10 @@ void mainLoop()
 		}*/
 	}
 
+  if(openborvariant("in_halloffamescreen")==1){
+    //highScoreMusic();
+  }
+
 	if(openborvariant("in_selectscreen")==1){
       int models_cached = openborvariant("models_cached");
       int i = 0;
@@ -46,6 +50,13 @@ void mainLoop()
     } else if(openborvariant("in_menuscreen")==1){
       setindexedvar(0, NULL());
     }
+}
+
+void highScoreMusic()
+{
+  void bg = "data/music/highscore.bor";
+  //playmusic(bg, 1);
+
 }
 
 void inLevelLoop()

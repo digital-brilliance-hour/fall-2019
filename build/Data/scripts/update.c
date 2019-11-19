@@ -17,6 +17,28 @@ void main()
     } else if(openborvariant("in_menuscreen")==1){
       setindexedvar(0, NULL());
     }
+    if (openborvariant("in_titlescreen")) {
+      int T = getglobalvar("TitleMusic");
+      if(T != 1) {
+        void bg = "data/music/title.bor";
+        playmusic(bg, 1);
+        setglobalvar("TitleMusic", 1);
+      }
+    }
+    else {
+        setglobalvar("TitleMusic", 0);
+    }
+    if (openborvariant("in_halloffamescreen")) {
+      int H = getglobalvar("HOFMusic");
+      if(H != 1) {
+        void hbg = "data/music/hiscore.bor";
+        playmusic(hbg, 1);
+        setglobalvar("HOFMusic", 1);
+      }
+    }
+    else {
+        setglobalvar("HOFMusic", 0);
+    }
 }
 
 void oncreate()

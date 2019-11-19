@@ -83,6 +83,10 @@ at      1600
 group   3 3
 at 1600
 
+spawn meat
+coords 380 190
+at 1700
+
 spawn Carman
 alias Boris
 coords	380 190

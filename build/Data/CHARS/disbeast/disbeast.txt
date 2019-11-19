@@ -10,18 +10,12 @@ bflash bflash
 blockodds 1
 thold     49
 #nopain 1
-falldie 2
 icon	data/chars/disbeast/icon.gif
 icondie    data/chars/misc/icond.gif
 diesound data/sounds/dbdie.wav
-nodieblink 3
 fmap 1
 palette	data/chars/disbeast/idle1.gif
 alternatepal	data/chars/disbeast/testpal.gif
-lifebarstatus 100 5 0 1 0 0 0 0 0 
-lifeposition 120 200
-nameposition 130 190 
-iconposition 100 200
 #remap	data/chars/disbeast/idle1.gif   data/chars/disbeast/freeze.gif
 
 anim spawn

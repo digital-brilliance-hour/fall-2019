@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/stage2-outside.bor
 
 background	data/bgs/stage2-3/background.png
 
@@ -26,6 +26,9 @@ coords 130 170
 health 20
 at     80
 
+music data/music/stage2-boss.bor
+at 420
+
 spawn  Quincy
 @script
 void main()
@@ -33,10 +36,12 @@ void main()
     setglobalvar("Load", 39);
 }
 @end_script
+boss 1
+health 300
 alias  ???
-coords	380 160
-at      170
+coords	350 160
+at      420
 
 
 wait
-at	3060
+at 600

@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/stage3.bor
 
 background	data/bgs/stage3-1/background.png
 
@@ -22,52 +22,55 @@ aggression 3
 
 spawn   disbeast
 coords  360 160
-at      195
 health  50
 aggression 4
+at      195
 
 spawn   disbeast
 coords  350 190
-at      65
 health  50
 aggression 4
+at      65
 
 spawn   disbeast
 coords  380 180
-at      635
 health  50
 aggression 4
+at      635
 
 spawn   black
 coords	380 160
-at	800
 health  300
 aggression 5
+at	800
 
 
 spawn   dwarrior
 coords  380 160
-at      1025
 health  150
 aggression 2
+at      1025
+
+wait
+at      1362
 
 spawn   dwarrior
 coords	380 160
-at      1590
 health  200
-aggresssion 2
+aggression 2
+at      1590
 
 spawn   testa
 coords  380 185
-at      1725
 health  150
 aggression 3
+at      1725
 
 spawn   bdragon
 coords  380 190
-at      1900
 health  100
 aggression 1
+at      1900
 
 wait
 at	3060

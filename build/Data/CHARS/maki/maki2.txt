@@ -1,4 +1,4 @@
-name	E-MAKI
+name	ESakura
 health	600
 speed	13
 type	enemy

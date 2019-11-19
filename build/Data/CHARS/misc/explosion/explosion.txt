@@ -1,0 +1,48 @@
+name  explosion
+type			none
+candamage		player enemy obstacle
+health			1
+nolife			1
+lifespan		1
+shadow			0
+antigravity		100
+alpha			1
+remove 0
+
+
+
+
+anim	idle
+	loop	0
+	delay	4
+	offset	59 93
+	frame	data/chars/misc/explosion/0.png
+	offset	59 93
+	frame	data/chars/misc/explosion/1.png
+	offset	89 121
+	frame	data/chars/misc/explosion/2.png
+	offset	101 138
+	frame	data/chars/misc/explosion/3.png
+	offset	101 138
+	frame	data/chars/misc/explosion/4.png
+	offset	101 138
+	frame	data/chars/misc/explosion/5.png
+	offset	101 134
+	frame	data/chars/misc/explosion/6.png
+	offset	105 134
+	frame	data/chars/misc/explosion/7.png
+	offset	105 134
+	frame	data/chars/misc/explosion/8.png
+	offset	101 134
+	frame	data/chars/misc/explosion/9.png
+	frame	data/chars/misc/explosion/10.png
+	frame	data/chars/misc/explosion/11.png
+	frame	data/chars/misc/explosion/12.png
+	offset	114 134
+	frame	data/chars/misc/explosion/13.png
+	offset	111 134
+	frame	data/chars/misc/explosion/14.png
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

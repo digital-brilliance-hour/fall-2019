@@ -18,7 +18,6 @@ aimove chase
 icon	data/chars/sspirit/icon.gif
 icondie    data/chars/misc/icond.gif
 diesound data/sounds/chidie.wav
-nodieblink 3
 #fmap 3
 
 palette	data/chars/sspirit/idle1.gif
