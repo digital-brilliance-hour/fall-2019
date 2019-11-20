@@ -26,6 +26,12 @@ coords 130 170
 health 20
 at     80
 
+spawn tires
+item  meat
+itemhealth 100
+coords 380 200
+at     200
+
 music data/music/stage2-boss.bor
 at 420
 

@@ -31,14 +31,13 @@ health 20
 coords 500 200
 at     30
 
+wait
+at 280
+
 spawn	Angel
 health  10
 coords	380 200
 at      450
-
-
-wait
-at	900
 
 spawn K9999
 coords  390 200
@@ -50,50 +49,10 @@ coords  390 220
 health  20
 at      550
 
-wait
-at      950
-
-spawn Rugal
-coords  380 200
-health  30
-at      1200
-
-spawn   Mrbig
-coords  200 200
-health  50
-at      1200
-
-spawn hibiki
-coords  380 230
-health  20
-at      1200
-
-spawn Sodom
-coords  380 220
-health  40
-agression 0
-speed    5
-at       1200
-
-spawn 1up
-coords 380 100
-at     1200
-
-spawn ryuji
-coords 380 200
-health 70
-at     1200
-
 spawn rugal
 health 40
 coords 300 200
 at 800
-
-spawn angel
-health 20
-coords 350 200
-at     900
-
 
 spawn crate
 item  apple
@@ -101,9 +60,48 @@ itemhealth 80
 coords 275 200
 at     850
 
+spawn angel
+health 20
+coords 350 200
+at     900
+
+wait
+at      950
+
 spawn 1up
-coords 300 200
+coords 380 200
 at     1200
+
+spawn 1up
+coords 300 230
+at     1200
+
+spawn Rugal
+coords  380 200
+health  30
+at      1560
+
+spawn   Mrbig
+coords  200 200
+health  50
+at      1560
+
+spawn hibiki
+coords  -30 230
+health  20
+at      1560
+
+spawn Sodom
+coords  380 220
+health  40
+agression 0
+speed    5
+at       1560
+
+spawn ryuji
+coords 380 200
+health 70
+at     1560
 
 
 
