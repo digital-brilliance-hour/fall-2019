@@ -62,6 +62,7 @@ file 	data/levels/scenes/medical.txt
 z 170 232 170
 file	data/levels/stage1-1.txt
 file	data/levels/stage1-2.txt
+z 185 232 185
 file	data/levels/stage1-3.txt
 file 	data/levels/scenes/rollooutro.txt
 next

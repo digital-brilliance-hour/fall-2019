@@ -1,4 +1,4 @@
-name lazuli
+name Lazuli
 type player
 health  150
 gfxshadow	1
