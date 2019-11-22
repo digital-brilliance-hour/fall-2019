@@ -16,10 +16,12 @@ wall    737 170 -175 -63 119 55 75 245
 spawn1 214 68 300
 
 #---------------------
-music data/music/stage3-boss.bor
-at 200
+spawn Story
+alias geesedialog
+at 199
 
 spawn   geese
+alias 
 coords  360 160 0
 boss 1
 health  400
@@ -27,7 +29,7 @@ aggression 6
 at      200
 
 spawn   ESakura
-alias Sakura_Clone
+alias Amnetic_017
 map 2
 coords  360 200 0
 health  200

@@ -6,26 +6,52 @@ _
 _
 _
 CAST				1
-Kula_Gem
-Mandy_Bluegard
-Max_Bacon
+Ryan_Bigelow
+Lazuli
+Sakura_Sakamoto
+Royce_Jewels
 _
-with
-Angel
+EXECUTIVE_DIRECTORS			1
+Jelani_Rogers
+Ordante_Kearney
 _
-DIRECTOR			1
-CRxTRDude
+CHARACTER_DESIGN		1
+Jelani_Rogers
+Ordante_Kearney
+Mason_Scott
 _
-CHARACTERS			1
-SNK_PLAYMORE
+CHARACTERS_FROM			1
+Gekido
+Dragon_Ball_Z_Extreme_Butoden
+SNK_Playmore
 _
-ORIGINAL_SCRIPTS			1
-Volcanic
+STAGE_DESIGN		1
+Mason_Scott
+Ordante_Kearney
+Jelani_Rogers
 _
-MODIFICATIONS			1
-CRxTRDude
+STORY_DESIGN 		1
+Jakarri_King
+Jelani_Rogers
+Mason_Scott
+Ordante_Kearney
+Zaire_Abdul-Azeez
 _
-GREETZ_OUT_TO			1
+SOUND_DESIGN 		1
+Mason_Scott
+Jelani_Rogers
+_
+MUSIC_FROM 		1
+GlitchTale
+UnderTale
+Under_Night
+Melty_Blood
+Katana_ZERO
+_
+SCRIPTS			1
+Dav_Joel
+_
+OPENBOR_THANKS			1
 doranikofu
 O_Illusionista
 Damon_Caskey
@@ -36,20 +62,15 @@ Dantedevil
 bWWd
 maxman
 _
-WHAT_DOES_THIS_DO?			1
-This_comprises_of_various
-scripts_that_can_accomplish
-_
-Dialog
-_
-Scrolling_images
-_
-and
-Scrolling_text
+SPECIAL_MENTIONS			1
+Robert_Botts
 _
 FOR_MORE_INFORMATION			1
-See_the_readme_accompanied_by
-this_demo.
+Keep_up-to-date
+on_gamejolt.com
+_
+_
+_
 _
 _
 _

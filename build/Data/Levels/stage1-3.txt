@@ -16,6 +16,22 @@ wait 0
 group 2 2
 at 0
 
+spawn drum
+item  meat
+itemhealth 100
+coords 380 200
+at     200
+
+spawn drum
+item  meat
+itemhealth 100
+coords 380 240
+at     200
+
+spawn Story
+alias rollodialog
+at 749
+
 spawn Freak
 alias Rollo
 health 200

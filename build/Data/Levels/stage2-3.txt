@@ -32,8 +32,9 @@ itemhealth 100
 coords 380 200
 at     200
 
-music data/music/stage2-boss.bor
-at 420
+spawn Story
+alias quincydialog
+at 419
 
 spawn  Quincy
 @script
@@ -44,7 +45,7 @@ void main()
 @end_script
 boss 1
 health 300
-alias  ???
+alias  Quincy
 coords	350 160
 at      420
 

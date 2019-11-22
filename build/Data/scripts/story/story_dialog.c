@@ -26,7 +26,7 @@ void sendDialogMsg()
 	if (vSelf==NULL()){vSelf=getplayerproperty(3, "entity");}
 	void playername = getentityproperty(vSelf,"name");
 	
-	if (playername == "Kula" || playername == "Mandy" || playername == "Lazuli" || playername == "Maki") setindexedvar(story_playerGender,0);
+	if (playername == "Kula" || playername == "Mandy" || playername == "Lazuli" || playername == "Sakura") setindexedvar(story_playerGender,0);
 	else setindexedvar(story_playerGender,1); 
 	
 	void	self	=	getlocalvar("self");
@@ -79,6 +79,9 @@ void sendDialogMsg()
 	
 	if (name=="end"){
 		endStory();
+	}else if(name=="endwithjump") {
+		endStory();
+		jumptobranch("",1);
 	}else if(name=="_noskip"){
 		setindexedvar(story_isDialogSkip,dir);
 		filestreamnextline(filenumber);

@@ -1,4 +1,4 @@
-name	BDragon
+name	Bdragon
 health	450
 speed	9
 type	enemy
@@ -7,165 +7,64 @@ gfxshadow 1
 icon	data/chars/bdragon/icon.gif
 aggression 40
 cantgrab 1
-#nopain	1
+
 nodrop	1
-nodieblink 3
 diesound data/sounds/die1.wav
-palette	data/chars/bdragon/pal.
-lifebarstatus 220 5 0 1 0 0 0 0 0 
+palette	data/chars/bdragon/pal.gif
+lifebarstatus 220 5 0 1 0 0 0 0 0
 lifeposition 50 200
-nameposition 60 190 
+nameposition 60 190
 iconposition 50 360
 alternatepal	data/chars/bdragon/testpal.gif
 alternatepal	data/chars/bdragon/testpal2.gif
-#remap	data/chars/ork/walk5.gif	data/chars/ork/pal2.gif
-#remap	data/chars/android/stand.gif data/chars/android/alt1.gif
-#remap	data/chars/android/stand.gif data/chars/android/alt2.gif
-#remap	data/chars/android/stand2.gif data/chars/android/alt11.gif
-#remap	data/chars/android/stand2.gif data/chars/android/alt12.gif
-#remap	data/chars/android/stand2.gif data/chars/android/alt13.gif
-
-anim idle
-	loop	1
-	offset  209 177
-	bbox 	23 4 54 85
-	delay	15
-	frame	data/chars/bdragon/idle1.gif
-	offset  211 178
-	frame	data/chars/bdragon/idle2.gif
-	offset  213 179
-	frame	data/chars/bdragon/idle3.gif
-	offset  214 182
-	frame	data/chars/bdragon/idle4.gif
-	offset  219 184
-	frame	data/chars/bdragon/idle5.gif
-	offset  207 183
-	frame	data/chars/bdragon/idle6.gif
-	offset  209 182
-	frame	data/chars/bdragon/idle7.gif
-	offset  211 181
-	frame	data/chars/bdragon/idle8.gif
-	offset  213 179
-	frame	data/chars/bdragon/idle9.gif
-	offset  214 175
-	frame	data/chars/bdragon/idle10.gif
-	offset  219 174
-	frame	data/chars/bdragon/idle11.gif
-	offset  207 175
-	frame	data/chars/bdragon/idle12.gif
-
-	
-anim walk
-	loop	1
-	offset  215 143
-	bbox 	61 28 94 62
-	delay	13
-	quakeframe	2 6 9
-	frame	data/chars/bdragon/walk1.gif
-	offset  208 146
-	frame	data/chars/bdragon/walk2.gif
-	offset  209 147
-	frame	data/chars/bdragon/walk3.gif
-	offset  213 143
-	frame	data/chars/bdragon/walk4.gif
-	offset  220 137
-	frame	data/chars/bdragon/walk5.gif
-	offset  224 130
-	frame	data/chars/bdragon/walk6.gif
-	offset  212 125
-	frame	data/chars/bdragon/walk7.gif
-	offset  212 130
-	frame	data/chars/bdragon/walk8.gif
-	offset  212 137
-	frame	data/chars/bdragon/walk9.gif
-	offset  213 143
-	frame	data/chars/bdragon/walk10.gif
-	offset  217 146
-	frame	data/chars/bdragon/walk11.gif
-	offset  220 146
-	frame	data/chars/bdragon/walk12.gif
-	offset  220 146
-	frame	data/chars/bdragon/walk13.gif
-
-		
-anim pain
-	loop	0
-	offset	175 173
-	delay	4
-	move	-15
-	bbox	12 10 58 90
-	frame	data/chars/bdragon/pain1.gif
-
-	
-anim fall
-	landframe	3
-	loop	0
-	offset	139 140
-	ATTACK	27 32 82 87 15 1
-#	bbox	37 64 72 65
-	delay	11
-	frame	data/chars/bdragon/fall1.gif
-	offset	165 122
-	delay	1000
-	frame	data/chars/bdragon/fall2.gif
-	offset	176 111
-	delay	10
-	frame	data/chars/bdragon/fall3.gif
-	frame	data/chars/bdragon/fall3.gif
-
-
-
-anim rise
-	loop	0
-	offset	145 145
-	delay	16
-#	bbox	37 64 72 65
-	frame	data/chars/bdragon/rise1.gif
-	offset	114 226
-	frame	data/chars/bdragon/rise2.gif
-	offset	177 177
-	frame	data/chars/bdragon/rise3.gif
 
 
 
 
-anim attack1
+
+
+
+anim	attack1
 	range	0 200
 	loop	0
 	delay	10
 	offset	112 174
-	bbox	44 58 63 84
+	bbox	31 18 130 161
 	frame	data/chars/bdragon/atk1.gif
+	bbox	23 18 130 157
 	offset	72 182
 	frame	data/chars/bdragon/atk2.gif
+	bbox	23 18 178 157
 	offset	77 160
 	frame	data/chars/bdragon/atk3.gif
 	offset	29 164
 	frame	data/chars/bdragon/atk4.gif
+	bbox	23 0 183 128
 	offset	95 124
-	attack	0 0 375 120 30 1
+	attack	0 0 375 120 30 1 0 0 0 0
 	frame	data/chars/bdragon/atk5.gif
 	offset	96 125
 	frame	data/chars/bdragon/atk6.gif
 	attack	0 0 0 0 0 0
 	offset	118 136
 	frame	data/chars/bdragon/atk7.gif
+	bbox	12 9 148 139
 	offset	63 150
 	frame	data/chars/bdragon/atk8.gif
 	offset	63 150
 	frame	data/chars/bdragon/atk9.gif
+	bbox	118 1 187 127
 	offset	207 120
 	frame	data/chars/bdragon/atk10.gif
-
-
-	
-anim attack2
+		
+anim	attack2
 	range	200 300
 	loop	0
 	delay	8
 	offset	185 179
-	bbox	78 48 68 72
+	bbox	106 8 172 179
 	frame	data/chars/bdragon/2atk1.gif
+	bbox	88 8 207 179
 	offset	177 177
 	frame	data/chars/bdragon/2atk2.gif
 	offset	175 174
@@ -187,11 +86,77 @@ anim attack2
 	frame	data/chars/bdragon/2atk16.gif
 	frame	data/chars/bdragon/2atk17.gif
 	frame	data/chars/bdragon/2atk18.gif
-	attack	0 0 0 0 0
-
-
-			
-anim throw
+		
+anim	fall
+	landframe	3
+	loop	0
+	offset	139 140
+	ATTACK	27 32 82 87 15 1
+	delay	11
+	frame	data/chars/bdragon/fall1.gif
+	offset	165 122
+	delay	1000
+	frame	data/chars/bdragon/fall2.gif
+	offset	176 111
+	delay	10
+	frame	data/chars/bdragon/fall3.gif
+	frame	data/chars/bdragon/fall3.gif
+		
+anim	idle
+	loop	1
+	offset	209 177
+	bbox	131 1 179 190
+	delay	15
+	frame	data/chars/bdragon/idle1.gif
+	bbox	131 1 179 190
+	offset	211 178
+	frame	data/chars/bdragon/idle2.gif
+	bbox	131 1 179 190
+	offset	213 179
+	frame	data/chars/bdragon/idle3.gif
+	offset	214 182
+	frame	data/chars/bdragon/idle4.gif
+	offset	219 184
+	frame	data/chars/bdragon/idle5.gif
+	offset	207 183
+	frame	data/chars/bdragon/idle6.gif
+	offset	209 182
+	frame	data/chars/bdragon/idle7.gif
+	bbox	131 1 183 190
+	offset	211 181
+	frame	data/chars/bdragon/idle8.gif
+	bbox	131 1 188 190
+	offset	213 179
+	frame	data/chars/bdragon/idle9.gif
+	bbox	131 1 191 190
+	offset	214 175
+	frame	data/chars/bdragon/idle10.gif
+	bbox	131 1 194 190
+	offset	219 174
+	frame	data/chars/bdragon/idle11.gif
+	bbox	131 1 181 190
+	offset	207 175
+	frame	data/chars/bdragon/idle12.gif
+		
+anim	pain
+	loop	0
+	offset	175 173
+	delay	4
+	move	-15
+	bbox	12 10 58 90
+	frame	data/chars/bdragon/pain1.gif
+		
+anim	rise
+	loop	0
+	offset	145 145
+	delay	16
+	frame	data/chars/bdragon/rise1.gif
+	offset	114 226
+	frame	data/chars/bdragon/rise2.gif
+	offset	177 177
+	frame	data/chars/bdragon/rise3.gif
+		
+anim	throw
 	loop	0
 	delay	8
 	offset	112 174
@@ -217,6 +182,38 @@ anim throw
 	frame	data/chars/bdragon/atk9.gif
 	offset	207 120
 	frame	data/chars/bdragon/atk10.gif
-
-
-	
+		
+anim	walk
+	loop	1
+	offset	215 143
+	bbox	115 1 239 142
+	delay	13
+	quakeframe	2 6 9
+	frame	data/chars/bdragon/walk1.gif
+	offset	208 146
+	frame	data/chars/bdragon/walk2.gif
+	offset	209 147
+	frame	data/chars/bdragon/walk3.gif
+	offset	213 143
+	frame	data/chars/bdragon/walk4.gif
+	offset	220 137
+	frame	data/chars/bdragon/walk5.gif
+	offset	224 130
+	frame	data/chars/bdragon/walk6.gif
+	offset	212 125
+	frame	data/chars/bdragon/walk7.gif
+	offset	212 130
+	frame	data/chars/bdragon/walk8.gif
+	offset	212 137
+	frame	data/chars/bdragon/walk9.gif
+	offset	213 143
+	frame	data/chars/bdragon/walk10.gif
+	offset	217 146
+	frame	data/chars/bdragon/walk11.gif
+	offset	220 146
+	frame	data/chars/bdragon/walk12.gif
+	offset	220 146
+	frame	data/chars/bdragon/walk13.gif
+		
+#|edited by openBor Stats v 0.67
+		

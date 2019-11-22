@@ -51,27 +51,20 @@ e2icon      172	 26
 e2name      182  27
 e2life      189  37
 
-set	Easy_Mode
+set	Story
+credits     20
+lives       3
+nosame      1
+typemp      1
 scene 	data/scenes/howto.txt
-file data/levels/scenes/intro/intro.txt
+file 	data/levels/scenes/intro/intro.txt
+file 	data/levels/scenes/medical.txt
 z 170 232 170
-#file 	data/levels/stage2-2.txt
 file	data/levels/stage1-1.txt
 file	data/levels/stage1-2.txt
 file	data/levels/stage1-3.txt
-
-set Stage_3
-z 175 232 175
-file data/levels/stage3-1.txt
-
-
-
-set Stage_3_final
-z 117 232 117
-file data/levels/stage3-final.txt
-
-
-set Stage_2
+file 	data/levels/scenes/rollooutro.txt
+next
 file data/levels/scenes/intro/stage2.txt
 z 185 232 185
 file data/levels/stage2-1.txt
@@ -79,3 +72,13 @@ z 195 232 195
 file data/levels/stage2-2.txt
 z 185 232 185
 file data/levels/stage2-3.txt
+file 	data/levels/scenes/quincyoutro.txt
+next
+file data/levels/scenes/intro/stage3.txt
+z 175 232 175
+file data/levels/stage3-1.txt
+z 117 232 117
+file data/levels/stage3-final.txt
+next
+file 	data/levels/scenes/geeseoutro.txt
+file 	data/levels/scenes/credits/credits.txt

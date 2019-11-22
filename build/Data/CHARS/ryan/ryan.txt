@@ -1,4 +1,4 @@
-name ryan
+name Ryan
 type player
 health  100
 gfxshadow 1
@@ -18,6 +18,9 @@ animationscript	 	data/scripts/script.c
 
 com      a2 freespecial
 load explosion
+
+
+
 
 
 
@@ -255,8 +258,10 @@ anim	freespecial
 	drawmethod	scale 1.25 1.25
 	jumpframe	36 3 1 0 1
 	fastattack	1
+	energycost	5
 	delay	5
 	offset	27 79
+	sound	data/sounds/kyoratk.wav
 	frame	data/chars/ryan/sprites_190-6.png
 	frame	data/chars/ryan/sprites_200-0.png
 	attack	36 3 54 24 5 0 1 0 0 0
@@ -429,6 +434,7 @@ anim	jumpattack
 		
 anim	pain
 	drawmethod	scale 1.25 1.25
+	delay	1
 	offset	31 78
 	bbox	1 1 46 80
 	frame	data/chars/ryan/pain-01.png
@@ -531,10 +537,12 @@ anim	runattack
 		
 anim	special
 	fastattack	1
+	energycost	10
 	delay	8
 	attack	0 0 0 0 0 0 0 0 0 0
 	drawmethod	scale 1.25 1.25
 	offset	27 78
+	sound	data/sounds/kyofree.wav
 	frame	data/chars/ryan/special-01.png
 	attack	-25 8 130 133 11 0 1 0 0 0
 	offset	40 134
@@ -549,7 +557,7 @@ anim	special
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	50 134
 	frame	data/chars/ryan/special-05.png
-	attack	-25 8 130 133 11 0 1 0 0 0
+	attack	-25 8 130 133 11 1 1 0 0 0
 	offset	46 134
 	frame	data/chars/ryan/special-06.png
 	attack	0 0 0 0 0 0 0 0 0 0

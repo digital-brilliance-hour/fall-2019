@@ -2,5 +2,5 @@
 
 void main()
 {
-		scrollPicture("back2",0.05,"intro-stage2text.png",181);
+		scrollPicture("iceentrance",0.05,"intro-stage3text.png",320);
 }

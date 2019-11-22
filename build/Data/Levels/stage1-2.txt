@@ -49,6 +49,10 @@ at 670
 wait
 at 830
 
+spawn Story
+alias rickydialog
+at 1100
+
 spawn Rick
 alias Ricky
 coords	380 200

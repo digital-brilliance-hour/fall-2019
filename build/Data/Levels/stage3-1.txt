@@ -95,16 +95,11 @@ health  150
 aggression 3
 at      1725
 
-#spawn   bdragon
-#coords  380 190
-#health  100
-#aggression 1
-#at      1900
+spawn   Bdragon
+coords  380 190
+health  350
+aggression 1
+at      2600
 
 wait
-at	3060
-
-spawn 	1up
-itemhealth 50
-coords  345   185
-at      1491
+at	2720

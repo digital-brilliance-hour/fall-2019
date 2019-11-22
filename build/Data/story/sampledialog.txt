@@ -1,3 +1,8 @@
+Ryan 0 Where_am_I?_How_did_I_get_here?_
+Ryan 0 And_who_was_that_man?_
+Ryan 0 It_seems_like_I'm_in_some_medical_facility. Excuse_me_Miss?_
+Lazuli 0 Who_me???_I_thought_that_guy_was_here_to_see_you.
+Lazuli 0 When_I_awoke,_he_was_hanging_around_your_bed. I_think_we_startled_him.
 _player 0 Nice_place_we_got_here! It's_like_some_AR_game.
 Max	0 Only_this_time_it's_real,_right?
 _fadepausemusic 1
@@ -17,4 +22,4 @@ _speed 20
 _player 0 Let's_see_about_that!
 _normal 
 _playmusic 0	data/music/1boss.bor
-end
+endwithjump
